@@ -1,0 +1,829 @@
+ <!DOCTYPE html>
+<html class="client-nojs" lang="zh" dir="ltr">
+
+<!-- Mirrored from www.eu4cn.com/index.php?title=%E6%B5%B7%E5%86%9B&action=edit by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 May 2024 12:48:18 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>查看“海军”的源代码 - 欧陆风云4百科，人人可以编辑的欧陆风云4中文百科全书</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"zh","wgMonthNames":["","1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"],"wgRequestId":"e16996bfb5d772509f04ab28","wgCSPNonce":false,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"海军","wgTitle":"海军","wgCurRevisionId":97565,"wgRevisionId":0,"wgArticleId":10700,"wgIsArticle":false,"wgIsRedirect":false,"wgAction":"edit","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageContentLanguage":"zh","wgPageContentModel":"wikitext","wgRelevantPageName":"海军","wgRelevantArticleId":10700,"wgUserVariant":"zh","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgCargoDefaultQueryLimit":100,"wgCargoMapClusteringMinimum":80,"wgCargoMonthNames":["1月","2月",
+"3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"],"wgCargoMonthNamesShort":["1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"],"wgCargoWeekDays":["星期日","星期一","星期二","星期三","星期四","星期五","星期六"],"wgCargoWeekDaysShort":["日","一","二","三","四","五","六"],"wgPageFormsTargetName":null,"wgPageFormsAutocompleteValues":[],"wgPageFormsAutocompleteOnAllChars":false,"wgPageFormsFieldProperties":[],"wgPageFormsCargoFields":[],"wgPageFormsDependentFields":[],"wgPageFormsCalendarValues":[],"wgPageFormsCalendarParams":[],"wgPageFormsCalendarHTML":null,"wgPageFormsGridValues":[],"wgPageFormsGridParams":[],"wgPageFormsContLangYes":null,"wgPageFormsContLangNo":null,"wgPageFormsContLangMonths":[],"wgPageFormsHeightForMinimizingInstances":800,"wgPageFormsShowOnSelect":[],"wgPageFormsScriptPath":"/extensions/PageForms","edgValues":null,"wgPageFormsEDSettings":null,"wgAmericanDates":false,
+"wgVisualEditor":{"pageLanguageCode":"zh","pageLanguageDir":"ltr","pageVariantFallbacks":["zh-hans","zh-hant","zh-cn","zh-tw","zh-hk","zh-sg","zh-mo","zh-my"]},"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgSmjUseCdn":false,"wgSmjUseChem":true,"wgSmjDisplayMath":[],"wgSmjExtraInlineMath":[],"wgSmjScale":1,"wgSmjEnableMenu":true,"wgSmjDisplayAlign":"left","wgEditSubmitButtonLabelPublish":false};RLSTATE={"site.styles":"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.liberty.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready"};RLPAGEMODULES=["ext.SimpleMathJax","mediawiki.action.edit.collapsibleFooter","site","mediawiki.page.ready","ext.HighlightjsIntegration","ext.CodeMirror","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.gadget.UserLinkAvatar","ext.gadget.notifyConversion","ext.gadget.notifyAdsense","ext.gadget.Edittools-vector","skins.liberty.bootstrap","skins.liberty.layoutjs",
+"skins.liberty.liverc","skins.liberty.loginjs"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});});});</script>
+<link rel="stylesheet" href="load92d0.css?lang=zh&amp;modules=ext.visualEditor.desktopArticleTarget.noscript%7Cskins.liberty.styles&amp;only=styles&amp;skin=liberty"/>
+<script async="" src="load7991.php?lang=zh&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=liberty"></script>
+<style>.Liberty .nav-wrapper,
+		.Liberty .nav-wrapper .navbar .form-inline .btn:hover,
+		.Liberty .nav-wrapper .navbar .form-inline .btn:focus,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link.active::before,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link:hover::before,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link:focus::before,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link:active::before,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-footer .label,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .contributioncredits-footer .label,
+		.Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools .tools-btn:hover,
+		.Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools .tools-btn:focus,
+		.Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools .tools-btn:active,
+		.btn-primary,
+		.header-template, .section-template {
+			background-color: #103D8F;
+		}
+
+		.btn-primary,
+		.section-template-border {
+			border-color: #103D8F;
+		}
+
+		.Liberty .nav-wrapper .navbar .form-inline .btn:hover,
+		.Liberty .nav-wrapper .navbar .form-inline .btn:focus {
+			border-color: #002E7D;
+		}
+
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link.active::before,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link:hover::before,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link:focus::before,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link:active::before {
+			border-bottom: 2px solid #103D8F;
+		}
+
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-footer .label:hover,
+		.Liberty .nav-wrapper .navbar .navbar-nav .nav-item .nav-link:hover,
+		.Liberty .nav-wrapper .navbar .navbar-nav .nav-item .nav-link:focus,
+		.dropdown-menu .dropdown-item:hover,
+		.btn-primary:hover,
+		.btn-primary:focus {
+			background-color: #002E7D;
+		}
+
+
+		.Liberty .content-wrapper #liberty-bottombtn,
+		.Liberty .content-wrapper #liberty-bottombtn:hover {
+			background-color: #103D8F;
+		}</style><style>@media (prefers-color-scheme: dark) { body, .Liberty, .dropdown-menu, .dropdown-item, .Liberty .nav-wrapper .navbar .form-inline .btn, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link.active, .Liberty .content-wrapper .liberty-content .liberty-content-main table.wikitable tr > th, .Liberty .content-wrapper .liberty-content .liberty-content-main table.wikitable tr > td, table.mw_metadata th, .Liberty .content-wrapper .liberty-content .liberty-content-main table.infobox th, #preferences fieldset:not(.prefsection), #preferences div.mw-prefs-buttons, .navbox, .navbox-subgroup, .navbox > tbody > tr:nth-child(even) > .navbox-list, .Liberty .nav-wrapper .navbar .form-inline .form-control {
+			background-color: #000;
+			color: #DDD;
+		}
+
+		.liberty-content-header, .liberty-footer, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-footer, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item, .Liberty .content-wrapper .liberty-content .liberty-content-header, .Liberty .content-wrapper .liberty-footer, .editOptions, html .wikiEditor-ui-toolbar, #pagehistory li.selected, .mw-datatable td, .Liberty .content-wrapper .liberty-content .liberty-content-main table.wikitable tr > td, table.mw_metadata td, .Liberty .content-wrapper .liberty-content .liberty-content-main table.wikitable, .Liberty .content-wrapper .liberty-content .liberty-content-main table.infobox, #preferences, .navbox-list, .dropdown-divider, .Liberty .content-wrapper .liberty-content .bottom-ads {
+			background-color: #1F2023;
+			color: #DDD;
+		}
+
+		.Liberty .content-wrapper .liberty-content .liberty-content-main, .mw-datatable th, .mw-datatable tr:hover td, textarea, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-content, div.mw-warning-with-logexcerpt, div.mw-lag-warn-high, div.mw-cascadeprotectedwarning, div#mw-protect-cascadeon, .mildtable th {
+			background-color: #000 !important;
+		}
+
+		.Liberty .content-wrapper .liberty-content .liberty-content-header .title>h1, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-content .live-recent-list .recent-item, caption { color: #DDD; }
+
+		.btn-secondary, .Liberty .content-wrapper .liberty-footer .catlinks, .rcpages-btn { background: transparent; color: #DDD; }
+
+
+		#pagehistory li { border: 0; }
+
+		.Liberty .content-wrapper .liberty-footer, .Liberty .content-wrapper .liberty-content .liberty-content-header, .Liberty .content-wrapper .liberty-content .liberty-content-main, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-footer, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-content, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item + .nav-item, .Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools .tools-btn:hover, .Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools .tools-btn:focus, .Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools .tools-btn, .dropdown-menu, .dropdown-divider, .Liberty .content-wrapper .liberty-content .liberty-content-main fieldset, hr, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-content .live-recent-list li, .mw-changeslist-legend, .Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools { border-color: #555; }
+
+		.flow-post, .Liberty .content-wrapper .liberty-content .liberty-content-main .toc .toctext { color: #DDD; }
+		.flow-topic-titlebar { color: #000; }
+		.flow-ui-navigationWidget { color: #FFF; }
+		.Liberty .content-wrapper .liberty-content .liberty-content-main .toccolours, .Liberty .content-wrapper .liberty-content .liberty-content-main .toc ul, .Liberty .content-wrapper .liberty-content .liberty-content-main .toc li { background-color: #000; }
+		.Liberty .content-wrapper .liberty-content .liberty-content-main .toc .toctitle { background-color: #1F2023; } }</style>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="loada6ee.css?lang=zh&amp;modules=site.styles&amp;only=styles&amp;skin=liberty"/>
+<meta name="generator" content="MediaWiki 1.39.3"/>
+<meta name="robots" content="noindex,nofollow"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="description" content="因为以下原因，您没有权限编辑本页：&#10;&#10;&#10;您请求的操作仅限属于该用户组的用户执行：用户&#10;&#10;&#10;您可以查看和复制此页面的源代码。&#10;{{version|1.24}}&#10;{{Hatnote|本页面提供了关于海军征募和维护的信息。若想了解海战的信息请见[[海战]]。若想了解海军单位的细节请见[[海军单位]]。}}&#10;&#039;&#039;&#039;海军&#039;&#039;&#039;（&#039;&#039;&#039;Navy&#039;&#039;&#039;）是一个国家争霸制海权最重要的力量。[[原始土著]]不能建造海军。&#10;&#10;== 组成部分 ==&#10;{{SVersion|Timeless}}&#10;一只海军的基本组成部分就是船只。船只共分为[[海军单位#重型船只|&#039;&#039;&#039;重型船只&#039;&#039;&#039;]]、[[海军单位#轻型船只|&#039;&#039;&#039;轻型船只&#039;&#039;&#039;]]、[[海军单位#桨帆船|&#039;&#039;&#039;桨帆船&#039;&#039;&#039;]]和[[海军单位#运输船|&#039;&#039;&#039;运输船&#039;&#039;&#039;]]。&#10;&#10;船只可组成舰队。舰队可被[[将领#将领类型|海军上将或探索者]]统领。舰队的移动速度由最慢的船只决定，所以一般并不推荐混合舰队，除非需要大船来护卫运输船之类的小船。&#10;&#10;== 打造一支舰队 ==&#10;{{SVersion|1.24}}&#10;船只的建造需要一个拥有且实际控制的核心港口 {{icon|province}} 省份，还需消耗一定的{{icon|ducat}} 金钱，{{icon|time}} 时间和 {{icon|sailors}} [[水手]]。每个省份都只能同时建造一艘船只，但多个船只可以在单个省份中顺列建造。&#10;&#10;船只的基础花费与时间与船只类型有关，且被省份和国家修正影响。建造完成时，船只只有50%的 {{icon|naval morale}} 士气。超过 {{icon|naval forcelimit}} 海军上限会提升海军的维护费。而且船只不会在解锁新船型后自动升级，会一直保持出厂时的兵种。所以任何想在海上拥有一席之地的国家都必须时刻关注自己海军的情况，随时准备在科技升级后给自己的舰队更新换代。&#10;&#10;在激活了DLC {{icon|aow}} [[孙子兵法]]后就无需再重造舰队，可以在拥有且被控制的港口给停泊的舰队来一次全面升级。本操作会将船只的耐久度降为1%，之后照常慢慢恢复。升级的花费和建造新船的花费一样，优势在于更快、更便捷。&#10;&#10;==={{icon|ship cost}} 船只花费===&#10;计算建造船只所花费钱数的计算公式如下：&#10;:&amp;lt;math&gt;\text{船只花费} = \text{基础花费} \cdot \left( 100\% +  \sum\text{船只花费修正} \right)&amp;lt;/math&gt;&#10;&#10;建造船只花费的水手数量不会变化，更不会被现存的任何修正改变。&#10;&#10;==== 基础花费 ====&#10;建造船只的基础花费如下：&amp;lt;ref name=defines&gt;见{{path|defines}}。&amp;lt;/ref&gt;&#10;:一艘 {{icon|heavy ship}} 重型船只需要50 {{icon|ducats}} 金币和200 {{icon|sailors}} 水手&#10;:一艘 {{icon|light ship}} 轻型船只需要20 {{icon|ducats}} 金币和50 {{icon|sailors}} 水手&#10;:一艘 {{icon|Galley}} 桨帆船需要10 {{icon|ducats}} 金币和100 {{icon|sailors}} 水手&#10;:一艘 {{icon|light ship}} 运输船需要12 {{icon|ducats}} 金币和50 {{icon|sailors}} 水手&#10;&#10;==== 船只花费修正 ====&#10;船只花费受整体和特定类别的船只花费修正之加算影响。&#10;&#10;===== {{icon|ship cost}} 整体船只花费修正 =====&#10;整体船只花费修正改变全部四种[[海军单位]]的建造花费。所有减少海军建造花费的修正同时也减少相应数值的海军维护费。&#10;&#10;理念与政策：&#10;{{bonus table|Ship cost}}&#10;额外修正：&#10;:*垄断{{icon|wool}}羊毛的贸易奖励{{green|−5%}}&#10;:*[[选项#难度|极易难度]]，玩家{{green|−33%}}&#10;:*[[选项#难度|极难难度]]，AI{{green|−33%}}&#10;:*{{icon|parliament}} 国会通过议案“扩编海军”{{green|−10%}}&#10;:*每百分之一的[[通货膨胀]]{{red|+1%}}&#10;{| class=&quot;mildtable plainlist&quot;&#10;! style=&quot;width:30px&quot; | [[File:Ship_cost.png|24px]]&#10;! 条件&#10;|-&#10;| style=&quot;text-align: right&quot; | {{green|−33%}} &#10;|| [[选项#难度|极易难度]]，玩家{{green|−33%}}&#10;|-&#10;| style=&quot;text-align: right&quot; | {{green|−33%}} &#10;|| [[选项#难度|极难难度]]，AI {{green|−33%}}&#10;|-&#10;| style=&quot;text-align: right&quot; | {{green|−10%}} ||&#10;*{{icon|parliament}} 国会通过议案“扩编海军”{{green|−10%}}&#10;*{{icon|tengri|24px}} 腾格里信仰以 {{icon|ibadi|24px}} 伊巴德派作为兼容宗教&#10;|-&#10;| style=&quot;text-align: right&quot; | {{green|−5%}} || &#10;垄断{{icon|wool}}羊毛的贸易奖励{{green|−5%}}&#10;|}&#10;&#10;=====  特定类别的花费修正 =====&#10;下列修正只减少某一类船只建造的花费。&#10;&#10;&#039;&#039;&#039;重型船只&#039;&#039;&#039;：&#10;{| class=&quot;mildtable&quot;&#10;! style=&quot;width:30px&quot; | [[File:Heavy_ship_cost.png|24px]]&#10;! 条件&#10;|-&#10;| style=&quot;text-align: right&quot; | {{red|+1%}} || 每点 [[inflation|通货膨胀]]&amp;lt;ref name=sm&gt;See in {{path|static modifiers}} ([[Static modifiers]]).&amp;lt;/ref&gt;&#10;|}&#10;&#10;理念与政策：&#10;{{bonus table|heavy ship cost}}&#10;&#10;&#039;&#039;&#039;轻型船只&#039;&#039;&#039;：&#10;{| class=&quot;mildtable&quot;&#10;! style=&quot;width:30px&quot; | [[File:Light_ship_cost.png|24px]]&#10;! 条件&#10;|-&#10;| style=&quot;text-align: right&quot; | {{green|−20%}} ||[[File:privilege comission merchant ships for war.png|24px]] 授予{{icon|burghers|24px}}商人、{{icon|vaishyas|24px}} 吠舍或{{icon|jains|24px}}耆那教徒阶层“私人贸易舰队”特权&#10;|-&#10;| style=&quot;text-align: right&quot; | {{green|−10%}} || {{icon|parliament}}议会通过议案“颁发私掠许可证”{{green|−10%}}&#10;|-&#10;| style=&quot;text-align: right&quot; | {{red|+1%}} || 每点通货膨胀 [[inflation|通货膨胀]]&amp;lt;ref name=sm /&gt;&#10;|}&#10;理念与政策：&#10;{{bonus table|light ship cost}}&#10;&#10;&#039;&#039;&#039;桨帆船&#039;&#039;&#039;：&#10;{| class=&quot;mildtable&quot;&#10;! style=&quot;width:30px&quot; | [[File:Heavy_ship_cost.png|24px]]&#10;! 条件&#10;|-&#10;| style=&quot;text-align: right&quot; | {{red|+1%}} || 每点通货膨胀 [[inflation|通货膨胀]]&amp;lt;ref name=sm&gt;See in {{path|static modifiers}} ([[Static modifiers]]).&amp;lt;/ref&gt;&#10;|}&#10;理念与政策：&#10;{{bonus table|Galley cost}}&#10;&#10;&#039;&#039;&#039;运输船&#039;&#039;&#039;：&#10;{| class=&quot;mildtable&quot;&#10;! style=&quot;width:30px&quot; | [[File:Heavy_ship_cost.png|24px]]&#10;! 条件&#10;|-&#10;| style=&quot;text-align: right&quot; | {{red|+1%}} || 每点通货膨胀 [[inflation|通货膨胀]]&amp;lt;ref name=sm&gt;See in {{path|static modifiers}} ([[Static modifiers]]).&amp;lt;/ref&gt;&#10;|}&#10;理念与政策：&#10;{{bonus table|transport cost}}&#10;&#10;=== {{icon|shipbuilding time}}造船时间 ===&#10;船只的建造时间的计算公式如下：&#10;: &amp;lt;math&gt;\text{造船时间} = \text{基础时间} \cdot \left( 100\% +  \sum\text{造船时间修正} \right)&amp;lt;/math&gt;&#10;&#10;==== 基础时间 ====&#10;建造船只的基础时间为：&amp;lt;ref name=defines /&gt;&#10;{| class=&quot;wikitable&quot;&#10;|-&#10;! 船只种类 !! 建造天数&#10;|-&#10;| {{icon|heavy ship|24px}} 重型船只&#10;| style=&quot;text-align:right&quot; | 730 &#10;|-&#10;| {{icon|heavy ship|24px}} 轻型船只&#10;| style=&quot;text-align:right&quot; | 365 &#10;|-&#10;| {{icon|galley|24px}} 桨帆船&#10;| style=&quot;text-align:right&quot; | 365 &#10;|-&#10;| {{icon|transport|24px}} 运输船&#10;| style=&quot;text-align:right&quot; | 365 &#10;|}&#10;&#10;==== 造船时间修正 ====&#10;造船时间受全国修正和省份修正之加算影响。&#10;&#10;===== 全国修正 =====&#10;{| class=&quot;mildtable&quot;&#10;! style=&quot;width:30px&quot; | {{icon|shipbuilding time}}&#10;! 条件&#10;|-&#10;| align=right | {{red|+2%}}{{0|.0}} || 每一点 {{icon|war exhaustion}} 厌战&#10;|-&#10;| align=right | {{green|−10%}}{{0|.0}} || {{icon|parliament}} 国会通过议案“扩编海军”&#10;|}&#10;理念与政策：&#10;{{bonus table|shipbuilding time}}&#10;&#10;===== 省份修正 =====&#10;{| class=&quot;mildtable&quot;&#10;! style=&quot;width:30px&quot; | {{icon|local shipbuilding time}}&#10;! 条件&#10;|-&#10;| align=right | {{red|+20%}}{{0|.0}} || 被 [[File:Blockade enemy ports.png|24px]] 封锁的省份&#10;|-&#10;| align=right | {{red|+30%}}{{0|.0}} || 被 {{icon|looting speed}} 劫掠的省份&#10;|-&#10;| align=right | {{red|+10%}}{{0|.0}} || 每一点 {{icon|local unrest|24px}} 叛乱度&#10;|-&#10;| align=right | {{green|−1%}}{{0|.0}} || 每点省份 {{icon|base tax}} 基础生产&#10;|-&#10;| align=right | {{green|−25%}}{{0|.0}} || 省份拥有 {{icon|western_shipyard|28px}} 造船厂&#10;|-&#10;| align=right | {{green|−50%}}{{0|.0}} || 省份拥有 {{icon|western_grand_shipyard|28px}} 大船厂&#10;|-&#10;|}&#10;&#10;===征召运输船===&#10;{{expansion|lev}}&#10;拥有[[Eastern Plutocracy|东方财阀政治]]、 [[Kongsi Federation|公司联邦]]、[[Livonian Admiralty|利沃尼亚海军政府]] 或[[Livonian Plutocracy|利沃尼亚财阀政治]]政府改革项的国家，可以向商人阶层廉价征召运输船。&amp;lt;br&gt;&#10;征召运输船功能在生产界面拥有一个单独页面，This adds a new template to the macrobuilder, which will dynamically include enough transports so that after building it, 80% of the force limit will be made up of transports. &amp;lt;br&gt;&#10;Building these tranports will only take 50% of the normal time and cost 20% less sailors. &amp;lt;br&gt;&#10;The monetary cost will be 1 years worth of income, multiplied by the percentage of forcelimit thats being build (80% = 0.8). &amp;lt;br&gt;&#10;At the least, they will be 20% cheaper than regular transports (this is relevant for nations with very high yearly income). &amp;lt;br&gt;&#10;The lowest price the template can reach is 1 ducat per ship (this is relevant for poor nations), unaffected by further reductions to ship cost. &amp;lt;br&gt;&#10;Exept for this, reductions to ship cost interact normally with drafting. &amp;lt;br&gt;&#10;&#10;== 海军上限与维护费==&#10;{{SVersion|1.24}}&#10;===[[File:naval forcelimit.png]] 海军上限===&#10;{{Main|部队上限}}&#10;每个国家都会有海军上限，上限大小主要取决于沿海省份的总发展度与沿海贸易中心的多少。&#10;&#10;下列理念与政策会增加海军上限：&#10;{{bonus table|naval forcelimit modifier}}&#10;&#10;==={{icon|naval maintenance}} 维护费===&#10;每艘船每个月都需要一定金钱来进行维护。船只基础维护费由船只类型，建造船只&#039;&#039;&#039;花费&#039;&#039;&#039;的比例和&#039;&#039;&#039;维护费比例&#039;&#039;&#039;决定的。此花费又与全局花费修正相乘来获得每一艘船每个月的维护费。&#10;&#10;计算海军维护费的公式如下：&#10;: &amp;lt;math&gt;\text{海军维护费}_\text{船只} = \left(\text{基础海军维护费}_\text{船只类型 } \right) \cdot \left( 100\% + \text{海军维护费修正}_\text{科技} \right) \cdot \left( 100\% + \sum\text{海军维护费修正}_\text{没有科技} \right) \cdot \left( 100\% + \sum\text{船只花费修正} \right)&amp;lt;/math&gt;&#10;&#10;其中：&#10;: &amp;lt;math&gt;\text{基础海军维护费}_\text{船只类型} = \left( \text{船只花费} \right) \cdot \left[ \text{trunc} \left( \frac{\text{维护费比例}} {12} , 3 \right) \right] &amp;lt;/math&gt;&#10;&#10;游戏内核使用[https://en.wikipedia.org/wiki/Truncation trunc函数]取整至小数点后第三位。例如：&#10;: &amp;lt;math&gt;\operatorname{trunc}(0.0036,3) = 0.003&amp;lt;/math&gt;&#10;&#10;船只基础花费与维护费因素如下：&#10;{| class=&quot;wikitable&quot;&#10;|-&#10;! 船只种类 !! 基础花费 !! 维护费比例&#10;|-&#10;| {{icon|heavy ship|24px}} 重型船只&#10;| style=&quot;text-align:right&quot; | 50 || 0.10&#10;|-&#10;| {{icon|heavy ship|24px}} 轻型船只&#10;| style=&quot;text-align:right&quot; | 20 || 0.02&#10;|-&#10;| {{icon|galley|24px}} 桨帆船&#10;| style=&quot;text-align:right&quot; | 10 || 0.03&#10;|-&#10;| {{icon|transport|24px}} 运输船&#10;| style=&quot;text-align:right&quot; | 12 || 0.03&#10;|}&#10;&#10;*超过海军上限时，维护费需乘以当前船只数的超限率。比如说，如果海军上限是5，而该国有10艘船，那么维护费会变为2倍。&#10;*实际游戏中，假设全舰队都由单一舰种构成，超过海军上限的第一艘船的边际维护费可以大致看作正常维护费的两倍。例如，当达到最大上限时，下一艘船会收取其普通维护费的200%。该乘数会随着现有船只和海军上限的比例翻倍。&#10;*当海军全由轻型船只组成时，轻型船只的建造花费惩罚会变成平方计算。即在150%的海军上限的情况下，海军维护费会是正常情况的225%。在这种情况下，边际维护费约为3*海军上限的平方。比如说，在150%海军上限时，下一艘船的维护费大约是其普通维护费的675%。&#10;* 与陆军不同，科技修正与海军维护费的修正用乘法与其它修正叠加。因此，拉低维护费对海军战斗力的影响相对于陆军要低。&#10;* 同一舰种下每艘超限船只的维护费约为普通的2倍。即当处于海军上限的150%时，下一艘船的维护费是正常的3倍。&#10;{{bonus table|naval maintenance modifier}}&#10;&#10;此外，收取战争税还会获得一个持续两年的{{green|-20%}}维护费修正。&#10;&#10;====封存舰队====&#10;{{expansion|aow}}&#10;&#039;&#039;&#039;封存&#039;&#039;&#039;一只舰队意味着将会将该舰队维护费降至一半，船只的耐久度和 {{icon|sailors}} 水手数会每月降低5%至最大值的25%。可以在任意时间取消封存以正常速度恢复（每月10%）至正常状态。被封存的舰队无法移动但可以与其它封存舰队合并，也可被分为小股舰队。&#10;&#10;==海军质量==&#10;{{SVersion|1.24}}&#10;数量固然是赢得海战不可或缺的因素，但质量或许更加重要。因为海军战斗宽度的存在，同一时间进入战场的海军数量是有限制的，所以伤害更高的船只会在战斗中迅速地取得优势。&#10;&#10;部分[[理念组]]和国家理念可以增加海军在战斗中的表现。&#10;&#10;===总体质量提升===&#10;[[外交科技]]升级带来的[[海军单位|舰种]]换代是海军质量最为直观的提升。每几级外交科技的攀升都会解锁新的船只类型，必须升级或重建才能将已有的船只换新。不仅如此，外交科技的每几级提升都会增加一定的海军士气。&#10;&#10;====作战能力提升====&#10;作战能力减少船只所受的伤害（同时作用于耐久和士气）。游戏中只有对特定单位有效的作战能力修正。&#10;&#10;&#039;&#039;&#039;重型船只作战能力&#039;&#039;&#039;&#10;{{bonus table|heavy ship combat ability}}&#10;&#10;&#039;&#039;&#039;轻型船只作战能力&#039;&#039;&#039;&#10;{{bonus table|light ship combat ability}}&#10;&#10;&#039;&#039;&#039;桨帆船作战能力&#039;&#039;&#039;&#10;{{bonus table|galley combat ability}}&#10;&#10;&#039;&#039;&#039;运输船作战能力&#039;&#039;&#039;&#10;{{bonus table|transport combat ability}}&#10;&#10;===={{icon|morale of navies}} 海军士气提升====&#10;海军士气代表了舰队能在战斗中的持续时间，可被下列理念与政策提升：&#10;&#10;&#039;&#039;&#039;海军士气&#039;&#039;&#039;&#10;{{bonus table|naval morale}}&#10;&#10;===={{icon|naval morale recovery}} 海军士气恢复提升====&#10;&#039;&#039;&#039;海军士气恢复&#039;&#039;&#039;&#10;{{bonus table|naval morale recovery}}&#10;&#10;=={{icon|admiral}} 海军将领==&#10;{{SVersion|Timeless}}&#10;舰队可被[[将领#将领类型|海军上将或探险家]]统领。唯一区别就是海军上将在刷出的时候会获得更高的能力值。海军将领的有无对战斗结果意义重大。海军将领的能力值可被以下理念与政策提升：&#10;&#10;&#039;&#039;&#039;海军将领火力&#039;&#039;&#039;&#10;{{bonus table|Naval leader fire}}&#10;&#10;&#039;&#039;&#039;海军将领冲击&#039;&#039;&#039;&#10;{{bonus table|Naval leader shock}}&#10;&#10;&#039;&#039;&#039;海军将领机动&#039;&#039;&#039;&#10;{{bonus table|Naval leader maneuver}}&#10;&#10;==海军传统==&#10;{{SVersion|Timeless}}&#10;{{main|军事传统#海军传统}}&#10;海军传统代表了一个国家在海军上的经验，此值极大地影响该国控制海洋的能力。海军传统可被理念，海战，探索和保护贸易提升。&#10;100海军传统可提供以下增益，0-100传统可获得的增益是线性增加的：&#10;{{#lst:Static modifiers|NavyT}}&#10;&#10;==[[File:Attrition.png]] 补给、损耗及维修==&#10;{{SVersion|1.24}}&#10;&#10;===补给范围===&#10;补给范围是决定[[轻型船只]]的[[保护贸易]]行动范围的重要因素，此外还决定船只在某一区块是否遭受损耗。&#10;基础补给范围为150。可被下列贸易范围修正增加：&#10;{{bonus table|trade range}}&#10;* 补给距离不可被固定贸易范围修正增加。比如说[[科技#外交|外交科技]]会增加固定数值的贸易范围 （比如说10，20...），它不会影响补给范围。&#10;*一个增加补给范围的好方法就是在超出补给范围或船只急需修复的地方寻求附近国家的[[舰队停靠权]]。&#10;&#10;===损耗===&#10;海军会在处于开放海域或离港时间过长时遭受损耗。一支舰队不会在补给距离之内的沿岸海域遭受损耗（反之在开放海域一定会遭受损耗）。不仅如此，即使在补给距离之外，只要海军处于拥有可停靠港口的海区也不会遭受损耗。&#10;&#10;决定损害伤害的规则如下：&#10;* 月度损耗伤害会在每月的第一天按照损耗百分比减少舰队中所有船只的耐久。&#10;* 移动至任意海区会有50%的几率使任意船只遭受损耗伤害，除非它们在移动到的瞬间进入战斗。注意只有在至少一只舰队是停滞的状态下两只舰队才能进入战斗。&#10;* 探险家带领的舰队有几率不会遭受任何损害。这种特性使其麾下的舰队可以移动到更远处。该几率与每艘船的耐久值成正比，与要遭受的损耗值成反比，且在沿岸海区时会大幅提升。&#10;* 在激活DLC {{icon|ed}} 黄金国后，一个舰队在进行地区性探索时（探索海区或海岸时）无论何时何地都不会遭受损耗，坏处则是探索舰队在完成任务回到母港之前不会接受其它任何指令。但进行环球航行的舰队仍会遭受损耗。&#10;&#10;以下因素会影响海军损耗：&#10;{{bonus table|naval attrition}}&#10;* 基础损耗：{{red|+1%}}&#10;* 在海上的时间：每月{{red|+1%}}，在外交科技到达22级后失效 &#10;* 开放海域：{{red|+5%}}&#10;* 海军将领机动能力：每点{{green|-1%}}&#10;&#10;因为无法管理自身的损耗状况，所以AI不会遭受任何的损耗伤害。而是被内部游戏规则限定了AI舰队探索或作战时可行进的距离。&#10;&#10;===[[File:global ship repair.png]] 船只修复===&#10;舰队受到损害后会在靠港后自动修复自身的伤害。停靠在同一港口的所有舰队会被一起修复。修复会消耗水手数量。&#10;&#10;====自动靠港维修====&#10;一旦一支舰队的平均士气被降低到一定程度，该舰队会自动寻找临近友军港口停靠修复船只及恢复士气。在任务设置中，可以设置一个舰队维修前可承受伤害的阈值。&#10;&#10;==== 维修速度 ====&#10;靠港船只会在每月第一天自动修复。若海军维护费为最大的话，修复值为{{green|10%}}&amp;lt;ref&gt;见 {{path|defines}}: MONTHLY_REPAIR = 0.1&amp;lt;/ref&gt;，维护费越低，维修速度也会线性降低。维修速度被以下修正影响。&#10;;全国修正&#10;{{bonus table|global ship repair}}&#10;;省份修正&#10;:在有 {{icon|western_shipyard|28px}} 造船厂的情况下{{green|+25%}}&#10;:在有 {{icon|western_grand_shipyard|28px}} 大船厂的情况下{{green|+50%}} &#10;&#10;==== 海上维修 ====&#10;航海理念的完成奖励让船只可以在补给距离内沿岸海区修复的能力。&#10;修复速率为每月修复船只耐久的6%，此速率不被任何修正影响。&#10;&#10;== 特殊舰船 ==&#10;{{SVersion|1.35}}&#10;{{Hatnote|与陆军特殊兵种雷同，此处描述的是海军的特殊兵种。关于陆军特殊兵种可以参见： [[陆军#特殊兵种]].}}&#10;{{expansion|dom}}&#10;部分国家通过完成任务，启用政府改革项或是激活国家理念后可以建造海军特殊舰船。一般情况下这些特殊舰船所花费的{{icon|ducat|24px}} 金币和 {{icon|sailors|24px}}海员与正常的船只是一样的。&#10;&#10;可以通过如下公式计算可建造的特殊舰船数量：&#10;&#10;&#10;&amp;lt;math&gt;\text {海军上限} \cdot \left (\sum \text{该种特殊舰船比例} \right) \cdot \left (1 + \sum \text{特殊舰船上限修正} \right )&amp;lt;/math&gt;&#10;&#10;&#10;=== 加莱赛战船 ===&#10;加莱赛战船是一种特殊的 {{icon|galley}} 桨帆船，仅限拥有[[通用政府改革#商贸军械库|商贸军械库]]政府改革的国家，或是主流文化是利古里亚和威尼斯的国家建造建造此类舰船&#10;&#10;加莱赛战船只能在有码头或造船厂的省份建造。&#10;&#10;&#10;舰船修正如下：&#10;{{#lst:Static_modifiers|Galleass}}&#10;&#10;&#10;加莱赛战船的可建造数量是基于海军上限的一定比例。加莱赛战船的建造比例受到以下因素的影响：&#10;* {{green|+50%}}：拥有 {{icon|navy tradition}}{{green|100}} 海军传统（达到最大值时）&#10;&#10;=== 主力舰 ===&#10;主力舰是一种特殊的{{icon|heavy ship}}重型船舰，仅限 {{flag|England}}和 {{flag|Great Britain}}在完成任务[[英格兰任务#扩建皇家海军|扩建皇家海军]]后建造。&#10;主力舰只能在有码头或造船厂的省份建造。&#10;&#10;&#10;舰船修正如下：&#10;{{#lst:Static_modifiers|MoW}}&#10;&#10;&#10;主力舰的可建造数量是基于海军上限的一定比例。主力舰的建造比例受到以下因素的影响：&#10;*{{green|+20%}}：完成[[英格兰任务#扩建皇家海军|扩建皇家海军]]任务&#10;&#10;&#10;以下因素会影响主力舰的舰船修正：&#10;* “主力舰法案” [[议会#议案|议案]]：&#10;**{{icon|ship durability}}{{green|+15%}} 船只耐久度&#10;&#10;=== 东印度商船 ===&#10;东印度商船是一种特殊的 {{icon|light ship}} 轻型船只，仅限拥有[[君主制#省督君主制|省督君主制]]、[[共和制#尼德兰共和国|尼德兰共和国]]、[[神权制#尼德兰总主教区|尼德兰总主教区]]政府改革的国家，或者是主流文化为荷兰、弗兰芒和弗里斯兰的国家建造此类舰船。 &#10;&#10;&#10;舰船修正如下：&#10;{{#lst:Static_modifiers|VOCI}}&#10;*&#039;&#039;&#039;可以运载单位&#039;&#039;&#039;&#10;&#10;&#10;东印度商船的可建造数量是基于海军上限的一定比例。东印度商船的建造比例受到以下因素的影响：&#10;*{{green|+25%}}：拥有 {{icon|trade efficiency}}{{green|100%}} 贸易效率（达到最大值时）&#10;*{{green|+20%}}：拥有 [[君主制#省督君主制|省督君主制]]， [[共和制#尼德兰共和国|尼德兰共和国]]或[[神权制#尼德兰总主教区|尼德兰总主教区]]政府改革&#10;&#10;=== 卡拉维尔帆船 ===&#10;卡拉维尔帆船是一种特殊的 {{icon|light ship}} 轻型船只，仅限 {{flag|Aragon}}（完成[[阿拉贡任务#我们的海|我们的海]]任务）、 {{flag|Castile}}（完成[[西班牙任务#皇家造船厂|皇家造船厂]]任务）以及 {{flag|Portugal}}（完成[[葡萄牙任务#改革海军|改革海军]]任务）建造此类舰船。&#10;&#10;卡拉维尔帆船只能在伊比利亚文化的省份上建造，且不能在安达卢西亚文化的省份上建造。&#10;&#10;舰船修正如下：&#10;{{#lst:Static_modifiers|Caravel}}&#10;&#10;&#10;卡拉维尔帆船的可建造数量是基于海军上限的一定比例。卡拉维尔帆船的建造比例受到以下因素的影响：&#10;*{{green|10%}}：完成[[西班牙任务#皇家造船厂|皇家造船厂]]任务&#10;*{{green|10%}}：完成[[葡萄牙任务#改革海军|改革海军]]任务&#10;*{{green|20%}}：完成[[阿拉贡任务#我们的海|我们的海]]任务&#10;&#10;=== 盖伦帆船 ===&#10;盖伦帆船是一种特殊的 {{icon|heavy ship}} 重型船只，仅限 {{flag|Castile}}（完成[[西班牙任务#皇家造船厂|皇家造船厂]]任务）以及 {{flag|Portugal}}（完成[[葡萄牙任务#改革海军|改革海军]]任务）建造此类舰船。&#10;&#10;盖伦帆船只能在伊比利亚文化的省份上建造，而不能在安达卢西亚文化的省份上建造。&#10;&#10;舰船修正如下：&#10;{{#lst:Static_modifiers|Galleon}}&#10;&#10;盖伦帆船的可建造数量是基于海军上限的一定比例。盖伦帆船的建造比例受到以下因素的影响：&#10;*{{green|10%}}：完成[[西班牙任务#皇家造船厂|皇家造船厂]]任务&#10;*{{green|10%}}：完成[[葡萄牙任务#改革海军|改革海军]]任务&#10;&#10;=== 龟船 ===&#10;龟船是一种特殊的桨帆船，它只允许在{{flag|Korea}}朝鲜激活第六项国家理念 &#039;&#039;&#039;龟船&#039;&#039;&#039; 后才能建造。&#10;&#10;&#10;舰船修正如下：&#10;{{#lst:Static_modifiers|Geobukseon}}&#10;&#10;&#10;龟船的可建造数量是基于海军上限的一定比例。龟船的建造比例受到以下因素的影响：&#10;*{{green|50%}}：{{icon|navy tradition}}{{green|100}} 海军传统（达到最大值时）&#10;&#10;== 参考资料 ==&#10;&amp;lt;references/&gt;&#10;&#10;[[Category:军事]]&#10;{{military navbox}}&#10;[[en:Navy]]&#10;本页使用的模板：&#10;&#10;Static modifiers（查看源代码）静态修正（查看源代码）Template:0（查看源代码）Template:Ambox（查看源代码）（受保护）Template:Ambox/core（查看源代码）（受保护）Template:Ambox 2020（查看源代码）Template:BTRow（查看源代码）Template:Bonus table（查看源代码）Template:Clear（查看源代码）（受保护）Template:Country data Aragon（查看源代码）Template:Country data Castile（查看源代码）Template:Country data England（查看源代码）Template:Country data Great Britain（查看源代码）Template:Country data Korea（查看源代码）Template:Country data Portugal（查看源代码）Template:DLC-only（查看源代码）Template:Expansion（查看源代码）Template:Flag（查看源代码）（受保护）Template:Flag/core（查看源代码）Template:Green（查看源代码）（受保护）Template:Grey-bd（查看源代码）Template:Hatnote（查看源代码）（受保护）Template:Hover box（查看源代码）Template:Icon（查看源代码）（受保护）Template:Icon/a（查看源代码）Template:Icon/b（查看源代码）Template:Icon/c（查看源代码）Template:Icon/d（查看源代码）Template:Icon/e（查看源代码）Template:Icon/g（查看源代码）Template:Icon/h（查看源代码）Template:Icon/i（查看源代码）Template:Icon/j（查看源代码）Template:Icon/l（查看源代码）Template:Icon/m（查看源代码）Template:Icon/n（查看源代码）Template:Icon/p（查看源代码）Template:Icon/r（查看源代码）Template:Icon/s（查看源代码）Template:Icon/t（查看源代码）Template:Icon/v（查看源代码）Template:Icon/w（查看源代码）Template:Main（查看源代码）（受保护）Template:Military navbox（查看源代码）（受保护）Template:Navbox（查看源代码）（受保护）Template:Navboxgroup（查看源代码）（受保护）Template:Path（查看源代码）（受保护）Template:Red（查看源代码）（受保护）Template:SVersion（查看源代码）（受保护）Template:Tlx（查看源代码）Template:Version（查看源代码）（受保护）Template:白字（查看源代码）返回海军。&#10;"/>
+<meta name="keywords" content="欧陆风云4百科,海军"/>
+<meta name="apple-mobile-web-app-capable" content="Yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+<meta name="mobile-web-app-capable" content="Yes"/>
+<meta name="theme-color" content="#103D8F"/>
+<meta name="msapplication-navbutton-color" content="#103D8F"/>
+<meta name="twitter:card" content="summary"/>
+<link rel="icon" href="https://www.eu4cn.com/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="https://www.eu4cn.com/opensearch_desc.php" title="欧陆风云4百科 (zh)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://www.eu4cn.com/api.php?action=rsd"/>
+<link rel="alternate" hreflang="zh" href="https://www.eu4cn.com/zh/海军"/>
+<link rel="alternate" hreflang="zh-Hans" href="https://www.eu4cn.com/zh-hans/海军"/>
+<link rel="alternate" hreflang="zh-Hant" href="https://www.eu4cn.com/zh-hant/海军"/>
+<link rel="alternate" hreflang="zh-Hans-CN" href="https://www.eu4cn.com/zh-cn/海军"/>
+<link rel="alternate" hreflang="zh-Hant-HK" href="https://www.eu4cn.com/zh-hk/海军"/>
+<link rel="alternate" hreflang="zh-Hant-MO" href="https://www.eu4cn.com/zh-mo/海军"/>
+<link rel="alternate" hreflang="zh-Hans-MY" href="https://www.eu4cn.com/zh-my/海军"/>
+<link rel="alternate" hreflang="zh-Hans-SG" href="https://www.eu4cn.com/zh-sg/海军"/>
+<link rel="alternate" hreflang="zh-Hant-TW" href="https://www.eu4cn.com/zh-tw/海军"/>
+<link rel="alternate" hreflang="x-default" href="https://www.eu4cn.com/wiki/海军"/>
+<link rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+<link rel="alternate" type="application/atom+xml" title="欧陆风云4百科的Atom feed" href="https://www.eu4cn.com/index.php?title=Special:%E6%9C%80%E8%BF%91%E6%9B%B4%E6%94%B9&amp;feed=atom"/>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script data-ad-client="ca-pub-1612414434963106" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114739240-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-114739240-1');
+</script>
+<meta property="og:title" content="海军"/>
+<meta property="og:site_name" content="欧陆风云4百科"/>
+<meta property="og:url" content="https://www.eu4cn.com/wiki/%E6%B5%B7%E5%86%9B"/>
+<meta property="og:image" content="https://www.eu4cn.com/images/logo/logo.png"/>
+<meta property="article:modified_time" content="2023-08-03T14:50:16Z"/>
+<meta property="article:published_time" content="2023-08-03T14:50:16Z"/>
+<script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"Article","name":"\u67e5\u770b\u201c\u6d77\u519b\u201d\u7684\u6e90\u4ee3\u7801 - \u6b27\u9646\u98ce\u4e914\u767e\u79d1\uff0c\u4eba\u4eba\u53ef\u4ee5\u7f16\u8f91\u7684\u6b27\u9646\u98ce\u4e914\u4e2d\u6587\u767e\u79d1\u5168\u4e66","headline":"\u67e5\u770b\u201c\u6d77\u519b\u201d\u7684\u6e90\u4ee3\u7801 - \u6b27\u9646\u98ce\u4e914\u767e\u79d1\uff0c\u4eba\u4eba\u53ef\u4ee5\u7f16\u8f91\u7684\u6b27\u9646\u98ce\u4e914\u4e2d\u6587\u767e\u79d1\u5168\u4e66","mainEntityOfPage":"\u67e5\u770b\u201c\u6d77\u519b\u201d\u7684\u6e90\u4ee3\u7801","identifier":"https:\/\/www.eu4cn.com\/wiki\/%E6%B5%B7%E5%86%9B","url":"https:\/\/www.eu4cn.com\/wiki\/%E6%B5%B7%E5%86%9B","dateModified":"2023-08-03T14:50:16Z","datePublished":"2023-08-03T14:50:16Z","image":{"@type":"ImageObject","url":"https:\/\/www.eu4cn.com\/images\/logo\/logo.png"},"author":{"@type":"Organization","name":"\u6b27\u9646\u98ce\u4e914\u767e\u79d1","url":"https:\/\/www.eu4cn.com","logo":{"@type":"ImageObject","url":"https:\/\/www.eu4cn.com\/images\/logo\/logo.png","caption":"\u6b27\u9646\u98ce\u4e914\u767e\u79d1"}},"publisher":{"@type":"Organization","name":"\u6b27\u9646\u98ce\u4e914\u767e\u79d1","url":"https:\/\/www.eu4cn.com","logo":{"@type":"ImageObject","url":"https:\/\/www.eu4cn.com\/images\/logo\/logo.png","caption":"\u6b27\u9646\u98ce\u4e914\u767e\u79d1"}},"potentialAction":{"@type":"SearchAction","target":"https:\/\/www.eu4cn.com\/index.php?title=Special:Search&search={search_term}","query-input":"required name=search_term"}}</script>
+<link rel="stylesheet" href="http://www.unpkg.com/@fortawesome/fontawesome-free@5.15.1/css/all.css" />
+<link rel="stylesheet" href="http://www.unpkg.com/@fortawesome/fontawesome-free@5.15.1/css/v4-shims.css" />
+<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+<body class="Liberty width-size mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-海军 rootpage-海军 skin-liberty action-edit skin--responsive">		<header>
+			<div class="nav-wrapper navbar-fixed-top">
+						<nav class="navbar navbar-dark yamm">
+			<a class="navbar-brand" href="https://www.eu4cn.com/wiki/首页"></a>
+			<ul class="nav navbar-nav">
+				<li class="dropdown nav-item">
+					<a class="nav-link navbar-right" href="#" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+						<div class="navbar-brand-subtitle">欧陆风云4</div>
+						<div class="navbar-family">ParaWikis</div>
+					</a>
+				<ul class="dropdown-menu" aria-labelledby="dLabel">
+					<li>
+		                  <div class="yamm-content">
+		                    <div class="row">
+						 							<ul class="col-sm-4 list-unstyled">
+							<li><p class="meganav-item"><strong>最新百科</strong></p></li>
+								<a href="http://cs2.parawikis.com/" class="dropdown-item meganav-item">都市天际线2百科</a>
+								<a href="http://h3.parawikis.com/" class="dropdown-item meganav-item">英雄无敌3百科</a>
+								<a href="http://vic3.parawikis.com/" class="dropdown-item meganav-item">维多利亚3百科</a>
+								<a href="http://ce2.parawikis.com/" class="dropdown-item meganav-item">奇妙探险队2百科</a>
+								<a href="http://eos.parawikis.com/" class="dropdown-item meganav-item">罪恶帝国百科</a>
+								<a href="http://ir.parawikis.com/" class="dropdown-item meganav-item">英白拉多：罗马百科</a>
+							</ul>
+							<ul class="col-sm-4 list-unstyled">
+								<li><p class="meganav-item"><strong>热门百科</strong></p></li>
+								<a href="http://stellaris.parawikis.com/" class="dropdown-item meganav-item">群星百科</a>
+								<a href="http://www.eu4cn.com/" class="dropdown-item meganav-item">欧陆风云4百科</a>
+								<a href="http://ck2.parawikis.com/" class="dropdown-item meganav-item">十字军之王2百科</a>
+								<a href="http://ck3.parawikis.com/" class="dropdown-item meganav-item">十字军之王3百科</a>
+								<a href="http://hoi4.parawikis.com/" class="dropdown-item meganav-item">钢铁雄心4百科</a>
+								<a href="http://vic2.parawikis.com/" class="dropdown-item meganav-item">维多利亚2百科</a>
+							</ul>
+							<ul class="col-sm-4 list-unstyled">
+								<li><p class="meganav-item"><strong>ParaWikis</strong></p></li>
+								<a href="http://www.parawikis.com/wiki/ParaWikis:申请建站" class="dropdown-item meganav-item">申请建站</a>
+								<a href="http://www.parawikis.com/" class="dropdown-item meganav-item">ParaWikis</a>
+								<a href="http://commons.parawikis.com/" class="dropdown-item meganav-item">ParaCommons</a>
+							</ul>		                    </div>
+		                  </div>
+		                </li>
+				</ul>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="https://www.eu4cn.com/wiki/Special:最近更改" class="nav-link" title="本wiki的最近更改列表[r]" accesskey="r"><span class="fas fa-sync"></span><span class="hide-title">最近更改</span></a>				</li>
+				<li class="nav-item">
+					<a href="https://www.eu4cn.com/wiki/Special:随机页面" class="nav-link" title="加载一个随机页面[x]" accesskey="x"><span class="fa fa-random"></span><span class="hide-title">随机页面</span></a>				</li>
+				<li class="nav-item">
+					<a href="http://shang.qq.com/wpa/qunwpa?idkey=3bb76f6a58594b18c2defdc03af7ec2703fb2e2cc8fef6dadd1dcb896c0ede1a" target="_blank" class="nav-link" title="加入QQ群">
+						<span class="fa fa-qq"></span><span class="hide-title">加入QQ群</span>
+					</a>
+				</li>
+				<li class="dropdown nav-item">
+					<a class="dropdown-toggle nav-link" href="#" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+						<span class="fa fa-wrench"></span><span class="hide-title">工具</span>
+					</a>
+				<ul class="dropdown-menu" aria-labelledby="dLabel">
+					<li id="t-whatlinkshere" class="mw-list-item"><a href="https://www.eu4cn.com/wiki/Special:链入页面/海军" title="所有链接至本页面的wiki页面列表[j]" accesskey="j" class="dropdown-item">链入页面</a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="https://www.eu4cn.com/wiki/Special:链出更改/海军" rel="nofollow" title="链自本页的页面的最近更改[k]" accesskey="k" class="dropdown-item">相关更改</a></li><li id="t-specialpages" class="mw-list-item"><a href="https://www.eu4cn.com/wiki/Special:特殊页面" title="所有特殊页面的列表[q]" accesskey="q" class="dropdown-item">特殊页面</a></li><li id="t-info" class="mw-list-item"><a href="https://www.eu4cn.com/index.php?title=%E6%B5%B7%E5%86%9B&amp;action=info" title="关于此页面的更多信息" class="dropdown-item">页面信息</a></li><li id="t-cargopagevalueslink" class="mw-list-item"><a href="https://www.eu4cn.com/index.php?title=%E6%B5%B7%E5%86%9B&amp;action=pagevalues" rel="cargo-pagevalues" class="dropdown-item">页面值</a></li>				</ul>
+				</li>
+				<li class="dropdown nav-item"><a class="nav-link dropdown-toggle dropdown-toggle-fix" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true" title="帮助"><span class="fa fa-question"></span><span class="hide-title">帮助</span></a><div class="dropdown-menu" role="menu"><a class="dropdown-item" href="https://www.eu4cn.com/wiki/Project:译名手册" title="譯名手冊"><span class="fa fa-book"></span>譯名手冊</a><a class="dropdown-item" href="https://www.eu4cn.com/wiki/Project:字词转换" title="字詞轉換"><span class="fa fa-language"></span>字詞轉換</a><a class="dropdown-item" href="https://www.eu4cn.com/wiki/Project:编辑指南" title="編輯指南"><span class="fa fa-graduation-cap"></span>編輯指南</a><a class="dropdown-item" href="https://www.eu4cn.com/wiki/Project:编辑规范" title="編輯規範"><span class="fa fa-lightbulb"></span>編輯規範</a><a class="dropdown-item" href="https://www.eu4cn.com/wiki/Project:练手沙盒" title="Project:练手沙盒"><span class="fa fa-leaf"></span>練手沙盒</a></div></li><li class="dropdown nav-item"><a class="hidden-xs-down nav-link" data-toggle="" role="button" aria-haspopup="true" aria-expanded="true" title="ParaTranz" href="https://paratranz.cn/"><span class="fa fa-language"></span><span class="hide-title">ParaTranz</span></a></li><li class="dropdown nav-item"><a class="hidden-xs-down nav-link" data-toggle="" role="button" aria-haspopup="true" aria-expanded="true" title="52PCGame" href="http://bbs.52pcgame.net/"><span class="fa fa-comments"></span><span class="hide-title">52PCGame</span></a></li><li class="dropdown nav-item"><a class="hidden-xs-down nav-link" data-toggle="" role="button" aria-haspopup="true" aria-expanded="true" title="Project:捐款" href="https://www.eu4cn.com/wiki/Project:捐款"><span class="fa fa-heart"></span><span class="hide-title">资助我们</span></a></li>			</ul>
+					<div class="navbar-login">
+							<a href="#" class="none-outline" data-toggle="modal" data-target="#login-modal">
+					<span class="fa fa-sign-in"></span>
+				</a>
+					</div>
+									<form action="https://www.eu4cn.com/index.php" id="searchform" class="form-inline">
+			<input type="hidden" name="title" value="Special:搜索"/>
+			<div class="input-group">
+				<input type="search" name="search" placeholder="在欧陆风云4百科搜索" aria-label="在欧陆风云4百科搜索" autocapitalize="sentences" title="在欧陆风云4百科搜索[f]" accesskey="f" class="form-control" id="searchInput"/>				<span class="input-group-btn">
+					<button type="submit" name="go"
+						value="前往" id="searchGoButton"
+							class="btn btn-secondary" type="button"><span class="fa fa-eye"></span></button>
+					<button type="submit" name="fulltext"
+						value="搜索"
+						id="mw-searchButton" class="btn btn-secondary" type="button">
+						<span class="fa fa-search"></span></button>
+				</span>
+			</div>
+		</form>
+			</nav>
+				</div>
+		</header>
+		<section>
+			<div class="content-wrapper">
+							<aside>
+			<div class="liberty-sidebar">
+				<div class="live-recent-wrapper">
+					<div id='mw-data-after-content'>
+	<div class="read-more-container"></div>
+</div>
+												<div
+			class="live-recent"
+			data-article-ns="0|4|10|12|14"
+			data-talk-ns="1|5|7|9|11|13|15"
+		>
+			<div class="live-recent-header">
+			<ul class="nav nav-tabs">
+				<li class="nav-item">
+					<a href="javascript:" class="nav-link active" id="liberty-recent-tab1">
+						最近更改					</a>
+				</li>
+				<li class="nav-item">
+					<a href="javascript:" class="nav-link" id="liberty-recent-tab2">
+						最近讨论					</a>
+				</li>
+			</ul>
+			</div>
+			<div class="live-recent-content">
+				<ul class="live-recent-list" id="live-recent-list">
+					<li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li>				</ul>
+			</div>
+			<div class="live-recent-footer">
+				<a href="https://www.eu4cn.com/wiki/Special:最近更改" title="Special:最近更改"><span class="label label-info">查看更多</span></a>			</div>
+		</div>
+						<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 侧栏 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1612414434963106"
+     data-ad-slot="1728061201"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-K4RD1C6KBW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-K4RD1C6KBW');
+</script>
+				</div>
+										</div>
+			</aside>
+								<div class="container-fluid liberty-content">
+					<div class="liberty-content-header">
+													<div class="alert alert-dismissible fade in alert-info liberty-notice" role="alert">
+								<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+								<div id="localNotice"><div class="sitenotice" lang="zh" dir="ltr"><div style="text-align:center; font-size:125%; line-height: 1; padding: 10px;"><b>欢迎访问欧陆风云4百科！<a href="https://www.eu4cn.com/wiki/Special:用户登录" title="Special:用户登录"><span class="alert-link">注册一个账号</span></a>，一起参与编写吧！这里是<a href="https://www.eu4cn.com/wiki/欧陆风云4百科:当前任务#页面" title="欧陆风云4百科:当前任务"><span class="alert-link">当前的工程</span></a>。</b></div>
+<div style="text-align: center;">如果您想帮助本站建设，欢迎点击<a href="https://www.eu4cn.com/wiki/欧陆风云4百科:捐款" title="欧陆风云4百科:捐款"><b>这里</b></a>捐款！欢迎所有对百科感兴趣的同学加入QQ群：<b>497888338</b>。</div></div></div>							</div>
+															<div class="content-tools">
+				<div class="btn-group" role="group" aria-label="content-tools">
+					<div id="ca-view" class="mw-list-item"><a href="https://www.eu4cn.com/wiki/海军" class="btn btn-secondary tools-btn">阅读</a></div><div id="ca-viewsource" class="selected mw-list-item"><a href="https://www.eu4cn.com/index.php?title=%E6%B5%B7%E5%86%9B&amp;action=edit" title="本页面受到保护。&#10;您可以查看其源代码[e]" accesskey="e" class="btn btn-secondary tools-btn">查看源代码</a></div><div id="ca-history" class="mw-list-item"><a href="https://www.eu4cn.com/index.php?title=%E6%B5%B7%E5%86%9B&amp;action=history" title="本页面过去的版本[h]" accesskey="h" class="btn btn-secondary tools-btn">查看历史</a></div>					<a href="https://www.eu4cn.com/wiki/Talk:海军" class="btn btn-secondary tools-btn" title="关于内容页面的讨论[t]" accesskey="t" id="ca-talk">讨论</a>				</div>
+			</div>
+							<div class="title">
+						<h1>
+							查看“海军”的源代码						</h1>
+						<div class="mw-indicators">
+</div>
+						</div>
+						<div class="contentSub" >
+							←<a href="https://www.eu4cn.com/wiki/海军" title="海军">海军</a>						</div>
+				</div>
+					<div class="liberty-content-main" id="content">
+											<div class="mw-body-content" id="mw-content-text">
+							<div id="mw-content-text" class="mw-body-content"><p>因为以下原因，您没有权限编辑本页：
+</p>
+<div class="permissions-errors">
+<p>您请求的操作仅限属于该用户组的用户执行：<a href="https://www.eu4cn.com/wiki/欧陆风云4百科:用户" title="欧陆风云4百科:用户">用户</a>
+</p>
+</div><hr />
+<p>您可以查看和复制此页面的源代码。
+</p><textarea readonly="" accesskey="," id="wpTextbox1" cols="80" rows="25" style="" class="mw-editfont-monospace" lang="zh" dir="ltr" name="wpTextbox1">{{version|1.24}}
+{{Hatnote|本页面提供了关于海军征募和维护的信息。若想了解海战的信息请见[[海战]]。若想了解海军单位的细节请见[[海军单位]]。}}
+'''海军'''（'''Navy'''）是一个国家争霸制海权最重要的力量。[[原始土著]]不能建造海军。
+
+== 组成部分 ==
+{{SVersion|Timeless}}
+一只海军的基本组成部分就是船只。船只共分为[[海军单位#重型船只|'''重型船只''']]、[[海军单位#轻型船只|'''轻型船只''']]、[[海军单位#桨帆船|'''桨帆船''']]和[[海军单位#运输船|'''运输船''']]。
+
+船只可组成舰队。舰队可被[[将领#将领类型|海军上将或探索者]]统领。舰队的移动速度由最慢的船只决定，所以一般并不推荐混合舰队，除非需要大船来护卫运输船之类的小船。
+
+== 打造一支舰队 ==
+{{SVersion|1.24}}
+船只的建造需要一个拥有且实际控制的核心港口 {{icon|province}} 省份，还需消耗一定的{{icon|ducat}} 金钱，{{icon|time}} 时间和 {{icon|sailors}} [[水手]]。每个省份都只能同时建造一艘船只，但多个船只可以在单个省份中顺列建造。
+
+船只的基础花费与时间与船只类型有关，且被省份和国家修正影响。建造完成时，船只只有50%的 {{icon|naval morale}} 士气。超过 {{icon|naval forcelimit}} 海军上限会提升海军的维护费。而且船只不会在解锁新船型后自动升级，会一直保持出厂时的兵种。所以任何想在海上拥有一席之地的国家都必须时刻关注自己海军的情况，随时准备在科技升级后给自己的舰队更新换代。
+
+在激活了DLC {{icon|aow}} [[孙子兵法]]后就无需再重造舰队，可以在拥有且被控制的港口给停泊的舰队来一次全面升级。本操作会将船只的耐久度降为1%，之后照常慢慢恢复。升级的花费和建造新船的花费一样，优势在于更快、更便捷。
+
+==={{icon|ship cost}} 船只花费===
+计算建造船只所花费钱数的计算公式如下：
+:&lt;math>\text{船只花费} = \text{基础花费} \cdot \left( 100\% +  \sum\text{船只花费修正} \right)&lt;/math>
+
+建造船只花费的水手数量不会变化，更不会被现存的任何修正改变。
+
+==== 基础花费 ====
+建造船只的基础花费如下：&lt;ref name=defines>见{{path|defines}}。&lt;/ref>
+:一艘 {{icon|heavy ship}} 重型船只需要50 {{icon|ducats}} 金币和200 {{icon|sailors}} 水手
+:一艘 {{icon|light ship}} 轻型船只需要20 {{icon|ducats}} 金币和50 {{icon|sailors}} 水手
+:一艘 {{icon|Galley}} 桨帆船需要10 {{icon|ducats}} 金币和100 {{icon|sailors}} 水手
+:一艘 {{icon|light ship}} 运输船需要12 {{icon|ducats}} 金币和50 {{icon|sailors}} 水手
+
+==== 船只花费修正 ====
+船只花费受整体和特定类别的船只花费修正之加算影响。
+
+===== {{icon|ship cost}} 整体船只花费修正 =====
+整体船只花费修正改变全部四种[[海军单位]]的建造花费。所有减少海军建造花费的修正同时也减少相应数值的海军维护费。
+
+理念与政策：
+{{bonus table|Ship cost}}
+额外修正：
+:*垄断{{icon|wool}}羊毛的贸易奖励{{green|−5%}}
+:*[[选项#难度|极易难度]]，玩家{{green|−33%}}
+:*[[选项#难度|极难难度]]，AI{{green|−33%}}
+:*{{icon|parliament}} 国会通过议案“扩编海军”{{green|−10%}}
+:*每百分之一的[[通货膨胀]]{{red|+1%}}
+{| class="mildtable plainlist"
+! style="width:30px" | [[File:Ship_cost.png|24px]]
+! 条件
+|-
+| style="text-align: right" | {{green|−33%}} 
+|| [[选项#难度|极易难度]]，玩家{{green|−33%}}
+|-
+| style="text-align: right" | {{green|−33%}} 
+|| [[选项#难度|极难难度]]，AI {{green|−33%}}
+|-
+| style="text-align: right" | {{green|−10%}} ||
+*{{icon|parliament}} 国会通过议案“扩编海军”{{green|−10%}}
+*{{icon|tengri|24px}} 腾格里信仰以 {{icon|ibadi|24px}} 伊巴德派作为兼容宗教
+|-
+| style="text-align: right" | {{green|−5%}} || 
+垄断{{icon|wool}}羊毛的贸易奖励{{green|−5%}}
+|}
+
+=====  特定类别的花费修正 =====
+下列修正只减少某一类船只建造的花费。
+
+'''重型船只'''：
+{| class="mildtable"
+! style="width:30px" | [[File:Heavy_ship_cost.png|24px]]
+! 条件
+|-
+| style="text-align: right" | {{red|+1%}} || 每点 [[inflation|通货膨胀]]&lt;ref name=sm>See in {{path|static modifiers}} ([[Static modifiers]]).&lt;/ref>
+|}
+
+理念与政策：
+{{bonus table|heavy ship cost}}
+
+'''轻型船只'''：
+{| class="mildtable"
+! style="width:30px" | [[File:Light_ship_cost.png|24px]]
+! 条件
+|-
+| style="text-align: right" | {{green|−20%}} ||[[File:privilege comission merchant ships for war.png|24px]] 授予{{icon|burghers|24px}}商人、{{icon|vaishyas|24px}} 吠舍或{{icon|jains|24px}}耆那教徒阶层“私人贸易舰队”特权
+|-
+| style="text-align: right" | {{green|−10%}} || {{icon|parliament}}议会通过议案“颁发私掠许可证”{{green|−10%}}
+|-
+| style="text-align: right" | {{red|+1%}} || 每点通货膨胀 [[inflation|通货膨胀]]&lt;ref name=sm />
+|}
+理念与政策：
+{{bonus table|light ship cost}}
+
+'''桨帆船'''：
+{| class="mildtable"
+! style="width:30px" | [[File:Heavy_ship_cost.png|24px]]
+! 条件
+|-
+| style="text-align: right" | {{red|+1%}} || 每点通货膨胀 [[inflation|通货膨胀]]&lt;ref name=sm>See in {{path|static modifiers}} ([[Static modifiers]]).&lt;/ref>
+|}
+理念与政策：
+{{bonus table|Galley cost}}
+
+'''运输船'''：
+{| class="mildtable"
+! style="width:30px" | [[File:Heavy_ship_cost.png|24px]]
+! 条件
+|-
+| style="text-align: right" | {{red|+1%}} || 每点通货膨胀 [[inflation|通货膨胀]]&lt;ref name=sm>See in {{path|static modifiers}} ([[Static modifiers]]).&lt;/ref>
+|}
+理念与政策：
+{{bonus table|transport cost}}
+
+=== {{icon|shipbuilding time}}造船时间 ===
+船只的建造时间的计算公式如下：
+: &lt;math>\text{造船时间} = \text{基础时间} \cdot \left( 100\% +  \sum\text{造船时间修正} \right)&lt;/math>
+
+==== 基础时间 ====
+建造船只的基础时间为：&lt;ref name=defines />
+{| class="wikitable"
+|-
+! 船只种类 !! 建造天数
+|-
+| {{icon|heavy ship|24px}} 重型船只
+| style="text-align:right" | 730 
+|-
+| {{icon|heavy ship|24px}} 轻型船只
+| style="text-align:right" | 365 
+|-
+| {{icon|galley|24px}} 桨帆船
+| style="text-align:right" | 365 
+|-
+| {{icon|transport|24px}} 运输船
+| style="text-align:right" | 365 
+|}
+
+==== 造船时间修正 ====
+造船时间受全国修正和省份修正之加算影响。
+
+===== 全国修正 =====
+{| class="mildtable"
+! style="width:30px" | {{icon|shipbuilding time}}
+! 条件
+|-
+| align=right | {{red|+2%}}{{0|.0}} || 每一点 {{icon|war exhaustion}} 厌战
+|-
+| align=right | {{green|−10%}}{{0|.0}} || {{icon|parliament}} 国会通过议案“扩编海军”
+|}
+理念与政策：
+{{bonus table|shipbuilding time}}
+
+===== 省份修正 =====
+{| class="mildtable"
+! style="width:30px" | {{icon|local shipbuilding time}}
+! 条件
+|-
+| align=right | {{red|+20%}}{{0|.0}} || 被 [[File:Blockade enemy ports.png|24px]] 封锁的省份
+|-
+| align=right | {{red|+30%}}{{0|.0}} || 被 {{icon|looting speed}} 劫掠的省份
+|-
+| align=right | {{red|+10%}}{{0|.0}} || 每一点 {{icon|local unrest|24px}} 叛乱度
+|-
+| align=right | {{green|−1%}}{{0|.0}} || 每点省份 {{icon|base tax}} 基础生产
+|-
+| align=right | {{green|−25%}}{{0|.0}} || 省份拥有 {{icon|western_shipyard|28px}} 造船厂
+|-
+| align=right | {{green|−50%}}{{0|.0}} || 省份拥有 {{icon|western_grand_shipyard|28px}} 大船厂
+|-
+|}
+
+===征召运输船===
+{{expansion|lev}}
+拥有[[Eastern Plutocracy|东方财阀政治]]、 [[Kongsi Federation|公司联邦]]、[[Livonian Admiralty|利沃尼亚海军政府]] 或[[Livonian Plutocracy|利沃尼亚财阀政治]]政府改革项的国家，可以向商人阶层廉价征召运输船。&lt;br>
+征召运输船功能在生产界面拥有一个单独页面，This adds a new template to the macrobuilder, which will dynamically include enough transports so that after building it, 80% of the force limit will be made up of transports. &lt;br>
+Building these tranports will only take 50% of the normal time and cost 20% less sailors. &lt;br>
+The monetary cost will be 1 years worth of income, multiplied by the percentage of forcelimit thats being build (80% = 0.8). &lt;br>
+At the least, they will be 20% cheaper than regular transports (this is relevant for nations with very high yearly income). &lt;br>
+The lowest price the template can reach is 1 ducat per ship (this is relevant for poor nations), unaffected by further reductions to ship cost. &lt;br>
+Exept for this, reductions to ship cost interact normally with drafting. &lt;br>
+
+== 海军上限与维护费==
+{{SVersion|1.24}}
+===[[File:naval forcelimit.png]] 海军上限===
+{{Main|部队上限}}
+每个国家都会有海军上限，上限大小主要取决于沿海省份的总发展度与沿海贸易中心的多少。
+
+下列理念与政策会增加海军上限：
+{{bonus table|naval forcelimit modifier}}
+
+==={{icon|naval maintenance}} 维护费===
+每艘船每个月都需要一定金钱来进行维护。船只基础维护费由船只类型，建造船只'''花费'''的比例和'''维护费比例'''决定的。此花费又与全局花费修正相乘来获得每一艘船每个月的维护费。
+
+计算海军维护费的公式如下：
+: &lt;math>\text{海军维护费}_\text{船只} = \left(\text{基础海军维护费}_\text{船只类型 } \right) \cdot \left( 100\% + \text{海军维护费修正}_\text{科技} \right) \cdot \left( 100\% + \sum\text{海军维护费修正}_\text{没有科技} \right) \cdot \left( 100\% + \sum\text{船只花费修正} \right)&lt;/math>
+
+其中：
+: &lt;math>\text{基础海军维护费}_\text{船只类型} = \left( \text{船只花费} \right) \cdot \left[ \text{trunc} \left( \frac{\text{维护费比例}} {12} , 3 \right) \right] &lt;/math>
+
+游戏内核使用[https://en.wikipedia.org/wiki/Truncation trunc函数]取整至小数点后第三位。例如：
+: &lt;math>\operatorname{trunc}(0.0036,3) = 0.003&lt;/math>
+
+船只基础花费与维护费因素如下：
+{| class="wikitable"
+|-
+! 船只种类 !! 基础花费 !! 维护费比例
+|-
+| {{icon|heavy ship|24px}} 重型船只
+| style="text-align:right" | 50 || 0.10
+|-
+| {{icon|heavy ship|24px}} 轻型船只
+| style="text-align:right" | 20 || 0.02
+|-
+| {{icon|galley|24px}} 桨帆船
+| style="text-align:right" | 10 || 0.03
+|-
+| {{icon|transport|24px}} 运输船
+| style="text-align:right" | 12 || 0.03
+|}
+
+*超过海军上限时，维护费需乘以当前船只数的超限率。比如说，如果海军上限是5，而该国有10艘船，那么维护费会变为2倍。
+*实际游戏中，假设全舰队都由单一舰种构成，超过海军上限的第一艘船的边际维护费可以大致看作正常维护费的两倍。例如，当达到最大上限时，下一艘船会收取其普通维护费的200%。该乘数会随着现有船只和海军上限的比例翻倍。
+*当海军全由轻型船只组成时，轻型船只的建造花费惩罚会变成平方计算。即在150%的海军上限的情况下，海军维护费会是正常情况的225%。在这种情况下，边际维护费约为3*海军上限的平方。比如说，在150%海军上限时，下一艘船的维护费大约是其普通维护费的675%。
+* 与陆军不同，科技修正与海军维护费的修正用乘法与其它修正叠加。因此，拉低维护费对海军战斗力的影响相对于陆军要低。
+* 同一舰种下每艘超限船只的维护费约为普通的2倍。即当处于海军上限的150%时，下一艘船的维护费是正常的3倍。
+{{bonus table|naval maintenance modifier}}
+
+此外，收取战争税还会获得一个持续两年的{{green|-20%}}维护费修正。
+
+====封存舰队====
+{{expansion|aow}}
+'''封存'''一只舰队意味着将会将该舰队维护费降至一半，船只的耐久度和 {{icon|sailors}} 水手数会每月降低5%至最大值的25%。可以在任意时间取消封存以正常速度恢复（每月10%）至正常状态。被封存的舰队无法移动但可以与其它封存舰队合并，也可被分为小股舰队。
+
+==海军质量==
+{{SVersion|1.24}}
+数量固然是赢得海战不可或缺的因素，但质量或许更加重要。因为海军战斗宽度的存在，同一时间进入战场的海军数量是有限制的，所以伤害更高的船只会在战斗中迅速地取得优势。
+
+部分[[理念组]]和国家理念可以增加海军在战斗中的表现。
+
+===总体质量提升===
+[[外交科技]]升级带来的[[海军单位|舰种]]换代是海军质量最为直观的提升。每几级外交科技的攀升都会解锁新的船只类型，必须升级或重建才能将已有的船只换新。不仅如此，外交科技的每几级提升都会增加一定的海军士气。
+
+====作战能力提升====
+作战能力减少船只所受的伤害（同时作用于耐久和士气）。游戏中只有对特定单位有效的作战能力修正。
+
+'''重型船只作战能力'''
+{{bonus table|heavy ship combat ability}}
+
+'''轻型船只作战能力'''
+{{bonus table|light ship combat ability}}
+
+'''桨帆船作战能力'''
+{{bonus table|galley combat ability}}
+
+'''运输船作战能力'''
+{{bonus table|transport combat ability}}
+
+===={{icon|morale of navies}} 海军士气提升====
+海军士气代表了舰队能在战斗中的持续时间，可被下列理念与政策提升：
+
+'''海军士气'''
+{{bonus table|naval morale}}
+
+===={{icon|naval morale recovery}} 海军士气恢复提升====
+'''海军士气恢复'''
+{{bonus table|naval morale recovery}}
+
+=={{icon|admiral}} 海军将领==
+{{SVersion|Timeless}}
+舰队可被[[将领#将领类型|海军上将或探险家]]统领。唯一区别就是海军上将在刷出的时候会获得更高的能力值。海军将领的有无对战斗结果意义重大。海军将领的能力值可被以下理念与政策提升：
+
+'''海军将领火力'''
+{{bonus table|Naval leader fire}}
+
+'''海军将领冲击'''
+{{bonus table|Naval leader shock}}
+
+'''海军将领机动'''
+{{bonus table|Naval leader maneuver}}
+
+==海军传统==
+{{SVersion|Timeless}}
+{{main|军事传统#海军传统}}
+海军传统代表了一个国家在海军上的经验，此值极大地影响该国控制海洋的能力。海军传统可被理念，海战，探索和保护贸易提升。
+100海军传统可提供以下增益，0-100传统可获得的增益是线性增加的：
+{{#lst:Static modifiers|NavyT}}
+
+==[[File:Attrition.png]] 补给、损耗及维修==
+{{SVersion|1.24}}
+
+===补给范围===
+补给范围是决定[[轻型船只]]的[[保护贸易]]行动范围的重要因素，此外还决定船只在某一区块是否遭受损耗。
+基础补给范围为150。可被下列贸易范围修正增加：
+{{bonus table|trade range}}
+* 补给距离不可被固定贸易范围修正增加。比如说[[科技#外交|外交科技]]会增加固定数值的贸易范围 （比如说10，20...），它不会影响补给范围。
+*一个增加补给范围的好方法就是在超出补给范围或船只急需修复的地方寻求附近国家的[[舰队停靠权]]。
+
+===损耗===
+海军会在处于开放海域或离港时间过长时遭受损耗。一支舰队不会在补给距离之内的沿岸海域遭受损耗（反之在开放海域一定会遭受损耗）。不仅如此，即使在补给距离之外，只要海军处于拥有可停靠港口的海区也不会遭受损耗。
+
+决定损害伤害的规则如下：
+* 月度损耗伤害会在每月的第一天按照损耗百分比减少舰队中所有船只的耐久。
+* 移动至任意海区会有50%的几率使任意船只遭受损耗伤害，除非它们在移动到的瞬间进入战斗。注意只有在至少一只舰队是停滞的状态下两只舰队才能进入战斗。
+* 探险家带领的舰队有几率不会遭受任何损害。这种特性使其麾下的舰队可以移动到更远处。该几率与每艘船的耐久值成正比，与要遭受的损耗值成反比，且在沿岸海区时会大幅提升。
+* 在激活DLC {{icon|ed}} 黄金国后，一个舰队在进行地区性探索时（探索海区或海岸时）无论何时何地都不会遭受损耗，坏处则是探索舰队在完成任务回到母港之前不会接受其它任何指令。但进行环球航行的舰队仍会遭受损耗。
+
+以下因素会影响海军损耗：
+{{bonus table|naval attrition}}
+* 基础损耗：{{red|+1%}}
+* 在海上的时间：每月{{red|+1%}}，在外交科技到达22级后失效 
+* 开放海域：{{red|+5%}}
+* 海军将领机动能力：每点{{green|-1%}}
+
+因为无法管理自身的损耗状况，所以AI不会遭受任何的损耗伤害。而是被内部游戏规则限定了AI舰队探索或作战时可行进的距离。
+
+===[[File:global ship repair.png]] 船只修复===
+舰队受到损害后会在靠港后自动修复自身的伤害。停靠在同一港口的所有舰队会被一起修复。修复会消耗水手数量。
+
+====自动靠港维修====
+一旦一支舰队的平均士气被降低到一定程度，该舰队会自动寻找临近友军港口停靠修复船只及恢复士气。在任务设置中，可以设置一个舰队维修前可承受伤害的阈值。
+
+==== 维修速度 ====
+靠港船只会在每月第一天自动修复。若海军维护费为最大的话，修复值为{{green|10%}}&lt;ref>见 {{path|defines}}: MONTHLY_REPAIR = 0.1&lt;/ref>，维护费越低，维修速度也会线性降低。维修速度被以下修正影响。
+;全国修正
+{{bonus table|global ship repair}}
+;省份修正
+:在有 {{icon|western_shipyard|28px}} 造船厂的情况下{{green|+25%}}
+:在有 {{icon|western_grand_shipyard|28px}} 大船厂的情况下{{green|+50%}} 
+
+==== 海上维修 ====
+航海理念的完成奖励让船只可以在补给距离内沿岸海区修复的能力。
+修复速率为每月修复船只耐久的6%，此速率不被任何修正影响。
+
+== 特殊舰船 ==
+{{SVersion|1.35}}
+{{Hatnote|与陆军特殊兵种雷同，此处描述的是海军的特殊兵种。关于陆军特殊兵种可以参见： [[陆军#特殊兵种]].}}
+{{expansion|dom}}
+部分国家通过完成任务，启用政府改革项或是激活国家理念后可以建造海军特殊舰船。一般情况下这些特殊舰船所花费的{{icon|ducat|24px}} 金币和 {{icon|sailors|24px}}海员与正常的船只是一样的。
+
+可以通过如下公式计算可建造的特殊舰船数量：
+
+
+&lt;math>\text {海军上限} \cdot \left (\sum \text{该种特殊舰船比例} \right) \cdot \left (1 + \sum \text{特殊舰船上限修正} \right )&lt;/math>
+
+
+=== 加莱赛战船 ===
+加莱赛战船是一种特殊的 {{icon|galley}} 桨帆船，仅限拥有[[通用政府改革#商贸军械库|商贸军械库]]政府改革的国家，或是主流文化是利古里亚和威尼斯的国家建造建造此类舰船
+
+加莱赛战船只能在有码头或造船厂的省份建造。
+
+
+舰船修正如下：
+{{#lst:Static_modifiers|Galleass}}
+
+
+加莱赛战船的可建造数量是基于海军上限的一定比例。加莱赛战船的建造比例受到以下因素的影响：
+* {{green|+50%}}：拥有 {{icon|navy tradition}}{{green|100}} 海军传统（达到最大值时）
+
+=== 主力舰 ===
+主力舰是一种特殊的{{icon|heavy ship}}重型船舰，仅限 {{flag|England}}和 {{flag|Great Britain}}在完成任务[[英格兰任务#扩建皇家海军|扩建皇家海军]]后建造。
+主力舰只能在有码头或造船厂的省份建造。
+
+
+舰船修正如下：
+{{#lst:Static_modifiers|MoW}}
+
+
+主力舰的可建造数量是基于海军上限的一定比例。主力舰的建造比例受到以下因素的影响：
+*{{green|+20%}}：完成[[英格兰任务#扩建皇家海军|扩建皇家海军]]任务
+
+
+以下因素会影响主力舰的舰船修正：
+* “主力舰法案” [[议会#议案|议案]]：
+**{{icon|ship durability}}{{green|+15%}} 船只耐久度
+
+=== 东印度商船 ===
+东印度商船是一种特殊的 {{icon|light ship}} 轻型船只，仅限拥有[[君主制#省督君主制|省督君主制]]、[[共和制#尼德兰共和国|尼德兰共和国]]、[[神权制#尼德兰总主教区|尼德兰总主教区]]政府改革的国家，或者是主流文化为荷兰、弗兰芒和弗里斯兰的国家建造此类舰船。 
+
+
+舰船修正如下：
+{{#lst:Static_modifiers|VOCI}}
+*'''可以运载单位'''
+
+
+东印度商船的可建造数量是基于海军上限的一定比例。东印度商船的建造比例受到以下因素的影响：
+*{{green|+25%}}：拥有 {{icon|trade efficiency}}{{green|100%}} 贸易效率（达到最大值时）
+*{{green|+20%}}：拥有 [[君主制#省督君主制|省督君主制]]， [[共和制#尼德兰共和国|尼德兰共和国]]或[[神权制#尼德兰总主教区|尼德兰总主教区]]政府改革
+
+=== 卡拉维尔帆船 ===
+卡拉维尔帆船是一种特殊的 {{icon|light ship}} 轻型船只，仅限 {{flag|Aragon}}（完成[[阿拉贡任务#我们的海|我们的海]]任务）、 {{flag|Castile}}（完成[[西班牙任务#皇家造船厂|皇家造船厂]]任务）以及 {{flag|Portugal}}（完成[[葡萄牙任务#改革海军|改革海军]]任务）建造此类舰船。
+
+卡拉维尔帆船只能在伊比利亚文化的省份上建造，且不能在安达卢西亚文化的省份上建造。
+
+舰船修正如下：
+{{#lst:Static_modifiers|Caravel}}
+
+
+卡拉维尔帆船的可建造数量是基于海军上限的一定比例。卡拉维尔帆船的建造比例受到以下因素的影响：
+*{{green|10%}}：完成[[西班牙任务#皇家造船厂|皇家造船厂]]任务
+*{{green|10%}}：完成[[葡萄牙任务#改革海军|改革海军]]任务
+*{{green|20%}}：完成[[阿拉贡任务#我们的海|我们的海]]任务
+
+=== 盖伦帆船 ===
+盖伦帆船是一种特殊的 {{icon|heavy ship}} 重型船只，仅限 {{flag|Castile}}（完成[[西班牙任务#皇家造船厂|皇家造船厂]]任务）以及 {{flag|Portugal}}（完成[[葡萄牙任务#改革海军|改革海军]]任务）建造此类舰船。
+
+盖伦帆船只能在伊比利亚文化的省份上建造，而不能在安达卢西亚文化的省份上建造。
+
+舰船修正如下：
+{{#lst:Static_modifiers|Galleon}}
+
+盖伦帆船的可建造数量是基于海军上限的一定比例。盖伦帆船的建造比例受到以下因素的影响：
+*{{green|10%}}：完成[[西班牙任务#皇家造船厂|皇家造船厂]]任务
+*{{green|10%}}：完成[[葡萄牙任务#改革海军|改革海军]]任务
+
+=== 龟船 ===
+龟船是一种特殊的桨帆船，它只允许在{{flag|Korea}}朝鲜激活第六项国家理念 '''龟船''' 后才能建造。
+
+
+舰船修正如下：
+{{#lst:Static_modifiers|Geobukseon}}
+
+
+龟船的可建造数量是基于海军上限的一定比例。龟船的建造比例受到以下因素的影响：
+*{{green|50%}}：{{icon|navy tradition}}{{green|100}} 海军传统（达到最大值时）
+
+== 参考资料 ==
+&lt;references/>
+
+[[Category:军事]]
+{{military navbox}}
+[[en:Navy]]
+</textarea><div class="templatesUsed"><div class="mw-templatesUsedExplanation"><p>本页使用的模板：
+</p></div><ul>
+<li><a href="https://www.eu4cn.com/wiki/Static_modifiers" class="mw-redirect" title="Static modifiers">Static modifiers</a>（<a href="https://www.eu4cn.com/index.php?title=Static_modifiers&amp;action=edit" class="mw-redirect" title="Static modifiers">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/静态修正" title="静态修正">静态修正</a>（<a href="https://www.eu4cn.com/index.php?title=%E9%9D%99%E6%80%81%E4%BF%AE%E6%AD%A3&amp;action=edit" title="静态修正">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:0" title="Template:0">Template:0</a>（<a href="https://www.eu4cn.com/index.php?title=Template:0&amp;action=edit" title="Template:0">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Ambox" title="Template:Ambox">Template:Ambox</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Ambox&amp;action=edit" title="Template:Ambox">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Ambox/core" title="Template:Ambox/core">Template:Ambox/core</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Ambox/core&amp;action=edit" title="Template:Ambox/core">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Ambox_2020" title="Template:Ambox 2020">Template:Ambox 2020</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Ambox_2020&amp;action=edit" title="Template:Ambox 2020">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:BTRow" title="Template:BTRow">Template:BTRow</a>（<a href="https://www.eu4cn.com/index.php?title=Template:BTRow&amp;action=edit" title="Template:BTRow">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Bonus_table" title="Template:Bonus table">Template:Bonus table</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Bonus_table&amp;action=edit" title="Template:Bonus table">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Clear" title="Template:Clear">Template:Clear</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Clear&amp;action=edit" title="Template:Clear">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Country_data_Aragon" title="Template:Country data Aragon">Template:Country data Aragon</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Country_data_Aragon&amp;action=edit" title="Template:Country data Aragon">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Country_data_Castile" title="Template:Country data Castile">Template:Country data Castile</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Country_data_Castile&amp;action=edit" title="Template:Country data Castile">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Country_data_England" title="Template:Country data England">Template:Country data England</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Country_data_England&amp;action=edit" title="Template:Country data England">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Country_data_Great_Britain" title="Template:Country data Great Britain">Template:Country data Great Britain</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Country_data_Great_Britain&amp;action=edit" title="Template:Country data Great Britain">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Country_data_Korea" title="Template:Country data Korea">Template:Country data Korea</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Country_data_Korea&amp;action=edit" title="Template:Country data Korea">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Country_data_Portugal" title="Template:Country data Portugal">Template:Country data Portugal</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Country_data_Portugal&amp;action=edit" title="Template:Country data Portugal">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:DLC-only" title="Template:DLC-only">Template:DLC-only</a>（<a href="https://www.eu4cn.com/index.php?title=Template:DLC-only&amp;action=edit" title="Template:DLC-only">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Expansion" title="Template:Expansion">Template:Expansion</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Expansion&amp;action=edit" title="Template:Expansion">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Flag" title="Template:Flag">Template:Flag</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Flag&amp;action=edit" title="Template:Flag">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Flag/core" title="Template:Flag/core">Template:Flag/core</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Flag/core&amp;action=edit" title="Template:Flag/core">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Green" title="Template:Green">Template:Green</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Green&amp;action=edit" title="Template:Green">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Grey-bd" title="Template:Grey-bd">Template:Grey-bd</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Grey-bd&amp;action=edit" title="Template:Grey-bd">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Hatnote" title="Template:Hatnote">Template:Hatnote</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Hatnote&amp;action=edit" title="Template:Hatnote">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Hover_box" title="Template:Hover box">Template:Hover box</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Hover_box&amp;action=edit" title="Template:Hover box">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon" title="Template:Icon">Template:Icon</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon&amp;action=edit" title="Template:Icon">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/a" title="Template:Icon/a">Template:Icon/a</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/a&amp;action=edit" title="Template:Icon/a">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/b" title="Template:Icon/b">Template:Icon/b</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/b&amp;action=edit" title="Template:Icon/b">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/c" title="Template:Icon/c">Template:Icon/c</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/c&amp;action=edit" title="Template:Icon/c">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/d" title="Template:Icon/d">Template:Icon/d</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/d&amp;action=edit" title="Template:Icon/d">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/e" title="Template:Icon/e">Template:Icon/e</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/e&amp;action=edit" title="Template:Icon/e">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/g" title="Template:Icon/g">Template:Icon/g</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/g&amp;action=edit" title="Template:Icon/g">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/h" title="Template:Icon/h">Template:Icon/h</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/h&amp;action=edit" title="Template:Icon/h">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/i" title="Template:Icon/i">Template:Icon/i</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/i&amp;action=edit" title="Template:Icon/i">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/j" title="Template:Icon/j">Template:Icon/j</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/j&amp;action=edit" title="Template:Icon/j">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/l" title="Template:Icon/l">Template:Icon/l</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/l&amp;action=edit" title="Template:Icon/l">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/m" title="Template:Icon/m">Template:Icon/m</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/m&amp;action=edit" title="Template:Icon/m">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/n" title="Template:Icon/n">Template:Icon/n</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/n&amp;action=edit" title="Template:Icon/n">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/p" title="Template:Icon/p">Template:Icon/p</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/p&amp;action=edit" title="Template:Icon/p">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/r" title="Template:Icon/r">Template:Icon/r</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/r&amp;action=edit" title="Template:Icon/r">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/s" title="Template:Icon/s">Template:Icon/s</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/s&amp;action=edit" title="Template:Icon/s">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/t" title="Template:Icon/t">Template:Icon/t</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/t&amp;action=edit" title="Template:Icon/t">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/v" title="Template:Icon/v">Template:Icon/v</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/v&amp;action=edit" title="Template:Icon/v">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/w" title="Template:Icon/w">Template:Icon/w</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/w&amp;action=edit" title="Template:Icon/w">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Main" title="Template:Main">Template:Main</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Main&amp;action=edit" title="Template:Main">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Military_navbox" title="Template:Military navbox">Template:Military navbox</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Military_navbox&amp;action=edit" title="Template:Military navbox">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Navbox" title="Template:Navbox">Template:Navbox</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Navbox&amp;action=edit" title="Template:Navbox">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Navboxgroup" title="Template:Navboxgroup">Template:Navboxgroup</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Navboxgroup&amp;action=edit" title="Template:Navboxgroup">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Path" title="Template:Path">Template:Path</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Path&amp;action=edit" title="Template:Path">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Red" title="Template:Red">Template:Red</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Red&amp;action=edit" title="Template:Red">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:SVersion" title="Template:SVersion">Template:SVersion</a>（<a href="https://www.eu4cn.com/index.php?title=Template:SVersion&amp;action=edit" title="Template:SVersion">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Tlx" title="Template:Tlx">Template:Tlx</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Tlx&amp;action=edit" title="Template:Tlx">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Version" title="Template:Version">Template:Version</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Version&amp;action=edit" title="Template:Version">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:白字" title="Template:白字">Template:白字</a>（<a href="https://www.eu4cn.com/index.php?title=Template:%E7%99%BD%E5%AD%97&amp;action=edit" title="Template:白字">查看源代码</a>）</li></ul></div><p id="mw-returnto">返回<a href="https://www.eu4cn.com/wiki/海军" title="海军">海军</a>。</p>
+</div>						</div>
+				</div>
+				<footer>
+				<div class="liberty-footer">
+										<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>					<div class="bottom-ads mobile-ab">
+						<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+						<!-- 移动端底部 -->
+						<ins class="adsbygoogle mobile-ab"
+						     style="display:block"
+						     data-ad-client="ca-pub-1612414434963106"
+						     data-ad-slot="3303553671"
+						     data-ad-format="auto"
+						     data-full-width-responsive="true"></ins>
+						<script>
+						     (adsbygoogle = window.adsbygoogle || []).push({});
+						</script>
+					</div>
+								<ul class="footer-places">
+									<li class="footer-places-privacy">
+						<a href="https://www.eu4cn.com/wiki/欧陆风云4百科:隐私政策">隐私政策</a>					</li>
+									<li class="footer-places-about">
+						<a href="https://www.eu4cn.com/wiki/欧陆风云4百科:关于">关于欧陆风云4百科</a>					</li>
+									<li class="footer-places-disclaimer">
+						<a href="https://www.eu4cn.com/wiki/欧陆风云4百科:免责声明">免责声明</a>					</li>
+							</ul>
+					<ul class="footer-icons">
+									<li class="footer-copyrightico">
+						<a href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="https://www.eu4cn.com/resources/assets/licenses/cc-by-nc-sa.png" alt="知识共享署名-非商业性使用-相同方式共享" width="88" height="31" loading="lazy"/></a>					</li>
+										<li class="footer-poweredbyico">
+						<a href="https://www.mediawiki.org/"><img src="https://www.eu4cn.com/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"/></a><a href="https://www.eu4cn.com/"><img src="https://www.eu4cn.com/images/footerlogo.png" width="88" height="31" loading="lazy"/></a>					</li>
+								</ul>
+						</div>
+				</footer>
+			</div>
+		</div>
+		</section>
+				<div class="modal fade login-modal" id="login-modal" tabindex="-1"
+			 role="dialog" aria-labelledby="login-modalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-sm" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<h4 class="modal-title">登录</h4>
+					</div>
+					<div class="modal-body">
+						<div id="modal-login-alert" class="alert alert-hidden alert-danger" role="alert">
+						</div>
+						<form id="modal-loginform" name="userlogin" class="modal-loginform"
+							  method="post">
+							<input class="loginText form-control" id="wpName1" tabindex="1"
+								   placeholder="请输入您的用户名" value="" name="lgname">
+							<label for="inputPassword" class="sr-only">密码</label>
+							<input class="loginPassword form-control" id="wpPassword1" tabindex="2"
+								   placeholder="请输入您的密码" type="password" name="lgpassword">
+							<div class="modal-checkbox">
+								<input name="lgremember" type="checkbox" value="1" id="lgremember" tabindex="3">
+								<label for="lgremember">记住登录</label>
+							</div>
+							<input class="btn btn-success btn-block" type="submit" value="登录" tabindex="4">
+							<a href="https://www.eu4cn.com/index.php?title=Special:%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95&amp;type=signup&amp;returnto=%E6%B5%B7%E5%86%9B" class="btn btn-primary btn-block" title="Special:用户登录" tabindex="5" type="submit">加入欧陆风云4百科</a>							<a href="https://www.eu4cn.com/wiki/Special:重置密码" title="Special:重置密码">忘记密码？</a>                            <br>
+							<a href="https://www.eu4cn.com/wiki/Special:用户登录" title="Special:用户登录">其他方式登录</a>							<input type="hidden" name="action" value="login" />
+							<input type="hidden" name="format" value="json" />
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">⧼liberty-btn-close⧽</button>
+						<button type="button" class="btn btn-primary">⧼liberty-btn-save-changes⧽</button>
+					</div>
+				</div>
+			</div>
+		</div>
+			</body>
+<!-- Mirrored from www.eu4cn.com/index.php?title=%E6%B5%B7%E5%86%9B&action=edit by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 May 2024 12:48:18 GMT -->
+</html>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?8b9cdb5f260cf613f39a508fbf9dd707";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.005","walltime":"0.006","ppvisitednodes":{"value":7,"limit":1000000},"postexpandincludesize":{"value":18,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":100},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20240506111417","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":1985});});</script>
+</body>
+</html>

@@ -1,0 +1,1219 @@
+ <!DOCTYPE html>
+<html class="client-nojs" lang="zh" dir="ltr">
+
+<!-- Mirrored from www.eu4cn.com/index.php?title=%E6%B5%B7%E6%88%98&action=edit by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 May 2024 12:17:11 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>查看“海战”的源代码 - 欧陆风云4百科，人人可以编辑的欧陆风云4中文百科全书</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"zh","wgMonthNames":["","1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"],"wgRequestId":"40ad1de93030eac65229f3c3","wgCSPNonce":false,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"海战","wgTitle":"海战","wgCurRevisionId":101743,"wgRevisionId":0,"wgArticleId":1665,"wgIsArticle":false,"wgIsRedirect":false,"wgAction":"edit","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageContentLanguage":"zh","wgPageContentModel":"wikitext","wgRelevantPageName":"海战","wgRelevantArticleId":1665,"wgUserVariant":"zh","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgCargoDefaultQueryLimit":100,"wgCargoMapClusteringMinimum":80,"wgCargoMonthNames":["1月","2月","3月"
+,"4月","5月","6月","7月","8月","9月","10月","11月","12月"],"wgCargoMonthNamesShort":["1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"],"wgCargoWeekDays":["星期日","星期一","星期二","星期三","星期四","星期五","星期六"],"wgCargoWeekDaysShort":["日","一","二","三","四","五","六"],"wgPageFormsTargetName":null,"wgPageFormsAutocompleteValues":[],"wgPageFormsAutocompleteOnAllChars":false,"wgPageFormsFieldProperties":[],"wgPageFormsCargoFields":[],"wgPageFormsDependentFields":[],"wgPageFormsCalendarValues":[],"wgPageFormsCalendarParams":[],"wgPageFormsCalendarHTML":null,"wgPageFormsGridValues":[],"wgPageFormsGridParams":[],"wgPageFormsContLangYes":null,"wgPageFormsContLangNo":null,"wgPageFormsContLangMonths":[],"wgPageFormsHeightForMinimizingInstances":800,"wgPageFormsShowOnSelect":[],"wgPageFormsScriptPath":"/extensions/PageForms","edgValues":null,"wgPageFormsEDSettings":null,"wgAmericanDates":false,"wgVisualEditor":{
+"pageLanguageCode":"zh","pageLanguageDir":"ltr","pageVariantFallbacks":["zh-hans","zh-hant","zh-cn","zh-tw","zh-hk","zh-sg","zh-mo","zh-my"]},"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgSmjUseCdn":false,"wgSmjUseChem":true,"wgSmjDisplayMath":[],"wgSmjExtraInlineMath":[],"wgSmjScale":1,"wgSmjEnableMenu":true,"wgSmjDisplayAlign":"left","wgEditSubmitButtonLabelPublish":false};RLSTATE={"site.styles":"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.liberty.styles":"ready","jquery.tablesorter.styles":"ready","jquery.makeCollapsible.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready"};RLPAGEMODULES=["ext.SimpleMathJax","mediawiki.action.edit.collapsibleFooter","site","mediawiki.page.ready","jquery.tablesorter","jquery.makeCollapsible","ext.HighlightjsIntegration","ext.CodeMirror","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.gadget.UserLinkAvatar","ext.gadget.notifyConversion",
+"ext.gadget.notifyAdsense","ext.gadget.Edittools-vector","skins.liberty.bootstrap","skins.liberty.layoutjs","skins.liberty.liverc","skins.liberty.loginjs"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});});});</script>
+<link rel="stylesheet" href="loade7b8.css?lang=zh&amp;modules=ext.visualEditor.desktopArticleTarget.noscript%7Cjquery.makeCollapsible.styles%7Cjquery.tablesorter.styles%7Cskins.liberty.styles&amp;only=styles&amp;skin=liberty"/>
+<script async="" src="load7991.php?lang=zh&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=liberty"></script>
+<style>.Liberty .nav-wrapper,
+		.Liberty .nav-wrapper .navbar .form-inline .btn:hover,
+		.Liberty .nav-wrapper .navbar .form-inline .btn:focus,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link.active::before,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link:hover::before,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link:focus::before,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link:active::before,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-footer .label,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .contributioncredits-footer .label,
+		.Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools .tools-btn:hover,
+		.Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools .tools-btn:focus,
+		.Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools .tools-btn:active,
+		.btn-primary,
+		.header-template, .section-template {
+			background-color: #103D8F;
+		}
+
+		.btn-primary,
+		.section-template-border {
+			border-color: #103D8F;
+		}
+
+		.Liberty .nav-wrapper .navbar .form-inline .btn:hover,
+		.Liberty .nav-wrapper .navbar .form-inline .btn:focus {
+			border-color: #002E7D;
+		}
+
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link.active::before,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link:hover::before,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link:focus::before,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link:active::before {
+			border-bottom: 2px solid #103D8F;
+		}
+
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-footer .label:hover,
+		.Liberty .nav-wrapper .navbar .navbar-nav .nav-item .nav-link:hover,
+		.Liberty .nav-wrapper .navbar .navbar-nav .nav-item .nav-link:focus,
+		.dropdown-menu .dropdown-item:hover,
+		.btn-primary:hover,
+		.btn-primary:focus {
+			background-color: #002E7D;
+		}
+
+
+		.Liberty .content-wrapper #liberty-bottombtn,
+		.Liberty .content-wrapper #liberty-bottombtn:hover {
+			background-color: #103D8F;
+		}</style><style>@media (prefers-color-scheme: dark) { body, .Liberty, .dropdown-menu, .dropdown-item, .Liberty .nav-wrapper .navbar .form-inline .btn, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link.active, .Liberty .content-wrapper .liberty-content .liberty-content-main table.wikitable tr > th, .Liberty .content-wrapper .liberty-content .liberty-content-main table.wikitable tr > td, table.mw_metadata th, .Liberty .content-wrapper .liberty-content .liberty-content-main table.infobox th, #preferences fieldset:not(.prefsection), #preferences div.mw-prefs-buttons, .navbox, .navbox-subgroup, .navbox > tbody > tr:nth-child(even) > .navbox-list, .Liberty .nav-wrapper .navbar .form-inline .form-control {
+			background-color: #000;
+			color: #DDD;
+		}
+
+		.liberty-content-header, .liberty-footer, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-footer, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item, .Liberty .content-wrapper .liberty-content .liberty-content-header, .Liberty .content-wrapper .liberty-footer, .editOptions, html .wikiEditor-ui-toolbar, #pagehistory li.selected, .mw-datatable td, .Liberty .content-wrapper .liberty-content .liberty-content-main table.wikitable tr > td, table.mw_metadata td, .Liberty .content-wrapper .liberty-content .liberty-content-main table.wikitable, .Liberty .content-wrapper .liberty-content .liberty-content-main table.infobox, #preferences, .navbox-list, .dropdown-divider, .Liberty .content-wrapper .liberty-content .bottom-ads {
+			background-color: #1F2023;
+			color: #DDD;
+		}
+
+		.Liberty .content-wrapper .liberty-content .liberty-content-main, .mw-datatable th, .mw-datatable tr:hover td, textarea, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-content, div.mw-warning-with-logexcerpt, div.mw-lag-warn-high, div.mw-cascadeprotectedwarning, div#mw-protect-cascadeon, .mildtable th {
+			background-color: #000 !important;
+		}
+
+		.Liberty .content-wrapper .liberty-content .liberty-content-header .title>h1, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-content .live-recent-list .recent-item, caption { color: #DDD; }
+
+		.btn-secondary, .Liberty .content-wrapper .liberty-footer .catlinks, .rcpages-btn { background: transparent; color: #DDD; }
+
+
+		#pagehistory li { border: 0; }
+
+		.Liberty .content-wrapper .liberty-footer, .Liberty .content-wrapper .liberty-content .liberty-content-header, .Liberty .content-wrapper .liberty-content .liberty-content-main, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-footer, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-content, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item + .nav-item, .Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools .tools-btn:hover, .Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools .tools-btn:focus, .Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools .tools-btn, .dropdown-menu, .dropdown-divider, .Liberty .content-wrapper .liberty-content .liberty-content-main fieldset, hr, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-content .live-recent-list li, .mw-changeslist-legend, .Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools { border-color: #555; }
+
+		.flow-post, .Liberty .content-wrapper .liberty-content .liberty-content-main .toc .toctext { color: #DDD; }
+		.flow-topic-titlebar { color: #000; }
+		.flow-ui-navigationWidget { color: #FFF; }
+		.Liberty .content-wrapper .liberty-content .liberty-content-main .toccolours, .Liberty .content-wrapper .liberty-content .liberty-content-main .toc ul, .Liberty .content-wrapper .liberty-content .liberty-content-main .toc li { background-color: #000; }
+		.Liberty .content-wrapper .liberty-content .liberty-content-main .toc .toctitle { background-color: #1F2023; } }</style>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="loada6ee.css?lang=zh&amp;modules=site.styles&amp;only=styles&amp;skin=liberty"/>
+<meta name="generator" content="MediaWiki 1.39.3"/>
+<meta name="robots" content="noindex,nofollow"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="description" content="因为以下原因，您没有权限编辑本页：&#10;&#10;&#10;您请求的操作仅限属于该用户组的用户执行：用户&#10;&#10;&#10;您可以查看和复制此页面的源代码。&#10;{{需要翻译}}{{Version|1.25}}{{Hatnote|本页面提供了关于海战的信息。若想了解海军征募和维护的信息请见[[海军]]。若想了解海军单位的细节请见[[海军单位]]。若想了解战争的信息请见[[战争]]。}}&#10;&#039;&#039;&#039;海战&#039;&#039;&#039;（Naval warfare）是交战双方赢得制海权最重要的手段。虽然大部分战争都是在陆地上进行，海战可以对敌方贸易，殖民，海外扩张等方面造成巨大的伤害。&#10;==海战界面==&#10;&#10;{{SVersion|1.25}}&#10;&#10;[[File:Naval combat.jpg|thumb|right|&#039;&#039;&#039;海战&#039;&#039;&#039;界面]]&#10;就像[[陆战#战斗过程|陆战]]一样，海战会在两支[[海军#打造一支舰队|舰队]]在同一海区遭遇时爆发。而且会像陆战一样持续许多天，所以这种情况应该被理解为双方舰队在占据有力风向，对峙，小规模战斗之后终于迎来决战的时刻。&#10;&#10;在欧陆风云中，战斗不需要玩家的参与，但战斗界面现在会显示出更多的信息，例如船只交战的目标。&#10;&#10;海战界面显示了交战双方舰队的总体实力。战斗开始时，双方先进行火力伤害阶段，之后便会以类似撞击等行为进入冲击伤害阶段。这两阶段会一直重复到其中一方撤退或失去所有的船只或士气。每艘船的状态以百分比显示在界面上，把鼠标放在上面便可看见该战舰正在攻击的敌军，士气，耐久和船只类型。&#10;&#10;==部署==&#10;&#10;{{SVersion|1.25}}&#10;&#10;===舰队组成===&#10;{{main|海军#组成部分}}&#10;舰队的移动速度由最慢的船只决定，所以一般并不推荐混合舰队，除非需要大船护卫例如运输船之类的小船。桨帆战舰在[[内海]]的战斗力加倍，而运输船可以运送陆军单位。&#10;[[File:Naval combat result.png|thumb|right|海军战斗结束后的总结界面]]&#10;&#10;==接战宽度==&#10;&#10;{{SVersion|1.25}}&#10;&#10;{{N|接战宽度|Engagement Width}}在[[1.16 版本]]引入，指海战的战争宽度。与陆战的&quot;战线宽度&quot;不同的是，海战中两个参与者的&quot;战斗宽度&quot;是独立的，这意味着一个参与者可以比另一个参与者有着更宽的战斗宽度，重型战舰占用3的战斗宽度。商船和桨帆，运输船分别占用1、0.5、1的战宽。&#10;&#10;海战的基础宽度为20，船队的旗舰有“改良瞭望台”修正增加3的接战宽度，更多修正来自下列：&#10;&#10;*[[海军将领]]的 {{icon|naval leader maneuver}} 机动值，每点 {{green|+10%}}&#10;*近海作战 {{green|-20%}}&#10;*提升外交科技&#10;&#10;*增加接战宽度&#10;** {{Green|+20%}}“海军交战” 大革命时代能力 &#10;** {{Green|+10%}} 每点海军将领的机动技能&#10;** {{Green|+10%}} 启动了海军霸权&#10;&#10;* 政策&#10;** {{Green|+20%}}  海军-探索 训练有素的制图师&#10;** {{Green|+10%}}  海军-行政 海军学校法案&#10;&#10;==战斗序列==&#10;&#10;{{SVersion|1.25}}&#10;&#10;和陆战差不多，当两支敌对舰队在同一海区接触时，海战便会开始。海战会持续许多天并会在其中一方撤退或被消灭后结束。1.16版本推出了海军战斗宽度的概念，和陆军的差不多，都限制了在同一时间可以交战的船只数量。&#10;===交战(Engagement)===&#10;当发生海战时，舰队的船会去占满战宽直到上限被填满，按以下顺序排列&#10;&#10;*重型船&#10;*桨帆船&#10;*轻型船&#10;*运输船&#10;*任何已经脱离的船会被忽视。&#10;===阶段===&#10;&#10;战斗被分为一系列持续3天的阶段。这些阶段分为火力和冲击，火力阶段先开始。&#10;&#10;===目标选择===&#10;在战斗中，每艘船都会试图对敌舰进行攻击。每艘敌舰有基础权重10的机会被攻击，进一步修正为：&#10;&#10;* + 0 到 + 5 随机&#10;* + 5 若敌舰为同类型单位&#10;* × 0.1 若士气为0及以下&#10;* × 2 若所受损害在50%以下&#10;选择得分最高的敌舰将被作为目标。如果前一个目标即将被消灭，将选择一个新的目标。&#10;===骰子===&#10;&#10;在每个阶段的开始，每一方滚动一次骰子。该结果用于确定在该阶段的每一天中，该方造成的士气损害和船体损坏。&#10;&#10;===耐久伤害===&#10;基础损伤遵循以下计算公式：&#10;&#10;基本耐久损伤 = 0.0025 + 0.025 ×（2 + 骰子点数 + 战斗点数修正）&#10;&#10;战舰的火炮数量会影响船体的损坏程度，而防御方的船体耐久决定了它能承受多长时间的炮火。&#10;&#10;&#039;&#039;火炮火力修正&#039;&#039;根据进攻方或防守方拥有科技优势与否会增加或减少造成的伤害。&#10;&#10;*攻击单位修正：本攻击修正由攻击方的科技决定，例如&quot;火炮火力&quot;。&#10;&#10;火炮活力修正点数 = 进攻方火力点数 - 目标火力点数&#10;*攻击单位的作战能力：攻击单位的作战能力增益。&#10;最终伤害 = 0.03 × 基础耐久损伤 × 船只优势 ×（火炮数 / 目标船体）×（1 + 0.05 × 火炮火力修正）×（1 + 船只战斗修正 + 提督战斗修正）/（1 + 目标船只耐久）&#10;&#10;如果目标船士气为0或以下，则最终伤害乘以10。&#10;&#10;在内海作战的桨帆船造成的最终伤害增加一倍。&#10;&#10;===士气损耗===&#10;&#10;海军士气不仅在战斗中就会降低，还会在友军船只沉没时降低。以下是士气损耗公式：&#10;&#10;基本士气损耗 = 0.25 × （国家海军士气 / 3）× 基本船体损伤 × 船只优势 ×（火炮数量 / 目标船体）× （1 + 0.005 × 炮兵火力修正）×（1 + 船只战斗修正 + 提督战斗修正）&#10;&#10;下列理念与政策会影响友军船只沉没时对我方的士气打击：&#10;&#10;{{bonus table|morale hit when losing a ship}}&#10;&#10;&#10;&#10;* +10% 海军将领有头脑冷静的特性&#10;&#10;===脱离战斗===&#10;任何船只少于0.5士气时会争取脱离战斗，能否成功的脱离战斗取决于船只的逃脱几率，基础的逃脱几率为3%，但他可以被一些国家理念修正&#10;&#10;*澳大利亚理念5 +5%&#10;*丹麦理念3 +5%&#10;*葡萄牙理念1 +5%&#10;==战斗统计==&#10;{{SVersion|1.31.4}}&#10;&#10;==={{icon|dip tech}} 外交科技对海军的叠加效果===&#10;{| class=&quot;mildtable sortable&quot; style=&quot;text-align:left&quot;&#10;!外交科技等级&#10;!0&#10;!2&#10;!3&#10;!7&#10;!8&#10;!12&#10;!18&#10;!22&#10;!24&#10;!25&#10;!27&#10;!29&#10;!31&#10;|-&#10;!海军士气&#10;| +2.0&#10;|&#10;|  +0.1&#10;|  +0.3&#10;|  +0.2&#10;|  +0.4&#10;|  +0.5&#10;|  +0.5&#10;|&#10;|  +0.5&#10;|  +0.5&#10;|  +0.5&#10;|  +0.5&#10;|-&#10;!海战宽度&#10;|5&#10;| +20&#10;|&#10;| +10&#10;|&#10;| +15&#10;| +10&#10;| +5&#10;| +10&#10;|&#10;|&#10;|&#10;|&#10;|}&#10;==={{icon|mil tech}} 军事科技对海军的叠加效果===&#10;{| class=&quot;mildtable sortable&quot; style=&quot;text-align:left&quot;&#10;!军事科技等级&#10;!0&#10;!7&#10;!13&#10;!16&#10;!22&#10;!25&#10;!32&#10;|-&#10;!炮兵火力&#10;| +0.0&#10;| +1.0&#10;| +1.4&#10;| +2.4&#10;| +4.4&#10;| +6.4&#10;| +8.4&#10;|}&#10;&#10;===最大海军士气===&#10;下列数值会影响最大海军士气的数值。 &#10;&#10;{| class=&quot;mildtable&quot;&#10;! colspan=&quot;2&quot; |因素&#10;!数值&#10;|-&#10;| rowspan=&quot;2&quot; | || rowspan=&quot;2&quot; |海军维护费||最少海军维护费（0）时 {{red|20%}}&#10;|-&#10;|最大海军维护费时 {{green|100%}}（乘法修正）&#10;|-&#10;|{{icon|Navy Tradition}}||海军传统||100海军传统时 {{green|+25%}}&#10;|-&#10;|{{icon|Prestige}}||威望||100威望时 {{green|+10%}}，-100威望时 {{red|-10%}}&#10;|-&#10;|{{icon|Power Projection}}||力量投射||{{green|+10%}}处于100力量投射时&#10;|-&#10;|{{icon|Naval reformer|28px}}||海军改革者[[顾问]]||{{green|+10%}}&#10;|-&#10;|{{icon|defender of the faith|28px}}||[[信仰守护者]]||{{green|+5%}}&#10;|-&#10;| ||破产||{{red|-50%}}&#10;|-&#10;|{{icon|War exhaustion}}||厌战度||{{red|-2%}}每一点厌战度&#10;|}&#10;特定的国家理念，理念组和政策都会增加海军士气。&#10;{{bonus table|naval morale}}&#10;&#10;每点海军传统也会增加海军士气恢复0.10%&#10;===作战能力===&#10;&#10;&#039;&#039;作战能力&#039;&#039;是一个提升单位耐久伤害和士气伤害的一个值。作战能力只会对其特定单位有效。&#10;&#10;&#039;&#039;&#039;重型船只作战能力&#039;&#039;&#039;&#10;&#10;{{bonus table|heavy ship power}}&#10;&#10;&#039;&#039;&#039;轻型船只作战能力&#039;&#039;&#039;&#10;{{bonus table|light ship power}}&#10;&#10;&#039;&#039;&#039;桨帆战舰作战能力&#039;&#039;&#039;&#10;{{bonus table|galley power}}&#10;&#10;&#039;&#039;&#039;运输船作战能力&#039;&#039;&#039;&#10;{{bonus table|transport power}}&#10;&#10;===单位点数===&#10;{{main|海军单位}}&#10;&#10;每艘船都有三个值：{{icon|hull}} 耐久度、{{icon|cannon}} 火炮数量和 {{icon|speed}} 移动速度。&#10;&#10;耐久值代表血量，火炮数量代表攻击力。除开士气，每个战斗阶段双方都会用耐久/火炮值来对抗以算出每个战斗阶段中耐久度遭受的伤害。&#10;&#10;===将领能力值===&#10;&#10;海军将领有几个最高为6的能力值，其数值越高越好：&#10;&#10;*{{icon|naval leader fire}} 火力&#10;{{icon|naval leader shock}} 冲击&#10;将领的能力值在其相应的阶段加入骰子点数。&#10;&#10;{{bonus table|naval leader fire}}&#10;&#10;{{bonus table|naval leader shock}}&#10;*{{icon|naval leader maneuver}}&#10;&#10;海军将领的机动值影响了舰队在大地图上的移动速度。每一点还会在舰队被送去[[保护贸易]]时对所在贸易节点额外增加5%的贸易力量，还会降低 1%舰队遭受的损耗。&#10;&#10;{{bonus table|naval leader maneuver}}&#10;&#10;[[File:Naval combat result.png|thumb|right|海军战斗结束后的总结界面]]&#10;===战斗结束===&#10;&#10;一场海战会其中一只舰队在发生以下条件时结束：&#10;&#10;*士气降至0&#10;*舰队撤出战斗&#10;*全灭&#10;胜利之时，败军舰队中的船只可能会被捕获，这几率取决于双方舰队将领的机动值差距。总的来说，在无将领的舰队交战后，一般不会有任何捕获船只的机会，因为双方机动值都为0。&#10;&#10;若败军舰队仍有船只残留，那么它们会一边向最近的友军港口逃窜一边恢复自身的士气。海战与陆战一样，可能会影响[[厌战度]]、[[战争得分]]、[[海军传统]]和[[威望]]。不过值得注意的是从海战中得到的战争分一般无法和陆军所得的相比。&#10;&#10;部分理念会增加交战后捕获船只的几率:&#10;&#10;{{bonus table|chance to capture enemy ships}}&#10;&#10;==士气与耐久度==&#10;{{SVersion|1.25}}&#10;&#10;===士气===&#10;{{hatnote|&quot;海军士气&quot;重定向到这。增加最大海军士气的效果请见上面的[[#最大海军士气|最大海军士气]]。}}&#10;士气是决定海战成败的重要因素。船只在每一个回合都会损失一部分的士气。当一支舰队的平均士气降至0时，这支舰队就会尝试撤退。在一个火力和冲击阶段完成前不可能撤退，所以一支舰队在这两个阶段完成前士气便降低至0的话便会被消灭。&#10;&#10;如果一支舰队在低士气的状态下战败，那么它就会被强制撤退至最近的海区。撤退时，舰队无法在到达目标海区前战斗，控制或维修。但它可以在撤退过程中由正常速度恢复士气，不仅如此，它的移动速度还会加快50%。&#10;&#10;记住每一场海战后都要花费一些时间让舰队恢复自身的士气。&#10;&#10;===士气恢复===&#10;&#10;当一艘船停靠在友军港口时，恢复其最大士气的10%。&#10;&#10;特定的国家理念，理念组和政策都会增加海军士气恢复速度。&#10;&#10;{{bonus table|recover navy morale speed}}&#10;&#10;每点海军传统都会增加 {{green|+0.1%}} 的海军士气恢复速度。&#10;===单位优势===&#10;&#10;单位优势是海战中十分重要的一个因素，桨帆战舰在内海获得100%优势的加成，下图里的淡蓝色海域即是内海。&#10;&#10;[[File:Terrain map.png|thumb|800px|center|地形地图]]&#10;&#10;===船只修复===&#10;&#10;受到伤害的舰队可在本国，同盟，或有舰队停靠权的港口自动修复至最大耐久值。舰队界面有一个“修复损伤船只”的按钮可以让受损船只脱离舰队去最近的港口进行修复，当它们修复完成后会回到原舰队中。&#10;&#10;{{main|海军#船只修复}}&#10;==海军学说==&#10;{{SVersion|1.36}}&#10;&#10;{{Expansion|rb}}&#10;一个国家如果有 {{icon|naval force limit}} 至少20的海军上限，就可以选择一个“{{N|海军学说|Naval Doctrine}}”。选择一个海军学说，或者改变为另一个（任何时候都能做），花费该国的海军的 {{icon|ducats}} {{red|0.1}} 金币每个 {{icon|sailors}} 水手（例如： {{icon|ducats}} {{red|5}} 每条轻型船或运输船，{{icon|ducats}}{{red|10}} 每条桨帆船，以及 {{icon|ducats}}{{red|20}} 每条重型船）。&#10;&#10;学说列表：&#10;&#10;{| class=&quot;mildtable&quot;&#10;! style=&quot;width:30em&quot; |学说&#10;!效果&#10;!注释&#10;|-&#10;|{{Iconbox|存在舰队|除了在最有利的条件下，不应冒着舰队离港的风险，这样才能维持我们海军的威慑力。|image=Fleet_in_Being.png|en=Fleet In Being}}&#10;|&#10;*{{icon|naval maintenance modifier}} {{green|−15%}} 海军维护费修正&#10;|&#10;|-&#10;|{{Iconbox|自由桨手|我们将抗拒让奴隶划船的诱惑。自由人，在逆境中具有弹性并且能够抵抗叛变，这将成为我们海军的力量。|image=Free_Oarsmen.png|en=Free Oarsmen}}&#10;|&#10;*{{icon|galley combat ability}} {{green|+15%}} 桨帆船作战能力&#10;|&#10;|-&#10;|{{Iconbox|重视商船|我们舰队的指导原则是服务于国家的经济利益。应当尽一切努力来确保我们的商船载满来自其他国家的财富。|image=Merchant_Navy.png|en=Merchant Navy}}&#10;|&#10;*{{icon|ship trade power}} {{green|+33%}} 船只贸易力量&#10;|&#10;|-&#10;|{{Iconbox|登船作战|伴随着捕获法的建立以及捕拿特许证的普及，我们培育起了一种完好俘获敌军船舶的传统。|image=Ship_Boarding.png|en=Ship Boarding}}&#10;|&#10;*{{icon|chance to capture enemy ships}} {{green|+33%}} 捕获敌方船只几率&#10;|&#10;|-&#10;|{{Iconbox|木墙|在这个瞬息万变的世界里，海洋对我们的国家至关重要。作为确保我们的统治地位的手段，并且作为第一道防线，我们的「木墙」必须占得先机。（典出希波战争萨拉米斯海战相关史事）|image=Wooden Wall.png|en=Wooden Wall}}&#10;|&#10;*[[File:Naval combat bonus off owned coast.png|28px|link=#战斗序列]] {{green|+1}} 己方临海省份海域海战奖励&#10;|{{plainlist|&#10;* 需要 {{icon|culture}} 文化在不列颠文化组&#10;* 未完成 {{icon|mission}} 瑞典“挪威水手”任务&#10;|-&#10;|{{Iconbox|无敌舰队|强大的护航舰队将陪同珍宝船队把美洲的财富带回我们的国内港口。|en=Grand Armada|image=Grand Armada.png}}&#10;|{{plainlist|&#10;*{{icon|marines force limit}} {{green|+25%}} 海军陆战队上限&#10;*{{icon|naval leader maneuver}} {{green|+1}} 海军将领机动&#10;*{{icon|treasure fleet income}} {{green|+50%}} [[珍宝船队]]收入&#10;|需要 {{icon|culture}} 文化在伊比利亚文化组，但&#039;&#039;&#039;不&#039;&#039;&#039;是葡萄牙、巴西、加泰罗尼亚、阿拉贡或巴斯克文化&#10;|-&#10;|{{Iconbox|葡萄牙海军陆战队|为了建立一个真正的全球帝国，我们必须熟练掌握从海上对敌人的要塞发动突袭。|en=Portuguese Marines|image=Portuguese Marines.png}}&#10;|{{plainlist|&#10;*[[File:Blockade_impact_on_siege.png|28px|link=Siege]] {{green|+1}} 舰队封锁对攻城的影响&#10;*{{green|−40%}} [[海上炮击]]花费&#10;*{{icon|special unit force limit}} {{green|+50%}} 海军陆战队上限&#10;|{{plainlist|&#10;* 需要 {{icon|culture}} 葡萄牙或巴西文化&#10;* 未完成 {{icon|mission}} 瑞典“挪威水手”任务&#10;|-&#10;|{{Iconbox|海洋法令|地中海有很多海权国家，但没有任何一个国家拥有我们这样的航海经验和法律。我国的舰队法令确保了海军时刻有充足的准备来面对任何海上遭遇。|en=Ordinances of the Sea|image=Ordinances_of_the_Sea.png}}&#10;|{{plainlist|&#10;*{{icon|engagement width}} {{green|+15%}} 海军接战宽度&#10;|{{plainlist|&#10;* 需要 {{icon|culture}} 阿拉贡或加泰罗尼亚文化&#10;* 未完成 {{icon|mission}} 瑞典“挪威水手”任务&#10;|-&#10;|{{Iconbox|丹麦海军部|让别人去吹嘘他们先进的军舰型号或是那些能战斗至无谓死亡的水手去吧！我们才真正懂得海战的精髓。无论有多么出色船只和水手，只有优秀的提督才能带领一支舰队走向胜利。我国海军将会坚持这一看法。|en=Danish Admiralty|image=Danish Admiralty.png}}&#10;|{{plainlist|&#10;*{{icon|naval leader_maneuver}} {{green|+2}} 海军将领机动&#10;*{{icon|admiral cost}} {{green|-10%}} 海军将领花费&#10;|{{plainlist|&#10;* 需要 {{icon|culture}} 丹麦文化&#10;* 未完成 {{icon|mission}} 瑞典“挪威水手”任务&#10;|-&#10;|{{Iconbox|挪威水手|自从王国肇始，我国人民就依靠海洋和海岸讨生活。无论是捕鱼、掠夺还是海战，我国水手比其他任何海权国家的水手都要更加经验丰富。他们的技巧应当被进一步发扬。|en=Norwegian Sailors|image=Norwegian Sailors.png}}&#10;|{{plainlist|&#10;*{{icon|special unit force limit}} {{green|+25%}} 海军陆战队上限&#10;*{{icon|ship speed}} {{green|+1}} 舰队移动速度&#10;|需要 {{icon|culture}} 挪威文化或已完成 {{icon|mission}} 瑞典“挪威水手”任务&#10;|-&#10;|{{Iconbox|挪威水手升级|自从王国肇始，我国人民就依靠海洋和海岸讨生活。无论是捕鱼、掠夺还是海战，我国水手比其他任何海权国家的水手都要更加经验丰富。他们的技巧应当被进一步发扬。|en=Norwegian Sailors Upgraded|image=Norwegian Sailors Upgraded.png}}&#10;|{{plainlist|&#10;*{{icon|special unit force limit}} {{green|+25%}} 海军陆战队上限&#10;*{{icon|sailor recovery speed}} {{green|+25%}} 水手恢复速度&#10;*{{icon|ship speed}} {{green|+2}} 舰队移动速度&#10;|已完成 {{icon|mission}} 挪威“扩编皇家海军”任务&#10;|-&#10;|{{Iconbox|尼德兰贸易舰队|欧洲诸国家利用海军，通过海战来投身国家力量。不过，我们发展海军意在抵达世界的尽头。邻国只是想着怎么把敌国海岸炸烂，我们却能同最遥远的外国通商往来。|en=Dutch Trade Fleet|image=Dutch Trade Fleet.png}}&#10;|{{plainlist|&#10;*{{icon|ship_trade_power}} {{green|+25%}} 船只贸易竞争力&#10;*{{icon|trade range}} {{green|+25%}} 贸易范围&#10;|{{plainlist|&#10;* 需要 {{icon|culture}} 荷兰或佛兰德文化&#10;* 未完成 {{icon|mission}} 瑞典“挪威水手”任务&#10;|-&#10;|{{Iconbox|诺斯劫掠舰队|维京人的海陆两军都擅长在敌人做出反应之前快速打击再迅速撤退。尽管当下它已经有点过时，但却仍然可以以现代海军学说接纳这一思想。|en=Norse Raiding Fleet|image=Norse Raiding Fleet.png}}&#10;|{{plainlist|&#10;*{{icon|privateer_efficiency}} {{green|+33%}} 私掠效率&#10;*{{icon|ship speed}} {{green|+3}} 舰队移动速度&#10;|{{plainlist|&#10;* 需要 {{icon|culture}} 诺斯文化&#10;* 未完成 {{icon|mission}} 瑞典“挪威水手”任务&#10;|-&#10;|{{Iconbox|威尼斯军械库|国家的海权力量不单由海军在洋上的火力决定，修造船只的能力也同样重要。我国的军械库正是为此而设立的。|en=Venetian Arsenal|image=Venetian Arsenal.png}}&#10;|{{plainlist|&#10;*{{icon|ship cost}} {{green|-15%}} 造船花费&#10;*{{icon|naval maintenance}} {{green|-10%}} 海军维护费&#10;|{{plainlist|&#10;* 需要 {{icon|culture}} 威尼斯文化&#10;* 未完成 {{icon|mission}} 瑞典“挪威水手”任务&#10;|-&#10;|{{Iconbox|板屋船|邻国海军强大，意图征服我国，奴役我民。所幸，我们有「板屋船」。这是一艘坚固的战舰，可以轻松同时抵御多艘敌舰火力，是为应对邻国威胁的万灵法宝。|en=Panokseon|image=Panokseon.png}}&#10;|{{plainlist|&#10;*[[File:Naval combat bonus off owned coast.png|28px|link=#战斗序列]] {{green|+1}} 己方临海省份海域海战奖励&#10;|{{plainlist|&#10;* 需要 {{icon|culture}} 朝鲜或朝鲜（中华）文化&#10;* 未完成 {{icon|mission}} 瑞典“挪威水手”任务&#10;|-&#10;|{{Iconbox|安宅船|海战刚打响时就沉掉的船，要它何用？「安宅船」的设计考虑到了这个问题。和那些轻松沉掉的船相比，这艘简直是可以说是不沉的海上堡垒。|en=Atakebune|image=Atakebune.png}}&#10;|{{plainlist|&#10;*{{icon|heavy_ship_power}} {{green|+5%}} 重型船只作战能力&#10;*{{icon|ship durability}} {{green|+5%}} 船只耐久&#10;*{{icon|naval morale}} {{green|+5%}} 海军士气&#10;|{{plainlist|&#10;* 需要 {{icon|culture}} 日本文化组&#10;* 未完成 {{icon|mission}} 瑞典“挪威水手”任务&#10;|-&#10;|{{Iconbox|汉萨同盟海军学说|我国海军的建军理念是促进商贸而非获得海战优势。我们的主要目标是尽可能增加国家的财富和海贸经验。|en=Hanseatic Doctrine|image=Hanseatic Doctrine.png}}&#10;|{{plainlist|&#10;*{{icon|ship_trade_power}} {{green|+25%}} 船只贸易竞争力&#10;*{{icon|naval tradition from protecting trade}} {{green|+75%}} 来自保护贸易的海军传统&#10;|{{plainlist|&#10;* 需要 {{icon|culture}} 下萨克森文化&#10;* 未完成 {{icon|mission}} 瑞典“挪威水手”任务&#10;|-&#10;|{{iconbox|大突厥海军|我们的舰队的伟大在于其数量。每艘敌船在面对我们时都将不得不以一敌三。|en=Great Turkish Navy|image=Great Turkish Navy.png}}&#10;|{{plainlist|&#10;*{{icon|naval force limit modifier}} {{green|+20%}} 海军上限&#10;*{{icon|ship cost}} {{green|−10%}} 船只花费&#10;|{{plainlist|&#10;* 需要 {{icon|culture}} 突厥文化&#10;* 未完成 {{icon|mission}} 瑞典“挪威水手”任务&#10;|-&#10;|{{iconbox|马格里布私掠者|马格里布水手们在地中海过上了海盗和私掠者的生活。对不尊重我们的异教徒的海岸烧杀抢掠，他们会是我们的国家宝贵的力量之一。|en=Maghrebi Corsairs|image=Maghrebi Corsairs.png}}&#10;|{{plainlist|&#10;*{{icon|privateer efficiency}} {{green|+25%}} 私掠效率&#10;*{{icon|may raid coasts}} 允许劫掠海岸&#10;*{{icon|Looting speed}} {{green|+50%}} 可用战利品&#10;|{{plainlist|&#10;* 需要 {{icon|culture}} 马格里布文化组&#10;* 未完成 {{icon|mission}} 瑞典“挪威水手”任务&#10;|-&#10;|{{iconbox|私掠许可证|我们通过私掠许可证授予私人以代表我们攻击或俘获敌船的权利。这种结合了爱国主义与利益的方案可以让我们以比海军更低的成本来削弱我们的对手。|en=Letter of Marque|image=Letter of Marque.png}}&#10;|{{plainlist|&#10;*{{icon|chance to capture enemy ships}} {{green|+20%}} 捕获敌方船只几率&#10;*{{icon|ship speed}} {{green|+1}} 舰队移动速度&#10;*{{icon|Ship_disengagement_chance}} {{green|+10%}} 船只脱战几率&#10;|{{plainlist|&#10;* 需要 {{icon|culture}} 法兰西文化组，但&#039;&#039;&#039;不&#039;&#039;&#039;是盎格卢瓦文化&#10;* 未完成 {{icon|mission}} 瑞典“挪威水手”任务&#10;|-&#10;|{{iconbox|诺夫哥罗德乌什库尼克海盗|乌什库尼克是劫掠伏尔加河沿岸城市的诺夫哥罗德海盗。尽管他们不在公海上行动，但他们的海军专长足以让他们成为宝贵的海军陆战队。|en=Novgorodian Ushkuiniks|image=Novgorodian Ushkuiniks.png}}&#10;|{{plainlist|&#10;*{{icon|sailor maintenance}} {{green|−10%}} 水手维护费&#10;*{{icon|marines force limit}} {{green|+15%}} 海军陆战队上限&#10;|{{plainlist|&#10;* 需要 {{icon|culture}} 诺夫哥罗德文化&#10;* 未完成 {{icon|mission}} 瑞典“挪威水手”任务&#10;|-&#10;|{{iconbox|俄罗斯贵族海军部|某些国家的海军依靠船只数量或是木材质量。但一支真正表现出色的海军必须通过将贵族中的精英——德沃良宁——招募为海军指挥官才能建成。|en=Dvoryane Admiralty|image=Dvoryane Admiralty.png}}&#10;|{{plainlist|&#10;*{{icon|yearly navy tradition}} {{green|+1}} 年度海军传统&#10;*{{icon|naval leader shock}} {{green|+1}} 海军将领冲击&#10;|{{plainlist|&#10;* 需要 {{icon|culture}} 莫斯科文化&#10;* 未完成 {{icon|mission}} 瑞典“挪威水手”任务&#10;|-&#10;|{{iconbox|马来亚航海|鉴于马来亚及印度尼西亚的特性，保持一种允许我们海上机动迅速的学说实属必要。|en=Malayan Seafaring|image=Malayan Seafaring.png}}&#10;|{{plainlist|&#10;*{{icon|hostile disembark time}} {{green|+50%}} 登陆速度&#10;*{{icon|naval attrition}} {{green|−25%}} 海军损耗&#10;*{{icon|attrition}} {{green|−50%}} 登船损耗&#10;|{{plainlist|&#10;* 需要 {{icon|culture}} 马来亚文化组&#10;* 未完成 {{icon|mission}} 瑞典“挪威水手”任务&#10;|-&#10;|{{iconbox|戎克船队|戎克船的帆全部用板条固定。尽管远东亚洲的其他国家也使用过戎克船，但其主要还是在中国商船和海军中占主导地位。|en=The Junk Fleet|image=The Junk Fleet.png}}&#10;|{{plainlist|&#10;*{{icon|naval force limit modifier}} {{green|+25%}} 海军上限&#10;*{{icon|ship cost}} {{green|−50%}} 轻型船只花费&#10;|{{plainlist|&#10;* 需要 {{icon|culture}} 中华文化组，但&#039;&#039;&#039;不&#039;&#039;&#039;是江淮或朝鲜文化&#10;* 未完成 {{icon|mission}} 瑞典“挪威水手”任务&#10;|-&#10;|{{iconbox|中华宝船舰队|舰队是我等力量之延伸，此外毫无他用。让我们用大舰从远方收集朝贡的贡品吧。|en=The Chinese Treasure Fleet|image=The Chinese Treasure Fleet.png}}&#10;|{{plainlist|&#10;*{{icon|colonial range}} {{green|+25%}} 殖民距离&#10;*{{icon|trade range}} {{green|+25%}} 贸易范围&#10;*{{icon|treasure fleet income}} {{green|+50%}} [[珍宝船队]]收入&#10;|{{plainlist|&#10;* 需要 {{icon|culture}} 江淮文化&#10;* 未完成 {{icon|mission}} 瑞典“挪威水手”任务&#10;|-&#10;|{{iconbox|马拉塔海军火炮|虽然船队既保障了海军优势，又帮助了我国的商人，但海军最主要的目的依然是支援我国的陆军。通过利用海军炮击，我们能迅速攻破海岸堡垒。|en=Maratha Naval Bombards|image=Maratha Naval Bombards.png}}&#10;|{{plainlist|&#10;*{{green|−25%}} [[海上炮击]]花费&#10;*{{icon|blockade impact on siege}} {{green|+1}} 封锁对围城的影响&#10;*{{icon|blockade efficiency}} {{green|+25%}} 封锁效率&#10;|{{plainlist|&#10;* 需要 {{icon|culture}} 西雅利安文化组&#10;* 未完成 {{icon|mission}} 瑞典“挪威水手”任务&#10;|-&#10;|{{iconbox|波利尼西亚领航|自古以来，我族就掌握着在广袤海洋中导航的技术。其他人必须依靠工具导航，而我国的水手只需用肉眼观察飞鸟与夜空，就能航行于万里波涛之上。|en=Polynesian Navigation|image=Polynesian Navigation.png}}&#10;|{{plainlist|&#10;*{{icon|colonial range}} {{green|+50%}} 殖民距离&#10;*{{icon|may explore}} 允许招募探险家和征服者。探险家可以探索海洋省份&#10;|{{plainlist|&#10;* 需要 {{icon|culture}} 太平洋文化组&#10;* 未完成 {{icon|mission}} 瑞典“挪威水手”任务&#10;|-&#10;|{{iconbox|罗马海军战术|《战术》是综合总结罗马帝国陆军和海军经验而成的军事著作，其中总结的许多海军战术在中世纪之后依然十分有效。|en=Tactica|image=Tactica.png}}&#10;|{{plainlist|&#10;*{{icon|ship disengagement chance}} {{green|+15%}} 船只脱战几率&#10;*{{icon|galley combat ability}} {{green|+20%}} 桨帆战舰作战能力&#10;|{{plainlist|&#10;* 需要 {{icon|culture}} 拜占庭文化组&#10;* 未完成 {{icon|mission}} 瑞典“挪威水手”任务&#10;|-&#10;|{{iconbox|巴斯克海军陆战队|我们的人民追捕鲸鱼到世界的尽头，袭击海岸或从其他地方带来珍贵的货物，已经有很长一段时间了，就这样学习海洋的秘密。这些教诲使我们的水手无畏而可靠，为雇用他们的海军提供安全的价值。|en=Basque Marines|image=Basque Marines.png}}&#10;|{{plainlist|&#10;*{{icon|may explore}} 允许招募探险家和征服者。探险家可以探索海洋省份&#10;*{{icon|hostile movement speed}} {{green|忽略}} 登陆惩罚&#10;*{{icon|marines force limit}} {{green|+25%}} 海军陆战队上限&#10;|{{plainlist|&#10;* 需要 {{icon|culture}} 巴斯克文化&#10;* 未完成 {{icon|mission}} 瑞典“挪威水手”任务&#10;|-&#10;|{{iconbox|马穆鲁克桨帆战船|我们强大的桨帆船和能干的船员将统治大洋，为我们的名号增光添彩，使我们的徽记熠熠生辉。|en=Mamluk Galleys|image=Mamluk Galleys.png}}&#10;|{{plainlist|&#10;*{{icon|galley_power}} {{green|+15%}} 桨帆船作战能力&#10;*{{icon|galley_cost}} {{green|-25%}} 桨帆船花费&#10;|{{plainlist|&#10;* 完成 {{icon|mission}} [[马穆鲁克任务#海军事业|海军事业]]任务&#10;|-&#10;|{{iconbox|马穆鲁克商船|我们无与伦比的商船队和能干的船员将统治大洋，为我们带来金银万两，让我们名扬天下。|en=Mamluk Merchant Vessels|image=Mamluk Merchant Vessels.png}}&#10;|{{plainlist|&#10;*{{icon|ship_trade_power}} {{green|+15%}} 船只贸易竞争力&#10;*{{icon|light_ship_cost}} {{green|-25%}} 轻型船只花费&#10;|{{plainlist|&#10;* 完成 {{icon|mission}} [[马穆鲁克任务#海军事业|海军事业]]任务&#10;|-&#10;|{{iconbox|马穆鲁克战舰|我们强大的战舰和能干的船员将统治大洋，为我们的名号增光添彩，使我们的徽记熠熠生辉。|en=Mamluk Warships|image=Mamluk Warships.png}}&#10;|{{plainlist|&#10;*{{icon|heavy_ship_power}} {{green|+10%}} 重型船只作战能力&#10;*{{icon|Engagement Width}} {{green|+10%}} 海军接战宽度&#10;|{{plainlist|&#10;* 完成 {{icon|mission}} [[马穆鲁克任务#海军事业|海军事业]]任务&#10;|-&#10;|{{iconbox|马穆鲁克运输船|我们的运输船和能干的船员将统治大洋，为我们的名号增光添彩，使我们的徽记熠熠生辉。|en=Mamluk Transports|image=Mamluk Transports.png}}&#10;|{{plainlist|&#10;*{{icon|naval_attrition}} {{green|-50%}} 运输损耗&#10;*{{icon|marines force limit}} {{green|+10%}} 海军陆战队上限&#10;*{{icon|ship speed}} {{green|+1}} 舰队移动速度&#10;|{{plainlist|&#10;* 完成 {{icon|mission}} [[马穆鲁克任务#海军事业|海军事业]]任务&#10;|}&#10;&#10;==舰队指令==&#10;{{SVersion|1.25}}&#10;&#10;===开始巡逻 {{anchor|Patrolling}}===&#10;[[File:unitpanel button enable patrol.png|36px]] &#039;&#039;&#039;开始巡逻&#039;&#039;&#039;按钮让舰队开始循环被指定的移动命令。当它到达前一任务的终点时，就会返回巡逻的起点开始巡逻。巡逻路线可以包括港口停靠，巡逻在所有船只修复前停止。虽然同样的功能保护贸易的轻型船只舰队也能做，但巡逻不限制船只类型，贸易力量或贸易距离。&#10;===劫掠海岸===&#10;&amp;lt;section begin=RaidCoasts/&gt;{{ambox&#10;|type=notice&#10;|small=left&#10;|smallimage={{icon|mn|24px}}{{icon|gc|24px}}{{icon|lon|24px}}&#10;|textstyle=font-size:85%&#10;|text=仅当DLC[[我们的海]]、[[黄金世纪]]&#039;&#039;&#039;或&#039;&#039;&#039;[[北方雄狮]]开启时可用。&#10;}}&#10;劫掠海岸是一项海军能力，允许拥有该能力的国家的舰队劫掠其他非同信仰国家的海岸以获得 {{icon|ducat}} 战利品（金币）和 {{icon|sailors}} 水手。这项能力可经由国家理念、政府改革等方式获得。部分国家除了不同信仰国家之外，还允许劫掠同信仰国家的海岸。&#10;&#10;劫掠海岸可以提供显著的收入和水手池加成，并作为损害其他国家经济的一种手段。&#10; &amp;lt;section end=RaidCoasts/&gt;&#10;一个例子是 {{flag|So}}，通过不断劫掠 {{flag|Ming}}的海岸可以叠高荒废度，甚至可能让其因此失去[[中国皇帝|天命]]而崩溃。&#10;&#10;====条件====&#10;[[File:Raid_coasts.jpg|thumb|500px|作为摩洛哥，劫掠海岸。]]&#10;劫掠海岸是舰队在海上的可能行为。要劫掠一个海岸省份，需要满足以下条件：&#10;* 这个国家…&#10;:* …有以下条件之一… &#10;::* …理念 “&#039;&#039;可以劫掠海岸&#039;&#039;”: {{Bonus table|may raid coasts}}&#10;::* …理念 “&#039;&#039;可以劫掠海岸，包括同宗教的国家&#039;&#039;”: {{Bonus table|may raid coasts including coasts of countries with same religion}}&#10;::* …拥有 [[共和制#海盗共和国|海盗共和国]] 政府改革 ({{flag|So}}, {{flag|Palembang}}, {{flag|Pattani}}, {{flag|Rügen}}, {{flag|Cornwall}} 以及 {{flag|Gotland}} 可以通过事件转为海盗共和国； {{flag|New Providence}}, {{flag|Port Royal}}, {{flag|Tortuga}}, {{flag|Libertatia}}, {{flag|Salé}} 和 {{flag|Tétouan}} 通过事件被释放时会是海盗共和国)&#10;::*  …拥有 [[君主制#巴巴里伊克塔|巴巴里伊克塔]] 政府改革（仅限马格里布文化组国家）&#10;::*  …拥有 [[君主制#巴巴里行省政府|巴巴里行省政府]] 政府改革&#10;::*  …拥有 [[通用政府改革#融入诺斯传统|融入诺斯传统]] 政府改革（仅限 {{icon|norse|24px}} 诺斯信仰国家）&#10;::*  …选择 [[海战#马格里布私掠者|马格里布私掠者]] 海军学说（仅限马格里布文化组国家）&#10;::*  …完成一项暂时给予劫掠海岸能力的任务&#10;:* …must be able to place a fleet in a sea tile adjacent to the province, but doesn&#039;t need to be able to blockade the port&#10;* the target province…&#10;:* …must be no more than three sea tiles away from a province owned by the nation (cored or otherwise). This can be increased with the modifier “&#039;&#039;Coastal raiding range&#039;&#039;”&#10;:* …must have a [[development]] lower than or equal to the blockading power of the fleet&#10;:* …does not belong to a country which has a truce with the raiding nation&#10;:* …does not belong to a country which has the same [[religion]] as the raiding nation, unless the raiding nation is a Pirate Republic, {{flag|Normandy}} or {{flag|Somalia}}&#10;:* …does not have the [[religion]] of the raiding nation, unless the raiding nation is a Pirate Republic, {{flag|Normandy}} or {{flag|Somalia}}&#10;:* …is not controlled by a “&#039;&#039;friend&#039;&#039;” (ally, subject of ally, in the same trade league, country with above 100 opinion) of the raiding nation&#10;:* …is not controlled by the overlord of the raiding nation or subjects of the overlord or subjects of the raiding nation&#10;&#10;:* …does not have the “&#039;&#039;Raided Coast&#039;&#039;” modifier&#10;&#10;After a province has been raided, its loot bar is emptied, the amount of devastation is increased, and the modifier “&#039;&#039;Raided Coast&#039;&#039;” is applied for ten years. Each raided province will add a {{red|−25}} relations penalty with the target country (up to a maximum of {{red|−100}}), decaying by {{green|+1}} per year. &#10;&#10;The efficiency of raiding is reduced by fleets on [[Naval warfare#Hunt pirates|pirate hunting patrol]].&#10;&#10;When a coast is raided, the loot provided is as follows:&#10;{| class=&quot;mildtable&quot;&#10;! Raided coast&#10;! Conditions&#10;|-&#10;|style=&quot;text-align:left&quot; | {{plainlist|&#10;*{{green|+1}} {{icon|income}}&#10;}}&#10;|| per [[Development|development]] (raided province)&#10;|-&#10;|style=&quot;text-align:left&quot; | {{plainlist|&#10;{{green|+ sailors}}&#10;}}&#10;|| [[Sailors|Local sailors]] per Raided provinces / 4&#10;|}&#10;&#10;===封锁===&#10;&#10;{{anchor|Blockade}}&#10;一只固定且没有其它任务的舰队会自动封锁敌对国或被敌对国占领的沿海省份。&#10;&#10;====封锁能力====&#10;舰队的封锁能力是在舰队界面 [[File:Blockade enemy ports.png|28px]] 封锁标志中显示。封锁能力基本被舰队的 {{icon|ship speed|28px}} 战术移动速度决定 。&#10;&#10;:&amp;lt;math&gt;\text{封锁能力} =  \frac{\sum\text{船只速度}}{3} \cdot \text{封锁效率}&amp;lt;/math&gt;&#10;每一点封锁能力可以封锁省份的一点发展度。&#10;&#10;封锁只会在封锁能力等于或高于省份发展度时才会有效。如果一支舰队没有足够的封锁能力去封锁相邻的被敌对省份，那么封锁的优先级为：&#10;&#10;*正在被友军围攻的敌对省份&#10;*最低发展度的敌对省份&#10;*最低发展度的敌对叛军省份&#10;&#10;位于[[舰队]]界面的&#039;&#039;分离封锁&#039;&#039;按钮（[[File:detach blockade.png|28px]]）会分离足够封锁当前海区敌军省份的舰队 。&#10;&#10;=====封锁效率=====&#10;&#10;封锁效率由以下修正影响：&#10;&#10;{| class=&quot;mildtable&quot;&#10;! style=&quot;width:30px&quot; |[[File:Blockade efficiency.png|28px]]&#10;!条件&#10;|-&#10;| align=&quot;right&quot; |{{green|+1%}}||每一点 {{icon|navy tradition|28px}} 海军传统&#10;|}&#10;理念和政策：&#10;{{bonus table|blockade efficiency}}&#10;决议和事件：&#10;{| class=&quot;mildtable mw-collapsible&quot;&#10;! style=&quot;width:30px&quot; |[[File:Blockade efficiency.png|28px]]&#10;! style=&quot;width:250px&quot; |事件修正&#10;! style=&quot;width:450px&quot; |触发条件&#10;!持续时间&#10;|- valign=&quot;top&quot;&#10;| style=&quot;text-align:right&quot; |{{green|+20%}}&#10;|封锁战术的改良&#10;|航海理念组事件：[[Maritime_idea_group_events#Improved_Blockade_Tactics|封锁战术的改良]]&#10;|10年&#10;|- valign=&quot;top&quot;&#10;| style=&quot;text-align:right&quot; |{{red|−25%}}&#10;|海军变得懒惰&#10;|航海理念组事件：[[Maritime_idea_group_events#Slipping_Standards|海军变得懒惰]]&#10;:选项：“我们不能期望他们随时随地保持高效”&#10;|10年&#10;|}&#10;====封锁效果====&#10;封锁会对敌方占有的沿海省份造成一系列负面效果：&#10;&#10;{{#lst:Static modifiers|blockaded}}&#10;需要额外注意的是，生产 {{icon|spices}} 香料的省份所提供的省份奖励恰好可以抵消封锁所带来的月度荒芜度增加。&#10;被封锁的国家同时还会受到以下修正，修正的具体数值由所被封锁的总发展度比例（核心，省份)决定：&#10;{{#lst:Static modifiers|BlockadedHomePorts}}&#10;封锁还拥有以下影响：&#10;*[[围城]]： {{green|−2}} 未被封锁沿海省份围城惩罚，除非省份为未开发地带。（没有港口的沿岸省份不适用此项，例如里海沿岸的省份）&#10;*[[战争分数]]：封锁所带来的战争分数由所被封锁省份的发展度比例和当地自治度修正。拥有首都和堡垒的身份会占更多的分数。有些[[宣战理由]]将封锁省份作为战争目标。&#10;*[[战利品]]：封锁会获得被封锁省份的一部分收入，体现为增加{{icon|ducats}}金币至封锁者的国库中（收入列于“战利品”一栏内）&#10;*移动限制：参见 [[海战#封锁海峡|封锁海峡]] 章节。&#10;&#10;===封锁海峡===&#10;&#10;游戏中有些省份之间没有在陆地上直接接壤，而是隔海相望但通过虚线连接的形式接壤，这些虚线被称为海峡。&#10;&#10;在战争时期，通过在海峡渡过的海域部署舰队，可以使得交战中的敌方无法通过海峡渡过海域，这被称之为封锁海峡。&#10;交战时，一国仅能无条件通过自己或同盟实际控制海峡两侧省份的海峡。对于并没有实际控制海峡两侧省份的海峡，如果海域由己方或者无人控制，则可以通过；而如果海峡通过的海域由敌方控制则无法通过，这就是海峡被封锁的情况。&#10;&#10;对于其他中立国家或同盟国家来说，可以任意通过已拥有军事通行权的海峡，不存在封锁海峡。&#10;&#10;封锁海峡需满足以下条件：&#10;&#10;*敌方未实际控制海峡两侧省份；&#10;*使用舰队（数量不限）控制海峡通过的海域。&#10;&#10;比如说：&#10;&#10;*一个国家控制海峡的两边：奥斯曼只要控制君士坦丁堡和科贾埃利，那么他可以随时无视封锁跨越博斯普鲁斯海峡。埃迪尔内到比加的海峡同理。&#10;*一个中立国家控制海峡的一侧：一个只和英格兰交战的爱尔兰国家不能跨越被英格兰控制的爱尔兰海至苏格兰的埃尔郡（苏格兰中立且给战争中的一方军事通行权）&#10;*不过，如果爱尔兰国家呼叫一个同盟比如说勃艮第加入战争，而且勃艮第与苏格兰单独交战并控制埃尔郡，那么便不满足上述第一个条件。所以就算英格兰控制爱尔兰海这个爱尔兰国家也能跨越海峡。&#10;&#10;正在被围攻中的省份不满足第一个要求&#10;&#10;==海军任务==&#10;&#10;{{SVersion|1.25}}&#10;&#10;使用“选择任务”按钮便可看见所可用的海军任务（[[File:Select mission.png|22px]]）；&#10;*保护贸易&#10;*私掠&#10;*猎杀海盗&#10;*探索&#10;*猎杀敌军舰队&#10;*封锁敌军港口&#10;*拦截敌军舰队&#10;===保护贸易===&#10;&#10;[[File:Protect trade.png]] 任何包含轻型船只的舰队都可以选择这个任务。它会将轻型船只贸易力量的总和增加至任何沿海贸易节点，只要它们在贸易和补给距离之内就行。&#10;&#10;轻型船只的贸易力量取决于船只的型号，后者可被外交科技提升。也会被海军维护费的高低影响，最大时无惩罚，而最低时获得 {{red|-75%}} 的惩罚。AI国家不会因为是最低维护费而受到惩罚。&#10;&#10;===私掠 {{anchor|Privateering}}===&#10;&#10;{{Expansion|won|eld}}&#10;&#10;[[File:Privateer.png]] 任何含有轻型船只的舰队都可以使用这个任务。该舰队会将其轻型船只提供的贸易力量给贸易节点中的海岛国家。和保护贸易的任务不同的是，你可以在任何节点开始私掠。&#10;====私掠效率====&#10;私掠中的轻型船只的贸易力量会 {{green|+50%}}。私掠船不会被国际贸易修正影响，更不会被过扩，在外方节点收钱 等等惩罚影响。私掠船的贸易力量则是被私掠效率影响&#10;{{bonus table|privateer efficiency}}&#10;&#039;&#039;&#039;征募私掠者&#039;&#039;&#039;的决议会额外增加 {{green|+25%}} 的 {{icon|privateer efficiency}} 私掠效率。它会在&#039;&#039;&#039;8&#039;&#039;&#039;级 {{icon|dip tech}} 外交科技时解锁并要求该国已完成 {{icon|maritime|28px}} 航海理念，君主的 {{icon|mmp}} 军事能力至少为&#039;&#039;&#039;3&#039;&#039;&#039;，和至少达到 {{icon|naval force limit}} 海军上限的50%。&#10;&#10;当 {{icon|cs}} 常识DLC激活后，在议会辩论中 {{icon|Parliament|24px}} 通过&#039;&#039;&#039;颁发私掠许可证&#039;&#039;&#039; 可以获得{{green|+15%}}私掠效率，持续 10 年。&#10;&#10;每一点海军传统还会增加 {{green|0.25%}} 的私掠效率。因此私掠船的总贸易力量为&#10;&#10;&amp;lt;math&gt;\text{私掠船的贸易力量} =\text{轻型船只的基础贸易力量} \cdot 1.5 \left( 1 + \text{海军维护费修正} \right) \cdot \left( 1 + \text{总私掠效率} \right)&amp;lt;/math&gt;&#10;&#10;====距离====&#10;&#10;私掠舰队只能到达[[贸易距离]]内的沿海贸易节点。一个国家的贸易距离从该国或其附庸国的核心省份，以及任意给予该国舰队停靠权的国家沿海省份开始计算。&#10;&#10;贸易距离可被外交科技，决议，理念和政策增加：&#10;&#10;{{bonus table|trade range}}&#10;&#10;====效果====&#10;私掠舰队会增加贸易节点中作为收集者的海盗国家的贸易力量。该海盗国家会将自己收入的&#039;&#039;&#039;40%&#039;&#039;&#039;进贡给送出私掠舰队的国家。这个海盗国家的存在将会降低该节点所有非海盗国家所占的贸易价值。海盗国家向你进贡的收入会在收入界面的&#039;&#039;&#039;战利品&#039;&#039;&#039;条目下显示。&#10;&#10;任何在该节点占&#039;&#039;&#039;20%&#039;&#039;&#039;以上贸易力量，但在该节点没有私掠舰队的国家会对送出私掠舰队的国家得到一个宣战理由。&#10;&#10;任何在该节点占&#039;&#039;&#039;15%&#039;&#039;&#039;以上贸易力量，但在该节点没有私掠舰队的国家会对送出私掠舰队的国家得到一个每月 {{red|-1}} 关系修正，最大值为 {{red|-100}}。&#10;&#10;在宿敌的贸易本埠执行私掠任务是最容易得到[[力量投射]]的方法之一。这种方法会非常简单地把玩家的力量投射涨到&#039;&#039;&#039;+25&#039;&#039;&#039;（效果是 {{green|+1}} 免费将领），甚至超过&#039;&#039;&#039;+50&#039;&#039;&#039;（效果是每月 {{green|+1}} {{icon|adm}} / {{green|+1}} {{icon|dip}} / {{green|+1}} {{icon|mil}}）。&#10;&#10;执行私掠任务会强制游戏每天刷新玩家的力量投射。这也会刷新玩家在节点的贸易力量和国家的军队上限。这样的强制刷新会在游戏因为轻型船只保护贸易或降低自治度而导致不同步的问题的时候非常有效。&#10;&#10;===猎杀海盗===&#10;&#10;{{expansion|mn|ed}}&#10;&#10;[[File:Hunt pirates.png]] 每只只要不是由纯运输船组成的舰队都能使用这个任务。任何拥有重型或轻型船只的舰队都可以在非内陆的[[贸易节点]]猎杀海盗；不过，有桨帆或桨帆运输船混合舰队只能在周围海区全是[[贸易节点#节点|内海]]的贸易节点猎杀私掠舰队，比如说，巴士拉和亚历山大港贸易节点可以但霍尔木兹不行。这也不能说明他们只会在本身有优势的内海海区猎杀私掠船：比如说一个在广州猎杀私掠船的舰队会使用吕宋海峡。&#10;&#10;船只火炮总数被用来计算它们猎杀私掠船的效率。如果猎杀舰队火炮总数是私掠舰队的两倍，那么私掠效率将会被降低99.9%。他们的效率影响了私掠舰队在贸易节点内的力量，以及[[柏柏尔]]国家劫掠海岸的效率，无舰队时是0%，最高达到99.9%。&#10;&#10;注意私掠或猎杀私掠船的舰队并不会真正的进行战斗，也不会受到伤害，除非两国处于交战状态。&#10;&#10;===探索===&#10;&#10;{{expansion|eld}}&#10;&#10;[[File:Explore.png]] 这个任务需要一个探险家，最少3艘轻型或重型船只才能选择。满足条件后左上角会出现一个类似望远镜的图标，点击它选择地区后，舰队便会自动前往指定地区探索陆地或者海区。也可以直接通过舰队界面右侧的图标选择地区。在[[外交科技]]到达9级后，还可以选择环球航行。&#10;{{main|殖民#探索}}&#10;===猎杀敌军舰队===&#10;&#10;{{expansion|mn}}&#10;&#10;[[File:Hunt enemy fleet.png]] 本任务会让舰队在特定海区猎杀敌军舰队。&#10;===封锁敌军港口===&#10;{{expansion|mn}}&#10;&#10;本任务会让舰队封锁敌军港口并避开哪些不好对付的敌军舰队。（除非在设置里设该舰队为大胆。）&#10;{{main|海战#封锁}}&#10;===拦截敌军舰队===&#10;&#10;{{expansion|mn}}&#10;&#10;[[File:Intercept_enemy_fleets.png]] 本任务会让舰队在友方海岸线搜寻并进攻敌军舰队，特别是敌军的运输船。&#10;==策略与战术==&#10;{{SVersion|1.25}}&#10;&#10;===部署===&#10;因为没有叠加惩罚，所以海战最好的办法就是集中力量一起出击。敌强我弱时要保存实力，敌弱我强时应主动出击，尽可能地消灭敌军有生力量。海军提督会显著的影响一场战斗的胜负，其效果与陆军将军相比更甚；如果没有海军提督的指挥加成，即使你的舰队看起来有着显著的优势，胜利也会变得相当困难。&#10;&#10;不过，其它的因素也有可能影响你的策略。一个国家的海军一般不可能只用于摧毁或压制敌军舰队。它还要用于其它方面，比如说保护贸易节点，运输部队，侦查，猎杀海盗和封锁等等。如果一个国家没有碾压敌海军的实力，那么就有可能损失船只，放弃一些目标或干脆在战争中放弃制海权。&#10;&#10;===与敌军作战===&#10;&#10;一个海军强国在与海军弱国交战时，最希望的可能就是敌军主动出击，和你进行决战。以下有几种方法可能有用：&#10;&#10;*如果敌海军停靠在港中，我们不能直接攻击它们。不过如果你占领所在省份，敌舰队便不得不离开港口，与你在相邻海区的舰队交战。&#10;*可以使用一只诱饵舰队勾引敌军前来进攻，主力舰队可以在附近海区或港口前去增援，这也可以勾引诸如 {{flag|Ottomans}}这种大力发展桨帆战舰的国家离开它们的优势海域-内海从而大大降低它们的威胁。&#10;*轻型船只和桨帆战舰比重型船只移动速度更快，可以抓住含有重型船只的舰队。&#10;*将舰队置于港口之中会使得 AI 的海军更为激进并趋向出港，甚至达成全面封锁。这会使得敌人的海军实力显著地变弱。&#10;*在战败之后，AI 的舰队通常会撤退往毗邻的港口。在该港口预先布置围城部队能够使得敌方舰队在士气和耐久低下的情况下，被迫出港作战，这一战术能够在极小损失的情况下达成歼灭战。&#10;*有时候 AI 对待在某些特定省份情有独钟，即使是省份被占领也不离开。修正这一情况的方法只有一个，那就是将你的舰队撤出几个省份之外，即让 AI 误以为外面已经安全了。&#10;[[Category:军事]]&#10;&#10;{{military navbox}}&#10;&#10;[[en:Naval_warfare]]&#10;本页使用的模板：&#10;&#10;Static modifiers（查看源代码）静态修正（查看源代码）Template:Ambox（查看源代码）（受保护）Template:Ambox/core（查看源代码）（受保护）Template:Ambox 2020（查看源代码）Template:Anchor（查看源代码）Template:BTRow（查看源代码）Template:Bonus table（查看源代码）Template:Clear（查看源代码）（受保护）Template:Country data Cornwall（查看源代码）Template:Country data Gotland（查看源代码）Template:Country data Libertatia（查看源代码）Template:Country data Ming（查看源代码）Template:Country data New Providence（查看源代码）Template:Country data Normandy（查看源代码）Template:Country data Ottomans（查看源代码）Template:Country data Palembang（查看源代码）Template:Country data Pattani（查看源代码）Template:Country data Port Royal（查看源代码）Template:Country data Rügen（查看源代码）Template:Country data Salé（查看源代码）Template:Country data So（查看源代码）Template:Country data Somalia（查看源代码）Template:Country data Tortuga（查看源代码）Template:Country data Tétouan（查看源代码）Template:Expansion（查看源代码）Template:Flag（查看源代码）（受保护）Template:Flag/core（查看源代码）Template:Green（查看源代码）（受保护）Template:Grey-bd（查看源代码）Template:Hatnote（查看源代码）（受保护）Template:Icon（查看源代码）（受保护）Template:Icon/a（查看源代码）Template:Icon/b（查看源代码）Template:Icon/c（查看源代码）Template:Icon/d（查看源代码）Template:Icon/e（查看源代码）Template:Icon/g（查看源代码）Template:Icon/h（查看源代码）Template:Icon/i（查看源代码）Template:Icon/l（查看源代码）Template:Icon/m（查看源代码）Template:Icon/n（查看源代码）Template:Icon/p（查看源代码）Template:Icon/r（查看源代码）Template:Icon/s（查看源代码）Template:Icon/t（查看源代码）Template:Icon/w（查看源代码）Template:Icon/xyz（查看源代码）Template:Icon/y（查看源代码）Template:Iconbox（查看源代码）Template:Main（查看源代码）（受保护）Template:Military navbox（查看源代码）（受保护）Template:N（查看源代码）Template:Navbox（查看源代码）（受保护）Template:Navboxgroup（查看源代码）（受保护）Template:Plainlist（查看源代码）Template:Red（查看源代码）（受保护）Template:SVersion（查看源代码）（受保护）Template:Version（查看源代码）（受保护）Template:白字（查看源代码）Template:需要翻译（查看源代码）返回海战。&#10;"/>
+<meta name="keywords" content="欧陆风云4百科,海战"/>
+<meta name="apple-mobile-web-app-capable" content="Yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+<meta name="mobile-web-app-capable" content="Yes"/>
+<meta name="theme-color" content="#103D8F"/>
+<meta name="msapplication-navbutton-color" content="#103D8F"/>
+<meta name="twitter:card" content="summary"/>
+<link rel="icon" href="https://www.eu4cn.com/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="https://www.eu4cn.com/opensearch_desc.php" title="欧陆风云4百科 (zh)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://www.eu4cn.com/api.php?action=rsd"/>
+<link rel="alternate" hreflang="zh" href="https://www.eu4cn.com/zh/海战"/>
+<link rel="alternate" hreflang="zh-Hans" href="https://www.eu4cn.com/zh-hans/海战"/>
+<link rel="alternate" hreflang="zh-Hant" href="https://www.eu4cn.com/zh-hant/海战"/>
+<link rel="alternate" hreflang="zh-Hans-CN" href="https://www.eu4cn.com/zh-cn/海战"/>
+<link rel="alternate" hreflang="zh-Hant-HK" href="https://www.eu4cn.com/zh-hk/海战"/>
+<link rel="alternate" hreflang="zh-Hant-MO" href="https://www.eu4cn.com/zh-mo/海战"/>
+<link rel="alternate" hreflang="zh-Hans-MY" href="https://www.eu4cn.com/zh-my/海战"/>
+<link rel="alternate" hreflang="zh-Hans-SG" href="https://www.eu4cn.com/zh-sg/海战"/>
+<link rel="alternate" hreflang="zh-Hant-TW" href="https://www.eu4cn.com/zh-tw/海战"/>
+<link rel="alternate" hreflang="x-default" href="https://www.eu4cn.com/wiki/海战"/>
+<link rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+<link rel="alternate" type="application/atom+xml" title="欧陆风云4百科的Atom feed" href="https://www.eu4cn.com/index.php?title=Special:%E6%9C%80%E8%BF%91%E6%9B%B4%E6%94%B9&amp;feed=atom"/>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script data-ad-client="ca-pub-1612414434963106" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114739240-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-114739240-1');
+</script>
+<meta property="og:title" content="海战"/>
+<meta property="og:site_name" content="欧陆风云4百科"/>
+<meta property="og:url" content="https://www.eu4cn.com/wiki/%E6%B5%B7%E6%88%98"/>
+<meta property="og:image" content="https://www.eu4cn.com/images/logo/logo.png"/>
+<meta property="article:modified_time" content="2023-11-27T15:26:49Z"/>
+<meta property="article:published_time" content="2023-11-27T15:26:49Z"/>
+<script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"Article","name":"\u67e5\u770b\u201c\u6d77\u6218\u201d\u7684\u6e90\u4ee3\u7801 - \u6b27\u9646\u98ce\u4e914\u767e\u79d1\uff0c\u4eba\u4eba\u53ef\u4ee5\u7f16\u8f91\u7684\u6b27\u9646\u98ce\u4e914\u4e2d\u6587\u767e\u79d1\u5168\u4e66","headline":"\u67e5\u770b\u201c\u6d77\u6218\u201d\u7684\u6e90\u4ee3\u7801 - \u6b27\u9646\u98ce\u4e914\u767e\u79d1\uff0c\u4eba\u4eba\u53ef\u4ee5\u7f16\u8f91\u7684\u6b27\u9646\u98ce\u4e914\u4e2d\u6587\u767e\u79d1\u5168\u4e66","mainEntityOfPage":"\u67e5\u770b\u201c\u6d77\u6218\u201d\u7684\u6e90\u4ee3\u7801","identifier":"https:\/\/www.eu4cn.com\/wiki\/%E6%B5%B7%E6%88%98","url":"https:\/\/www.eu4cn.com\/wiki\/%E6%B5%B7%E6%88%98","dateModified":"2023-11-27T15:26:49Z","datePublished":"2023-11-27T15:26:49Z","image":{"@type":"ImageObject","url":"https:\/\/www.eu4cn.com\/images\/logo\/logo.png"},"author":{"@type":"Organization","name":"\u6b27\u9646\u98ce\u4e914\u767e\u79d1","url":"https:\/\/www.eu4cn.com","logo":{"@type":"ImageObject","url":"https:\/\/www.eu4cn.com\/images\/logo\/logo.png","caption":"\u6b27\u9646\u98ce\u4e914\u767e\u79d1"}},"publisher":{"@type":"Organization","name":"\u6b27\u9646\u98ce\u4e914\u767e\u79d1","url":"https:\/\/www.eu4cn.com","logo":{"@type":"ImageObject","url":"https:\/\/www.eu4cn.com\/images\/logo\/logo.png","caption":"\u6b27\u9646\u98ce\u4e914\u767e\u79d1"}},"potentialAction":{"@type":"SearchAction","target":"https:\/\/www.eu4cn.com\/index.php?title=Special:Search&search={search_term}","query-input":"required name=search_term"}}</script>
+<link rel="stylesheet" href="http://www.unpkg.com/@fortawesome/fontawesome-free@5.15.1/css/all.css" />
+<link rel="stylesheet" href="http://www.unpkg.com/@fortawesome/fontawesome-free@5.15.1/css/v4-shims.css" />
+<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+<body class="Liberty width-size mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-海战 rootpage-海战 skin-liberty action-edit skin--responsive">		<header>
+			<div class="nav-wrapper navbar-fixed-top">
+						<nav class="navbar navbar-dark yamm">
+			<a class="navbar-brand" href="https://www.eu4cn.com/wiki/首页"></a>
+			<ul class="nav navbar-nav">
+				<li class="dropdown nav-item">
+					<a class="nav-link navbar-right" href="#" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+						<div class="navbar-brand-subtitle">欧陆风云4</div>
+						<div class="navbar-family">ParaWikis</div>
+					</a>
+				<ul class="dropdown-menu" aria-labelledby="dLabel">
+					<li>
+		                  <div class="yamm-content">
+		                    <div class="row">
+						 							<ul class="col-sm-4 list-unstyled">
+							<li><p class="meganav-item"><strong>最新百科</strong></p></li>
+								<a href="http://cs2.parawikis.com/" class="dropdown-item meganav-item">都市天际线2百科</a>
+								<a href="http://h3.parawikis.com/" class="dropdown-item meganav-item">英雄无敌3百科</a>
+								<a href="http://vic3.parawikis.com/" class="dropdown-item meganav-item">维多利亚3百科</a>
+								<a href="http://ce2.parawikis.com/" class="dropdown-item meganav-item">奇妙探险队2百科</a>
+								<a href="http://eos.parawikis.com/" class="dropdown-item meganav-item">罪恶帝国百科</a>
+								<a href="http://ir.parawikis.com/" class="dropdown-item meganav-item">英白拉多：罗马百科</a>
+							</ul>
+							<ul class="col-sm-4 list-unstyled">
+								<li><p class="meganav-item"><strong>热门百科</strong></p></li>
+								<a href="http://stellaris.parawikis.com/" class="dropdown-item meganav-item">群星百科</a>
+								<a href="http://www.eu4cn.com/" class="dropdown-item meganav-item">欧陆风云4百科</a>
+								<a href="http://ck2.parawikis.com/" class="dropdown-item meganav-item">十字军之王2百科</a>
+								<a href="http://ck3.parawikis.com/" class="dropdown-item meganav-item">十字军之王3百科</a>
+								<a href="http://hoi4.parawikis.com/" class="dropdown-item meganav-item">钢铁雄心4百科</a>
+								<a href="http://vic2.parawikis.com/" class="dropdown-item meganav-item">维多利亚2百科</a>
+							</ul>
+							<ul class="col-sm-4 list-unstyled">
+								<li><p class="meganav-item"><strong>ParaWikis</strong></p></li>
+								<a href="http://www.parawikis.com/wiki/ParaWikis:申请建站" class="dropdown-item meganav-item">申请建站</a>
+								<a href="http://www.parawikis.com/" class="dropdown-item meganav-item">ParaWikis</a>
+								<a href="http://commons.parawikis.com/" class="dropdown-item meganav-item">ParaCommons</a>
+							</ul>		                    </div>
+		                  </div>
+		                </li>
+				</ul>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="https://www.eu4cn.com/wiki/Special:最近更改" class="nav-link" title="本wiki的最近更改列表[r]" accesskey="r"><span class="fas fa-sync"></span><span class="hide-title">最近更改</span></a>				</li>
+				<li class="nav-item">
+					<a href="https://www.eu4cn.com/wiki/Special:随机页面" class="nav-link" title="加载一个随机页面[x]" accesskey="x"><span class="fa fa-random"></span><span class="hide-title">随机页面</span></a>				</li>
+				<li class="nav-item">
+					<a href="http://shang.qq.com/wpa/qunwpa?idkey=3bb76f6a58594b18c2defdc03af7ec2703fb2e2cc8fef6dadd1dcb896c0ede1a" target="_blank" class="nav-link" title="加入QQ群">
+						<span class="fa fa-qq"></span><span class="hide-title">加入QQ群</span>
+					</a>
+				</li>
+				<li class="dropdown nav-item">
+					<a class="dropdown-toggle nav-link" href="#" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+						<span class="fa fa-wrench"></span><span class="hide-title">工具</span>
+					</a>
+				<ul class="dropdown-menu" aria-labelledby="dLabel">
+					<li id="t-whatlinkshere" class="mw-list-item"><a href="https://www.eu4cn.com/wiki/Special:链入页面/海战" title="所有链接至本页面的wiki页面列表[j]" accesskey="j" class="dropdown-item">链入页面</a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="https://www.eu4cn.com/wiki/Special:链出更改/海战" rel="nofollow" title="链自本页的页面的最近更改[k]" accesskey="k" class="dropdown-item">相关更改</a></li><li id="t-specialpages" class="mw-list-item"><a href="https://www.eu4cn.com/wiki/Special:特殊页面" title="所有特殊页面的列表[q]" accesskey="q" class="dropdown-item">特殊页面</a></li><li id="t-info" class="mw-list-item"><a href="https://www.eu4cn.com/index.php?title=%E6%B5%B7%E6%88%98&amp;action=info" title="关于此页面的更多信息" class="dropdown-item">页面信息</a></li><li id="t-cargopagevalueslink" class="mw-list-item"><a href="https://www.eu4cn.com/index.php?title=%E6%B5%B7%E6%88%98&amp;action=pagevalues" rel="cargo-pagevalues" class="dropdown-item">页面值</a></li>				</ul>
+				</li>
+				<li class="dropdown nav-item"><a class="nav-link dropdown-toggle dropdown-toggle-fix" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true" title="帮助"><span class="fa fa-question"></span><span class="hide-title">帮助</span></a><div class="dropdown-menu" role="menu"><a class="dropdown-item" href="https://www.eu4cn.com/wiki/Project:译名手册" title="譯名手冊"><span class="fa fa-book"></span>譯名手冊</a><a class="dropdown-item" href="https://www.eu4cn.com/wiki/Project:字词转换" title="字詞轉換"><span class="fa fa-language"></span>字詞轉換</a><a class="dropdown-item" href="https://www.eu4cn.com/wiki/Project:编辑指南" title="編輯指南"><span class="fa fa-graduation-cap"></span>編輯指南</a><a class="dropdown-item" href="https://www.eu4cn.com/wiki/Project:编辑规范" title="編輯規範"><span class="fa fa-lightbulb"></span>編輯規範</a><a class="dropdown-item" href="https://www.eu4cn.com/wiki/Project:练手沙盒" title="Project:练手沙盒"><span class="fa fa-leaf"></span>練手沙盒</a></div></li><li class="dropdown nav-item"><a class="hidden-xs-down nav-link" data-toggle="" role="button" aria-haspopup="true" aria-expanded="true" title="ParaTranz" href="https://paratranz.cn/"><span class="fa fa-language"></span><span class="hide-title">ParaTranz</span></a></li><li class="dropdown nav-item"><a class="hidden-xs-down nav-link" data-toggle="" role="button" aria-haspopup="true" aria-expanded="true" title="52PCGame" href="http://bbs.52pcgame.net/"><span class="fa fa-comments"></span><span class="hide-title">52PCGame</span></a></li><li class="dropdown nav-item"><a class="hidden-xs-down nav-link" data-toggle="" role="button" aria-haspopup="true" aria-expanded="true" title="Project:捐款" href="https://www.eu4cn.com/wiki/Project:捐款"><span class="fa fa-heart"></span><span class="hide-title">资助我们</span></a></li>			</ul>
+					<div class="navbar-login">
+							<a href="#" class="none-outline" data-toggle="modal" data-target="#login-modal">
+					<span class="fa fa-sign-in"></span>
+				</a>
+					</div>
+									<form action="https://www.eu4cn.com/index.php" id="searchform" class="form-inline">
+			<input type="hidden" name="title" value="Special:搜索"/>
+			<div class="input-group">
+				<input type="search" name="search" placeholder="在欧陆风云4百科搜索" aria-label="在欧陆风云4百科搜索" autocapitalize="sentences" title="在欧陆风云4百科搜索[f]" accesskey="f" class="form-control" id="searchInput"/>				<span class="input-group-btn">
+					<button type="submit" name="go"
+						value="前往" id="searchGoButton"
+							class="btn btn-secondary" type="button"><span class="fa fa-eye"></span></button>
+					<button type="submit" name="fulltext"
+						value="搜索"
+						id="mw-searchButton" class="btn btn-secondary" type="button">
+						<span class="fa fa-search"></span></button>
+				</span>
+			</div>
+		</form>
+			</nav>
+				</div>
+		</header>
+		<section>
+			<div class="content-wrapper">
+							<aside>
+			<div class="liberty-sidebar">
+				<div class="live-recent-wrapper">
+					<div id='mw-data-after-content'>
+	<div class="read-more-container"></div>
+</div>
+												<div
+			class="live-recent"
+			data-article-ns="0|4|10|12|14"
+			data-talk-ns="1|5|7|9|11|13|15"
+		>
+			<div class="live-recent-header">
+			<ul class="nav nav-tabs">
+				<li class="nav-item">
+					<a href="javascript:" class="nav-link active" id="liberty-recent-tab1">
+						最近更改					</a>
+				</li>
+				<li class="nav-item">
+					<a href="javascript:" class="nav-link" id="liberty-recent-tab2">
+						最近讨论					</a>
+				</li>
+			</ul>
+			</div>
+			<div class="live-recent-content">
+				<ul class="live-recent-list" id="live-recent-list">
+					<li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li>				</ul>
+			</div>
+			<div class="live-recent-footer">
+				<a href="https://www.eu4cn.com/wiki/Special:最近更改" title="Special:最近更改"><span class="label label-info">查看更多</span></a>			</div>
+		</div>
+						<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 侧栏 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1612414434963106"
+     data-ad-slot="1728061201"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-K4RD1C6KBW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-K4RD1C6KBW');
+</script>
+				</div>
+										</div>
+			</aside>
+								<div class="container-fluid liberty-content">
+					<div class="liberty-content-header">
+													<div class="alert alert-dismissible fade in alert-info liberty-notice" role="alert">
+								<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+								<div id="localNotice"><div class="sitenotice" lang="zh" dir="ltr"><div style="text-align:center; font-size:125%; line-height: 1; padding: 10px;"><b>欢迎访问欧陆风云4百科！<a href="https://www.eu4cn.com/wiki/Special:用户登录" title="Special:用户登录"><span class="alert-link">注册一个账号</span></a>，一起参与编写吧！这里是<a href="https://www.eu4cn.com/wiki/欧陆风云4百科:当前任务#页面" title="欧陆风云4百科:当前任务"><span class="alert-link">当前的工程</span></a>。</b></div>
+<div style="text-align: center;">如果您想帮助本站建设，欢迎点击<a href="https://www.eu4cn.com/wiki/欧陆风云4百科:捐款" title="欧陆风云4百科:捐款"><b>这里</b></a>捐款！欢迎所有对百科感兴趣的同学加入QQ群：<b>497888338</b>。</div></div></div>							</div>
+															<div class="content-tools">
+				<div class="btn-group" role="group" aria-label="content-tools">
+					<div id="ca-view" class="mw-list-item"><a href="https://www.eu4cn.com/wiki/海战" class="btn btn-secondary tools-btn">阅读</a></div><div id="ca-viewsource" class="selected mw-list-item"><a href="https://www.eu4cn.com/index.php?title=%E6%B5%B7%E6%88%98&amp;action=edit" title="本页面受到保护。&#10;您可以查看其源代码[e]" accesskey="e" class="btn btn-secondary tools-btn">查看源代码</a></div><div id="ca-history" class="mw-list-item"><a href="https://www.eu4cn.com/index.php?title=%E6%B5%B7%E6%88%98&amp;action=history" title="本页面过去的版本[h]" accesskey="h" class="btn btn-secondary tools-btn">查看历史</a></div>					<a href="https://www.eu4cn.com/wiki/Talk:海战" class="btn btn-secondary tools-btn" title="关于内容页面的讨论[t]" accesskey="t" id="ca-talk">讨论</a>				</div>
+			</div>
+							<div class="title">
+						<h1>
+							查看“海战”的源代码						</h1>
+						<div class="mw-indicators">
+</div>
+						</div>
+						<div class="contentSub" >
+							←<a href="https://www.eu4cn.com/wiki/海战" title="海战">海战</a>						</div>
+				</div>
+					<div class="liberty-content-main" id="content">
+											<div class="mw-body-content" id="mw-content-text">
+							<div id="mw-content-text" class="mw-body-content"><p>因为以下原因，您没有权限编辑本页：
+</p>
+<div class="permissions-errors">
+<p>您请求的操作仅限属于该用户组的用户执行：<a href="https://www.eu4cn.com/wiki/欧陆风云4百科:用户" title="欧陆风云4百科:用户">用户</a>
+</p>
+</div><hr />
+<p>您可以查看和复制此页面的源代码。
+</p><textarea readonly="" accesskey="," id="wpTextbox1" cols="80" rows="25" style="" class="mw-editfont-monospace" lang="zh" dir="ltr" name="wpTextbox1">{{需要翻译}}{{Version|1.25}}{{Hatnote|本页面提供了关于海战的信息。若想了解海军征募和维护的信息请见[[海军]]。若想了解海军单位的细节请见[[海军单位]]。若想了解战争的信息请见[[战争]]。}}
+'''海战'''（Naval warfare）是交战双方赢得制海权最重要的手段。虽然大部分战争都是在陆地上进行，海战可以对敌方贸易，殖民，海外扩张等方面造成巨大的伤害。
+==海战界面==
+
+{{SVersion|1.25}}
+
+[[File:Naval combat.jpg|thumb|right|'''海战'''界面]]
+就像[[陆战#战斗过程|陆战]]一样，海战会在两支[[海军#打造一支舰队|舰队]]在同一海区遭遇时爆发。而且会像陆战一样持续许多天，所以这种情况应该被理解为双方舰队在占据有力风向，对峙，小规模战斗之后终于迎来决战的时刻。
+
+在欧陆风云中，战斗不需要玩家的参与，但战斗界面现在会显示出更多的信息，例如船只交战的目标。
+
+海战界面显示了交战双方舰队的总体实力。战斗开始时，双方先进行火力伤害阶段，之后便会以类似撞击等行为进入冲击伤害阶段。这两阶段会一直重复到其中一方撤退或失去所有的船只或士气。每艘船的状态以百分比显示在界面上，把鼠标放在上面便可看见该战舰正在攻击的敌军，士气，耐久和船只类型。
+
+==部署==
+
+{{SVersion|1.25}}
+
+===舰队组成===
+{{main|海军#组成部分}}
+舰队的移动速度由最慢的船只决定，所以一般并不推荐混合舰队，除非需要大船护卫例如运输船之类的小船。桨帆战舰在[[内海]]的战斗力加倍，而运输船可以运送陆军单位。
+[[File:Naval combat result.png|thumb|right|海军战斗结束后的总结界面]]
+
+==接战宽度==
+
+{{SVersion|1.25}}
+
+{{N|接战宽度|Engagement Width}}在[[1.16 版本]]引入，指海战的战争宽度。与陆战的"战线宽度"不同的是，海战中两个参与者的"战斗宽度"是独立的，这意味着一个参与者可以比另一个参与者有着更宽的战斗宽度，重型战舰占用3的战斗宽度。商船和桨帆，运输船分别占用1、0.5、1的战宽。
+
+海战的基础宽度为20，船队的旗舰有“改良瞭望台”修正增加3的接战宽度，更多修正来自下列：
+
+*[[海军将领]]的 {{icon|naval leader maneuver}} 机动值，每点 {{green|+10%}}
+*近海作战 {{green|-20%}}
+*提升外交科技
+
+*增加接战宽度
+** {{Green|+20%}}“海军交战” 大革命时代能力 
+** {{Green|+10%}} 每点海军将领的机动技能
+** {{Green|+10%}} 启动了海军霸权
+
+* 政策
+** {{Green|+20%}}  海军-探索 训练有素的制图师
+** {{Green|+10%}}  海军-行政 海军学校法案
+
+==战斗序列==
+
+{{SVersion|1.25}}
+
+和陆战差不多，当两支敌对舰队在同一海区接触时，海战便会开始。海战会持续许多天并会在其中一方撤退或被消灭后结束。1.16版本推出了海军战斗宽度的概念，和陆军的差不多，都限制了在同一时间可以交战的船只数量。
+===交战(Engagement)===
+当发生海战时，舰队的船会去占满战宽直到上限被填满，按以下顺序排列
+
+*重型船
+*桨帆船
+*轻型船
+*运输船
+*任何已经脱离的船会被忽视。
+===阶段===
+
+战斗被分为一系列持续3天的阶段。这些阶段分为火力和冲击，火力阶段先开始。
+
+===目标选择===
+在战斗中，每艘船都会试图对敌舰进行攻击。每艘敌舰有基础权重10的机会被攻击，进一步修正为：
+
+* + 0 到 + 5 随机
+* + 5 若敌舰为同类型单位
+* × 0.1 若士气为0及以下
+* × 2 若所受损害在50%以下
+选择得分最高的敌舰将被作为目标。如果前一个目标即将被消灭，将选择一个新的目标。
+===骰子===
+
+在每个阶段的开始，每一方滚动一次骰子。该结果用于确定在该阶段的每一天中，该方造成的士气损害和船体损坏。
+
+===耐久伤害===
+基础损伤遵循以下计算公式：
+
+基本耐久损伤 = 0.0025 + 0.025 ×（2 + 骰子点数 + 战斗点数修正）
+
+战舰的火炮数量会影响船体的损坏程度，而防御方的船体耐久决定了它能承受多长时间的炮火。
+
+''火炮火力修正''根据进攻方或防守方拥有科技优势与否会增加或减少造成的伤害。
+
+*攻击单位修正：本攻击修正由攻击方的科技决定，例如"火炮火力"。
+
+火炮活力修正点数 = 进攻方火力点数 - 目标火力点数
+*攻击单位的作战能力：攻击单位的作战能力增益。
+最终伤害 = 0.03 × 基础耐久损伤 × 船只优势 ×（火炮数 / 目标船体）×（1 + 0.05 × 火炮火力修正）×（1 + 船只战斗修正 + 提督战斗修正）/（1 + 目标船只耐久）
+
+如果目标船士气为0或以下，则最终伤害乘以10。
+
+在内海作战的桨帆船造成的最终伤害增加一倍。
+
+===士气损耗===
+
+海军士气不仅在战斗中就会降低，还会在友军船只沉没时降低。以下是士气损耗公式：
+
+基本士气损耗 = 0.25 × （国家海军士气 / 3）× 基本船体损伤 × 船只优势 ×（火炮数量 / 目标船体）× （1 + 0.005 × 炮兵火力修正）×（1 + 船只战斗修正 + 提督战斗修正）
+
+下列理念与政策会影响友军船只沉没时对我方的士气打击：
+
+{{bonus table|morale hit when losing a ship}}
+
+
+
+* +10% 海军将领有头脑冷静的特性
+
+===脱离战斗===
+任何船只少于0.5士气时会争取脱离战斗，能否成功的脱离战斗取决于船只的逃脱几率，基础的逃脱几率为3%，但他可以被一些国家理念修正
+
+*澳大利亚理念5 +5%
+*丹麦理念3 +5%
+*葡萄牙理念1 +5%
+==战斗统计==
+{{SVersion|1.31.4}}
+
+==={{icon|dip tech}} 外交科技对海军的叠加效果===
+{| class="mildtable sortable" style="text-align:left"
+!外交科技等级
+!0
+!2
+!3
+!7
+!8
+!12
+!18
+!22
+!24
+!25
+!27
+!29
+!31
+|-
+!海军士气
+| +2.0
+|
+|  +0.1
+|  +0.3
+|  +0.2
+|  +0.4
+|  +0.5
+|  +0.5
+|
+|  +0.5
+|  +0.5
+|  +0.5
+|  +0.5
+|-
+!海战宽度
+|5
+| +20
+|
+| +10
+|
+| +15
+| +10
+| +5
+| +10
+|
+|
+|
+|
+|}
+==={{icon|mil tech}} 军事科技对海军的叠加效果===
+{| class="mildtable sortable" style="text-align:left"
+!军事科技等级
+!0
+!7
+!13
+!16
+!22
+!25
+!32
+|-
+!炮兵火力
+| +0.0
+| +1.0
+| +1.4
+| +2.4
+| +4.4
+| +6.4
+| +8.4
+|}
+
+===最大海军士气===
+下列数值会影响最大海军士气的数值。 
+
+{| class="mildtable"
+! colspan="2" |因素
+!数值
+|-
+| rowspan="2" | || rowspan="2" |海军维护费||最少海军维护费（0）时 {{red|20%}}
+|-
+|最大海军维护费时 {{green|100%}}（乘法修正）
+|-
+|{{icon|Navy Tradition}}||海军传统||100海军传统时 {{green|+25%}}
+|-
+|{{icon|Prestige}}||威望||100威望时 {{green|+10%}}，-100威望时 {{red|-10%}}
+|-
+|{{icon|Power Projection}}||力量投射||{{green|+10%}}处于100力量投射时
+|-
+|{{icon|Naval reformer|28px}}||海军改革者[[顾问]]||{{green|+10%}}
+|-
+|{{icon|defender of the faith|28px}}||[[信仰守护者]]||{{green|+5%}}
+|-
+| ||破产||{{red|-50%}}
+|-
+|{{icon|War exhaustion}}||厌战度||{{red|-2%}}每一点厌战度
+|}
+特定的国家理念，理念组和政策都会增加海军士气。
+{{bonus table|naval morale}}
+
+每点海军传统也会增加海军士气恢复0.10%
+===作战能力===
+
+''作战能力''是一个提升单位耐久伤害和士气伤害的一个值。作战能力只会对其特定单位有效。
+
+'''重型船只作战能力'''
+
+{{bonus table|heavy ship power}}
+
+'''轻型船只作战能力'''
+{{bonus table|light ship power}}
+
+'''桨帆战舰作战能力'''
+{{bonus table|galley power}}
+
+'''运输船作战能力'''
+{{bonus table|transport power}}
+
+===单位点数===
+{{main|海军单位}}
+
+每艘船都有三个值：{{icon|hull}} 耐久度、{{icon|cannon}} 火炮数量和 {{icon|speed}} 移动速度。
+
+耐久值代表血量，火炮数量代表攻击力。除开士气，每个战斗阶段双方都会用耐久/火炮值来对抗以算出每个战斗阶段中耐久度遭受的伤害。
+
+===将领能力值===
+
+海军将领有几个最高为6的能力值，其数值越高越好：
+
+*{{icon|naval leader fire}} 火力
+{{icon|naval leader shock}} 冲击
+将领的能力值在其相应的阶段加入骰子点数。
+
+{{bonus table|naval leader fire}}
+
+{{bonus table|naval leader shock}}
+*{{icon|naval leader maneuver}}
+
+海军将领的机动值影响了舰队在大地图上的移动速度。每一点还会在舰队被送去[[保护贸易]]时对所在贸易节点额外增加5%的贸易力量，还会降低 1%舰队遭受的损耗。
+
+{{bonus table|naval leader maneuver}}
+
+[[File:Naval combat result.png|thumb|right|海军战斗结束后的总结界面]]
+===战斗结束===
+
+一场海战会其中一只舰队在发生以下条件时结束：
+
+*士气降至0
+*舰队撤出战斗
+*全灭
+胜利之时，败军舰队中的船只可能会被捕获，这几率取决于双方舰队将领的机动值差距。总的来说，在无将领的舰队交战后，一般不会有任何捕获船只的机会，因为双方机动值都为0。
+
+若败军舰队仍有船只残留，那么它们会一边向最近的友军港口逃窜一边恢复自身的士气。海战与陆战一样，可能会影响[[厌战度]]、[[战争得分]]、[[海军传统]]和[[威望]]。不过值得注意的是从海战中得到的战争分一般无法和陆军所得的相比。
+
+部分理念会增加交战后捕获船只的几率:
+
+{{bonus table|chance to capture enemy ships}}
+
+==士气与耐久度==
+{{SVersion|1.25}}
+
+===士气===
+{{hatnote|"海军士气"重定向到这。增加最大海军士气的效果请见上面的[[#最大海军士气|最大海军士气]]。}}
+士气是决定海战成败的重要因素。船只在每一个回合都会损失一部分的士气。当一支舰队的平均士气降至0时，这支舰队就会尝试撤退。在一个火力和冲击阶段完成前不可能撤退，所以一支舰队在这两个阶段完成前士气便降低至0的话便会被消灭。
+
+如果一支舰队在低士气的状态下战败，那么它就会被强制撤退至最近的海区。撤退时，舰队无法在到达目标海区前战斗，控制或维修。但它可以在撤退过程中由正常速度恢复士气，不仅如此，它的移动速度还会加快50%。
+
+记住每一场海战后都要花费一些时间让舰队恢复自身的士气。
+
+===士气恢复===
+
+当一艘船停靠在友军港口时，恢复其最大士气的10%。
+
+特定的国家理念，理念组和政策都会增加海军士气恢复速度。
+
+{{bonus table|recover navy morale speed}}
+
+每点海军传统都会增加 {{green|+0.1%}} 的海军士气恢复速度。
+===单位优势===
+
+单位优势是海战中十分重要的一个因素，桨帆战舰在内海获得100%优势的加成，下图里的淡蓝色海域即是内海。
+
+[[File:Terrain map.png|thumb|800px|center|地形地图]]
+
+===船只修复===
+
+受到伤害的舰队可在本国，同盟，或有舰队停靠权的港口自动修复至最大耐久值。舰队界面有一个“修复损伤船只”的按钮可以让受损船只脱离舰队去最近的港口进行修复，当它们修复完成后会回到原舰队中。
+
+{{main|海军#船只修复}}
+==海军学说==
+{{SVersion|1.36}}
+
+{{Expansion|rb}}
+一个国家如果有 {{icon|naval force limit}} 至少20的海军上限，就可以选择一个“{{N|海军学说|Naval Doctrine}}”。选择一个海军学说，或者改变为另一个（任何时候都能做），花费该国的海军的 {{icon|ducats}} {{red|0.1}} 金币每个 {{icon|sailors}} 水手（例如： {{icon|ducats}} {{red|5}} 每条轻型船或运输船，{{icon|ducats}}{{red|10}} 每条桨帆船，以及 {{icon|ducats}}{{red|20}} 每条重型船）。
+
+学说列表：
+
+{| class="mildtable"
+! style="width:30em" |学说
+!效果
+!注释
+|-
+|{{Iconbox|存在舰队|除了在最有利的条件下，不应冒着舰队离港的风险，这样才能维持我们海军的威慑力。|image=Fleet_in_Being.png|en=Fleet In Being}}
+|
+*{{icon|naval maintenance modifier}} {{green|−15%}} 海军维护费修正
+|
+|-
+|{{Iconbox|自由桨手|我们将抗拒让奴隶划船的诱惑。自由人，在逆境中具有弹性并且能够抵抗叛变，这将成为我们海军的力量。|image=Free_Oarsmen.png|en=Free Oarsmen}}
+|
+*{{icon|galley combat ability}} {{green|+15%}} 桨帆船作战能力
+|
+|-
+|{{Iconbox|重视商船|我们舰队的指导原则是服务于国家的经济利益。应当尽一切努力来确保我们的商船载满来自其他国家的财富。|image=Merchant_Navy.png|en=Merchant Navy}}
+|
+*{{icon|ship trade power}} {{green|+33%}} 船只贸易力量
+|
+|-
+|{{Iconbox|登船作战|伴随着捕获法的建立以及捕拿特许证的普及，我们培育起了一种完好俘获敌军船舶的传统。|image=Ship_Boarding.png|en=Ship Boarding}}
+|
+*{{icon|chance to capture enemy ships}} {{green|+33%}} 捕获敌方船只几率
+|
+|-
+|{{Iconbox|木墙|在这个瞬息万变的世界里，海洋对我们的国家至关重要。作为确保我们的统治地位的手段，并且作为第一道防线，我们的「木墙」必须占得先机。（典出希波战争萨拉米斯海战相关史事）|image=Wooden Wall.png|en=Wooden Wall}}
+|
+*[[File:Naval combat bonus off owned coast.png|28px|link=#战斗序列]] {{green|+1}} 己方临海省份海域海战奖励
+|{{plainlist|
+* 需要 {{icon|culture}} 文化在不列颠文化组
+* 未完成 {{icon|mission}} 瑞典“挪威水手”任务
+|-
+|{{Iconbox|无敌舰队|强大的护航舰队将陪同珍宝船队把美洲的财富带回我们的国内港口。|en=Grand Armada|image=Grand Armada.png}}
+|{{plainlist|
+*{{icon|marines force limit}} {{green|+25%}} 海军陆战队上限
+*{{icon|naval leader maneuver}} {{green|+1}} 海军将领机动
+*{{icon|treasure fleet income}} {{green|+50%}} [[珍宝船队]]收入
+|需要 {{icon|culture}} 文化在伊比利亚文化组，但'''不'''是葡萄牙、巴西、加泰罗尼亚、阿拉贡或巴斯克文化
+|-
+|{{Iconbox|葡萄牙海军陆战队|为了建立一个真正的全球帝国，我们必须熟练掌握从海上对敌人的要塞发动突袭。|en=Portuguese Marines|image=Portuguese Marines.png}}
+|{{plainlist|
+*[[File:Blockade_impact_on_siege.png|28px|link=Siege]] {{green|+1}} 舰队封锁对攻城的影响
+*{{green|−40%}} [[海上炮击]]花费
+*{{icon|special unit force limit}} {{green|+50%}} 海军陆战队上限
+|{{plainlist|
+* 需要 {{icon|culture}} 葡萄牙或巴西文化
+* 未完成 {{icon|mission}} 瑞典“挪威水手”任务
+|-
+|{{Iconbox|海洋法令|地中海有很多海权国家，但没有任何一个国家拥有我们这样的航海经验和法律。我国的舰队法令确保了海军时刻有充足的准备来面对任何海上遭遇。|en=Ordinances of the Sea|image=Ordinances_of_the_Sea.png}}
+|{{plainlist|
+*{{icon|engagement width}} {{green|+15%}} 海军接战宽度
+|{{plainlist|
+* 需要 {{icon|culture}} 阿拉贡或加泰罗尼亚文化
+* 未完成 {{icon|mission}} 瑞典“挪威水手”任务
+|-
+|{{Iconbox|丹麦海军部|让别人去吹嘘他们先进的军舰型号或是那些能战斗至无谓死亡的水手去吧！我们才真正懂得海战的精髓。无论有多么出色船只和水手，只有优秀的提督才能带领一支舰队走向胜利。我国海军将会坚持这一看法。|en=Danish Admiralty|image=Danish Admiralty.png}}
+|{{plainlist|
+*{{icon|naval leader_maneuver}} {{green|+2}} 海军将领机动
+*{{icon|admiral cost}} {{green|-10%}} 海军将领花费
+|{{plainlist|
+* 需要 {{icon|culture}} 丹麦文化
+* 未完成 {{icon|mission}} 瑞典“挪威水手”任务
+|-
+|{{Iconbox|挪威水手|自从王国肇始，我国人民就依靠海洋和海岸讨生活。无论是捕鱼、掠夺还是海战，我国水手比其他任何海权国家的水手都要更加经验丰富。他们的技巧应当被进一步发扬。|en=Norwegian Sailors|image=Norwegian Sailors.png}}
+|{{plainlist|
+*{{icon|special unit force limit}} {{green|+25%}} 海军陆战队上限
+*{{icon|ship speed}} {{green|+1}} 舰队移动速度
+|需要 {{icon|culture}} 挪威文化或已完成 {{icon|mission}} 瑞典“挪威水手”任务
+|-
+|{{Iconbox|挪威水手升级|自从王国肇始，我国人民就依靠海洋和海岸讨生活。无论是捕鱼、掠夺还是海战，我国水手比其他任何海权国家的水手都要更加经验丰富。他们的技巧应当被进一步发扬。|en=Norwegian Sailors Upgraded|image=Norwegian Sailors Upgraded.png}}
+|{{plainlist|
+*{{icon|special unit force limit}} {{green|+25%}} 海军陆战队上限
+*{{icon|sailor recovery speed}} {{green|+25%}} 水手恢复速度
+*{{icon|ship speed}} {{green|+2}} 舰队移动速度
+|已完成 {{icon|mission}} 挪威“扩编皇家海军”任务
+|-
+|{{Iconbox|尼德兰贸易舰队|欧洲诸国家利用海军，通过海战来投身国家力量。不过，我们发展海军意在抵达世界的尽头。邻国只是想着怎么把敌国海岸炸烂，我们却能同最遥远的外国通商往来。|en=Dutch Trade Fleet|image=Dutch Trade Fleet.png}}
+|{{plainlist|
+*{{icon|ship_trade_power}} {{green|+25%}} 船只贸易竞争力
+*{{icon|trade range}} {{green|+25%}} 贸易范围
+|{{plainlist|
+* 需要 {{icon|culture}} 荷兰或佛兰德文化
+* 未完成 {{icon|mission}} 瑞典“挪威水手”任务
+|-
+|{{Iconbox|诺斯劫掠舰队|维京人的海陆两军都擅长在敌人做出反应之前快速打击再迅速撤退。尽管当下它已经有点过时，但却仍然可以以现代海军学说接纳这一思想。|en=Norse Raiding Fleet|image=Norse Raiding Fleet.png}}
+|{{plainlist|
+*{{icon|privateer_efficiency}} {{green|+33%}} 私掠效率
+*{{icon|ship speed}} {{green|+3}} 舰队移动速度
+|{{plainlist|
+* 需要 {{icon|culture}} 诺斯文化
+* 未完成 {{icon|mission}} 瑞典“挪威水手”任务
+|-
+|{{Iconbox|威尼斯军械库|国家的海权力量不单由海军在洋上的火力决定，修造船只的能力也同样重要。我国的军械库正是为此而设立的。|en=Venetian Arsenal|image=Venetian Arsenal.png}}
+|{{plainlist|
+*{{icon|ship cost}} {{green|-15%}} 造船花费
+*{{icon|naval maintenance}} {{green|-10%}} 海军维护费
+|{{plainlist|
+* 需要 {{icon|culture}} 威尼斯文化
+* 未完成 {{icon|mission}} 瑞典“挪威水手”任务
+|-
+|{{Iconbox|板屋船|邻国海军强大，意图征服我国，奴役我民。所幸，我们有「板屋船」。这是一艘坚固的战舰，可以轻松同时抵御多艘敌舰火力，是为应对邻国威胁的万灵法宝。|en=Panokseon|image=Panokseon.png}}
+|{{plainlist|
+*[[File:Naval combat bonus off owned coast.png|28px|link=#战斗序列]] {{green|+1}} 己方临海省份海域海战奖励
+|{{plainlist|
+* 需要 {{icon|culture}} 朝鲜或朝鲜（中华）文化
+* 未完成 {{icon|mission}} 瑞典“挪威水手”任务
+|-
+|{{Iconbox|安宅船|海战刚打响时就沉掉的船，要它何用？「安宅船」的设计考虑到了这个问题。和那些轻松沉掉的船相比，这艘简直是可以说是不沉的海上堡垒。|en=Atakebune|image=Atakebune.png}}
+|{{plainlist|
+*{{icon|heavy_ship_power}} {{green|+5%}} 重型船只作战能力
+*{{icon|ship durability}} {{green|+5%}} 船只耐久
+*{{icon|naval morale}} {{green|+5%}} 海军士气
+|{{plainlist|
+* 需要 {{icon|culture}} 日本文化组
+* 未完成 {{icon|mission}} 瑞典“挪威水手”任务
+|-
+|{{Iconbox|汉萨同盟海军学说|我国海军的建军理念是促进商贸而非获得海战优势。我们的主要目标是尽可能增加国家的财富和海贸经验。|en=Hanseatic Doctrine|image=Hanseatic Doctrine.png}}
+|{{plainlist|
+*{{icon|ship_trade_power}} {{green|+25%}} 船只贸易竞争力
+*{{icon|naval tradition from protecting trade}} {{green|+75%}} 来自保护贸易的海军传统
+|{{plainlist|
+* 需要 {{icon|culture}} 下萨克森文化
+* 未完成 {{icon|mission}} 瑞典“挪威水手”任务
+|-
+|{{iconbox|大突厥海军|我们的舰队的伟大在于其数量。每艘敌船在面对我们时都将不得不以一敌三。|en=Great Turkish Navy|image=Great Turkish Navy.png}}
+|{{plainlist|
+*{{icon|naval force limit modifier}} {{green|+20%}} 海军上限
+*{{icon|ship cost}} {{green|−10%}} 船只花费
+|{{plainlist|
+* 需要 {{icon|culture}} 突厥文化
+* 未完成 {{icon|mission}} 瑞典“挪威水手”任务
+|-
+|{{iconbox|马格里布私掠者|马格里布水手们在地中海过上了海盗和私掠者的生活。对不尊重我们的异教徒的海岸烧杀抢掠，他们会是我们的国家宝贵的力量之一。|en=Maghrebi Corsairs|image=Maghrebi Corsairs.png}}
+|{{plainlist|
+*{{icon|privateer efficiency}} {{green|+25%}} 私掠效率
+*{{icon|may raid coasts}} 允许劫掠海岸
+*{{icon|Looting speed}} {{green|+50%}} 可用战利品
+|{{plainlist|
+* 需要 {{icon|culture}} 马格里布文化组
+* 未完成 {{icon|mission}} 瑞典“挪威水手”任务
+|-
+|{{iconbox|私掠许可证|我们通过私掠许可证授予私人以代表我们攻击或俘获敌船的权利。这种结合了爱国主义与利益的方案可以让我们以比海军更低的成本来削弱我们的对手。|en=Letter of Marque|image=Letter of Marque.png}}
+|{{plainlist|
+*{{icon|chance to capture enemy ships}} {{green|+20%}} 捕获敌方船只几率
+*{{icon|ship speed}} {{green|+1}} 舰队移动速度
+*{{icon|Ship_disengagement_chance}} {{green|+10%}} 船只脱战几率
+|{{plainlist|
+* 需要 {{icon|culture}} 法兰西文化组，但'''不'''是盎格卢瓦文化
+* 未完成 {{icon|mission}} 瑞典“挪威水手”任务
+|-
+|{{iconbox|诺夫哥罗德乌什库尼克海盗|乌什库尼克是劫掠伏尔加河沿岸城市的诺夫哥罗德海盗。尽管他们不在公海上行动，但他们的海军专长足以让他们成为宝贵的海军陆战队。|en=Novgorodian Ushkuiniks|image=Novgorodian Ushkuiniks.png}}
+|{{plainlist|
+*{{icon|sailor maintenance}} {{green|−10%}} 水手维护费
+*{{icon|marines force limit}} {{green|+15%}} 海军陆战队上限
+|{{plainlist|
+* 需要 {{icon|culture}} 诺夫哥罗德文化
+* 未完成 {{icon|mission}} 瑞典“挪威水手”任务
+|-
+|{{iconbox|俄罗斯贵族海军部|某些国家的海军依靠船只数量或是木材质量。但一支真正表现出色的海军必须通过将贵族中的精英——德沃良宁——招募为海军指挥官才能建成。|en=Dvoryane Admiralty|image=Dvoryane Admiralty.png}}
+|{{plainlist|
+*{{icon|yearly navy tradition}} {{green|+1}} 年度海军传统
+*{{icon|naval leader shock}} {{green|+1}} 海军将领冲击
+|{{plainlist|
+* 需要 {{icon|culture}} 莫斯科文化
+* 未完成 {{icon|mission}} 瑞典“挪威水手”任务
+|-
+|{{iconbox|马来亚航海|鉴于马来亚及印度尼西亚的特性，保持一种允许我们海上机动迅速的学说实属必要。|en=Malayan Seafaring|image=Malayan Seafaring.png}}
+|{{plainlist|
+*{{icon|hostile disembark time}} {{green|+50%}} 登陆速度
+*{{icon|naval attrition}} {{green|−25%}} 海军损耗
+*{{icon|attrition}} {{green|−50%}} 登船损耗
+|{{plainlist|
+* 需要 {{icon|culture}} 马来亚文化组
+* 未完成 {{icon|mission}} 瑞典“挪威水手”任务
+|-
+|{{iconbox|戎克船队|戎克船的帆全部用板条固定。尽管远东亚洲的其他国家也使用过戎克船，但其主要还是在中国商船和海军中占主导地位。|en=The Junk Fleet|image=The Junk Fleet.png}}
+|{{plainlist|
+*{{icon|naval force limit modifier}} {{green|+25%}} 海军上限
+*{{icon|ship cost}} {{green|−50%}} 轻型船只花费
+|{{plainlist|
+* 需要 {{icon|culture}} 中华文化组，但'''不'''是江淮或朝鲜文化
+* 未完成 {{icon|mission}} 瑞典“挪威水手”任务
+|-
+|{{iconbox|中华宝船舰队|舰队是我等力量之延伸，此外毫无他用。让我们用大舰从远方收集朝贡的贡品吧。|en=The Chinese Treasure Fleet|image=The Chinese Treasure Fleet.png}}
+|{{plainlist|
+*{{icon|colonial range}} {{green|+25%}} 殖民距离
+*{{icon|trade range}} {{green|+25%}} 贸易范围
+*{{icon|treasure fleet income}} {{green|+50%}} [[珍宝船队]]收入
+|{{plainlist|
+* 需要 {{icon|culture}} 江淮文化
+* 未完成 {{icon|mission}} 瑞典“挪威水手”任务
+|-
+|{{iconbox|马拉塔海军火炮|虽然船队既保障了海军优势，又帮助了我国的商人，但海军最主要的目的依然是支援我国的陆军。通过利用海军炮击，我们能迅速攻破海岸堡垒。|en=Maratha Naval Bombards|image=Maratha Naval Bombards.png}}
+|{{plainlist|
+*{{green|−25%}} [[海上炮击]]花费
+*{{icon|blockade impact on siege}} {{green|+1}} 封锁对围城的影响
+*{{icon|blockade efficiency}} {{green|+25%}} 封锁效率
+|{{plainlist|
+* 需要 {{icon|culture}} 西雅利安文化组
+* 未完成 {{icon|mission}} 瑞典“挪威水手”任务
+|-
+|{{iconbox|波利尼西亚领航|自古以来，我族就掌握着在广袤海洋中导航的技术。其他人必须依靠工具导航，而我国的水手只需用肉眼观察飞鸟与夜空，就能航行于万里波涛之上。|en=Polynesian Navigation|image=Polynesian Navigation.png}}
+|{{plainlist|
+*{{icon|colonial range}} {{green|+50%}} 殖民距离
+*{{icon|may explore}} 允许招募探险家和征服者。探险家可以探索海洋省份
+|{{plainlist|
+* 需要 {{icon|culture}} 太平洋文化组
+* 未完成 {{icon|mission}} 瑞典“挪威水手”任务
+|-
+|{{iconbox|罗马海军战术|《战术》是综合总结罗马帝国陆军和海军经验而成的军事著作，其中总结的许多海军战术在中世纪之后依然十分有效。|en=Tactica|image=Tactica.png}}
+|{{plainlist|
+*{{icon|ship disengagement chance}} {{green|+15%}} 船只脱战几率
+*{{icon|galley combat ability}} {{green|+20%}} 桨帆战舰作战能力
+|{{plainlist|
+* 需要 {{icon|culture}} 拜占庭文化组
+* 未完成 {{icon|mission}} 瑞典“挪威水手”任务
+|-
+|{{iconbox|巴斯克海军陆战队|我们的人民追捕鲸鱼到世界的尽头，袭击海岸或从其他地方带来珍贵的货物，已经有很长一段时间了，就这样学习海洋的秘密。这些教诲使我们的水手无畏而可靠，为雇用他们的海军提供安全的价值。|en=Basque Marines|image=Basque Marines.png}}
+|{{plainlist|
+*{{icon|may explore}} 允许招募探险家和征服者。探险家可以探索海洋省份
+*{{icon|hostile movement speed}} {{green|忽略}} 登陆惩罚
+*{{icon|marines force limit}} {{green|+25%}} 海军陆战队上限
+|{{plainlist|
+* 需要 {{icon|culture}} 巴斯克文化
+* 未完成 {{icon|mission}} 瑞典“挪威水手”任务
+|-
+|{{iconbox|马穆鲁克桨帆战船|我们强大的桨帆船和能干的船员将统治大洋，为我们的名号增光添彩，使我们的徽记熠熠生辉。|en=Mamluk Galleys|image=Mamluk Galleys.png}}
+|{{plainlist|
+*{{icon|galley_power}} {{green|+15%}} 桨帆船作战能力
+*{{icon|galley_cost}} {{green|-25%}} 桨帆船花费
+|{{plainlist|
+* 完成 {{icon|mission}} [[马穆鲁克任务#海军事业|海军事业]]任务
+|-
+|{{iconbox|马穆鲁克商船|我们无与伦比的商船队和能干的船员将统治大洋，为我们带来金银万两，让我们名扬天下。|en=Mamluk Merchant Vessels|image=Mamluk Merchant Vessels.png}}
+|{{plainlist|
+*{{icon|ship_trade_power}} {{green|+15%}} 船只贸易竞争力
+*{{icon|light_ship_cost}} {{green|-25%}} 轻型船只花费
+|{{plainlist|
+* 完成 {{icon|mission}} [[马穆鲁克任务#海军事业|海军事业]]任务
+|-
+|{{iconbox|马穆鲁克战舰|我们强大的战舰和能干的船员将统治大洋，为我们的名号增光添彩，使我们的徽记熠熠生辉。|en=Mamluk Warships|image=Mamluk Warships.png}}
+|{{plainlist|
+*{{icon|heavy_ship_power}} {{green|+10%}} 重型船只作战能力
+*{{icon|Engagement Width}} {{green|+10%}} 海军接战宽度
+|{{plainlist|
+* 完成 {{icon|mission}} [[马穆鲁克任务#海军事业|海军事业]]任务
+|-
+|{{iconbox|马穆鲁克运输船|我们的运输船和能干的船员将统治大洋，为我们的名号增光添彩，使我们的徽记熠熠生辉。|en=Mamluk Transports|image=Mamluk Transports.png}}
+|{{plainlist|
+*{{icon|naval_attrition}} {{green|-50%}} 运输损耗
+*{{icon|marines force limit}} {{green|+10%}} 海军陆战队上限
+*{{icon|ship speed}} {{green|+1}} 舰队移动速度
+|{{plainlist|
+* 完成 {{icon|mission}} [[马穆鲁克任务#海军事业|海军事业]]任务
+|}
+
+==舰队指令==
+{{SVersion|1.25}}
+
+===开始巡逻 {{anchor|Patrolling}}===
+[[File:unitpanel button enable patrol.png|36px]] '''开始巡逻'''按钮让舰队开始循环被指定的移动命令。当它到达前一任务的终点时，就会返回巡逻的起点开始巡逻。巡逻路线可以包括港口停靠，巡逻在所有船只修复前停止。虽然同样的功能保护贸易的轻型船只舰队也能做，但巡逻不限制船只类型，贸易力量或贸易距离。
+===劫掠海岸===
+&lt;section begin=RaidCoasts/>{{ambox
+|type=notice
+|small=left
+|smallimage={{icon|mn|24px}}{{icon|gc|24px}}{{icon|lon|24px}}
+|textstyle=font-size:85%
+|text=仅当DLC[[我们的海]]、[[黄金世纪]]'''或'''[[北方雄狮]]开启时可用。
+}}
+劫掠海岸是一项海军能力，允许拥有该能力的国家的舰队劫掠其他非同信仰国家的海岸以获得 {{icon|ducat}} 战利品（金币）和 {{icon|sailors}} 水手。这项能力可经由国家理念、政府改革等方式获得。部分国家除了不同信仰国家之外，还允许劫掠同信仰国家的海岸。
+
+劫掠海岸可以提供显著的收入和水手池加成，并作为损害其他国家经济的一种手段。
+ &lt;section end=RaidCoasts/>
+一个例子是 {{flag|So}}，通过不断劫掠 {{flag|Ming}}的海岸可以叠高荒废度，甚至可能让其因此失去[[中国皇帝|天命]]而崩溃。
+
+====条件====
+[[File:Raid_coasts.jpg|thumb|500px|作为摩洛哥，劫掠海岸。]]
+劫掠海岸是舰队在海上的可能行为。要劫掠一个海岸省份，需要满足以下条件：
+* 这个国家…
+:* …有以下条件之一… 
+::* …理念 “''可以劫掠海岸''”: {{Bonus table|may raid coasts}}
+::* …理念 “''可以劫掠海岸，包括同宗教的国家''”: {{Bonus table|may raid coasts including coasts of countries with same religion}}
+::* …拥有 [[共和制#海盗共和国|海盗共和国]] 政府改革 ({{flag|So}}, {{flag|Palembang}}, {{flag|Pattani}}, {{flag|Rügen}}, {{flag|Cornwall}} 以及 {{flag|Gotland}} 可以通过事件转为海盗共和国； {{flag|New Providence}}, {{flag|Port Royal}}, {{flag|Tortuga}}, {{flag|Libertatia}}, {{flag|Salé}} 和 {{flag|Tétouan}} 通过事件被释放时会是海盗共和国)
+::*  …拥有 [[君主制#巴巴里伊克塔|巴巴里伊克塔]] 政府改革（仅限马格里布文化组国家）
+::*  …拥有 [[君主制#巴巴里行省政府|巴巴里行省政府]] 政府改革
+::*  …拥有 [[通用政府改革#融入诺斯传统|融入诺斯传统]] 政府改革（仅限 {{icon|norse|24px}} 诺斯信仰国家）
+::*  …选择 [[海战#马格里布私掠者|马格里布私掠者]] 海军学说（仅限马格里布文化组国家）
+::*  …完成一项暂时给予劫掠海岸能力的任务
+:* …must be able to place a fleet in a sea tile adjacent to the province, but doesn't need to be able to blockade the port
+* the target province…
+:* …must be no more than three sea tiles away from a province owned by the nation (cored or otherwise). This can be increased with the modifier “''Coastal raiding range''”
+:* …must have a [[development]] lower than or equal to the blockading power of the fleet
+:* …does not belong to a country which has a truce with the raiding nation
+:* …does not belong to a country which has the same [[religion]] as the raiding nation, unless the raiding nation is a Pirate Republic, {{flag|Normandy}} or {{flag|Somalia}}
+:* …does not have the [[religion]] of the raiding nation, unless the raiding nation is a Pirate Republic, {{flag|Normandy}} or {{flag|Somalia}}
+:* …is not controlled by a “''friend''” (ally, subject of ally, in the same trade league, country with above 100 opinion) of the raiding nation
+:* …is not controlled by the overlord of the raiding nation or subjects of the overlord or subjects of the raiding nation
+
+:* …does not have the “''Raided Coast''” modifier
+
+After a province has been raided, its loot bar is emptied, the amount of devastation is increased, and the modifier “''Raided Coast''” is applied for ten years. Each raided province will add a {{red|−25}} relations penalty with the target country (up to a maximum of {{red|−100}}), decaying by {{green|+1}} per year. 
+
+The efficiency of raiding is reduced by fleets on [[Naval warfare#Hunt pirates|pirate hunting patrol]].
+
+When a coast is raided, the loot provided is as follows:
+{| class="mildtable"
+! Raided coast
+! Conditions
+|-
+|style="text-align:left" | {{plainlist|
+*{{green|+1}} {{icon|income}}
+}}
+|| per [[Development|development]] (raided province)
+|-
+|style="text-align:left" | {{plainlist|
+{{green|+ sailors}}
+}}
+|| [[Sailors|Local sailors]] per Raided provinces / 4
+|}
+
+===封锁===
+
+{{anchor|Blockade}}
+一只固定且没有其它任务的舰队会自动封锁敌对国或被敌对国占领的沿海省份。
+
+====封锁能力====
+舰队的封锁能力是在舰队界面 [[File:Blockade enemy ports.png|28px]] 封锁标志中显示。封锁能力基本被舰队的 {{icon|ship speed|28px}} 战术移动速度决定 。
+
+:&lt;math>\text{封锁能力} =  \frac{\sum\text{船只速度}}{3} \cdot \text{封锁效率}&lt;/math>
+每一点封锁能力可以封锁省份的一点发展度。
+
+封锁只会在封锁能力等于或高于省份发展度时才会有效。如果一支舰队没有足够的封锁能力去封锁相邻的被敌对省份，那么封锁的优先级为：
+
+*正在被友军围攻的敌对省份
+*最低发展度的敌对省份
+*最低发展度的敌对叛军省份
+
+位于[[舰队]]界面的''分离封锁''按钮（[[File:detach blockade.png|28px]]）会分离足够封锁当前海区敌军省份的舰队 。
+
+=====封锁效率=====
+
+封锁效率由以下修正影响：
+
+{| class="mildtable"
+! style="width:30px" |[[File:Blockade efficiency.png|28px]]
+!条件
+|-
+| align="right" |{{green|+1%}}||每一点 {{icon|navy tradition|28px}} 海军传统
+|}
+理念和政策：
+{{bonus table|blockade efficiency}}
+决议和事件：
+{| class="mildtable mw-collapsible"
+! style="width:30px" |[[File:Blockade efficiency.png|28px]]
+! style="width:250px" |事件修正
+! style="width:450px" |触发条件
+!持续时间
+|- valign="top"
+| style="text-align:right" |{{green|+20%}}
+|封锁战术的改良
+|航海理念组事件：[[Maritime_idea_group_events#Improved_Blockade_Tactics|封锁战术的改良]]
+|10年
+|- valign="top"
+| style="text-align:right" |{{red|−25%}}
+|海军变得懒惰
+|航海理念组事件：[[Maritime_idea_group_events#Slipping_Standards|海军变得懒惰]]
+:选项：“我们不能期望他们随时随地保持高效”
+|10年
+|}
+====封锁效果====
+封锁会对敌方占有的沿海省份造成一系列负面效果：
+
+{{#lst:Static modifiers|blockaded}}
+需要额外注意的是，生产 {{icon|spices}} 香料的省份所提供的省份奖励恰好可以抵消封锁所带来的月度荒芜度增加。
+被封锁的国家同时还会受到以下修正，修正的具体数值由所被封锁的总发展度比例（核心，省份)决定：
+{{#lst:Static modifiers|BlockadedHomePorts}}
+封锁还拥有以下影响：
+*[[围城]]： {{green|−2}} 未被封锁沿海省份围城惩罚，除非省份为未开发地带。（没有港口的沿岸省份不适用此项，例如里海沿岸的省份）
+*[[战争分数]]：封锁所带来的战争分数由所被封锁省份的发展度比例和当地自治度修正。拥有首都和堡垒的身份会占更多的分数。有些[[宣战理由]]将封锁省份作为战争目标。
+*[[战利品]]：封锁会获得被封锁省份的一部分收入，体现为增加{{icon|ducats}}金币至封锁者的国库中（收入列于“战利品”一栏内）
+*移动限制：参见 [[海战#封锁海峡|封锁海峡]] 章节。
+
+===封锁海峡===
+
+游戏中有些省份之间没有在陆地上直接接壤，而是隔海相望但通过虚线连接的形式接壤，这些虚线被称为海峡。
+
+在战争时期，通过在海峡渡过的海域部署舰队，可以使得交战中的敌方无法通过海峡渡过海域，这被称之为封锁海峡。
+交战时，一国仅能无条件通过自己或同盟实际控制海峡两侧省份的海峡。对于并没有实际控制海峡两侧省份的海峡，如果海域由己方或者无人控制，则可以通过；而如果海峡通过的海域由敌方控制则无法通过，这就是海峡被封锁的情况。
+
+对于其他中立国家或同盟国家来说，可以任意通过已拥有军事通行权的海峡，不存在封锁海峡。
+
+封锁海峡需满足以下条件：
+
+*敌方未实际控制海峡两侧省份；
+*使用舰队（数量不限）控制海峡通过的海域。
+
+比如说：
+
+*一个国家控制海峡的两边：奥斯曼只要控制君士坦丁堡和科贾埃利，那么他可以随时无视封锁跨越博斯普鲁斯海峡。埃迪尔内到比加的海峡同理。
+*一个中立国家控制海峡的一侧：一个只和英格兰交战的爱尔兰国家不能跨越被英格兰控制的爱尔兰海至苏格兰的埃尔郡（苏格兰中立且给战争中的一方军事通行权）
+*不过，如果爱尔兰国家呼叫一个同盟比如说勃艮第加入战争，而且勃艮第与苏格兰单独交战并控制埃尔郡，那么便不满足上述第一个条件。所以就算英格兰控制爱尔兰海这个爱尔兰国家也能跨越海峡。
+
+正在被围攻中的省份不满足第一个要求
+
+==海军任务==
+
+{{SVersion|1.25}}
+
+使用“选择任务”按钮便可看见所可用的海军任务（[[File:Select mission.png|22px]]）；
+*保护贸易
+*私掠
+*猎杀海盗
+*探索
+*猎杀敌军舰队
+*封锁敌军港口
+*拦截敌军舰队
+===保护贸易===
+
+[[File:Protect trade.png]] 任何包含轻型船只的舰队都可以选择这个任务。它会将轻型船只贸易力量的总和增加至任何沿海贸易节点，只要它们在贸易和补给距离之内就行。
+
+轻型船只的贸易力量取决于船只的型号，后者可被外交科技提升。也会被海军维护费的高低影响，最大时无惩罚，而最低时获得 {{red|-75%}} 的惩罚。AI国家不会因为是最低维护费而受到惩罚。
+
+===私掠 {{anchor|Privateering}}===
+
+{{Expansion|won|eld}}
+
+[[File:Privateer.png]] 任何含有轻型船只的舰队都可以使用这个任务。该舰队会将其轻型船只提供的贸易力量给贸易节点中的海岛国家。和保护贸易的任务不同的是，你可以在任何节点开始私掠。
+====私掠效率====
+私掠中的轻型船只的贸易力量会 {{green|+50%}}。私掠船不会被国际贸易修正影响，更不会被过扩，在外方节点收钱 等等惩罚影响。私掠船的贸易力量则是被私掠效率影响
+{{bonus table|privateer efficiency}}
+'''征募私掠者'''的决议会额外增加 {{green|+25%}} 的 {{icon|privateer efficiency}} 私掠效率。它会在'''8'''级 {{icon|dip tech}} 外交科技时解锁并要求该国已完成 {{icon|maritime|28px}} 航海理念，君主的 {{icon|mmp}} 军事能力至少为'''3'''，和至少达到 {{icon|naval force limit}} 海军上限的50%。
+
+当 {{icon|cs}} 常识DLC激活后，在议会辩论中 {{icon|Parliament|24px}} 通过'''颁发私掠许可证''' 可以获得{{green|+15%}}私掠效率，持续 10 年。
+
+每一点海军传统还会增加 {{green|0.25%}} 的私掠效率。因此私掠船的总贸易力量为
+
+&lt;math>\text{私掠船的贸易力量} =\text{轻型船只的基础贸易力量} \cdot 1.5 \left( 1 + \text{海军维护费修正} \right) \cdot \left( 1 + \text{总私掠效率} \right)&lt;/math>
+
+====距离====
+
+私掠舰队只能到达[[贸易距离]]内的沿海贸易节点。一个国家的贸易距离从该国或其附庸国的核心省份，以及任意给予该国舰队停靠权的国家沿海省份开始计算。
+
+贸易距离可被外交科技，决议，理念和政策增加：
+
+{{bonus table|trade range}}
+
+====效果====
+私掠舰队会增加贸易节点中作为收集者的海盗国家的贸易力量。该海盗国家会将自己收入的'''40%'''进贡给送出私掠舰队的国家。这个海盗国家的存在将会降低该节点所有非海盗国家所占的贸易价值。海盗国家向你进贡的收入会在收入界面的'''战利品'''条目下显示。
+
+任何在该节点占'''20%'''以上贸易力量，但在该节点没有私掠舰队的国家会对送出私掠舰队的国家得到一个宣战理由。
+
+任何在该节点占'''15%'''以上贸易力量，但在该节点没有私掠舰队的国家会对送出私掠舰队的国家得到一个每月 {{red|-1}} 关系修正，最大值为 {{red|-100}}。
+
+在宿敌的贸易本埠执行私掠任务是最容易得到[[力量投射]]的方法之一。这种方法会非常简单地把玩家的力量投射涨到'''+25'''（效果是 {{green|+1}} 免费将领），甚至超过'''+50'''（效果是每月 {{green|+1}} {{icon|adm}} / {{green|+1}} {{icon|dip}} / {{green|+1}} {{icon|mil}}）。
+
+执行私掠任务会强制游戏每天刷新玩家的力量投射。这也会刷新玩家在节点的贸易力量和国家的军队上限。这样的强制刷新会在游戏因为轻型船只保护贸易或降低自治度而导致不同步的问题的时候非常有效。
+
+===猎杀海盗===
+
+{{expansion|mn|ed}}
+
+[[File:Hunt pirates.png]] 每只只要不是由纯运输船组成的舰队都能使用这个任务。任何拥有重型或轻型船只的舰队都可以在非内陆的[[贸易节点]]猎杀海盗；不过，有桨帆或桨帆运输船混合舰队只能在周围海区全是[[贸易节点#节点|内海]]的贸易节点猎杀私掠舰队，比如说，巴士拉和亚历山大港贸易节点可以但霍尔木兹不行。这也不能说明他们只会在本身有优势的内海海区猎杀私掠船：比如说一个在广州猎杀私掠船的舰队会使用吕宋海峡。
+
+船只火炮总数被用来计算它们猎杀私掠船的效率。如果猎杀舰队火炮总数是私掠舰队的两倍，那么私掠效率将会被降低99.9%。他们的效率影响了私掠舰队在贸易节点内的力量，以及[[柏柏尔]]国家劫掠海岸的效率，无舰队时是0%，最高达到99.9%。
+
+注意私掠或猎杀私掠船的舰队并不会真正的进行战斗，也不会受到伤害，除非两国处于交战状态。
+
+===探索===
+
+{{expansion|eld}}
+
+[[File:Explore.png]] 这个任务需要一个探险家，最少3艘轻型或重型船只才能选择。满足条件后左上角会出现一个类似望远镜的图标，点击它选择地区后，舰队便会自动前往指定地区探索陆地或者海区。也可以直接通过舰队界面右侧的图标选择地区。在[[外交科技]]到达9级后，还可以选择环球航行。
+{{main|殖民#探索}}
+===猎杀敌军舰队===
+
+{{expansion|mn}}
+
+[[File:Hunt enemy fleet.png]] 本任务会让舰队在特定海区猎杀敌军舰队。
+===封锁敌军港口===
+{{expansion|mn}}
+
+本任务会让舰队封锁敌军港口并避开哪些不好对付的敌军舰队。（除非在设置里设该舰队为大胆。）
+{{main|海战#封锁}}
+===拦截敌军舰队===
+
+{{expansion|mn}}
+
+[[File:Intercept_enemy_fleets.png]] 本任务会让舰队在友方海岸线搜寻并进攻敌军舰队，特别是敌军的运输船。
+==策略与战术==
+{{SVersion|1.25}}
+
+===部署===
+因为没有叠加惩罚，所以海战最好的办法就是集中力量一起出击。敌强我弱时要保存实力，敌弱我强时应主动出击，尽可能地消灭敌军有生力量。海军提督会显著的影响一场战斗的胜负，其效果与陆军将军相比更甚；如果没有海军提督的指挥加成，即使你的舰队看起来有着显著的优势，胜利也会变得相当困难。
+
+不过，其它的因素也有可能影响你的策略。一个国家的海军一般不可能只用于摧毁或压制敌军舰队。它还要用于其它方面，比如说保护贸易节点，运输部队，侦查，猎杀海盗和封锁等等。如果一个国家没有碾压敌海军的实力，那么就有可能损失船只，放弃一些目标或干脆在战争中放弃制海权。
+
+===与敌军作战===
+
+一个海军强国在与海军弱国交战时，最希望的可能就是敌军主动出击，和你进行决战。以下有几种方法可能有用：
+
+*如果敌海军停靠在港中，我们不能直接攻击它们。不过如果你占领所在省份，敌舰队便不得不离开港口，与你在相邻海区的舰队交战。
+*可以使用一只诱饵舰队勾引敌军前来进攻，主力舰队可以在附近海区或港口前去增援，这也可以勾引诸如 {{flag|Ottomans}}这种大力发展桨帆战舰的国家离开它们的优势海域-内海从而大大降低它们的威胁。
+*轻型船只和桨帆战舰比重型船只移动速度更快，可以抓住含有重型船只的舰队。
+*将舰队置于港口之中会使得 AI 的海军更为激进并趋向出港，甚至达成全面封锁。这会使得敌人的海军实力显著地变弱。
+*在战败之后，AI 的舰队通常会撤退往毗邻的港口。在该港口预先布置围城部队能够使得敌方舰队在士气和耐久低下的情况下，被迫出港作战，这一战术能够在极小损失的情况下达成歼灭战。
+*有时候 AI 对待在某些特定省份情有独钟，即使是省份被占领也不离开。修正这一情况的方法只有一个，那就是将你的舰队撤出几个省份之外，即让 AI 误以为外面已经安全了。
+[[Category:军事]]
+
+{{military navbox}}
+
+[[en:Naval_warfare]]
+</textarea><div class="templatesUsed"><div class="mw-templatesUsedExplanation"><p>本页使用的模板：
+</p></div><ul>
+<li><a href="https://www.eu4cn.com/wiki/Static_modifiers" class="mw-redirect" title="Static modifiers">Static modifiers</a>（<a href="https://www.eu4cn.com/index.php?title=Static_modifiers&amp;action=edit" class="mw-redirect" title="Static modifiers">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/静态修正" title="静态修正">静态修正</a>（<a href="https://www.eu4cn.com/index.php?title=%E9%9D%99%E6%80%81%E4%BF%AE%E6%AD%A3&amp;action=edit" title="静态修正">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Ambox" title="Template:Ambox">Template:Ambox</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Ambox&amp;action=edit" title="Template:Ambox">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Ambox/core" title="Template:Ambox/core">Template:Ambox/core</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Ambox/core&amp;action=edit" title="Template:Ambox/core">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Ambox_2020" title="Template:Ambox 2020">Template:Ambox 2020</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Ambox_2020&amp;action=edit" title="Template:Ambox 2020">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Anchor" title="Template:Anchor">Template:Anchor</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Anchor&amp;action=edit" title="Template:Anchor">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:BTRow" title="Template:BTRow">Template:BTRow</a>（<a href="https://www.eu4cn.com/index.php?title=Template:BTRow&amp;action=edit" title="Template:BTRow">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Bonus_table" title="Template:Bonus table">Template:Bonus table</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Bonus_table&amp;action=edit" title="Template:Bonus table">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Clear" title="Template:Clear">Template:Clear</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Clear&amp;action=edit" title="Template:Clear">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Country_data_Cornwall" title="Template:Country data Cornwall">Template:Country data Cornwall</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Country_data_Cornwall&amp;action=edit" title="Template:Country data Cornwall">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Country_data_Gotland" title="Template:Country data Gotland">Template:Country data Gotland</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Country_data_Gotland&amp;action=edit" title="Template:Country data Gotland">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Country_data_Libertatia" title="Template:Country data Libertatia">Template:Country data Libertatia</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Country_data_Libertatia&amp;action=edit" title="Template:Country data Libertatia">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Country_data_Ming" title="Template:Country data Ming">Template:Country data Ming</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Country_data_Ming&amp;action=edit" title="Template:Country data Ming">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Country_data_New_Providence" title="Template:Country data New Providence">Template:Country data New Providence</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Country_data_New_Providence&amp;action=edit" title="Template:Country data New Providence">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Country_data_Normandy" title="Template:Country data Normandy">Template:Country data Normandy</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Country_data_Normandy&amp;action=edit" title="Template:Country data Normandy">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Country_data_Ottomans" title="Template:Country data Ottomans">Template:Country data Ottomans</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Country_data_Ottomans&amp;action=edit" title="Template:Country data Ottomans">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Country_data_Palembang" title="Template:Country data Palembang">Template:Country data Palembang</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Country_data_Palembang&amp;action=edit" title="Template:Country data Palembang">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Country_data_Pattani" title="Template:Country data Pattani">Template:Country data Pattani</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Country_data_Pattani&amp;action=edit" title="Template:Country data Pattani">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Country_data_Port_Royal" title="Template:Country data Port Royal">Template:Country data Port Royal</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Country_data_Port_Royal&amp;action=edit" title="Template:Country data Port Royal">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Country_data_Rügen" title="Template:Country data Rügen">Template:Country data Rügen</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Country_data_R%C3%BCgen&amp;action=edit" title="Template:Country data Rügen">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Country_data_Salé" title="Template:Country data Salé">Template:Country data Salé</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Country_data_Sal%C3%A9&amp;action=edit" title="Template:Country data Salé">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Country_data_So" title="Template:Country data So">Template:Country data So</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Country_data_So&amp;action=edit" title="Template:Country data So">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Country_data_Somalia" title="Template:Country data Somalia">Template:Country data Somalia</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Country_data_Somalia&amp;action=edit" title="Template:Country data Somalia">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Country_data_Tortuga" title="Template:Country data Tortuga">Template:Country data Tortuga</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Country_data_Tortuga&amp;action=edit" title="Template:Country data Tortuga">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Country_data_Tétouan" title="Template:Country data Tétouan">Template:Country data Tétouan</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Country_data_T%C3%A9touan&amp;action=edit" title="Template:Country data Tétouan">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Expansion" title="Template:Expansion">Template:Expansion</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Expansion&amp;action=edit" title="Template:Expansion">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Flag" title="Template:Flag">Template:Flag</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Flag&amp;action=edit" title="Template:Flag">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Flag/core" title="Template:Flag/core">Template:Flag/core</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Flag/core&amp;action=edit" title="Template:Flag/core">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Green" title="Template:Green">Template:Green</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Green&amp;action=edit" title="Template:Green">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Grey-bd" title="Template:Grey-bd">Template:Grey-bd</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Grey-bd&amp;action=edit" title="Template:Grey-bd">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Hatnote" title="Template:Hatnote">Template:Hatnote</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Hatnote&amp;action=edit" title="Template:Hatnote">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon" title="Template:Icon">Template:Icon</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon&amp;action=edit" title="Template:Icon">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/a" title="Template:Icon/a">Template:Icon/a</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/a&amp;action=edit" title="Template:Icon/a">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/b" title="Template:Icon/b">Template:Icon/b</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/b&amp;action=edit" title="Template:Icon/b">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/c" title="Template:Icon/c">Template:Icon/c</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/c&amp;action=edit" title="Template:Icon/c">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/d" title="Template:Icon/d">Template:Icon/d</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/d&amp;action=edit" title="Template:Icon/d">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/e" title="Template:Icon/e">Template:Icon/e</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/e&amp;action=edit" title="Template:Icon/e">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/g" title="Template:Icon/g">Template:Icon/g</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/g&amp;action=edit" title="Template:Icon/g">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/h" title="Template:Icon/h">Template:Icon/h</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/h&amp;action=edit" title="Template:Icon/h">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/i" title="Template:Icon/i">Template:Icon/i</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/i&amp;action=edit" title="Template:Icon/i">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/l" title="Template:Icon/l">Template:Icon/l</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/l&amp;action=edit" title="Template:Icon/l">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/m" title="Template:Icon/m">Template:Icon/m</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/m&amp;action=edit" title="Template:Icon/m">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/n" title="Template:Icon/n">Template:Icon/n</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/n&amp;action=edit" title="Template:Icon/n">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/p" title="Template:Icon/p">Template:Icon/p</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/p&amp;action=edit" title="Template:Icon/p">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/r" title="Template:Icon/r">Template:Icon/r</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/r&amp;action=edit" title="Template:Icon/r">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/s" title="Template:Icon/s">Template:Icon/s</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/s&amp;action=edit" title="Template:Icon/s">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/t" title="Template:Icon/t">Template:Icon/t</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/t&amp;action=edit" title="Template:Icon/t">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/w" title="Template:Icon/w">Template:Icon/w</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/w&amp;action=edit" title="Template:Icon/w">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/xyz" title="Template:Icon/xyz">Template:Icon/xyz</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/xyz&amp;action=edit" title="Template:Icon/xyz">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/y" title="Template:Icon/y">Template:Icon/y</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/y&amp;action=edit" title="Template:Icon/y">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Iconbox" title="Template:Iconbox">Template:Iconbox</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Iconbox&amp;action=edit" title="Template:Iconbox">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Main" title="Template:Main">Template:Main</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Main&amp;action=edit" title="Template:Main">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Military_navbox" title="Template:Military navbox">Template:Military navbox</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Military_navbox&amp;action=edit" title="Template:Military navbox">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:N" title="Template:N">Template:N</a>（<a href="https://www.eu4cn.com/index.php?title=Template:N&amp;action=edit" title="Template:N">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Navbox" title="Template:Navbox">Template:Navbox</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Navbox&amp;action=edit" title="Template:Navbox">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Navboxgroup" title="Template:Navboxgroup">Template:Navboxgroup</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Navboxgroup&amp;action=edit" title="Template:Navboxgroup">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Plainlist" title="Template:Plainlist">Template:Plainlist</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Plainlist&amp;action=edit" title="Template:Plainlist">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Red" title="Template:Red">Template:Red</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Red&amp;action=edit" title="Template:Red">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:SVersion" title="Template:SVersion">Template:SVersion</a>（<a href="https://www.eu4cn.com/index.php?title=Template:SVersion&amp;action=edit" title="Template:SVersion">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Version" title="Template:Version">Template:Version</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Version&amp;action=edit" title="Template:Version">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:白字" title="Template:白字">Template:白字</a>（<a href="https://www.eu4cn.com/index.php?title=Template:%E7%99%BD%E5%AD%97&amp;action=edit" title="Template:白字">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:需要翻译" title="Template:需要翻译">Template:需要翻译</a>（<a href="https://www.eu4cn.com/index.php?title=Template:%E9%9C%80%E8%A6%81%E7%BF%BB%E8%AF%91&amp;action=edit" title="Template:需要翻译">查看源代码</a>）</li></ul></div><p id="mw-returnto">返回<a href="https://www.eu4cn.com/wiki/海战" title="海战">海战</a>。</p>
+</div>						</div>
+				</div>
+				<footer>
+				<div class="liberty-footer">
+										<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>					<div class="bottom-ads mobile-ab">
+						<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+						<!-- 移动端底部 -->
+						<ins class="adsbygoogle mobile-ab"
+						     style="display:block"
+						     data-ad-client="ca-pub-1612414434963106"
+						     data-ad-slot="3303553671"
+						     data-ad-format="auto"
+						     data-full-width-responsive="true"></ins>
+						<script>
+						     (adsbygoogle = window.adsbygoogle || []).push({});
+						</script>
+					</div>
+								<ul class="footer-places">
+									<li class="footer-places-privacy">
+						<a href="https://www.eu4cn.com/wiki/欧陆风云4百科:隐私政策">隐私政策</a>					</li>
+									<li class="footer-places-about">
+						<a href="https://www.eu4cn.com/wiki/欧陆风云4百科:关于">关于欧陆风云4百科</a>					</li>
+									<li class="footer-places-disclaimer">
+						<a href="https://www.eu4cn.com/wiki/欧陆风云4百科:免责声明">免责声明</a>					</li>
+							</ul>
+					<ul class="footer-icons">
+									<li class="footer-copyrightico">
+						<a href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="https://www.eu4cn.com/resources/assets/licenses/cc-by-nc-sa.png" alt="知识共享署名-非商业性使用-相同方式共享" width="88" height="31" loading="lazy"/></a>					</li>
+										<li class="footer-poweredbyico">
+						<a href="https://www.mediawiki.org/"><img src="https://www.eu4cn.com/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"/></a><a href="https://www.eu4cn.com/"><img src="https://www.eu4cn.com/images/footerlogo.png" width="88" height="31" loading="lazy"/></a>					</li>
+								</ul>
+						</div>
+				</footer>
+			</div>
+		</div>
+		</section>
+				<div class="modal fade login-modal" id="login-modal" tabindex="-1"
+			 role="dialog" aria-labelledby="login-modalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-sm" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<h4 class="modal-title">登录</h4>
+					</div>
+					<div class="modal-body">
+						<div id="modal-login-alert" class="alert alert-hidden alert-danger" role="alert">
+						</div>
+						<form id="modal-loginform" name="userlogin" class="modal-loginform"
+							  method="post">
+							<input class="loginText form-control" id="wpName1" tabindex="1"
+								   placeholder="请输入您的用户名" value="" name="lgname">
+							<label for="inputPassword" class="sr-only">密码</label>
+							<input class="loginPassword form-control" id="wpPassword1" tabindex="2"
+								   placeholder="请输入您的密码" type="password" name="lgpassword">
+							<div class="modal-checkbox">
+								<input name="lgremember" type="checkbox" value="1" id="lgremember" tabindex="3">
+								<label for="lgremember">记住登录</label>
+							</div>
+							<input class="btn btn-success btn-block" type="submit" value="登录" tabindex="4">
+							<a href="https://www.eu4cn.com/index.php?title=Special:%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95&amp;type=signup&amp;returnto=%E6%B5%B7%E6%88%98" class="btn btn-primary btn-block" title="Special:用户登录" tabindex="5" type="submit">加入欧陆风云4百科</a>							<a href="https://www.eu4cn.com/wiki/Special:重置密码" title="Special:重置密码">忘记密码？</a>                            <br>
+							<a href="https://www.eu4cn.com/wiki/Special:用户登录" title="Special:用户登录">其他方式登录</a>							<input type="hidden" name="action" value="login" />
+							<input type="hidden" name="format" value="json" />
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">⧼liberty-btn-close⧽</button>
+						<button type="button" class="btn btn-primary">⧼liberty-btn-save-changes⧽</button>
+					</div>
+				</div>
+			</div>
+		</div>
+			</body>
+<!-- Mirrored from www.eu4cn.com/index.php?title=%E6%B5%B7%E6%88%98&action=edit by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 May 2024 12:17:11 GMT -->
+</html>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?8b9cdb5f260cf613f39a508fbf9dd707";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.005","walltime":"0.006","ppvisitednodes":{"value":7,"limit":1000000},"postexpandincludesize":{"value":18,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":100},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20240506111031","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":2125});});</script>
+</body>
+</html>

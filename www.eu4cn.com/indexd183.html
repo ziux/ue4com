@@ -1,0 +1,840 @@
+ <!DOCTYPE html>
+<html class="client-nojs" lang="zh" dir="ltr">
+
+<!-- Mirrored from www.eu4cn.com/index.php?title=%E9%A1%BE%E9%97%AE&action=edit by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 May 2024 12:52:53 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>查看“顾问”的源代码 - 欧陆风云4百科，人人可以编辑的欧陆风云4中文百科全书</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"zh","wgMonthNames":["","1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"],"wgRequestId":"6d9a11fcc5cce4bb845d86a6","wgCSPNonce":false,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"顾问","wgTitle":"顾问","wgCurRevisionId":96731,"wgRevisionId":0,"wgArticleId":1181,"wgIsArticle":false,"wgIsRedirect":false,"wgAction":"edit","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageContentLanguage":"zh","wgPageContentModel":"wikitext","wgRelevantPageName":"顾问","wgRelevantArticleId":1181,"wgUserVariant":"zh","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgCargoDefaultQueryLimit":100,"wgCargoMapClusteringMinimum":80,"wgCargoMonthNames":["1月","2月","3月",
+"4月","5月","6月","7月","8月","9月","10月","11月","12月"],"wgCargoMonthNamesShort":["1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"],"wgCargoWeekDays":["星期日","星期一","星期二","星期三","星期四","星期五","星期六"],"wgCargoWeekDaysShort":["日","一","二","三","四","五","六"],"wgPageFormsTargetName":null,"wgPageFormsAutocompleteValues":[],"wgPageFormsAutocompleteOnAllChars":false,"wgPageFormsFieldProperties":[],"wgPageFormsCargoFields":[],"wgPageFormsDependentFields":[],"wgPageFormsCalendarValues":[],"wgPageFormsCalendarParams":[],"wgPageFormsCalendarHTML":null,"wgPageFormsGridValues":[],"wgPageFormsGridParams":[],"wgPageFormsContLangYes":null,"wgPageFormsContLangNo":null,"wgPageFormsContLangMonths":[],"wgPageFormsHeightForMinimizingInstances":800,"wgPageFormsShowOnSelect":[],"wgPageFormsScriptPath":"/extensions/PageForms","edgValues":null,"wgPageFormsEDSettings":null,"wgAmericanDates":false,"wgVisualEditor":{
+"pageLanguageCode":"zh","pageLanguageDir":"ltr","pageVariantFallbacks":["zh-hans","zh-hant","zh-cn","zh-tw","zh-hk","zh-sg","zh-mo","zh-my"]},"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgSmjUseCdn":false,"wgSmjUseChem":true,"wgSmjDisplayMath":[],"wgSmjExtraInlineMath":[],"wgSmjScale":1,"wgSmjEnableMenu":true,"wgSmjDisplayAlign":"left","wgEditSubmitButtonLabelPublish":false};RLSTATE={"site.styles":"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.liberty.styles":"ready","jquery.tablesorter.styles":"ready","jquery.makeCollapsible.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready"};RLPAGEMODULES=["ext.SimpleMathJax","mediawiki.action.edit.collapsibleFooter","site","mediawiki.page.ready","jquery.tablesorter","jquery.makeCollapsible","ext.HighlightjsIntegration","ext.CodeMirror","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.gadget.UserLinkAvatar","ext.gadget.notifyConversion",
+"ext.gadget.notifyAdsense","ext.gadget.Edittools-vector","skins.liberty.bootstrap","skins.liberty.layoutjs","skins.liberty.liverc","skins.liberty.loginjs"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});});});</script>
+<link rel="stylesheet" href="loade7b8.css?lang=zh&amp;modules=ext.visualEditor.desktopArticleTarget.noscript%7Cjquery.makeCollapsible.styles%7Cjquery.tablesorter.styles%7Cskins.liberty.styles&amp;only=styles&amp;skin=liberty"/>
+<script async="" src="load7991.php?lang=zh&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=liberty"></script>
+<style>.Liberty .nav-wrapper,
+		.Liberty .nav-wrapper .navbar .form-inline .btn:hover,
+		.Liberty .nav-wrapper .navbar .form-inline .btn:focus,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link.active::before,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link:hover::before,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link:focus::before,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link:active::before,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-footer .label,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .contributioncredits-footer .label,
+		.Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools .tools-btn:hover,
+		.Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools .tools-btn:focus,
+		.Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools .tools-btn:active,
+		.btn-primary,
+		.header-template, .section-template {
+			background-color: #103D8F;
+		}
+
+		.btn-primary,
+		.section-template-border {
+			border-color: #103D8F;
+		}
+
+		.Liberty .nav-wrapper .navbar .form-inline .btn:hover,
+		.Liberty .nav-wrapper .navbar .form-inline .btn:focus {
+			border-color: #002E7D;
+		}
+
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link.active::before,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link:hover::before,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link:focus::before,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link:active::before {
+			border-bottom: 2px solid #103D8F;
+		}
+
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-footer .label:hover,
+		.Liberty .nav-wrapper .navbar .navbar-nav .nav-item .nav-link:hover,
+		.Liberty .nav-wrapper .navbar .navbar-nav .nav-item .nav-link:focus,
+		.dropdown-menu .dropdown-item:hover,
+		.btn-primary:hover,
+		.btn-primary:focus {
+			background-color: #002E7D;
+		}
+
+
+		.Liberty .content-wrapper #liberty-bottombtn,
+		.Liberty .content-wrapper #liberty-bottombtn:hover {
+			background-color: #103D8F;
+		}</style><style>@media (prefers-color-scheme: dark) { body, .Liberty, .dropdown-menu, .dropdown-item, .Liberty .nav-wrapper .navbar .form-inline .btn, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link.active, .Liberty .content-wrapper .liberty-content .liberty-content-main table.wikitable tr > th, .Liberty .content-wrapper .liberty-content .liberty-content-main table.wikitable tr > td, table.mw_metadata th, .Liberty .content-wrapper .liberty-content .liberty-content-main table.infobox th, #preferences fieldset:not(.prefsection), #preferences div.mw-prefs-buttons, .navbox, .navbox-subgroup, .navbox > tbody > tr:nth-child(even) > .navbox-list, .Liberty .nav-wrapper .navbar .form-inline .form-control {
+			background-color: #000;
+			color: #DDD;
+		}
+
+		.liberty-content-header, .liberty-footer, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-footer, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item, .Liberty .content-wrapper .liberty-content .liberty-content-header, .Liberty .content-wrapper .liberty-footer, .editOptions, html .wikiEditor-ui-toolbar, #pagehistory li.selected, .mw-datatable td, .Liberty .content-wrapper .liberty-content .liberty-content-main table.wikitable tr > td, table.mw_metadata td, .Liberty .content-wrapper .liberty-content .liberty-content-main table.wikitable, .Liberty .content-wrapper .liberty-content .liberty-content-main table.infobox, #preferences, .navbox-list, .dropdown-divider, .Liberty .content-wrapper .liberty-content .bottom-ads {
+			background-color: #1F2023;
+			color: #DDD;
+		}
+
+		.Liberty .content-wrapper .liberty-content .liberty-content-main, .mw-datatable th, .mw-datatable tr:hover td, textarea, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-content, div.mw-warning-with-logexcerpt, div.mw-lag-warn-high, div.mw-cascadeprotectedwarning, div#mw-protect-cascadeon, .mildtable th {
+			background-color: #000 !important;
+		}
+
+		.Liberty .content-wrapper .liberty-content .liberty-content-header .title>h1, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-content .live-recent-list .recent-item, caption { color: #DDD; }
+
+		.btn-secondary, .Liberty .content-wrapper .liberty-footer .catlinks, .rcpages-btn { background: transparent; color: #DDD; }
+
+
+		#pagehistory li { border: 0; }
+
+		.Liberty .content-wrapper .liberty-footer, .Liberty .content-wrapper .liberty-content .liberty-content-header, .Liberty .content-wrapper .liberty-content .liberty-content-main, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-footer, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-content, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item + .nav-item, .Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools .tools-btn:hover, .Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools .tools-btn:focus, .Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools .tools-btn, .dropdown-menu, .dropdown-divider, .Liberty .content-wrapper .liberty-content .liberty-content-main fieldset, hr, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-content .live-recent-list li, .mw-changeslist-legend, .Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools { border-color: #555; }
+
+		.flow-post, .Liberty .content-wrapper .liberty-content .liberty-content-main .toc .toctext { color: #DDD; }
+		.flow-topic-titlebar { color: #000; }
+		.flow-ui-navigationWidget { color: #FFF; }
+		.Liberty .content-wrapper .liberty-content .liberty-content-main .toccolours, .Liberty .content-wrapper .liberty-content .liberty-content-main .toc ul, .Liberty .content-wrapper .liberty-content .liberty-content-main .toc li { background-color: #000; }
+		.Liberty .content-wrapper .liberty-content .liberty-content-main .toc .toctitle { background-color: #1F2023; } }</style>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="loada6ee.css?lang=zh&amp;modules=site.styles&amp;only=styles&amp;skin=liberty"/>
+<meta name="generator" content="MediaWiki 1.39.3"/>
+<meta name="robots" content="noindex,nofollow"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta property="og:image" content="https://www.eu4cn.com/images/f/f4/Advisor_example.png"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="581"/>
+<meta property="og:image" content="https://www.eu4cn.com/images/f/f4/Advisor_example.png"/>
+<meta property="og:image:width" content="800"/>
+<meta property="og:image:height" content="388"/>
+<meta property="og:image:width" content="640"/>
+<meta property="og:image:height" content="310"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="description" content="因为以下原因，您没有权限编辑本页：&#10;&#10;&#10;您请求的操作仅限属于该用户组的用户执行：用户&#10;&#10;&#10;您可以查看和复制此页面的源代码。&#10;{{Version|1.24}}&#10;[[File:Advisor_example.png|right|thumb|330px|[[政府]]界面中的顾问界面]]&#10;&#039;&#039;&#039;顾问&#039;&#039;&#039;（英文：&#039;&#039;&#039;Advisor&#039;&#039;&#039;）是指在特定领域有深厚造诣并为统治者献计献策的大臣。顾问能在发动[[战争]]，促进[[科技]]进步和管理[[经济]]上为你提供助力。&#10;&#10;顾问能在[[国家界面]]的宫廷面板中管理。在[[欧陆风云4]]中每类[[君主点数]]都包括7种顾问，共计21种。每种顾问可以提供一种修正加成。例如，商人类型的顾问可以提升10%的贸易效率。&#10;&#10;顾问还可以进一步按照其技能等级划分。技能等级从 {{green|+1}} 到 {{green|+5}}， 其中+3等级之上的顾问需要花费金币手动提高顾问等级（并且需要顾问的文化在国家所认同的文化之中，否则无法手动提高技能等级）。每个级别提供额外的[[君主点数]]。（例如一个级别2的外交顾问每个月提供 {{green|+2}} {{icon|dip}}）。雇用和维持一个顾问的花费随着顾问的技能等级额外增加。顾问的技能等级只影响他的花费和额外提供的君主点数，技能等级并不影响顾问种类所带来的修正加成。（例如一个等级1和一个等级3的 {{icon|Philosopher|28px}} 哲学家产出的 {{icon|prestige}} 威望是相等的）。&#10;&#10;顾问也是会过世的，顾问去世后需要重新替换。&#10;&#10;==顾问池==&#10;{{SVersion|1.24}}&#10;一个国家只能同时拥有各一名分属每种点数类型的顾问；但是有多种方式可以拓宽可供选择的顾问池。在1444年开局时，每个国家都有每个点数类型最少3人的顾问池。[[经济#收入|每月总收入]]低于 {{icon|ducat}} 50金币的国家将不会有3级顾问可选（除非是事件产生的）。每个国家在开局时都会有至少一个2级顾问可选。有部分国家在开局阶段自带半价顾问，如法国，奥斯曼等。&#10;&#10;===获取新顾问===&#10;新顾问只会通过事件或是在顾问池有空缺的时候到来，此空缺的产生可以是由于顾问池的拓宽，也可以是由于之前的可选顾问的去世。在DLC {{icon|CS}} [[常识]]激活的时候，玩家也可以花费与雇用顾问时等额的金币来将一个顾问逐出宫廷。新的顾问会在每个月开始时出现。&#10;&#10;可以设置通知来提醒玩家新顾问的到来。顾问在超过&#039;&#039;&#039;40岁&#039;&#039;&#039;之后就有可能死去，而新顾问的年龄总是不低于&#039;&#039;&#039;30岁&#039;&#039;&#039;。较低的替代率意味着没有必要苦等理想种类的顾问。解锁理念组来获得额外的顾问池空间，就能增加获得期望顾问的可能性。&#10;&#10;许多事件都可以提供一个新的顾问，这些顾问往往带有-50%的花费减成。许多国家都拥有自己的专属事件，让本国的著名历史人物成为游戏中可用的半价顾问，而且往往还伴随着威望、政府改革进度等的奖励。&#10;&#10;====女性顾问====&#10;新的顾问有2%的几率为女性。这个几率能被下列修正增加：&#10;{{bonus table|female advisor chance}}&#10;其他方式依旧可以获得女性顾问几率修正，如下表所列的永久修正：&#10;{| class=&quot;mildtable plainlist&quot;&#10;! style=&quot;text-align:center; width:30px&quot; | {{icon|female advisor chance|24px}}&#10;! Condition&#10;|-&#10;| align=right | {{green|+33%}} || 作为革命共和国，启用政府改革 [[Republic#Equal_Electorate|平等选举]] &#10;|-&#10;| align=right | {{green|+25%}} || 作为革命不列颠，通过事件 [[English_events#The_Soldiers_in_Petticoats|穿衬裙的士兵]]&#10;|-&#10;| align=right | {{green|+20%}} || 作为勃艮第，通过事件 [[帝国事变事件#incidents_bur_inheritance.6|[Root.Monarch.GetTitle][Root.Monarch.GetName]的法律]]&#10;|-&#10;| align=right | {{green|+20%}} || 作为伊斯兰神权国，通过事件 [[Devotion_events#The_Education_of_Women|妇女的教育]] &#10;|-&#10;| align=right | {{green|+10%}} || 主流文化或已接纳文化为萨波特克，通过事件 [[Nahuatl_events#The_Muxe_in_Court|宫廷中的第三性]] &#10;|}&#10;&#10;&#10;{{icon|female advisor chance}} 女性顾问几率也能增加女性继承人或女性将领的产生概率。&#10;{{see also|女性史事件}}&#10;&#10;DLC [[女性史]]/历史上的女性（Women in History） 中增加了大量的历史事件，让许多国家有机会任用历史上的知名女性人物为顾问，甚至让她们登上王位。该DLC目前已是游戏本体的一部分。&#10;&#10;===[[File:Advisor pool.png|32px]] 拓宽顾问池===&#10;顾问池受下列影响增加：&#10;{| class=&quot;mildtable sortable&quot;&#10;! style=&quot;text-align:center; width:30px&quot; |{{icon|advisor pool|24px}}&#10;!状态&#10;|-&#10;| align=&quot;right&quot; |{{green|+2}}||是[[教廷监护]]。&#10;|-&#10;| align=&quot;right&quot; |{{green|+1}}||是[[幸运国]]（AI限定）。&#10;|-&#10;| align=&quot;right&quot; |{{green|+1}}||是[[神罗皇帝|神圣罗马帝国皇帝]]。&#10;|-&#10;| align=&quot;right&quot; |{{green|+1}}||信仰 {{icon|reformed|24px}} 改革宗。&#10;|-&#10;| align=&quot;right&quot; |{{green|+1}}||信仰 {{icon|Judaism|24px}} 犹太教。&#10;|-&#10;| align=&quot;right&quot; |{{green|+1}}||信仰 {{icon|mayan|24px}} 玛雅宗教。&#10;|-&#10;| align=&quot;right&quot; |{{green|+1}}||信仰 {{icon|tengri|24px}} 长生天并且将 {{icon|catholic|24px}} 天主教、{{icon|mayan|24px}} 玛雅宗教或是 {{icon|Judaism|24px}} 犹太教作为[[兼容宗教]]。&#10;|-&#10;| align=&quot;right&quot; |{{green|+1}}||{{icon|bureaucrats|24px}} 内阁大学士派系掌权（拥有派系系统的 {{flag|Ming}}限定）。&#10;|-&#10;| align=&quot;right&quot; |{{green|+1}}||“非常简单”[[难度]]下由玩家控制的国家。&#10;|}&#10;&#10;理念和政策：&#10;{{bonus table|advisor pool|collapse=yes}}&#10;决议和事件：&#10;{| class=&quot;mildtable sortable mw-collapsible mw-collapsed&quot;&#10;! style=&quot;text-align:center; width:30px&quot; |{{icon|advisor pool|24px}}&#10;! style=&quot;width:250px&quot; |事件修正&#10;! style=&quot;width:450px&quot; |触发条件&#10;!持续时间&#10;|- valign=&quot;top&quot;&#10;| style=&quot;text-align:right&quot; |{{green|+1}}&#10;|寺子屋&#10;|日本事件：“[[日本事件#寺子屋|寺子屋]]”&#10;&#10;:选项: ‘在全$COUNTRY$建立寺子屋’&#10;|直到君主更替。&#10;|- valign=&quot;top&quot;&#10;| style=&quot;text-align:right&quot; |{{green|+1}}&#10;|忠言良谏&#10;|行政理念组事件： “[[行政理念组事件#忠言良谏|忠言良谏]]”&#10;|10年。&#10;|- valign=&quot;top&quot;&#10;| style=&quot;text-align:right&quot; |{{green|+3}}&#10;|廷巴克图的黄金时代&#10;|桑海事件： “[[桑海#廷巴克图的黄金时代|廷巴克图的黄金时代]]”&#10;|直到君主更替。&#10;|- valign=&quot;top&quot;&#10;| style=&quot;text-align:right&quot; |{{green|+1}}&#10;|广招贤士&#10;|巴赫曼尼事件： “[[巴赫曼尼事件#吸引合适的人|吸引合适的人]]”&#10;&#10;:选项： ‘我们得加倍努力。’&#10;|10年。&#10;|- valign=&quot;top&quot;&#10;| style=&quot;text-align:right&quot; |{{green|+1}}&#10;|齐米阶层的官员&#10;|齐米阶层的事件： “[[阶层事件#选自.24ESTATE_DHIMMI.24.的官员|选自$ESTATE_DHIMMI$的官员]]”&#10;&#10;:选项: ‘任人，还是得唯贤啊。’&#10;|15年。&#10;|- valign=&quot;top&quot;&#10;| style=&quot;text-align:right&quot; |{{green|+1}}&#10;|精致的宫廷生活&#10;|贵族阶层事件： “[[阶层事件#晨间朝见|晨间朝见]]”&#10;&#10;:选项：“要精致典雅，要悠长繁复，要让人过目难忘。”&#10;|25年。&#10;|}&#10;&#10;==花费==&#10;{{SVersion|1.24}}&#10;[[File:Advisor expenses.png|330px|thumb|right|在经济面板可以看到影响顾问薪水的修正。]]&#10;雇用一个顾问的 [[File:Advisor cost.png|28px]] 花费由他的技能等级、当前年份和其他修正（如果有的话）来决定。雇用时的花费要受到顾问年龄的影响，每月的花费则不受影响。史实顾问在雇用时会有额外折扣。&#10;&#10;鼠标移到经济面板中“花费”一栏里的“顾问”上面可以看到现在激活的修正。这些数值精确到小数点后数位（如图所示）。&#10;&#10;===月度花费===&#10;维持一个顾问的月度花费通过一个基础值来计算，这个基础值等于他的技能等级的平方（1，4，9）。这个基础值随着时间每年增加 {{red|0.5%}}。到了1644年的时候（过了200年），基础值就从原来的1、4、9加倍到了2、8、18。到游戏结束的时候（1821年，377年后），基础值将是初始值的2.88倍（1+188.5%）。所有修正的计算都是基于基础值计算。&#10;&#10;&amp;lt;math&gt;\text{ 月度花费 }=\text{ 技能等级 }^2 \cdot(\text{ 当前年份 }-1444) \cdot 0.5 \cdot \text{ 各种修正 }&amp;lt;/math&gt;&#10;&#10;===雇佣花费===&#10;一次性的雇佣花费只是简单地等于月度花费的倍数。顾问的技能等级的影响已经体现在月度花费上了，在计算雇佣花费时不会再次计算。&#10;&#10;由于雇佣花费等于月度花费的倍数，所以也随着年份增加。&#10;&#10;雇佣花费的倍数只跟顾问的年龄有关，从30岁（可能的最小顾问年龄）时的&#039;&#039;&#039;16&#039;&#039;&#039;倍到60岁时的&#039;&#039;&#039;10&#039;&#039;&#039;倍（顾问池中极少会出现年龄超过50的顾问）。这个倍数的变化完全是线性的，每大一岁减少0.2（或者说每5岁减小1倍）。顾问的年龄只会取整，不存在不显示的“50岁半”等。&#10;&#10;&amp;lt;math&gt;\text{雇佣花费}  =  \left( 16 - \frac{\text{年龄} - 30}{5} \right) \cdot \text{月度花费}&amp;lt;/math&gt;&#10;&#10;更多关于年龄的信息，请参考下面的[[#寿命与雇佣花费|寿命]]一节。&#10;&#10;===举例===&#10;1544年，国家通胀10%，一个50岁的2级顾问（基础月度花费4金币）：&#10;&#10;&amp;lt;math&gt;\text{基础花费} =  4 \cdot (1+0.005\cdot100) = 6.00 \text{每月}&amp;lt;/math&gt;&#10;&#10;&amp;lt;math&gt;\text{每月总花费} = 6\cdot(1 + 0.10) = 6.60 \text{每月}&amp;lt;/math&gt;&#10;&#10;&amp;lt;math&gt;\text{雇用花费} = (16 - 4) \cdot 6.60 = 79.2&amp;lt;/math&gt;&#10;&#10;===顾问花费的影响因素===&#10;请注意，这些修正会在基础花费基于年份的加成&#039;&#039;&#039;之后&#039;&#039;&#039;进行计算。&#10;&#10;*通货膨胀： {{red|+不定%}}&#10;*[[经济#破产|破产]]： {{red|+100%}}&#10;*低[[贤能值]]： 最多达 {{red|+25%}}，于0贤能值时&#10;*[[儒教]]和谐上座部佛教后： {{green|−5%}}&#10;*[[商品#列表|茶叶贸易]]： {{green|−10%}}&#10;*[[长生天]] 以什叶派、伊巴德派、犹太教，或是改革宗作为次要信仰：{{green|−10%}}&#10;*[[上座部佛教]]： {{green|−10%}}&#10;*[[拜物教]] Haymanot崇拜： {{green|−10%}}&#10;*统治者的[[特质#君主特质|特质]]有 &#039;&#039;&#039;礼贤下士&#039;&#039;&#039;： {{green|−20%}}&#10;*成为[[教廷监护]]： {{green|−20%}}&#10;*高[[贤能值]]：最高达 {{green|−25%}}，于100贤能值时&#10;*[[土著议会#土著建筑|土著建筑]]-仪式火坑： {{green|−50%}}&#10;*[[君主制#马穆鲁克政府|马穆鲁克政府]]与统治者文化相同的顾问：{{green|−25%}}&#10;*[[File:Great_project_parthenon.png|48px]] [[伟大工程|帕特农神庙]]: {{green|−10%}}[[File:Great project level icon tier 1.png|24px]]/{{green|−20%}}[[File:Great project level icon tier 3.png|24px]] 省份属于原始宗教组，且与拥有者国教相同；或省份文化为希腊，且省份拥有者视其为主流文化或已接受文化&#10;*[[File:Great_project_pyramid_of_cheops.png|48px]] [[伟大工程|胡夫金字塔]]: {{green|−5%}}[[File:Great project level icon tier 1.png|24px]]/{{green|−10%}}[[File:Great project level icon tier 2.png|24px]]/{{green|−20%}}[[File:Great project level icon tier 3.png|24px]] 省份属于原始宗教组，且与拥有者国教相同；或省份文化为埃及，且省份拥有者视其为主流文化或已接受文化&#10;*特殊顾问折扣： {{green|−50%}}&#10;*各种事件： {{green|−不定%}}&#10;&#10;下表列出了提供顾问花费减成的理念和政策：&#10;{{bonus table|advisor cost|collapse=yes}}&#10;&#10;一些减成仅当该顾问与国家君主的文化相同时才可以生效。下表列出了提供与君主同文化的顾问花费减成的理念和政策：&#10;{{bonus table|cost of adv wrc|collapse=yes}}&#10;&#10;==提升顾问等级==&#10;{{SVersion|1.24}}&#10;{{expansion|coc}}&#10;可以花费金钱来提升顾问的等级，最高至5级。提升的花费为顾问的60倍月薪（亦即5年年薪），此外，被升级顾问的文化必须是该国的主流文化或可接受文化。&#10;&#10;由于顾问的薪水根据其等级呈指数上升（例如，5级顾问具有5*5=25倍的基础花费），建议在升级顾问应当充分考虑国库的资金是否充裕。此外，还需要考虑到顾问的年龄——如果他们过早去世，在升级上的投资就血本无归了。&#10;&#10;==顾问类型==&#10;{{SVersion|1.24}}&#10;下列表格中，列出了每一种顾问所带来的增益以及可能所需要的决议。&#10;&#10;雇佣一个3级顾问可能会触发一些[[顾问事件]]。&#10;&#10;当DLC[[女性史]]激活时，所有顾问在随机产生时均可能为女性。这一概率为2%。&amp;lt;ref&gt;From {{path|common/defines.lua}}: FEMALE_ADVISOR_CHANCE = 2, &#039;&#039;-- If Women in History is enabled, chance of an advisor spawning as female&#039;&#039;&amp;lt;/ref&gt; 一些事件发生时也会在顾问候选池中加入女性顾问。女性顾问的头像边框是银色。从[[1.29.3]]版本起，[[女性史]]已成为基础游戏本体的一部分。&#10;&#10;==={{icon|adm}} 行政顾问===&#10;行政顾问可被认为是对国内政策有帮助的一类顾问。他们的主要职责是改善一国的内政能力，如：[[财政专家|改革税收系统]]和[[哲学家|促进提高文化资助]]。&#10;{| class=&quot;wikitable&quot;&#10;|+随等级触发修正&#10;!效果&#10;!触发条件&#10;|-&#10;|{{icon|national tax modifier}} 國家稅收修正： {{green|+5%}}{{icon|meritocracy}} 年度贤能值： {{green|+0.25}}&#10;&#10;{{icon|yearly republican tradition}} 年度共和传统： {{green|+0.02}}&#10;|省份所有者：&#10;* 已设置国家[[芬兰任务#fin missions 4|flag fin_fine_finances_flag]]&#10;* 拥有政府特质&quot;顾问每一级增加0.02年度共和传统增长&quot;&#10;|-&#10;|{{icon|national tax modifier}} 國家稅收修正： {{green|+5%}}{{icon|meritocracy}} 年度贤能值： {{green|+0.25}}&#10;|省份所有者：&#10;* 已设置国家flag fin_fine_finances_flag&#10;* 未拥有政府特质&quot;顾问每一级增加0.02年度共和传统增长&quot;&#10;|-&#10;|{{icon|meritocracy}} 年度贤能值： {{green|+0.25}}{{icon|yearly republican tradition}} 年度共和传统： {{green|+0.02}}&#10;|省份所有者：&#10;* 未设置国家flag fin_fine_finances_flag&#10;* 拥有政府特质&quot;顾问每一级增加0.02年度共和传统增长&quot;&#10;|-&#10;|{{icon|meritocracy}} 年度贤能值： {{green|+0.25}}&#10;|省份所有者：&#10;* 未设置国家flag fin_fine_finances_flag&#10;* 未拥有政府特质&quot;顾问每一级增加0.02年度共和传统增长&quot;&#10;|}&#10;{| class=&quot;mildtable&quot;&#10;! width=&quot;200px&quot; |顾问&#10;! width=&quot;250px&quot; |效果&#10;! width=&quot;250px&quot; |激活的决议&#10;|-&#10;|{{icon|artist}} &#039;&#039;&#039;{{ruby|艺术家|Artist}}&#039;&#039;&#039;||{{icon|stability cost modifier}} 穩定花費修正： {{green|−10%}}|| colspan=&quot;2&quot; |&#10;|-&#10;|{{icon|inquisitor}} &#039;&#039;&#039;{{ruby|审讯官|Inquisitor}}&#039;&#039;&#039;||{{icon|missionary strength}} 傳教力量： {{green|+2%}}|| colspan=&quot;2&quot; |&#10;|-&#10;|{{nowrap|{{icon|master of mint}} &#039;&#039;&#039;{{ruby|铸币专家|Master of Mint}}&#039;&#039;&#039;}}||{{icon|yearly inflation reduction}} 年度通脹減少：{{green|+0.10}}|| colspan=&quot;2&quot; |&#10;|-&#10;|{{nowrap|{{icon|natural scientist}} &#039;&#039;&#039;{{ruby|自然科学家|Natural Scientist}}&#039;&#039;&#039;}}||{{icon|production efficiency}} 生產效率： {{green|+10%}}|| colspan=&quot;2&quot; |&#10;|-&#10;|{{icon|philosopher}} &#039;&#039;&#039;{{ruby|哲学家|Philosopher}}&#039;&#039;&#039;||{{icon|prestige}} 年度威望： {{green|+1}}&#10;| colspan=&quot;2&quot; |&#10;|-&#10;|{{icon|theologian}} &#039;&#039;&#039;{{ruby|神学家|Theologian}}&#039;&#039;&#039;||{{icon|national unrest}} 全国叛乱： {{green|−2}}||{{plainlist|&#10;*[[List_of_decision_lists#Revoke Restraint of Appeals|撤消申诉限制]]&#10;*[[List_of_decision_lists#Pass Advancement of Religion Act|通过宗教进阶法案]]&#10;}}&#10;|-&#10;|{{icon|treasurer}} &#039;&#039;&#039;{{ruby|财政专家|Treasurer}}&#039;&#039;&#039;||{{icon|national tax modifier}} 國家稅收修正： {{green|+10%}}|| colspan=&quot;2&quot; |&#10;|}&#10;&#10;==={{icon|dip}} 外交顾问===&#10;外交顾问主要负责与[[海军]]和[[外交]]有关的事务。他们的工作主要是促进海军的发展以及与其他国家进行外交，如：[[商人（顾问）|提高一个国家的贸易竞争力]]以及[[外交家|改善外交关系]]&#10;&#10;{| class=&quot;mildtable&quot;&#10;! width=&quot;200px&quot; |顾问&#10;! width=&quot;250px&quot; |效果&#10;! width=&quot;250px&quot; |激活的决议&#10;!需求&#10;|-&#10;|{{nowrap|{{icon|colonial governor}} &#039;&#039;&#039;{{ruby|殖民总督|Colonial governor}}&#039;&#039;&#039;}}||{{icon|global tariffs}} 關稅： {{green|+10%}}|| ||省份拥有者：&#10;&#10;*至少拥有 1 {{icon|colonist|24px}} 殖民队。&#10;*&#039;&#039;&#039;不是&#039;&#039;&#039; {{icon|colonial nation|24px}} 殖民领。&#10;|-&#10;|{{icon|diplomat_adv}} &#039;&#039;&#039;{{ruby|外交家|Diplomat}}&#039;&#039;&#039;||{{icon|improve relations}} 改善關係效率： {{green|+20%}}|| ||&#10;|-&#10;|{{nowrap|{{icon|naval reformer}} &#039;&#039;&#039;{{ruby|海军改革者|Naval reformer}}&#039;&#039;&#039;}}||{{icon|naval morale}} 海軍士氣： {{green|+10%}}|| ||省份须拥有一个港口。&#10;|-&#10;|{{icon|navigator}} &#039;&#039;&#039;{{ruby|航海家|Navigator}}&#039;&#039;&#039;||{{icon|colonial range}} 殖民範圍： {{green|+20%}}|| ||省份拥有者：&#10;&#10;*至少拥有 1 {{icon|colonist|24px}} 殖民队。&#10;|-&#10;|{{icon|spymaster}} &#039;&#039;&#039;{{ruby|间谍首脑|Spymaster}}&#039;&#039;&#039;||{{icon|spy network construction}} 間諜網建設速度：{{green|+25%}}|| ||&#10;|-&#10;|{{icon|statesman}} &#039;&#039;&#039;{{ruby|政治家|Statesman}}&#039;&#039;&#039;||{{icon|diplomatic reputation}} 外交威望： {{green|+1}}||{{plainlist|&#10;*[[List_of_decision_lists#Formalize Separation of Powers|使权力分立正式化]]&#10;* {{flagicon|Ming}} {{flagicon|Manchu}} {{flagicon|Qing}} [[满洲#决议|建造紫禁城]]}}&#10;|&#10;|-&#10;|{{icon|trader}} &#039;&#039;&#039;{{ruby|商人|Trader}}&#039;&#039;&#039;||{{icon|trade efficiency}} 貿易效率： {{green|+10%}}|| ||&#10;|}&#10;&#10;==={{icon|mil}} 军事顾问===&#10;军事顾问唯一的功能就是增强国家的军事力量，无论是进攻方面还是防守方面。因此，其职能主要体现在增强一国军队的实力或者是提高抵御外来入侵的能力。例如，[[军需官|对后勤补给进行改革]] 和[[要塞工程师|提高要塞防御能力]] 。&#10;&#10;{| class=&quot;mildtable&quot;&#10;! width=&quot;200px&quot; |顾问&#10;! width=&quot;250px&quot; |效果&#10;! width=&quot;250px&quot; |描述&#10;|-&#10;|{{nowrap|{{icon|army organizer}} &#039;&#039;&#039;{{ruby|陆军组织者|Army Organizer}}&#039;&#039;&#039;}}||{{icon|land force limit modifier}} 陸軍上限修正： {{green|+10%}}||&#10;|-&#10;|{{nowrap|{{icon|army reformer}} &#039;&#039;&#039;{{ruby|陆军改革者|Army Reformer}}&#039;&#039;&#039;}}||{{icon|land morale}} 陸軍士氣： {{green|+10%}}|| |&#10;|-&#10;|{{icon|commandant}} &#039;&#039;&#039;{{ruby|教官|Commandant}}&#039;&#039;&#039;||{{icon|discipline}} 訓練度： {{green|+5%}}||&#10;|-&#10;|{{nowrap|{{icon|grand captain}} &#039;&#039;&#039;{{ruby|陆军队长|Grand Captain}}&#039;&#039;&#039;}}||{{icon|land maintenance modifier}} 陆军维护费修正： {{green|−10%}}||&#10;|-&#10;|{{nowrap|{{icon|master recruiter}} &#039;&#039;&#039;{{ruby|征兵官员|Master Recruiter}}&#039;&#039;&#039;}}||{{icon|global manpower modifier}} 國家人力修正： {{green|+10%}}||&#10;|-&#10;|{{nowrap|{{icon|military engineer}} &#039;&#039;&#039;{{ruby|要塞工程师|Military Engineer}}&#039;&#039;&#039;}}||{{icon|fort defense}} 要塞防禦： {{green|+20%}}||&#10;|-&#10;|{{icon|quartermaster}} &#039;&#039;&#039;{{ruby|军需官|Quartermaster}}&#039;&#039;&#039;||{{icon|reinforce speed}} 補員速度： {{green|+33%}}||&#10;|}&#10;&#10;==寿命与雇佣花费==&#10;{{SVersion|1.24}}&#10;[[File:EU4 Advisor Age versus Mortality and Survival.jpg|240px|thumb|left|EU4顾问预期寿命]]&#10;当顾问被雇佣之后，在顾问的提示信息中将会显示其死亡风险的百分数，这一概率由顾问的年龄所决定。因为雇佣所需要的花费随年龄的增长而减少，同时，顾问有一份[https://en.wikipedia.org/wiki/Life_table 生命表]。所以根据上述两个条件，可以计算出当雇佣顾问的最优年龄。&#10;&#10;顾问的年龄超过40岁后，当年的死亡概率将以每年2/3个百分点（约为0.67%）的速度累加。换句话说，也就是每三年增加2个百分点。当顾问年龄达到55岁时，当年的死亡概率将会是10%。而当年龄达到100岁时，当年死亡概率将达到40%。这一百分数将以向下取整的方式，显示在顾问的提示信息中，但在计算中会以实际值计算。也就是说，当顾问41岁时，其当年死亡概率是0.67%，而提示信息中将显示为0%。&#10;&#10;&amp;lt;math&gt;\text{当年死亡率}(\%) = \left( \text{年龄} - 40 \right) \cdot \frac 23&amp;lt;/math&gt;&#10;&#10;这一概率的累加效果十分可观（如左图所示）。概率上的中位年龄为53.7，也就是顾问只有50%的几率能活到53.7岁。而这一数值提高的65岁时，几率仅为十分之一。只有百分之一的概率顾问能达到75岁。上述概率都是根据总体死亡率曲线得出的。如果一个顾问年龄已经到了50岁，那对这个顾问而言，其死亡率曲线也将与左图中的曲线不同。（因为其活到50岁的概率已经为100%了）。&#10;&#10;[[File:EU4 Advisor Hiring Age versus Hiring Multiplier.jpg|240px|thumb|right|EU4顾问预期寿命]]&#10;根据雇佣花费与寿命的关系，是可以计算出雇佣多大年龄的顾问是最划算的（如右图所示）。当顾问年龄处于30至40之间时，答案很简单。因为这一年龄区间中，雇佣花费乘数虽然在变化，但顾问死亡概率是0%。而根据上文提到的，中位寿命期望值为53.7岁。因此，如果在一名顾问30岁的时候雇佣了他，其期望工作年限约为24年（从顾问30岁到53.7岁）。此时，雇佣花费乘数为16。很容易求得，每一点雇佣花费乘数可以提供1.5年的工作时间（即24除以16）。如果在40岁时雇佣顾问（雇佣乘数为14），那他的期望寿命还有14年。换句话说，每一点雇佣花费乘数可以带来1年的工作时间（即14除以14）。很明显的，30岁的顾问是更好的选择。&#10;&#10;当年龄超过40岁后，死亡率曲线就将发生改变。其中位寿命期望值（也就是死亡年龄预期值）将随着受雇年龄的增加而增加。（一名55岁的顾问，很明显，其期望寿命不能再是53.7岁了。）在右图中，工作年限曲线在受雇年龄为30-40时呈现为一条直线（因为这一年龄区间顾问不会死亡）。而当受雇年龄超过40后，呈一条曲线。由于工作年限期望值的降低速度要快于雇佣花费乘数，也就是说，雇佣越年轻的顾问越值。当顾问的受雇年龄分别达到50岁和60岁时，每一点雇佣花费乘数可以提供的工作年限，将分别仅为0.59年和0.42年。&#10;&#10;尽管30岁是雇佣顾问的最优年龄，但考虑到雇佣乘数变动区间仅仅是从10到16，也就是说，最大差别也仅有半年的顾问工资。这对玩家的收入可能不会有很大的影响，除非玩家的收入真的很低。&#10;&#10;==顾问画像==&#10;{{SVersion|1.25}}&#10;&#10;[[File: Portraits map.png|thumb|700px|顾问画像分布图]]&#10;&#10;以下是所有可用顾问的画像。&#10;&#10;顾问头像同样取决于其所属[[文化]]。&#10;&#10;{| class=&quot;wikitable&quot; style=&quot;width:300px; text-align:center; color:white;&quot;&#10;|+ style=&quot;color:black;&quot; |顾问画像省份分布&#10;|&#10;{| style=&quot;width:150px;&quot;&#10;|-&#10;| style=&quot;background-color: white; color:black;&quot; |通用&#10;|-&#10;| style=&quot;background-color: #2a85be; &quot; |俄罗斯&#10;|-&#10;| style=&quot;background-color: #e1cd42;&quot; |哥萨克&#10;|-&#10;| style=&quot;background-color: #b1439a;&quot; |非洲&#10;|-&#10;| style=&quot;background-color: #248967;&quot; |穆斯林&#10;|}&#10;|&#10;{| style=&quot;width:150px;&quot;&#10;|-&#10;| style=&quot;background-color: #97d283;&quot; |波斯&#10;|-&#10;| style=&quot;background-color: #e17643;&quot; |亚洲&#10;|-&#10;| style=&quot;background-color: #b29d83;&quot; |北美洲&#10;|-&#10;| style=&quot;background-color: #6cbe2a;&quot; |中美洲&#10;|-&#10;| style=&quot;background-color: #b22f2f;&quot; |南美洲&#10;|}&#10;|}&#10;&#10;{{clear}}&#10;&#10;{| class=&quot;mildtable mw-collapsible mw-collapsed&quot; style=&quot;text-align:center;&quot;&#10;|+ style=&quot;background:silver;text-align: center;width: 1530px&quot; |&#039;&#039;&#039;所有可用顾问画像列表&#039;&#039;&#039;&#10;! style=&quot;text-align: center; width: 50px&quot; |类型&#10;! style=&quot;text-align: center; width: 160px;&quot; |顾问&#10;! style=&quot;text-align: center; width: 70px;&quot; |{{Hover box|在缺少对应DLC时，通用的欧洲男性画像代替全部男性画像|通用男性}}&#10;! style=&quot;text-align: center; width: 70px;&quot; |{{Hover box|需求DLC女性史|通用女性}}&#10;! style=&quot;text-align: center; width: 70px;&quot; |{{Hover box|需求DLC第三罗马|俄罗斯男性}}&#10;! style=&quot;text-align: center; width: 70px;&quot; |{{Hover box|需求DLC女性史与DLC第三罗马|俄罗斯女性}}&#10;! style=&quot;text-align: center; width: 70px;&quot; |{{Hover box|需求DLC哥萨克|哥萨克男性}}&#10;! style=&quot;text-align: center; width: 70px;&quot; |{{Hover box|需求DLC女性史与DLC哥萨克|哥萨克女性}}&#10;! style=&quot;text-align: center; width: 70px;&quot; |{{Hover box|需求DLC我们的海|非洲男性}}&#10;! style=&quot;text-align: center; width: 70px;&quot; |{{Hover box|需求DLC女性史与DLC我们的海|非洲女性}}&#10;! style=&quot;text-align: center; width: 70px;&quot; |{{Hover box|需求DLC穆斯林顾问画像|穆斯林男性}}&#10;! style=&quot;text-align: center; width: 70px;&quot; |{{Hover box|需求DLC女性史与DLC文明的摇篮|穆斯林女性}}&#10;! style=&quot;text-align: center; width: 70px;&quot; |{{Hover box|需求DLC文明的摇篮|波斯男性}}&#10;! style=&quot;text-align: center; width: 70px;&quot; |{{Hover box|需求DLC女性史与DLC文明的摇篮|波斯女性}}&#10;! style=&quot;text-align: center; width: 70px;&quot; |{{Hover box|无需DLC|亚洲男性}}&#10;! style=&quot;text-align: center; width: 70px;&quot; |{{Hover box|需求DLC女性史|亚洲女性}}&#10;! style=&quot;text-align: center; width: 70px;&quot; |{{Hover box|需求DLC黄金国|北美洲顾问}}&#10;! style=&quot;text-align: center; width: 70px;&quot; |{{Hover box|需求DLC黄金国|中美洲顾问}}&#10;! style=&quot;text-align: center; width: 70px;&quot; |{{Hover box|需求DLC黄金国|南美洲男性}}&#10;! style=&quot;text-align: center; width: 70px;&quot; |{{Hover box|需求DLC女性史与DLC黄金国|南美洲女性}}&#10;|-&#10;|{{icon|mil}}||&#039;&#039;&#039;陆军组织者&#039;&#039;&#039;||{{icon|army organizer}}||[[File:Advisor Army organiser female.PNG]]||[[File:Russian army organiser.png]]||[[File:Russian army organiser female.png]]||[[File:Advisor Cossack Army Organizer.png]]||[[File:Advisor Cossack Army Organizer Female.png]]||[[File:Advisor African Army Organiser.png]]||[[File:Advisor African Army Organiser Female.png]]||[[File:Advisor Muslim Army Organizer.png]]||[[File:Advisor Muslim Army Organizer Female.png]]||[[File:Advisor Persian Army Organizer.png]]||[[File:Advisor Persian Army Organizer Female.png]]||[[File:Asian army organiser.png]]||[[File:Asian army organiser female.png]]||[[File:Advisor Northamerica Army Organizer.png]]||[[File:Advisor Mesoamerica Army Organizer.png]]||[[File:Advisor Southamertica Army Organizer.png]]||[[File:Advisor Southamerica Army Organiser Female.png]]&#10;|-&#10;|{{icon|mil}}||&#039;&#039;&#039;陆军改革者&#039;&#039;&#039;||{{icon|army reformer}}||[[File:Advisor Army reformer female.PNG]]||[[File:Russian army reformer.png]]||[[File:Russian army reformer female.png]]||[[File:Advisor Cossack Army Reformer.png]]||[[File:Advisor Cossack Army Reformer Female.png]]||[[File:Advisor African Army Reformer.png]]||[[File:Advisor African Army Reformer Female.png]]||[[File:Advisor Muslim Army Reformer.png]]||[[File:Advisor Muslim Army Reformer Female.png]]||[[File:Advisor Persian Army Reformer.png]]||[[File:Advisor Persian Army Reformer Female.png]]||[[File:Asian army reformer.png]]||[[File:Asian army reformer female.png]]||[[File:Advisor Northamerica Army Reformer.png]]||[[File:Advisor Mesoamerica Army Reformer.png]]||[[File:Advisor Southamertica Army Reformer.png]]||[[File:Advisor Southamerica Army Reformer Female.png]]&#10;|-&#10;|{{icon|adm}}||&#039;&#039;&#039;艺术家&#039;&#039;&#039;||{{icon|artist}}||[[File:Advisor Artist female.PNG]]||[[File:Russian artist.png]]||[[File:Russian artist female.png]]||[[File:Advisor Cossack Artist.png]]||[[File:Advisor Cossack Artist Female.png]]||[[File:Advisor African Artist.png]]||[[File:Advisor African Artist Female.png]]||[[File:Advisor Muslim Artist.png]]||[[File:Advisor Muslim Artist Female.png]]||[[File:Advisor Persian Artist.png]]||[[File:Advisor Persian Artist Female.png]]||[[File:Asian artist.png]]||[[File:Asian artist female.png]]||[[File:Advisor Northamerica Artist.png]]||[[File:Advisor Mesoamerica Artist.png]]||[[File:Advisor Southamertica Artist.png]]||[[File:Advisor Southamerica Artist Female.png]]&#10;|-&#10;|{{icon|dip}}||&#039;&#039;&#039;殖民总督&#039;&#039;&#039;||{{icon|colonial governor}}||[[File:Advisor Colonial governor female.PNG]]||[[File:Russian colonial governor.png]]||[[File:Russian colonial governor female.png]]||[[File:Advisor Cossack Colonial Governor.png]]||[[File:Advisor Cossack Colonial Governor Female.png]]||[[File:Advisor African Colonial Governor.png]]||[[File:Advisor African Colonial Governor Female.png]]||[[File:Advisor Muslim Colonial Governor.png]]||[[File:Advisor Muslim Colonial Governor Female.png]]||[[File:Advisor Persian Colonial Governor.png]]||[[File:Advisor Persian Colonial Governor Female.png]]||[[File:Asian colonial governor.png]]||[[File:Asian colonial governor female.png]]||[[File:Advisor Northamerica Colonial Governor.png]]||[[File:Advisor Mesoamerica Colonial Governor.png]]||[[File:Advisor Southamertica Colonial Governor.png]]||[[File:Advisor Southamerica Colonial Governor Female.png]]&#10;|-&#10;|{{icon|mil}}||&#039;&#039;&#039;教官&#039;&#039;&#039;||{{icon|commandant}}||[[File:Advisor Commandant female.PNG]]||[[File:Russian commandant.png]]||[[File:Russian commandant female.png]]||[[File:Advisor Cossack Commandant.png]]||[[File:Advisor Cossack Commandant Female.png]]||[[File:Advisor African Commandant.png]]||[[File:Advisor African Commandant Female.png]]||[[File:Advisor Muslim Commandant.png]]||[[File:Advisor Muslim Commandant Female.png]]||[[File:Advisor Persian Commandant.png]]||[[File:Advisor Persian Commandant Female.png]]||[[File:Asian commandant.png]]||[[File:Asian commandant female.png]]||[[File:Advisor Northamerica Commandant.png]]||[[File:Advisor Mesoamerica Commandant.png]]||[[File:Advisor Southamertica Commandant.png]]||[[File:Advisor Southamerica Commandant Female.png]]&#10;|-&#10;|{{icon|dip}}||&#039;&#039;&#039;外交家&#039;&#039;&#039;||{{icon|diplomat_adv}}||[[File:Advisor Diplomat female.PNG]]||[[File:Russian diplomat.png]]||[[File:Russian diplomat female.png]]||[[File:Advisor Cossack Diplomat.png]]||[[File:Advisor Cossack Diplomat Female.png]]||[[File:Advisor African Diplomat.png]]||[[File:Advisor African Diplomat Female.png]]||[[File:Advisor Muslim Diplomat.png]]||[[File:Advisor Muslim Diplomat Female.png]]||[[File:Advisor Persian Diplomat.png]]||[[File:Advisor Persian Diplomat Female.png]]||[[File:Asian diplomat.png]]||[[File:Asian diplomat female.png]]||[[File:Advisor Northamerica Diplomat.png]]||[[File:Advisor Mesoamerica Diplomat.png]]||[[File:Advisor Southamertica Diplomat.png]]||[[File:Advisor Southamerica Diplomat Female.png]]&#10;|-&#10;|{{icon|mil}}||&#039;&#039;&#039;要塞工程师&#039;&#039;&#039;||{{icon|military engineer}}||[[File:Advisor Fortification expert female.PNG]]||[[File:Russian fortification expert.png]]||[[File:Russian fortification expert female.png]]||[[File:Advisor Cossack Fortification Expert.png]]||[[File:Advisor Cossack Fortification Expert Female.png]]||[[File:Advisor African Fortification Expert.png]]||[[File:Advisor African Fortification Expert Female.png]]||[[File:Advisor Muslim Fortification Expert.png]]||[[File:Advisor Muslim Fortification Expert Female.png]]||[[File:Advisor Persian Fortification Expert.png]]||[[File:Advisor Persian Fortification Expert Female.png]]||[[File:Asian fortification expert.png]]||[[File:Asian fortification expert female.png]]||[[File:Advisor Northamerica Fortification Expert.png]]||[[File:Advisor Mesoamerica Fortification Expert.png]]||[[File:Advisor Southamertica Fortification Expert.png]]||[[File:Advisor Southamerica Fortification Expert Female.png]]&#10;|-&#10;|{{icon|mil}}||&#039;&#039;&#039;陆军队长&#039;&#039;&#039;||{{icon|Grand captain}}||[[File:Advisor Grand captain female.PNG]]||[[File:Russian grand captain.png]]||[[File:Russian grand captain female.png]]||[[File:Advisor Cossack Grand Captain.png]]||[[File:Advisor Cossack Grand Captain Female.png]]||[[File:Advisor African Grand Captain.png]]||[[File:Advisor African Grand Captain Female.png]]||[[File:Advisor Muslim Grand Captain.png]]||[[File:Advisor Muslim Grand Captain Female.png]]||[[File:Advisor Persian Grand Captain.png]]||[[File:Advisor Persian Grand Captain Female.png]]||[[File:Asian grand captain.png]]||[[File:Asian grand captain female.png]]||[[File:Advisor Northamerica Grand Captain.png]]||[[File:Advisor Mesoamerica Grand Captain.png]]||[[File:Advisor Southamertica Grand Captain.png]]||[[File:Advisor Southamerica Grand Captain Female.png]]&#10;|-&#10;|{{icon|adm}}||&#039;&#039;&#039;审讯官&#039;&#039;&#039;||{{icon|inquisitor}}||[[File:Advisor Inquisitor female.PNG]]||[[File:Russian inquisitor.png]]||[[File:Russian inquisitor female.png]]||[[File:Advisor Cossack Inquisitor.png]]||[[File:Advisor Cossack Inquisitor Female.png]]||[[File:Advisor African Inquisitor.png]]||[[File:Advisor African Inquisitor Female.png]]||[[File:Advisor Muslim Inquisitor.png]]||[[File:Advisor Muslim Inquisitor Female.png]]||[[File:Advisor Persian Inquisitor.png]]||[[File:Advisor Persian Inquisitor Female.png]]||[[File:Asian inquisitor.png]]||[[File:Asian inquisitor female.png]]||[[File:Advisor Northamerica Inquisitor.png]]||[[File:Advisor Mesoamerica Inquisitor.png]]||[[File:Advisor Southamertica Inquisitor.png]]||[[File:Advisor Southamerica Inquisitor Female.png]]&#10;|-&#10;|{{icon|adm}}||&#039;&#039;&#039;铸币专家&#039;&#039;&#039;||{{icon|Master of mint}}||[[File:Advisor Master of mint female.PNG]]||[[File:Russian master of mint.png]]||[[File:Russian master of mint female.png]]||[[File:Advisor Cossack Master of Mint.png]]||[[File:Advisor Cossack Master of Mint Female.png]]||[[File:Advisor African Master of Mint.png]]||[[File:Advisor African Master of Mint Female.png]]||[[File:Advisor Muslim Matser Of Mint.png]]||[[File:Advisor Muslim Master Of Mint Female.png]]||[[File:Advisor Persian Master Of Mint.png]]||[[File:Advisor Persian Master Of Mint Female.png]]||[[File:Asian master of mint.png]]||[[File:Asian master of mint female.png]]||[[File:Advisor Northamerica Master Of Mint.png]]||[[File:Advisor Mesoamerica Master Of Mint.png]]||[[File:Advisor Southamertica Master Of Mint.png]]||[[File:Advisor Southamerica Master of Mint Female.png]]&#10;|-&#10;|{{icon|mil}}||&#039;&#039;&#039;征兵官员&#039;&#039;&#039;||{{icon|Master Recruiter}}||[[File:Advisor Recruitmaster female.PNG]]||[[File:Russian recruitmaster.png]]||[[File:Russian recruitmaster female.png]]||[[File:Advisor Cossack Recruitmaster.png]]||[[File:Advisor Cossack Recruitmaster Female.png]]||[[File:Advisor African Recruitmaster.png]]||[[File:Advisor African Recruitmaster Female.png]]||[[File:Advisor Muslim Recruitmaster.png]]||[[File:Advisor Muslim Recruitmaster Female.png]]||[[File:Advisor Persian Recruitmaster.png]]||[[File:Advisor Persian Recruitmaster Female.png]]||[[File:Asian recruitmaster.png]]||[[File:Asian recruitmaster female.png]]||[[File:Advisor Northamerica Recruitmaster.png]]||[[File:Advisor Mesoamerica Recruitmaster.png]]||[[File:Advisor Southamertica Recruitmaster.png]]||[[File:Advisor Southamerica Recruitmaster Female.png]]&#10;|-&#10;|{{icon|adm}}||&#039;&#039;&#039;自然科学家&#039;&#039;&#039;||{{icon|Natural Scientist}}||[[File:Advisor Natural scientist female.PNG]]||[[File:Russian natural scientist.png]]||[[File:Russian natural scientist female.png]]||[[File:Advisor Cossack Natural Scientist.png]]||[[File:Advisor Cossack Natural Scientist Female.png]]||[[File:Advisor African Natural Scientist.png]]||[[File:Advisor African Natural Scientist Female.png]]||[[File:Advisor Muslim Natural Scientist.png]]||[[File:Advisor Muslim Natural Scientist Female.png]]||[[File:Advisor Persian Natural Scientist.png]]||[[File:Advisor Persian Natural Scientist Female.png]]||[[File:Asian natural scientist.png]]||[[File:Asian natural scientist female.png]]||[[File:Advisor Northamerica Natural Scientist.png]]||[[File:Advisor Mesoamerica Natural Scientist.png]]||[[File:Advisor Southamertica Natural Scientist.png]]||[[File:Advisor Southamerica Natural Scientist Female.png]]&#10;|-&#10;|{{icon|dip}}||&#039;&#039;&#039;海军改革者&#039;&#039;&#039;||{{icon|Naval Reformer}}||[[File:Advisor Naval reformer female.PNG]]||[[File:Russian naval reformer.png]]||[[File:Russian naval reformer female.png]]||[[File:Advisor Cossack Naval Reformer.png]]||[[File:Advisor Cossack Naval Reformer Female.png]]||[[File:Advisor African Naval Reformer.png]]||[[File:Advisor African Naval Reformer Female.png]]||[[File:Advisor Muslim Naval Reformer.png]]||[[File:Advisor Muslim Naval Reformer Female.png]]||[[File:Advisor Persian Naval Reformer.png]]||[[File:Advisor Persian Naval Reformer Female.png]]||[[File:Asian naval reformer.png]]||[[File:Asian naval reformer female.png]]||[[File:Advisor Northamerica Naval Reformer.png]]||[[File:Advisor Mesoamerica Naval Reformer.png]]||[[File:Advisor Southamertica Naval Reformer.png]]||[[File:Advisor Southamerica Naval Reformer Female.png]]&#10;|-&#10;|{{icon|dip}}||&#039;&#039;&#039;航海家&#039;&#039;&#039;||{{icon|Navigator}}||[[File:Advisor Navigator female.PNG]]||[[File:Russian navigator.png]]||[[File:Russian navigator female.png]]||[[File:Advisor Cossack Navigator.png]]||[[File:Advisor Cossack Navigator Female.png]]||[[File:Advisor African Navigator.png]]||[[File:Advisor African Navigator Female.png]]||[[File:Advisor Muslim Navigator.png]]||[[File:Advisor Muslim Navigator Female.png]]||[[File:Advisor Persian Navigator.png]]||[[File:Advisor Persian Navigator Female.png]]||[[File:Asian navigator.png]]||[[File:Asian navigator female.png]]||[[File:Advisor Northamerica Navigator.png]]||[[File:Advisor Mesoamerica Navigator.png]]||[[File:Advisor Southamertica Navigator.png]]||[[File:Advisor Southamerica Navigator Female.png]]&#10;|-&#10;|{{icon|adm}}||&#039;&#039;&#039;哲学家&#039;&#039;&#039;||{{icon|Philosopher}}||[[File:Advisor Philosopher female.PNG]]||[[File:Russian philosopher.png]]||[[File:Russian philosopher female.png]]||[[File:Advisor Cossack Philosopher.png]]||[[File:Advisor Cossack Philosopher Female.png]]||[[File:Advisor African Philosopher.png]]||[[File:Advisor African Philosopher Female.png]]||[[File:Advisor Muslim Philosopher.png]]||[[File:Advisor Muslim Philosopher Female.png]]||[[File:Advisor Persian Philosopher.png]]||[[File:Advisor Persian Philosopher Female.png]]||[[File:Asian philosopher.png]]||[[File:Asian philosopher female.png]]||[[File:Advisor Northamerica Philosopher.png]]||[[File:Advisor Mesoamerica Philosopher.png]]||[[File:Advisor Southamertica Philosopher.png]]||[[File:Advisor Southamerica Philisopher Female.png]]&#10;|-&#10;|{{icon|mil}}||&#039;&#039;&#039;军需官&#039;&#039;&#039;||{{icon|Quartermaster}}||[[File:Advisor Quartermaster female.PNG]]||[[File:Russian quartermaster.png]]||[[File:Russian quartermaster female.png]]||[[File:Advisor Cossack Quartermaster.png]]||[[File:Advisor Cossack Quartermaster Female.png]]||[[File:Advisor African Quartermaster.png]]||[[File:Advisor African Quartermaster Female.png]]||[[File:Advisor Muslim Quartermaster.png]]||[[File:Advisor Muslim Quartermaster Female.png]]||[[File:Advisor Persian Quartermaster.png]]||[[File:Advisor Persian Quartermaster Female.png]]||[[File:Asian quartermaster.png]]||[[File:Asian quartermaster female.png]]||[[File:Advisor Northamerica Quartermaster.png]]||[[File:Advisor Mesoamerica Quartermaster.png]]||[[File:Advisor Southamertica Quartermaster.png]]||[[File:Advisor Southamerica Quartermaster Female.png]]&#10;|-&#10;|{{icon|dip}}||&#039;&#039;&#039;间谍首脑&#039;&#039;&#039;||{{icon|Spymaster}}||[[File:Advisor Spymaster female.PNG]]||[[File:Russian spymaster.png]]||[[File:Russian spymaster female.png]]||[[File:Advisor Cossack Spymaster.png]]||[[File:Advisor Cossack Spymaster Female.png]]||[[File:Advisor African Spymaster.png]]||[[File:Advisor African Spymaster Female.png]]||[[File:Advisor Muslim Spymaster.png]]||[[File:Advisor Muslim Spymaster Female.png]]||[[File:Advisor Persian Spymaster.png]]||[[File:Advisor Persian Spymaster Female.png]]||[[File:Asian spymaster.png]]||[[File:Asian spymaster female.png]]||[[File:Advisor Northamerica Spymaster.png]]||[[File:Advisor Mesoamerica Spymaster.png]]||[[File:Advisor Southamertica Spymaster.png]]||[[File:Advisor Southamerica Spymaster Female.png]]&#10;|-&#10;|{{icon|dip}}||&#039;&#039;&#039;政治家&#039;&#039;&#039;||{{icon|Statesman}}||[[File:Advisor Statesman female.PNG]]||[[File:Russian statesman.png]]||[[File:Russian statesman female.png]]||[[File:Advisor Cossack Stateman.png]]||[[File:Advisor Cossack Stateman Female.png]]||[[File:Advisor African Statesman.png]]||[[File:Advisor African Statesman Female.png]]||[[File:Advisor Muslim Statesman.png]]||[[File:Advisor Muslim Statesman Female.png]]||[[File:Advisor Persian Statesman.png]]||[[File:Advisor Persian Statesman Female.png]]||[[File:Asian statesman.png]]||[[File:Asian statesman female.png]]||[[File:Advisor Northamerica Statesman.png]]||[[File:Advisor Mesoamerica Statesman.png]]||[[File:Advisor Southamertica Statesman.png]]||[[File:Advisor Southamerica Statesman Female.png]]&#10;|-&#10;|{{icon|adm}}||&#039;&#039;&#039;神学家&#039;&#039;&#039;||{{icon|Theologian}}||[[File:Advisor Theologian female.PNG]]||[[File:Russian theologian.png]]||[[File:Russian theologian female.png]]||[[File:Advisor Cossack Theologian.png]]||[[File:Advisor Cossack Theologian Female.png]]||[[File:Advisor African Theologian.png]]||[[File:Advisor African Theologian Female.png]]||[[File:Advisor Muslim Theologian.png]]||[[File:Advisor Muslim Theologian Female.png]]||[[File:Advisor Persian Theologian.png]]||[[File:Advisor Persian Theologian Female.png]]||[[File:Asian theologian.png]]||[[File:Asian theologian female.png]]||[[File:Advisor Northamerica Theologian.png]]||[[File:Advisor Mesoamerica Theologian.png]]||[[File:Advisor Southamertica Theologian.png]]||[[File:Advisor Southamerica Theologican Female.png]]&#10;|-&#10;|{{icon|dip}}||&#039;&#039;&#039;商人&#039;&#039;&#039;||{{icon|Trader}}||[[File:Advisor Trader female.PNG]]||[[File:Russian trader.png]]||[[File:Russian trader female.png]]||[[File:Advisor Cossack Trader.png]]||[[File:Advisor Cossack Trader Female.png]]||[[File:Advisor African Trader.png]]||[[File:Advisor African Trader Female.png]]||[[File:Advisor Muslim Trader.png]]||[[File:Advisor Muslim Trader Female.png]]||[[File:Advisor Persian Trader.png]]||[[File:Advisor Persian Trader Female.png]]||[[File:Asian trader.png]]||[[File:Asian trader female.png]]||[[File:Advisor Northamerica Trader.png]]||[[File:Advisor Mesoamerica Trader.png]]||[[File:Advisor Southamertica Trader.png]]||[[File:Advisor Southamerica Trader Female.png]]&#10;|-&#10;|{{icon|adm}}||&#039;&#039;&#039;财政专家&#039;&#039;&#039;||{{icon|Treasurer}}||[[File:Advisor Treasurer female.PNG]]||[[File:Russian treasurer.png]]||[[File:Russian treasurer female.png]]||[[File:Advisor Cossack Treasurer.png]]||[[File:Advisor Cossack Treasurer Female.png]]||[[File:Advisor African Treasurer.png]]||[[File:Advisor African Treasurer Female.png]]||[[File:Advisor Muslim Treasurer.png]]||[[File:Advisor Muslim Treasurer Female.png]]||[[File:Advisor Persian Treasurer.png]]||[[File:Advisor Persian Treasurer Female.png]]||[[File:Asian treasurer.png]]||[[File:Asian treasurer female.png]]||[[File:Advisor Northamerica Treasurer.png]]||[[File:Advisor Mesoamerica Treasurer.png]]||[[File:Advisor Southamertica Treasurer.png]]||[[File:Advisor Southamerica Treasurer Female.png]]&#10;|}&#10;&#10;==参考资料==&#10;&amp;lt;references /&gt;&#10;&#10;[[Category:内政]]&#10;{{realm navbox}}&#10;[[en:Advisor]]&#10;本页使用的模板：&#10;&#10;Template:Ambox（查看源代码）（受保护）Template:Ambox/core（查看源代码）（受保护）Template:Ambox 2020（查看源代码）Template:BTRow（查看源代码）Template:Bonus table（查看源代码）Template:Clear（查看源代码）（受保护）Template:Country data Manchu（查看源代码）Template:Country data Ming（查看源代码）Template:Country data Qing（查看源代码）Template:Expansion（查看源代码）Template:Flag（查看源代码）（受保护）Template:Flag/core（查看源代码）Template:Flagicon（查看源代码）Template:Flagicon/core（查看源代码）（受保护）Template:Green（查看源代码）（受保护）Template:Grey-bd（查看源代码）Template:Hatnote（查看源代码）（受保护）Template:Hover box（查看源代码）Template:Icon（查看源代码）（受保护）Template:Icon/a（查看源代码）Template:Icon/b（查看源代码）Template:Icon/c（查看源代码）Template:Icon/d（查看源代码）Template:Icon/f（查看源代码）Template:Icon/g（查看源代码）Template:Icon/i（查看源代码）Template:Icon/j（查看源代码）Template:Icon/l（查看源代码）Template:Icon/m（查看源代码）Template:Icon/n（查看源代码）Template:Icon/p（查看源代码）Template:Icon/q（查看源代码）Template:Icon/r（查看源代码）Template:Icon/s（查看源代码）Template:Icon/t（查看源代码）Template:Icon/xyz（查看源代码）Template:Icon/y（查看源代码）Template:Navbox（查看源代码）（受保护）Template:Navboxgroup（查看源代码）（受保护）Template:Nowrap（查看源代码）Template:Path（查看源代码）（受保护）Template:Plainlist（查看源代码）Template:Realm navbox（查看源代码）（受保护）Template:Red（查看源代码）（受保护）Template:Ruby（查看源代码）Template:SVersion（查看源代码）（受保护）Template:See also（查看源代码）Template:Version（查看源代码）（受保护）返回顾问。&#10;"/>
+<meta name="keywords" content="欧陆风云4百科,顾问"/>
+<meta name="apple-mobile-web-app-capable" content="Yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+<meta name="mobile-web-app-capable" content="Yes"/>
+<meta name="theme-color" content="#103D8F"/>
+<meta name="msapplication-navbutton-color" content="#103D8F"/>
+<meta name="twitter:card" content="summary"/>
+<link rel="icon" href="https://www.eu4cn.com/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="https://www.eu4cn.com/opensearch_desc.php" title="欧陆风云4百科 (zh)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://www.eu4cn.com/api.php?action=rsd"/>
+<link rel="alternate" hreflang="zh" href="https://www.eu4cn.com/zh/顾问"/>
+<link rel="alternate" hreflang="zh-Hans" href="https://www.eu4cn.com/zh-hans/顾问"/>
+<link rel="alternate" hreflang="zh-Hant" href="https://www.eu4cn.com/zh-hant/顾问"/>
+<link rel="alternate" hreflang="zh-Hans-CN" href="https://www.eu4cn.com/zh-cn/顾问"/>
+<link rel="alternate" hreflang="zh-Hant-HK" href="https://www.eu4cn.com/zh-hk/顾问"/>
+<link rel="alternate" hreflang="zh-Hant-MO" href="https://www.eu4cn.com/zh-mo/顾问"/>
+<link rel="alternate" hreflang="zh-Hans-MY" href="https://www.eu4cn.com/zh-my/顾问"/>
+<link rel="alternate" hreflang="zh-Hans-SG" href="https://www.eu4cn.com/zh-sg/顾问"/>
+<link rel="alternate" hreflang="zh-Hant-TW" href="https://www.eu4cn.com/zh-tw/顾问"/>
+<link rel="alternate" hreflang="x-default" href="https://www.eu4cn.com/wiki/顾问"/>
+<link rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+<link rel="alternate" type="application/atom+xml" title="欧陆风云4百科的Atom feed" href="https://www.eu4cn.com/index.php?title=Special:%E6%9C%80%E8%BF%91%E6%9B%B4%E6%94%B9&amp;feed=atom"/>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script data-ad-client="ca-pub-1612414434963106" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114739240-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-114739240-1');
+</script>
+<meta property="og:title" content="顾问"/>
+<meta property="og:site_name" content="欧陆风云4百科"/>
+<meta property="og:url" content="https://www.eu4cn.com/wiki/%E9%A1%BE%E9%97%AE"/>
+<meta property="article:modified_time" content="2023-06-01T05:33:33Z"/>
+<meta property="article:published_time" content="2023-06-01T05:33:33Z"/>
+<script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"Article","name":"\u67e5\u770b\u201c\u987e\u95ee\u201d\u7684\u6e90\u4ee3\u7801 - \u6b27\u9646\u98ce\u4e914\u767e\u79d1\uff0c\u4eba\u4eba\u53ef\u4ee5\u7f16\u8f91\u7684\u6b27\u9646\u98ce\u4e914\u4e2d\u6587\u767e\u79d1\u5168\u4e66","headline":"\u67e5\u770b\u201c\u987e\u95ee\u201d\u7684\u6e90\u4ee3\u7801 - \u6b27\u9646\u98ce\u4e914\u767e\u79d1\uff0c\u4eba\u4eba\u53ef\u4ee5\u7f16\u8f91\u7684\u6b27\u9646\u98ce\u4e914\u4e2d\u6587\u767e\u79d1\u5168\u4e66","mainEntityOfPage":"\u67e5\u770b\u201c\u987e\u95ee\u201d\u7684\u6e90\u4ee3\u7801","identifier":"https:\/\/www.eu4cn.com\/wiki\/%E9%A1%BE%E9%97%AE","url":"https:\/\/www.eu4cn.com\/wiki\/%E9%A1%BE%E9%97%AE","dateModified":"2023-06-01T05:33:33Z","datePublished":"2023-06-01T05:33:33Z","image":{"@type":"ImageObject","url":"https:\/\/www.eu4cn.com\/images\/logo\/logo.png"},"author":{"@type":"Organization","name":"\u6b27\u9646\u98ce\u4e914\u767e\u79d1","url":"https:\/\/www.eu4cn.com","logo":{"@type":"ImageObject","url":"https:\/\/www.eu4cn.com\/images\/logo\/logo.png","caption":"\u6b27\u9646\u98ce\u4e914\u767e\u79d1"}},"publisher":{"@type":"Organization","name":"\u6b27\u9646\u98ce\u4e914\u767e\u79d1","url":"https:\/\/www.eu4cn.com","logo":{"@type":"ImageObject","url":"https:\/\/www.eu4cn.com\/images\/logo\/logo.png","caption":"\u6b27\u9646\u98ce\u4e914\u767e\u79d1"}},"potentialAction":{"@type":"SearchAction","target":"https:\/\/www.eu4cn.com\/index.php?title=Special:Search&search={search_term}","query-input":"required name=search_term"}}</script>
+<link rel="stylesheet" href="http://www.unpkg.com/@fortawesome/fontawesome-free@5.15.1/css/all.css" />
+<link rel="stylesheet" href="http://www.unpkg.com/@fortawesome/fontawesome-free@5.15.1/css/v4-shims.css" />
+<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+<body class="Liberty width-size mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-顾问 rootpage-顾问 skin-liberty action-edit skin--responsive">		<header>
+			<div class="nav-wrapper navbar-fixed-top">
+						<nav class="navbar navbar-dark yamm">
+			<a class="navbar-brand" href="https://www.eu4cn.com/wiki/首页"></a>
+			<ul class="nav navbar-nav">
+				<li class="dropdown nav-item">
+					<a class="nav-link navbar-right" href="#" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+						<div class="navbar-brand-subtitle">欧陆风云4</div>
+						<div class="navbar-family">ParaWikis</div>
+					</a>
+				<ul class="dropdown-menu" aria-labelledby="dLabel">
+					<li>
+		                  <div class="yamm-content">
+		                    <div class="row">
+						 							<ul class="col-sm-4 list-unstyled">
+							<li><p class="meganav-item"><strong>最新百科</strong></p></li>
+								<a href="http://cs2.parawikis.com/" class="dropdown-item meganav-item">都市天际线2百科</a>
+								<a href="http://h3.parawikis.com/" class="dropdown-item meganav-item">英雄无敌3百科</a>
+								<a href="http://vic3.parawikis.com/" class="dropdown-item meganav-item">维多利亚3百科</a>
+								<a href="http://ce2.parawikis.com/" class="dropdown-item meganav-item">奇妙探险队2百科</a>
+								<a href="http://eos.parawikis.com/" class="dropdown-item meganav-item">罪恶帝国百科</a>
+								<a href="http://ir.parawikis.com/" class="dropdown-item meganav-item">英白拉多：罗马百科</a>
+							</ul>
+							<ul class="col-sm-4 list-unstyled">
+								<li><p class="meganav-item"><strong>热门百科</strong></p></li>
+								<a href="http://stellaris.parawikis.com/" class="dropdown-item meganav-item">群星百科</a>
+								<a href="http://www.eu4cn.com/" class="dropdown-item meganav-item">欧陆风云4百科</a>
+								<a href="http://ck2.parawikis.com/" class="dropdown-item meganav-item">十字军之王2百科</a>
+								<a href="http://ck3.parawikis.com/" class="dropdown-item meganav-item">十字军之王3百科</a>
+								<a href="http://hoi4.parawikis.com/" class="dropdown-item meganav-item">钢铁雄心4百科</a>
+								<a href="http://vic2.parawikis.com/" class="dropdown-item meganav-item">维多利亚2百科</a>
+							</ul>
+							<ul class="col-sm-4 list-unstyled">
+								<li><p class="meganav-item"><strong>ParaWikis</strong></p></li>
+								<a href="http://www.parawikis.com/wiki/ParaWikis:申请建站" class="dropdown-item meganav-item">申请建站</a>
+								<a href="http://www.parawikis.com/" class="dropdown-item meganav-item">ParaWikis</a>
+								<a href="http://commons.parawikis.com/" class="dropdown-item meganav-item">ParaCommons</a>
+							</ul>		                    </div>
+		                  </div>
+		                </li>
+				</ul>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="https://www.eu4cn.com/wiki/Special:最近更改" class="nav-link" title="本wiki的最近更改列表[r]" accesskey="r"><span class="fas fa-sync"></span><span class="hide-title">最近更改</span></a>				</li>
+				<li class="nav-item">
+					<a href="https://www.eu4cn.com/wiki/Special:随机页面" class="nav-link" title="加载一个随机页面[x]" accesskey="x"><span class="fa fa-random"></span><span class="hide-title">随机页面</span></a>				</li>
+				<li class="nav-item">
+					<a href="http://shang.qq.com/wpa/qunwpa?idkey=3bb76f6a58594b18c2defdc03af7ec2703fb2e2cc8fef6dadd1dcb896c0ede1a" target="_blank" class="nav-link" title="加入QQ群">
+						<span class="fa fa-qq"></span><span class="hide-title">加入QQ群</span>
+					</a>
+				</li>
+				<li class="dropdown nav-item">
+					<a class="dropdown-toggle nav-link" href="#" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+						<span class="fa fa-wrench"></span><span class="hide-title">工具</span>
+					</a>
+				<ul class="dropdown-menu" aria-labelledby="dLabel">
+					<li id="t-whatlinkshere" class="mw-list-item"><a href="https://www.eu4cn.com/wiki/Special:链入页面/顾问" title="所有链接至本页面的wiki页面列表[j]" accesskey="j" class="dropdown-item">链入页面</a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="https://www.eu4cn.com/wiki/Special:链出更改/顾问" rel="nofollow" title="链自本页的页面的最近更改[k]" accesskey="k" class="dropdown-item">相关更改</a></li><li id="t-specialpages" class="mw-list-item"><a href="https://www.eu4cn.com/wiki/Special:特殊页面" title="所有特殊页面的列表[q]" accesskey="q" class="dropdown-item">特殊页面</a></li><li id="t-info" class="mw-list-item"><a href="https://www.eu4cn.com/index.php?title=%E9%A1%BE%E9%97%AE&amp;action=info" title="关于此页面的更多信息" class="dropdown-item">页面信息</a></li><li id="t-cargopagevalueslink" class="mw-list-item"><a href="https://www.eu4cn.com/index.php?title=%E9%A1%BE%E9%97%AE&amp;action=pagevalues" rel="cargo-pagevalues" class="dropdown-item">页面值</a></li>				</ul>
+				</li>
+				<li class="dropdown nav-item"><a class="nav-link dropdown-toggle dropdown-toggle-fix" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true" title="帮助"><span class="fa fa-question"></span><span class="hide-title">帮助</span></a><div class="dropdown-menu" role="menu"><a class="dropdown-item" href="https://www.eu4cn.com/wiki/Project:译名手册" title="譯名手冊"><span class="fa fa-book"></span>譯名手冊</a><a class="dropdown-item" href="https://www.eu4cn.com/wiki/Project:字词转换" title="字詞轉換"><span class="fa fa-language"></span>字詞轉換</a><a class="dropdown-item" href="https://www.eu4cn.com/wiki/Project:编辑指南" title="編輯指南"><span class="fa fa-graduation-cap"></span>編輯指南</a><a class="dropdown-item" href="https://www.eu4cn.com/wiki/Project:编辑规范" title="編輯規範"><span class="fa fa-lightbulb"></span>編輯規範</a><a class="dropdown-item" href="https://www.eu4cn.com/wiki/Project:练手沙盒" title="Project:练手沙盒"><span class="fa fa-leaf"></span>練手沙盒</a></div></li><li class="dropdown nav-item"><a class="hidden-xs-down nav-link" data-toggle="" role="button" aria-haspopup="true" aria-expanded="true" title="ParaTranz" href="https://paratranz.cn/"><span class="fa fa-language"></span><span class="hide-title">ParaTranz</span></a></li><li class="dropdown nav-item"><a class="hidden-xs-down nav-link" data-toggle="" role="button" aria-haspopup="true" aria-expanded="true" title="52PCGame" href="http://bbs.52pcgame.net/"><span class="fa fa-comments"></span><span class="hide-title">52PCGame</span></a></li><li class="dropdown nav-item"><a class="hidden-xs-down nav-link" data-toggle="" role="button" aria-haspopup="true" aria-expanded="true" title="Project:捐款" href="https://www.eu4cn.com/wiki/Project:捐款"><span class="fa fa-heart"></span><span class="hide-title">资助我们</span></a></li>			</ul>
+					<div class="navbar-login">
+							<a href="#" class="none-outline" data-toggle="modal" data-target="#login-modal">
+					<span class="fa fa-sign-in"></span>
+				</a>
+					</div>
+									<form action="https://www.eu4cn.com/index.php" id="searchform" class="form-inline">
+			<input type="hidden" name="title" value="Special:搜索"/>
+			<div class="input-group">
+				<input type="search" name="search" placeholder="在欧陆风云4百科搜索" aria-label="在欧陆风云4百科搜索" autocapitalize="sentences" title="在欧陆风云4百科搜索[f]" accesskey="f" class="form-control" id="searchInput"/>				<span class="input-group-btn">
+					<button type="submit" name="go"
+						value="前往" id="searchGoButton"
+							class="btn btn-secondary" type="button"><span class="fa fa-eye"></span></button>
+					<button type="submit" name="fulltext"
+						value="搜索"
+						id="mw-searchButton" class="btn btn-secondary" type="button">
+						<span class="fa fa-search"></span></button>
+				</span>
+			</div>
+		</form>
+			</nav>
+				</div>
+		</header>
+		<section>
+			<div class="content-wrapper">
+							<aside>
+			<div class="liberty-sidebar">
+				<div class="live-recent-wrapper">
+					<div id='mw-data-after-content'>
+	<div class="read-more-container"></div>
+</div>
+												<div
+			class="live-recent"
+			data-article-ns="0|4|10|12|14"
+			data-talk-ns="1|5|7|9|11|13|15"
+		>
+			<div class="live-recent-header">
+			<ul class="nav nav-tabs">
+				<li class="nav-item">
+					<a href="javascript:" class="nav-link active" id="liberty-recent-tab1">
+						最近更改					</a>
+				</li>
+				<li class="nav-item">
+					<a href="javascript:" class="nav-link" id="liberty-recent-tab2">
+						最近讨论					</a>
+				</li>
+			</ul>
+			</div>
+			<div class="live-recent-content">
+				<ul class="live-recent-list" id="live-recent-list">
+					<li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li>				</ul>
+			</div>
+			<div class="live-recent-footer">
+				<a href="https://www.eu4cn.com/wiki/Special:最近更改" title="Special:最近更改"><span class="label label-info">查看更多</span></a>			</div>
+		</div>
+						<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 侧栏 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1612414434963106"
+     data-ad-slot="1728061201"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-K4RD1C6KBW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-K4RD1C6KBW');
+</script>
+				</div>
+										</div>
+			</aside>
+								<div class="container-fluid liberty-content">
+					<div class="liberty-content-header">
+													<div class="alert alert-dismissible fade in alert-info liberty-notice" role="alert">
+								<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+								<div id="localNotice"><div class="sitenotice" lang="zh" dir="ltr"><div style="text-align:center; font-size:125%; line-height: 1; padding: 10px;"><b>欢迎访问欧陆风云4百科！<a href="https://www.eu4cn.com/wiki/Special:用户登录" title="Special:用户登录"><span class="alert-link">注册一个账号</span></a>，一起参与编写吧！这里是<a href="https://www.eu4cn.com/wiki/欧陆风云4百科:当前任务#页面" title="欧陆风云4百科:当前任务"><span class="alert-link">当前的工程</span></a>。</b></div>
+<div style="text-align: center;">如果您想帮助本站建设，欢迎点击<a href="https://www.eu4cn.com/wiki/欧陆风云4百科:捐款" title="欧陆风云4百科:捐款"><b>这里</b></a>捐款！欢迎所有对百科感兴趣的同学加入QQ群：<b>497888338</b>。</div></div></div>							</div>
+															<div class="content-tools">
+				<div class="btn-group" role="group" aria-label="content-tools">
+					<div id="ca-view" class="mw-list-item"><a href="https://www.eu4cn.com/wiki/顾问" class="btn btn-secondary tools-btn">阅读</a></div><div id="ca-viewsource" class="selected mw-list-item"><a href="https://www.eu4cn.com/index.php?title=%E9%A1%BE%E9%97%AE&amp;action=edit" title="本页面受到保护。&#10;您可以查看其源代码[e]" accesskey="e" class="btn btn-secondary tools-btn">查看源代码</a></div><div id="ca-history" class="mw-list-item"><a href="https://www.eu4cn.com/index.php?title=%E9%A1%BE%E9%97%AE&amp;action=history" title="本页面过去的版本[h]" accesskey="h" class="btn btn-secondary tools-btn">查看历史</a></div>					<a href="https://www.eu4cn.com/wiki/Talk:顾问" class="btn btn-secondary tools-btn" title="关于内容页面的讨论[t]" accesskey="t" id="ca-talk">讨论</a>				</div>
+			</div>
+							<div class="title">
+						<h1>
+							查看“顾问”的源代码						</h1>
+						<div class="mw-indicators">
+</div>
+						</div>
+						<div class="contentSub" >
+							←<a href="https://www.eu4cn.com/wiki/顾问" title="顾问">顾问</a>						</div>
+				</div>
+					<div class="liberty-content-main" id="content">
+											<div class="mw-body-content" id="mw-content-text">
+							<div id="mw-content-text" class="mw-body-content"><p>因为以下原因，您没有权限编辑本页：
+</p>
+<div class="permissions-errors">
+<p>您请求的操作仅限属于该用户组的用户执行：<a href="https://www.eu4cn.com/wiki/欧陆风云4百科:用户" title="欧陆风云4百科:用户">用户</a>
+</p>
+</div><hr />
+<p>您可以查看和复制此页面的源代码。
+</p><textarea readonly="" accesskey="," id="wpTextbox1" cols="80" rows="25" style="" class="mw-editfont-monospace" lang="zh" dir="ltr" name="wpTextbox1">{{Version|1.24}}
+[[File:Advisor_example.png|right|thumb|330px|[[政府]]界面中的顾问界面]]
+'''顾问'''（英文：'''Advisor'''）是指在特定领域有深厚造诣并为统治者献计献策的大臣。顾问能在发动[[战争]]，促进[[科技]]进步和管理[[经济]]上为你提供助力。
+
+顾问能在[[国家界面]]的宫廷面板中管理。在[[欧陆风云4]]中每类[[君主点数]]都包括7种顾问，共计21种。每种顾问可以提供一种修正加成。例如，商人类型的顾问可以提升10%的贸易效率。
+
+顾问还可以进一步按照其技能等级划分。技能等级从 {{green|+1}} 到 {{green|+5}}， 其中+3等级之上的顾问需要花费金币手动提高顾问等级（并且需要顾问的文化在国家所认同的文化之中，否则无法手动提高技能等级）。每个级别提供额外的[[君主点数]]。（例如一个级别2的外交顾问每个月提供 {{green|+2}} {{icon|dip}}）。雇用和维持一个顾问的花费随着顾问的技能等级额外增加。顾问的技能等级只影响他的花费和额外提供的君主点数，技能等级并不影响顾问种类所带来的修正加成。（例如一个等级1和一个等级3的 {{icon|Philosopher|28px}} 哲学家产出的 {{icon|prestige}} 威望是相等的）。
+
+顾问也是会过世的，顾问去世后需要重新替换。
+
+==顾问池==
+{{SVersion|1.24}}
+一个国家只能同时拥有各一名分属每种点数类型的顾问；但是有多种方式可以拓宽可供选择的顾问池。在1444年开局时，每个国家都有每个点数类型最少3人的顾问池。[[经济#收入|每月总收入]]低于 {{icon|ducat}} 50金币的国家将不会有3级顾问可选（除非是事件产生的）。每个国家在开局时都会有至少一个2级顾问可选。有部分国家在开局阶段自带半价顾问，如法国，奥斯曼等。
+
+===获取新顾问===
+新顾问只会通过事件或是在顾问池有空缺的时候到来，此空缺的产生可以是由于顾问池的拓宽，也可以是由于之前的可选顾问的去世。在DLC {{icon|CS}} [[常识]]激活的时候，玩家也可以花费与雇用顾问时等额的金币来将一个顾问逐出宫廷。新的顾问会在每个月开始时出现。
+
+可以设置通知来提醒玩家新顾问的到来。顾问在超过'''40岁'''之后就有可能死去，而新顾问的年龄总是不低于'''30岁'''。较低的替代率意味着没有必要苦等理想种类的顾问。解锁理念组来获得额外的顾问池空间，就能增加获得期望顾问的可能性。
+
+许多事件都可以提供一个新的顾问，这些顾问往往带有-50%的花费减成。许多国家都拥有自己的专属事件，让本国的著名历史人物成为游戏中可用的半价顾问，而且往往还伴随着威望、政府改革进度等的奖励。
+
+====女性顾问====
+新的顾问有2%的几率为女性。这个几率能被下列修正增加：
+{{bonus table|female advisor chance}}
+其他方式依旧可以获得女性顾问几率修正，如下表所列的永久修正：
+{| class="mildtable plainlist"
+! style="text-align:center; width:30px" | {{icon|female advisor chance|24px}}
+! Condition
+|-
+| align=right | {{green|+33%}} || 作为革命共和国，启用政府改革 [[Republic#Equal_Electorate|平等选举]] 
+|-
+| align=right | {{green|+25%}} || 作为革命不列颠，通过事件 [[English_events#The_Soldiers_in_Petticoats|穿衬裙的士兵]]
+|-
+| align=right | {{green|+20%}} || 作为勃艮第，通过事件 [[帝国事变事件#incidents_bur_inheritance.6|[Root.Monarch.GetTitle][Root.Monarch.GetName]的法律]]
+|-
+| align=right | {{green|+20%}} || 作为伊斯兰神权国，通过事件 [[Devotion_events#The_Education_of_Women|妇女的教育]] 
+|-
+| align=right | {{green|+10%}} || 主流文化或已接纳文化为萨波特克，通过事件 [[Nahuatl_events#The_Muxe_in_Court|宫廷中的第三性]] 
+|}
+
+
+{{icon|female advisor chance}} 女性顾问几率也能增加女性继承人或女性将领的产生概率。
+{{see also|女性史事件}}
+
+DLC [[女性史]]/历史上的女性（Women in History） 中增加了大量的历史事件，让许多国家有机会任用历史上的知名女性人物为顾问，甚至让她们登上王位。该DLC目前已是游戏本体的一部分。
+
+===[[File:Advisor pool.png|32px]] 拓宽顾问池===
+顾问池受下列影响增加：
+{| class="mildtable sortable"
+! style="text-align:center; width:30px" |{{icon|advisor pool|24px}}
+!状态
+|-
+| align="right" |{{green|+2}}||是[[教廷监护]]。
+|-
+| align="right" |{{green|+1}}||是[[幸运国]]（AI限定）。
+|-
+| align="right" |{{green|+1}}||是[[神罗皇帝|神圣罗马帝国皇帝]]。
+|-
+| align="right" |{{green|+1}}||信仰 {{icon|reformed|24px}} 改革宗。
+|-
+| align="right" |{{green|+1}}||信仰 {{icon|Judaism|24px}} 犹太教。
+|-
+| align="right" |{{green|+1}}||信仰 {{icon|mayan|24px}} 玛雅宗教。
+|-
+| align="right" |{{green|+1}}||信仰 {{icon|tengri|24px}} 长生天并且将 {{icon|catholic|24px}} 天主教、{{icon|mayan|24px}} 玛雅宗教或是 {{icon|Judaism|24px}} 犹太教作为[[兼容宗教]]。
+|-
+| align="right" |{{green|+1}}||{{icon|bureaucrats|24px}} 内阁大学士派系掌权（拥有派系系统的 {{flag|Ming}}限定）。
+|-
+| align="right" |{{green|+1}}||“非常简单”[[难度]]下由玩家控制的国家。
+|}
+
+理念和政策：
+{{bonus table|advisor pool|collapse=yes}}
+决议和事件：
+{| class="mildtable sortable mw-collapsible mw-collapsed"
+! style="text-align:center; width:30px" |{{icon|advisor pool|24px}}
+! style="width:250px" |事件修正
+! style="width:450px" |触发条件
+!持续时间
+|- valign="top"
+| style="text-align:right" |{{green|+1}}
+|寺子屋
+|日本事件：“[[日本事件#寺子屋|寺子屋]]”
+
+:选项: ‘在全$COUNTRY$建立寺子屋’
+|直到君主更替。
+|- valign="top"
+| style="text-align:right" |{{green|+1}}
+|忠言良谏
+|行政理念组事件： “[[行政理念组事件#忠言良谏|忠言良谏]]”
+|10年。
+|- valign="top"
+| style="text-align:right" |{{green|+3}}
+|廷巴克图的黄金时代
+|桑海事件： “[[桑海#廷巴克图的黄金时代|廷巴克图的黄金时代]]”
+|直到君主更替。
+|- valign="top"
+| style="text-align:right" |{{green|+1}}
+|广招贤士
+|巴赫曼尼事件： “[[巴赫曼尼事件#吸引合适的人|吸引合适的人]]”
+
+:选项： ‘我们得加倍努力。’
+|10年。
+|- valign="top"
+| style="text-align:right" |{{green|+1}}
+|齐米阶层的官员
+|齐米阶层的事件： “[[阶层事件#选自.24ESTATE_DHIMMI.24.的官员|选自$ESTATE_DHIMMI$的官员]]”
+
+:选项: ‘任人，还是得唯贤啊。’
+|15年。
+|- valign="top"
+| style="text-align:right" |{{green|+1}}
+|精致的宫廷生活
+|贵族阶层事件： “[[阶层事件#晨间朝见|晨间朝见]]”
+
+:选项：“要精致典雅，要悠长繁复，要让人过目难忘。”
+|25年。
+|}
+
+==花费==
+{{SVersion|1.24}}
+[[File:Advisor expenses.png|330px|thumb|right|在经济面板可以看到影响顾问薪水的修正。]]
+雇用一个顾问的 [[File:Advisor cost.png|28px]] 花费由他的技能等级、当前年份和其他修正（如果有的话）来决定。雇用时的花费要受到顾问年龄的影响，每月的花费则不受影响。史实顾问在雇用时会有额外折扣。
+
+鼠标移到经济面板中“花费”一栏里的“顾问”上面可以看到现在激活的修正。这些数值精确到小数点后数位（如图所示）。
+
+===月度花费===
+维持一个顾问的月度花费通过一个基础值来计算，这个基础值等于他的技能等级的平方（1，4，9）。这个基础值随着时间每年增加 {{red|0.5%}}。到了1644年的时候（过了200年），基础值就从原来的1、4、9加倍到了2、8、18。到游戏结束的时候（1821年，377年后），基础值将是初始值的2.88倍（1+188.5%）。所有修正的计算都是基于基础值计算。
+
+&lt;math>\text{ 月度花费 }=\text{ 技能等级 }^2 \cdot(\text{ 当前年份 }-1444) \cdot 0.5 \cdot \text{ 各种修正 }&lt;/math>
+
+===雇佣花费===
+一次性的雇佣花费只是简单地等于月度花费的倍数。顾问的技能等级的影响已经体现在月度花费上了，在计算雇佣花费时不会再次计算。
+
+由于雇佣花费等于月度花费的倍数，所以也随着年份增加。
+
+雇佣花费的倍数只跟顾问的年龄有关，从30岁（可能的最小顾问年龄）时的'''16'''倍到60岁时的'''10'''倍（顾问池中极少会出现年龄超过50的顾问）。这个倍数的变化完全是线性的，每大一岁减少0.2（或者说每5岁减小1倍）。顾问的年龄只会取整，不存在不显示的“50岁半”等。
+
+&lt;math>\text{雇佣花费}  =  \left( 16 - \frac{\text{年龄} - 30}{5} \right) \cdot \text{月度花费}&lt;/math>
+
+更多关于年龄的信息，请参考下面的[[#寿命与雇佣花费|寿命]]一节。
+
+===举例===
+1544年，国家通胀10%，一个50岁的2级顾问（基础月度花费4金币）：
+
+&lt;math>\text{基础花费} =  4 \cdot (1+0.005\cdot100) = 6.00 \text{每月}&lt;/math>
+
+&lt;math>\text{每月总花费} = 6\cdot(1 + 0.10) = 6.60 \text{每月}&lt;/math>
+
+&lt;math>\text{雇用花费} = (16 - 4) \cdot 6.60 = 79.2&lt;/math>
+
+===顾问花费的影响因素===
+请注意，这些修正会在基础花费基于年份的加成'''之后'''进行计算。
+
+*通货膨胀： {{red|+不定%}}
+*[[经济#破产|破产]]： {{red|+100%}}
+*低[[贤能值]]： 最多达 {{red|+25%}}，于0贤能值时
+*[[儒教]]和谐上座部佛教后： {{green|−5%}}
+*[[商品#列表|茶叶贸易]]： {{green|−10%}}
+*[[长生天]] 以什叶派、伊巴德派、犹太教，或是改革宗作为次要信仰：{{green|−10%}}
+*[[上座部佛教]]： {{green|−10%}}
+*[[拜物教]] Haymanot崇拜： {{green|−10%}}
+*统治者的[[特质#君主特质|特质]]有 '''礼贤下士'''： {{green|−20%}}
+*成为[[教廷监护]]： {{green|−20%}}
+*高[[贤能值]]：最高达 {{green|−25%}}，于100贤能值时
+*[[土著议会#土著建筑|土著建筑]]-仪式火坑： {{green|−50%}}
+*[[君主制#马穆鲁克政府|马穆鲁克政府]]与统治者文化相同的顾问：{{green|−25%}}
+*[[File:Great_project_parthenon.png|48px]] [[伟大工程|帕特农神庙]]: {{green|−10%}}[[File:Great project level icon tier 1.png|24px]]/{{green|−20%}}[[File:Great project level icon tier 3.png|24px]] 省份属于原始宗教组，且与拥有者国教相同；或省份文化为希腊，且省份拥有者视其为主流文化或已接受文化
+*[[File:Great_project_pyramid_of_cheops.png|48px]] [[伟大工程|胡夫金字塔]]: {{green|−5%}}[[File:Great project level icon tier 1.png|24px]]/{{green|−10%}}[[File:Great project level icon tier 2.png|24px]]/{{green|−20%}}[[File:Great project level icon tier 3.png|24px]] 省份属于原始宗教组，且与拥有者国教相同；或省份文化为埃及，且省份拥有者视其为主流文化或已接受文化
+*特殊顾问折扣： {{green|−50%}}
+*各种事件： {{green|−不定%}}
+
+下表列出了提供顾问花费减成的理念和政策：
+{{bonus table|advisor cost|collapse=yes}}
+
+一些减成仅当该顾问与国家君主的文化相同时才可以生效。下表列出了提供与君主同文化的顾问花费减成的理念和政策：
+{{bonus table|cost of adv wrc|collapse=yes}}
+
+==提升顾问等级==
+{{SVersion|1.24}}
+{{expansion|coc}}
+可以花费金钱来提升顾问的等级，最高至5级。提升的花费为顾问的60倍月薪（亦即5年年薪），此外，被升级顾问的文化必须是该国的主流文化或可接受文化。
+
+由于顾问的薪水根据其等级呈指数上升（例如，5级顾问具有5*5=25倍的基础花费），建议在升级顾问应当充分考虑国库的资金是否充裕。此外，还需要考虑到顾问的年龄——如果他们过早去世，在升级上的投资就血本无归了。
+
+==顾问类型==
+{{SVersion|1.24}}
+下列表格中，列出了每一种顾问所带来的增益以及可能所需要的决议。
+
+雇佣一个3级顾问可能会触发一些[[顾问事件]]。
+
+当DLC[[女性史]]激活时，所有顾问在随机产生时均可能为女性。这一概率为2%。&lt;ref>From {{path|common/defines.lua}}: FEMALE_ADVISOR_CHANCE = 2, ''-- If Women in History is enabled, chance of an advisor spawning as female''&lt;/ref> 一些事件发生时也会在顾问候选池中加入女性顾问。女性顾问的头像边框是银色。从[[1.29.3]]版本起，[[女性史]]已成为基础游戏本体的一部分。
+
+==={{icon|adm}} 行政顾问===
+行政顾问可被认为是对国内政策有帮助的一类顾问。他们的主要职责是改善一国的内政能力，如：[[财政专家|改革税收系统]]和[[哲学家|促进提高文化资助]]。
+{| class="wikitable"
+|+随等级触发修正
+!效果
+!触发条件
+|-
+|{{icon|national tax modifier}} 國家稅收修正： {{green|+5%}}{{icon|meritocracy}} 年度贤能值： {{green|+0.25}}
+
+{{icon|yearly republican tradition}} 年度共和传统： {{green|+0.02}}
+|省份所有者：
+* 已设置国家[[芬兰任务#fin missions 4|flag fin_fine_finances_flag]]
+* 拥有政府特质"顾问每一级增加0.02年度共和传统增长"
+|-
+|{{icon|national tax modifier}} 國家稅收修正： {{green|+5%}}{{icon|meritocracy}} 年度贤能值： {{green|+0.25}}
+|省份所有者：
+* 已设置国家flag fin_fine_finances_flag
+* 未拥有政府特质"顾问每一级增加0.02年度共和传统增长"
+|-
+|{{icon|meritocracy}} 年度贤能值： {{green|+0.25}}{{icon|yearly republican tradition}} 年度共和传统： {{green|+0.02}}
+|省份所有者：
+* 未设置国家flag fin_fine_finances_flag
+* 拥有政府特质"顾问每一级增加0.02年度共和传统增长"
+|-
+|{{icon|meritocracy}} 年度贤能值： {{green|+0.25}}
+|省份所有者：
+* 未设置国家flag fin_fine_finances_flag
+* 未拥有政府特质"顾问每一级增加0.02年度共和传统增长"
+|}
+{| class="mildtable"
+! width="200px" |顾问
+! width="250px" |效果
+! width="250px" |激活的决议
+|-
+|{{icon|artist}} '''{{ruby|艺术家|Artist}}'''||{{icon|stability cost modifier}} 穩定花費修正： {{green|−10%}}|| colspan="2" |
+|-
+|{{icon|inquisitor}} '''{{ruby|审讯官|Inquisitor}}'''||{{icon|missionary strength}} 傳教力量： {{green|+2%}}|| colspan="2" |
+|-
+|{{nowrap|{{icon|master of mint}} '''{{ruby|铸币专家|Master of Mint}}'''}}||{{icon|yearly inflation reduction}} 年度通脹減少：{{green|+0.10}}|| colspan="2" |
+|-
+|{{nowrap|{{icon|natural scientist}} '''{{ruby|自然科学家|Natural Scientist}}'''}}||{{icon|production efficiency}} 生產效率： {{green|+10%}}|| colspan="2" |
+|-
+|{{icon|philosopher}} '''{{ruby|哲学家|Philosopher}}'''||{{icon|prestige}} 年度威望： {{green|+1}}
+| colspan="2" |
+|-
+|{{icon|theologian}} '''{{ruby|神学家|Theologian}}'''||{{icon|national unrest}} 全国叛乱： {{green|−2}}||{{plainlist|
+*[[List_of_decision_lists#Revoke Restraint of Appeals|撤消申诉限制]]
+*[[List_of_decision_lists#Pass Advancement of Religion Act|通过宗教进阶法案]]
+}}
+|-
+|{{icon|treasurer}} '''{{ruby|财政专家|Treasurer}}'''||{{icon|national tax modifier}} 國家稅收修正： {{green|+10%}}|| colspan="2" |
+|}
+
+==={{icon|dip}} 外交顾问===
+外交顾问主要负责与[[海军]]和[[外交]]有关的事务。他们的工作主要是促进海军的发展以及与其他国家进行外交，如：[[商人（顾问）|提高一个国家的贸易竞争力]]以及[[外交家|改善外交关系]]
+
+{| class="mildtable"
+! width="200px" |顾问
+! width="250px" |效果
+! width="250px" |激活的决议
+!需求
+|-
+|{{nowrap|{{icon|colonial governor}} '''{{ruby|殖民总督|Colonial governor}}'''}}||{{icon|global tariffs}} 關稅： {{green|+10%}}|| ||省份拥有者：
+
+*至少拥有 1 {{icon|colonist|24px}} 殖民队。
+*'''不是''' {{icon|colonial nation|24px}} 殖民领。
+|-
+|{{icon|diplomat_adv}} '''{{ruby|外交家|Diplomat}}'''||{{icon|improve relations}} 改善關係效率： {{green|+20%}}|| ||
+|-
+|{{nowrap|{{icon|naval reformer}} '''{{ruby|海军改革者|Naval reformer}}'''}}||{{icon|naval morale}} 海軍士氣： {{green|+10%}}|| ||省份须拥有一个港口。
+|-
+|{{icon|navigator}} '''{{ruby|航海家|Navigator}}'''||{{icon|colonial range}} 殖民範圍： {{green|+20%}}|| ||省份拥有者：
+
+*至少拥有 1 {{icon|colonist|24px}} 殖民队。
+|-
+|{{icon|spymaster}} '''{{ruby|间谍首脑|Spymaster}}'''||{{icon|spy network construction}} 間諜網建設速度：{{green|+25%}}|| ||
+|-
+|{{icon|statesman}} '''{{ruby|政治家|Statesman}}'''||{{icon|diplomatic reputation}} 外交威望： {{green|+1}}||{{plainlist|
+*[[List_of_decision_lists#Formalize Separation of Powers|使权力分立正式化]]
+* {{flagicon|Ming}} {{flagicon|Manchu}} {{flagicon|Qing}} [[满洲#决议|建造紫禁城]]}}
+|
+|-
+|{{icon|trader}} '''{{ruby|商人|Trader}}'''||{{icon|trade efficiency}} 貿易效率： {{green|+10%}}|| ||
+|}
+
+==={{icon|mil}} 军事顾问===
+军事顾问唯一的功能就是增强国家的军事力量，无论是进攻方面还是防守方面。因此，其职能主要体现在增强一国军队的实力或者是提高抵御外来入侵的能力。例如，[[军需官|对后勤补给进行改革]] 和[[要塞工程师|提高要塞防御能力]] 。
+
+{| class="mildtable"
+! width="200px" |顾问
+! width="250px" |效果
+! width="250px" |描述
+|-
+|{{nowrap|{{icon|army organizer}} '''{{ruby|陆军组织者|Army Organizer}}'''}}||{{icon|land force limit modifier}} 陸軍上限修正： {{green|+10%}}||
+|-
+|{{nowrap|{{icon|army reformer}} '''{{ruby|陆军改革者|Army Reformer}}'''}}||{{icon|land morale}} 陸軍士氣： {{green|+10%}}|| |
+|-
+|{{icon|commandant}} '''{{ruby|教官|Commandant}}'''||{{icon|discipline}} 訓練度： {{green|+5%}}||
+|-
+|{{nowrap|{{icon|grand captain}} '''{{ruby|陆军队长|Grand Captain}}'''}}||{{icon|land maintenance modifier}} 陆军维护费修正： {{green|−10%}}||
+|-
+|{{nowrap|{{icon|master recruiter}} '''{{ruby|征兵官员|Master Recruiter}}'''}}||{{icon|global manpower modifier}} 國家人力修正： {{green|+10%}}||
+|-
+|{{nowrap|{{icon|military engineer}} '''{{ruby|要塞工程师|Military Engineer}}'''}}||{{icon|fort defense}} 要塞防禦： {{green|+20%}}||
+|-
+|{{icon|quartermaster}} '''{{ruby|军需官|Quartermaster}}'''||{{icon|reinforce speed}} 補員速度： {{green|+33%}}||
+|}
+
+==寿命与雇佣花费==
+{{SVersion|1.24}}
+[[File:EU4 Advisor Age versus Mortality and Survival.jpg|240px|thumb|left|EU4顾问预期寿命]]
+当顾问被雇佣之后，在顾问的提示信息中将会显示其死亡风险的百分数，这一概率由顾问的年龄所决定。因为雇佣所需要的花费随年龄的增长而减少，同时，顾问有一份[https://en.wikipedia.org/wiki/Life_table 生命表]。所以根据上述两个条件，可以计算出当雇佣顾问的最优年龄。
+
+顾问的年龄超过40岁后，当年的死亡概率将以每年2/3个百分点（约为0.67%）的速度累加。换句话说，也就是每三年增加2个百分点。当顾问年龄达到55岁时，当年的死亡概率将会是10%。而当年龄达到100岁时，当年死亡概率将达到40%。这一百分数将以向下取整的方式，显示在顾问的提示信息中，但在计算中会以实际值计算。也就是说，当顾问41岁时，其当年死亡概率是0.67%，而提示信息中将显示为0%。
+
+&lt;math>\text{当年死亡率}(\%) = \left( \text{年龄} - 40 \right) \cdot \frac 23&lt;/math>
+
+这一概率的累加效果十分可观（如左图所示）。概率上的中位年龄为53.7，也就是顾问只有50%的几率能活到53.7岁。而这一数值提高的65岁时，几率仅为十分之一。只有百分之一的概率顾问能达到75岁。上述概率都是根据总体死亡率曲线得出的。如果一个顾问年龄已经到了50岁，那对这个顾问而言，其死亡率曲线也将与左图中的曲线不同。（因为其活到50岁的概率已经为100%了）。
+
+[[File:EU4 Advisor Hiring Age versus Hiring Multiplier.jpg|240px|thumb|right|EU4顾问预期寿命]]
+根据雇佣花费与寿命的关系，是可以计算出雇佣多大年龄的顾问是最划算的（如右图所示）。当顾问年龄处于30至40之间时，答案很简单。因为这一年龄区间中，雇佣花费乘数虽然在变化，但顾问死亡概率是0%。而根据上文提到的，中位寿命期望值为53.7岁。因此，如果在一名顾问30岁的时候雇佣了他，其期望工作年限约为24年（从顾问30岁到53.7岁）。此时，雇佣花费乘数为16。很容易求得，每一点雇佣花费乘数可以提供1.5年的工作时间（即24除以16）。如果在40岁时雇佣顾问（雇佣乘数为14），那他的期望寿命还有14年。换句话说，每一点雇佣花费乘数可以带来1年的工作时间（即14除以14）。很明显的，30岁的顾问是更好的选择。
+
+当年龄超过40岁后，死亡率曲线就将发生改变。其中位寿命期望值（也就是死亡年龄预期值）将随着受雇年龄的增加而增加。（一名55岁的顾问，很明显，其期望寿命不能再是53.7岁了。）在右图中，工作年限曲线在受雇年龄为30-40时呈现为一条直线（因为这一年龄区间顾问不会死亡）。而当受雇年龄超过40后，呈一条曲线。由于工作年限期望值的降低速度要快于雇佣花费乘数，也就是说，雇佣越年轻的顾问越值。当顾问的受雇年龄分别达到50岁和60岁时，每一点雇佣花费乘数可以提供的工作年限，将分别仅为0.59年和0.42年。
+
+尽管30岁是雇佣顾问的最优年龄，但考虑到雇佣乘数变动区间仅仅是从10到16，也就是说，最大差别也仅有半年的顾问工资。这对玩家的收入可能不会有很大的影响，除非玩家的收入真的很低。
+
+==顾问画像==
+{{SVersion|1.25}}
+
+[[File: Portraits map.png|thumb|700px|顾问画像分布图]]
+
+以下是所有可用顾问的画像。
+
+顾问头像同样取决于其所属[[文化]]。
+
+{| class="wikitable" style="width:300px; text-align:center; color:white;"
+|+ style="color:black;" |顾问画像省份分布
+|
+{| style="width:150px;"
+|-
+| style="background-color: white; color:black;" |通用
+|-
+| style="background-color: #2a85be; " |俄罗斯
+|-
+| style="background-color: #e1cd42;" |哥萨克
+|-
+| style="background-color: #b1439a;" |非洲
+|-
+| style="background-color: #248967;" |穆斯林
+|}
+|
+{| style="width:150px;"
+|-
+| style="background-color: #97d283;" |波斯
+|-
+| style="background-color: #e17643;" |亚洲
+|-
+| style="background-color: #b29d83;" |北美洲
+|-
+| style="background-color: #6cbe2a;" |中美洲
+|-
+| style="background-color: #b22f2f;" |南美洲
+|}
+|}
+
+{{clear}}
+
+{| class="mildtable mw-collapsible mw-collapsed" style="text-align:center;"
+|+ style="background:silver;text-align: center;width: 1530px" |'''所有可用顾问画像列表'''
+! style="text-align: center; width: 50px" |类型
+! style="text-align: center; width: 160px;" |顾问
+! style="text-align: center; width: 70px;" |{{Hover box|在缺少对应DLC时，通用的欧洲男性画像代替全部男性画像|通用男性}}
+! style="text-align: center; width: 70px;" |{{Hover box|需求DLC女性史|通用女性}}
+! style="text-align: center; width: 70px;" |{{Hover box|需求DLC第三罗马|俄罗斯男性}}
+! style="text-align: center; width: 70px;" |{{Hover box|需求DLC女性史与DLC第三罗马|俄罗斯女性}}
+! style="text-align: center; width: 70px;" |{{Hover box|需求DLC哥萨克|哥萨克男性}}
+! style="text-align: center; width: 70px;" |{{Hover box|需求DLC女性史与DLC哥萨克|哥萨克女性}}
+! style="text-align: center; width: 70px;" |{{Hover box|需求DLC我们的海|非洲男性}}
+! style="text-align: center; width: 70px;" |{{Hover box|需求DLC女性史与DLC我们的海|非洲女性}}
+! style="text-align: center; width: 70px;" |{{Hover box|需求DLC穆斯林顾问画像|穆斯林男性}}
+! style="text-align: center; width: 70px;" |{{Hover box|需求DLC女性史与DLC文明的摇篮|穆斯林女性}}
+! style="text-align: center; width: 70px;" |{{Hover box|需求DLC文明的摇篮|波斯男性}}
+! style="text-align: center; width: 70px;" |{{Hover box|需求DLC女性史与DLC文明的摇篮|波斯女性}}
+! style="text-align: center; width: 70px;" |{{Hover box|无需DLC|亚洲男性}}
+! style="text-align: center; width: 70px;" |{{Hover box|需求DLC女性史|亚洲女性}}
+! style="text-align: center; width: 70px;" |{{Hover box|需求DLC黄金国|北美洲顾问}}
+! style="text-align: center; width: 70px;" |{{Hover box|需求DLC黄金国|中美洲顾问}}
+! style="text-align: center; width: 70px;" |{{Hover box|需求DLC黄金国|南美洲男性}}
+! style="text-align: center; width: 70px;" |{{Hover box|需求DLC女性史与DLC黄金国|南美洲女性}}
+|-
+|{{icon|mil}}||'''陆军组织者'''||{{icon|army organizer}}||[[File:Advisor Army organiser female.PNG]]||[[File:Russian army organiser.png]]||[[File:Russian army organiser female.png]]||[[File:Advisor Cossack Army Organizer.png]]||[[File:Advisor Cossack Army Organizer Female.png]]||[[File:Advisor African Army Organiser.png]]||[[File:Advisor African Army Organiser Female.png]]||[[File:Advisor Muslim Army Organizer.png]]||[[File:Advisor Muslim Army Organizer Female.png]]||[[File:Advisor Persian Army Organizer.png]]||[[File:Advisor Persian Army Organizer Female.png]]||[[File:Asian army organiser.png]]||[[File:Asian army organiser female.png]]||[[File:Advisor Northamerica Army Organizer.png]]||[[File:Advisor Mesoamerica Army Organizer.png]]||[[File:Advisor Southamertica Army Organizer.png]]||[[File:Advisor Southamerica Army Organiser Female.png]]
+|-
+|{{icon|mil}}||'''陆军改革者'''||{{icon|army reformer}}||[[File:Advisor Army reformer female.PNG]]||[[File:Russian army reformer.png]]||[[File:Russian army reformer female.png]]||[[File:Advisor Cossack Army Reformer.png]]||[[File:Advisor Cossack Army Reformer Female.png]]||[[File:Advisor African Army Reformer.png]]||[[File:Advisor African Army Reformer Female.png]]||[[File:Advisor Muslim Army Reformer.png]]||[[File:Advisor Muslim Army Reformer Female.png]]||[[File:Advisor Persian Army Reformer.png]]||[[File:Advisor Persian Army Reformer Female.png]]||[[File:Asian army reformer.png]]||[[File:Asian army reformer female.png]]||[[File:Advisor Northamerica Army Reformer.png]]||[[File:Advisor Mesoamerica Army Reformer.png]]||[[File:Advisor Southamertica Army Reformer.png]]||[[File:Advisor Southamerica Army Reformer Female.png]]
+|-
+|{{icon|adm}}||'''艺术家'''||{{icon|artist}}||[[File:Advisor Artist female.PNG]]||[[File:Russian artist.png]]||[[File:Russian artist female.png]]||[[File:Advisor Cossack Artist.png]]||[[File:Advisor Cossack Artist Female.png]]||[[File:Advisor African Artist.png]]||[[File:Advisor African Artist Female.png]]||[[File:Advisor Muslim Artist.png]]||[[File:Advisor Muslim Artist Female.png]]||[[File:Advisor Persian Artist.png]]||[[File:Advisor Persian Artist Female.png]]||[[File:Asian artist.png]]||[[File:Asian artist female.png]]||[[File:Advisor Northamerica Artist.png]]||[[File:Advisor Mesoamerica Artist.png]]||[[File:Advisor Southamertica Artist.png]]||[[File:Advisor Southamerica Artist Female.png]]
+|-
+|{{icon|dip}}||'''殖民总督'''||{{icon|colonial governor}}||[[File:Advisor Colonial governor female.PNG]]||[[File:Russian colonial governor.png]]||[[File:Russian colonial governor female.png]]||[[File:Advisor Cossack Colonial Governor.png]]||[[File:Advisor Cossack Colonial Governor Female.png]]||[[File:Advisor African Colonial Governor.png]]||[[File:Advisor African Colonial Governor Female.png]]||[[File:Advisor Muslim Colonial Governor.png]]||[[File:Advisor Muslim Colonial Governor Female.png]]||[[File:Advisor Persian Colonial Governor.png]]||[[File:Advisor Persian Colonial Governor Female.png]]||[[File:Asian colonial governor.png]]||[[File:Asian colonial governor female.png]]||[[File:Advisor Northamerica Colonial Governor.png]]||[[File:Advisor Mesoamerica Colonial Governor.png]]||[[File:Advisor Southamertica Colonial Governor.png]]||[[File:Advisor Southamerica Colonial Governor Female.png]]
+|-
+|{{icon|mil}}||'''教官'''||{{icon|commandant}}||[[File:Advisor Commandant female.PNG]]||[[File:Russian commandant.png]]||[[File:Russian commandant female.png]]||[[File:Advisor Cossack Commandant.png]]||[[File:Advisor Cossack Commandant Female.png]]||[[File:Advisor African Commandant.png]]||[[File:Advisor African Commandant Female.png]]||[[File:Advisor Muslim Commandant.png]]||[[File:Advisor Muslim Commandant Female.png]]||[[File:Advisor Persian Commandant.png]]||[[File:Advisor Persian Commandant Female.png]]||[[File:Asian commandant.png]]||[[File:Asian commandant female.png]]||[[File:Advisor Northamerica Commandant.png]]||[[File:Advisor Mesoamerica Commandant.png]]||[[File:Advisor Southamertica Commandant.png]]||[[File:Advisor Southamerica Commandant Female.png]]
+|-
+|{{icon|dip}}||'''外交家'''||{{icon|diplomat_adv}}||[[File:Advisor Diplomat female.PNG]]||[[File:Russian diplomat.png]]||[[File:Russian diplomat female.png]]||[[File:Advisor Cossack Diplomat.png]]||[[File:Advisor Cossack Diplomat Female.png]]||[[File:Advisor African Diplomat.png]]||[[File:Advisor African Diplomat Female.png]]||[[File:Advisor Muslim Diplomat.png]]||[[File:Advisor Muslim Diplomat Female.png]]||[[File:Advisor Persian Diplomat.png]]||[[File:Advisor Persian Diplomat Female.png]]||[[File:Asian diplomat.png]]||[[File:Asian diplomat female.png]]||[[File:Advisor Northamerica Diplomat.png]]||[[File:Advisor Mesoamerica Diplomat.png]]||[[File:Advisor Southamertica Diplomat.png]]||[[File:Advisor Southamerica Diplomat Female.png]]
+|-
+|{{icon|mil}}||'''要塞工程师'''||{{icon|military engineer}}||[[File:Advisor Fortification expert female.PNG]]||[[File:Russian fortification expert.png]]||[[File:Russian fortification expert female.png]]||[[File:Advisor Cossack Fortification Expert.png]]||[[File:Advisor Cossack Fortification Expert Female.png]]||[[File:Advisor African Fortification Expert.png]]||[[File:Advisor African Fortification Expert Female.png]]||[[File:Advisor Muslim Fortification Expert.png]]||[[File:Advisor Muslim Fortification Expert Female.png]]||[[File:Advisor Persian Fortification Expert.png]]||[[File:Advisor Persian Fortification Expert Female.png]]||[[File:Asian fortification expert.png]]||[[File:Asian fortification expert female.png]]||[[File:Advisor Northamerica Fortification Expert.png]]||[[File:Advisor Mesoamerica Fortification Expert.png]]||[[File:Advisor Southamertica Fortification Expert.png]]||[[File:Advisor Southamerica Fortification Expert Female.png]]
+|-
+|{{icon|mil}}||'''陆军队长'''||{{icon|Grand captain}}||[[File:Advisor Grand captain female.PNG]]||[[File:Russian grand captain.png]]||[[File:Russian grand captain female.png]]||[[File:Advisor Cossack Grand Captain.png]]||[[File:Advisor Cossack Grand Captain Female.png]]||[[File:Advisor African Grand Captain.png]]||[[File:Advisor African Grand Captain Female.png]]||[[File:Advisor Muslim Grand Captain.png]]||[[File:Advisor Muslim Grand Captain Female.png]]||[[File:Advisor Persian Grand Captain.png]]||[[File:Advisor Persian Grand Captain Female.png]]||[[File:Asian grand captain.png]]||[[File:Asian grand captain female.png]]||[[File:Advisor Northamerica Grand Captain.png]]||[[File:Advisor Mesoamerica Grand Captain.png]]||[[File:Advisor Southamertica Grand Captain.png]]||[[File:Advisor Southamerica Grand Captain Female.png]]
+|-
+|{{icon|adm}}||'''审讯官'''||{{icon|inquisitor}}||[[File:Advisor Inquisitor female.PNG]]||[[File:Russian inquisitor.png]]||[[File:Russian inquisitor female.png]]||[[File:Advisor Cossack Inquisitor.png]]||[[File:Advisor Cossack Inquisitor Female.png]]||[[File:Advisor African Inquisitor.png]]||[[File:Advisor African Inquisitor Female.png]]||[[File:Advisor Muslim Inquisitor.png]]||[[File:Advisor Muslim Inquisitor Female.png]]||[[File:Advisor Persian Inquisitor.png]]||[[File:Advisor Persian Inquisitor Female.png]]||[[File:Asian inquisitor.png]]||[[File:Asian inquisitor female.png]]||[[File:Advisor Northamerica Inquisitor.png]]||[[File:Advisor Mesoamerica Inquisitor.png]]||[[File:Advisor Southamertica Inquisitor.png]]||[[File:Advisor Southamerica Inquisitor Female.png]]
+|-
+|{{icon|adm}}||'''铸币专家'''||{{icon|Master of mint}}||[[File:Advisor Master of mint female.PNG]]||[[File:Russian master of mint.png]]||[[File:Russian master of mint female.png]]||[[File:Advisor Cossack Master of Mint.png]]||[[File:Advisor Cossack Master of Mint Female.png]]||[[File:Advisor African Master of Mint.png]]||[[File:Advisor African Master of Mint Female.png]]||[[File:Advisor Muslim Matser Of Mint.png]]||[[File:Advisor Muslim Master Of Mint Female.png]]||[[File:Advisor Persian Master Of Mint.png]]||[[File:Advisor Persian Master Of Mint Female.png]]||[[File:Asian master of mint.png]]||[[File:Asian master of mint female.png]]||[[File:Advisor Northamerica Master Of Mint.png]]||[[File:Advisor Mesoamerica Master Of Mint.png]]||[[File:Advisor Southamertica Master Of Mint.png]]||[[File:Advisor Southamerica Master of Mint Female.png]]
+|-
+|{{icon|mil}}||'''征兵官员'''||{{icon|Master Recruiter}}||[[File:Advisor Recruitmaster female.PNG]]||[[File:Russian recruitmaster.png]]||[[File:Russian recruitmaster female.png]]||[[File:Advisor Cossack Recruitmaster.png]]||[[File:Advisor Cossack Recruitmaster Female.png]]||[[File:Advisor African Recruitmaster.png]]||[[File:Advisor African Recruitmaster Female.png]]||[[File:Advisor Muslim Recruitmaster.png]]||[[File:Advisor Muslim Recruitmaster Female.png]]||[[File:Advisor Persian Recruitmaster.png]]||[[File:Advisor Persian Recruitmaster Female.png]]||[[File:Asian recruitmaster.png]]||[[File:Asian recruitmaster female.png]]||[[File:Advisor Northamerica Recruitmaster.png]]||[[File:Advisor Mesoamerica Recruitmaster.png]]||[[File:Advisor Southamertica Recruitmaster.png]]||[[File:Advisor Southamerica Recruitmaster Female.png]]
+|-
+|{{icon|adm}}||'''自然科学家'''||{{icon|Natural Scientist}}||[[File:Advisor Natural scientist female.PNG]]||[[File:Russian natural scientist.png]]||[[File:Russian natural scientist female.png]]||[[File:Advisor Cossack Natural Scientist.png]]||[[File:Advisor Cossack Natural Scientist Female.png]]||[[File:Advisor African Natural Scientist.png]]||[[File:Advisor African Natural Scientist Female.png]]||[[File:Advisor Muslim Natural Scientist.png]]||[[File:Advisor Muslim Natural Scientist Female.png]]||[[File:Advisor Persian Natural Scientist.png]]||[[File:Advisor Persian Natural Scientist Female.png]]||[[File:Asian natural scientist.png]]||[[File:Asian natural scientist female.png]]||[[File:Advisor Northamerica Natural Scientist.png]]||[[File:Advisor Mesoamerica Natural Scientist.png]]||[[File:Advisor Southamertica Natural Scientist.png]]||[[File:Advisor Southamerica Natural Scientist Female.png]]
+|-
+|{{icon|dip}}||'''海军改革者'''||{{icon|Naval Reformer}}||[[File:Advisor Naval reformer female.PNG]]||[[File:Russian naval reformer.png]]||[[File:Russian naval reformer female.png]]||[[File:Advisor Cossack Naval Reformer.png]]||[[File:Advisor Cossack Naval Reformer Female.png]]||[[File:Advisor African Naval Reformer.png]]||[[File:Advisor African Naval Reformer Female.png]]||[[File:Advisor Muslim Naval Reformer.png]]||[[File:Advisor Muslim Naval Reformer Female.png]]||[[File:Advisor Persian Naval Reformer.png]]||[[File:Advisor Persian Naval Reformer Female.png]]||[[File:Asian naval reformer.png]]||[[File:Asian naval reformer female.png]]||[[File:Advisor Northamerica Naval Reformer.png]]||[[File:Advisor Mesoamerica Naval Reformer.png]]||[[File:Advisor Southamertica Naval Reformer.png]]||[[File:Advisor Southamerica Naval Reformer Female.png]]
+|-
+|{{icon|dip}}||'''航海家'''||{{icon|Navigator}}||[[File:Advisor Navigator female.PNG]]||[[File:Russian navigator.png]]||[[File:Russian navigator female.png]]||[[File:Advisor Cossack Navigator.png]]||[[File:Advisor Cossack Navigator Female.png]]||[[File:Advisor African Navigator.png]]||[[File:Advisor African Navigator Female.png]]||[[File:Advisor Muslim Navigator.png]]||[[File:Advisor Muslim Navigator Female.png]]||[[File:Advisor Persian Navigator.png]]||[[File:Advisor Persian Navigator Female.png]]||[[File:Asian navigator.png]]||[[File:Asian navigator female.png]]||[[File:Advisor Northamerica Navigator.png]]||[[File:Advisor Mesoamerica Navigator.png]]||[[File:Advisor Southamertica Navigator.png]]||[[File:Advisor Southamerica Navigator Female.png]]
+|-
+|{{icon|adm}}||'''哲学家'''||{{icon|Philosopher}}||[[File:Advisor Philosopher female.PNG]]||[[File:Russian philosopher.png]]||[[File:Russian philosopher female.png]]||[[File:Advisor Cossack Philosopher.png]]||[[File:Advisor Cossack Philosopher Female.png]]||[[File:Advisor African Philosopher.png]]||[[File:Advisor African Philosopher Female.png]]||[[File:Advisor Muslim Philosopher.png]]||[[File:Advisor Muslim Philosopher Female.png]]||[[File:Advisor Persian Philosopher.png]]||[[File:Advisor Persian Philosopher Female.png]]||[[File:Asian philosopher.png]]||[[File:Asian philosopher female.png]]||[[File:Advisor Northamerica Philosopher.png]]||[[File:Advisor Mesoamerica Philosopher.png]]||[[File:Advisor Southamertica Philosopher.png]]||[[File:Advisor Southamerica Philisopher Female.png]]
+|-
+|{{icon|mil}}||'''军需官'''||{{icon|Quartermaster}}||[[File:Advisor Quartermaster female.PNG]]||[[File:Russian quartermaster.png]]||[[File:Russian quartermaster female.png]]||[[File:Advisor Cossack Quartermaster.png]]||[[File:Advisor Cossack Quartermaster Female.png]]||[[File:Advisor African Quartermaster.png]]||[[File:Advisor African Quartermaster Female.png]]||[[File:Advisor Muslim Quartermaster.png]]||[[File:Advisor Muslim Quartermaster Female.png]]||[[File:Advisor Persian Quartermaster.png]]||[[File:Advisor Persian Quartermaster Female.png]]||[[File:Asian quartermaster.png]]||[[File:Asian quartermaster female.png]]||[[File:Advisor Northamerica Quartermaster.png]]||[[File:Advisor Mesoamerica Quartermaster.png]]||[[File:Advisor Southamertica Quartermaster.png]]||[[File:Advisor Southamerica Quartermaster Female.png]]
+|-
+|{{icon|dip}}||'''间谍首脑'''||{{icon|Spymaster}}||[[File:Advisor Spymaster female.PNG]]||[[File:Russian spymaster.png]]||[[File:Russian spymaster female.png]]||[[File:Advisor Cossack Spymaster.png]]||[[File:Advisor Cossack Spymaster Female.png]]||[[File:Advisor African Spymaster.png]]||[[File:Advisor African Spymaster Female.png]]||[[File:Advisor Muslim Spymaster.png]]||[[File:Advisor Muslim Spymaster Female.png]]||[[File:Advisor Persian Spymaster.png]]||[[File:Advisor Persian Spymaster Female.png]]||[[File:Asian spymaster.png]]||[[File:Asian spymaster female.png]]||[[File:Advisor Northamerica Spymaster.png]]||[[File:Advisor Mesoamerica Spymaster.png]]||[[File:Advisor Southamertica Spymaster.png]]||[[File:Advisor Southamerica Spymaster Female.png]]
+|-
+|{{icon|dip}}||'''政治家'''||{{icon|Statesman}}||[[File:Advisor Statesman female.PNG]]||[[File:Russian statesman.png]]||[[File:Russian statesman female.png]]||[[File:Advisor Cossack Stateman.png]]||[[File:Advisor Cossack Stateman Female.png]]||[[File:Advisor African Statesman.png]]||[[File:Advisor African Statesman Female.png]]||[[File:Advisor Muslim Statesman.png]]||[[File:Advisor Muslim Statesman Female.png]]||[[File:Advisor Persian Statesman.png]]||[[File:Advisor Persian Statesman Female.png]]||[[File:Asian statesman.png]]||[[File:Asian statesman female.png]]||[[File:Advisor Northamerica Statesman.png]]||[[File:Advisor Mesoamerica Statesman.png]]||[[File:Advisor Southamertica Statesman.png]]||[[File:Advisor Southamerica Statesman Female.png]]
+|-
+|{{icon|adm}}||'''神学家'''||{{icon|Theologian}}||[[File:Advisor Theologian female.PNG]]||[[File:Russian theologian.png]]||[[File:Russian theologian female.png]]||[[File:Advisor Cossack Theologian.png]]||[[File:Advisor Cossack Theologian Female.png]]||[[File:Advisor African Theologian.png]]||[[File:Advisor African Theologian Female.png]]||[[File:Advisor Muslim Theologian.png]]||[[File:Advisor Muslim Theologian Female.png]]||[[File:Advisor Persian Theologian.png]]||[[File:Advisor Persian Theologian Female.png]]||[[File:Asian theologian.png]]||[[File:Asian theologian female.png]]||[[File:Advisor Northamerica Theologian.png]]||[[File:Advisor Mesoamerica Theologian.png]]||[[File:Advisor Southamertica Theologian.png]]||[[File:Advisor Southamerica Theologican Female.png]]
+|-
+|{{icon|dip}}||'''商人'''||{{icon|Trader}}||[[File:Advisor Trader female.PNG]]||[[File:Russian trader.png]]||[[File:Russian trader female.png]]||[[File:Advisor Cossack Trader.png]]||[[File:Advisor Cossack Trader Female.png]]||[[File:Advisor African Trader.png]]||[[File:Advisor African Trader Female.png]]||[[File:Advisor Muslim Trader.png]]||[[File:Advisor Muslim Trader Female.png]]||[[File:Advisor Persian Trader.png]]||[[File:Advisor Persian Trader Female.png]]||[[File:Asian trader.png]]||[[File:Asian trader female.png]]||[[File:Advisor Northamerica Trader.png]]||[[File:Advisor Mesoamerica Trader.png]]||[[File:Advisor Southamertica Trader.png]]||[[File:Advisor Southamerica Trader Female.png]]
+|-
+|{{icon|adm}}||'''财政专家'''||{{icon|Treasurer}}||[[File:Advisor Treasurer female.PNG]]||[[File:Russian treasurer.png]]||[[File:Russian treasurer female.png]]||[[File:Advisor Cossack Treasurer.png]]||[[File:Advisor Cossack Treasurer Female.png]]||[[File:Advisor African Treasurer.png]]||[[File:Advisor African Treasurer Female.png]]||[[File:Advisor Muslim Treasurer.png]]||[[File:Advisor Muslim Treasurer Female.png]]||[[File:Advisor Persian Treasurer.png]]||[[File:Advisor Persian Treasurer Female.png]]||[[File:Asian treasurer.png]]||[[File:Asian treasurer female.png]]||[[File:Advisor Northamerica Treasurer.png]]||[[File:Advisor Mesoamerica Treasurer.png]]||[[File:Advisor Southamertica Treasurer.png]]||[[File:Advisor Southamerica Treasurer Female.png]]
+|}
+
+==参考资料==
+&lt;references />
+
+[[Category:内政]]
+{{realm navbox}}
+[[en:Advisor]]
+</textarea><div class="templatesUsed"><div class="mw-templatesUsedExplanation"><p>本页使用的模板：
+</p></div><ul>
+<li><a href="https://www.eu4cn.com/wiki/Template:Ambox" title="Template:Ambox">Template:Ambox</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Ambox&amp;action=edit" title="Template:Ambox">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Ambox/core" title="Template:Ambox/core">Template:Ambox/core</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Ambox/core&amp;action=edit" title="Template:Ambox/core">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Ambox_2020" title="Template:Ambox 2020">Template:Ambox 2020</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Ambox_2020&amp;action=edit" title="Template:Ambox 2020">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:BTRow" title="Template:BTRow">Template:BTRow</a>（<a href="https://www.eu4cn.com/index.php?title=Template:BTRow&amp;action=edit" title="Template:BTRow">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Bonus_table" title="Template:Bonus table">Template:Bonus table</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Bonus_table&amp;action=edit" title="Template:Bonus table">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Clear" title="Template:Clear">Template:Clear</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Clear&amp;action=edit" title="Template:Clear">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Country_data_Manchu" title="Template:Country data Manchu">Template:Country data Manchu</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Country_data_Manchu&amp;action=edit" title="Template:Country data Manchu">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Country_data_Ming" title="Template:Country data Ming">Template:Country data Ming</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Country_data_Ming&amp;action=edit" title="Template:Country data Ming">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Country_data_Qing" title="Template:Country data Qing">Template:Country data Qing</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Country_data_Qing&amp;action=edit" title="Template:Country data Qing">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Expansion" title="Template:Expansion">Template:Expansion</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Expansion&amp;action=edit" title="Template:Expansion">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Flag" title="Template:Flag">Template:Flag</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Flag&amp;action=edit" title="Template:Flag">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Flag/core" title="Template:Flag/core">Template:Flag/core</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Flag/core&amp;action=edit" title="Template:Flag/core">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Flagicon" title="Template:Flagicon">Template:Flagicon</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Flagicon&amp;action=edit" title="Template:Flagicon">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Flagicon/core" title="Template:Flagicon/core">Template:Flagicon/core</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Flagicon/core&amp;action=edit" title="Template:Flagicon/core">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Green" title="Template:Green">Template:Green</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Green&amp;action=edit" title="Template:Green">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Grey-bd" title="Template:Grey-bd">Template:Grey-bd</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Grey-bd&amp;action=edit" title="Template:Grey-bd">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Hatnote" title="Template:Hatnote">Template:Hatnote</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Hatnote&amp;action=edit" title="Template:Hatnote">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Hover_box" title="Template:Hover box">Template:Hover box</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Hover_box&amp;action=edit" title="Template:Hover box">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon" title="Template:Icon">Template:Icon</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon&amp;action=edit" title="Template:Icon">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/a" title="Template:Icon/a">Template:Icon/a</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/a&amp;action=edit" title="Template:Icon/a">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/b" title="Template:Icon/b">Template:Icon/b</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/b&amp;action=edit" title="Template:Icon/b">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/c" title="Template:Icon/c">Template:Icon/c</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/c&amp;action=edit" title="Template:Icon/c">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/d" title="Template:Icon/d">Template:Icon/d</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/d&amp;action=edit" title="Template:Icon/d">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/f" title="Template:Icon/f">Template:Icon/f</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/f&amp;action=edit" title="Template:Icon/f">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/g" title="Template:Icon/g">Template:Icon/g</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/g&amp;action=edit" title="Template:Icon/g">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/i" title="Template:Icon/i">Template:Icon/i</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/i&amp;action=edit" title="Template:Icon/i">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/j" title="Template:Icon/j">Template:Icon/j</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/j&amp;action=edit" title="Template:Icon/j">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/l" title="Template:Icon/l">Template:Icon/l</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/l&amp;action=edit" title="Template:Icon/l">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/m" title="Template:Icon/m">Template:Icon/m</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/m&amp;action=edit" title="Template:Icon/m">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/n" title="Template:Icon/n">Template:Icon/n</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/n&amp;action=edit" title="Template:Icon/n">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/p" title="Template:Icon/p">Template:Icon/p</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/p&amp;action=edit" title="Template:Icon/p">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/q" title="Template:Icon/q">Template:Icon/q</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/q&amp;action=edit" title="Template:Icon/q">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/r" title="Template:Icon/r">Template:Icon/r</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/r&amp;action=edit" title="Template:Icon/r">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/s" title="Template:Icon/s">Template:Icon/s</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/s&amp;action=edit" title="Template:Icon/s">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/t" title="Template:Icon/t">Template:Icon/t</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/t&amp;action=edit" title="Template:Icon/t">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/xyz" title="Template:Icon/xyz">Template:Icon/xyz</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/xyz&amp;action=edit" title="Template:Icon/xyz">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/y" title="Template:Icon/y">Template:Icon/y</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/y&amp;action=edit" title="Template:Icon/y">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Navbox" title="Template:Navbox">Template:Navbox</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Navbox&amp;action=edit" title="Template:Navbox">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Navboxgroup" title="Template:Navboxgroup">Template:Navboxgroup</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Navboxgroup&amp;action=edit" title="Template:Navboxgroup">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Nowrap" title="Template:Nowrap">Template:Nowrap</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Nowrap&amp;action=edit" title="Template:Nowrap">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Path" title="Template:Path">Template:Path</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Path&amp;action=edit" title="Template:Path">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Plainlist" title="Template:Plainlist">Template:Plainlist</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Plainlist&amp;action=edit" title="Template:Plainlist">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Realm_navbox" title="Template:Realm navbox">Template:Realm navbox</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Realm_navbox&amp;action=edit" title="Template:Realm navbox">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Red" title="Template:Red">Template:Red</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Red&amp;action=edit" title="Template:Red">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Ruby" title="Template:Ruby">Template:Ruby</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Ruby&amp;action=edit" title="Template:Ruby">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:SVersion" title="Template:SVersion">Template:SVersion</a>（<a href="https://www.eu4cn.com/index.php?title=Template:SVersion&amp;action=edit" title="Template:SVersion">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:See_also" title="Template:See also">Template:See also</a>（<a href="https://www.eu4cn.com/index.php?title=Template:See_also&amp;action=edit" title="Template:See also">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Version" title="Template:Version">Template:Version</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Version&amp;action=edit" title="Template:Version">查看源代码</a>）（受保护）</li></ul></div><p id="mw-returnto">返回<a href="https://www.eu4cn.com/wiki/顾问" title="顾问">顾问</a>。</p>
+</div>						</div>
+				</div>
+				<footer>
+				<div class="liberty-footer">
+										<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>					<div class="bottom-ads mobile-ab">
+						<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+						<!-- 移动端底部 -->
+						<ins class="adsbygoogle mobile-ab"
+						     style="display:block"
+						     data-ad-client="ca-pub-1612414434963106"
+						     data-ad-slot="3303553671"
+						     data-ad-format="auto"
+						     data-full-width-responsive="true"></ins>
+						<script>
+						     (adsbygoogle = window.adsbygoogle || []).push({});
+						</script>
+					</div>
+								<ul class="footer-places">
+									<li class="footer-places-privacy">
+						<a href="https://www.eu4cn.com/wiki/欧陆风云4百科:隐私政策">隐私政策</a>					</li>
+									<li class="footer-places-about">
+						<a href="https://www.eu4cn.com/wiki/欧陆风云4百科:关于">关于欧陆风云4百科</a>					</li>
+									<li class="footer-places-disclaimer">
+						<a href="https://www.eu4cn.com/wiki/欧陆风云4百科:免责声明">免责声明</a>					</li>
+							</ul>
+					<ul class="footer-icons">
+									<li class="footer-copyrightico">
+						<a href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="https://www.eu4cn.com/resources/assets/licenses/cc-by-nc-sa.png" alt="知识共享署名-非商业性使用-相同方式共享" width="88" height="31" loading="lazy"/></a>					</li>
+										<li class="footer-poweredbyico">
+						<a href="https://www.mediawiki.org/"><img src="https://www.eu4cn.com/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"/></a><a href="https://www.eu4cn.com/"><img src="https://www.eu4cn.com/images/footerlogo.png" width="88" height="31" loading="lazy"/></a>					</li>
+								</ul>
+						</div>
+				</footer>
+			</div>
+		</div>
+		</section>
+				<div class="modal fade login-modal" id="login-modal" tabindex="-1"
+			 role="dialog" aria-labelledby="login-modalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-sm" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<h4 class="modal-title">登录</h4>
+					</div>
+					<div class="modal-body">
+						<div id="modal-login-alert" class="alert alert-hidden alert-danger" role="alert">
+						</div>
+						<form id="modal-loginform" name="userlogin" class="modal-loginform"
+							  method="post">
+							<input class="loginText form-control" id="wpName1" tabindex="1"
+								   placeholder="请输入您的用户名" value="" name="lgname">
+							<label for="inputPassword" class="sr-only">密码</label>
+							<input class="loginPassword form-control" id="wpPassword1" tabindex="2"
+								   placeholder="请输入您的密码" type="password" name="lgpassword">
+							<div class="modal-checkbox">
+								<input name="lgremember" type="checkbox" value="1" id="lgremember" tabindex="3">
+								<label for="lgremember">记住登录</label>
+							</div>
+							<input class="btn btn-success btn-block" type="submit" value="登录" tabindex="4">
+							<a href="https://www.eu4cn.com/index.php?title=Special:%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95&amp;type=signup&amp;returnto=%E9%A1%BE%E9%97%AE" class="btn btn-primary btn-block" title="Special:用户登录" tabindex="5" type="submit">加入欧陆风云4百科</a>							<a href="https://www.eu4cn.com/wiki/Special:重置密码" title="Special:重置密码">忘记密码？</a>                            <br>
+							<a href="https://www.eu4cn.com/wiki/Special:用户登录" title="Special:用户登录">其他方式登录</a>							<input type="hidden" name="action" value="login" />
+							<input type="hidden" name="format" value="json" />
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">⧼liberty-btn-close⧽</button>
+						<button type="button" class="btn btn-primary">⧼liberty-btn-save-changes⧽</button>
+					</div>
+				</div>
+			</div>
+		</div>
+			</body>
+<!-- Mirrored from www.eu4cn.com/index.php?title=%E9%A1%BE%E9%97%AE&action=edit by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 May 2024 12:52:53 GMT -->
+</html>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?8b9cdb5f260cf613f39a508fbf9dd707";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.004","walltime":"0.006","ppvisitednodes":{"value":7,"limit":1000000},"postexpandincludesize":{"value":18,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":100},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20240506083157","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":1937});});</script>
+</body>
+</html>

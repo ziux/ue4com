@@ -1,0 +1,1439 @@
+ <!DOCTYPE html>
+<html class="client-nojs" lang="zh" dir="ltr">
+
+<!-- Mirrored from www.eu4cn.com/index.php?title=%E7%BB%9F%E6%B2%BB%E8%80%85&action=edit by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 May 2024 11:16:47 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>查看“统治者”的源代码 - 欧陆风云4百科，人人可以编辑的欧陆风云4中文百科全书</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"zh","wgMonthNames":["","1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"],"wgRequestId":"87a845553cef62211dcadfb4","wgCSPNonce":false,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"统治者","wgTitle":"统治者","wgCurRevisionId":102358,"wgRevisionId":0,"wgArticleId":1184,"wgIsArticle":false,"wgIsRedirect":false,"wgAction":"edit","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageContentLanguage":"zh","wgPageContentModel":"wikitext","wgRelevantPageName":"统治者","wgRelevantArticleId":1184,"wgUserVariant":"zh","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgCargoDefaultQueryLimit":100,"wgCargoMapClusteringMinimum":80,"wgCargoMonthNames":["1月",
+"2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"],"wgCargoMonthNamesShort":["1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"],"wgCargoWeekDays":["星期日","星期一","星期二","星期三","星期四","星期五","星期六"],"wgCargoWeekDaysShort":["日","一","二","三","四","五","六"],"wgPageFormsTargetName":null,"wgPageFormsAutocompleteValues":[],"wgPageFormsAutocompleteOnAllChars":false,"wgPageFormsFieldProperties":[],"wgPageFormsCargoFields":[],"wgPageFormsDependentFields":[],"wgPageFormsCalendarValues":[],"wgPageFormsCalendarParams":[],"wgPageFormsCalendarHTML":null,"wgPageFormsGridValues":[],"wgPageFormsGridParams":[],"wgPageFormsContLangYes":null,"wgPageFormsContLangNo":null,"wgPageFormsContLangMonths":[],"wgPageFormsHeightForMinimizingInstances":800,"wgPageFormsShowOnSelect":[],"wgPageFormsScriptPath":"/extensions/PageForms","edgValues":null,"wgPageFormsEDSettings":null,"wgAmericanDates":false,
+"wgVisualEditor":{"pageLanguageCode":"zh","pageLanguageDir":"ltr","pageVariantFallbacks":["zh-hans","zh-hant","zh-cn","zh-tw","zh-hk","zh-sg","zh-mo","zh-my"]},"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgSmjUseCdn":false,"wgSmjUseChem":true,"wgSmjDisplayMath":[],"wgSmjExtraInlineMath":[],"wgSmjScale":1,"wgSmjEnableMenu":true,"wgSmjDisplayAlign":"left","wgEditSubmitButtonLabelPublish":false};RLSTATE={"site.styles":"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.liberty.styles":"ready","jquery.makeCollapsible.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready"};RLPAGEMODULES=["ext.SimpleMathJax","mediawiki.action.edit.collapsibleFooter","site","mediawiki.page.ready","jquery.makeCollapsible","ext.HighlightjsIntegration","ext.CodeMirror","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.gadget.UserLinkAvatar","ext.gadget.notifyConversion","ext.gadget.notifyAdsense",
+"ext.gadget.Edittools-vector","skins.liberty.bootstrap","skins.liberty.layoutjs","skins.liberty.liverc","skins.liberty.loginjs"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});});});</script>
+<link rel="stylesheet" href="loadf653.css?lang=zh&amp;modules=ext.visualEditor.desktopArticleTarget.noscript%7Cjquery.makeCollapsible.styles%7Cskins.liberty.styles&amp;only=styles&amp;skin=liberty"/>
+<script async="" src="load7991.php?lang=zh&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=liberty"></script>
+<style>.Liberty .nav-wrapper,
+		.Liberty .nav-wrapper .navbar .form-inline .btn:hover,
+		.Liberty .nav-wrapper .navbar .form-inline .btn:focus,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link.active::before,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link:hover::before,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link:focus::before,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link:active::before,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-footer .label,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .contributioncredits-footer .label,
+		.Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools .tools-btn:hover,
+		.Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools .tools-btn:focus,
+		.Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools .tools-btn:active,
+		.btn-primary,
+		.header-template, .section-template {
+			background-color: #103D8F;
+		}
+
+		.btn-primary,
+		.section-template-border {
+			border-color: #103D8F;
+		}
+
+		.Liberty .nav-wrapper .navbar .form-inline .btn:hover,
+		.Liberty .nav-wrapper .navbar .form-inline .btn:focus {
+			border-color: #002E7D;
+		}
+
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link.active::before,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link:hover::before,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link:focus::before,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link:active::before {
+			border-bottom: 2px solid #103D8F;
+		}
+
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-footer .label:hover,
+		.Liberty .nav-wrapper .navbar .navbar-nav .nav-item .nav-link:hover,
+		.Liberty .nav-wrapper .navbar .navbar-nav .nav-item .nav-link:focus,
+		.dropdown-menu .dropdown-item:hover,
+		.btn-primary:hover,
+		.btn-primary:focus {
+			background-color: #002E7D;
+		}
+
+
+		.Liberty .content-wrapper #liberty-bottombtn,
+		.Liberty .content-wrapper #liberty-bottombtn:hover {
+			background-color: #103D8F;
+		}</style><style>@media (prefers-color-scheme: dark) { body, .Liberty, .dropdown-menu, .dropdown-item, .Liberty .nav-wrapper .navbar .form-inline .btn, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link.active, .Liberty .content-wrapper .liberty-content .liberty-content-main table.wikitable tr > th, .Liberty .content-wrapper .liberty-content .liberty-content-main table.wikitable tr > td, table.mw_metadata th, .Liberty .content-wrapper .liberty-content .liberty-content-main table.infobox th, #preferences fieldset:not(.prefsection), #preferences div.mw-prefs-buttons, .navbox, .navbox-subgroup, .navbox > tbody > tr:nth-child(even) > .navbox-list, .Liberty .nav-wrapper .navbar .form-inline .form-control {
+			background-color: #000;
+			color: #DDD;
+		}
+
+		.liberty-content-header, .liberty-footer, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-footer, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item, .Liberty .content-wrapper .liberty-content .liberty-content-header, .Liberty .content-wrapper .liberty-footer, .editOptions, html .wikiEditor-ui-toolbar, #pagehistory li.selected, .mw-datatable td, .Liberty .content-wrapper .liberty-content .liberty-content-main table.wikitable tr > td, table.mw_metadata td, .Liberty .content-wrapper .liberty-content .liberty-content-main table.wikitable, .Liberty .content-wrapper .liberty-content .liberty-content-main table.infobox, #preferences, .navbox-list, .dropdown-divider, .Liberty .content-wrapper .liberty-content .bottom-ads {
+			background-color: #1F2023;
+			color: #DDD;
+		}
+
+		.Liberty .content-wrapper .liberty-content .liberty-content-main, .mw-datatable th, .mw-datatable tr:hover td, textarea, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-content, div.mw-warning-with-logexcerpt, div.mw-lag-warn-high, div.mw-cascadeprotectedwarning, div#mw-protect-cascadeon, .mildtable th {
+			background-color: #000 !important;
+		}
+
+		.Liberty .content-wrapper .liberty-content .liberty-content-header .title>h1, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-content .live-recent-list .recent-item, caption { color: #DDD; }
+
+		.btn-secondary, .Liberty .content-wrapper .liberty-footer .catlinks, .rcpages-btn { background: transparent; color: #DDD; }
+
+
+		#pagehistory li { border: 0; }
+
+		.Liberty .content-wrapper .liberty-footer, .Liberty .content-wrapper .liberty-content .liberty-content-header, .Liberty .content-wrapper .liberty-content .liberty-content-main, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-footer, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-content, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item + .nav-item, .Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools .tools-btn:hover, .Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools .tools-btn:focus, .Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools .tools-btn, .dropdown-menu, .dropdown-divider, .Liberty .content-wrapper .liberty-content .liberty-content-main fieldset, hr, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-content .live-recent-list li, .mw-changeslist-legend, .Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools { border-color: #555; }
+
+		.flow-post, .Liberty .content-wrapper .liberty-content .liberty-content-main .toc .toctext { color: #DDD; }
+		.flow-topic-titlebar { color: #000; }
+		.flow-ui-navigationWidget { color: #FFF; }
+		.Liberty .content-wrapper .liberty-content .liberty-content-main .toccolours, .Liberty .content-wrapper .liberty-content .liberty-content-main .toc ul, .Liberty .content-wrapper .liberty-content .liberty-content-main .toc li { background-color: #000; }
+		.Liberty .content-wrapper .liberty-content .liberty-content-main .toc .toctitle { background-color: #1F2023; } }</style>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="loada6ee.css?lang=zh&amp;modules=site.styles&amp;only=styles&amp;skin=liberty"/>
+<meta name="generator" content="MediaWiki 1.39.3"/>
+<meta name="robots" content="noindex,nofollow"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="description" content="因为以下原因，您没有权限编辑本页：&#10;&#10;&#10;您请求的操作仅限属于该用户组的用户执行：用户&#10;&#10;&#10;您可以查看和复制此页面的源代码。&#10;{{version|1.35}}&#10;{{N|统治者|Ruler}}是EU4中一个国家的领导者。在EU4中，统治者有着0~6点的[[君主点数|行政、外交和军事能力]]，影响国家每月可获得的点数。本文中的统治者可指代[[君主国]]的君主，也指代[[共和国]]和[[神权国]]所选出的国家元首。&#10;&#10;== 统治者能力值 ==&#10;{{SVersion|1.34}}&#10;当统治者或继承人随机产生或通过事件产生时，他们会获得一组能力值，分别对应 {{icon|adm}} 行政、{{icon|dip}} 外交和 {{icon|mil}} 军事。&#10;&#10;通常情况下，每项能力值均由如下公式分别产生：&amp;lt;math&gt;random(0-3) + random(0-3)&amp;lt;/math&gt;。&#10;&#10;AI[[幸运国家]]的统治者或继承人产生时，每项能力值有50%概率额外+1；如果最终得数是7，则取6。公式为：&amp;lt;math&gt;random(0-3) + random(0-3) + random(0-1)&amp;lt;/math&gt;。&#10;&#10;若产生的不是统治者或继承人，由摄政会议执政，则在原公式所得结果的基础上额外-1。公式为：&amp;lt;math&gt;random(0-3) + random(0-3) - 1&amp;lt;/math&gt;。若该国家为AI[[幸运国家]]，则不会额外-1。&#10;&#10;&amp;lt;small&gt;注：random指随机值。&amp;lt;/small&gt;&#10;&#10;{| class=&quot;wikitable&quot;&#10;|-&#10;! 可能的能力值 !! 普通国家/摄政会议（幸运国家） !! 摄政会议 !! 幸运国家&#10;|-&#10;| 0 || 1/16 (2/32) || 3/16 (6/32) || 1/32&#10;|-&#10;| 1 || 1/8 (4/32) || 3/16 (6/32) || 3/32 &#10;|-&#10;| 2 || 3/16 (6/32) || 1/4 (8/32) || 5/32 &#10;|-&#10;| 3 || 1/4 (8/32) || 3/16 (6/32) || 7/32 &#10;|-&#10;| 4 || 3/16 (6/32) || 1/8 (4/32) || 7/32 &#10;|-&#10;| 5 || 1/8 (4/32) || 1/16 (2/32) || 5/32 &#10;|-&#10;| 6 || 1/16 (2/32) || 0 || 1/8 (4/32)&#10;|-&#10;| 期望值 || 3.00 || 2.06 || 3.47&#10;|-&#10;| 标准差 || 1.58 || 1.48 || 1.60&#10;|}&#10;&#10;=== 统治者能力修正 ===&#10;君主能力可被一系列 {{icon|monarch administrative skill|28px}} {{icon|monarch diplomatic skill|28px}} {{icon|monarch military skill|28px}} 修正影响，这些修正仅影响未来产生的统治者或继承人的属性，而不能改变已经存在的属性数值。如果修正后的结果超过最大值6，则一律取6。&#10;&#10;如果开启了DLC {{icon|moh|28px}} 天命，则 {{icon|emperor of china|28px}} [[中国皇帝]]通过天朝改革“重整官制”后，会为未来的君主提供 {{icon|monarch administrative skill|28px}} {{green|+1}} 君主行政能力。&#10;&#10;下列国家理念提供额外的君主能力加成：&#10;&#10;{{icon|adm}} 行政能力：&#039;&#039;（暂无）&#039;&#039;&#10;&#10;{{icon|dip}} 外交能力：&#10;{{Bonus table|monarch diplomatic skill}}&#10;{{icon|mil}} 军事能力：&#10;{{Bonus table|monarch military skill}}&#10;&#10;&#10;下列 {{icon|government}} [[政府#政府改革|政府改革]]提供额外的君主能力加成：&#10;{| class=&quot;mildtable mw-collapsible&quot;&#10;|-&#10;! width=4%| 政体 !! width=4%| 级别 !! width=15%| 名称 !! {{icon|monarch administrative skill|24px}} 行政 !! {{icon|monarch diplomatic skill|24px}} 外交 !! {{icon|monarch military skill|24px}} 军事 !! width=50%| 备注&#10;|-&#10;| {{icon|gov_monarchy}} || 1 || [[君主制#利沃尼亚开明君主制|利沃尼亚开明君主制]] || {{Green|+1}} || {{Green|+1}} || {{Green|+1}} || &#10;|-&#10;| {{icon|gov_republic}} || 1 || [[共和制#威尼斯政府|威尼斯政府]] || {{Green|+1}} || {{Green|+1}} || {{Green|+1}} || &#10;|-&#10;| {{icon|gov_republic}} || 3 || [[共和制#抽签|抽签]] || {{Green|+1}} || {{Green|+1}} || {{Green|+1}} || &#10;|-&#10;| {{icon|gov_republic}} || 13 || [[共和制#终身总统|终身总统]] || {{Green|+1}} ||  || {{Green|+1}} || &#10;|-&#10;| {{icon|gov_theocracy}} || 3 || [[神权制#教育统治者|教育统治者]] || rowspan=&quot;2&quot;| （{{Green|+1}}） || rowspan=&quot;2&quot;| （{{Green|+1}}） || rowspan=&quot;2&quot;| （{{Green|+1}}） || rowspan=&quot;2&quot;| 启用该政府改革时，新统治者即位时将触发为下一任统治者触发[[斯堪的纳维亚事件#flavor_sca.2|教育重心]]事件；在事件中，可以选择为未来的统治者/继承人提供某一方面属性+1&#10;|-&#10;| {{icon|gov_theocracy}} || 3 || [[神权制#天主的国|天主的国]]&#10;|-&#10;| {{icon|gov_monarchy}} || 1 || [[君主制#马穆鲁克政府|马穆鲁克政府]] || {{Green|+2}} ||  ||  || &#10;|-&#10;| {{icon|gov_monarchy}} || 1 || [[君主制#改组奥斯曼政府|改组奥斯曼政府]] || {{Green|+2}} ||  ||  || &#10;|-&#10;| {{icon|gov_monarchy}} || 1 || [[君主制#大帝国|大帝国]] || {{Green|+2}} ||  ||  || &#10;|-&#10;| {{icon|gov_theocracy}} || 3 || [[神权制#天主的国|天主的国]] || {{Green|+2}} ||  ||  || &#10;|-&#10;| {{icon|gov_monarchy}} || 1 || [[君主制#现代化奥斯曼政府|现代化奥斯曼政府]] || {{Green|+1}} ||  ||  || &#10;|-&#10;| {{icon|gov_monarchy}} || 1 || [[君主制#咨议会行政制|咨议会行政制]] || {{Green|+1}} ||  ||  || &#10;|-&#10;| {{icon|gov_monarchy}} || 7 || [[君主制#王室行政|王室行政]] || {{Green|+1}} ||  ||  || &#10;|-&#10;| {{icon|gov_monarchy}} || 1 || [[君主制#奥地利帝国君主制|奥地利帝国君主制]] ||  || {{Green|+2}} ||  || &#10;|-&#10;| {{icon|gov_monarchy}} || 1 || [[君主制#利沃尼亚联省议会|利沃尼亚联省议会]] ||  || {{Green|+2}} ||  || &#10;|-&#10;| {{icon|gov_theocracy}} || 1 || [[神权制#索马里神权制|索马里神权制]] ||  || {{Green|+1}} ||  || &#10;|-&#10;| {{icon|gov_monarchy}} || 1 || [[君主制#普鲁士君主制|普鲁士君主制]] ||  ||  || {{Green|+3}} || &#10;|-&#10;| {{icon|gov_monarchy}} || 1 || [[君主制#利沃尼亚军国君主制|利沃尼亚军国君主制]] ||  ||  || {{Green|+2}} || &#10;|-&#10;| {{icon|gov_tribal}} || 1 || [[部落政府#祖鲁部落|祖鲁部落]] ||  ||  || {{Green|+2}} || &#10;|-&#10;| {{icon|gov_monarchy}} || 1 || [[君主制#大幕府|大幕府]] ||  ||  || {{Green|+1}} || &#10;|-&#10;| {{icon|gov_monarchy}} || rowspan=&quot;3&quot;| 4 || rowspan=&quot;3&quot;| [[通用政府改革#大草原的遗产|大草原的遗产]] || rowspan=&quot;3&quot;|  || rowspan=&quot;3&quot;|  || rowspan=&quot;3&quot;| {{Green|+1}} || rowspan=&quot;3&quot;| &#10;|-&#10;| {{icon|gov_republic}}&#10;|-&#10;| {{icon|gov_theocracy}}&#10;|-&#10;| {{icon|gov_theocracy}} || 1 || [[神权制#贞德姊妹会|贞德姊妹会]] ||  ||  || {{Green|+1}} || &#10;|}&#10;&#10;下列 {{icon|mission}} [[任务]]提供额外的君主能力加成：&#10;&#10;*[[波希米亚任务|波希米亚任务]]可以为当前的君主提供 {{icon|monarch diplomatic skill|28px}} {{green|+1}} 君主外交能力，并提供 {{icon|monarch diplomatic skill|28px}} {{green|+1}} 未来君主外交能力的永久修正&#10;*[[萨伏依任务]]可以为当前和未来的君主提供 {{icon|monarch diplomatic skill|28px}} {{green|+2}} 君主外交能力，并提供一个为期 {{icon|time}} 30年的 {{icon|monarch diplomatic skill|28px}} {{green|+2}} 未来君主外交能力的修正&#10;*[[奥地利任务]]可以为当前和未来的君主提供 {{icon|monarch diplomatic skill|28px}} {{green|+2}} 君主外交能力，并提供一个为期 {{icon|time}} 30年的 {{icon|monarch diplomatic skill|28px}} {{green|+2}} 未来君主外交能力的修正&#10;*[[阿尔巴尼亚任务|阿尔巴尼亚任务]]可以为当前的君主提供 {{icon|monarch military skill|28px}} {{green|+1}} 君主军事能力，并提供 {{icon|monarch military skill|28px}} {{green|+1}} 未来君主军事能力的永久修正&#10;&#10;== 统治者特质 ==&#10;{{SVersion|1.32}}{{main|特质}}&#10;[[File:Ruler_Personality.png|right|thumb|330px|统治者生成一项特质]]&#10;AI国家的统治者会获得AI人格，分为平衡型、资本家、外交家、殖民主义者和军国主义者。人格种类主要取决于AI统治者三项能力值的高低，并会影响其在位时国家的行为。&#10;&#10;{{expansion|rom}}&#10;每个统治者、继承人和统治者配偶都可以获得至多3种特质，当其在位时，这些特质会给国家带来或正面或负面的作用，也会对AI国家的行为产生影响。&#10;&#10;== 君主制 ==&#10;{{SVersion|1.35}}&#10;{{icon|gov_monarchy}} [[君主制]]国家的统治者终身执政，死后王位将由其储君继承。&#10;&#10;=== 王朝 ===&#10;除共和制外，君主制、神权制和部落政体国家的统治者均属于自己的王朝。可由以下方式获得新的王朝：&#10;&#10;* 接受其他国家的王朝&#10;* 篡权叛军&#10;* 事件&#10;* 君主死亡且无继承人时，随机产生新的统治者及其王朝&#10;* 摄政议会期间继承人死亡时，摄政成为新的统治者&#10;&#10;绝大多数君主制、神权制和部落政体国家在游戏开始时，无论是1444年还是其他剧本，都有王朝存在。1444年的波兰是其中一个例外，当时其正处于政权更迭的[[空位期]]。&#10;&#10;==== 同一王朝和王朝传播 ====&#10;不同国家可以属于同一个王朝。例如，开局时，{{flag|FRA}}和 {{flag|PRO}}等国均属于“{{ruby|德 瓦卢瓦|de Valois}}”王朝。所有共享同一王朝的国家间均享受 {{Green|+25}} 双边关系加成。&#10;&#10;传播王朝首先需要[[王室联姻]]，然后才由[[威望]]等许多因素决定。截止目前，王朝传播的机制尚不十分明了，可通过游戏经验自行推测。&#10;&#10;==== 继承王位与联合统治 ====&#10;{{main|联合统治}}&#10;处在同一王朝是[[宣称王位]]的前提条件之一，也是[[继承战争]]和[[继承]]的重要组成部分。当一个基督教君主制国家绝嗣（统治者去世后没有继承人）时，与其同一王朝或有王室联姻关系的国家的统治者可以继承它的王位；联合统治关系也可以通过联合统治战争或特殊事件强制达成。&#10;&#10;=== 王室联姻 ===&#10;{{SVersion|1.35}}&#10;{{hatnote|国家间王室联姻的外交影响，参见[[外交#王室联姻]]}}&#10;{{hatnote|联合统治的形成机理，参见[[联合统治]]}}&#10;[[File:Queen.jpg|right|thumb|330px|与其他国家联姻]]&#10;由君主统治的国家可以彼此建立 {{icon|royal marriage}} 王室联姻。&#10;&#10;处在同一王朝是[[宣称王位]]的前提条件之一，也是[[继承战争]]和[[继承]]的重要组成部分。&#10;&#10;每个联姻关系给予每年0.1的[[正统性]]，但联姻这一行为可能立即降低1~5点的正统。每个王室联姻都会增加 {{Green|5%}} 新继承人产生概率。&#10;&#10;绝大多数君主制可以建立王室联姻；部分拥有特定政府改革的其它政体的国家也可以建立王室联姻。&#10;&#10;===  配偶 ===&#10;{{Expansion|rom}}&#10;王室联姻有几率为统治者带来一位配偶（王后或王夫），配偶属于联姻国的王朝。在诞下继承人时如果没有配偶，则会得到一名来自地方贵族的配偶。配偶会略微提升与联姻国的关系。&#10;&#10;配偶会在指定继承人未成年时代为执政，替代内阁摄政体制。配偶亦有可能在继承人成年或死亡后继续执掌权柄。&#10;&#10;=== 继承人 ===&#10;{{SVersion|1.35}}&#10;每一个君王都要有储君，可以是儿子、女儿或其他亲属。在[[君主制]]国家中，储君拥有其宣称强度（从0到100），宣称强度将决定其即位时的初始[[正统性]]。王储的最低执政年龄是15岁，在那之前将由[[摄政]]代行。&#10;&#10;在没有继承人时，继承人名字处会显示“没有合法继承人”。如果统治者恰在此时丧生，国家将可能：&#10;&#10;* 从有王室联姻的国家获得一位来自该国王朝的君主&#10;* 接受他国主导的[[联合统治]]&#10;* 面对一场[[继承战争]]并受获胜方主导联合统治 &#10;* 获得一个与原君主王朝相同的统治者&#10;* 随机产生一个属于本国脚本中定义的王朝的君主（“一个XXX的贵族继承王位”）&#10;* 被直接[[继承]]&#10;&#10;而最终究竟会发生什么，则由诸多因素决定，包括但不限于：联姻、王朝、宿敌、威望、正统、军事实力、[[发展度]]。&#10;&#10;====名字====&#10;{{Expansion|eld|cos}}&#10;玩家可以为继承人自定义名称，或从脚本中预设的名字中随机选取。&#10;&#10;===={{icon|heir chance|30px}} 继承人几率====&#10;{{SVersion|1.30}}&#10;&#039;&#039;&#039;获得继承人的几率：&#039;&#039;&#039;&amp;lt;br&gt;&#10;&#10;下列修正影响在国家无继承人时，每天能够获得继承人的概率：&#10;&amp;lt;math&gt;\frac{m \cdot a \cdot (1 + b)}{182500}&amp;lt;/math&gt; &amp;lt;br&gt;&#10;&#10;其中：&#10;&#10;* &amp;lt;math&gt;m&amp;lt;/math&gt; 为基础继承人生成值（键值为BASE_HEIR_BIRTH），默认为 120 &#10;&#10;* &amp;lt;math&gt;a&amp;lt;/math&gt; 在当前君主在位满30年后为0.5，否则为1。在第三十年的一月一日此值由1变为0.5。需要注意的是，开局时某些君主并不是在15岁才坐上王位的。&#10;&#10;* &amp;lt;math&gt;b&amp;lt;/math&gt; 是所有 {{icon|heir chance|30px}} 获得继承人几率修正之和&#10;&#039;&#039;&#039;理念和政策：&#039;&#039;&#039;&#10;{{bonus table|heir chance}}&#10;&#039;&#039;&#039;其他修正：&#039;&#039;&#039;&#10;{|&#10;| align=right | {{green|+100%}} || 国教为[[伊斯兰教]]&#10;|-&#10;| align=right | {{green|+50%}} || 君主拥有 {{icon|fertile}} 枝繁叶茂[[特质]]&#10;|-&#10;| align=right | {{green|+33%}} || {{icon|dyes}} 染料贸易奖励&#10;|-&#10;| align=right | {{green|+25%}} || [[幸运国家]]（AI控制）&#10;|-&#10;| align=right | {{green|+5%}} || 每有一个 {{icon|royal marriage}} 王室联姻&#10;|-&#10;| align=right | {{red|-25%}} || 君主拥有 {{icon|infertile}} 枯枝败叶[[特质]]&#10;|}&#10;&#10;以及某些事件也能影响 {{icon|heir chance|28px}} 继承人几率。&#10;&#10;下表举例说明部分情况下获得继承人的概率：&#10;&#10;{| class=&quot;wikitable&quot;&#10;! 情形 !! &amp;lt;math&gt;a \cdot (1 + b)&amp;lt;/math&gt; !! 在一年内获得继承人的概率&#10;|-&#10;| 枯枝败叶并且在位超过30年 || 0.375 || 8.61%&#10;|-&#10;| 在位超过30年 || 0.5 || 11.31%&#10;|-&#10;| 枯枝败叶 || 0.75 || 16.48%&#10;|-&#10;| 正常情况 || 1 || 21.34%&#10;|-&#10;| 拥有4个王室联姻 || 1.2 || 25.03%&#10;|-&#10;| 拥有染料的贸易奖励|| 1.33 || 27.33%&#10;|-&#10;| 枝繁叶茂 || 1.5 || 30.24%&#10;|-&#10;| 伊斯兰教 || 2 || 38.14%&#10;|-&#10;| 枝繁叶茂、伊斯兰教、拥有染料的贸易奖励 || 2.83 || 49.33%&#10;|}&#10;&#10;==== 继承人宣称 ====&#10;&#039;&#039;&#039;继承人宣称&#039;&#039;&#039;表示继承人在民众眼中的正统性，数值从0到100，在继承人出现时生成。一旦该继承人即位，其初始正统性就将等于其继承人宣称的数值。宣称低于33.3时，为弱宣称；在33.3-66.6之间为中等宣称；高于66.6为强宣称。继承人宣称为中或弱时，将增大篡权者叛军的出现几率。其计算公式相当之随机，但赋值很高，使得大多数自然产生的继承人均为强宣称。DLC {{icon|lev}} 利维坦开启时，刚刚产生的0岁继承人宣称总为中。&#10;&#10;继承人宣称会随时间推移而不断变化。在多数情况下，继承人宣称会不断提高，每个月提升的数值由基本值和 {{icon|Prestige}} 威望带来的修正组成。然而 {{Flag|勃艮第}}处于[[勃艮第继承危机]]下时，继承人不会提高。[[议会]]议案“支持当政王朝”和一些事件也能改变继承人宣称。&#10;&#10;继承人宣称的月度变化如下：&#10;*基础增长：{{Green|+0.20}}&#10;*威望：随威望数值线性变化，-100威望时{{Red|-0.05}}，+100威望时{{Green|+0.05}}&#10;*腐败度：随腐败度数值线性变化，100腐败度时{{Green|+0.03}}&#10;&#10;====引荐新继承人====&#10;{{expansion|emp}}&#10;如果一个王朝没有继承人，可以花费 {{icon|legitimacy}} {{red|−20}} [[正统性]]和 {{icon|Prestige}} {{red|−20}} [[威望]]引荐新继承人，只要国家符合以下条件：&#10;&#10;*无摄政议会&#10;*未处于战争&#10;*威望为正&#10;*有至少90正统性&#10;*不是拥有固定王朝&#10;&#10;通过这种方式引荐的继承人将来自于不同于国家统治王朝的本地王朝，并拥有弱宣称。&#10;&#10;而且，引荐新继承人将给予所有与其具有王室联姻的国家一个为期20年的“[[Casus_belli#Restoration_of_Union|重建联合统治]]”的宣战理由。具有重建联合统治宣战理由的盟友对你的外交态度会变成 {{icon|domineering attitude}} 渴望支配，倾向于撕毁盟约。&#10;&#10;====花费人情安排继承人====&#10;{{expansion|lev}}&#10;可以花费 90 [[人情]]为一个没有继承人的国家指定一个来自本国王朝的继承人；两国必须都是君主制国家代理国和目标国都必须是君主制国家。这一外交行动会对所有同一宗教国家产生20侵略扩张。难度设置为“极难”时，此外交行动将被禁用。&#10;&#10;==== 废黜继承人 ====&#10;{{Expansion|rom}}&#10;国家可以花费 {{red|-50}} {{icon|Prestige}} 威望剥夺继承人的继承权。之后国家将无任何合法继承人，且无法召回已被废黜的储君。&#10;&#10;=== 摄政 ===&#10;{{SVersion|1.33}}{{see also|阶层摄政事件|特殊摄政事件|延长摄政事件}}&#10;当某国的君主尚未成年（多数时候是因为在其未成年时前代君主便已过世），国家将由“摄政议会”统治。摄政议会具有随机生成的君主能力，根据前文所述的公式，其能力数值期望较低；其统治将持续到君主15岁成年&amp;lt;ref&gt;见于 {{path|defines}}：AGE_OF_ADULTHOOD = 15，&amp;lt;/ref&gt;。如果DLC {{icon|lev}} 利维坦启用，摄政议会将由一位明确的摄政领导，将从最有影响力的[[阶层]]中选出。摄政期间，非[[纳瓦特尔]]宗教的国家将不能发动战争（但依然可以被宣战）。此外，在摄政期间每年 {{icon|legitimacy}} {{red|-2.00}} [[正统性]]&amp;lt;ref&gt;见于 {{path|common/static_modifiers/00_static_modifiers.txt}} ([[Static_modifiers#Regency council]])。&amp;lt;/ref&gt;。&#10;&#10;当处于摄政统治时，获得如下修正：&#10;{{#lsth:Static modifiers|摄政议会}}&#10;&#10;{{main|政变企图}}&#10;在摄政议会统治期间，灾难“政变企图”可能发生。&#10;&#10;{{Expansion|rom}}&#10;继承人尚未成年时，如果前任君主有配偶，则由配偶代继承人摄政，直至君主成年，不会产生随机的摄政议会。配偶摄政时，允许对其它国家宣战；配偶的君主特质此时也会对国家产生效果。&#10;&#10;{{expansion|lev}}&#10;当继承人即将成年、配偶摄政或摄政议会即将结束时，可以选择延长摄政期。每次花费 {{Red|-10}} 正统性，并将摄政期延长 5 年。&#10;&#10;==== 摄政期间摄政或继承人死亡 ====&#10;配偶摄政期间，当摄政配偶死亡时，随机产生一个阶层摄政议会代继承人摄政。&#10;&#10;配偶摄政期间，当继承人死亡时，由配偶在一天后成为正式统治者，正统性固定为75。&#10;&#10;阶层摄政议会摄政期间，当继承人死亡时，随机产生一个具有本国王朝的18岁君主，属性为0/0/0，正统性维持为当前数值。&#10;&#10;=== 空位期 ===&#10;空位期实质上是无政府状态，没有领导者在控制国家。君主去世时没有子嗣便有可能发生这种情况。在通常情况下，空位期不会在正常游戏流程中出现，因为君主无嗣死亡或摄政期间继承人死亡时，必定会产生新的君主。空位期通常不会持续很长，平均大概是一年，尽管理论上可以持续长得多的时间。空位期结束时，一个新的君主将会产生，产生的机制和正常的王位交替相同，就如同旧君主刚刚死去一样，来自联姻王室的贵族或者当地贵族将成为新君主。&#10;&#10;开局时，根据历史事实，{{flag|POL}}、{{flag|HUN}}、{{flag|CRO}}和 {{flag|BOH}}处于空位期。波兰、匈牙利、克罗地亚的共同君主刚刚战死于瓦尔纳之战；波希米亚则未对遗腹子拉迪斯劳斯的继承权达成一致。对于这些空位期都有特定的事件，为其产生新的君主和继承人。在这些事件发生之前，仍可能根据一般流程，产生来自外国王室或本地贵族的新统治者。&#10;&#10;1444年开局时部分国家，如所有1级政府改革为“氏族议会”的国家（包括西伯利亚、北美洲和南美洲的大多数土著）在选择国家时都显示为空位期，但它们在游戏开始后会立刻获得一位新的统治者。&#10;&#10;=== 退位 ===&#10;君主可以选择退居二线，让新君接掌大权。注意这视同于君主死亡，因此并不能避免应有的稳定度损失。&#10;&#10;君主需满足下列二者之一方可退位：&#10;** 统治超过 &#039;&#039;&#039;20&#039;&#039;&#039; 年&#10;** 年龄超过 &#039;&#039;&#039;60&#039;&#039;&#039; 岁&#10;&#10;退位将花费：&#10;** {{red|-20}} {{icon|Legitimacy}} 正统性或 {{red|-20}} {{icon|Horde Unity}} {{DLC-only|游牧团结}}&#10;** {{red|-50}} {{icon|Prestige}} 威望&#10;&#10;此外，还将受到通常君主死亡时的 -1 稳定度惩罚。&#10;&#10;=== 死亡 ===&#10;当君主死亡时，国家将遭受 {{red|-1}} 稳定度惩罚；如果君主作为 {{icon|ruler general}} 将领在交战或围城之中死亡，则 {{red|-2}}。继承人作为 {{icon|heir general}} 将领在战斗中死亡也会导致 {{red|-1}} 稳定度，而正常死亡则无任何惩罚，但仍然有一些事件会导致继承人死亡并降低稳定度。&#10;&#10;== 共和制 ==&#10;{{SVersion|1.35}}&#10;在 {{icon|gov_republic}} [[共和国]]中，国柄通常按照一定的选举周期产生轮换。视具体的政府改革不同，选举周期或长或短，也可能不进行选举、统治者终身执政，直至其死亡后选取新统治者。不论是否终身执政，共和制国家的统治者均没有王朝。共和国没有继承人机制，并以[[共和传统]]替代[[正统性]]。共和国通常不能够[[联姻]]，仅有特定的共和制政府改革允许联姻。&#10;&#10;以下仅介绍一般情况下共和制国家通用的选举机制；对于特殊政府改革采用的选举机制，详见本页面后续章节。&#10;&#10;=== 选举 ===&#10;{{see also|选举事件}}&#10;选举周期取决于共和制政府类型。最常见的选举周期为4年；具体可查看[[共和制]]页面中的1级政府改革列表。下一次选举的时间显示于当前统治者的下方。统治者在任期内死亡时，也会重新进行选举（共和传统低于20的总统独裁除外）。&#10;&#10;某些政府改革可以改变选举周期：&#10;{| class=&quot;mildtable&quot;&#10;|-&#10;! {{icon|length of election term}} 选举周期 !! 级别 !! 政府改革&#10;|-&#10;| rowspan=&quot;3&quot;| 周期 &#039;&#039;&#039;-1&#039;&#039;&#039; 年 || 3 || [[共和制#频繁选举|频繁选举]]&#10;|-&#10;| 9 || [[共和制#政治素人|政治素人]]&#10;|-&#10;| 9 || [[共和制#革命议会|革命议会]]&#10;|-&#10;| rowspan=&quot;3&quot;| 周期 &#039;&#039;&#039;+1&#039;&#039;&#039; 年 || 3 || [[共和制#巩固权力|巩固权力]]&#10;|-&#10;| 9 || [[共和制#总统集权|总统集权]]&#10;|}&#10;&#10;选举时，可从3位候选人中选择其一，3位候选人的君主能力是固定的：行政、外交、军事有一项为4，其余两项为1，分别为4/1/1、1/4/1和1/1/4。也可以选择花费共和传统使当前领导人连任。&#10;&#10;启用政府改革“[[共和制#意大利执政团|意大利执政团]]”或“[[共和制#政治王朝|政治王朝]]”时，将额外生成一个与现任统治者同一姓氏的候选人。启用意大利执政团时，该候选人的技能为随机生成；（仅）启用政治王朝时，该候选人的技能在随机生成结果上每项{{Red|-2}}。选举该候选人将花费等于任期长度{{Red|1}}倍的共和传统。&#10;&#10;启用政府改革“[[共和制#重选权正式化|重选权正式化]]”或“[[共和制#立法议会|立法议会]]”时，可通过决议重新选举。这两个政府改革将解锁决议“[[总决议列表#force_reelection|强制重选]]”，允许在选举周期内花费{{Red|5}}共和传统，立即触发事件进行选举。在强制重选中，选择现任统治者将额外花费{{Red|50%}}共和传统。&#10;&#10;====连任====&#10;如果选举不是由前[[统治者]]去世触发的，则统治者可以连任。这将使当前统治者继续留任一个任期，三项能力值各提升{{green|1}}（不超过6）；国家还将随机获得某一种类 {{icon|all power}} {{green|50}}点数。&#10;&#10;连任并不是无限制的——为了平衡能力值增加带来的增益，连任将消耗 {{icon|republican tradition}} [[共和传统]]。 &#10;&#10;连任的 {{icon|republican tradition}} 共和传统消耗与选举周期的长度有关。周期每有一年，则消耗 {{icon|republican tradition}} {{red|2.5}}共和传统（例如，4年的选举周期连任消耗为 {{icon|republican tradition}} {{red|10}}共和传统，8年的选举周期连任消耗为{{red|20}})。&#10;&#10;如果统治者在由“强制重选”决议中引发的选举中连任，那么重新选举他们的成本将增加{{red|50%}}。&#10;&#10;在低于 {{icon|republican tradition}} {{red|20}}共和传统的情况下连任统治者将使国家变成[[共和制#总统独裁|独裁政权]]。如果独裁者去世，而 {{icon|republican tradition}} 共和传统仍低于{{yellow|50}}，国家将变为[[君主制]]。一些特殊的共和制[[共和制事件#暴君的崛起|不能变为独裁政权]]。&#10;&#10;以下政府改革可以影响连任花费：&#10;{| class=&quot;mildtable&quot;&#10;|-&#10;! {{icon|reelection cost}} !! 政府改革 !! 级别&#10;|-&#10;| {{Green|-15%}} || 制宪会议 || 3&#10;|-&#10;| {{Green|-10%}} || 整合权力 || 9&#10;|-&#10;| {{Green|-10%}} || 增强共和价值观 || 13&#10;|}&#10;&#10;====选举额外效果====&#10;一些政府改革有相应的特殊政府机制，使选举附加额外效果。&#10;&#10;*连任降低{{yellow|10}}阶层影响力：[[共和制#巩固权力|巩固权力]]&#10;*选举时增加&#039;&#039;&#039;20&#039;&#039;&#039;[[派系]]影响力：[[共和制#财阀政治|财阀政治]]、[[共和制#威尼斯政府|威尼斯政府]]、[[共和制#卫彻共和国|卫彻共和国]]、[[共和制#贸易城市|贸易城市]]、[[共和制#海盗共和国|海盗共和国]]、[[共和制#贸易公司|贸易公司]]、[[共和制#国民议会|国民议会]]&#10;*选举提高某阶层{{Green|10}}忠诚度：[[共和制#议事会威权|议事会威权]]&#10;*统治者不可连任超过一届，但在位期间给予额外奖励：[[共和制#国民议会|国民议会]]&#10;*连任增加专制度：[[共和制#整合权力|整合权力]]、[[共和制#政治素人|政治素人]]&#10;&#10;=== 死亡 ===&#10;当共和国领导人于在位时死亡，会立即举行一次选举以选出新领导人。此死亡将&#039;&#039;&#039;不会&#039;&#039;&#039;导致 {{red|-1}} {{icon|stability}} 稳定度惩罚，除非该领导人死于交战或围城中。&#10;&#10;== 神权制 ==&#10;{{SVersion|1.35}}&#10;神权国由其宗教领袖统治，采取[[政府#奉献度|奉献度]]机制而非[[正统性]]。神权制国家不可与其他国家[[联姻]]。&#10;&#10;=== 继承人 ===&#10;{{see also|神权制事件}}&#10;通常情况下，神权国的继承人通过事件“[[神权制事件#theocracy.1|$COUNTRY$需要继承人]]”选择。神权国继承人的能力属性在选择前是隐藏的，一般有来自不同阶层或身份的4-6个继承人可供选择，年纪一般大于40岁；不同的选择一般会影响阶层的忠诚度等。与此同时，神权国也不会出现摄政会议统治的情况，因为它们永远有继承人且继承人都是足以亲政的成年人。神权国统治者[[君主能力]]数值的生成方式与君主制国家相同。&#10;&#10;启用第9层的政府改革“[[神权制#追寻真理|追寻真理]]”时，备选继承人的能力数值将变为事先可见。&#10;&#10;不同于君主制国家，神权制国家不能废黜继承人。&#10;&#10;=== 死亡 ===&#10;神权国统治者只有在野战或攻城时死亡才会造成 {{red|-1}} {{icon|stability}} 稳定度惩罚。&#10;&#10;==部落政府==&#10;与君主制相比，{{icon|gov_tribal}} 部落政府的统治者机制在设计和实际效果方面基本没有区别。&#10;&#10;===草原游牧===&#10;草原游牧和大蒙古国与君主制也基本类似，但通常情况下不会进入摄政议会统治。当其君主死亡时，如果继承人未成年，则会通过“[[部落继承事件#tribal_succession.1|部落继承危机]]”随机产生一个新君主，移除当前的继承人和摄政。&#10;&#10;==原住民议会==&#10;{{icon|gov_native}} [[原住民议会]]的新统治者在原统治者死亡后随机生成，且没有配偶和继承人。原住民国家不使用 {{icon|legitimacy}} 正统性等政府强度数值。&#10;&#10;&#10;==统治者特殊继任机制==&#10;许多政府改革拥有特殊机制，其产生统治者的方式与上述的通用机制不同。现分别列于如下章节。&#10;&#10;===通用继任机制===&#10;此章节列出的统治者产生机制由至少2种以上政府改革所共用。&#10;&#10;====陆军/海军将领成为统治者====&#10;&#10;启用以下政府改革后，当前统治者死亡时，一名 {{icon|General}} 陆军将领或 {{icon|Admiral}} 海军将领成为统治者。&amp;lt;br&gt;&#10;&#10;使用该机制的政府改革如下：&#10;&#10;{| class=&quot;mildtable&quot;&#10;|+ {{icon|General}} 陆军将领成为统治者&#10;|-&#10;! 政体 !! 级别 !! 名称&#10;|-&#10;| {{icon|gov_monarchy}} || 1 || [[君主制#利沃尼亚佣兵国|利沃尼亚佣兵国]]&#10;|-&#10;| {{icon|gov_monarchy}} || 1 || [[君主制#吉利支丹太阳之地|吉利支丹太阳之地]]&#10;|-&#10;| {{icon|gov_monarchy}} || 10 || rowspan=&quot;2&quot;| [[通用政府改革#军人选举|军人选举]]&#10;|-&#10;| {{icon|gov_republic}} || 11&#10;|-&#10;| {{icon|gov_republic}} || 1 || [[共和制#军事独裁|军事独裁]]&#10;|-&#10;| {{icon|gov_republic}} || 1 || [[共和制#军政府|军政府]]&#10;|-&#10;| {{icon|gov_republic}} || 11 || [[共和制#军事专政|军事专政]]&#10;|-&#10;| {{icon|gov_theocracy}} || 10 || [[神权制#世袭制修会|世袭制修会]]&#10;|}&#10;&#10;&#10;{| class=&quot;mildtable&quot;&#10;|+ {{icon|Admiral}} 海军将领成为统治者&#10;|-&#10;! 政体 !! 级别 !! 名称&#10;|-&#10;| {{icon|gov_monarchy}} || 1 || [[君主制#利沃尼亚海军政府|利沃尼亚海军政府]]&#10;|-&#10;| {{icon|gov_monarchy}} || 1 || [[君主制#利沃尼亚海权国|利沃尼亚海权国]]&#10;|-&#10;| {{icon|gov_republic}} || 6 || [[共和制#海盗之王|海盗之王]]&#10;|-&#10;| {{icon|gov_republic}} || 11 || [[共和制#海军上将理事会|海军上将理事会]]&#10;|-&#10;| {{icon|gov_theocracy}} || 10 || [[神权制#海洋之王|海洋之王]]&#10;|}&#10;&#10;&#10;新统治者的君主点数基于将领的 {{icon|Land leader fire}} {{icon|Naval leader fire}} 火力、{{icon|Land leader shock}} {{icon|Naval leader shock}} 冲击和 {{icon|Land leader maneuver}} {{icon|Naval leader maneuver}} 机动三项点数的总和生成，符合下方所列公式：&amp;lt;br&gt;  &amp;lt;math&gt;\left\lfloor\frac{(random(0-3) + random(0-3))\cdot(9 + 火力 + 冲击 + 机动)}{18}\right\rfloor&amp;lt;/math&gt;&amp;lt;br&gt;&#10;当火力、冲击和机动点数的总和大于 18 时，取该值为 18。根据公式，点数总和为 0 的将领也有概率生成能力最高为 3/3/3 的统治者。&#10;&#10;{| class=&quot;mildtable&quot;&#10;|-&#10;!总点数 !! 数学期望 !! 标准差&#10;|-&#10;| 0||1.75||0.82&#10;|-&#10;|1||1.75||0.82&#10;|-&#10;|2||1.81||0.94&#10;|-&#10;|3||2.00||1.06&#10;|-&#10;|4||2.12||1.21&#10;|-&#10;|5||2.37||1.21&#10;|-&#10;|6||2.62|| 1.21&#10;|-&#10;|7||2.81 ||1.33&#10;|-&#10;|8||3.00 || 1.58&#10;|-&#10;|9||3.00|| 1.58&#10;|-&#10;|10||3.00 ||1.58&#10;|-&#10;|11||3.12 || 1.76&#10;|-&#10;|12||3.31|| 1.89&#10;|-&#10;|13||3.56 ||1.90&#10;|-&#10;| 14 ||3.75||1.78&#10;|-&#10;|15||3.75 || 1.78&#10;|-&#10;|16||3.93|| 1.95&#10;|-&#10;|17||3.93 ||1.95&#10;|-&#10;|18||4.31 || 1.82&#10;|}&#10;&#10;{| class=&quot;mildtable&quot;&#10;!君主能力值总和不小于X的概率!!将领总点数=0!!将领总点数=1!!将领总点数=2!!将领总点数=3!!将领总点数=4!!将领总点数=5!!将领总点数=6!!将领总点数=7!!将领总点数=8!!将领总点数=9!! 将领总点数=10!!将领总点数=11!!将领总点数=12 !! 将领总点数=13!!将领总点数=14!!将领总点数=15!!将领总点数=16 !! 将领总点数=17!!将领总点数=18&#10;|-&#10;! 0&#10;|1.||1.||1.||1.||1.||1.||1.||1.||1.||1.||1.||1.||1.||1.||1.||1.||1.||1.||1.&#10;|-&#10;! 1&#10;| 0.993|| 0.993|| 0.993|| 0.993||0.993||0.993||0.993||0.993||0.993||1.||1.||1.||1.||1.||1.||1.||1.||1.||1.&#10;|-&#10;! 2&#10;|0.947 ||0.947 ||0.947 ||0.974 ||0.974||0.974|| 0.974||0.974||0.974||0.998||0.998||0.998||0.998||0.998||0.998||0.998||0.998||0.998||0.998&#10;|-&#10;! 3&#10;| 0.807|| 0.807|| 0.82||0.908||0.908||0.927||0.927||0.927 ||0.927||0.993||0.993||0.993||0.993||0.993||0.993||0.993||0.993||0.993||0.995&#10;|-&#10;! 4&#10;|0.563||0.563||0.624||0.796||0.796||0.835||0.848||0.848||0.848||0.979|| 0.979||0.979||0.979||0.979||0.979||0.982||0.982||0.982||0.991&#10;|-&#10;! 5&#10;|0.297||0.297||0.404||0.609||0.609||0.701 || 0.734 || 0.734 || 0.734|| 0.95||0.95||0.95 ||0.95 ||0.95 ||0.952||0.964||0.964||0.964||0.979&#10;|-&#10;! 6&#10;|0.111||0.111||0.211||0.413||0.413|| 0.532 || 0.594 || 0.594 || 0.594 || 0.897 ||0.897 ||0.897 ||0.897 ||0.899 ||0.908 ||0.937 ||0.937 ||0.937 ||0.959&#10;|-&#10;! 7&#10;|0.027||0.027||0.092||0.222||0.222||0.349||0.444||0.444||0.444||0.815||0.815||0.815||0.815||0.821||0.843||0.89||0.89 || 0.89||0.936&#10;|-&#10;! 8&#10;| 0.004||0.004||0.026||0.102||0.102||0.196||0.303||0.303||0.303||0.704||0.704 || 0.704||0.704||0.719||0.763||0.824||0.824||0.824||0.888&#10;|-&#10;! 9&#10;|0.||0.||0.007||0.034||0.034||0.087||0.188||0.188||0.188||0.571||0.571||0.571||0.571||0.6||0.662||0.738||0.738|| 0.738 || 0.823&#10;|-&#10;! 10&#10;|0.||0.||0.||0.01||0.01 || 0.025 || 0.103 || 0.103 || 0.103 || 0.429 || 0.429 || 0.429 || 0.429 || 0.475 || 0.547||0.651||0.651||0.651||0.767&#10;|-&#10;! 11&#10;| 0. || 0. || 0. || 0.002 || 0.002 || 0.004 || 0.05||0.05||0.05|| 0.296|| 0.296|| 0.296|| 0.296||0.352||0.433||0.536||0.536||0.536||0.653&#10;|-&#10;! 12&#10;| 0. || 0. || 0. || 0. || 0. ||0. || 0.021 || 0.021 || 0.021 || 0.185 || 0.185||0.185||0.185|| 0.246||0.319||0.422||0.422||0.422||0.547&#10;|-&#10;! 13&#10;|0.||0.||0.||0.|| 0.||0.||0.007||0.007||0.007||0.103||0.103||0.103||0.103||0.158|| 0.231||0.301||0.301 ||0.301||0.466&#10;|-&#10;! 14&#10;|0.||0.||0. ||0. || 0.||0. ||0.002||0.002||0.002||0.05|| 0.05|| 0.05||0.05||0.092||0.152||0.213 ||0.213||0.213||0.308&#10;|-&#10;! 15&#10;|0.||0.||0.||0. ||0.||0.||0.||0.|| 0.||0.021||0.021|| 0.021||0.021||0.053||0.079 ||0.132||0.132||0.132||0.237&#10;|-&#10;! 16&#10;| 0.||0.||0.||0.||0.||0.||0.|| 0.|| 0.||0.007||0.007||0.007 ||0.007||0.026 ||0.046|| 0.073||0.073||0.073||0.158&#10;|-&#10;! 17&#10;|0.||0.||0.||0. || 0.||0. ||0.|| 0.||0.||0.002 ||0.002||0.002||0.002 ||0.007||0.026||0.026||0.026||0.026||0.053&#10;|-&#10;! 18&#10;|0.||0.||0.||0.||0.||0.||0.||0.||0. ||0.||0.||0.||0. ||0.007||0.007||0.007||0.007 ||0.007||0.053&#10;|}&#10;&#10;====联省议会====&#10;下列政府改革的统治者均由选举产生，其任期或为4年，或为终身，由位于政府界面的一个滑条决定。这一机制被称为“联省议会”机制。此外，这类机制也称为“尼德兰选举机制”&amp;lt;!-- （得名自最早采用这一机制的[[共和制#尼德兰共和国|尼德兰共和国]]政体） --&gt;或“XXX vs. XXX机制”（分别为该政体中提及的两种派系，如“议会派 vs. 奥兰治派机制”）。&#10;&#10;下列政府改革采用联省议会机制：&#10;{| class=&quot;mildtable&quot;&#10;|-&#10;! 政体 !! 级别 !! 名称&#10;|-&#10;| {{icon|gov_republic}} || 1 || [[共和制#尼德兰共和国|尼德兰共和国]]&#10;|-&#10;| {{icon|gov_republic}} || rowspan=&quot;2&quot;| 6 || rowspan=&quot;2&quot;| [[通用政府改革#斐扬体系|斐扬体系]]&#10;|-&#10;| {{icon|gov_monarchy}}&#10;|-&#10;| {{icon|gov_monarchy}} || 1 || [[君主制#省督君主制|省督君主制]]&#10;|-&#10;| {{icon|gov_monarchy}} || 1 || [[君主制#利沃尼亚联省议会|利沃尼亚联省议会]]&#10;|-&#10;| {{icon|gov_monarchy}} || 6 || [[君主制#联省议会|联省议会]]&#10;|-&#10;| {{icon|gov_monarchy}} || rowspan=&quot;2&quot;| 1 || rowspan=&quot;2&quot;| [[通用政府改革#甘丹颇章|甘丹颇章]]&#10;|-&#10;| {{icon|gov_theocracy}}&#10;|-&#10;| {{icon|gov_theocracy}} || 1 || [[神权制#尼德兰总主教区|尼德兰总主教区]]&#10;|-&#10;| {{icon|gov_theocracy}} || 10 || [[神权制#开放全民普选|开放全民普选]]&#10;|}&#10;&#10;该机制启用时，国内将存在两个派系，由政府界面的一个滑条表示，一个代表集权/威权，一个代表分权/民主；例如，尼德兰共和国中，“奥兰治派”为威权派系，“议会派”为民主派系。统治者经由[[选举事件#联省议会选举|事件]]选举产生，当威权派系掌权时，该统治者终身执政，统治者死亡后重新选举；当民主派系掌权时，该统治者执政一个选举周期（默认为 4 年），周期结束后重新选举。&#10;&#10;选举事件中仅有两个候选人，分别来自两个派系。候选人的君主能力随机产生，宣称默认为95。&#10;&#10;当前掌权的派系可在政府界面的滑条处查看。滑条数值可在 -100 至 100 之间变动，当数值为 0 或为负值时，“民主派系”掌权，否则为“威权派系”掌权。许多事件可改变两个派系的权力平衡，使滑条数值发生变化；此外，每次选举中，选择来自某一派系的候选人时，都会使滑条向该派系的方向变动 33。&#10;&#10;两个不同派系当权时，除了影响统治者任期，还会分别给予国家不同的修正；两个派系的名称在不同政府改革中也各自不同。详情参见各个政府改革的具体描述。&#10;&#10;===君主制特殊继任机制===&#10;&#10;====统治者选举====&#10;[[君主制#选举君主制|选举君主制]]、[[君主制#波希米亚选举君主制|波希米亚选举君主制]]、[[君主制#凯尔特选举继承制|凯尔特选举继承制]]和[[君主制#爱尔兰至高王国|爱尔兰至高王国]]共用“统治者选举”的特殊机制。&#10;&#10;在统治者选举机制中，统治者去世后，触发事件“[[政府事件#government_events.3|选举新君]]”。事件中，当前的新君主（或尚未成年、摄政的继承人）总是候选人之一；此外，还可以选择本国贵族、最大邻国王朝成员、陆军将领、海军将领、本国商人。这些额外候选人的可用条件均各不相同。&#10;&#10;如果政府具有“可以从当权家族中选出下一位统治者”的特殊机制，则生成一个与当前统治者同一王朝的家族成员，作为额外的候选人；[[君主制#凯尔特选举继承制|凯尔特选举继承制]]和[[君主制#爱尔兰至高王国|爱尔兰至高王国]]自带该特殊机制。&#10;&#10;除当前新君主/未成年继承人之外的候选人宣称均较低，且具有不同的君主能力修正。选择不同候选人将分别给予不同的奖励。如果政府具有“提高统治者选举中继承人的能力”的特殊机制，则所有额外候选人的君主能力在生成时都会获得奖励；[[君主制#波希米亚选举君主制|波希米亚选举君主制]]自带该特殊机制，2级政府改革“[[君主制#授予贵族选王权利|授予贵族选王权利]]”也拥有该机制。&#10;&#10;关于所有候选人的生成条件、君主能力修正、当选奖励，详情请查看[[政府事件#government_events.3|统治者选举事件]]。&#10;&#10;====后宫====&#10;拥有[[君主制#奥斯曼政府|奥斯曼政府]]、[[君主制#现代化奥斯曼政府|现代化奥斯曼政府]]或[[君主制#罗姆苏丹国|罗姆苏丹国]]改革的国家可以实行后宫继承。拥有该政府机制时，不会自然产生继承人；统治者年满 30 岁后，将会触发事件“[[后宫事件#harem_events.1|[Root.Monarch.GetName]的儿子们]]”（MTTH=6 月），这将允许国家从三名候选人中选择其一作为新的继承人，继承人年龄永远是10岁且为男性。如果继承人因故死亡，则仍须通过该事件产生继承人。&#10;&#10;部分备选继承人的某项能力会获得{{green|+1}}修正，但另两项能力中的一项被设定为不能超过 5；另有部分候选人的君主能力完全随机（无加成）。例如，“最为虔诚的儿子”{{icon|mas}} 行政能力增加{{green|+1}}，但 {{icon|mds}} 外交能力最多为 5 点。详情查看[[后宫事件#harem_events.1|事件链接]]。&#10;&#10;如果现任统治者在没有继承人的情况下去世，则随机生成的25岁统治者将通过事件“[[后宫事件#harem_events.2|奥斯曼之剑]]”上台。该名统治者的任何能力点数都不会超过{{red|3}}{{icon|all power}}点。&#10;&#10;如果在“女性统治时期”事件链中选择了让后宫远离国家事务，则所有备选继承人的随机能力点数上限将从原先的&#039;&#039;&#039;5&#039;&#039;&#039;减少到&#039;&#039;&#039;3&#039;&#039;&#039;。&#10;&#10;====确保继承====&#10;朝鲜文化国家的特有政府改革[[君主制#隐士王国|隐士王国]]拥有“确保继承”的特殊机制，该机制与后宫机制相似。如果统治者年满 40 岁且没有继承人，则可以触发事件“[[政府事件#government_events.3|[Root.Monarch.GetName]的儿子们]]”（MTTH=6 月），允许其从三名候选人中选择其一作为新的继承人，继承人年龄永远是10岁且为男性，备选继承人君主能力均为随机。&#10;&#10;====波兰选举====&#10;[[君主制#波兰选举君主制|波兰选举君主制]]或[[君主制#选举君主制|选举君主制]]&amp;lt;ref&gt;注意与同名政府改革区分。“选举君主制”原仅用于 {{flag|POL}}和 {{flag|PLC}}，1.34版本后，波兰通过事件获得的特殊政府改革变为新增的“波兰选举君主制”，因此该政府改革通常情况下不会出现于游戏中；此外，又新增了同名的通用君主制 1 级政府改革“选举君主制”。但原有的“选举君主制”仍是历史剧本中波兰和波兰立陶宛联邦的政体，且创建自定义国家时仍可选择该政府改革。&amp;lt;/ref&gt;拥有“波兰选举”的特殊机制。&#10;&#10;在该机制下，不存在一个固定的继承人，而是由若干个继承人候选人竞争下一任王位，根据支持度的高低进行排名，支持度最高的候选人将在当前君主死亡后继位；外国可以支持本国王朝成员成为继承人候选人。此外，也不允许废黜继承人。&#10;&#10;在候选人中，固定产生一个本国继承人，其初始的支持度为 &#039;&#039;&#039;10&#039;&#039;&#039;，君主能力随机。如果现任君主此前是本国继承人，则新的本国继承人与现任君主同一王朝；如果现任君主此前是外国继承人，则新的本国继承人将属于一个随机的本国王朝。国家可以选择花费 {{icon|prestige}} {{red|10}} 威望，将本国继承人的支持度提高 &#039;&#039;&#039;5&#039;&#039;&#039; 点。&#10;&#10;除了本国继承人外，任何与该国同一宗教组的君主制国家都可以派遣外交官，通过“支持继承人”的外交行动，支持本国王朝成员成为该国的继承人候选人之一。第一次使用这一外交行动时，会立即随机创建一个与该其它君主制国家同一王朝的候选人，年龄通常在 30 岁以上，初始的支持度为 &#039;&#039;&#039;0&#039;&#039;&#039;。只要有外交官正在支持继承人，则每个月都有一定几率将来自该国的候选人的支持度增加 1 点；几率主要受到 {{icon|diplomatic reputation}} 外交声誉的影响。该波兰选举机制国家无法主动影响外国继承人的支持度。&#10;&#10;将鼠标悬停于继承人上方时，可以查看所有继承人候选人的排名、各自的年龄和属性。除了使用上述方式影响各个继承人的支持度外，还有若干个事件可能影响各继承人支持度。&#10;&#10;当前统治者死亡后，如果由外国继承人继承王位，则该外国将收到奖励，获得 {{icon|prestige}}{{green|25}}威望和等同于其继承人候选人各项君主能力 24 倍的 {{icon|all power}} 三种君主点数。如果由本国继承人继承王位，则没有任何国家收到奖励。继承人是否当选还会影响该国与波兰选举机制国家之间的关系。&#10;&#10;拥有波兰选举机制的国家不会成为被联统国，但可以[[联合统治]]其他国家。&#10;&#10;====卡尔马联盟选举====&#10;{{see also|丹麦事件#卡尔马联盟君主制事件}}&#10;丹麦开局时拥有特殊政府改革“[[君主制#卡尔马联盟|卡尔马联盟]]”，其具有特殊的“卡尔马联盟选举”机制。&#10;&#10;卡尔马联盟之下的丹麦、瑞典、挪威三国需要选举同一位统治者。如果丹麦还有其它首都在斯堪的纳维亚的被联统国，则该国也会参与该事件链；此处按照一般情况进行讨论，即丹麦有且仅有瑞典、挪威作为被联统国。&#10;&#10;当新君主继位时，联盟主导者丹麦触发事件“[[丹麦事件#kalmar_union_events.1|[Root.GetName]的新任[Root.Monarch.GetTitle]]]”，并可以在其中选择是否向被联统国作出妥协和让步。可以向属国贵族授予特权，提高属国选举丹麦国王为该国国王的概率；做出让步会降低本国 {{icon|nobility loyalty}} 贵族忠诚均衡点，给予本国一些负面修正，但给予属国加成，并降低其 {{icon|liberty desire}} 独立倾向。有被联统国独立倾向高于 {{Red|75%}} 时，可以选择给予更多的特权，给本国/属国的负面/正面影响更大，降低的独立倾向也更多。&#10;&#10;丹麦作出选择后，瑞典、挪威触发后续事件：&#10;*可以选择接受丹麦君主，这将给予宗主国丹麦 {{icon|prestige}}{{green|10}} 威望和 {{icon|legitimacy}}{{green|5}} 正统性，并增进两国彼此的关系；&#10;*或者选择拒绝承认，在本国任命摄政，这将降低宗主国丹麦 {{icon|prestige}}{{red|20}} 威望、增加该属国 {{icon|liberty desire}} {{red|20%}} 独立倾向，并在属国生成大量篡权叛军；&#10;*此外，被联统国中发展度较高的一个（通常为瑞典）可以提议本国人成为全联盟的君主。该被联统国可以选择其推荐的候选人，三个候选人的君主能力分别在一个维度有所侧重，宣称固定为 {{yellow|40}}，年龄在 30 到 50 岁之间。&#10;&#10;如果有属国提议来自该国的候选人，则丹麦可以选择是否接受：&#10;*如果拒绝，则丹麦失去 {{icon|prestige}}{{red|10}} 威望；属国获得 {{icon|liberty desire}} {{red|20%}} 独立倾向，并在其境内产生叛军；&#10;*如果接受，则进行一次重新选举。根据属国的提议，丹麦生成一个与属国相同文化的统治者（能力、宣称如前所述），并可以再次选择是否向被联统国妥协。重新选举时，属国只能选择接受或拒绝，不可再提出新候选人。&#10;&#10;&amp;lt;!-- 在卡尔马联盟选举的事件链中，AI的行为倾向大致概括如下： --&gt;&amp;lt;!-- 需要对原英文内容进行概括 --&gt;&#10;&amp;lt;!-- &#10;=====Ai behavior=====&#10;The choices the AI will make during this event chain depend heavily on their liberty desire (if they are the subject). Good rulers (14+ skills) are also extremely unlikely to be rejected.&#10;&#10;Choice between concession :&#10;*No concession : Base = &#039;&#039;&#039;1&#039;&#039;&#039;&#10;**&#039;&#039;&#039;x0&#039;&#039;&#039; : It is the Age of Discovery &#039;&#039;and&#039;&#039; at least one subject had at least 50% liberty desire when the election happened&#10;**&#039;&#039;&#039;x0&#039;&#039;&#039; : It is the Age of Discovery &#039;&#039;and&#039;&#039; at least one subject has at least 75% liberty desire&#10;**&#039;&#039;&#039;x0.8&#039;&#039;&#039; : Its not the Age of Discovery &#039;&#039;and&#039;&#039; at least one subject had at least 50% liberty desire when the election happened&#10;**&#039;&#039;&#039;x0.7&#039;&#039;&#039; : Its not the Age of Discovery &#039;&#039;and&#039;&#039; at least one subject has at least 75% liberty desire&#10;**&#039;&#039;&#039;x0.6&#039;&#039;&#039; : Any subject has at least as much prestige as the overlord&#10;**&#039;&#039;&#039;x0.5&#039;&#039;&#039; : Any subject has at least as much diplomatic reputation as the overlord&#10;*Small concessions : Base = &#039;&#039;&#039;1&#039;&#039;&#039;&#10;**&#039;&#039;&#039;x0&#039;&#039;&#039; : Total ruler skills are at least 14&#10;**&#039;&#039;&#039;x0.5&#039;&#039;&#039; : Total ruler skills are at least 11&#10;*Big concessions : Base = &#039;&#039;&#039;100&#039;&#039;&#039;&#10;**&#039;&#039;&#039;x0&#039;&#039;&#039; : Total ruler skills are at least 14&#10;**&#039;&#039;&#039;x0.5&#039;&#039;&#039; : Total ruler skills are at least 11&#10;**&#039;&#039;&#039;x1.1&#039;&#039;&#039; : Any subject has at least as much prestige as the overlord&#10;**&#039;&#039;&#039;x1.25&#039;&#039;&#039; : Any subject has at least as much diplomatic reputation as the overlord&#10;&#10;Choice between accepting, rejecting or suggesting a alternative :&#10;*Accept : Base = &#039;&#039;&#039;1&#039;&#039;&#039;&#10;**&#039;&#039;&#039;x0&#039;&#039;&#039; : Liberty desire is at least 90&#10;**&#039;&#039;&#039;x0.2&#039;&#039;&#039; : Liberty desire is at least 80 &#039;&#039;and&#039;&#039; we were granted big concessions &#039;&#039;&#039;or&#039;&#039;&#039; Liberty desire is at least 70 &#039;&#039;and&#039;&#039; we were granted small concessions &#039;&#039;&#039;or&#039;&#039;&#039; Liberty desire is at least 60&#10;**&#039;&#039;&#039;x0.4&#039;&#039;&#039; : Liberty desire is at least 70 &#039;&#039;and&#039;&#039; we were granted big concessions &#039;&#039;&#039;or&#039;&#039;&#039; Liberty desire is at least 60 &#039;&#039;and&#039;&#039; we were granted small concessions &#039;&#039;&#039;or&#039;&#039;&#039; Liberty desire is at least 50&#10;**&#039;&#039;&#039;x0.6&#039;&#039;&#039; : Liberty desire is at least 60 &#039;&#039;and&#039;&#039; we were granted big concessions &#039;&#039;&#039;or&#039;&#039;&#039; Liberty desire is at least 50 &#039;&#039;and&#039;&#039; we were granted small concessions &#039;&#039;&#039;or&#039;&#039;&#039; Liberty desire is at least 40&#10;**&#039;&#039;&#039;x0.8&#039;&#039;&#039; : Liberty desire is at least 50 &#039;&#039;and&#039;&#039; we were granted big concessions &#039;&#039;&#039;or&#039;&#039;&#039; Liberty desire is at least 40 &#039;&#039;and&#039;&#039; we were granted small concessions &#039;&#039;&#039;or&#039;&#039;&#039; Liberty desire is at least 30&#10;**&#039;&#039;&#039;x0.6&#039;&#039;&#039; : Our Overlord has at least as much prestige as us&#10;**&#039;&#039;&#039;x0.5&#039;&#039;&#039; : Our Overlord has at least as much diplomatic reputation as us&#10;*Suggest Alternative : Base = &#039;&#039;&#039;1&#039;&#039;&#039;&#10;**&#039;&#039;&#039;x0&#039;&#039;&#039; : Total ruler skills are at least 14&#10;**&#039;&#039;&#039;x0.5&#039;&#039;&#039; : Total ruler skills are at least 11&#10;**&#039;&#039;&#039;x0&#039;&#039;&#039; : Liberty desire is less than 10&#10;**&#039;&#039;&#039;x0.1&#039;&#039;&#039; : Liberty desire is less than 40 &#039;&#039;and&#039;&#039; we were granted big concessions &#039;&#039;&#039;or&#039;&#039;&#039; Liberty desire is less than 30 &#039;&#039;and&#039;&#039; we were granted small concessions &#039;&#039;&#039;or&#039;&#039;&#039; Liberty desire is less than 20&#10;**&#039;&#039;&#039;x0.2&#039;&#039;&#039; : Liberty desire is between 40 and 50 &#039;&#039;and&#039;&#039; we were granted big concessions &#039;&#039;&#039;or&#039;&#039;&#039; Liberty desire is between 30 and 40 &#039;&#039;and&#039;&#039; we were granted small concessions &#039;&#039;&#039;or&#039;&#039;&#039; Liberty desire is between 20 and 30&#10;**&#039;&#039;&#039;x0.3&#039;&#039;&#039; : Liberty desire is between 50 and 60 &#039;&#039;and&#039;&#039; we were granted big concessions &#039;&#039;&#039;or&#039;&#039;&#039; Liberty desire is between 40 and 50 &#039;&#039;and&#039;&#039; we were granted small concessions &#039;&#039;&#039;or&#039;&#039;&#039; Liberty desire is between 30 and 40&#10;**&#039;&#039;&#039;x0.4&#039;&#039;&#039; : Liberty desire is between 60 and 70 &#039;&#039;and&#039;&#039; we were granted big concessions &#039;&#039;&#039;or&#039;&#039;&#039; Liberty desire is between 50 and 60 &#039;&#039;and&#039;&#039; we were granted small concessions &#039;&#039;&#039;or&#039;&#039;&#039; Liberty desire is between 40 and 50&#10;**&#039;&#039;&#039;x1.25&#039;&#039;&#039; : Liberty desire is between 70 and 80 &#039;&#039;and&#039;&#039; we were granted big concessions &#039;&#039;&#039;or&#039;&#039;&#039; Liberty desire is between 60 and 70 &#039;&#039;and&#039;&#039; we were granted small concessions &#039;&#039;&#039;or&#039;&#039;&#039; Liberty desire is between 50 and 60&#10;**&#039;&#039;&#039;x1.5&#039;&#039;&#039; : Liberty desire is between 80 and 90 &#039;&#039;and&#039;&#039; we were granted big concessions &#039;&#039;&#039;or&#039;&#039;&#039; Liberty desire is between 70 and 80 &#039;&#039;and&#039;&#039; we were granted small concessions &#039;&#039;&#039;or&#039;&#039;&#039; Liberty desire is between 60 and 70&#10;**&#039;&#039;&#039;x1.75&#039;&#039;&#039; : Liberty desire is between 90 and 100 &#039;&#039;and&#039;&#039; we were granted big concessions &#039;&#039;&#039;or&#039;&#039;&#039; Liberty desire is between 80 and 90 &#039;&#039;and&#039;&#039; we were granted small concessions &#039;&#039;&#039;or&#039;&#039;&#039; Liberty desire is between 70 and 80&#10;**&#039;&#039;&#039;x2&#039;&#039;&#039; : Liberty desire is 100 &#039;&#039;and&#039;&#039; we were granted big concessions &#039;&#039;&#039;or&#039;&#039;&#039; Liberty desire is at least 90 &#039;&#039;and&#039;&#039; we were granted small concessions &#039;&#039;&#039;or&#039;&#039;&#039; Liberty desire is at least 80&#10;*Reject : Base = &#039;&#039;&#039;1&#039;&#039;&#039;&#10;**&#039;&#039;&#039;x0&#039;&#039;&#039; : Total ruler skills are at least 14&#10;**&#039;&#039;&#039;x0.5&#039;&#039;&#039; : Total ruler skills are at least 11&#10;**&#039;&#039;&#039;x0&#039;&#039;&#039; : Liberty desire is less than 10&#10;**&#039;&#039;&#039;x0.2&#039;&#039;&#039; : Liberty desire is less than 40 &#039;&#039;and&#039;&#039; we were granted big concessions &#039;&#039;&#039;or&#039;&#039;&#039; Liberty desire is less than 30 &#039;&#039;and&#039;&#039; we were granted small concessions &#039;&#039;&#039;or&#039;&#039;&#039; Liberty desire is less than 20&#10;**&#039;&#039;&#039;x0.4&#039;&#039;&#039; : Liberty desire is between 40 and 50 &#039;&#039;and&#039;&#039; we were granted big concessions &#039;&#039;&#039;or&#039;&#039;&#039; Liberty desire is between 30 and 40 &#039;&#039;and&#039;&#039; we were granted small concessions &#039;&#039;&#039;or&#039;&#039;&#039; Liberty desire is between 20 and 30&#10;**&#039;&#039;&#039;x0.6&#039;&#039;&#039; : Liberty desire is between 50 and 60 &#039;&#039;and&#039;&#039; we were granted big concessions &#039;&#039;&#039;or&#039;&#039;&#039; Liberty desire is between 40 and 50 &#039;&#039;and&#039;&#039; we were granted small concessions &#039;&#039;&#039;or&#039;&#039;&#039; Liberty desire is between 30 and 40&#10;**&#039;&#039;&#039;x0.8&#039;&#039;&#039; : Liberty desire is between 60 and 70 &#039;&#039;and&#039;&#039; we were granted big concessions &#039;&#039;&#039;or&#039;&#039;&#039; Liberty desire is between 50 and 60 &#039;&#039;and&#039;&#039; we were granted small concessions &#039;&#039;&#039;or&#039;&#039;&#039; Liberty desire is between 40 and 50&#10;**&#039;&#039;&#039;x2&#039;&#039;&#039; : Liberty desire is between 70 and 80 &#039;&#039;and&#039;&#039; we were granted big concessions &#039;&#039;&#039;or&#039;&#039;&#039; Liberty desire is between 60 and 70 &#039;&#039;and&#039;&#039; we were granted small concessions &#039;&#039;&#039;or&#039;&#039;&#039; Liberty desire is between 50 and 60&#10;**&#039;&#039;&#039;x3&#039;&#039;&#039; : Liberty desire is between 80 and 90 &#039;&#039;and&#039;&#039; we were granted big concessions &#039;&#039;&#039;or&#039;&#039;&#039; Liberty desire is between 70 and 80 &#039;&#039;and&#039;&#039; we were granted small concessions &#039;&#039;&#039;or&#039;&#039;&#039; Liberty desire is between 60 and 70&#10;**&#039;&#039;&#039;x4&#039;&#039;&#039; : Liberty desire is between 90 and 100 &#039;&#039;and&#039;&#039; we were granted big concessions &#039;&#039;&#039;or&#039;&#039;&#039; Liberty desire is between 80 and 90 &#039;&#039;and&#039;&#039; we were granted small concessions &#039;&#039;&#039;or&#039;&#039;&#039; Liberty desire is between 70 and 80&#10;**&#039;&#039;&#039;x5&#039;&#039;&#039; : Liberty desire is 100 &#039;&#039;and&#039;&#039; we were granted big concessions &#039;&#039;&#039;or&#039;&#039;&#039; Liberty desire is at least 90 &#039;&#039;and&#039;&#039; we were granted small concessions &#039;&#039;&#039;or&#039;&#039;&#039; Liberty desire is at least 80&#10;&#10;Choice between what alternative regent to suggest :&#10;*Administrative : base = &#039;&#039;&#039;1&#039;&#039;&#039;&#10;**&#039;&#039;&#039;x0&#039;&#039;&#039; : makes at least 8 admin power per month&#10;**&#039;&#039;&#039;x1.5&#039;&#039;&#039; :  &#10;***One of the following :&#10;****The Clergy has at least 5 Privileges granted to them&#10;****The Clergy estate owns more crownland than the crown &#039;&#039;and&#039;&#039; has at least 75 influence &#10;***Neither the Burghers &#039;&#039;nor&#039;&#039; the Nobility have at least 75 influence &#039;&#039;or&#039;&#039; have at least 5 Privileges granted to them&#10;*Diplomatic : base = &#039;&#039;&#039;1&#039;&#039;&#039;&#10;**&#039;&#039;&#039;x0&#039;&#039;&#039; : makes at least 8 diplo power per month&#10;**&#039;&#039;&#039;x1.5&#039;&#039;&#039; :  &#10;***One of the following :&#10;****The Burghers has at least 5 Privileges granted to them&#10;****The Burghers estate owns more crownland than the crown &#039;&#039;and&#039;&#039; has at least 75 influence &#10;***Neither the Clergy &#039;&#039;nor&#039;&#039; the Nobility have at least 75 influence &#039;&#039;or&#039;&#039; have at least 5 Privileges granted to them&#10;*Military : base = &#039;&#039;&#039;1&#039;&#039;&#039;&#10;**&#039;&#039;&#039;x0&#039;&#039;&#039; : makes at least 8 mili power per month&#10;**&#039;&#039;&#039;x1.5&#039;&#039;&#039; :  &#10;***One of the following :&#10;****The Nobility has at least 5 Privileges granted to them&#10;****The Nobility estate owns more crownland than the crown &#039;&#039;and&#039;&#039; has at least 75 influence &#10;***Neither the Clergy &#039;&#039;nor&#039;&#039; the Burghers have at least 75 influence &#039;&#039;or&#039;&#039; have at least 5 Privileges granted to them&#10;&#10;Choice of accepting the suggested new regent :&#10;*Accept : base = &#039;&#039;&#039;1&#039;&#039;&#039;&#10;**&#039;&#039;&#039;x0&#039;&#039;&#039; : Total ruler skills are at least 14&#10;**&#039;&#039;&#039;x0.5&#039;&#039;&#039; : Total ruler skills are at least 11&#10;*Reject : base = &#039;&#039;&#039;1&#039;&#039;&#039;&#10;&#10;Choice between concessions during a Reelection :&#10;*No concession : base = &#039;&#039;&#039;1&#039;&#039;&#039;&#10;**&#039;&#039;&#039;x0&#039;&#039;&#039; : Has at least 3 years worth of income in the treasury&#10;**&#039;&#039;&#039;x0&#039;&#039;&#039; : At least one subject has at least 75 liberty desire&#10;**&#039;&#039;&#039;x0&#039;&#039;&#039; : Has at least 2 years worth of income in the treasury &#039;&#039;and&#039;&#039; at least one subject had at least 50% liberty desire when the election happened&#10;*Small concessions : base = &#039;&#039;&#039;1&#039;&#039;&#039;&#10;**&#039;&#039;&#039;x0&#039;&#039;&#039; : Total ruler skills are at least 14&#10;**&#039;&#039;&#039;x0.5&#039;&#039;&#039; : Total ruler skills are at least 11&#10;*Big concessions : base = &#039;&#039;&#039;100&#039;&#039;&#039;&#10;**&#039;&#039;&#039;x0&#039;&#039;&#039; : Total ruler skills are at least 14&#10;**&#039;&#039;&#039;x0.5&#039;&#039;&#039; : Total ruler skills are at least 11&#10;&#10;Choice between accepting or rejecting during a reelection :&#10;*Accept : base = &#039;&#039;&#039;1&#039;&#039;&#039;&#10;**&#039;&#039;&#039;x0&#039;&#039;&#039; : Liberty desire is at least 90&#10;**&#039;&#039;&#039;x0.2&#039;&#039;&#039; : Liberty desire is at least 80 &#039;&#039;and&#039;&#039; we were granted big concessions &#039;&#039;&#039;or&#039;&#039;&#039; Liberty desire is at least 70 &#039;&#039;and&#039;&#039; we were granted small concessions &#039;&#039;&#039;or&#039;&#039;&#039; Liberty desire is at least 60&#10;**&#039;&#039;&#039;x0.4&#039;&#039;&#039; : Liberty desire is at least 70 &#039;&#039;and&#039;&#039; we were granted big concessions &#039;&#039;&#039;or&#039;&#039;&#039; Liberty desire is at least 60 &#039;&#039;and&#039;&#039; we were granted small concessions &#039;&#039;&#039;or&#039;&#039;&#039; Liberty desire is at least 50&#10;**&#039;&#039;&#039;x0.6&#039;&#039;&#039; : Liberty desire is at least 60 &#039;&#039;and&#039;&#039; we were granted big concessions &#039;&#039;&#039;or&#039;&#039;&#039; Liberty desire is at least 50 &#039;&#039;and&#039;&#039; we were granted small concessions &#039;&#039;&#039;or&#039;&#039;&#039; Liberty desire is at least 40&#10;**&#039;&#039;&#039;x0.8&#039;&#039;&#039; : Liberty desire is at least 50 &#039;&#039;and&#039;&#039; we were granted big concessions &#039;&#039;&#039;or&#039;&#039;&#039; Liberty desire is at least 40 &#039;&#039;and&#039;&#039; we were granted small concessions &#039;&#039;&#039;or&#039;&#039;&#039; Liberty desire is at least 30&#10;*Reject : base = &#039;&#039;&#039;1&#039;&#039;&#039;&#10;**&#039;&#039;&#039;x0&#039;&#039;&#039; : We suggested the Ruler&#10;**&#039;&#039;&#039;x0&#039;&#039;&#039; : Total ruler skills are at least 14&#10;**&#039;&#039;&#039;x0.5&#039;&#039;&#039; : Total ruler skills are at least 11&#10;**&#039;&#039;&#039;x0&#039;&#039;&#039; : Liberty desire is less than 10&#10;**&#039;&#039;&#039;x0.2&#039;&#039;&#039; : Liberty desire is less than 40 &#039;&#039;and&#039;&#039; we were granted big concessions &#039;&#039;&#039;or&#039;&#039;&#039; Liberty desire is less than 30 &#039;&#039;and&#039;&#039; we were granted small concessions &#039;&#039;&#039;or&#039;&#039;&#039; Liberty desire is less than 20&#10;**&#039;&#039;&#039;x0.4&#039;&#039;&#039; : Liberty desire is between 40 and 50 &#039;&#039;and&#039;&#039; we were granted big concessions &#039;&#039;&#039;or&#039;&#039;&#039; Liberty desire is between 30 and 40 &#039;&#039;and&#039;&#039; we were granted small concessions &#039;&#039;&#039;or&#039;&#039;&#039; Liberty desire is between 20 and 30&#10;**&#039;&#039;&#039;x0.6&#039;&#039;&#039; : Liberty desire is between 50 and 60 &#039;&#039;and&#039;&#039; we were granted big concessions &#039;&#039;&#039;or&#039;&#039;&#039; Liberty desire is between 40 and 50 &#039;&#039;and&#039;&#039; we were granted small concessions &#039;&#039;&#039;or&#039;&#039;&#039; Liberty desire is between 30 and 40&#10;**&#039;&#039;&#039;x0.8&#039;&#039;&#039; : Liberty desire is between 60 and 70 &#039;&#039;and&#039;&#039; we were granted big concessions &#039;&#039;&#039;or&#039;&#039;&#039; Liberty desire is between 50 and 60 &#039;&#039;and&#039;&#039; we were granted small concessions &#039;&#039;&#039;or&#039;&#039;&#039; Liberty desire is between 40 and 50&#10;**&#039;&#039;&#039;x2&#039;&#039;&#039; : Liberty desire is between 70 and 80 &#039;&#039;and&#039;&#039; we were granted big concessions &#039;&#039;&#039;or&#039;&#039;&#039; Liberty desire is between 60 and 70 &#039;&#039;and&#039;&#039; we were granted small concessions &#039;&#039;&#039;or&#039;&#039;&#039; Liberty desire is between 50 and 60&#10;**&#039;&#039;&#039;x3&#039;&#039;&#039; : Liberty desire is between 80 and 90 &#039;&#039;and&#039;&#039; we were granted big concessions &#039;&#039;&#039;or&#039;&#039;&#039; Liberty desire is between 70 and 80 &#039;&#039;and&#039;&#039; we were granted small concessions &#039;&#039;&#039;or&#039;&#039;&#039; Liberty desire is between 60 and 70&#10;**&#039;&#039;&#039;x4&#039;&#039;&#039; : Liberty desire is between 90 and 100 &#039;&#039;and&#039;&#039; we were granted big concessions &#039;&#039;&#039;or&#039;&#039;&#039; Liberty desire is between 80 and 90 &#039;&#039;and&#039;&#039; we were granted small concessions &#039;&#039;&#039;or&#039;&#039;&#039; Liberty desire is between 70 and 80&#10;**&#039;&#039;&#039;x5&#039;&#039;&#039; : Liberty desire is 100 &#039;&#039;and&#039;&#039; we were granted big concessions &#039;&#039;&#039;or&#039;&#039;&#039; Liberty desire is at least 90 &#039;&#039;and&#039;&#039; we were granted small concessions &#039;&#039;&#039;or&#039;&#039;&#039; Liberty desire is at least 80 --&gt;&#10;====马穆鲁克政府====&#10;拥有政府改革[[君主制#马穆鲁克政府|马穆鲁克政府]]的国家没有继承人。当君主死亡后，通过事件“[[马穆鲁克政府事件#mamluk_events.0|马穆鲁克的继承]]”，选择一个新的统治者。事件中会产生若干个分别来自本国省份中不同的可接受文化的候选人，至多 3 个；此外，还有一个外国奴隶候选人，默认为切尔克斯文化。所有候选人的君主能力均为随机（马穆鲁克政府自带 {{icon|mas}} {{Green|+2}} 君主行政能力修正），且在事件中不可见，年龄均在 30 至 50 岁之间。选择外国奴隶候选人会额外奖励 {{icon|army tradition}} {{green|15}} 陆军传统。&#10;&#10;所有备选统治者上台后的正统性均取决于其对应文化在国内所占总发展度的多寡，总发展度越高，正统性越低；计算公式为 &#039;&#039;100 - 该文化在直属州总发展度中的占比&#039;&#039;。例如，如果该国仅有埃及文化一个可接受文化且所有省份均为埃及文化，则生成两个备选统治者，分别为埃及文化和切尔克斯文化。埃及文化候选人初始正统性为 0；而由于该国没有切尔克斯文化省份属于直属州，因此切尔克斯文化候选人初始正统性为 100。但由于马穆鲁克政府的特殊政府互动与统治者文化有关，因此选取国内占比较大的文化的统治者也有另外方面的好处。&#10;&#10;通常情况下外国奴隶候选人的文化为切尔克斯。当所有切尔克斯文化省份均由该国、该国宿敌和与该国交战的国家拥有，或该国已接受切尔克斯文化时，外国奴隶候选人的文化将来自于一个随机的产品为 {{icon|slave}} 奴隶的省份，该省份须属于一个其它穆斯林国家，且其不是马穆鲁克的宿敌、未与马穆鲁克交战。&#10;&#10;{{expansion|kok}}&#10;启用第 3 级政府改革“[[君主制#整合奥斯曼官僚|整合奥斯曼官僚]]”时，所有备选统治者的君主能力将不再被隐藏。&#10;&#10;===共和制特殊继任机制===&#10;&#10;====抽签选举====&#10;第 3 级通用政府改革[[共和制#抽签|抽签]]和特殊政府改革[[共和制#威尼斯政府|威尼斯政府]]拥有抽签选举的特殊选举方式。&#10;&#10;在该机制下，统治者终身执政，在死亡时重新选举；禁止强制重选。&#10;&#10;选举时，触发事件“[[选举事件#elections.800|[Root.GovernmentName]大选]]”，其中有三个候选人可供选择。三个候选人的君主能力在事件中可见，均为随机生成，分别在三种能力之一获得{{green|+2}}加成，另外两种能力则{{red|-1}}。然而，由于[[共和制#抽签|抽签]]和[[共和制#威尼斯政府|威尼斯政府]]均自带“当选统治者的三项能力增加1”的特殊机制，因此三个候选人当选后的能力值实际上是分别在行政、外交或军事方面{{green|+3}}；当选前在事件中显示的能力数值尚未计入三项能力加1的效果。所有候选人的年龄在50-75岁之间；为了避免在执政时间过短，[[共和制#抽签|抽签]]和[[共和制#威尼斯政府|威尼斯政府]]均有 {{icon|average monarch lifespan}}{{green|+25%}} 统治者平均寿命的加成。&#10;&#10;在选举事件中，玩家可以选择抽签决定最终选举结果，三个候选人当选的概率均等；也可以直接点选三个候选人中的一个，但须花费 {{red|25}} {{icon|republican tradition}} 共和传统。选举可能具有额外效果，详见[[#选举额外效果|本页面前述内容]]。&#10;&#10;拥有[[共和制#抽签|抽签]]的国家，如果同时拥有[[共和制#意大利执政团|意大利执政团]]或[[共和制#政治王朝|政治王朝]]的政府改革（威尼斯政府与二者均互斥），则可以生成第四个候选人，与前任统治者同一姓氏，年龄在30-50岁之间。启用意大利执政团时，该候选人的技能为随机生成；（仅）启用政治王朝时，该候选人的技能在随机生成结果上每项{{Red|-1}}（一般选举中为{{Red|-2}}）；在当选后，还要计入“当选统治者的三项能力增加1”的加成。选举该候选人将花费 {{red|15}} 共和传统。&#10;&#10;拥有威尼斯政府的国家在选取第 3 级政府改革“[[共和制#城市分权|城市分权]]”时，统治者不再终身执政，而是按照每隔4年的选举周期进行抽签选举。&#10;&#10;====总督集权====&#10;拥有政府改革[[共和制#财阀政治|财阀政治]]、[[共和制#卫彻共和国|卫彻共和国]]或[[共和制#大卫彻共和国|大卫彻共和国]]在选取第 3 级政府改革[[共和制#总督集权|总督集权]]时，将不再进行选举，统治者终身执政。在统治者死亡后，有 {{icon|stability}} {{red|-1}} 稳定度的惩罚，且产生一个完全随机的新统治者。&#10;&#10;====传奇海盗====&#10;[[共和制#海盗共和国|海盗共和国]]中的选举与一般共和制国家的选举基本没有区别。在事件“[[海盗事件#pirates.1|[Root.GovernmentName]大选]]”中，选择三个候选人分别会使其对应的海盗派系影响力增加 20（参见前述内容）；主要的特殊之处在于有关 {{icon|legendary Pirate}} 传奇海盗的选举。拥有 {{icon|legendary Pirate}} 传奇海盗[[特质]]的候选人，在连任时不会降低 {{icon|republican tradition}} 共和传统。此外，根据该国所在的地区的当前年份，一些特殊的传奇海盗人物可以成为候选人。每个特殊传奇海盗人物在游戏中只能出现一次，首次选举特殊传奇海盗人物为统治者时，一般会奖励一艘 {{icon|heavy ship}} 重型船只作为[[旗舰]]（如果已有旗舰则为普通重型船只）。&#10;&#10;下表列出所有游戏中可用的特殊传奇海盗人物：&#10;{| class=&quot;mildtable mw-collapsible mw-collapsed&quot;&#10;|-&#10;!姓名 !! 统治者能力 !! 可用时间 !! 先决条件 !! 奖励旗舰名称&#10;|-&#10;!&amp;lt;small&gt;Grainne Ni Mhaille&amp;lt;/small&gt;&amp;lt;br&gt;格兰 妮瓦莱&#10;|3/4/5|| 1530 - 1605 || {{icon|culture}} 主流文化为爱尔兰 || &amp;lt;small&gt;White Seahorse&amp;lt;/small&gt;&amp;lt;br&gt;白海马&#10;|-&#10;!&amp;lt;small&gt;Jack Ward&amp;lt;/small&gt;&amp;lt;br&gt;杰克 沃德&#10;|3/3/5|| 1605 - 1610 || {{icon|capital}} 首都位于马格里布 || &amp;lt;small&gt;Gift&amp;lt;/small&gt;&amp;lt;br&gt;礼物&#10;|-&#10;!&amp;lt;small&gt;Piet Heyn&amp;lt;/small&gt;&amp;lt;br&gt;皮特 海恩&#10;|3/4/5|| 1607 - 1629 || {{icon|culture}} 主流文化为荷兰 || &amp;lt;small&gt;Hollandia&amp;lt;/small&gt;&amp;lt;br&gt;荷兰迪亚&#10;|-&#10;!&amp;lt;small&gt;François l&#039;Olonnais&amp;lt;/small&gt;&amp;lt;br&gt;弗朗索瓦 罗罗内&#10;|3/1/5|| 1650 - 1669 || {{icon|capital}} 首都位于加勒比 || {{icon|no}}&#10;|-&#10;!&amp;lt;small&gt;Michel de Grammont&amp;lt;/small&gt;&amp;lt;br&gt;米歇尔 德 格拉蒙特&#10;|3/3/5|| 1670 - 1686 || {{icon|capital}} 首都位于加勒比 || &amp;lt;small&gt;Hardi&amp;lt;/small&gt;&amp;lt;br&gt;哈尔迪&#10;|-&#10;!&amp;lt;small&gt;Laurens de Graaf&amp;lt;/small&gt;&amp;lt;br&gt;劳伦斯 德 赫拉夫&#10;|2/4/5|| 1682 - 1704 || {{icon|capital}} 首都位于加勒比 || &amp;lt;small&gt;Tigre&amp;lt;/small&gt;&amp;lt;br&gt;虎&#10;|-&#10;!&amp;lt;small&gt;Edward &#039;Blackbeard&#039; Teach&amp;lt;/small&gt;&amp;lt;br&gt;爱德华 「黑胡子」 蒂奇&#10;|3/3/6|| 1700 - 1720 || {{icon|capital}} 首都位于加勒比 || &amp;lt;small&gt;Queen Anne&#039;s Revenge&amp;lt;/small&gt;&amp;lt;br&gt;安妮女王的复仇&#10;|-&#10;!&amp;lt;small&gt;&#039;Calico&#039; Jack Rackham&amp;lt;/small&gt;&amp;lt;br&gt;「白棉布」 杰克 拉克姆&#10;|2/4/4|| 1702 - 1720 || {{icon|capital}} 首都位于加勒比 || &amp;lt;small&gt;Kingston&amp;lt;/small&gt;&amp;lt;br&gt;金斯敦&#10;|-&#10;!&amp;lt;small&gt;Charles Vane&amp;lt;/small&gt;&amp;lt;br&gt;查尔斯 范恩&#10;|2/3/5|| 1702 - 1720 || {{icon|capital}} 首都位于加勒比 || &amp;lt;small&gt;Ranger&amp;lt;/small&gt;&amp;lt;br&gt;游侠&#10;|-&#10;!&amp;lt;small&gt;Black Caesar&amp;lt;/small&gt;&amp;lt;br&gt;黑凯撒&#10;|4/3/5|| 1702 - 1720 || {{icon|capital}} 首都位于加勒比 || {{icon|no}}&#10;|-&#10;!&amp;lt;small&gt;Mary Read&amp;lt;/small&gt;&amp;lt;br&gt;玛丽 瑞德&#10;|3/3/5|| 1703 - 1721 || {{icon|capital}} 首都位于加勒比 || {{icon|no}}&#10;|-&#10;!&amp;lt;small&gt;Anne Bonny&amp;lt;/small&gt;&amp;lt;br&gt;安妮 博尼&#10;|4/2/5|| 1716 - 1782 || {{icon|capital}} 首都位于加勒比 || &amp;lt;small&gt;William&amp;lt;/small&gt;&amp;lt;br&gt;威廉&#10;|-&#10;!&amp;lt;small&gt;Ching Shih&amp;lt;/small&gt;&amp;lt;br&gt;郑氏&#10;|5/5/6|| 1795+ || {{icon|capital}} 首都位于东印度/中国/远东 || &amp;lt;small&gt;Red Flag&amp;lt;/small&gt;&amp;lt;br&gt;红旗&#10;|}&#10;&#10;===神权制特殊继任机制===&#10;&#10;====教廷====&#10;在[[神权制#教廷|教廷]]政府改革中，没有继承人，统治者死亡后产生一个完全随机的新统治者，年龄通常大于50岁。此外，统治者死亡后，有 {{icon|stability}} {{red|-1}} 稳定度的惩罚。&#10;&#10;==死亡几率和预期寿命==&#10;{{SVersion|1.25}}&#10;每天,一名统治者或继承人都有死亡的概率 &amp;lt;math&gt;\frac{m \cdot a}{182500}&amp;lt;/math&gt; 其中 &amp;lt;math&gt;m&amp;lt;/math&gt; 对君主是 MONARCH_DEATH (4 如果无模组)  和对继承人是 HEIR_DEATH (1 如果无模组)  以及 &amp;lt;math&gt;a&amp;lt;/math&gt; 根据下表取决于年龄段.&#10;&#10;请注意，这些表格假设统治者不是将军，继承人不会成为统治者（这会缩短他们的预期寿命），并忽略可能杀死统治者或继承人的特殊事件。a在31-40岁年龄段的统治者和继承人之间是不同的（可能是疏忽）。&#10;&#10;{| class=&quot;wikitable&quot;&#10;|-&#10;!统治者年龄 !! a!!一年内死亡几率!! 十年内死亡几率!! 当前年龄的平均预期寿命&#10;|-&#10;!0-10&#10;| 1||0.80%|| 7.7% ||50.4&#10;|-&#10;!11-20&#10;|1||0.80%||7.7%||54.6&#10;|-&#10;!21-30&#10;|1 ||0.80%||7.7% ||57.8&#10;|-&#10;! 31-40&#10;|1||0.80%||7.7%||60.4&#10;|-&#10;!41-50&#10;| 2||1.6%||14.8%||62.5&#10;|-&#10;!51-60&#10;|4 ||3.2%||27.4%||65.4&#10;|-&#10;! 61-70&#10;| 10|| 7.7%||55.1%||69.0&#10;|-&#10;!71-80&#10;|50||33.0%||98.2%||73.5&#10;|-&#10;!81-90&#10;|300||91%||~100%||81.4&#10;|-&#10;! 91-&#10;|1000 || 99.97%||~100% || 91.1&#10;|}&#10;&#10;{| class=&quot;wikitable&quot;&#10;|-&#10;!继承人年龄!!a!!一年内死亡几率!!十年内死亡几率 !!当前年龄范围的平均预期寿命&#10;|-&#10;!0-10&#10;|1||0.20% ||2.0%||68.2&#10;|-&#10;!11-20&#10;|1||0.20%||2.0% || 69.7&#10;|-&#10;!21-30&#10;|1||0.20% ||2.0%||70.6&#10;|-&#10;!31-40&#10;|2|| 0.40%||3.9%||71.7&#10;|-&#10;!41-50&#10;|2||0.40%||3.9%||73.1&#10;|-&#10;!51-60&#10;|4||0.80%||7.7%||74.2&#10;|-&#10;!61-70&#10;|10 ||2.0%||18.1%|| 75.7&#10;|-&#10;! 71-80&#10;|50||9.5%||63.2%||77.9&#10;|-&#10;!81-90&#10;|300||45.2%||99.8%||82.7&#10;|-&#10;!91-&#10;|1000||86.5%||~100%||91.5&#10;|}&#10;&#10;在此之前被任命为[[将领]]5年或5年以上的统治者和继承人也要接受[[将领]]中所述的死亡检查，导致死亡机会增加，如果被分配到军队，死亡机会会进一步增加，如果在战斗或围攻中，死亡机会也会再次增加。&#10;&#10;请注意，一般来说，预期寿命取决于年龄和统治者成为将领以来的时间；这些表格列出了在按下将统治者或继承人转变为军事领导人的按钮后有效的值。&#10;&#10;{| class=&quot;wikitable&quot;&#10;|-&#10;!统治者寿命!!在此年龄成为将军并被分配到军队时的平均预期寿命&#10;|-&#10;!0&#10;|18.5&#10;|-&#10;!11&#10;|29.5&#10;|-&#10;!21&#10;|39.1&#10;|-&#10;!31&#10;|48.4&#10;|-&#10;!41&#10;|56.5&#10;|-&#10;!51&#10;|63.0&#10;|-&#10;!61&#10;|68.5&#10;|-&#10;!71&#10;|73.4&#10;|-&#10;!81&#10;|81.4&#10;|-&#10;!91&#10;|91.1&#10;|}&#10;&#10;{| class=&quot;wikitable&quot;&#10;|-&#10;!继承人寿命!!在此年龄成为将领并被分配到军队时的平均预期寿命&#10;|-&#10;!0&#10;|19.9&#10;|-&#10;!11&#10;|30.9&#10;|-&#10;!21&#10;|40.7&#10;|-&#10;!31&#10;|50.4&#10;|-&#10;!41&#10;|59.8&#10;|-&#10;!51&#10;|67.8&#10;|-&#10;!61&#10;|73.5&#10;|-&#10;!71&#10;|77.6&#10;|-&#10;!81&#10;|82.7&#10;|-&#10;!91&#10;|91.5&#10;|}&#10;&#10;每日死亡几率不会影响：&#10;*不到一年前就职的统治者&#10;*小于20岁的继承人&#10;&#10;== 统治者头衔 ==&#10;{{main|政府名称与统治者头衔}}&#10;所有国家的统治者都具有一个头衔。配偶、继承人也具有其自身的头衔。&#10;&#10;在[[国家界面]]的宫廷页面中，可以查看本国统治者包括头衔在内的所有信息；如果该国配偶或继承人机制，在该页面也可以查看到本国统治者配偶以及继承人的头衔。&#10;&#10;在外交页面，也可以看到任何国家的统治者和继承人包括头衔在内的所有信息。&#10;&#10;一个国家通常会根据其文化、宗教、政府改革、国家tag等条件的情况获得其政府名称。游戏脚本中定义了大量的特有君主、配偶以及继承人头衔，以更好地反映特定史实，并增加历史沉浸感和趣味性。&#10;&#10;== 历史君主 ==&#10;{{main|君主列表}}&#10;&#10;[[君主列表]]列出了游戏中所有的历史君主。注意，列表中列出的所有君主都定义在游戏中各个国家的历史文件中，仅在对应时间的历史剧本中可用；有些君主的在位时间并不在游戏的常规时间内。&#10;&#10;== 参考资料 ==&#10;&amp;lt;references/&gt;&#10;* [[forum:636815|开发者日志5]]介绍了EU4中君主机制的变动&#10;&#10;[[Category:内政]]&#10;{{realm navbox}}&#10;[[en:Ruler]]&#10;本页使用的模板：&#10;&#10;Static modifiers（查看源代码）静态修正（查看源代码）Template:Ambox（查看源代码）（受保护）Template:Ambox/core（查看源代码）（受保护）Template:Ambox 2020（查看源代码）Template:BTRow（查看源代码）Template:Bonus table（查看源代码）Template:Clear（查看源代码）（受保护）Template:Country data BOH（查看源代码）Template:Country data Bohemia（查看源代码）Template:Country data Burgundy（查看源代码）Template:Country data CRO（查看源代码）Template:Country data Commonwealth（查看源代码）Template:Country data Croatia（查看源代码）Template:Country data FRA（查看源代码）Template:Country data France（查看源代码）Template:Country data HUN（查看源代码）Template:Country data Hungary（查看源代码）Template:Country data PLC（查看源代码）Template:Country data POL（查看源代码）Template:Country data PRO（查看源代码）Template:Country data Poland（查看源代码）Template:Country data Provence（查看源代码）Template:Country data 勃艮第（查看源代码）Template:DLC-only（查看源代码）Template:Expansion（查看源代码）Template:Flag（查看源代码）（受保护）Template:Flag/core（查看源代码）Template:Green（查看源代码）（受保护）Template:Grey-bd（查看源代码）Template:Hatnote（查看源代码）（受保护）Template:Hover box（查看源代码）Template:Icon（查看源代码）（受保护）Template:Icon/a（查看源代码）Template:Icon/c（查看源代码）Template:Icon/d（查看源代码）Template:Icon/e（查看源代码）Template:Icon/f（查看源代码）Template:Icon/g（查看源代码）Template:Icon/h（查看源代码）Template:Icon/i（查看源代码）Template:Icon/k（查看源代码）Template:Icon/l（查看源代码）Template:Icon/m（查看源代码）Template:Icon/n（查看源代码）Template:Icon/p（查看源代码）Template:Icon/r（查看源代码）Template:Icon/s（查看源代码）Template:Icon/t（查看源代码）Template:Main（查看源代码）（受保护）Template:N（查看源代码）Template:Navbox（查看源代码）（受保护）Template:Navboxgroup（查看源代码）（受保护）Template:Path（查看源代码）（受保护）Template:Realm navbox（查看源代码）（受保护）Template:Red（查看源代码）（受保护）Template:Ruby（查看源代码）Template:SVersion（查看源代码）（受保护）Template:See also（查看源代码）Template:Version（查看源代码）（受保护）Template:Yellow（查看源代码）返回统治者。&#10;"/>
+<meta name="keywords" content="欧陆风云4百科,统治者"/>
+<meta name="apple-mobile-web-app-capable" content="Yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+<meta name="mobile-web-app-capable" content="Yes"/>
+<meta name="theme-color" content="#103D8F"/>
+<meta name="msapplication-navbutton-color" content="#103D8F"/>
+<meta name="twitter:card" content="summary"/>
+<link rel="icon" href="https://www.eu4cn.com/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="https://www.eu4cn.com/opensearch_desc.php" title="欧陆风云4百科 (zh)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://www.eu4cn.com/api.php?action=rsd"/>
+<link rel="alternate" hreflang="zh" href="https://www.eu4cn.com/zh/统治者"/>
+<link rel="alternate" hreflang="zh-Hans" href="https://www.eu4cn.com/zh-hans/统治者"/>
+<link rel="alternate" hreflang="zh-Hant" href="https://www.eu4cn.com/zh-hant/统治者"/>
+<link rel="alternate" hreflang="zh-Hans-CN" href="https://www.eu4cn.com/zh-cn/统治者"/>
+<link rel="alternate" hreflang="zh-Hant-HK" href="https://www.eu4cn.com/zh-hk/统治者"/>
+<link rel="alternate" hreflang="zh-Hant-MO" href="https://www.eu4cn.com/zh-mo/统治者"/>
+<link rel="alternate" hreflang="zh-Hans-MY" href="https://www.eu4cn.com/zh-my/统治者"/>
+<link rel="alternate" hreflang="zh-Hans-SG" href="https://www.eu4cn.com/zh-sg/统治者"/>
+<link rel="alternate" hreflang="zh-Hant-TW" href="https://www.eu4cn.com/zh-tw/统治者"/>
+<link rel="alternate" hreflang="x-default" href="https://www.eu4cn.com/wiki/统治者"/>
+<link rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+<link rel="alternate" type="application/atom+xml" title="欧陆风云4百科的Atom feed" href="https://www.eu4cn.com/index.php?title=Special:%E6%9C%80%E8%BF%91%E6%9B%B4%E6%94%B9&amp;feed=atom"/>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script data-ad-client="ca-pub-1612414434963106" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114739240-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-114739240-1');
+</script>
+<meta property="og:title" content="统治者"/>
+<meta property="og:site_name" content="欧陆风云4百科"/>
+<meta property="og:url" content="https://www.eu4cn.com/wiki/%E7%BB%9F%E6%B2%BB%E8%80%85"/>
+<meta property="og:image" content="https://www.eu4cn.com/images/logo/logo.png"/>
+<meta property="article:modified_time" content="2024-03-13T07:47:12Z"/>
+<meta property="article:published_time" content="2024-03-13T07:47:12Z"/>
+<script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"Article","name":"\u67e5\u770b\u201c\u7edf\u6cbb\u8005\u201d\u7684\u6e90\u4ee3\u7801 - \u6b27\u9646\u98ce\u4e914\u767e\u79d1\uff0c\u4eba\u4eba\u53ef\u4ee5\u7f16\u8f91\u7684\u6b27\u9646\u98ce\u4e914\u4e2d\u6587\u767e\u79d1\u5168\u4e66","headline":"\u67e5\u770b\u201c\u7edf\u6cbb\u8005\u201d\u7684\u6e90\u4ee3\u7801 - \u6b27\u9646\u98ce\u4e914\u767e\u79d1\uff0c\u4eba\u4eba\u53ef\u4ee5\u7f16\u8f91\u7684\u6b27\u9646\u98ce\u4e914\u4e2d\u6587\u767e\u79d1\u5168\u4e66","mainEntityOfPage":"\u67e5\u770b\u201c\u7edf\u6cbb\u8005\u201d\u7684\u6e90\u4ee3\u7801","identifier":"https:\/\/www.eu4cn.com\/wiki\/%E7%BB%9F%E6%B2%BB%E8%80%85","url":"https:\/\/www.eu4cn.com\/wiki\/%E7%BB%9F%E6%B2%BB%E8%80%85","dateModified":"2024-03-13T07:47:12Z","datePublished":"2024-03-13T07:47:12Z","image":{"@type":"ImageObject","url":"https:\/\/www.eu4cn.com\/images\/logo\/logo.png"},"author":{"@type":"Organization","name":"\u6b27\u9646\u98ce\u4e914\u767e\u79d1","url":"https:\/\/www.eu4cn.com","logo":{"@type":"ImageObject","url":"https:\/\/www.eu4cn.com\/images\/logo\/logo.png","caption":"\u6b27\u9646\u98ce\u4e914\u767e\u79d1"}},"publisher":{"@type":"Organization","name":"\u6b27\u9646\u98ce\u4e914\u767e\u79d1","url":"https:\/\/www.eu4cn.com","logo":{"@type":"ImageObject","url":"https:\/\/www.eu4cn.com\/images\/logo\/logo.png","caption":"\u6b27\u9646\u98ce\u4e914\u767e\u79d1"}},"potentialAction":{"@type":"SearchAction","target":"https:\/\/www.eu4cn.com\/index.php?title=Special:Search&search={search_term}","query-input":"required name=search_term"}}</script>
+<link rel="stylesheet" href="http://www.unpkg.com/@fortawesome/fontawesome-free@5.15.1/css/all.css" />
+<link rel="stylesheet" href="http://www.unpkg.com/@fortawesome/fontawesome-free@5.15.1/css/v4-shims.css" />
+<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+<body class="Liberty width-size mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-统治者 rootpage-统治者 skin-liberty action-edit skin--responsive">		<header>
+			<div class="nav-wrapper navbar-fixed-top">
+						<nav class="navbar navbar-dark yamm">
+			<a class="navbar-brand" href="https://www.eu4cn.com/wiki/首页"></a>
+			<ul class="nav navbar-nav">
+				<li class="dropdown nav-item">
+					<a class="nav-link navbar-right" href="#" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+						<div class="navbar-brand-subtitle">欧陆风云4</div>
+						<div class="navbar-family">ParaWikis</div>
+					</a>
+				<ul class="dropdown-menu" aria-labelledby="dLabel">
+					<li>
+		                  <div class="yamm-content">
+		                    <div class="row">
+						 							<ul class="col-sm-4 list-unstyled">
+							<li><p class="meganav-item"><strong>最新百科</strong></p></li>
+								<a href="http://cs2.parawikis.com/" class="dropdown-item meganav-item">都市天际线2百科</a>
+								<a href="http://h3.parawikis.com/" class="dropdown-item meganav-item">英雄无敌3百科</a>
+								<a href="http://vic3.parawikis.com/" class="dropdown-item meganav-item">维多利亚3百科</a>
+								<a href="http://ce2.parawikis.com/" class="dropdown-item meganav-item">奇妙探险队2百科</a>
+								<a href="http://eos.parawikis.com/" class="dropdown-item meganav-item">罪恶帝国百科</a>
+								<a href="http://ir.parawikis.com/" class="dropdown-item meganav-item">英白拉多：罗马百科</a>
+							</ul>
+							<ul class="col-sm-4 list-unstyled">
+								<li><p class="meganav-item"><strong>热门百科</strong></p></li>
+								<a href="http://stellaris.parawikis.com/" class="dropdown-item meganav-item">群星百科</a>
+								<a href="http://www.eu4cn.com/" class="dropdown-item meganav-item">欧陆风云4百科</a>
+								<a href="http://ck2.parawikis.com/" class="dropdown-item meganav-item">十字军之王2百科</a>
+								<a href="http://ck3.parawikis.com/" class="dropdown-item meganav-item">十字军之王3百科</a>
+								<a href="http://hoi4.parawikis.com/" class="dropdown-item meganav-item">钢铁雄心4百科</a>
+								<a href="http://vic2.parawikis.com/" class="dropdown-item meganav-item">维多利亚2百科</a>
+							</ul>
+							<ul class="col-sm-4 list-unstyled">
+								<li><p class="meganav-item"><strong>ParaWikis</strong></p></li>
+								<a href="http://www.parawikis.com/wiki/ParaWikis:申请建站" class="dropdown-item meganav-item">申请建站</a>
+								<a href="http://www.parawikis.com/" class="dropdown-item meganav-item">ParaWikis</a>
+								<a href="http://commons.parawikis.com/" class="dropdown-item meganav-item">ParaCommons</a>
+							</ul>		                    </div>
+		                  </div>
+		                </li>
+				</ul>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="https://www.eu4cn.com/wiki/Special:最近更改" class="nav-link" title="本wiki的最近更改列表[r]" accesskey="r"><span class="fas fa-sync"></span><span class="hide-title">最近更改</span></a>				</li>
+				<li class="nav-item">
+					<a href="https://www.eu4cn.com/wiki/Special:随机页面" class="nav-link" title="加载一个随机页面[x]" accesskey="x"><span class="fa fa-random"></span><span class="hide-title">随机页面</span></a>				</li>
+				<li class="nav-item">
+					<a href="http://shang.qq.com/wpa/qunwpa?idkey=3bb76f6a58594b18c2defdc03af7ec2703fb2e2cc8fef6dadd1dcb896c0ede1a" target="_blank" class="nav-link" title="加入QQ群">
+						<span class="fa fa-qq"></span><span class="hide-title">加入QQ群</span>
+					</a>
+				</li>
+				<li class="dropdown nav-item">
+					<a class="dropdown-toggle nav-link" href="#" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+						<span class="fa fa-wrench"></span><span class="hide-title">工具</span>
+					</a>
+				<ul class="dropdown-menu" aria-labelledby="dLabel">
+					<li id="t-whatlinkshere" class="mw-list-item"><a href="https://www.eu4cn.com/wiki/Special:链入页面/统治者" title="所有链接至本页面的wiki页面列表[j]" accesskey="j" class="dropdown-item">链入页面</a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="https://www.eu4cn.com/wiki/Special:链出更改/统治者" rel="nofollow" title="链自本页的页面的最近更改[k]" accesskey="k" class="dropdown-item">相关更改</a></li><li id="t-specialpages" class="mw-list-item"><a href="https://www.eu4cn.com/wiki/Special:特殊页面" title="所有特殊页面的列表[q]" accesskey="q" class="dropdown-item">特殊页面</a></li><li id="t-info" class="mw-list-item"><a href="https://www.eu4cn.com/index.php?title=%E7%BB%9F%E6%B2%BB%E8%80%85&amp;action=info" title="关于此页面的更多信息" class="dropdown-item">页面信息</a></li><li id="t-cargopagevalueslink" class="mw-list-item"><a href="https://www.eu4cn.com/index.php?title=%E7%BB%9F%E6%B2%BB%E8%80%85&amp;action=pagevalues" rel="cargo-pagevalues" class="dropdown-item">页面值</a></li>				</ul>
+				</li>
+				<li class="dropdown nav-item"><a class="nav-link dropdown-toggle dropdown-toggle-fix" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true" title="帮助"><span class="fa fa-question"></span><span class="hide-title">帮助</span></a><div class="dropdown-menu" role="menu"><a class="dropdown-item" href="https://www.eu4cn.com/wiki/Project:译名手册" title="譯名手冊"><span class="fa fa-book"></span>譯名手冊</a><a class="dropdown-item" href="https://www.eu4cn.com/wiki/Project:字词转换" title="字詞轉換"><span class="fa fa-language"></span>字詞轉換</a><a class="dropdown-item" href="https://www.eu4cn.com/wiki/Project:编辑指南" title="編輯指南"><span class="fa fa-graduation-cap"></span>編輯指南</a><a class="dropdown-item" href="https://www.eu4cn.com/wiki/Project:编辑规范" title="編輯規範"><span class="fa fa-lightbulb"></span>編輯規範</a><a class="dropdown-item" href="https://www.eu4cn.com/wiki/Project:练手沙盒" title="Project:练手沙盒"><span class="fa fa-leaf"></span>練手沙盒</a></div></li><li class="dropdown nav-item"><a class="hidden-xs-down nav-link" data-toggle="" role="button" aria-haspopup="true" aria-expanded="true" title="ParaTranz" href="https://paratranz.cn/"><span class="fa fa-language"></span><span class="hide-title">ParaTranz</span></a></li><li class="dropdown nav-item"><a class="hidden-xs-down nav-link" data-toggle="" role="button" aria-haspopup="true" aria-expanded="true" title="52PCGame" href="http://bbs.52pcgame.net/"><span class="fa fa-comments"></span><span class="hide-title">52PCGame</span></a></li><li class="dropdown nav-item"><a class="hidden-xs-down nav-link" data-toggle="" role="button" aria-haspopup="true" aria-expanded="true" title="Project:捐款" href="https://www.eu4cn.com/wiki/Project:捐款"><span class="fa fa-heart"></span><span class="hide-title">资助我们</span></a></li>			</ul>
+					<div class="navbar-login">
+							<a href="#" class="none-outline" data-toggle="modal" data-target="#login-modal">
+					<span class="fa fa-sign-in"></span>
+				</a>
+					</div>
+									<form action="https://www.eu4cn.com/index.php" id="searchform" class="form-inline">
+			<input type="hidden" name="title" value="Special:搜索"/>
+			<div class="input-group">
+				<input type="search" name="search" placeholder="在欧陆风云4百科搜索" aria-label="在欧陆风云4百科搜索" autocapitalize="sentences" title="在欧陆风云4百科搜索[f]" accesskey="f" class="form-control" id="searchInput"/>				<span class="input-group-btn">
+					<button type="submit" name="go"
+						value="前往" id="searchGoButton"
+							class="btn btn-secondary" type="button"><span class="fa fa-eye"></span></button>
+					<button type="submit" name="fulltext"
+						value="搜索"
+						id="mw-searchButton" class="btn btn-secondary" type="button">
+						<span class="fa fa-search"></span></button>
+				</span>
+			</div>
+		</form>
+			</nav>
+				</div>
+		</header>
+		<section>
+			<div class="content-wrapper">
+							<aside>
+			<div class="liberty-sidebar">
+				<div class="live-recent-wrapper">
+					<div id='mw-data-after-content'>
+	<div class="read-more-container"></div>
+</div>
+												<div
+			class="live-recent"
+			data-article-ns="0|4|10|12|14"
+			data-talk-ns="1|5|7|9|11|13|15"
+		>
+			<div class="live-recent-header">
+			<ul class="nav nav-tabs">
+				<li class="nav-item">
+					<a href="javascript:" class="nav-link active" id="liberty-recent-tab1">
+						最近更改					</a>
+				</li>
+				<li class="nav-item">
+					<a href="javascript:" class="nav-link" id="liberty-recent-tab2">
+						最近讨论					</a>
+				</li>
+			</ul>
+			</div>
+			<div class="live-recent-content">
+				<ul class="live-recent-list" id="live-recent-list">
+					<li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li>				</ul>
+			</div>
+			<div class="live-recent-footer">
+				<a href="https://www.eu4cn.com/wiki/Special:最近更改" title="Special:最近更改"><span class="label label-info">查看更多</span></a>			</div>
+		</div>
+						<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 侧栏 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1612414434963106"
+     data-ad-slot="1728061201"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-K4RD1C6KBW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-K4RD1C6KBW');
+</script>
+				</div>
+										</div>
+			</aside>
+								<div class="container-fluid liberty-content">
+					<div class="liberty-content-header">
+													<div class="alert alert-dismissible fade in alert-info liberty-notice" role="alert">
+								<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+								<div id="localNotice"><div class="sitenotice" lang="zh" dir="ltr"><div style="text-align:center; font-size:125%; line-height: 1; padding: 10px;"><b>欢迎访问欧陆风云4百科！<a href="https://www.eu4cn.com/wiki/Special:用户登录" title="Special:用户登录"><span class="alert-link">注册一个账号</span></a>，一起参与编写吧！这里是<a href="https://www.eu4cn.com/wiki/欧陆风云4百科:当前任务#页面" title="欧陆风云4百科:当前任务"><span class="alert-link">当前的工程</span></a>。</b></div>
+<div style="text-align: center;">如果您想帮助本站建设，欢迎点击<a href="https://www.eu4cn.com/wiki/欧陆风云4百科:捐款" title="欧陆风云4百科:捐款"><b>这里</b></a>捐款！欢迎所有对百科感兴趣的同学加入QQ群：<b>497888338</b>。</div></div></div>							</div>
+															<div class="content-tools">
+				<div class="btn-group" role="group" aria-label="content-tools">
+					<div id="ca-view" class="mw-list-item"><a href="https://www.eu4cn.com/wiki/统治者" class="btn btn-secondary tools-btn">阅读</a></div><div id="ca-viewsource" class="selected mw-list-item"><a href="https://www.eu4cn.com/index.php?title=%E7%BB%9F%E6%B2%BB%E8%80%85&amp;action=edit" title="本页面受到保护。&#10;您可以查看其源代码[e]" accesskey="e" class="btn btn-secondary tools-btn">查看源代码</a></div><div id="ca-history" class="mw-list-item"><a href="https://www.eu4cn.com/index.php?title=%E7%BB%9F%E6%B2%BB%E8%80%85&amp;action=history" title="本页面过去的版本[h]" accesskey="h" class="btn btn-secondary tools-btn">查看历史</a></div>					<a href="https://www.eu4cn.com/wiki/Talk:统治者" class="btn btn-secondary tools-btn" title="关于内容页面的讨论[t]" accesskey="t" id="ca-talk">讨论</a>				</div>
+			</div>
+							<div class="title">
+						<h1>
+							查看“统治者”的源代码						</h1>
+						<div class="mw-indicators">
+</div>
+						</div>
+						<div class="contentSub" >
+							←<a href="https://www.eu4cn.com/wiki/统治者" title="统治者">统治者</a>						</div>
+				</div>
+					<div class="liberty-content-main" id="content">
+											<div class="mw-body-content" id="mw-content-text">
+							<div id="mw-content-text" class="mw-body-content"><p>因为以下原因，您没有权限编辑本页：
+</p>
+<div class="permissions-errors">
+<p>您请求的操作仅限属于该用户组的用户执行：<a href="https://www.eu4cn.com/wiki/欧陆风云4百科:用户" title="欧陆风云4百科:用户">用户</a>
+</p>
+</div><hr />
+<p>您可以查看和复制此页面的源代码。
+</p><textarea readonly="" accesskey="," id="wpTextbox1" cols="80" rows="25" style="" class="mw-editfont-monospace" lang="zh" dir="ltr" name="wpTextbox1">{{version|1.35}}
+{{N|统治者|Ruler}}是EU4中一个国家的领导者。在EU4中，统治者有着0~6点的[[君主点数|行政、外交和军事能力]]，影响国家每月可获得的点数。本文中的统治者可指代[[君主国]]的君主，也指代[[共和国]]和[[神权国]]所选出的国家元首。
+
+== 统治者能力值 ==
+{{SVersion|1.34}}
+当统治者或继承人随机产生或通过事件产生时，他们会获得一组能力值，分别对应 {{icon|adm}} 行政、{{icon|dip}} 外交和 {{icon|mil}} 军事。
+
+通常情况下，每项能力值均由如下公式分别产生：&lt;math>random(0-3) + random(0-3)&lt;/math>。
+
+AI[[幸运国家]]的统治者或继承人产生时，每项能力值有50%概率额外+1；如果最终得数是7，则取6。公式为：&lt;math>random(0-3) + random(0-3) + random(0-1)&lt;/math>。
+
+若产生的不是统治者或继承人，由摄政会议执政，则在原公式所得结果的基础上额外-1。公式为：&lt;math>random(0-3) + random(0-3) - 1&lt;/math>。若该国家为AI[[幸运国家]]，则不会额外-1。
+
+&lt;small>注：random指随机值。&lt;/small>
+
+{| class="wikitable"
+|-
+! 可能的能力值 !! 普通国家/摄政会议（幸运国家） !! 摄政会议 !! 幸运国家
+|-
+| 0 || 1/16 (2/32) || 3/16 (6/32) || 1/32
+|-
+| 1 || 1/8 (4/32) || 3/16 (6/32) || 3/32 
+|-
+| 2 || 3/16 (6/32) || 1/4 (8/32) || 5/32 
+|-
+| 3 || 1/4 (8/32) || 3/16 (6/32) || 7/32 
+|-
+| 4 || 3/16 (6/32) || 1/8 (4/32) || 7/32 
+|-
+| 5 || 1/8 (4/32) || 1/16 (2/32) || 5/32 
+|-
+| 6 || 1/16 (2/32) || 0 || 1/8 (4/32)
+|-
+| 期望值 || 3.00 || 2.06 || 3.47
+|-
+| 标准差 || 1.58 || 1.48 || 1.60
+|}
+
+=== 统治者能力修正 ===
+君主能力可被一系列 {{icon|monarch administrative skill|28px}} {{icon|monarch diplomatic skill|28px}} {{icon|monarch military skill|28px}} 修正影响，这些修正仅影响未来产生的统治者或继承人的属性，而不能改变已经存在的属性数值。如果修正后的结果超过最大值6，则一律取6。
+
+如果开启了DLC {{icon|moh|28px}} 天命，则 {{icon|emperor of china|28px}} [[中国皇帝]]通过天朝改革“重整官制”后，会为未来的君主提供 {{icon|monarch administrative skill|28px}} {{green|+1}} 君主行政能力。
+
+下列国家理念提供额外的君主能力加成：
+
+{{icon|adm}} 行政能力：''（暂无）''
+
+{{icon|dip}} 外交能力：
+{{Bonus table|monarch diplomatic skill}}
+{{icon|mil}} 军事能力：
+{{Bonus table|monarch military skill}}
+
+
+下列 {{icon|government}} [[政府#政府改革|政府改革]]提供额外的君主能力加成：
+{| class="mildtable mw-collapsible"
+|-
+! width=4%| 政体 !! width=4%| 级别 !! width=15%| 名称 !! {{icon|monarch administrative skill|24px}} 行政 !! {{icon|monarch diplomatic skill|24px}} 外交 !! {{icon|monarch military skill|24px}} 军事 !! width=50%| 备注
+|-
+| {{icon|gov_monarchy}} || 1 || [[君主制#利沃尼亚开明君主制|利沃尼亚开明君主制]] || {{Green|+1}} || {{Green|+1}} || {{Green|+1}} || 
+|-
+| {{icon|gov_republic}} || 1 || [[共和制#威尼斯政府|威尼斯政府]] || {{Green|+1}} || {{Green|+1}} || {{Green|+1}} || 
+|-
+| {{icon|gov_republic}} || 3 || [[共和制#抽签|抽签]] || {{Green|+1}} || {{Green|+1}} || {{Green|+1}} || 
+|-
+| {{icon|gov_republic}} || 13 || [[共和制#终身总统|终身总统]] || {{Green|+1}} ||  || {{Green|+1}} || 
+|-
+| {{icon|gov_theocracy}} || 3 || [[神权制#教育统治者|教育统治者]] || rowspan="2"| （{{Green|+1}}） || rowspan="2"| （{{Green|+1}}） || rowspan="2"| （{{Green|+1}}） || rowspan="2"| 启用该政府改革时，新统治者即位时将触发为下一任统治者触发[[斯堪的纳维亚事件#flavor_sca.2|教育重心]]事件；在事件中，可以选择为未来的统治者/继承人提供某一方面属性+1
+|-
+| {{icon|gov_theocracy}} || 3 || [[神权制#天主的国|天主的国]]
+|-
+| {{icon|gov_monarchy}} || 1 || [[君主制#马穆鲁克政府|马穆鲁克政府]] || {{Green|+2}} ||  ||  || 
+|-
+| {{icon|gov_monarchy}} || 1 || [[君主制#改组奥斯曼政府|改组奥斯曼政府]] || {{Green|+2}} ||  ||  || 
+|-
+| {{icon|gov_monarchy}} || 1 || [[君主制#大帝国|大帝国]] || {{Green|+2}} ||  ||  || 
+|-
+| {{icon|gov_theocracy}} || 3 || [[神权制#天主的国|天主的国]] || {{Green|+2}} ||  ||  || 
+|-
+| {{icon|gov_monarchy}} || 1 || [[君主制#现代化奥斯曼政府|现代化奥斯曼政府]] || {{Green|+1}} ||  ||  || 
+|-
+| {{icon|gov_monarchy}} || 1 || [[君主制#咨议会行政制|咨议会行政制]] || {{Green|+1}} ||  ||  || 
+|-
+| {{icon|gov_monarchy}} || 7 || [[君主制#王室行政|王室行政]] || {{Green|+1}} ||  ||  || 
+|-
+| {{icon|gov_monarchy}} || 1 || [[君主制#奥地利帝国君主制|奥地利帝国君主制]] ||  || {{Green|+2}} ||  || 
+|-
+| {{icon|gov_monarchy}} || 1 || [[君主制#利沃尼亚联省议会|利沃尼亚联省议会]] ||  || {{Green|+2}} ||  || 
+|-
+| {{icon|gov_theocracy}} || 1 || [[神权制#索马里神权制|索马里神权制]] ||  || {{Green|+1}} ||  || 
+|-
+| {{icon|gov_monarchy}} || 1 || [[君主制#普鲁士君主制|普鲁士君主制]] ||  ||  || {{Green|+3}} || 
+|-
+| {{icon|gov_monarchy}} || 1 || [[君主制#利沃尼亚军国君主制|利沃尼亚军国君主制]] ||  ||  || {{Green|+2}} || 
+|-
+| {{icon|gov_tribal}} || 1 || [[部落政府#祖鲁部落|祖鲁部落]] ||  ||  || {{Green|+2}} || 
+|-
+| {{icon|gov_monarchy}} || 1 || [[君主制#大幕府|大幕府]] ||  ||  || {{Green|+1}} || 
+|-
+| {{icon|gov_monarchy}} || rowspan="3"| 4 || rowspan="3"| [[通用政府改革#大草原的遗产|大草原的遗产]] || rowspan="3"|  || rowspan="3"|  || rowspan="3"| {{Green|+1}} || rowspan="3"| 
+|-
+| {{icon|gov_republic}}
+|-
+| {{icon|gov_theocracy}}
+|-
+| {{icon|gov_theocracy}} || 1 || [[神权制#贞德姊妹会|贞德姊妹会]] ||  ||  || {{Green|+1}} || 
+|}
+
+下列 {{icon|mission}} [[任务]]提供额外的君主能力加成：
+
+*[[波希米亚任务|波希米亚任务]]可以为当前的君主提供 {{icon|monarch diplomatic skill|28px}} {{green|+1}} 君主外交能力，并提供 {{icon|monarch diplomatic skill|28px}} {{green|+1}} 未来君主外交能力的永久修正
+*[[萨伏依任务]]可以为当前和未来的君主提供 {{icon|monarch diplomatic skill|28px}} {{green|+2}} 君主外交能力，并提供一个为期 {{icon|time}} 30年的 {{icon|monarch diplomatic skill|28px}} {{green|+2}} 未来君主外交能力的修正
+*[[奥地利任务]]可以为当前和未来的君主提供 {{icon|monarch diplomatic skill|28px}} {{green|+2}} 君主外交能力，并提供一个为期 {{icon|time}} 30年的 {{icon|monarch diplomatic skill|28px}} {{green|+2}} 未来君主外交能力的修正
+*[[阿尔巴尼亚任务|阿尔巴尼亚任务]]可以为当前的君主提供 {{icon|monarch military skill|28px}} {{green|+1}} 君主军事能力，并提供 {{icon|monarch military skill|28px}} {{green|+1}} 未来君主军事能力的永久修正
+
+== 统治者特质 ==
+{{SVersion|1.32}}{{main|特质}}
+[[File:Ruler_Personality.png|right|thumb|330px|统治者生成一项特质]]
+AI国家的统治者会获得AI人格，分为平衡型、资本家、外交家、殖民主义者和军国主义者。人格种类主要取决于AI统治者三项能力值的高低，并会影响其在位时国家的行为。
+
+{{expansion|rom}}
+每个统治者、继承人和统治者配偶都可以获得至多3种特质，当其在位时，这些特质会给国家带来或正面或负面的作用，也会对AI国家的行为产生影响。
+
+== 君主制 ==
+{{SVersion|1.35}}
+{{icon|gov_monarchy}} [[君主制]]国家的统治者终身执政，死后王位将由其储君继承。
+
+=== 王朝 ===
+除共和制外，君主制、神权制和部落政体国家的统治者均属于自己的王朝。可由以下方式获得新的王朝：
+
+* 接受其他国家的王朝
+* 篡权叛军
+* 事件
+* 君主死亡且无继承人时，随机产生新的统治者及其王朝
+* 摄政议会期间继承人死亡时，摄政成为新的统治者
+
+绝大多数君主制、神权制和部落政体国家在游戏开始时，无论是1444年还是其他剧本，都有王朝存在。1444年的波兰是其中一个例外，当时其正处于政权更迭的[[空位期]]。
+
+==== 同一王朝和王朝传播 ====
+不同国家可以属于同一个王朝。例如，开局时，{{flag|FRA}}和 {{flag|PRO}}等国均属于“{{ruby|德 瓦卢瓦|de Valois}}”王朝。所有共享同一王朝的国家间均享受 {{Green|+25}} 双边关系加成。
+
+传播王朝首先需要[[王室联姻]]，然后才由[[威望]]等许多因素决定。截止目前，王朝传播的机制尚不十分明了，可通过游戏经验自行推测。
+
+==== 继承王位与联合统治 ====
+{{main|联合统治}}
+处在同一王朝是[[宣称王位]]的前提条件之一，也是[[继承战争]]和[[继承]]的重要组成部分。当一个基督教君主制国家绝嗣（统治者去世后没有继承人）时，与其同一王朝或有王室联姻关系的国家的统治者可以继承它的王位；联合统治关系也可以通过联合统治战争或特殊事件强制达成。
+
+=== 王室联姻 ===
+{{SVersion|1.35}}
+{{hatnote|国家间王室联姻的外交影响，参见[[外交#王室联姻]]}}
+{{hatnote|联合统治的形成机理，参见[[联合统治]]}}
+[[File:Queen.jpg|right|thumb|330px|与其他国家联姻]]
+由君主统治的国家可以彼此建立 {{icon|royal marriage}} 王室联姻。
+
+处在同一王朝是[[宣称王位]]的前提条件之一，也是[[继承战争]]和[[继承]]的重要组成部分。
+
+每个联姻关系给予每年0.1的[[正统性]]，但联姻这一行为可能立即降低1~5点的正统。每个王室联姻都会增加 {{Green|5%}} 新继承人产生概率。
+
+绝大多数君主制可以建立王室联姻；部分拥有特定政府改革的其它政体的国家也可以建立王室联姻。
+
+===  配偶 ===
+{{Expansion|rom}}
+王室联姻有几率为统治者带来一位配偶（王后或王夫），配偶属于联姻国的王朝。在诞下继承人时如果没有配偶，则会得到一名来自地方贵族的配偶。配偶会略微提升与联姻国的关系。
+
+配偶会在指定继承人未成年时代为执政，替代内阁摄政体制。配偶亦有可能在继承人成年或死亡后继续执掌权柄。
+
+=== 继承人 ===
+{{SVersion|1.35}}
+每一个君王都要有储君，可以是儿子、女儿或其他亲属。在[[君主制]]国家中，储君拥有其宣称强度（从0到100），宣称强度将决定其即位时的初始[[正统性]]。王储的最低执政年龄是15岁，在那之前将由[[摄政]]代行。
+
+在没有继承人时，继承人名字处会显示“没有合法继承人”。如果统治者恰在此时丧生，国家将可能：
+
+* 从有王室联姻的国家获得一位来自该国王朝的君主
+* 接受他国主导的[[联合统治]]
+* 面对一场[[继承战争]]并受获胜方主导联合统治 
+* 获得一个与原君主王朝相同的统治者
+* 随机产生一个属于本国脚本中定义的王朝的君主（“一个XXX的贵族继承王位”）
+* 被直接[[继承]]
+
+而最终究竟会发生什么，则由诸多因素决定，包括但不限于：联姻、王朝、宿敌、威望、正统、军事实力、[[发展度]]。
+
+====名字====
+{{Expansion|eld|cos}}
+玩家可以为继承人自定义名称，或从脚本中预设的名字中随机选取。
+
+===={{icon|heir chance|30px}} 继承人几率====
+{{SVersion|1.30}}
+'''获得继承人的几率：'''&lt;br>
+
+下列修正影响在国家无继承人时，每天能够获得继承人的概率：
+&lt;math>\frac{m \cdot a \cdot (1 + b)}{182500}&lt;/math> &lt;br>
+
+其中：
+
+* &lt;math>m&lt;/math> 为基础继承人生成值（键值为BASE_HEIR_BIRTH），默认为 120 
+
+* &lt;math>a&lt;/math> 在当前君主在位满30年后为0.5，否则为1。在第三十年的一月一日此值由1变为0.5。需要注意的是，开局时某些君主并不是在15岁才坐上王位的。
+
+* &lt;math>b&lt;/math> 是所有 {{icon|heir chance|30px}} 获得继承人几率修正之和
+'''理念和政策：'''
+{{bonus table|heir chance}}
+'''其他修正：'''
+{|
+| align=right | {{green|+100%}} || 国教为[[伊斯兰教]]
+|-
+| align=right | {{green|+50%}} || 君主拥有 {{icon|fertile}} 枝繁叶茂[[特质]]
+|-
+| align=right | {{green|+33%}} || {{icon|dyes}} 染料贸易奖励
+|-
+| align=right | {{green|+25%}} || [[幸运国家]]（AI控制）
+|-
+| align=right | {{green|+5%}} || 每有一个 {{icon|royal marriage}} 王室联姻
+|-
+| align=right | {{red|-25%}} || 君主拥有 {{icon|infertile}} 枯枝败叶[[特质]]
+|}
+
+以及某些事件也能影响 {{icon|heir chance|28px}} 继承人几率。
+
+下表举例说明部分情况下获得继承人的概率：
+
+{| class="wikitable"
+! 情形 !! &lt;math>a \cdot (1 + b)&lt;/math> !! 在一年内获得继承人的概率
+|-
+| 枯枝败叶并且在位超过30年 || 0.375 || 8.61%
+|-
+| 在位超过30年 || 0.5 || 11.31%
+|-
+| 枯枝败叶 || 0.75 || 16.48%
+|-
+| 正常情况 || 1 || 21.34%
+|-
+| 拥有4个王室联姻 || 1.2 || 25.03%
+|-
+| 拥有染料的贸易奖励|| 1.33 || 27.33%
+|-
+| 枝繁叶茂 || 1.5 || 30.24%
+|-
+| 伊斯兰教 || 2 || 38.14%
+|-
+| 枝繁叶茂、伊斯兰教、拥有染料的贸易奖励 || 2.83 || 49.33%
+|}
+
+==== 继承人宣称 ====
+'''继承人宣称'''表示继承人在民众眼中的正统性，数值从0到100，在继承人出现时生成。一旦该继承人即位，其初始正统性就将等于其继承人宣称的数值。宣称低于33.3时，为弱宣称；在33.3-66.6之间为中等宣称；高于66.6为强宣称。继承人宣称为中或弱时，将增大篡权者叛军的出现几率。其计算公式相当之随机，但赋值很高，使得大多数自然产生的继承人均为强宣称。DLC {{icon|lev}} 利维坦开启时，刚刚产生的0岁继承人宣称总为中。
+
+继承人宣称会随时间推移而不断变化。在多数情况下，继承人宣称会不断提高，每个月提升的数值由基本值和 {{icon|Prestige}} 威望带来的修正组成。然而 {{Flag|勃艮第}}处于[[勃艮第继承危机]]下时，继承人不会提高。[[议会]]议案“支持当政王朝”和一些事件也能改变继承人宣称。
+
+继承人宣称的月度变化如下：
+*基础增长：{{Green|+0.20}}
+*威望：随威望数值线性变化，-100威望时{{Red|-0.05}}，+100威望时{{Green|+0.05}}
+*腐败度：随腐败度数值线性变化，100腐败度时{{Green|+0.03}}
+
+====引荐新继承人====
+{{expansion|emp}}
+如果一个王朝没有继承人，可以花费 {{icon|legitimacy}} {{red|−20}} [[正统性]]和 {{icon|Prestige}} {{red|−20}} [[威望]]引荐新继承人，只要国家符合以下条件：
+
+*无摄政议会
+*未处于战争
+*威望为正
+*有至少90正统性
+*不是拥有固定王朝
+
+通过这种方式引荐的继承人将来自于不同于国家统治王朝的本地王朝，并拥有弱宣称。
+
+而且，引荐新继承人将给予所有与其具有王室联姻的国家一个为期20年的“[[Casus_belli#Restoration_of_Union|重建联合统治]]”的宣战理由。具有重建联合统治宣战理由的盟友对你的外交态度会变成 {{icon|domineering attitude}} 渴望支配，倾向于撕毁盟约。
+
+====花费人情安排继承人====
+{{expansion|lev}}
+可以花费 90 [[人情]]为一个没有继承人的国家指定一个来自本国王朝的继承人；两国必须都是君主制国家代理国和目标国都必须是君主制国家。这一外交行动会对所有同一宗教国家产生20侵略扩张。难度设置为“极难”时，此外交行动将被禁用。
+
+==== 废黜继承人 ====
+{{Expansion|rom}}
+国家可以花费 {{red|-50}} {{icon|Prestige}} 威望剥夺继承人的继承权。之后国家将无任何合法继承人，且无法召回已被废黜的储君。
+
+=== 摄政 ===
+{{SVersion|1.33}}{{see also|阶层摄政事件|特殊摄政事件|延长摄政事件}}
+当某国的君主尚未成年（多数时候是因为在其未成年时前代君主便已过世），国家将由“摄政议会”统治。摄政议会具有随机生成的君主能力，根据前文所述的公式，其能力数值期望较低；其统治将持续到君主15岁成年&lt;ref>见于 {{path|defines}}：AGE_OF_ADULTHOOD = 15，&lt;/ref>。如果DLC {{icon|lev}} 利维坦启用，摄政议会将由一位明确的摄政领导，将从最有影响力的[[阶层]]中选出。摄政期间，非[[纳瓦特尔]]宗教的国家将不能发动战争（但依然可以被宣战）。此外，在摄政期间每年 {{icon|legitimacy}} {{red|-2.00}} [[正统性]]&lt;ref>见于 {{path|common/static_modifiers/00_static_modifiers.txt}} ([[Static_modifiers#Regency council]])。&lt;/ref>。
+
+当处于摄政统治时，获得如下修正：
+{{#lsth:Static modifiers|摄政议会}}
+
+{{main|政变企图}}
+在摄政议会统治期间，灾难“政变企图”可能发生。
+
+{{Expansion|rom}}
+继承人尚未成年时，如果前任君主有配偶，则由配偶代继承人摄政，直至君主成年，不会产生随机的摄政议会。配偶摄政时，允许对其它国家宣战；配偶的君主特质此时也会对国家产生效果。
+
+{{expansion|lev}}
+当继承人即将成年、配偶摄政或摄政议会即将结束时，可以选择延长摄政期。每次花费 {{Red|-10}} 正统性，并将摄政期延长 5 年。
+
+==== 摄政期间摄政或继承人死亡 ====
+配偶摄政期间，当摄政配偶死亡时，随机产生一个阶层摄政议会代继承人摄政。
+
+配偶摄政期间，当继承人死亡时，由配偶在一天后成为正式统治者，正统性固定为75。
+
+阶层摄政议会摄政期间，当继承人死亡时，随机产生一个具有本国王朝的18岁君主，属性为0/0/0，正统性维持为当前数值。
+
+=== 空位期 ===
+空位期实质上是无政府状态，没有领导者在控制国家。君主去世时没有子嗣便有可能发生这种情况。在通常情况下，空位期不会在正常游戏流程中出现，因为君主无嗣死亡或摄政期间继承人死亡时，必定会产生新的君主。空位期通常不会持续很长，平均大概是一年，尽管理论上可以持续长得多的时间。空位期结束时，一个新的君主将会产生，产生的机制和正常的王位交替相同，就如同旧君主刚刚死去一样，来自联姻王室的贵族或者当地贵族将成为新君主。
+
+开局时，根据历史事实，{{flag|POL}}、{{flag|HUN}}、{{flag|CRO}}和 {{flag|BOH}}处于空位期。波兰、匈牙利、克罗地亚的共同君主刚刚战死于瓦尔纳之战；波希米亚则未对遗腹子拉迪斯劳斯的继承权达成一致。对于这些空位期都有特定的事件，为其产生新的君主和继承人。在这些事件发生之前，仍可能根据一般流程，产生来自外国王室或本地贵族的新统治者。
+
+1444年开局时部分国家，如所有1级政府改革为“氏族议会”的国家（包括西伯利亚、北美洲和南美洲的大多数土著）在选择国家时都显示为空位期，但它们在游戏开始后会立刻获得一位新的统治者。
+
+=== 退位 ===
+君主可以选择退居二线，让新君接掌大权。注意这视同于君主死亡，因此并不能避免应有的稳定度损失。
+
+君主需满足下列二者之一方可退位：
+** 统治超过 '''20''' 年
+** 年龄超过 '''60''' 岁
+
+退位将花费：
+** {{red|-20}} {{icon|Legitimacy}} 正统性或 {{red|-20}} {{icon|Horde Unity}} {{DLC-only|游牧团结}}
+** {{red|-50}} {{icon|Prestige}} 威望
+
+此外，还将受到通常君主死亡时的 -1 稳定度惩罚。
+
+=== 死亡 ===
+当君主死亡时，国家将遭受 {{red|-1}} 稳定度惩罚；如果君主作为 {{icon|ruler general}} 将领在交战或围城之中死亡，则 {{red|-2}}。继承人作为 {{icon|heir general}} 将领在战斗中死亡也会导致 {{red|-1}} 稳定度，而正常死亡则无任何惩罚，但仍然有一些事件会导致继承人死亡并降低稳定度。
+
+== 共和制 ==
+{{SVersion|1.35}}
+在 {{icon|gov_republic}} [[共和国]]中，国柄通常按照一定的选举周期产生轮换。视具体的政府改革不同，选举周期或长或短，也可能不进行选举、统治者终身执政，直至其死亡后选取新统治者。不论是否终身执政，共和制国家的统治者均没有王朝。共和国没有继承人机制，并以[[共和传统]]替代[[正统性]]。共和国通常不能够[[联姻]]，仅有特定的共和制政府改革允许联姻。
+
+以下仅介绍一般情况下共和制国家通用的选举机制；对于特殊政府改革采用的选举机制，详见本页面后续章节。
+
+=== 选举 ===
+{{see also|选举事件}}
+选举周期取决于共和制政府类型。最常见的选举周期为4年；具体可查看[[共和制]]页面中的1级政府改革列表。下一次选举的时间显示于当前统治者的下方。统治者在任期内死亡时，也会重新进行选举（共和传统低于20的总统独裁除外）。
+
+某些政府改革可以改变选举周期：
+{| class="mildtable"
+|-
+! {{icon|length of election term}} 选举周期 !! 级别 !! 政府改革
+|-
+| rowspan="3"| 周期 '''-1''' 年 || 3 || [[共和制#频繁选举|频繁选举]]
+|-
+| 9 || [[共和制#政治素人|政治素人]]
+|-
+| 9 || [[共和制#革命议会|革命议会]]
+|-
+| rowspan="3"| 周期 '''+1''' 年 || 3 || [[共和制#巩固权力|巩固权力]]
+|-
+| 9 || [[共和制#总统集权|总统集权]]
+|}
+
+选举时，可从3位候选人中选择其一，3位候选人的君主能力是固定的：行政、外交、军事有一项为4，其余两项为1，分别为4/1/1、1/4/1和1/1/4。也可以选择花费共和传统使当前领导人连任。
+
+启用政府改革“[[共和制#意大利执政团|意大利执政团]]”或“[[共和制#政治王朝|政治王朝]]”时，将额外生成一个与现任统治者同一姓氏的候选人。启用意大利执政团时，该候选人的技能为随机生成；（仅）启用政治王朝时，该候选人的技能在随机生成结果上每项{{Red|-2}}。选举该候选人将花费等于任期长度{{Red|1}}倍的共和传统。
+
+启用政府改革“[[共和制#重选权正式化|重选权正式化]]”或“[[共和制#立法议会|立法议会]]”时，可通过决议重新选举。这两个政府改革将解锁决议“[[总决议列表#force_reelection|强制重选]]”，允许在选举周期内花费{{Red|5}}共和传统，立即触发事件进行选举。在强制重选中，选择现任统治者将额外花费{{Red|50%}}共和传统。
+
+====连任====
+如果选举不是由前[[统治者]]去世触发的，则统治者可以连任。这将使当前统治者继续留任一个任期，三项能力值各提升{{green|1}}（不超过6）；国家还将随机获得某一种类 {{icon|all power}} {{green|50}}点数。
+
+连任并不是无限制的——为了平衡能力值增加带来的增益，连任将消耗 {{icon|republican tradition}} [[共和传统]]。 
+
+连任的 {{icon|republican tradition}} 共和传统消耗与选举周期的长度有关。周期每有一年，则消耗 {{icon|republican tradition}} {{red|2.5}}共和传统（例如，4年的选举周期连任消耗为 {{icon|republican tradition}} {{red|10}}共和传统，8年的选举周期连任消耗为{{red|20}})。
+
+如果统治者在由“强制重选”决议中引发的选举中连任，那么重新选举他们的成本将增加{{red|50%}}。
+
+在低于 {{icon|republican tradition}} {{red|20}}共和传统的情况下连任统治者将使国家变成[[共和制#总统独裁|独裁政权]]。如果独裁者去世，而 {{icon|republican tradition}} 共和传统仍低于{{yellow|50}}，国家将变为[[君主制]]。一些特殊的共和制[[共和制事件#暴君的崛起|不能变为独裁政权]]。
+
+以下政府改革可以影响连任花费：
+{| class="mildtable"
+|-
+! {{icon|reelection cost}} !! 政府改革 !! 级别
+|-
+| {{Green|-15%}} || 制宪会议 || 3
+|-
+| {{Green|-10%}} || 整合权力 || 9
+|-
+| {{Green|-10%}} || 增强共和价值观 || 13
+|}
+
+====选举额外效果====
+一些政府改革有相应的特殊政府机制，使选举附加额外效果。
+
+*连任降低{{yellow|10}}阶层影响力：[[共和制#巩固权力|巩固权力]]
+*选举时增加'''20'''[[派系]]影响力：[[共和制#财阀政治|财阀政治]]、[[共和制#威尼斯政府|威尼斯政府]]、[[共和制#卫彻共和国|卫彻共和国]]、[[共和制#贸易城市|贸易城市]]、[[共和制#海盗共和国|海盗共和国]]、[[共和制#贸易公司|贸易公司]]、[[共和制#国民议会|国民议会]]
+*选举提高某阶层{{Green|10}}忠诚度：[[共和制#议事会威权|议事会威权]]
+*统治者不可连任超过一届，但在位期间给予额外奖励：[[共和制#国民议会|国民议会]]
+*连任增加专制度：[[共和制#整合权力|整合权力]]、[[共和制#政治素人|政治素人]]
+
+=== 死亡 ===
+当共和国领导人于在位时死亡，会立即举行一次选举以选出新领导人。此死亡将'''不会'''导致 {{red|-1}} {{icon|stability}} 稳定度惩罚，除非该领导人死于交战或围城中。
+
+== 神权制 ==
+{{SVersion|1.35}}
+神权国由其宗教领袖统治，采取[[政府#奉献度|奉献度]]机制而非[[正统性]]。神权制国家不可与其他国家[[联姻]]。
+
+=== 继承人 ===
+{{see also|神权制事件}}
+通常情况下，神权国的继承人通过事件“[[神权制事件#theocracy.1|$COUNTRY$需要继承人]]”选择。神权国继承人的能力属性在选择前是隐藏的，一般有来自不同阶层或身份的4-6个继承人可供选择，年纪一般大于40岁；不同的选择一般会影响阶层的忠诚度等。与此同时，神权国也不会出现摄政会议统治的情况，因为它们永远有继承人且继承人都是足以亲政的成年人。神权国统治者[[君主能力]]数值的生成方式与君主制国家相同。
+
+启用第9层的政府改革“[[神权制#追寻真理|追寻真理]]”时，备选继承人的能力数值将变为事先可见。
+
+不同于君主制国家，神权制国家不能废黜继承人。
+
+=== 死亡 ===
+神权国统治者只有在野战或攻城时死亡才会造成 {{red|-1}} {{icon|stability}} 稳定度惩罚。
+
+==部落政府==
+与君主制相比，{{icon|gov_tribal}} 部落政府的统治者机制在设计和实际效果方面基本没有区别。
+
+===草原游牧===
+草原游牧和大蒙古国与君主制也基本类似，但通常情况下不会进入摄政议会统治。当其君主死亡时，如果继承人未成年，则会通过“[[部落继承事件#tribal_succession.1|部落继承危机]]”随机产生一个新君主，移除当前的继承人和摄政。
+
+==原住民议会==
+{{icon|gov_native}} [[原住民议会]]的新统治者在原统治者死亡后随机生成，且没有配偶和继承人。原住民国家不使用 {{icon|legitimacy}} 正统性等政府强度数值。
+
+
+==统治者特殊继任机制==
+许多政府改革拥有特殊机制，其产生统治者的方式与上述的通用机制不同。现分别列于如下章节。
+
+===通用继任机制===
+此章节列出的统治者产生机制由至少2种以上政府改革所共用。
+
+====陆军/海军将领成为统治者====
+
+启用以下政府改革后，当前统治者死亡时，一名 {{icon|General}} 陆军将领或 {{icon|Admiral}} 海军将领成为统治者。&lt;br>
+
+使用该机制的政府改革如下：
+
+{| class="mildtable"
+|+ {{icon|General}} 陆军将领成为统治者
+|-
+! 政体 !! 级别 !! 名称
+|-
+| {{icon|gov_monarchy}} || 1 || [[君主制#利沃尼亚佣兵国|利沃尼亚佣兵国]]
+|-
+| {{icon|gov_monarchy}} || 1 || [[君主制#吉利支丹太阳之地|吉利支丹太阳之地]]
+|-
+| {{icon|gov_monarchy}} || 10 || rowspan="2"| [[通用政府改革#军人选举|军人选举]]
+|-
+| {{icon|gov_republic}} || 11
+|-
+| {{icon|gov_republic}} || 1 || [[共和制#军事独裁|军事独裁]]
+|-
+| {{icon|gov_republic}} || 1 || [[共和制#军政府|军政府]]
+|-
+| {{icon|gov_republic}} || 11 || [[共和制#军事专政|军事专政]]
+|-
+| {{icon|gov_theocracy}} || 10 || [[神权制#世袭制修会|世袭制修会]]
+|}
+
+
+{| class="mildtable"
+|+ {{icon|Admiral}} 海军将领成为统治者
+|-
+! 政体 !! 级别 !! 名称
+|-
+| {{icon|gov_monarchy}} || 1 || [[君主制#利沃尼亚海军政府|利沃尼亚海军政府]]
+|-
+| {{icon|gov_monarchy}} || 1 || [[君主制#利沃尼亚海权国|利沃尼亚海权国]]
+|-
+| {{icon|gov_republic}} || 6 || [[共和制#海盗之王|海盗之王]]
+|-
+| {{icon|gov_republic}} || 11 || [[共和制#海军上将理事会|海军上将理事会]]
+|-
+| {{icon|gov_theocracy}} || 10 || [[神权制#海洋之王|海洋之王]]
+|}
+
+
+新统治者的君主点数基于将领的 {{icon|Land leader fire}} {{icon|Naval leader fire}} 火力、{{icon|Land leader shock}} {{icon|Naval leader shock}} 冲击和 {{icon|Land leader maneuver}} {{icon|Naval leader maneuver}} 机动三项点数的总和生成，符合下方所列公式：&lt;br>  &lt;math>\left\lfloor\frac{(random(0-3) + random(0-3))\cdot(9 + 火力 + 冲击 + 机动)}{18}\right\rfloor&lt;/math>&lt;br>
+当火力、冲击和机动点数的总和大于 18 时，取该值为 18。根据公式，点数总和为 0 的将领也有概率生成能力最高为 3/3/3 的统治者。
+
+{| class="mildtable"
+|-
+!总点数 !! 数学期望 !! 标准差
+|-
+| 0||1.75||0.82
+|-
+|1||1.75||0.82
+|-
+|2||1.81||0.94
+|-
+|3||2.00||1.06
+|-
+|4||2.12||1.21
+|-
+|5||2.37||1.21
+|-
+|6||2.62|| 1.21
+|-
+|7||2.81 ||1.33
+|-
+|8||3.00 || 1.58
+|-
+|9||3.00|| 1.58
+|-
+|10||3.00 ||1.58
+|-
+|11||3.12 || 1.76
+|-
+|12||3.31|| 1.89
+|-
+|13||3.56 ||1.90
+|-
+| 14 ||3.75||1.78
+|-
+|15||3.75 || 1.78
+|-
+|16||3.93|| 1.95
+|-
+|17||3.93 ||1.95
+|-
+|18||4.31 || 1.82
+|}
+
+{| class="mildtable"
+!君主能力值总和不小于X的概率!!将领总点数=0!!将领总点数=1!!将领总点数=2!!将领总点数=3!!将领总点数=4!!将领总点数=5!!将领总点数=6!!将领总点数=7!!将领总点数=8!!将领总点数=9!! 将领总点数=10!!将领总点数=11!!将领总点数=12 !! 将领总点数=13!!将领总点数=14!!将领总点数=15!!将领总点数=16 !! 将领总点数=17!!将领总点数=18
+|-
+! 0
+|1.||1.||1.||1.||1.||1.||1.||1.||1.||1.||1.||1.||1.||1.||1.||1.||1.||1.||1.
+|-
+! 1
+| 0.993|| 0.993|| 0.993|| 0.993||0.993||0.993||0.993||0.993||0.993||1.||1.||1.||1.||1.||1.||1.||1.||1.||1.
+|-
+! 2
+|0.947 ||0.947 ||0.947 ||0.974 ||0.974||0.974|| 0.974||0.974||0.974||0.998||0.998||0.998||0.998||0.998||0.998||0.998||0.998||0.998||0.998
+|-
+! 3
+| 0.807|| 0.807|| 0.82||0.908||0.908||0.927||0.927||0.927 ||0.927||0.993||0.993||0.993||0.993||0.993||0.993||0.993||0.993||0.993||0.995
+|-
+! 4
+|0.563||0.563||0.624||0.796||0.796||0.835||0.848||0.848||0.848||0.979|| 0.979||0.979||0.979||0.979||0.979||0.982||0.982||0.982||0.991
+|-
+! 5
+|0.297||0.297||0.404||0.609||0.609||0.701 || 0.734 || 0.734 || 0.734|| 0.95||0.95||0.95 ||0.95 ||0.95 ||0.952||0.964||0.964||0.964||0.979
+|-
+! 6
+|0.111||0.111||0.211||0.413||0.413|| 0.532 || 0.594 || 0.594 || 0.594 || 0.897 ||0.897 ||0.897 ||0.897 ||0.899 ||0.908 ||0.937 ||0.937 ||0.937 ||0.959
+|-
+! 7
+|0.027||0.027||0.092||0.222||0.222||0.349||0.444||0.444||0.444||0.815||0.815||0.815||0.815||0.821||0.843||0.89||0.89 || 0.89||0.936
+|-
+! 8
+| 0.004||0.004||0.026||0.102||0.102||0.196||0.303||0.303||0.303||0.704||0.704 || 0.704||0.704||0.719||0.763||0.824||0.824||0.824||0.888
+|-
+! 9
+|0.||0.||0.007||0.034||0.034||0.087||0.188||0.188||0.188||0.571||0.571||0.571||0.571||0.6||0.662||0.738||0.738|| 0.738 || 0.823
+|-
+! 10
+|0.||0.||0.||0.01||0.01 || 0.025 || 0.103 || 0.103 || 0.103 || 0.429 || 0.429 || 0.429 || 0.429 || 0.475 || 0.547||0.651||0.651||0.651||0.767
+|-
+! 11
+| 0. || 0. || 0. || 0.002 || 0.002 || 0.004 || 0.05||0.05||0.05|| 0.296|| 0.296|| 0.296|| 0.296||0.352||0.433||0.536||0.536||0.536||0.653
+|-
+! 12
+| 0. || 0. || 0. || 0. || 0. ||0. || 0.021 || 0.021 || 0.021 || 0.185 || 0.185||0.185||0.185|| 0.246||0.319||0.422||0.422||0.422||0.547
+|-
+! 13
+|0.||0.||0.||0.|| 0.||0.||0.007||0.007||0.007||0.103||0.103||0.103||0.103||0.158|| 0.231||0.301||0.301 ||0.301||0.466
+|-
+! 14
+|0.||0.||0. ||0. || 0.||0. ||0.002||0.002||0.002||0.05|| 0.05|| 0.05||0.05||0.092||0.152||0.213 ||0.213||0.213||0.308
+|-
+! 15
+|0.||0.||0.||0. ||0.||0.||0.||0.|| 0.||0.021||0.021|| 0.021||0.021||0.053||0.079 ||0.132||0.132||0.132||0.237
+|-
+! 16
+| 0.||0.||0.||0.||0.||0.||0.|| 0.|| 0.||0.007||0.007||0.007 ||0.007||0.026 ||0.046|| 0.073||0.073||0.073||0.158
+|-
+! 17
+|0.||0.||0.||0. || 0.||0. ||0.|| 0.||0.||0.002 ||0.002||0.002||0.002 ||0.007||0.026||0.026||0.026||0.026||0.053
+|-
+! 18
+|0.||0.||0.||0.||0.||0.||0.||0.||0. ||0.||0.||0.||0. ||0.007||0.007||0.007||0.007 ||0.007||0.053
+|}
+
+====联省议会====
+下列政府改革的统治者均由选举产生，其任期或为4年，或为终身，由位于政府界面的一个滑条决定。这一机制被称为“联省议会”机制。此外，这类机制也称为“尼德兰选举机制”&lt;!-- （得名自最早采用这一机制的[[共和制#尼德兰共和国|尼德兰共和国]]政体） -->或“XXX vs. XXX机制”（分别为该政体中提及的两种派系，如“议会派 vs. 奥兰治派机制”）。
+
+下列政府改革采用联省议会机制：
+{| class="mildtable"
+|-
+! 政体 !! 级别 !! 名称
+|-
+| {{icon|gov_republic}} || 1 || [[共和制#尼德兰共和国|尼德兰共和国]]
+|-
+| {{icon|gov_republic}} || rowspan="2"| 6 || rowspan="2"| [[通用政府改革#斐扬体系|斐扬体系]]
+|-
+| {{icon|gov_monarchy}}
+|-
+| {{icon|gov_monarchy}} || 1 || [[君主制#省督君主制|省督君主制]]
+|-
+| {{icon|gov_monarchy}} || 1 || [[君主制#利沃尼亚联省议会|利沃尼亚联省议会]]
+|-
+| {{icon|gov_monarchy}} || 6 || [[君主制#联省议会|联省议会]]
+|-
+| {{icon|gov_monarchy}} || rowspan="2"| 1 || rowspan="2"| [[通用政府改革#甘丹颇章|甘丹颇章]]
+|-
+| {{icon|gov_theocracy}}
+|-
+| {{icon|gov_theocracy}} || 1 || [[神权制#尼德兰总主教区|尼德兰总主教区]]
+|-
+| {{icon|gov_theocracy}} || 10 || [[神权制#开放全民普选|开放全民普选]]
+|}
+
+该机制启用时，国内将存在两个派系，由政府界面的一个滑条表示，一个代表集权/威权，一个代表分权/民主；例如，尼德兰共和国中，“奥兰治派”为威权派系，“议会派”为民主派系。统治者经由[[选举事件#联省议会选举|事件]]选举产生，当威权派系掌权时，该统治者终身执政，统治者死亡后重新选举；当民主派系掌权时，该统治者执政一个选举周期（默认为 4 年），周期结束后重新选举。
+
+选举事件中仅有两个候选人，分别来自两个派系。候选人的君主能力随机产生，宣称默认为95。
+
+当前掌权的派系可在政府界面的滑条处查看。滑条数值可在 -100 至 100 之间变动，当数值为 0 或为负值时，“民主派系”掌权，否则为“威权派系”掌权。许多事件可改变两个派系的权力平衡，使滑条数值发生变化；此外，每次选举中，选择来自某一派系的候选人时，都会使滑条向该派系的方向变动 33。
+
+两个不同派系当权时，除了影响统治者任期，还会分别给予国家不同的修正；两个派系的名称在不同政府改革中也各自不同。详情参见各个政府改革的具体描述。
+
+===君主制特殊继任机制===
+
+====统治者选举====
+[[君主制#选举君主制|选举君主制]]、[[君主制#波希米亚选举君主制|波希米亚选举君主制]]、[[君主制#凯尔特选举继承制|凯尔特选举继承制]]和[[君主制#爱尔兰至高王国|爱尔兰至高王国]]共用“统治者选举”的特殊机制。
+
+在统治者选举机制中，统治者去世后，触发事件“[[政府事件#government_events.3|选举新君]]”。事件中，当前的新君主（或尚未成年、摄政的继承人）总是候选人之一；此外，还可以选择本国贵族、最大邻国王朝成员、陆军将领、海军将领、本国商人。这些额外候选人的可用条件均各不相同。
+
+如果政府具有“可以从当权家族中选出下一位统治者”的特殊机制，则生成一个与当前统治者同一王朝的家族成员，作为额外的候选人；[[君主制#凯尔特选举继承制|凯尔特选举继承制]]和[[君主制#爱尔兰至高王国|爱尔兰至高王国]]自带该特殊机制。
+
+除当前新君主/未成年继承人之外的候选人宣称均较低，且具有不同的君主能力修正。选择不同候选人将分别给予不同的奖励。如果政府具有“提高统治者选举中继承人的能力”的特殊机制，则所有额外候选人的君主能力在生成时都会获得奖励；[[君主制#波希米亚选举君主制|波希米亚选举君主制]]自带该特殊机制，2级政府改革“[[君主制#授予贵族选王权利|授予贵族选王权利]]”也拥有该机制。
+
+关于所有候选人的生成条件、君主能力修正、当选奖励，详情请查看[[政府事件#government_events.3|统治者选举事件]]。
+
+====后宫====
+拥有[[君主制#奥斯曼政府|奥斯曼政府]]、[[君主制#现代化奥斯曼政府|现代化奥斯曼政府]]或[[君主制#罗姆苏丹国|罗姆苏丹国]]改革的国家可以实行后宫继承。拥有该政府机制时，不会自然产生继承人；统治者年满 30 岁后，将会触发事件“[[后宫事件#harem_events.1|[Root.Monarch.GetName]的儿子们]]”（MTTH=6 月），这将允许国家从三名候选人中选择其一作为新的继承人，继承人年龄永远是10岁且为男性。如果继承人因故死亡，则仍须通过该事件产生继承人。
+
+部分备选继承人的某项能力会获得{{green|+1}}修正，但另两项能力中的一项被设定为不能超过 5；另有部分候选人的君主能力完全随机（无加成）。例如，“最为虔诚的儿子”{{icon|mas}} 行政能力增加{{green|+1}}，但 {{icon|mds}} 外交能力最多为 5 点。详情查看[[后宫事件#harem_events.1|事件链接]]。
+
+如果现任统治者在没有继承人的情况下去世，则随机生成的25岁统治者将通过事件“[[后宫事件#harem_events.2|奥斯曼之剑]]”上台。该名统治者的任何能力点数都不会超过{{red|3}}{{icon|all power}}点。
+
+如果在“女性统治时期”事件链中选择了让后宫远离国家事务，则所有备选继承人的随机能力点数上限将从原先的'''5'''减少到'''3'''。
+
+====确保继承====
+朝鲜文化国家的特有政府改革[[君主制#隐士王国|隐士王国]]拥有“确保继承”的特殊机制，该机制与后宫机制相似。如果统治者年满 40 岁且没有继承人，则可以触发事件“[[政府事件#government_events.3|[Root.Monarch.GetName]的儿子们]]”（MTTH=6 月），允许其从三名候选人中选择其一作为新的继承人，继承人年龄永远是10岁且为男性，备选继承人君主能力均为随机。
+
+====波兰选举====
+[[君主制#波兰选举君主制|波兰选举君主制]]或[[君主制#选举君主制|选举君主制]]&lt;ref>注意与同名政府改革区分。“选举君主制”原仅用于 {{flag|POL}}和 {{flag|PLC}}，1.34版本后，波兰通过事件获得的特殊政府改革变为新增的“波兰选举君主制”，因此该政府改革通常情况下不会出现于游戏中；此外，又新增了同名的通用君主制 1 级政府改革“选举君主制”。但原有的“选举君主制”仍是历史剧本中波兰和波兰立陶宛联邦的政体，且创建自定义国家时仍可选择该政府改革。&lt;/ref>拥有“波兰选举”的特殊机制。
+
+在该机制下，不存在一个固定的继承人，而是由若干个继承人候选人竞争下一任王位，根据支持度的高低进行排名，支持度最高的候选人将在当前君主死亡后继位；外国可以支持本国王朝成员成为继承人候选人。此外，也不允许废黜继承人。
+
+在候选人中，固定产生一个本国继承人，其初始的支持度为 '''10'''，君主能力随机。如果现任君主此前是本国继承人，则新的本国继承人与现任君主同一王朝；如果现任君主此前是外国继承人，则新的本国继承人将属于一个随机的本国王朝。国家可以选择花费 {{icon|prestige}} {{red|10}} 威望，将本国继承人的支持度提高 '''5''' 点。
+
+除了本国继承人外，任何与该国同一宗教组的君主制国家都可以派遣外交官，通过“支持继承人”的外交行动，支持本国王朝成员成为该国的继承人候选人之一。第一次使用这一外交行动时，会立即随机创建一个与该其它君主制国家同一王朝的候选人，年龄通常在 30 岁以上，初始的支持度为 '''0'''。只要有外交官正在支持继承人，则每个月都有一定几率将来自该国的候选人的支持度增加 1 点；几率主要受到 {{icon|diplomatic reputation}} 外交声誉的影响。该波兰选举机制国家无法主动影响外国继承人的支持度。
+
+将鼠标悬停于继承人上方时，可以查看所有继承人候选人的排名、各自的年龄和属性。除了使用上述方式影响各个继承人的支持度外，还有若干个事件可能影响各继承人支持度。
+
+当前统治者死亡后，如果由外国继承人继承王位，则该外国将收到奖励，获得 {{icon|prestige}}{{green|25}}威望和等同于其继承人候选人各项君主能力 24 倍的 {{icon|all power}} 三种君主点数。如果由本国继承人继承王位，则没有任何国家收到奖励。继承人是否当选还会影响该国与波兰选举机制国家之间的关系。
+
+拥有波兰选举机制的国家不会成为被联统国，但可以[[联合统治]]其他国家。
+
+====卡尔马联盟选举====
+{{see also|丹麦事件#卡尔马联盟君主制事件}}
+丹麦开局时拥有特殊政府改革“[[君主制#卡尔马联盟|卡尔马联盟]]”，其具有特殊的“卡尔马联盟选举”机制。
+
+卡尔马联盟之下的丹麦、瑞典、挪威三国需要选举同一位统治者。如果丹麦还有其它首都在斯堪的纳维亚的被联统国，则该国也会参与该事件链；此处按照一般情况进行讨论，即丹麦有且仅有瑞典、挪威作为被联统国。
+
+当新君主继位时，联盟主导者丹麦触发事件“[[丹麦事件#kalmar_union_events.1|[Root.GetName]的新任[Root.Monarch.GetTitle]]]”，并可以在其中选择是否向被联统国作出妥协和让步。可以向属国贵族授予特权，提高属国选举丹麦国王为该国国王的概率；做出让步会降低本国 {{icon|nobility loyalty}} 贵族忠诚均衡点，给予本国一些负面修正，但给予属国加成，并降低其 {{icon|liberty desire}} 独立倾向。有被联统国独立倾向高于 {{Red|75%}} 时，可以选择给予更多的特权，给本国/属国的负面/正面影响更大，降低的独立倾向也更多。
+
+丹麦作出选择后，瑞典、挪威触发后续事件：
+*可以选择接受丹麦君主，这将给予宗主国丹麦 {{icon|prestige}}{{green|10}} 威望和 {{icon|legitimacy}}{{green|5}} 正统性，并增进两国彼此的关系；
+*或者选择拒绝承认，在本国任命摄政，这将降低宗主国丹麦 {{icon|prestige}}{{red|20}} 威望、增加该属国 {{icon|liberty desire}} {{red|20%}} 独立倾向，并在属国生成大量篡权叛军；
+*此外，被联统国中发展度较高的一个（通常为瑞典）可以提议本国人成为全联盟的君主。该被联统国可以选择其推荐的候选人，三个候选人的君主能力分别在一个维度有所侧重，宣称固定为 {{yellow|40}}，年龄在 30 到 50 岁之间。
+
+如果有属国提议来自该国的候选人，则丹麦可以选择是否接受：
+*如果拒绝，则丹麦失去 {{icon|prestige}}{{red|10}} 威望；属国获得 {{icon|liberty desire}} {{red|20%}} 独立倾向，并在其境内产生叛军；
+*如果接受，则进行一次重新选举。根据属国的提议，丹麦生成一个与属国相同文化的统治者（能力、宣称如前所述），并可以再次选择是否向被联统国妥协。重新选举时，属国只能选择接受或拒绝，不可再提出新候选人。
+
+&lt;!-- 在卡尔马联盟选举的事件链中，AI的行为倾向大致概括如下： -->&lt;!-- 需要对原英文内容进行概括 -->
+&lt;!-- 
+=====Ai behavior=====
+The choices the AI will make during this event chain depend heavily on their liberty desire (if they are the subject). Good rulers (14+ skills) are also extremely unlikely to be rejected.
+
+Choice between concession :
+*No concession : Base = '''1'''
+**'''x0''' : It is the Age of Discovery ''and'' at least one subject had at least 50% liberty desire when the election happened
+**'''x0''' : It is the Age of Discovery ''and'' at least one subject has at least 75% liberty desire
+**'''x0.8''' : Its not the Age of Discovery ''and'' at least one subject had at least 50% liberty desire when the election happened
+**'''x0.7''' : Its not the Age of Discovery ''and'' at least one subject has at least 75% liberty desire
+**'''x0.6''' : Any subject has at least as much prestige as the overlord
+**'''x0.5''' : Any subject has at least as much diplomatic reputation as the overlord
+*Small concessions : Base = '''1'''
+**'''x0''' : Total ruler skills are at least 14
+**'''x0.5''' : Total ruler skills are at least 11
+*Big concessions : Base = '''100'''
+**'''x0''' : Total ruler skills are at least 14
+**'''x0.5''' : Total ruler skills are at least 11
+**'''x1.1''' : Any subject has at least as much prestige as the overlord
+**'''x1.25''' : Any subject has at least as much diplomatic reputation as the overlord
+
+Choice between accepting, rejecting or suggesting a alternative :
+*Accept : Base = '''1'''
+**'''x0''' : Liberty desire is at least 90
+**'''x0.2''' : Liberty desire is at least 80 ''and'' we were granted big concessions '''or''' Liberty desire is at least 70 ''and'' we were granted small concessions '''or''' Liberty desire is at least 60
+**'''x0.4''' : Liberty desire is at least 70 ''and'' we were granted big concessions '''or''' Liberty desire is at least 60 ''and'' we were granted small concessions '''or''' Liberty desire is at least 50
+**'''x0.6''' : Liberty desire is at least 60 ''and'' we were granted big concessions '''or''' Liberty desire is at least 50 ''and'' we were granted small concessions '''or''' Liberty desire is at least 40
+**'''x0.8''' : Liberty desire is at least 50 ''and'' we were granted big concessions '''or''' Liberty desire is at least 40 ''and'' we were granted small concessions '''or''' Liberty desire is at least 30
+**'''x0.6''' : Our Overlord has at least as much prestige as us
+**'''x0.5''' : Our Overlord has at least as much diplomatic reputation as us
+*Suggest Alternative : Base = '''1'''
+**'''x0''' : Total ruler skills are at least 14
+**'''x0.5''' : Total ruler skills are at least 11
+**'''x0''' : Liberty desire is less than 10
+**'''x0.1''' : Liberty desire is less than 40 ''and'' we were granted big concessions '''or''' Liberty desire is less than 30 ''and'' we were granted small concessions '''or''' Liberty desire is less than 20
+**'''x0.2''' : Liberty desire is between 40 and 50 ''and'' we were granted big concessions '''or''' Liberty desire is between 30 and 40 ''and'' we were granted small concessions '''or''' Liberty desire is between 20 and 30
+**'''x0.3''' : Liberty desire is between 50 and 60 ''and'' we were granted big concessions '''or''' Liberty desire is between 40 and 50 ''and'' we were granted small concessions '''or''' Liberty desire is between 30 and 40
+**'''x0.4''' : Liberty desire is between 60 and 70 ''and'' we were granted big concessions '''or''' Liberty desire is between 50 and 60 ''and'' we were granted small concessions '''or''' Liberty desire is between 40 and 50
+**'''x1.25''' : Liberty desire is between 70 and 80 ''and'' we were granted big concessions '''or''' Liberty desire is between 60 and 70 ''and'' we were granted small concessions '''or''' Liberty desire is between 50 and 60
+**'''x1.5''' : Liberty desire is between 80 and 90 ''and'' we were granted big concessions '''or''' Liberty desire is between 70 and 80 ''and'' we were granted small concessions '''or''' Liberty desire is between 60 and 70
+**'''x1.75''' : Liberty desire is between 90 and 100 ''and'' we were granted big concessions '''or''' Liberty desire is between 80 and 90 ''and'' we were granted small concessions '''or''' Liberty desire is between 70 and 80
+**'''x2''' : Liberty desire is 100 ''and'' we were granted big concessions '''or''' Liberty desire is at least 90 ''and'' we were granted small concessions '''or''' Liberty desire is at least 80
+*Reject : Base = '''1'''
+**'''x0''' : Total ruler skills are at least 14
+**'''x0.5''' : Total ruler skills are at least 11
+**'''x0''' : Liberty desire is less than 10
+**'''x0.2''' : Liberty desire is less than 40 ''and'' we were granted big concessions '''or''' Liberty desire is less than 30 ''and'' we were granted small concessions '''or''' Liberty desire is less than 20
+**'''x0.4''' : Liberty desire is between 40 and 50 ''and'' we were granted big concessions '''or''' Liberty desire is between 30 and 40 ''and'' we were granted small concessions '''or''' Liberty desire is between 20 and 30
+**'''x0.6''' : Liberty desire is between 50 and 60 ''and'' we were granted big concessions '''or''' Liberty desire is between 40 and 50 ''and'' we were granted small concessions '''or''' Liberty desire is between 30 and 40
+**'''x0.8''' : Liberty desire is between 60 and 70 ''and'' we were granted big concessions '''or''' Liberty desire is between 50 and 60 ''and'' we were granted small concessions '''or''' Liberty desire is between 40 and 50
+**'''x2''' : Liberty desire is between 70 and 80 ''and'' we were granted big concessions '''or''' Liberty desire is between 60 and 70 ''and'' we were granted small concessions '''or''' Liberty desire is between 50 and 60
+**'''x3''' : Liberty desire is between 80 and 90 ''and'' we were granted big concessions '''or''' Liberty desire is between 70 and 80 ''and'' we were granted small concessions '''or''' Liberty desire is between 60 and 70
+**'''x4''' : Liberty desire is between 90 and 100 ''and'' we were granted big concessions '''or''' Liberty desire is between 80 and 90 ''and'' we were granted small concessions '''or''' Liberty desire is between 70 and 80
+**'''x5''' : Liberty desire is 100 ''and'' we were granted big concessions '''or''' Liberty desire is at least 90 ''and'' we were granted small concessions '''or''' Liberty desire is at least 80
+
+Choice between what alternative regent to suggest :
+*Administrative : base = '''1'''
+**'''x0''' : makes at least 8 admin power per month
+**'''x1.5''' :  
+***One of the following :
+****The Clergy has at least 5 Privileges granted to them
+****The Clergy estate owns more crownland than the crown ''and'' has at least 75 influence 
+***Neither the Burghers ''nor'' the Nobility have at least 75 influence ''or'' have at least 5 Privileges granted to them
+*Diplomatic : base = '''1'''
+**'''x0''' : makes at least 8 diplo power per month
+**'''x1.5''' :  
+***One of the following :
+****The Burghers has at least 5 Privileges granted to them
+****The Burghers estate owns more crownland than the crown ''and'' has at least 75 influence 
+***Neither the Clergy ''nor'' the Nobility have at least 75 influence ''or'' have at least 5 Privileges granted to them
+*Military : base = '''1'''
+**'''x0''' : makes at least 8 mili power per month
+**'''x1.5''' :  
+***One of the following :
+****The Nobility has at least 5 Privileges granted to them
+****The Nobility estate owns more crownland than the crown ''and'' has at least 75 influence 
+***Neither the Clergy ''nor'' the Burghers have at least 75 influence ''or'' have at least 5 Privileges granted to them
+
+Choice of accepting the suggested new regent :
+*Accept : base = '''1'''
+**'''x0''' : Total ruler skills are at least 14
+**'''x0.5''' : Total ruler skills are at least 11
+*Reject : base = '''1'''
+
+Choice between concessions during a Reelection :
+*No concession : base = '''1'''
+**'''x0''' : Has at least 3 years worth of income in the treasury
+**'''x0''' : At least one subject has at least 75 liberty desire
+**'''x0''' : Has at least 2 years worth of income in the treasury ''and'' at least one subject had at least 50% liberty desire when the election happened
+*Small concessions : base = '''1'''
+**'''x0''' : Total ruler skills are at least 14
+**'''x0.5''' : Total ruler skills are at least 11
+*Big concessions : base = '''100'''
+**'''x0''' : Total ruler skills are at least 14
+**'''x0.5''' : Total ruler skills are at least 11
+
+Choice between accepting or rejecting during a reelection :
+*Accept : base = '''1'''
+**'''x0''' : Liberty desire is at least 90
+**'''x0.2''' : Liberty desire is at least 80 ''and'' we were granted big concessions '''or''' Liberty desire is at least 70 ''and'' we were granted small concessions '''or''' Liberty desire is at least 60
+**'''x0.4''' : Liberty desire is at least 70 ''and'' we were granted big concessions '''or''' Liberty desire is at least 60 ''and'' we were granted small concessions '''or''' Liberty desire is at least 50
+**'''x0.6''' : Liberty desire is at least 60 ''and'' we were granted big concessions '''or''' Liberty desire is at least 50 ''and'' we were granted small concessions '''or''' Liberty desire is at least 40
+**'''x0.8''' : Liberty desire is at least 50 ''and'' we were granted big concessions '''or''' Liberty desire is at least 40 ''and'' we were granted small concessions '''or''' Liberty desire is at least 30
+*Reject : base = '''1'''
+**'''x0''' : We suggested the Ruler
+**'''x0''' : Total ruler skills are at least 14
+**'''x0.5''' : Total ruler skills are at least 11
+**'''x0''' : Liberty desire is less than 10
+**'''x0.2''' : Liberty desire is less than 40 ''and'' we were granted big concessions '''or''' Liberty desire is less than 30 ''and'' we were granted small concessions '''or''' Liberty desire is less than 20
+**'''x0.4''' : Liberty desire is between 40 and 50 ''and'' we were granted big concessions '''or''' Liberty desire is between 30 and 40 ''and'' we were granted small concessions '''or''' Liberty desire is between 20 and 30
+**'''x0.6''' : Liberty desire is between 50 and 60 ''and'' we were granted big concessions '''or''' Liberty desire is between 40 and 50 ''and'' we were granted small concessions '''or''' Liberty desire is between 30 and 40
+**'''x0.8''' : Liberty desire is between 60 and 70 ''and'' we were granted big concessions '''or''' Liberty desire is between 50 and 60 ''and'' we were granted small concessions '''or''' Liberty desire is between 40 and 50
+**'''x2''' : Liberty desire is between 70 and 80 ''and'' we were granted big concessions '''or''' Liberty desire is between 60 and 70 ''and'' we were granted small concessions '''or''' Liberty desire is between 50 and 60
+**'''x3''' : Liberty desire is between 80 and 90 ''and'' we were granted big concessions '''or''' Liberty desire is between 70 and 80 ''and'' we were granted small concessions '''or''' Liberty desire is between 60 and 70
+**'''x4''' : Liberty desire is between 90 and 100 ''and'' we were granted big concessions '''or''' Liberty desire is between 80 and 90 ''and'' we were granted small concessions '''or''' Liberty desire is between 70 and 80
+**'''x5''' : Liberty desire is 100 ''and'' we were granted big concessions '''or''' Liberty desire is at least 90 ''and'' we were granted small concessions '''or''' Liberty desire is at least 80 -->
+====马穆鲁克政府====
+拥有政府改革[[君主制#马穆鲁克政府|马穆鲁克政府]]的国家没有继承人。当君主死亡后，通过事件“[[马穆鲁克政府事件#mamluk_events.0|马穆鲁克的继承]]”，选择一个新的统治者。事件中会产生若干个分别来自本国省份中不同的可接受文化的候选人，至多 3 个；此外，还有一个外国奴隶候选人，默认为切尔克斯文化。所有候选人的君主能力均为随机（马穆鲁克政府自带 {{icon|mas}} {{Green|+2}} 君主行政能力修正），且在事件中不可见，年龄均在 30 至 50 岁之间。选择外国奴隶候选人会额外奖励 {{icon|army tradition}} {{green|15}} 陆军传统。
+
+所有备选统治者上台后的正统性均取决于其对应文化在国内所占总发展度的多寡，总发展度越高，正统性越低；计算公式为 ''100 - 该文化在直属州总发展度中的占比''。例如，如果该国仅有埃及文化一个可接受文化且所有省份均为埃及文化，则生成两个备选统治者，分别为埃及文化和切尔克斯文化。埃及文化候选人初始正统性为 0；而由于该国没有切尔克斯文化省份属于直属州，因此切尔克斯文化候选人初始正统性为 100。但由于马穆鲁克政府的特殊政府互动与统治者文化有关，因此选取国内占比较大的文化的统治者也有另外方面的好处。
+
+通常情况下外国奴隶候选人的文化为切尔克斯。当所有切尔克斯文化省份均由该国、该国宿敌和与该国交战的国家拥有，或该国已接受切尔克斯文化时，外国奴隶候选人的文化将来自于一个随机的产品为 {{icon|slave}} 奴隶的省份，该省份须属于一个其它穆斯林国家，且其不是马穆鲁克的宿敌、未与马穆鲁克交战。
+
+{{expansion|kok}}
+启用第 3 级政府改革“[[君主制#整合奥斯曼官僚|整合奥斯曼官僚]]”时，所有备选统治者的君主能力将不再被隐藏。
+
+===共和制特殊继任机制===
+
+====抽签选举====
+第 3 级通用政府改革[[共和制#抽签|抽签]]和特殊政府改革[[共和制#威尼斯政府|威尼斯政府]]拥有抽签选举的特殊选举方式。
+
+在该机制下，统治者终身执政，在死亡时重新选举；禁止强制重选。
+
+选举时，触发事件“[[选举事件#elections.800|[Root.GovernmentName]大选]]”，其中有三个候选人可供选择。三个候选人的君主能力在事件中可见，均为随机生成，分别在三种能力之一获得{{green|+2}}加成，另外两种能力则{{red|-1}}。然而，由于[[共和制#抽签|抽签]]和[[共和制#威尼斯政府|威尼斯政府]]均自带“当选统治者的三项能力增加1”的特殊机制，因此三个候选人当选后的能力值实际上是分别在行政、外交或军事方面{{green|+3}}；当选前在事件中显示的能力数值尚未计入三项能力加1的效果。所有候选人的年龄在50-75岁之间；为了避免在执政时间过短，[[共和制#抽签|抽签]]和[[共和制#威尼斯政府|威尼斯政府]]均有 {{icon|average monarch lifespan}}{{green|+25%}} 统治者平均寿命的加成。
+
+在选举事件中，玩家可以选择抽签决定最终选举结果，三个候选人当选的概率均等；也可以直接点选三个候选人中的一个，但须花费 {{red|25}} {{icon|republican tradition}} 共和传统。选举可能具有额外效果，详见[[#选举额外效果|本页面前述内容]]。
+
+拥有[[共和制#抽签|抽签]]的国家，如果同时拥有[[共和制#意大利执政团|意大利执政团]]或[[共和制#政治王朝|政治王朝]]的政府改革（威尼斯政府与二者均互斥），则可以生成第四个候选人，与前任统治者同一姓氏，年龄在30-50岁之间。启用意大利执政团时，该候选人的技能为随机生成；（仅）启用政治王朝时，该候选人的技能在随机生成结果上每项{{Red|-1}}（一般选举中为{{Red|-2}}）；在当选后，还要计入“当选统治者的三项能力增加1”的加成。选举该候选人将花费 {{red|15}} 共和传统。
+
+拥有威尼斯政府的国家在选取第 3 级政府改革“[[共和制#城市分权|城市分权]]”时，统治者不再终身执政，而是按照每隔4年的选举周期进行抽签选举。
+
+====总督集权====
+拥有政府改革[[共和制#财阀政治|财阀政治]]、[[共和制#卫彻共和国|卫彻共和国]]或[[共和制#大卫彻共和国|大卫彻共和国]]在选取第 3 级政府改革[[共和制#总督集权|总督集权]]时，将不再进行选举，统治者终身执政。在统治者死亡后，有 {{icon|stability}} {{red|-1}} 稳定度的惩罚，且产生一个完全随机的新统治者。
+
+====传奇海盗====
+[[共和制#海盗共和国|海盗共和国]]中的选举与一般共和制国家的选举基本没有区别。在事件“[[海盗事件#pirates.1|[Root.GovernmentName]大选]]”中，选择三个候选人分别会使其对应的海盗派系影响力增加 20（参见前述内容）；主要的特殊之处在于有关 {{icon|legendary Pirate}} 传奇海盗的选举。拥有 {{icon|legendary Pirate}} 传奇海盗[[特质]]的候选人，在连任时不会降低 {{icon|republican tradition}} 共和传统。此外，根据该国所在的地区的当前年份，一些特殊的传奇海盗人物可以成为候选人。每个特殊传奇海盗人物在游戏中只能出现一次，首次选举特殊传奇海盗人物为统治者时，一般会奖励一艘 {{icon|heavy ship}} 重型船只作为[[旗舰]]（如果已有旗舰则为普通重型船只）。
+
+下表列出所有游戏中可用的特殊传奇海盗人物：
+{| class="mildtable mw-collapsible mw-collapsed"
+|-
+!姓名 !! 统治者能力 !! 可用时间 !! 先决条件 !! 奖励旗舰名称
+|-
+!&lt;small>Grainne Ni Mhaille&lt;/small>&lt;br>格兰 妮瓦莱
+|3/4/5|| 1530 - 1605 || {{icon|culture}} 主流文化为爱尔兰 || &lt;small>White Seahorse&lt;/small>&lt;br>白海马
+|-
+!&lt;small>Jack Ward&lt;/small>&lt;br>杰克 沃德
+|3/3/5|| 1605 - 1610 || {{icon|capital}} 首都位于马格里布 || &lt;small>Gift&lt;/small>&lt;br>礼物
+|-
+!&lt;small>Piet Heyn&lt;/small>&lt;br>皮特 海恩
+|3/4/5|| 1607 - 1629 || {{icon|culture}} 主流文化为荷兰 || &lt;small>Hollandia&lt;/small>&lt;br>荷兰迪亚
+|-
+!&lt;small>François l'Olonnais&lt;/small>&lt;br>弗朗索瓦 罗罗内
+|3/1/5|| 1650 - 1669 || {{icon|capital}} 首都位于加勒比 || {{icon|no}}
+|-
+!&lt;small>Michel de Grammont&lt;/small>&lt;br>米歇尔 德 格拉蒙特
+|3/3/5|| 1670 - 1686 || {{icon|capital}} 首都位于加勒比 || &lt;small>Hardi&lt;/small>&lt;br>哈尔迪
+|-
+!&lt;small>Laurens de Graaf&lt;/small>&lt;br>劳伦斯 德 赫拉夫
+|2/4/5|| 1682 - 1704 || {{icon|capital}} 首都位于加勒比 || &lt;small>Tigre&lt;/small>&lt;br>虎
+|-
+!&lt;small>Edward 'Blackbeard' Teach&lt;/small>&lt;br>爱德华 「黑胡子」 蒂奇
+|3/3/6|| 1700 - 1720 || {{icon|capital}} 首都位于加勒比 || &lt;small>Queen Anne's Revenge&lt;/small>&lt;br>安妮女王的复仇
+|-
+!&lt;small>'Calico' Jack Rackham&lt;/small>&lt;br>「白棉布」 杰克 拉克姆
+|2/4/4|| 1702 - 1720 || {{icon|capital}} 首都位于加勒比 || &lt;small>Kingston&lt;/small>&lt;br>金斯敦
+|-
+!&lt;small>Charles Vane&lt;/small>&lt;br>查尔斯 范恩
+|2/3/5|| 1702 - 1720 || {{icon|capital}} 首都位于加勒比 || &lt;small>Ranger&lt;/small>&lt;br>游侠
+|-
+!&lt;small>Black Caesar&lt;/small>&lt;br>黑凯撒
+|4/3/5|| 1702 - 1720 || {{icon|capital}} 首都位于加勒比 || {{icon|no}}
+|-
+!&lt;small>Mary Read&lt;/small>&lt;br>玛丽 瑞德
+|3/3/5|| 1703 - 1721 || {{icon|capital}} 首都位于加勒比 || {{icon|no}}
+|-
+!&lt;small>Anne Bonny&lt;/small>&lt;br>安妮 博尼
+|4/2/5|| 1716 - 1782 || {{icon|capital}} 首都位于加勒比 || &lt;small>William&lt;/small>&lt;br>威廉
+|-
+!&lt;small>Ching Shih&lt;/small>&lt;br>郑氏
+|5/5/6|| 1795+ || {{icon|capital}} 首都位于东印度/中国/远东 || &lt;small>Red Flag&lt;/small>&lt;br>红旗
+|}
+
+===神权制特殊继任机制===
+
+====教廷====
+在[[神权制#教廷|教廷]]政府改革中，没有继承人，统治者死亡后产生一个完全随机的新统治者，年龄通常大于50岁。此外，统治者死亡后，有 {{icon|stability}} {{red|-1}} 稳定度的惩罚。
+
+==死亡几率和预期寿命==
+{{SVersion|1.25}}
+每天,一名统治者或继承人都有死亡的概率 &lt;math>\frac{m \cdot a}{182500}&lt;/math> 其中 &lt;math>m&lt;/math> 对君主是 MONARCH_DEATH (4 如果无模组)  和对继承人是 HEIR_DEATH (1 如果无模组)  以及 &lt;math>a&lt;/math> 根据下表取决于年龄段.
+
+请注意，这些表格假设统治者不是将军，继承人不会成为统治者（这会缩短他们的预期寿命），并忽略可能杀死统治者或继承人的特殊事件。a在31-40岁年龄段的统治者和继承人之间是不同的（可能是疏忽）。
+
+{| class="wikitable"
+|-
+!统治者年龄 !! a!!一年内死亡几率!! 十年内死亡几率!! 当前年龄的平均预期寿命
+|-
+!0-10
+| 1||0.80%|| 7.7% ||50.4
+|-
+!11-20
+|1||0.80%||7.7%||54.6
+|-
+!21-30
+|1 ||0.80%||7.7% ||57.8
+|-
+! 31-40
+|1||0.80%||7.7%||60.4
+|-
+!41-50
+| 2||1.6%||14.8%||62.5
+|-
+!51-60
+|4 ||3.2%||27.4%||65.4
+|-
+! 61-70
+| 10|| 7.7%||55.1%||69.0
+|-
+!71-80
+|50||33.0%||98.2%||73.5
+|-
+!81-90
+|300||91%||~100%||81.4
+|-
+! 91-
+|1000 || 99.97%||~100% || 91.1
+|}
+
+{| class="wikitable"
+|-
+!继承人年龄!!a!!一年内死亡几率!!十年内死亡几率 !!当前年龄范围的平均预期寿命
+|-
+!0-10
+|1||0.20% ||2.0%||68.2
+|-
+!11-20
+|1||0.20%||2.0% || 69.7
+|-
+!21-30
+|1||0.20% ||2.0%||70.6
+|-
+!31-40
+|2|| 0.40%||3.9%||71.7
+|-
+!41-50
+|2||0.40%||3.9%||73.1
+|-
+!51-60
+|4||0.80%||7.7%||74.2
+|-
+!61-70
+|10 ||2.0%||18.1%|| 75.7
+|-
+! 71-80
+|50||9.5%||63.2%||77.9
+|-
+!81-90
+|300||45.2%||99.8%||82.7
+|-
+!91-
+|1000||86.5%||~100%||91.5
+|}
+
+在此之前被任命为[[将领]]5年或5年以上的统治者和继承人也要接受[[将领]]中所述的死亡检查，导致死亡机会增加，如果被分配到军队，死亡机会会进一步增加，如果在战斗或围攻中，死亡机会也会再次增加。
+
+请注意，一般来说，预期寿命取决于年龄和统治者成为将领以来的时间；这些表格列出了在按下将统治者或继承人转变为军事领导人的按钮后有效的值。
+
+{| class="wikitable"
+|-
+!统治者寿命!!在此年龄成为将军并被分配到军队时的平均预期寿命
+|-
+!0
+|18.5
+|-
+!11
+|29.5
+|-
+!21
+|39.1
+|-
+!31
+|48.4
+|-
+!41
+|56.5
+|-
+!51
+|63.0
+|-
+!61
+|68.5
+|-
+!71
+|73.4
+|-
+!81
+|81.4
+|-
+!91
+|91.1
+|}
+
+{| class="wikitable"
+|-
+!继承人寿命!!在此年龄成为将领并被分配到军队时的平均预期寿命
+|-
+!0
+|19.9
+|-
+!11
+|30.9
+|-
+!21
+|40.7
+|-
+!31
+|50.4
+|-
+!41
+|59.8
+|-
+!51
+|67.8
+|-
+!61
+|73.5
+|-
+!71
+|77.6
+|-
+!81
+|82.7
+|-
+!91
+|91.5
+|}
+
+每日死亡几率不会影响：
+*不到一年前就职的统治者
+*小于20岁的继承人
+
+== 统治者头衔 ==
+{{main|政府名称与统治者头衔}}
+所有国家的统治者都具有一个头衔。配偶、继承人也具有其自身的头衔。
+
+在[[国家界面]]的宫廷页面中，可以查看本国统治者包括头衔在内的所有信息；如果该国配偶或继承人机制，在该页面也可以查看到本国统治者配偶以及继承人的头衔。
+
+在外交页面，也可以看到任何国家的统治者和继承人包括头衔在内的所有信息。
+
+一个国家通常会根据其文化、宗教、政府改革、国家tag等条件的情况获得其政府名称。游戏脚本中定义了大量的特有君主、配偶以及继承人头衔，以更好地反映特定史实，并增加历史沉浸感和趣味性。
+
+== 历史君主 ==
+{{main|君主列表}}
+
+[[君主列表]]列出了游戏中所有的历史君主。注意，列表中列出的所有君主都定义在游戏中各个国家的历史文件中，仅在对应时间的历史剧本中可用；有些君主的在位时间并不在游戏的常规时间内。
+
+== 参考资料 ==
+&lt;references/>
+* [[forum:636815|开发者日志5]]介绍了EU4中君主机制的变动
+
+[[Category:内政]]
+{{realm navbox}}
+[[en:Ruler]]
+</textarea><div class="templatesUsed"><div class="mw-templatesUsedExplanation"><p>本页使用的模板：
+</p></div><ul>
+<li><a href="https://www.eu4cn.com/wiki/Static_modifiers" class="mw-redirect" title="Static modifiers">Static modifiers</a>（<a href="https://www.eu4cn.com/index.php?title=Static_modifiers&amp;action=edit" class="mw-redirect" title="Static modifiers">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/静态修正" title="静态修正">静态修正</a>（<a href="https://www.eu4cn.com/index.php?title=%E9%9D%99%E6%80%81%E4%BF%AE%E6%AD%A3&amp;action=edit" title="静态修正">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Ambox" title="Template:Ambox">Template:Ambox</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Ambox&amp;action=edit" title="Template:Ambox">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Ambox/core" title="Template:Ambox/core">Template:Ambox/core</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Ambox/core&amp;action=edit" title="Template:Ambox/core">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Ambox_2020" title="Template:Ambox 2020">Template:Ambox 2020</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Ambox_2020&amp;action=edit" title="Template:Ambox 2020">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:BTRow" title="Template:BTRow">Template:BTRow</a>（<a href="https://www.eu4cn.com/index.php?title=Template:BTRow&amp;action=edit" title="Template:BTRow">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Bonus_table" title="Template:Bonus table">Template:Bonus table</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Bonus_table&amp;action=edit" title="Template:Bonus table">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Clear" title="Template:Clear">Template:Clear</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Clear&amp;action=edit" title="Template:Clear">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Country_data_BOH" class="mw-redirect" title="Template:Country data BOH">Template:Country data BOH</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Country_data_BOH&amp;action=edit" class="mw-redirect" title="Template:Country data BOH">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Country_data_Bohemia" title="Template:Country data Bohemia">Template:Country data Bohemia</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Country_data_Bohemia&amp;action=edit" title="Template:Country data Bohemia">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Country_data_Burgundy" title="Template:Country data Burgundy">Template:Country data Burgundy</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Country_data_Burgundy&amp;action=edit" title="Template:Country data Burgundy">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Country_data_CRO" class="mw-redirect" title="Template:Country data CRO">Template:Country data CRO</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Country_data_CRO&amp;action=edit" class="mw-redirect" title="Template:Country data CRO">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Country_data_Commonwealth" title="Template:Country data Commonwealth">Template:Country data Commonwealth</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Country_data_Commonwealth&amp;action=edit" title="Template:Country data Commonwealth">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Country_data_Croatia" title="Template:Country data Croatia">Template:Country data Croatia</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Country_data_Croatia&amp;action=edit" title="Template:Country data Croatia">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Country_data_FRA" class="mw-redirect" title="Template:Country data FRA">Template:Country data FRA</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Country_data_FRA&amp;action=edit" class="mw-redirect" title="Template:Country data FRA">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Country_data_France" title="Template:Country data France">Template:Country data France</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Country_data_France&amp;action=edit" title="Template:Country data France">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Country_data_HUN" class="mw-redirect" title="Template:Country data HUN">Template:Country data HUN</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Country_data_HUN&amp;action=edit" class="mw-redirect" title="Template:Country data HUN">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Country_data_Hungary" title="Template:Country data Hungary">Template:Country data Hungary</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Country_data_Hungary&amp;action=edit" title="Template:Country data Hungary">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Country_data_PLC" class="mw-redirect" title="Template:Country data PLC">Template:Country data PLC</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Country_data_PLC&amp;action=edit" class="mw-redirect" title="Template:Country data PLC">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Country_data_POL" class="mw-redirect" title="Template:Country data POL">Template:Country data POL</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Country_data_POL&amp;action=edit" class="mw-redirect" title="Template:Country data POL">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Country_data_PRO" class="mw-redirect" title="Template:Country data PRO">Template:Country data PRO</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Country_data_PRO&amp;action=edit" class="mw-redirect" title="Template:Country data PRO">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Country_data_Poland" title="Template:Country data Poland">Template:Country data Poland</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Country_data_Poland&amp;action=edit" title="Template:Country data Poland">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Country_data_Provence" title="Template:Country data Provence">Template:Country data Provence</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Country_data_Provence&amp;action=edit" title="Template:Country data Provence">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Country_data_勃艮第" class="mw-redirect" title="Template:Country data 勃艮第">Template:Country data 勃艮第</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Country_data_%E5%8B%83%E8%89%AE%E7%AC%AC&amp;action=edit" class="mw-redirect" title="Template:Country data 勃艮第">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:DLC-only" title="Template:DLC-only">Template:DLC-only</a>（<a href="https://www.eu4cn.com/index.php?title=Template:DLC-only&amp;action=edit" title="Template:DLC-only">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Expansion" title="Template:Expansion">Template:Expansion</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Expansion&amp;action=edit" title="Template:Expansion">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Flag" title="Template:Flag">Template:Flag</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Flag&amp;action=edit" title="Template:Flag">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Flag/core" title="Template:Flag/core">Template:Flag/core</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Flag/core&amp;action=edit" title="Template:Flag/core">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Green" title="Template:Green">Template:Green</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Green&amp;action=edit" title="Template:Green">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Grey-bd" title="Template:Grey-bd">Template:Grey-bd</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Grey-bd&amp;action=edit" title="Template:Grey-bd">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Hatnote" title="Template:Hatnote">Template:Hatnote</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Hatnote&amp;action=edit" title="Template:Hatnote">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Hover_box" title="Template:Hover box">Template:Hover box</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Hover_box&amp;action=edit" title="Template:Hover box">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon" title="Template:Icon">Template:Icon</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon&amp;action=edit" title="Template:Icon">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/a" title="Template:Icon/a">Template:Icon/a</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/a&amp;action=edit" title="Template:Icon/a">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/c" title="Template:Icon/c">Template:Icon/c</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/c&amp;action=edit" title="Template:Icon/c">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/d" title="Template:Icon/d">Template:Icon/d</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/d&amp;action=edit" title="Template:Icon/d">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/e" title="Template:Icon/e">Template:Icon/e</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/e&amp;action=edit" title="Template:Icon/e">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/f" title="Template:Icon/f">Template:Icon/f</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/f&amp;action=edit" title="Template:Icon/f">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/g" title="Template:Icon/g">Template:Icon/g</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/g&amp;action=edit" title="Template:Icon/g">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/h" title="Template:Icon/h">Template:Icon/h</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/h&amp;action=edit" title="Template:Icon/h">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/i" title="Template:Icon/i">Template:Icon/i</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/i&amp;action=edit" title="Template:Icon/i">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/k" title="Template:Icon/k">Template:Icon/k</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/k&amp;action=edit" title="Template:Icon/k">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/l" title="Template:Icon/l">Template:Icon/l</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/l&amp;action=edit" title="Template:Icon/l">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/m" title="Template:Icon/m">Template:Icon/m</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/m&amp;action=edit" title="Template:Icon/m">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/n" title="Template:Icon/n">Template:Icon/n</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/n&amp;action=edit" title="Template:Icon/n">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/p" title="Template:Icon/p">Template:Icon/p</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/p&amp;action=edit" title="Template:Icon/p">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/r" title="Template:Icon/r">Template:Icon/r</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/r&amp;action=edit" title="Template:Icon/r">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/s" title="Template:Icon/s">Template:Icon/s</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/s&amp;action=edit" title="Template:Icon/s">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/t" title="Template:Icon/t">Template:Icon/t</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/t&amp;action=edit" title="Template:Icon/t">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Main" title="Template:Main">Template:Main</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Main&amp;action=edit" title="Template:Main">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:N" title="Template:N">Template:N</a>（<a href="https://www.eu4cn.com/index.php?title=Template:N&amp;action=edit" title="Template:N">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Navbox" title="Template:Navbox">Template:Navbox</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Navbox&amp;action=edit" title="Template:Navbox">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Navboxgroup" title="Template:Navboxgroup">Template:Navboxgroup</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Navboxgroup&amp;action=edit" title="Template:Navboxgroup">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Path" title="Template:Path">Template:Path</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Path&amp;action=edit" title="Template:Path">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Realm_navbox" title="Template:Realm navbox">Template:Realm navbox</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Realm_navbox&amp;action=edit" title="Template:Realm navbox">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Red" title="Template:Red">Template:Red</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Red&amp;action=edit" title="Template:Red">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Ruby" title="Template:Ruby">Template:Ruby</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Ruby&amp;action=edit" title="Template:Ruby">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:SVersion" title="Template:SVersion">Template:SVersion</a>（<a href="https://www.eu4cn.com/index.php?title=Template:SVersion&amp;action=edit" title="Template:SVersion">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:See_also" title="Template:See also">Template:See also</a>（<a href="https://www.eu4cn.com/index.php?title=Template:See_also&amp;action=edit" title="Template:See also">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Version" title="Template:Version">Template:Version</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Version&amp;action=edit" title="Template:Version">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Yellow" title="Template:Yellow">Template:Yellow</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Yellow&amp;action=edit" title="Template:Yellow">查看源代码</a>）</li></ul></div><p id="mw-returnto">返回<a href="https://www.eu4cn.com/wiki/统治者" title="统治者">统治者</a>。</p>
+</div>						</div>
+				</div>
+				<footer>
+				<div class="liberty-footer">
+										<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>					<div class="bottom-ads mobile-ab">
+						<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+						<!-- 移动端底部 -->
+						<ins class="adsbygoogle mobile-ab"
+						     style="display:block"
+						     data-ad-client="ca-pub-1612414434963106"
+						     data-ad-slot="3303553671"
+						     data-ad-format="auto"
+						     data-full-width-responsive="true"></ins>
+						<script>
+						     (adsbygoogle = window.adsbygoogle || []).push({});
+						</script>
+					</div>
+								<ul class="footer-places">
+									<li class="footer-places-privacy">
+						<a href="https://www.eu4cn.com/wiki/欧陆风云4百科:隐私政策">隐私政策</a>					</li>
+									<li class="footer-places-about">
+						<a href="https://www.eu4cn.com/wiki/欧陆风云4百科:关于">关于欧陆风云4百科</a>					</li>
+									<li class="footer-places-disclaimer">
+						<a href="https://www.eu4cn.com/wiki/欧陆风云4百科:免责声明">免责声明</a>					</li>
+							</ul>
+					<ul class="footer-icons">
+									<li class="footer-copyrightico">
+						<a href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="https://www.eu4cn.com/resources/assets/licenses/cc-by-nc-sa.png" alt="知识共享署名-非商业性使用-相同方式共享" width="88" height="31" loading="lazy"/></a>					</li>
+										<li class="footer-poweredbyico">
+						<a href="https://www.mediawiki.org/"><img src="https://www.eu4cn.com/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"/></a><a href="https://www.eu4cn.com/"><img src="https://www.eu4cn.com/images/footerlogo.png" width="88" height="31" loading="lazy"/></a>					</li>
+								</ul>
+						</div>
+				</footer>
+			</div>
+		</div>
+		</section>
+				<div class="modal fade login-modal" id="login-modal" tabindex="-1"
+			 role="dialog" aria-labelledby="login-modalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-sm" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<h4 class="modal-title">登录</h4>
+					</div>
+					<div class="modal-body">
+						<div id="modal-login-alert" class="alert alert-hidden alert-danger" role="alert">
+						</div>
+						<form id="modal-loginform" name="userlogin" class="modal-loginform"
+							  method="post">
+							<input class="loginText form-control" id="wpName1" tabindex="1"
+								   placeholder="请输入您的用户名" value="" name="lgname">
+							<label for="inputPassword" class="sr-only">密码</label>
+							<input class="loginPassword form-control" id="wpPassword1" tabindex="2"
+								   placeholder="请输入您的密码" type="password" name="lgpassword">
+							<div class="modal-checkbox">
+								<input name="lgremember" type="checkbox" value="1" id="lgremember" tabindex="3">
+								<label for="lgremember">记住登录</label>
+							</div>
+							<input class="btn btn-success btn-block" type="submit" value="登录" tabindex="4">
+							<a href="https://www.eu4cn.com/index.php?title=Special:%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95&amp;type=signup&amp;returnto=%E7%BB%9F%E6%B2%BB%E8%80%85" class="btn btn-primary btn-block" title="Special:用户登录" tabindex="5" type="submit">加入欧陆风云4百科</a>							<a href="https://www.eu4cn.com/wiki/Special:重置密码" title="Special:重置密码">忘记密码？</a>                            <br>
+							<a href="https://www.eu4cn.com/wiki/Special:用户登录" title="Special:用户登录">其他方式登录</a>							<input type="hidden" name="action" value="login" />
+							<input type="hidden" name="format" value="json" />
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">⧼liberty-btn-close⧽</button>
+						<button type="button" class="btn btn-primary">⧼liberty-btn-save-changes⧽</button>
+					</div>
+				</div>
+			</div>
+		</div>
+			</body>
+<!-- Mirrored from www.eu4cn.com/index.php?title=%E7%BB%9F%E6%B2%BB%E8%80%85&action=edit by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 May 2024 11:16:47 GMT -->
+</html>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?8b9cdb5f260cf613f39a508fbf9dd707";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.004","walltime":"0.006","ppvisitednodes":{"value":7,"limit":1000000},"postexpandincludesize":{"value":18,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":100},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20240506082234","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":2168});});</script>
+</body>
+</html>

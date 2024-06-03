@@ -1,0 +1,1458 @@
+ <!DOCTYPE html>
+<html class="client-nojs" lang="zh" dir="ltr">
+
+<!-- Mirrored from www.eu4cn.com/index.php?title=%E9%99%86%E5%86%9B%E5%8D%95%E4%BD%8D&action=edit by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 May 2024 11:48:51 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>查看“陆军单位”的源代码 - 欧陆风云4百科，人人可以编辑的欧陆风云4中文百科全书</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"zh","wgMonthNames":["","1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"],"wgRequestId":"c1984b749118e1bea5cf9278","wgCSPNonce":false,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"陆军单位","wgTitle":"陆军单位","wgCurRevisionId":97283,"wgRevisionId":0,"wgArticleId":1658,"wgIsArticle":false,"wgIsRedirect":false,"wgAction":"edit","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageContentLanguage":"zh","wgPageContentModel":"wikitext","wgRelevantPageName":"陆军单位","wgRelevantArticleId":1658,"wgUserVariant":"zh","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgCargoDefaultQueryLimit":100,"wgCargoMapClusteringMinimum":80,"wgCargoMonthNames":[
+"1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"],"wgCargoMonthNamesShort":["1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"],"wgCargoWeekDays":["星期日","星期一","星期二","星期三","星期四","星期五","星期六"],"wgCargoWeekDaysShort":["日","一","二","三","四","五","六"],"wgPageFormsTargetName":null,"wgPageFormsAutocompleteValues":[],"wgPageFormsAutocompleteOnAllChars":false,"wgPageFormsFieldProperties":[],"wgPageFormsCargoFields":[],"wgPageFormsDependentFields":[],"wgPageFormsCalendarValues":[],"wgPageFormsCalendarParams":[],"wgPageFormsCalendarHTML":null,"wgPageFormsGridValues":[],"wgPageFormsGridParams":[],"wgPageFormsContLangYes":null,"wgPageFormsContLangNo":null,"wgPageFormsContLangMonths":[],"wgPageFormsHeightForMinimizingInstances":800,"wgPageFormsShowOnSelect":[],"wgPageFormsScriptPath":"/extensions/PageForms","edgValues":null,"wgPageFormsEDSettings":null,"wgAmericanDates":false
+,"wgVisualEditor":{"pageLanguageCode":"zh","pageLanguageDir":"ltr","pageVariantFallbacks":["zh-hans","zh-hant","zh-cn","zh-tw","zh-hk","zh-sg","zh-mo","zh-my"]},"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgSmjUseCdn":false,"wgSmjUseChem":true,"wgSmjDisplayMath":[],"wgSmjExtraInlineMath":[],"wgSmjScale":1,"wgSmjEnableMenu":true,"wgSmjDisplayAlign":"left","wgEditSubmitButtonLabelPublish":false};RLSTATE={"site.styles":"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.liberty.styles":"ready","jquery.tablesorter.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready"};RLPAGEMODULES=["ext.SimpleMathJax","mediawiki.action.edit.collapsibleFooter","site","mediawiki.page.ready","jquery.tablesorter","ext.HighlightjsIntegration","ext.CodeMirror","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.gadget.UserLinkAvatar","ext.gadget.notifyConversion","ext.gadget.notifyAdsense",
+"ext.gadget.Edittools-vector","skins.liberty.bootstrap","skins.liberty.layoutjs","skins.liberty.liverc","skins.liberty.loginjs"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});});});</script>
+<link rel="stylesheet" href="loadd623.css?lang=zh&amp;modules=ext.visualEditor.desktopArticleTarget.noscript%7Cjquery.tablesorter.styles%7Cskins.liberty.styles&amp;only=styles&amp;skin=liberty"/>
+<script async="" src="load7991.php?lang=zh&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=liberty"></script>
+<style>.Liberty .nav-wrapper,
+		.Liberty .nav-wrapper .navbar .form-inline .btn:hover,
+		.Liberty .nav-wrapper .navbar .form-inline .btn:focus,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link.active::before,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link:hover::before,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link:focus::before,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link:active::before,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-footer .label,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .contributioncredits-footer .label,
+		.Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools .tools-btn:hover,
+		.Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools .tools-btn:focus,
+		.Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools .tools-btn:active,
+		.btn-primary,
+		.header-template, .section-template {
+			background-color: #103D8F;
+		}
+
+		.btn-primary,
+		.section-template-border {
+			border-color: #103D8F;
+		}
+
+		.Liberty .nav-wrapper .navbar .form-inline .btn:hover,
+		.Liberty .nav-wrapper .navbar .form-inline .btn:focus {
+			border-color: #002E7D;
+		}
+
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link.active::before,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link:hover::before,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link:focus::before,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link:active::before {
+			border-bottom: 2px solid #103D8F;
+		}
+
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-footer .label:hover,
+		.Liberty .nav-wrapper .navbar .navbar-nav .nav-item .nav-link:hover,
+		.Liberty .nav-wrapper .navbar .navbar-nav .nav-item .nav-link:focus,
+		.dropdown-menu .dropdown-item:hover,
+		.btn-primary:hover,
+		.btn-primary:focus {
+			background-color: #002E7D;
+		}
+
+
+		.Liberty .content-wrapper #liberty-bottombtn,
+		.Liberty .content-wrapper #liberty-bottombtn:hover {
+			background-color: #103D8F;
+		}</style><style>@media (prefers-color-scheme: dark) { body, .Liberty, .dropdown-menu, .dropdown-item, .Liberty .nav-wrapper .navbar .form-inline .btn, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link.active, .Liberty .content-wrapper .liberty-content .liberty-content-main table.wikitable tr > th, .Liberty .content-wrapper .liberty-content .liberty-content-main table.wikitable tr > td, table.mw_metadata th, .Liberty .content-wrapper .liberty-content .liberty-content-main table.infobox th, #preferences fieldset:not(.prefsection), #preferences div.mw-prefs-buttons, .navbox, .navbox-subgroup, .navbox > tbody > tr:nth-child(even) > .navbox-list, .Liberty .nav-wrapper .navbar .form-inline .form-control {
+			background-color: #000;
+			color: #DDD;
+		}
+
+		.liberty-content-header, .liberty-footer, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-footer, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item, .Liberty .content-wrapper .liberty-content .liberty-content-header, .Liberty .content-wrapper .liberty-footer, .editOptions, html .wikiEditor-ui-toolbar, #pagehistory li.selected, .mw-datatable td, .Liberty .content-wrapper .liberty-content .liberty-content-main table.wikitable tr > td, table.mw_metadata td, .Liberty .content-wrapper .liberty-content .liberty-content-main table.wikitable, .Liberty .content-wrapper .liberty-content .liberty-content-main table.infobox, #preferences, .navbox-list, .dropdown-divider, .Liberty .content-wrapper .liberty-content .bottom-ads {
+			background-color: #1F2023;
+			color: #DDD;
+		}
+
+		.Liberty .content-wrapper .liberty-content .liberty-content-main, .mw-datatable th, .mw-datatable tr:hover td, textarea, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-content, div.mw-warning-with-logexcerpt, div.mw-lag-warn-high, div.mw-cascadeprotectedwarning, div#mw-protect-cascadeon, .mildtable th {
+			background-color: #000 !important;
+		}
+
+		.Liberty .content-wrapper .liberty-content .liberty-content-header .title>h1, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-content .live-recent-list .recent-item, caption { color: #DDD; }
+
+		.btn-secondary, .Liberty .content-wrapper .liberty-footer .catlinks, .rcpages-btn { background: transparent; color: #DDD; }
+
+
+		#pagehistory li { border: 0; }
+
+		.Liberty .content-wrapper .liberty-footer, .Liberty .content-wrapper .liberty-content .liberty-content-header, .Liberty .content-wrapper .liberty-content .liberty-content-main, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-footer, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-content, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item + .nav-item, .Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools .tools-btn:hover, .Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools .tools-btn:focus, .Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools .tools-btn, .dropdown-menu, .dropdown-divider, .Liberty .content-wrapper .liberty-content .liberty-content-main fieldset, hr, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-content .live-recent-list li, .mw-changeslist-legend, .Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools { border-color: #555; }
+
+		.flow-post, .Liberty .content-wrapper .liberty-content .liberty-content-main .toc .toctext { color: #DDD; }
+		.flow-topic-titlebar { color: #000; }
+		.flow-ui-navigationWidget { color: #FFF; }
+		.Liberty .content-wrapper .liberty-content .liberty-content-main .toccolours, .Liberty .content-wrapper .liberty-content .liberty-content-main .toc ul, .Liberty .content-wrapper .liberty-content .liberty-content-main .toc li { background-color: #000; }
+		.Liberty .content-wrapper .liberty-content .liberty-content-main .toc .toctitle { background-color: #1F2023; } }</style>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="loada6ee.css?lang=zh&amp;modules=site.styles&amp;only=styles&amp;skin=liberty"/>
+<meta name="generator" content="MediaWiki 1.39.3"/>
+<meta name="robots" content="noindex,nofollow"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="description" content="因为以下原因，您没有权限编辑本页：&#10;&#10;&#10;您请求的操作仅限属于该用户组的用户执行：用户&#10;&#10;&#10;您可以查看和复制此页面的源代码。&#10;{{Version|1.35}}&#10;{{重定向|各组各类的陆军单位|军队的招募和维护等信息|陆军|陆战机制问题|陆战}}&#10;本文介绍了游戏中构成[[陆军]]的三种&#039;&#039;&#039;陆军单位&#039;&#039;&#039;（Land units）&amp;lt;ref&gt;文件位于 {{path|common/units/}} 文件夹内。&amp;lt;/ref&gt;——步兵、骑兵和炮兵，以及它们各自随时代推移的强度变化。陆军单位是[[陆战]]中最为决定性的因素。&#10;&#10;== {{icon|infantry|40px}} 步兵 ==&#10;[[File:Infantry pips.png|right|thumb|500px|{{SVersion|1.29}} 各科技组步兵随科技增长的总点数变化]]&#10;步兵是军队运行的轴心，是交战中维持阵型不散的中坚力量。所有步兵都至少有{{green|1}}点机动点数。&#10;&#10;=== 花费 ===&#10;这些理念和其他修正降低了招募和维护步兵的成本。&#10;{{bonus table|inf cost|collapse=yes}}&#10;&#10;=== 作战能力 ===&#10;这些理念和其他修正增加了步兵在战斗中的伤害。&#10;{{bonus table|inf power|collapse=yes}}&#10;&#10;其他修正包括：&#10;* {{green|+10%}} 政府改革 {{icon|monarchy}} [[大名]]&#10;* {{green|+10%}} 政府改革 {{icon|monarchy}} [[独立大名]]&#10;* {{green|+10%}} 政府改革 {{icon|monarchy}} [[君主制#赋予波里伽尔权力|赋予波里伽尔权力]]&#10;* {{green|+10%}} 作为信仰 {{icon|mayan}} [[玛雅宗教]]的国家进行宗教改革“中央军队改革”&#10;* {{green|+10%}} 作为 {{icon|mandate}} [[中国皇帝]]颁布“提拔军官”诏令&#10;* {{green|+10%}} 作为信仰 {{icon|confucian}} [[儒教]]的国家和谐神道教&#10;* {{green|+5%}} 政府改革 {{icon|theocracy}} [[神权制#整合僧兵|整合僧兵]]&#10;{{clear}}&#10;&#10;== {{icon|cavalry|40px}} 骑兵 ==&#10;[[File:Cavalry pips.png|right|thumb|500px|{{SVersion|1.29}} 各科技组骑兵随科技增长的总点数变化]]&#10;前线的部队被填满时，骑兵可以其进行最擅长的侧翼攻击。但骑兵的花费要远远高于步兵，等量骑兵的花费为步兵的2.5倍。所有骑兵都至少拥有{{green|2}}点机动。骑兵的战斗力要强于步兵，尤其是在战斗的冲击阶段更是明显。&#10;&#10;但骑兵的编入不得超过其既定比例，一旦超过，全军都将受到的[[军事战术]]惩罚，惩罚数值随骑步比例线性放缩。各种关于 {{icon|cav to inf ratio}} 骑兵比例的修正[[#骑兵比例|请见下]]。&#10;&#10;美洲土著科技组直到6级军事科技才可以使用骑兵，以模拟马这种生物在美洲大陆完全灭绝，后又由欧洲人重新引入美洲的这一历史。&#10;&#10;=== 花费 ===&#10;下列理念及修正会减少骑兵的招募和维护花费：&#10;{{bonus table|cav cost|collapse=yes}}&#10;&#10;在启用DLC {{icon|tc|24px}} [[哥萨克]]后，依照哥萨克[[阶层]]的忠诚度和影响力，会有{{red|+20%}}到{{green|−20%}}不等的骑兵花费修正。{{icon|Tribes|24px}} 部落阶层也会有0到{{green|−20%}}不等的骑兵花费修正。&#10;&#10;=== 作战能力 ===&#10;以下理念及修正会改变骑兵的作战能力：&#10;{{bonus table|cav power|collapse=yes}}&#10;其他修正包括：&#10;*{{green|+20%}} 政府改革 {{icon|republic}} [[共和制#谢契拉达|谢契拉达]]&#10;*在启用DLC {{icon|tc|24px}} 哥萨克后，依照哥萨克阶层的忠诚度和影响力，会有{{red|-10%}}到{{green|+20%}}不等的骑兵作战能力修正&#10;*{{green|+15%}} 拥有 {{icon|tribe}} [[部落制#部落联盟制|部落联盟制]]政府改革的国家启用政府能力[[部落制#部落忠诚|“训练马术”]]&#10;&#10;=== 骑兵比例 ===&#10;{{Sversion|1.30}}&#10;骑兵比例又称骑步比，是不计炮兵，单纯地以骑兵数量除以步兵和骑兵总数所得的比例。此处的“数量”指的并非是部队编成时的数量，而是当前骑兵和步兵的实时数量。该数量每日计算，也就是说在骑兵超出比例的次日就将即刻遭受惩罚。鉴于步兵在作战中的伤亡要远大于骑兵，建议在部队配比时就安排超出比例的步兵部队，以免在交战中途受到影响。&#10;&#10;骑兵比例的基础值为50%，下列修正会影响此比例：&#10;{{bonus table|cavalry to infantry ratio}}&#10;*拥有 {{icon|gov_steppe_horde}} [[草原游牧]]政体获得{{green|+25%|}}&#10;*作为 {{icon|tengri}} [[长生天]]国家&#039;&#039;&#039;不选择&#039;&#039;&#039;副宗教获得{{green|+25%|}}&#10;*激活[[神权制|万物皆归长生天]]政府改革{{green|+25%}}&#10;*购买 {{icon|age of discovery|24px}} [[地理大发现时代]]的时代能力 [[File:Ab cavalry armies.png|24px]] “骑兵部队”提供{{green|+20%|}}&#10;*作为 {{icon|sunni}} [[逊尼派]]国家获得{{green|+10%|}}&#10;*拥有忠诚的 {{icon|Cossacks|24px}} 哥萨克阶层基于其影响力提供最高{{green|+10%|}}&#10;*拥有谢契拉达政府改革获得{{green|+25%|}}&#10;&#10;=== 侧翼攻击 ===&#10;下列理念会增加侧翼攻击的宽度：&#10;{{bonus table|cavalry flanking ability}}&#10;{{clear}}&#10;&#10;== {{icon|artillery|40px}} 炮兵 ==&#10;[[File:Artillery pips.png|right|thumb|500px|{{SVersion|1.29}} 炮兵随科技增长的总点数变化]]&#10;炮兵既和骑兵、步兵一样参与交战，又能加速[[陆战#围城|围城]]的进程。&#10;&#10;和步骑不同的是，炮兵能够在军阵的后排作战，攻击时只发挥自己战斗力的50%，但会将其50%的冲击和火力防御点数（不为整数时向下取整；16级炮兵开始提供一点防御火力点数，29级炮兵提供一点防御冲击点数）加到该支炮兵前的那支部队上。&#10;&#10;但一旦炮兵暴露于前排，受到敌军的直接攻击，炮兵将承受双倍的伤害。因此从机制上，一般应保证有充足的步兵、骑兵在前排保护炮兵，使其后排作战。&#10;&#10;=== 花费 ===&#10;下列理念及修正会减少炮兵的招募和维护花费：&#10;{{bonus table|artillery cost}}&#10;&#10;=== 作战能力 ===&#10;以下理念及修正会增加炮兵的战斗伤害：&#10;{{bonus table|artillery power}}&#10;*{{icon|age of revolutions}} [[大革命时代]]的时代能力“改良炮兵射程”：{{green|+20%}}后排炮兵伤害。&#10;&#10;=== 炮兵单位列表 ===&#10;{{SVersion|1.35}}&#10;所有炮兵都至少拥有{{green|2}}点机动。炮兵的花费高达等量步兵的3倍。&#10;&#10;&#039;&#039;&#039;请注意：&#039;&#039;&#039; 所有科技组都使用同样的炮兵单位。&#10;{| class=&quot;wikitable sortable mw-datatable&quot; style=&quot;text-align:center&quot;&#10;! rowspan=2 | {{icon|mil tech}} 军事科技 !! width=&quot;225px&quot; rowspan=2 | {{icon|Artillery|40px}} 名称&#10;! colspan=2 style=&quot;background-color: #00bfff;&quot; | {{icon|fire}} 火力 !! colspan=2 style=&quot;background-color: #ff6a6a;&quot; | {{icon|shock}} 冲击 !! colspan=2 style=&quot;background-color: #caff70;&quot; | {{icon|land morale}} 士气 !! rowspan=2 | 属性点数&amp;lt;br&gt;合计&#10;|-&#10;| 7 || style=&quot;text-align:left&quot; | 早期榴弹炮&#10;| {{pips|1|off}} || || || || || {{pips|1|def}} || 2&#10;|-&#10;| 7 || style=&quot;text-align:left&quot; | 大型青铜臼炮&#10;| || || || || {{pips|2|off}} || || 2&#10;|-&#10;| 10 || style=&quot;text-align:left&quot; | 长管炮&#10;| {{pips|2|off}} || {{pips|1|def}} || || {{pips|1|def}} || || || 4&#10;|-&#10;| 10 || style=&quot;text-align:left&quot; | 攻城炮&#10;| {{pips|1|off}} || || || {{pips|2|def}} || {{pips|1|off}} || || 4&#10;|-&#10;| 13 || style=&quot;text-align:left&quot; | 大型铸铁加农炮&#10;| {{pips|2|off}} || {{pips|1|def}} || || {{pips|1|def}} || {{pips|2|off}} || || 6&#10;|-&#10;| 13 || style=&quot;text-align:left&quot; | 小型铸铁加农炮&#10;| {{pips|1|off}} || {{pips|1|def}} || || {{pips|2|def}} || {{pips|1|off}} || {{pips|1|def}} || 6&#10;|-&#10;| 16 || style=&quot;text-align:left&quot; | 前膛装填半加农炮&#10;| {{pips|2|off}} || {{pips|2|def}} || || {{pips|1|def}} || {{pips|2|off}} || {{pips|1|def}} || 8&#10;|-&#10;| 16 || style=&quot;text-align:left&quot; | 半长管炮&#10;| {{pips|1|off}} || {{pips|2|def}} || || {{pips|2|def}} || {{pips|2|off}} || {{pips|1|def}} || 8&#10;|-&#10;| 18 || style=&quot;text-align:left&quot; | 皮革炮&#10;| {{pips|3|off}} || {{pips|2|def}} || {{pips|1|off}} || {{pips|1|def}} || {{pips|2|off}} || {{pips|1|def}} || 10&#10;|-&#10;| 18 || style=&quot;text-align:left&quot; | 前膛装填加农炮&#10;| {{pips|3|off}} || {{pips|2|def}} || {{pips|1|off}} || {{pips|2|def}} || {{pips|1|off}} || {{pips|1|def}} || 10&#10;|-&#10;| 20 || style=&quot;text-align:left&quot; | 旋转加农炮&#10;| {{pips|3|off}} || {{pips|2|def}} || {{pips|1|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|1|def}} || 12&#10;|-&#10;| 20 || style=&quot;text-align:left&quot; | 榴弹炮&#10;| {{pips|3|off}} || {{pips|2|def}} || {{pips|1|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|2|def}} || 12&#10;|-&#10;| 22 || style=&quot;text-align:left&quot; | 库霍恩臼炮&#10;| {{pips|2|off}} || {{pips|4|def}} || {{pips|1|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|3|def}} || 14&#10;|-&#10;| 22 || style=&quot;text-align:left&quot; | 骑炮兵&#10;| {{pips|3|off}} || {{pips|3|def}} || {{pips|1|off}} || {{pips|1|def}} || {{pips|4|off}} || {{pips|2|def}} || 14&#10;|-&#10;| 25 || style=&quot;text-align:left&quot; | 皇家臼炮&#10;| {{pips|4|off}} || {{pips|3|def}} || {{pips|1|off}} || {{pips|1|def}} || {{pips|5|off}} || {{pips|2|def}} || 16&#10;|-&#10;| 25 || style=&quot;text-align:left&quot; | 独角兽炮&#10;| {{pips|3|off}} || {{pips|4|def}} || {{pips|1|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|3|def}} || 16&#10;|-&#10;| 29 || style=&quot;text-align:left&quot; | 快速火炮&#10;| {{pips|5|off}} || {{pips|4|def}} || {{pips|2|off}} || {{pips|2|def}} || {{pips|4|off}} || {{pips|3|def}} || 20&#10;|-&#10;| 29 || style=&quot;text-align:left&quot; | 炮兵集群&#10;| {{pips|4|off}} || {{pips|4|def}} || {{pips|2|off}} || {{pips|4|def}} || {{pips|3|off}} || {{pips|3|def}} || 20&#10;|}&#10;&#10;== 兵种组 ==&#10;{{Original researh}}&#10;各点数的价值（下式的等号都为约等号）：&#10;&#10;步兵火力进攻点：冲击进攻点=1:2(3军科),1:1(30军科)；骑兵火力进攻点：冲击进攻点&amp;lt;1:5（全期）。上面两个比值的精确值可用科技对兵种的火力加成：冲击加成精确计算。&#10;&#10;前期（7军科前，之后取决于对方炮兵数量）：冲击防御&gt;士气防御&gt;&gt;火力防御；后期（16军科后炮兵的强势期，双方后排满炮兵，没有一方前排全骑部队的情况下）：火力防御&gt;士气防御&gt;冲击防御。&#10;&#10;骑兵进攻冲击点&gt;进攻士气点&gt;&gt;进攻火力点，炮兵进攻火力点&gt;进攻士气点&gt;&gt;进攻冲击点&#10;&#10;=== {{icon|western}} 西欧兵种组 ===&#10;{{SVersion|1.35}}&#10;{| class=&quot;wikitable sortable mw-datatable&quot; style=&quot;text-align:center&quot;&#10;! rowspan=2 | {{icon|mil tech}} 军事科技 !! width=&quot;225px&quot; rowspan=2 | {{icon|infantry|40px}} 兵种名称&#10;! colspan=2 style=&quot;background-color: #00bfff;&quot; | {{icon|fire}} 火力 !! colspan=2 style=&quot;background-color: #ff6a6a;&quot; | {{icon|shock}} 冲击 !! colspan=2 style=&quot;background-color: #caff70;&quot; | {{icon|land morale}} 士气 !! rowspan=2 | 属性点数&amp;lt;br&gt;合计&#10;|-&#10;! 攻击 !! 防御 !! 攻击 !! 防御 !! 攻击 !! 防御&#10;|-&#10;| 1 || style=&quot;text-align:left&quot; | 长戟步兵 ||  ||  || {{pips|1|off}} ||  || {{pips|1|off}} ||  || 2&#10;|-&#10;| 1 || style=&quot;text-align:left&quot; | 拉丁中世纪步兵 ||  ||  ||  ||  || {{pips|1|off}} || {{pips|1|def}} || 2&#10;|-&#10;| 5 || style=&quot;text-align:left&quot; | 盖尔外籍佣兵 ||  ||  || {{pips|1|off}} ||  || {{pips|2|off}} ||  || 3&#10;|-&#10;| 5 || style=&quot;text-align:left&quot; | 长弓兵 ||  ||  || {{pips|1|off}} ||  || {{pips|1|off}} || {{pips|1|def}} || 3&#10;|-&#10;| 5 || style=&quot;text-align:left&quot; | 重装步兵 ||  ||  ||  || {{pips|1|def}} || {{pips|1|off}} || {{pips|1|def}} || 3&#10;|-&#10;| 9 || style=&quot;text-align:left&quot; | 意大利雇佣步兵 ||  ||  || {{pips|2|off}} || {{pips|1|def}} || {{pips|1|off}} || {{pips|1|def}} || 5&#10;|-&#10;| 9 || style=&quot;text-align:left&quot; | 日耳曼长枪兵 ||  ||  || {{pips|1|off}} || {{pips|1|def}} || {{pips|1|off}} || {{pips|2|def}} || 5&#10;|-&#10;| 9 || style=&quot;text-align:left&quot; | 改良盖尔外籍佣兵 ||  ||  || {{pips|2|off}} ||  || {{pips|2|off}} || {{pips|1|def}} || 5&#10;|-&#10;| 12 || style=&quot;text-align:left&quot; | 自由射手 || {{pips|1|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|1|def}} || {{pips|3|off}} || {{pips|1|def}} || 10&#10;|-&#10;| 12 || style=&quot;text-align:left&quot; | 西班牙方阵步兵 || {{pips|1|off}} || {{pips|2|def}} || {{pips|1|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|2|def}} || 10&#10;|-&#10;| 15 || style=&quot;text-align:left&quot; | 先锋步兵 || {{pips|1|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|1|def}} || {{pips|3|off}} || {{pips|2|def}} || 12&#10;|-&#10;| 15 || style=&quot;text-align:left&quot; | 毛里茨步兵 || {{pips|2|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|1|def}} || {{pips|3|off}} || {{pips|2|def}} || 12&#10;|-&#10;| 19 || style=&quot;text-align:left&quot; | 古斯塔夫步兵 || {{pips|3|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|2|def}} || 15&#10;|-&#10;| 19 || style=&quot;text-align:left&quot; | 高地步兵 || {{pips|2|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|2|def}} || {{pips|4|off}} || {{pips|2|def}} || 15&#10;|-&#10;| 19 || style=&quot;text-align:left&quot; | 改良方阵步兵 || {{pips|2|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|3|def}} || 15&#10;|-&#10;| 23 || style=&quot;text-align:left&quot; | 卡尔步兵 || {{pips|3|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|3|def}} || 16&#10;|-&#10;| 23 || style=&quot;text-align:left&quot; | 边防步兵 || {{pips|2|off}} || {{pips|3|def}} || {{pips|2|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|3|def}} || 16&#10;|-&#10;| 23 || style=&quot;text-align:left&quot; | 线列步兵 || {{pips|3|off}} || {{pips|3|def}} || {{pips|2|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|3|def}} || 16&#10;|-&#10;| 26 || style=&quot;text-align:left&quot; | 蓝衣步兵 || {{pips|3|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|3|def}} || {{pips|4|off}} || {{pips|4|def}} || 20&#10;|-&#10;| 26 || style=&quot;text-align:left&quot; | 腓特烈步兵 || {{pips|4|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|3|def}} || {{pips|4|off}} || {{pips|3|def}} || 20&#10;|-&#10;| 26 || style=&quot;text-align:left&quot; | 红衣步兵 || {{pips|3|off}} || {{pips|4|def}} || {{pips|3|off}} || {{pips|3|def}} || {{pips|4|off}} || {{pips|3|def}} || 20&#10;|-&#10;| 26 || style=&quot;text-align:left&quot; | 白衣步兵 || {{pips|4|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|4|def}} || 20&#10;|-&#10;| 28 || style=&quot;text-align:left&quot; | 冲击步兵 || {{pips|4|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|3|def}} || {{pips|4|off}} || {{pips|4|def}} || 21&#10;|-&#10;| 28 || style=&quot;text-align:left&quot; | 英国方阵步兵 || {{pips|3|off}} || {{pips|4|def}} || {{pips|3|off}} || {{pips|3|def}} || {{pips|4|off}} || {{pips|4|def}} || 21&#10;|-&#10;| 30 || style=&quot;text-align:left&quot; | 作训步兵 || {{pips|4|off}} || {{pips|4|def}} || {{pips|3|off}} || {{pips|3|def}} || {{pips|4|off}} || {{pips|4|def}} || 22&#10;|-&#10;| 30 || style=&quot;text-align:left&quot; | 猎兵 || {{pips|4|off}} || {{pips|4|def}} || {{pips|4|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|4|def}} || 22&#10;|-&#10;| 30 || style=&quot;text-align:left&quot; | 混合编队步兵 || {{pips|4|off}} || {{pips|3|def}} || {{pips|4|off}} || {{pips|3|def}} || {{pips|4|off}} || {{pips|4|def}} || 22&#10;|-&#10;| 30 || style=&quot;text-align:left&quot; | 拿破仑方阵步兵 || {{pips|4|off}} || {{pips|4|def}} || {{pips|4|off}} || {{pips|3|def}} || {{pips|4|off}} || {{pips|3|def}} || 22&#10;|}&#10;{{clear}}&#10;{| class=&quot;wikitable sortable mw-datatable&quot; style=&quot;text-align:center&quot;&#10;! rowspan=2 | {{icon|mil tech}} 军事科技 !! width=&quot;225px&quot; rowspan=2 | {{icon|cavalry|40px}} 兵种名称&#10;! colspan=2 style=&quot;background-color: #00bfff;&quot; | {{icon|fire}} 火力 !! colspan=2 style=&quot;background-color: #ff6a6a;&quot; | {{icon|shock}} 冲击 !! colspan=2 style=&quot;background-color: #caff70;&quot; | {{icon|land morale}} 士气 !! rowspan=2 | 属性点数&amp;lt;br&gt;合计&#10;|-&#10;! 攻击 !! 防御 !! 攻击 !! 防御 !! 攻击 !! 防御&#10;|-&#10;| 1 || style=&quot;text-align:left&quot; | 突击骑兵 ||  ||  || {{pips|1|off}} || {{pips|1|def}} || {{pips|1|off}} ||  || 3&#10;|-&#10;| 1 || style=&quot;text-align:left&quot; | 拉丁骑士 ||  ||  || {{pips|1|off}} ||  || {{pips|1|off}} || {{pips|1|def}} || 3&#10;|-&#10;| 10 || style=&quot;text-align:left&quot; | 黑骑兵 || {{pips|1|off}} ||  || {{pips|2|off}} || {{pips|1|def}} || {{pips|2|off}} || {{pips|2|def}} || 8&#10;|-&#10;| 14 || style=&quot;text-align:left&quot; | 拉丁回旋骑兵 || {{pips|1|off}} ||  || {{pips|3|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|2|def}} || 10&#10;|-&#10;| 18 || style=&quot;text-align:left&quot; | 快速骑兵 || {{pips|1|off}} || {{pips|1|def}} || {{pips|4|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|3|def}} || 15&#10;|-&#10;| 23 || style=&quot;text-align:left&quot; | 佩刀骑兵 || {{pips|1|off}} || {{pips|1|def}} || {{pips|5|off}} || {{pips|3|def}} || {{pips|5|off}} || {{pips|3|def}} || 18&#10;|-&#10;| 23 || style=&quot;text-align:left&quot; | 拉丁龙骑兵 || {{pips|1|off}} || {{pips|1|def}} || {{pips|4|off}} || {{pips|4|def}} || {{pips|4|off}} || {{pips|4|def}} || 18&#10;|-&#10;| 23 || style=&quot;text-align:left&quot; | 拉丁骠骑兵 || {{pips|1|off}} || {{pips|2|def}} || {{pips|4|off}} || {{pips|3|def}} || {{pips|4|off}} || {{pips|4|def}} || 18&#10;|-&#10;| 26 || style=&quot;text-align:left&quot; | 卡宾枪骑兵 || {{pips|2|off}} || {{pips|1|def}} || {{pips|5|off}} || {{pips|4|def}} || {{pips|3|off}} || {{pips|4|def}} || 19&#10;|-&#10;| 26 || style=&quot;text-align:left&quot; | 改良拉丁骠骑兵 || {{pips|1|off}} || {{pips|2|def}} || {{pips|4|off}} || {{pips|4|def}} || {{pips|4|off}} || {{pips|4|def}} || 19&#10;|-&#10;| 26 || style=&quot;text-align:left&quot; | 轻枪骑兵 || {{pips|1|off}} || {{pips|2|def}} || {{pips|5|off}} || {{pips|4|def}} || {{pips|4|off}} || {{pips|3|def}} || 19&#10;|-&#10;| 28 || style=&quot;text-align:left&quot; | 拉丁猎骑兵 || {{pips|2|off}} || {{pips|1|def}} || {{pips|4|off}} || {{pips|4|def}} || {{pips|5|off}} || {{pips|5|def}} || 21&#10;|-&#10;| 28 || style=&quot;text-align:left&quot; | 拉丁胸甲骑兵 || {{pips|1|off}} || {{pips|2|def}} || {{pips|5|off}} || {{pips|4|def}} || {{pips|4|off}} || {{pips|5|def}} || 21&#10;|-&#10;| 28 || style=&quot;text-align:left&quot; | 拉丁枪骑兵 ||  || {{pips|2|def}} || {{pips|6|off}} || {{pips|4|def}} || {{pips|5|off}} || {{pips|4|def}} || 21&#10;|}&#10;&#10;=== {{icon|Eastern}} 东欧兵种组 ===&#10;{{SVersion|1.35}}&#10;{| class=&quot;wikitable sortable mw-datatable&quot; style=&quot;text-align:center&quot;&#10;! rowspan=2 | {{icon|mil tech}}军事科技 !! width=&quot;225px&quot; rowspan=2 | {{icon|infantry|40px}} 兵种名称&#10;! colspan=2 style=&quot;background-color: #00bfff;&quot; | {{icon|fire}} 火力 !! colspan=2 style=&quot;background-color: #ff6a6a;&quot; | {{icon|shock}} 冲击 !! colspan=2 style=&quot;background-color: #caff70;&quot; | {{icon|land morale}} 士气 !! rowspan=2 | 属性点数&amp;lt;br&gt;合计&#10;|-&#10;! 攻击 !! 防御 !! 攻击 !! 防御 !! 攻击 !! 防御&#10;|-&#10;| 1 || style=&quot;text-align:left&quot; | 重斧步兵 ||  ||  ||  ||  || {{pips|1|off}} || {{pips|1|def}} || 2&#10;|-&#10;| 1 || style=&quot;text-align:left&quot; | 东欧中世纪步兵 ||  ||  || {{pips|1|off}} ||  || {{pips|1|off}} ||  || 2&#10;|-&#10;| 5 || style=&quot;text-align:left&quot; | 东欧民兵 ||  ||  || {{pips|1|off}} || {{pips|1|def}} || {{pips|1|off}} || {{pips|1|def}} || 4&#10;|-&#10;| 9 || style=&quot;text-align:left&quot; | 长枪步兵 ||  ||  || {{pips|1|off}} || {{pips|2|def}} || {{pips|1|off}} || {{pips|2|def}} || 6&#10;|-&#10;| 12 || style=&quot;text-align:left&quot; | 东欧防御滑膛枪兵 || {{pips|2|off}} || {{pips|2|def}} || {{pips|1|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|2|def}} || 11&#10;|-&#10;| 12 || style=&quot;text-align:left&quot; | 东欧攻击滑膛枪兵 || {{pips|2|off}} || {{pips|1|def}} || {{pips|2|off}} || {{pips|1|def}} || {{pips|3|off}} || {{pips|2|def}} || 11&#10;|-&#10;| 15 || style=&quot;text-align:left&quot; | 东欧方阵步兵 || {{pips|2|off}} || {{pips|2|def}} || {{pips|1|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|3|def}} || 12&#10;|-&#10;| 15 || style=&quot;text-align:left&quot; | 新军步兵 || {{pips|3|off}} || {{pips|1|def}} || {{pips|2|off}} || {{pips|1|def}} || {{pips|3|off}} || {{pips|2|def}} || 12&#10;|-&#10;| 19 || style=&quot;text-align:left&quot; | 萨克森步兵 || {{pips|3|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|2|def}} || 14&#10;|-&#10;| 23 || style=&quot;text-align:left&quot; | 彼得步兵 || {{pips|2|off}} || {{pips|3|def}} || {{pips|2|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|3|def}} || 16&#10;|-&#10;| 26 || style=&quot;text-align:left&quot; | 绿衣步兵 || {{pips|3|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|3|def}} || {{pips|4|off}} || {{pips|4|def}} || 20&#10;|-&#10;| 30 || style=&quot;text-align:left&quot; | 集群步兵 || {{pips|4|off}} || {{pips|3|def}} || {{pips|4|off}} || {{pips|3|def}} || {{pips|4|off}} || {{pips|3|def}} || 21&#10;|}&#10;{{clear}}&#10;{| class=&quot;wikitable sortable mw-datatable&quot; style=&quot;text-align:center&quot;&#10;! rowspan=2 | {{icon|mil tech}} 军事科技 !! width=&quot;225px&quot; rowspan=2 | {{icon|cavalry|40px}} 兵种名称&#10;! colspan=2 style=&quot;background-color: #00bfff;&quot; | {{icon|fire}} 火力 !! colspan=2 style=&quot;background-color: #ff6a6a;&quot; | {{icon|shock}} 冲击 !! colspan=2 style=&quot;background-color: #caff70;&quot; | {{icon|land morale}} 士气 !! rowspan=2 | 属性点数&amp;lt;br&gt;合计&#10;|-&#10;! 攻击 !! 防御 !! 攻击 !! 防御 !! 攻击 !! 防御&#10;|-&#10;| 1 || style=&quot;text-align:left&quot; | 亲卫骑兵 ||  ||  ||  || {{pips|1|def}} || {{pips|1|off}} || {{pips|1|def}} || 3&#10;|-&#10;| 1 || style=&quot;text-align:left&quot; | 东欧骑士 ||  ||  || {{pips|1|off}} ||  || {{pips|1|off}} || {{pips|1|def}} || 3&#10;|-&#10;| 6 || style=&quot;text-align:left&quot; | 斯忒狄奥提雇佣骑兵 ||  ||  || {{pips|2|off}} || {{pips|1|def}} || {{pips|1|off}} || {{pips|1|def}} || 5&#10;|-&#10;| 10 || style=&quot;text-align:left&quot; | 东欧骠骑兵 ||  ||  || {{pips|2|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|2|def}} || 9&#10;|-&#10;| 14 || style=&quot;text-align:left&quot; | 东欧回旋骑兵 || {{pips|2|off}} ||  || {{pips|2|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|3|def}} || 12&#10;|-&#10;| 14 || style=&quot;text-align:left&quot; | 改良东欧骠骑兵 || {{pips|1|off}} || {{pips|1|def}} || {{pips|3|off}} || {{pips|3|def}} || {{pips|2|off}} || {{pips|2|def}} || 12&#10;|-&#10;| 14 || style=&quot;text-align:left&quot; | 南方哥萨克骑兵 ||  || {{pips|1|def}} || {{pips|4|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|3|def}} || 12&#10;|-&#10;| 22 || style=&quot;text-align:left&quot; | 哥萨克骑兵 || {{pips|1|off}} || {{pips|1|def}} || {{pips|4|off}} || {{pips|3|def}} || {{pips|4|off}} || {{pips|4|def}} || 17&#10;|-&#10;| 22 || style=&quot;text-align:left&quot; | 翼骑兵 ||  || {{pips|1|def}} || {{pips|5|off}} || {{pips|4|def}} || {{pips|4|off}} || {{pips|3|def}} || 17&#10;|-&#10;| 26 || style=&quot;text-align:left&quot; | 枪骑兵 ||  || {{pips|1|def}} || {{pips|5|off}} || {{pips|4|def}} || {{pips|4|off}} || {{pips|4|def}} || 18&#10;|-&#10;| 26 || style=&quot;text-align:left&quot; | 改良哥萨克骑兵 || {{pips|1|off}} || {{pips|1|def}} || {{pips|4|off}} || {{pips|4|def}} || {{pips|4|off}} || {{pips|4|def}} || 18&#10;|-&#10;| 28 || style=&quot;text-align:left&quot; | 新式哥萨克骑兵 || {{pips|2|off}} || {{pips|1|def}} || {{pips|4|off}} || {{pips|4|def}} || {{pips|5|off}} || {{pips|4|def}} || 20&#10;|-&#10;| 28 || style=&quot;text-align:left&quot; | 东欧胸甲骑兵 || {{pips|1|off}} || {{pips|2|def}} || {{pips|5|off}} || {{pips|4|def}} || {{pips|4|off}} || {{pips|4|def}} || 20&#10;|}&#10;&#10;=== {{icon|Anatolian}} 安纳托利亚兵种组 ===&#10;{{SVersion|1.35}}&#10;{| class=&quot;wikitable sortable mw-datatable&quot; style=&quot;text-align:center&quot;&#10;! rowspan=2 | {{icon|mil tech}} 军事科技 !! width=&quot;225px&quot; rowspan=2 | {{icon|Infantry|40px}} 兵种名称&#10;! colspan=2 style=&quot;background-color: #00bfff;&quot; | {{icon|fire}} 火力 !! colspan=2 style=&quot;background-color: #ff6a6a;&quot; | {{icon|shock}} 冲击 !! colspan=2 style=&quot;background-color: #caff70;&quot; | {{icon|land morale}} 士气 !! rowspan=2 | 属性点数&amp;lt;br&gt;合计&#10;|-&#10;! 攻击 !! 防御 !! 攻击 !! 防御 !! 攻击 !! 防御&#10;|-&#10;| 1 || style=&quot;text-align:left&quot; | 雅雅步兵 ||  ||  || {{pips|1|off}} ||  || {{pips|1|off}} || {{pips|1|def}} || 3&#10;|-&#10;| 5 || style=&quot;text-align:left&quot; | 阿扎布步兵 ||  ||  || {{pips|1|off}} || {{pips|1|def}} || {{pips|1|off}} || {{pips|1|def}} || 4&#10;|-&#10;| 9 || style=&quot;text-align:left&quot; | 耶尼切里步兵 || {{pips|1|off}} ||  || {{pips|1|off}} || {{pips|1|def}} || {{pips|1|off}} || {{pips|2|def}} || 6&#10;|-&#10;| 12 || style=&quot;text-align:left&quot; | 塞克班步兵 || {{pips|2|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|1|def}} || {{pips|2|off}} || {{pips|3|def}} || 12&#10;|-&#10;| 19 || style=&quot;text-align:left&quot; | 改良耶尼切里步兵 || {{pips|3|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|2|def}} || 14&#10;|-&#10;| 23 || style=&quot;text-align:left&quot; | 新制步兵 || {{pips|2|off}} || {{pips|3|def}} || {{pips|2|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|3|def}} || 15&#10;|-&#10;| 26 || style=&quot;text-align:left&quot; | 东方卡宾枪手 || {{pips|4|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|3|def}} || 19&#10;|-&#10;| 30 || style=&quot;text-align:left&quot; | 新式东方步兵 || {{pips|3|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|3|def}} || {{pips|4|off}} || {{pips|4|def}} || 20&#10;|}&#10;{{clear}}&#10;{| class=&quot;wikitable sortable mw-datatable&quot; style=&quot;text-align:center&quot;&#10;! rowspan=2 | {{icon|mil tech}} 军事科技 !! width=&quot;225px&quot; rowspan=2 | {{icon|cavalry|40px}} 兵种名称&#10;! colspan=2 style=&quot;background-color: #00bfff;&quot; | {{icon|fire}} 火力 !! colspan=2 style=&quot;background-color: #ff6a6a;&quot; | {{icon|shock}} 冲击 !! colspan=2 style=&quot;background-color: #caff70;&quot; | {{icon|land morale}} 士气 !! rowspan=2 | 属性点数&amp;lt;br&gt;合计&#10;|-&#10;! 攻击 !! 防御 !! 攻击 !! 防御 !! 攻击 !! 防御&#10;|-&#10;| 1 || style=&quot;text-align:left&quot; | 穆瑟雷骑兵 ||  ||  || {{pips|2|off}} || {{pips|1|def}} || {{pips|1|off}} || {{pips|1|def}} || 5&#10;|-&#10;| 6 || style=&quot;text-align:left&quot; | 蒂玛尔贵族骑兵 ||  ||  || {{pips|2|off}} || {{pips|1|def}} || {{pips|2|off}} || {{pips|1|def}} || 6&#10;|-&#10;| 10 || style=&quot;text-align:left&quot; | 西帕希骑兵 ||  ||  || {{pips|3|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|2|def}} || 10&#10;|-&#10;| 18 || style=&quot;text-align:left&quot; | 改良西帕希骑兵 || {{pips|1|off}} || {{pips|1|def}} || {{pips|3|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|3|def}} || 14&#10;|-&#10;| 23 || style=&quot;text-align:left&quot; | 托普拉克利游骑兵 || {{pips|2|off}} ||  || {{pips|4|off}} || {{pips|3|def}} || {{pips|4|off}} || {{pips|3|def}} || 16&#10;|-&#10;| 26 || style=&quot;text-align:left&quot; | 东方前哨骑兵 || {{pips|1|off}} || {{pips|2|def}} || {{pips|4|off}} || {{pips|3|def}} || {{pips|4|off}} || {{pips|3|def}} || 17&#10;|-&#10;| 26 || style=&quot;text-align:left&quot; | 东方长枪骑兵 || {{pips|2|off}} || {{pips|1|def}} || {{pips|3|off}} || {{pips|4|def}} || {{pips|4|off}} || {{pips|3|def}} || 17&#10;|-&#10;| 28 || style=&quot;text-align:left&quot; | 改良枪骑兵 || {{pips|1|off}} || {{pips|1|def}} || {{pips|5|off}} || {{pips|3|def}} || {{pips|5|off}} || {{pips|3|def}} || 18&#10;|-&#10;| 28 || style=&quot;text-align:left&quot; | 托普拉克利龙骑兵 || {{pips|2|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|3|def}} || {{pips|4|off}} || {{pips|4|def}} || 18&#10;|}&#10;&#10;=== {{icon|Muslim}} 穆斯林兵种组 ===&#10;{{SVersion|1.35}}&#10;{| class=&quot;wikitable sortable mw-datatable&quot; style=&quot;text-align:center&quot;&#10;! rowspan=2 | {{icon|mil tech}} 军事科技 !! width=&quot;225px&quot; rowspan=2 | {{icon|infantry|40px}} 兵种名称&#10;! colspan=2 style=&quot;background-color: #00bfff;&quot; | {{icon|fire}} 火力 !! colspan=2 style=&quot;background-color: #ff6a6a;&quot; | {{icon|shock}} 冲击 !! colspan=2 style=&quot;background-color: #caff70;&quot; | {{icon|land morale}} 士气 !! rowspan=2 | 属性点数&amp;lt;br&gt;合计&#10;|-&#10;! 攻击 !! 防御 !! 攻击 !! 防御 !! 攻击 !! 防御&#10;|-&#10;| 1 || style=&quot;text-align:left&quot; | 穆斯林弓兵 ||  ||  || {{pips|1|off}} || {{pips|1|def}} ||  || {{pips|1|def}} || 3&#10;|-&#10;| 1 || style=&quot;text-align:left&quot; | 穆斯林步兵 ||  ||  || {{pips|1|off}} ||  || {{pips|1|off}} || {{pips|1|def}} || 3&#10;|-&#10;| 5 || style=&quot;text-align:left&quot; | 穆斯林决斗步兵 ||  ||  || {{pips|1|off}} || {{pips|1|def}} || {{pips|1|off}} || {{pips|1|def}} || 4&#10;|-&#10;| 9 || style=&quot;text-align:left&quot; | 弯刀步兵 ||  ||  || {{pips|2|off}} || {{pips|1|def}} || {{pips|1|off}} || {{pips|2|def}} || 6&#10;|-&#10;| 12 || style=&quot;text-align:left&quot; | 穆斯林滑膛枪兵 || {{pips|2|off}} || {{pips|1|def}} || {{pips|1|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|3|def}} || 11&#10;|-&#10;| 15 || style=&quot;text-align:left&quot; | 阿夫沙尔改良步兵 || {{pips|3|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|2|def}} || 13&#10;|-&#10;| 23 || style=&quot;text-align:left&quot; | 改良穆斯林滑膛枪兵 || {{pips|1|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|2|def}} || {{pips|4|off}} || {{pips|3|def}} || 16&#10;|-&#10;| 26 || style=&quot;text-align:left&quot; | 穆斯林集群步兵 || {{pips|3|off}} || {{pips|4|def}} || {{pips|3|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|3|def}} || 19&#10;|-&#10;| 30 || style=&quot;text-align:left&quot; | 穆斯林来复枪兵 || {{pips|3|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|3|def}} || {{pips|4|off}} || {{pips|4|def}} || 20&#10;|}&#10;{{clear}}&#10;{| class=&quot;wikitable sortable mw-datatable&quot; style=&quot;text-align:center&quot;&#10;! rowspan=2 | {{icon|mil tech}} 军事科技 !! width=&quot;225px&quot; rowspan=2 | {{icon|cavalry|40px}} 兵种名称&#10;! colspan=2 style=&quot;background-color: #00bfff;&quot; | {{icon|fire}} 火力 !! colspan=2 style=&quot;background-color: #ff6a6a;&quot; | {{icon|shock}} 冲击 !! colspan=2 style=&quot;background-color: #caff70;&quot; | {{icon|land morale}} 士气 !! rowspan=2 | 属性点数&amp;lt;br&gt;合计&#10;|-&#10;! 攻击 !! 防御 !! 攻击 !! 防御 !! 攻击 !! 防御&#10;|-&#10;| 1 || style=&quot;text-align:left&quot; | 冲击骑兵 ||  ||  || {{pips|2|off}} ||  || {{pips|1|off}} || {{pips|1|def}} || 4&#10;|-&#10;| 1 || style=&quot;text-align:left&quot; | 穆斯林骑兵 ||  ||  || {{pips|1|off}} ||  || {{pips|2|off}} || {{pips|1|def}} || 4&#10;|-&#10;| 1 || style=&quot;text-align:left&quot; | 穆斯林骑射手 ||  ||  || {{pips|1|off}} || {{pips|1|def}} || {{pips|1|off}} || {{pips|1|def}} || 4&#10;|-&#10;| 6 || style=&quot;text-align:left&quot; | 昔班尼骑兵 ||  ||  || {{pips|2|off}} || {{pips|1|def}} || {{pips|1|off}} || {{pips|2|def}} || 6&#10;|-&#10;| 10 || style=&quot;text-align:left&quot; | 奇兹尔巴什骑兵 ||  ||  || {{pips|2|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|2|def}} || 9&#10;|-&#10;| 14 || style=&quot;text-align:left&quot; | 穆斯林火枪骑兵 || {{pips|1|off}} ||  || {{pips|2|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|2|def}} || 10&#10;|-&#10;| 18 || style=&quot;text-align:left&quot; | 阿夫沙尔改良骑兵 ||  || {{pips|1|def}} || {{pips|4|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|3|def}} || 14&#10;|-&#10;| 18 || style=&quot;text-align:left&quot; | 火枪冲锋骑兵 || {{pips|1|off}} || {{pips|1|def}} || {{pips|4|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|2|def}} || 14&#10;|-&#10;| 23 || style=&quot;text-align:left&quot; | 阿里贝伊改良骑兵 || {{pips|2|off}} || {{pips|1|def}} || {{pips|4|off}} || {{pips|3|def}} || {{pips|4|off}} || {{pips|3|def}} || 17&#10;|-&#10;| 23 || style=&quot;text-align:left&quot; | 穆斯林龙骑兵 || {{pips|1|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|4|def}} || {{pips|3|off}} || {{pips|4|def}} || 17&#10;|-&#10;| 28 || style=&quot;text-align:left&quot; | 杜兰尼骑兵 || {{pips|2|off}} || {{pips|1|def}} || {{pips|5|off}} || {{pips|3|def}} || {{pips|4|off}} || {{pips|4|def}} || 19&#10;|-&#10;| 28 || style=&quot;text-align:left&quot; | 杜兰尼回旋骑兵 || {{pips|1|off}} || {{pips|2|def}} || {{pips|4|off}} || {{pips|5|def}} || {{pips|4|off}} || {{pips|3|def}} || 19&#10;|}&#10;&#10;=== {{icon|Nomad}} 游牧兵种组 ===&#10;{{SVersion|1.35}}&#10;{| class=&quot;wikitable sortable mw-datatable&quot; style=&quot;text-align:center&quot;&#10;! rowspan=2 | {{icon|mil tech}} 军事科技 !! width=&quot;225px&quot; rowspan=2 | {{icon|infantry|40px}} 兵种名称&#10;! colspan=2 style=&quot;background-color: #00bfff;&quot; | {{icon|fire}} 火力 !! colspan=2 style=&quot;background-color: #ff6a6a;&quot; | {{icon|shock}} 冲击 !! colspan=2 style=&quot;background-color: #caff70;&quot; | {{icon|land morale}} 士气 !! rowspan=2 | 属性点数&amp;lt;br&gt;合计&#10;|-&#10;! 攻击 !! 防御 !! 攻击 !! 防御 !! 攻击 !! 防御&#10;|-&#10;| 1 || style=&quot;text-align:left&quot; | 东方弓兵 ||  ||  || {{pips|1|off}} || {{pips|1|def}} || {{pips|1|off}} || {{pips|1|def}} || 4&#10;|-&#10;| 9 || style=&quot;text-align:left&quot; | 草原突袭兵 ||  ||  || {{pips|2|off}} || {{pips|1|def}} || {{pips|1|off}} || {{pips|2|def}} || 6&#10;|-&#10;| 12 || style=&quot;text-align:left&quot; | 草原徒步士兵 || {{pips|1|off}} || {{pips|1|def}} || {{pips|2|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|2|def}} || 10&#10;|-&#10;| 15 || style=&quot;text-align:left&quot; | 草原滑膛枪兵 || {{pips|2|off}} || {{pips|1|def}} || {{pips|3|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|2|def}} || 12&#10;|-&#10;| 19 || style=&quot;text-align:left&quot; | 草原步兵 || {{pips|2|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|2|def}} || 14&#10;|-&#10;| 26 || style=&quot;text-align:left&quot; | 草原来复枪兵 || {{pips|2|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|3|def}} || {{pips|4|off}} || {{pips|4|def}} || 19&#10;|-&#10;| 30 || style=&quot;text-align:left&quot; | 改良草原来复枪兵 || {{pips|3|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|3|def}} || {{pips|4|off}} || {{pips|4|def}} || 20&#10;|}&#10;{{clear}}&#10;{| class=&quot;wikitable sortable mw-datatable&quot; style=&quot;text-align:center&quot;&#10;! rowspan=2 | {{icon|mil tech}} 军事科技 !! width=&quot;225px&quot; rowspan=2 | {{icon|cavalry|40px}} 兵种名称&#10;! colspan=2 style=&quot;background-color: #00bfff;&quot; | {{icon|fire}} 火力 !! colspan=2 style=&quot;background-color: #ff6a6a;&quot; | {{icon|shock}} 冲击 !! colspan=2 style=&quot;background-color: #caff70;&quot; | {{icon|land morale}} 士气 !! rowspan=2 | 属性点数&amp;lt;br&gt;合计&#10;|-&#10;! 攻击 !! 防御 !! 攻击 !! 防御 !! 攻击 !! 防御&#10;|-&#10;| 1 || style=&quot;text-align:left&quot; | 东方草原骑兵 ||  ||  || {{pips|1|off}} || {{pips|1|def}} || {{pips|2|off}} || {{pips|2|def}} || 6&#10;|-&#10;| 1 || style=&quot;text-align:left&quot; | 东方密袭骑兵 ||  ||  || {{pips|2|off}} || {{pips|1|def}} || {{pips|2|off}} || {{pips|1|def}} || 6&#10;|-&#10;| 10 || style=&quot;text-align:left&quot; | 草原骑手 ||  ||  || {{pips|3|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|2|def}} || 10&#10;|-&#10;| 14 || style=&quot;text-align:left&quot; | 草原枪骑兵 ||  ||  || {{pips|3|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|3|def}} || 12&#10;|-&#10;| 18 || style=&quot;text-align:left&quot; | 草原突袭骑兵 ||  || {{pips|1|def}} || {{pips|3|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|3|def}} || 13&#10;|-&#10;| 23 || style=&quot;text-align:left&quot; | 草原骑兵 || {{pips|1|off}} || {{pips|1|def}} || {{pips|4|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|3|def}} || 15&#10;|-&#10;| 28 || style=&quot;text-align:left&quot; | 草原长枪骑兵 || {{pips|1|off}} || {{pips|1|def}} || {{pips|5|off}} || {{pips|4|def}} || {{pips|4|off}} || {{pips|3|def}} || 18&#10;|}&#10;&#10;=== {{icon|Chinese}} 中华兵种组 ===&#10;{{SVersion|1.35}}&#10;{| class=&quot;wikitable sortable mw-datatable&quot; style=&quot;text-align:center&quot;&#10;! rowspan=2 | {{icon|mil tech}} 军事科技 !! width=&quot;225px&quot; rowspan=2 | {{icon|Infantry|40px}} 兵种名称&#10;! colspan=2 style=&quot;background-color: #00bfff;&quot; | {{icon|fire}} 火力 !! colspan=2 style=&quot;background-color: #ff6a6a;&quot; | {{icon|shock}} 冲击 !! colspan=2 style=&quot;background-color: #caff70;&quot; | {{icon|land morale}} 士气 !! rowspan=2 | 属性点数&amp;lt;br&gt;合计&#10;|-&#10;! 攻击 !! 防御 !! 攻击 !! 防御 !! 攻击 !! 防御&#10;|-&#10;| 1 || style=&quot;text-align:left&quot; | 亚洲长弓兵 ||  ||  || {{pips|1|off}} ||  ||  || {{pips|1|def}} || 2&#10;|-&#10;| 1 || style=&quot;text-align:left&quot; | 亚洲长矛步兵 ||  ||  ||  || {{pips|1|def}} ||  || {{pips|1|def}} || 2&#10;|-&#10;| 1 || style=&quot;text-align:left&quot; | 东亚矛兵 ||  ||  ||  || {{pips|1|def}} || {{pips|1|off}} ||  || 2&#10;|-&#10;| 5 || style=&quot;text-align:left&quot; | 亚洲防御步兵 ||  ||  || {{pips|1|off}} || {{pips|1|def}} || {{pips|1|off}} || {{pips|1|def}} || 4&#10;|-&#10;| 5 || style=&quot;text-align:left&quot; | 亚洲攻击步兵 ||  ||  || {{pips|1|off}} ||  || {{pips|2|off}} || {{pips|1|def}} || 4&#10;|-&#10;| 9 || style=&quot;text-align:left&quot; | 亚洲火绳枪兵 || {{pips|1|off}} || {{pips|1|def}} || {{pips|1|off}} || {{pips|1|def}} || {{pips|1|off}} || {{pips|1|def}} || 6&#10;|-&#10;| 12 || style=&quot;text-align:left&quot; | 八旗步兵 || {{pips|1|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|1|def}} || {{pips|2|off}} || {{pips|2|def}} || 10&#10;|-&#10;| 15 || style=&quot;text-align:left&quot; | 亚洲集群步兵 || {{pips|3|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|2|def}} || 13&#10;|-&#10;| 19 || style=&quot;text-align:left&quot; | 亚洲滑膛枪兵 || {{pips|3|off}} || {{pips|3|def}} || {{pips|2|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|2|def}} || 15&#10;|-&#10;| 26 || style=&quot;text-align:left&quot; | 改良亚洲滑膛枪兵 || {{pips|4|off}} || {{pips|4|def}} || {{pips|3|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|3|def}} || 20&#10;|}&#10;{{clear}}&#10;{| class=&quot;wikitable sortable mw-datatable&quot; style=&quot;text-align:center&quot;&#10;! rowspan=2 | {{icon|mil tech}} 军事科技 !! width=&quot;225px&quot; rowspan=2 | {{icon|cavalry|40px}} 兵种名称&#10;! colspan=2 style=&quot;background-color: #00bfff;&quot; | {{icon|fire}} 火力 !! colspan=2 style=&quot;background-color: #ff6a6a;&quot; | {{icon|shock}} 冲击 !! colspan=2 style=&quot;background-color: #caff70;&quot; | {{icon|land morale}} 士气 !! rowspan=2 | 属性点数&amp;lt;br&gt;合计&#10;|-&#10;! 攻击 !! 防御 !! 攻击 !! 防御 !! 攻击 !! 防御&#10;|-&#10;| 1 || style=&quot;text-align:left&quot; | 东亚弓骑兵 ||  ||  ||  || {{pips|1|def}} || {{pips|1|off}} || {{pips|1|def}} || 3&#10;|-&#10;| 1 || style=&quot;text-align:left&quot; | 东亚弓骑兵 ||  ||  || {{pips|1|off}} ||  || {{pips|1|off}} || {{pips|1|def}} || 3&#10;|-&#10;| 6 || style=&quot;text-align:left&quot; | 亚洲草原骑兵 ||  ||  || {{pips|2|off}} || {{pips|2|def}} || {{pips|1|off}} || {{pips|1|def}} || 6&#10;|-&#10;| 6 || style=&quot;text-align:left&quot; | 骑马武士 ||  ||  || {{pips|2|off}} || {{pips|1|def}} || {{pips|2|off}} || {{pips|1|def}} || 6&#10;|-&#10;| 10 || style=&quot;text-align:left&quot; | 改良亚洲草原骑兵 || {{pips|1|off}} ||  || {{pips|2|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|2|def}} || 9&#10;|-&#10;| 14 || style=&quot;text-align:left&quot; | 亚洲冲击骑兵 ||  || {{pips|1|def}} || {{pips|3|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|3|def}} || 12&#10;|-&#10;| 17 || style=&quot;text-align:left&quot; | 八旗骑兵 || {{pips|1|off}} || {{pips|1|def}} || {{pips|3|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|3|def}} || 14&#10;|-&#10;| 23 || style=&quot;text-align:left&quot; | 亚洲龙骑兵 || {{pips|1|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|3|def}} || {{pips|4|off}} || {{pips|3|def}} || 16&#10;|-&#10;| 28 || style=&quot;text-align:left&quot; | 绿营骑兵 || {{pips|2|off}} || {{pips|1|def}} || {{pips|4|off}} || {{pips|4|def}} || {{pips|4|off}} || {{pips|4|def}} || 19&#10;|-&#10;| 28 || style=&quot;text-align:left&quot; | 改良亚洲骑兵 || {{pips|1|off}} || {{pips|2|def}} || {{pips|5|off}} || {{pips|4|def}} || {{pips|3|off}} || {{pips|4|def}} || 19&#10;|}&#10;&#10;=== {{icon|Indian}} 印度兵种组 ===&#10;{{SVersion|1.35}}&#10;{| class=&quot;wikitable sortable mw-datatable&quot; style=&quot;text-align:center&quot;&#10;! rowspan=2 | {{icon|mil tech}} 军事科技 !! width=&quot;225px&quot; rowspan=2 | {{icon|infantry|40px}} 兵种名称&#10;! colspan=2 style=&quot;background-color: #00bfff;&quot; | {{icon|fire}} 火力 !! colspan=2 style=&quot;background-color: #ff6a6a;&quot; | {{icon|shock}} 冲击 !! colspan=2 style=&quot;background-color: #caff70;&quot; | {{icon|land morale}} 士气 !! rowspan=2 | 属性点数&amp;lt;br&gt;合计&#10;|-&#10;! 攻击 !! 防御 !! 攻击 !! 防御 !! 攻击 !! 防御&#10;|-&#10;| 1 || style=&quot;text-align:left&quot; | 印度步兵 ||  ||  || {{pips|1|off}} ||  || {{pips|1|off}} || {{pips|1|def}} || 3&#10;|-&#10;| 5 || style=&quot;text-align:left&quot; | 印度火绳枪兵 || {{pips|1|off}} ||  || {{pips|1|off}} || {{pips|1|def}} || {{pips|1|off}} ||  || 4&#10;|-&#10;| 9 || style=&quot;text-align:left&quot; | 波犁迦罗步兵 || {{pips|1|off}} || {{pips|1|def}} || {{pips|1|off}} || {{pips|1|def}} || {{pips|1|off}} || {{pips|1|def}} || 6&#10;|-&#10;| 9 || style=&quot;text-align:left&quot; | 波斯火枪步兵 || {{pips|1|off}} ||  || {{pips|1|off}} || {{pips|1|def}} || {{pips|2|off}} || {{pips|1|def}} || 6&#10;|-&#10;| 12 || style=&quot;text-align:left&quot; | 阿克巴滑膛枪兵 || {{pips|2|off}} || {{pips|2|def}} || {{pips|1|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|2|def}} || 11&#10;|-&#10;| 12 || style=&quot;text-align:left&quot; | 南印度步兵 || {{pips|2|off}} || {{pips|1|def}} || {{pips|2|off}} || {{pips|1|def}} || {{pips|3|off}} || {{pips|2|def}} || 11&#10;|-&#10;| 18 || style=&quot;text-align:left&quot; | 德干火枪步兵 || {{pips|3|off}} || {{pips|3|def}} || {{pips|2|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|2|def}} || 14&#10;|-&#10;| 18 || style=&quot;text-align:left&quot; | 北印度火枪步兵 || {{pips|3|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|2|def}} || 14&#10;|-&#10;| 23 || style=&quot;text-align:left&quot; | 特伦甘纳步兵 || {{pips|4|off}} || {{pips|3|def}} || {{pips|2|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|3|def}} || 16&#10;|-&#10;| 26 || style=&quot;text-align:left&quot; | 北印度西帕依步兵 || {{pips|3|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|4|def}} || 19&#10;|-&#10;| 30 || style=&quot;text-align:left&quot; | 印度正规步兵 || {{pips|4|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|3|def}} || {{pips|4|off}} || {{pips|3|def}} || 20&#10;|}&#10;{{clear}}&#10;{| class=&quot;wikitable sortable mw-datatable&quot; style=&quot;text-align:center&quot;&#10;! rowspan=2 | {{icon|mil tech}} 军事科技 !! width=&quot;225px&quot; rowspan=2 | {{icon|cavalry|40px}} 兵种名称&#10;! colspan=2 style=&quot;background-color: #00bfff;&quot; | {{icon|fire}} 火力 !! colspan=2 style=&quot;background-color: #ff6a6a;&quot; | {{icon|shock}} 冲击 !! colspan=2 style=&quot;background-color: #caff70;&quot; | {{icon|land morale}} 士气 !! rowspan=2 | 属性点数&amp;lt;br&gt;合计&#10;|-&#10;! 攻击 !! 防御 !! 攻击 !! 防御 !! 攻击 !! 防御&#10;|-&#10;| 1 || style=&quot;text-align:left&quot; | 骑象弓兵 ||  ||  || {{pips|1|off}} ||  || {{pips|1|off}} || {{pips|1|def}} || 3&#10;|-&#10;| 1 || style=&quot;text-align:left&quot; | 印度骑兵 ||  ||  ||  || {{pips|1|def}} || {{pips|1|off}} || {{pips|1|def}} || 3&#10;|-&#10;| 6 || style=&quot;text-align:left&quot; | 印度弓骑兵 ||  ||  || {{pips|2|off}} || {{pips|2|def}} || {{pips|1|off}} || {{pips|1|def}} || 6&#10;|-&#10;| 10 || style=&quot;text-align:left&quot; | 曼萨布达尔骑兵 || {{pips|1|off}} ||  || {{pips|3|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|2|def}} || 10&#10;|-&#10;| 14 || style=&quot;text-align:left&quot; | 戴菲特骑兵 || {{pips|2|off}} ||  || {{pips|2|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|2|def}} || 12&#10;|-&#10;| 17 || style=&quot;text-align:left&quot; | 马拉塔游击骑兵 ||  || {{pips|2|def}} || {{pips|4|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|2|def}} || 14&#10;|-&#10;| 23 || style=&quot;text-align:left&quot; | 德干轻骑兵 || {{pips|1|off}} || {{pips|1|def}} || {{pips|4|off}} || {{pips|3|def}} || {{pips|4|off}} || {{pips|3|def}} || 16&#10;|-&#10;| 28 || style=&quot;text-align:left&quot; | 迈索尔轻骑兵 || {{pips|2|off}} || {{pips|1|def}} || {{pips|4|off}} || {{pips|4|def}} || {{pips|3|off}} || {{pips|4|def}} || 18&#10;|-&#10;| 28 || style=&quot;text-align:left&quot; | 瑟瓦尔骑兵 || {{pips|1|off}} || {{pips|2|def}} || {{pips|4|off}} || {{pips|4|def}} || {{pips|4|off}} || {{pips|3|def}} || 18&#10;|}&#10;&#10;=== {{icon|West African}} 非洲兵种组 ===&#10;{{SVersion|1.35}}&#10;&#039;&#039;&#039;注：&#039;&#039;&#039;此兵种组由 {{icon|Central African}} 中非科技组、{{icon|East African}} 东非科技组以及 {{icon|West African}} 西非科技组共同使用。&#10;&#10;{| class=&quot;wikitable sortable mw-datatable&quot; style=&quot;text-align:center&quot;&#10;! rowspan=2 | {{icon|mil tech}} 军事科技 !! width=&quot;225px&quot; rowspan=2 | {{icon|infantry|40px}} 兵种名称&#10;! colspan=2 style=&quot;background-color: #00bfff;&quot; | {{icon|fire}} 火力 !! colspan=2 style=&quot;background-color: #ff6a6a;&quot; | {{icon|shock}} 冲击 !! colspan=2 style=&quot;background-color: #caff70;&quot; | {{icon|land morale}} 士气 !! rowspan=2 | 属性点数&amp;lt;br&gt;合计&#10;|-&#10;! 攻击 !! 防御 !! 攻击 !! 防御 !! 攻击 !! 防御&#10;|-&#10;| 1 || style=&quot;text-align:left&quot; | 非洲棍兵 ||  ||  || {{pips|1|off}} ||  || {{pips|1|off}} || {{pips|1|def}} || 3&#10;|-&#10;| 1 || style=&quot;text-align:left&quot; | 非洲矛兵 ||  ||  ||  || {{pips|1|def}} || {{pips|1|off}} || {{pips|1|def}} || 3&#10;|-&#10;| 5 || style=&quot;text-align:left&quot; | 中非战士 ||  ||  || {{pips|1|off}} || {{pips|1|def}} || {{pips|2|off}} || {{pips|2|def}} || 6&#10;|-&#10;| 5 || style=&quot;text-align:left&quot; | 北非战士 ||  ||  || {{pips|2|off}} || {{pips|2|def}} || {{pips|1|off}} || {{pips|1|def}} || 6&#10;|-&#10;| 5 || style=&quot;text-align:left&quot; | 南非战士 ||  ||  || {{pips|2|off}} || {{pips|1|def}} || {{pips|2|off}} || {{pips|1|def}} || 6&#10;|-&#10;| 5 || style=&quot;text-align:left&quot; | 西非战士 ||  ||  || {{pips|1|off}} || {{pips|2|def}} || {{pips|1|off}} || {{pips|2|def}} || 6&#10;|-&#10;| 12 || style=&quot;text-align:left&quot; | 非洲森林战士 || {{pips|1|off}} || {{pips|1|def}} || {{pips|2|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|2|def}} || 10&#10;|-&#10;| 12 || style=&quot;text-align:left&quot; | 非洲高地战士 || {{pips|2|off}} || {{pips|1|def}} || {{pips|1|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|2|def}} || 10&#10;|-&#10;| 12 || style=&quot;text-align:left&quot; | 非洲山地战士 || {{pips|1|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|2|def}} || {{pips|1|off}} || {{pips|2|def}} || 10&#10;|-&#10;| 12 || style=&quot;text-align:left&quot; | 非洲平原战士 || {{pips|2|off}} || {{pips|1|def}} || {{pips|2|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|1|def}} || 10&#10;|-&#10;| 15 || style=&quot;text-align:left&quot; | 中非滑膛枪兵 || {{pips|3|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|2|def}} || 13&#10;|-&#10;| 15 || style=&quot;text-align:left&quot; | 东非滑膛枪兵 || {{pips|2|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|3|def}} || 13&#10;|-&#10;| 15 || style=&quot;text-align:left&quot; | 北非滑膛枪兵 || {{pips|2|off}} || {{pips|3|def}} || {{pips|2|off}} || {{pips|3|def}} || {{pips|1|off}} || {{pips|2|def}} || 13&#10;|-&#10;| 15 || style=&quot;text-align:left&quot; | 南非滑膛枪兵 || {{pips|3|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|1|def}} || 13&#10;|-&#10;| 23 || style=&quot;text-align:left&quot; | 中非滑膛枪兵 || {{pips|3|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|2|def}} || 15&#10;|-&#10;| 23 || style=&quot;text-align:left&quot; | 东非游击步兵 || {{pips|3|off}} || {{pips|3|def}} || {{pips|2|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|3|def}} || 15&#10;|-&#10;| 23 || style=&quot;text-align:left&quot; | 北非游击步兵 || {{pips|2|off}} || {{pips|3|def}} || {{pips|2|off}} || {{pips|3|def}} || {{pips|2|off}} || {{pips|3|def}} || 15&#10;|-&#10;| 26 || style=&quot;text-align:left&quot; | 西式中非步兵 || {{pips|3|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|3|def}} || {{pips|4|off}} || {{pips|3|def}} || 19&#10;|-&#10;| 26 || style=&quot;text-align:left&quot; | 西式东非步兵 || {{pips|4|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|2|def}} || {{pips|4|off}} || {{pips|3|def}} || 19&#10;|-&#10;| 26 || style=&quot;text-align:left&quot; | 西式北非步兵 || {{pips|3|off}} || {{pips|4|def}} || {{pips|2|off}} || {{pips|4|def}} || {{pips|3|off}} || {{pips|3|def}} || 19&#10;|-&#10;| 26 || style=&quot;text-align:left&quot; | 西式南非步兵 || {{pips|4|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|3|def}} || 19&#10;|-&#10;| 30 || style=&quot;text-align:left&quot; | 西非特许步兵 || {{pips|4|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|4|def}} || 20&#10;|}&#10;{{clear}}&#10;{| class=&quot;wikitable sortable mw-datatable&quot; style=&quot;text-align:center&quot;&#10;! rowspan=2 | {{icon|mil tech}} 军事科技 !! width=&quot;225px&quot; rowspan=2 | {{icon|cavalry|40px}} 兵种名称&#10;! colspan=2 style=&quot;background-color: #00bfff;&quot; | {{icon|fire}} 火力 !! colspan=2 style=&quot;background-color: #ff6a6a;&quot; | {{icon|shock}} 冲击 !! colspan=2 style=&quot;background-color: #caff70;&quot; | {{icon|land morale}} 士气 !! rowspan=2 | 属性点数&amp;lt;br&gt;合计&#10;|-&#10;! 攻击 !! 防御 !! 攻击 !! 防御 !! 攻击 !! 防御&#10;|-&#10;| 1 || style=&quot;text-align:left&quot; | 阿比西尼亚轻骑兵 ||  ||  || {{pips|1|off}} || {{pips|1|def}} || {{pips|2|off}} ||  || 4&#10;|-&#10;| 1 || style=&quot;text-align:left&quot; | 曼德卡路骑兵 ||  ||  || {{pips|1|off}} || {{pips|1|def}} || {{pips|1|off}} || {{pips|1|def}} || 4&#10;|-&#10;| 6 || style=&quot;text-align:left&quot; | 索马里轻骑兵 ||  ||  || {{pips|2|off}} || {{pips|1|def}} || {{pips|1|off}} || {{pips|2|def}} || 6&#10;|-&#10;| 6 || style=&quot;text-align:left&quot; | 图阿雷格骑兵 ||  ||  || {{pips|2|off}} || {{pips|1|def}} || {{pips|2|off}} || {{pips|1|def}} || 6&#10;|-&#10;| 10 || style=&quot;text-align:left&quot; | 阿比西尼亚甲胄骑兵 ||  ||  || {{pips|3|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|2|def}} || 10&#10;|-&#10;| 10 || style=&quot;text-align:left&quot; | 莫西骑兵 ||  ||  || {{pips|2|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|3|def}} || 10&#10;|-&#10;| 14 || style=&quot;text-align:left&quot; | 非洲骠骑兵 || {{pips|1|off}} ||  || {{pips|3|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|3|def}} || 12&#10;|-&#10;| 17 || style=&quot;text-align:left&quot; | 非洲密袭骑兵 ||  || {{pips|1|def}} || {{pips|4|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|2|def}} || 13&#10;|-&#10;| 23 || style=&quot;text-align:left&quot; | 非洲龙骑兵 || {{pips|1|off}} || {{pips|1|def}} || {{pips|3|off}} || {{pips|3|def}} || {{pips|4|off}} || {{pips|4|def}} || 16&#10;|-&#10;| 28 || style=&quot;text-align:left&quot; | 非洲胸甲骑兵 || {{pips|1|off}} || {{pips|1|def}} || {{pips|4|off}} || {{pips|4|def}} || {{pips|4|off}} || {{pips|4|def}} || 18&#10;|}&#10;&#10;=== {{icon|Polynesian}} 波利尼西亚兵种组 ===&#10;{{SVersion|1.35}}&#10;{| class=&quot;wikitable sortable mw-datatable&quot; style=&quot;text-align:center&quot;&#10;! rowspan=2 | {{icon|mil tech}} 军事科技 !! width=&quot;225px&quot; rowspan=2 | {{icon|Infantry|40px}} 兵种名称&#10;! colspan=2 style=&quot;background-color: #00bfff;&quot; | {{icon|fire}} 火力 !! colspan=2 style=&quot;background-color: #ff6a6a;&quot; | {{icon|shock}} 冲击 !! colspan=2 style=&quot;background-color: #caff70;&quot; | {{icon|land morale}} 士气 !! rowspan=2 | 属性点数&amp;lt;br&gt;合计&#10;|-&#10;! 攻击 !! 防御 !! 攻击 !! 防御 !! 攻击 !! 防御&#10;|-&#10;|1级 &#10;| style=&quot;text-align:left&quot; | 波利尼西亚矛兵 ||  ||  ||  || {{pips|1|def}} ||  || {{pips|2|def}} || 3&#10;|-&#10;|5级 &#10;| style=&quot;text-align:left&quot; | 改良波利尼西亚矛兵 ||  ||  || {{pips|1|off}} || {{pips|1|def}} || {{pips|1|off}} || {{pips|2|def}} || 5&#10;|-&#10;|10级 &#10;| style=&quot;text-align:left&quot; | 波利尼西亚岛屿战士 ||  ||  || {{pips|1|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|3|def}} || 8&#10;|-&#10;|14级 &#10;| style=&quot;text-align:left&quot; | 波利尼西亚火绳枪兵 || {{pips|1|off}} || {{pips|2|def}} || {{pips|1|off}} || {{pips|3|def}} || {{pips|2|off}} || {{pips|3|def}} || 12&#10;|-&#10;|19级 &#10;| style=&quot;text-align:left&quot; | 波利尼西亚来复枪兵 || {{pips|3|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|2|def}} || 14&#10;|-&#10;|26级 &#10;| style=&quot;text-align:left&quot; | 波利尼西亚游击步兵 || {{pips|4|off}} || {{pips|3|def}} || {{pips|4|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|3|def}} || 20&#10;|}&#10;{{clear}}&#10;{| class=&quot;wikitable sortable mw-datatable&quot; style=&quot;text-align:center&quot;&#10;! rowspan=2 | {{icon|mil tech}} 军事科技 !! width=&quot;225px&quot; rowspan=2 | {{icon|cavalry|40px}} 兵种名称&#10;! colspan=2 style=&quot;background-color: #00bfff;&quot; | {{icon|fire}} 火力 !! colspan=2 style=&quot;background-color: #ff6a6a;&quot; | {{icon|shock}} 冲击 !! colspan=2 style=&quot;background-color: #caff70;&quot; | {{icon|land morale}} 士气 !! rowspan=2 | 属性点数&amp;lt;br&gt;合计&#10;|-&#10;! 攻击 !! 防御 !! 攻击 !! 防御 !! 攻击 !! 防御&#10;|-&#10;|6级 &#10;| style=&quot;text-align:left&quot; | 波利尼西亚骑手 ||  ||  || {{pips|2|off}} || {{pips|1|def}} || {{pips|1|off}} || {{pips|1|def}} || 5&#10;|-&#10;|10级 &#10;| style=&quot;text-align:left&quot; | 波利尼西亚骑兵 ||  || {{pips|1|def}} || {{pips|3|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|2|def}} || 10&#10;|-&#10;|14级 &#10;| style=&quot;text-align:left&quot; | 波利尼西亚骠骑兵 || {{pips|1|off}} || {{pips|1|def}} || {{pips|3|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|2|def}} || 12&#10;|-&#10;|18级 &#10;| style=&quot;text-align:left&quot; | 波利尼西亚密袭骑兵 || {{pips|1|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|2|def}} || 14&#10;|-&#10;|23级 &#10;| style=&quot;text-align:left&quot; | 波利尼西亚龙骑兵 || {{pips|2|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|3|def}} || {{pips|4|off}} || {{pips|4|def}} || 18&#10;|}&#10;&#10;=== {{icon|Aboriginal}} 澳洲原住民兵种组 ===&#10;{{SVersion|1.35}}&#10;{| class=&quot;wikitable sortable mw-datatable&quot; style=&quot;text-align:center&quot;&#10;! rowspan=2 | {{icon|mil tech}} 军事科技 !! width=&quot;225px&quot; rowspan=2 | {{icon|Infantry|40px}} 兵种名称&#10;! colspan=2 style=&quot;background-color: #00bfff;&quot; | {{icon|fire}} 火力 !! colspan=2 style=&quot;background-color: #ff6a6a;&quot; | {{icon|shock}} 冲击 !! colspan=2 style=&quot;background-color: #caff70;&quot; | {{icon|land morale}} 士气 !! rowspan=2 | 属性点数&amp;lt;br&gt;合计&#10;|-&#10;! 攻击 !! 防御 !! 攻击 !! 防御 !! 攻击 !! 防御&#10;|-&#10;|1级 &#10;| style=&quot;text-align:left&quot; | 澳洲原住民矛兵 ||  ||  || {{pips|2|off}} ||  || {{pips|1|off}} ||  || 3&#10;|-&#10;|1级 &#10;| style=&quot;text-align:left&quot; | 回旋镖猎手 ||  ||  ||  || {{pips|1|def}} ||  || {{pips|2|def}} || 3&#10;|-&#10;|5级 &#10;| style=&quot;text-align:left&quot; | 澳洲原住民伏击手 ||  ||  || {{pips|1|off}} || {{pips|2|def}} || {{pips|1|off}} || {{pips|1|def}} || 5&#10;|-&#10;|5级 &#10;| style=&quot;text-align:left&quot; | 仪式战士 ||  ||  || {{pips|2|off}} || {{pips|2|def}} || {{pips|1|off}} ||  || 5&#10;|-&#10;|5级 &#10;| style=&quot;text-align:left&quot; | 改良回旋镖战士 ||  ||  || {{pips|1|off}} || {{pips|1|def}} || {{pips|1|off}} || {{pips|2|def}} || 5&#10;|-&#10;|10级 &#10;| style=&quot;text-align:left&quot; | 内陆战士 ||  ||  || {{pips|1|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|3|def}} || 8&#10;|-&#10;|14级 &#10;| style=&quot;text-align:left&quot; | 伏击火绳枪兵 || {{pips|1|off}} || {{pips|2|def}} || {{pips|1|off}} || {{pips|3|def}} || {{pips|2|off}} || {{pips|3|def}} || 12&#10;|-&#10;|14级 &#10;| style=&quot;text-align:left&quot; | 攻击火绳枪兵 || {{pips|2|off}} || {{pips|1|def}} || {{pips|3|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|2|def}} || 12&#10;|-&#10;|19级 &#10;| style=&quot;text-align:left&quot; | 边疆来复枪兵 || {{pips|3|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|2|def}} || 14&#10;|-&#10;|26级 &#10;| style=&quot;text-align:left&quot; | 黑色战争步兵 || {{pips|4|off}} || {{pips|3|def}} || {{pips|4|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|3|def}} || 20&#10;|}&#10;{{clear}}&#10;{| class=&quot;wikitable sortable mw-datatable&quot; style=&quot;text-align:center&quot;&#10;! rowspan=2 | {{icon|mil tech}} 军事科技 !! width=&quot;225px&quot; rowspan=2 | {{icon|cavalry|40px}} 兵种名称&#10;! colspan=2 style=&quot;background-color: #00bfff;&quot; | {{icon|fire}} 火力 !! colspan=2 style=&quot;background-color: #ff6a6a;&quot; | {{icon|shock}} 冲击 !! colspan=2 style=&quot;background-color: #caff70;&quot; | {{icon|land morale}} 士气 !! rowspan=2 | 属性点数&amp;lt;br&gt;合计&#10;|-&#10;! 攻击 !! 防御 !! 攻击 !! 防御 !! 攻击 !! 防御&#10;|-&#10;|6级 &#10;| style=&quot;text-align:left&quot; | 澳洲原住民骑手 ||  ||  || {{pips|2|off}} || {{pips|1|def}} || {{pips|1|off}} || {{pips|1|def}} || 5&#10;|-&#10;|10级 &#10;| style=&quot;text-align:left&quot; | 澳洲原住民骑兵 ||  || {{pips|1|def}} || {{pips|3|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|2|def}} || 10&#10;|-&#10;|14级 &#10;| style=&quot;text-align:left&quot; | 澳洲原住民骠骑兵 || {{pips|1|off}} || {{pips|1|def}} || {{pips|3|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|2|def}} || 12&#10;|-&#10;|18级 &#10;| style=&quot;text-align:left&quot; | 澳洲原住民密袭骑兵 || {{pips|1|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|2|def}} || 14&#10;|-&#10;|23级 &#10;| style=&quot;text-align:left&quot; | 澳洲原住民龙骑兵 || {{pips|2|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|3|def}} || {{pips|4|off}} || {{pips|4|def}} || 18&#10;|}&#10;&#10;=== {{icon|North American}} 北美洲兵种组 ===&#10;{{SVersion|1.35}}&#10;{| class=&quot;wikitable sortable mw-datatable&quot; style=&quot;text-align:center&quot;&#10;! rowspan=2 | {{icon|mil tech}} 军事科技 !! width=&quot;225px&quot; rowspan=2 | {{icon|infantry|40px}} 兵种名称&#10;! colspan=2 style=&quot;background-color: #00bfff;&quot; | {{icon|fire}} 火力 !! colspan=2 style=&quot;background-color: #ff6a6a;&quot; | {{icon|shock}} 冲击 !! colspan=2 style=&quot;background-color: #caff70;&quot; | {{icon|land morale}} 士气 !! rowspan=2 | 属性点数&amp;lt;br&gt;合计&#10;|-&#10;! 攻击 !! 防御 !! 攻击 !! 防御 !! 攻击 !! 防御&#10;|-&#10;| 1 || style=&quot;text-align:left&quot; | 棍棒兵 ||  ||  || {{pips|1|off}} ||  || {{pips|1|off}} || {{pips|1|def}} || 3&#10;|-&#10;| 1 || style=&quot;text-align:left&quot; | 美洲原住民弓箭手 ||  ||  ||  || {{pips|1|def}} || {{pips|1|off}} || {{pips|1|def}} || 3&#10;|-&#10;| 5 || style=&quot;text-align:left&quot; | 阿尔冈昆斧兵 ||  ||  ||  || {{pips|1|def}} || {{pips|2|off}} || {{pips|1|def}} || 4&#10;|-&#10;| 5 || style=&quot;text-align:left&quot; | 伏击步兵 ||  ||  || {{pips|1|off}} ||  || {{pips|2|off}} || {{pips|1|def}} || 4&#10;|-&#10;| 5 || style=&quot;text-align:left&quot; | 美洲平原战士 ||  ||  || {{pips|1|off}} || {{pips|1|def}} || {{pips|1|off}} || {{pips|1|def}} || 4&#10;|-&#10;| 10 || style=&quot;text-align:left&quot; | 美洲原住民山地战士 || {{pips|1|off}} || {{pips|1|def}} || {{pips|1|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|1|def}} || 8&#10;|-&#10;| 14 || style=&quot;text-align:left&quot; | 克里克火绳枪兵 || {{pips|2|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|2|def}} || 12&#10;|-&#10;| 14 || style=&quot;text-align:left&quot; | 美洲原住民火绳枪兵 || {{pips|2|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|1|def}} || {{pips|3|off}} || {{pips|2|def}} || 12&#10;|-&#10;| 19 || style=&quot;text-align:left&quot; | 来复枪侦查步兵 || {{pips|3|off}} || {{pips|3|def}} || {{pips|2|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|2|def}} || 14&#10;|-&#10;| 26 || style=&quot;text-align:left&quot; | 北美游击步兵 || {{pips|4|off}} || {{pips|3|def}} || {{pips|2|off}} || {{pips|4|def}} || {{pips|3|off}} || {{pips|3|def}} || 19&#10;|-&#10;| 30 || style=&quot;text-align:left&quot; | 西式美洲步兵 || {{pips|4|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|3|def}} || {{pips|4|off}} || {{pips|3|def}} || 20&#10;|}&#10;{{clear}}&#10;{| class=&quot;wikitable sortable mw-datatable&quot; style=&quot;text-align:center&quot;&#10;! rowspan=2 | {{icon|mil tech}} 军事科技 !! width=&quot;225px&quot; rowspan=2 | {{icon|cavalry|40px}} 兵种名称&amp;lt;ref name=&quot;names&quot;&gt;所有美洲科技组（除 {{icon|High American}} 高等美洲科技组外）的骑兵单位属性点数完全一致，仅有兵种名称不同。&amp;lt;/ref&gt;&#10;&#10;! colspan=2 style=&quot;background-color: #00bfff;&quot; | {{icon|fire}} 火力 !! colspan=2 style=&quot;background-color: #ff6a6a;&quot; | {{icon|shock}} 冲击 !! colspan=2 style=&quot;background-color: #caff70;&quot; | {{icon|land morale}} 士气 !! rowspan=2 | 属性点数&amp;lt;br&gt;合计&#10;|-&#10;! 攻击 !! 防御 !! 攻击 !! 防御 !! 攻击 !! 防御&#10;|-&#10;| 6 || style=&quot;text-align:left&quot; | 北美骑手 ||  ||  || {{pips|2|off}} || {{pips|1|def}} || {{pips|1|off}} || {{pips|1|def}} || 5&#10;|-&#10;| 10 || style=&quot;text-align:left&quot; | 北美骑兵 ||  || {{pips|1|def}} || {{pips|3|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|2|def}} || 10&#10;|-&#10;| 14 || style=&quot;text-align:left&quot; | 北美骠骑兵 || {{pips|1|off}} || {{pips|1|def}} || {{pips|3|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|2|def}} || 12&#10;|-&#10;| 19 || style=&quot;text-align:left&quot; | 北美密袭骑兵 || {{pips|1|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|2|def}} || 14&#10;|-&#10;| 23 || style=&quot;text-align:left&quot; | 北美龙骑兵 || {{pips|2|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|3|def}} || {{pips|4|off}} || {{pips|4|def}} || 18&#10;|}&#10;&#10;=== {{icon|Mesoamerican}} 中美洲兵种组 ===&#10;{{SVersion|1.35}}&#10;{| class=&quot;wikitable sortable mw-datatable&quot; style=&quot;text-align:center&quot;&#10;! rowspan=2 | {{icon|mil tech}} 军事科技 !! width=&quot;225px&quot; rowspan=2 | {{icon|infantry|40px}} 兵种名称&#10;! colspan=2 style=&quot;background-color: #00bfff;&quot; | {{icon|fire}} 火力 !! colspan=2 style=&quot;background-color: #ff6a6a;&quot; | {{icon|shock}} 冲击 !! colspan=2 style=&quot;background-color: #caff70;&quot; | {{icon|land morale}} 士气 !! rowspan=2 | 属性点数&amp;lt;br&gt;合计&#10;|-&#10;! 攻击 !! 防御 !! 攻击 !! 防御 !! 攻击 !! 防御&#10;|-&#10;| 1 || style=&quot;text-align:left&quot; | 中美洲矛兵 ||  ||  || {{pips|1|off}} ||  || {{pips|1|off}} || {{pips|1|def}} || 3&#10;|-&#10;| 5 || style=&quot;text-align:left&quot; | 美洲森林战士 ||  ||  || {{pips|1|off}} || {{pips|1|def}} || {{pips|1|off}} || {{pips|1|def}} || 4&#10;|-&#10;| 5 || style=&quot;text-align:left&quot; | 美洲山地战士 ||  ||  ||  || {{pips|2|def}} || {{pips|1|off}} || {{pips|1|def}} || 4&#10;|-&#10;| 5 || style=&quot;text-align:left&quot; | 美洲平原战士 ||  ||  || {{pips|1|off}} ||  || {{pips|2|off}} || {{pips|1|def}} || 4&#10;|-&#10;| 10 || style=&quot;text-align:left&quot; | 改良美洲森林战士 ||  ||  || {{pips|2|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|2|def}} || 8&#10;|-&#10;| 10 || style=&quot;text-align:left&quot; | 改良美洲山地战士 ||  ||  || {{pips|3|off}} || {{pips|1|def}} || {{pips|2|off}} || {{pips|2|def}} || 8&#10;|-&#10;| 10 || style=&quot;text-align:left&quot; | 改良美洲平原战士 ||  ||  || {{pips|1|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|2|def}} || 8&#10;|-&#10;| 14 || style=&quot;text-align:left&quot; | 美洲森林滑膛枪兵 || {{pips|2|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|2|def}} || 12&#10;|-&#10;| 14 || style=&quot;text-align:left&quot; | 美洲山地滑膛枪兵 || {{pips|2|off}} || {{pips|1|def}} || {{pips|3|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|2|def}} || 12&#10;|-&#10;| 14 || style=&quot;text-align:left&quot; | 美洲攻击滑膛枪兵 || {{pips|2|off}} || {{pips|1|def}} || {{pips|1|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|3|def}} || 12&#10;|-&#10;| 19 || style=&quot;text-align:left&quot; | 美洲游击步兵 || {{pips|3|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|2|def}} || 14&#10;|-&#10;| 19 || style=&quot;text-align:left&quot; | 中美洲游击步兵 || {{pips|2|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|3|def}} || 14&#10;|-&#10;| 26 || style=&quot;text-align:left&quot; | 西式美洲山地步兵 || {{pips|3|off}} || {{pips|4|def}} || {{pips|2|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|4|def}} || 19&#10;|-&#10;| 26 || style=&quot;text-align:left&quot; | 西式美洲平原步兵|| {{pips|4|off}} || {{pips|3|def}} || {{pips|4|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|2|def}} || 19&#10;|-&#10;| 30 || style=&quot;text-align:left&quot; | 西式中美步兵 || {{pips|4|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|4|def}} || 20&#10;|}&#10;{{clear}}&#10;{| class=&quot;wikitable sortable mw-datatable&quot; style=&quot;text-align:center&quot;&#10;! rowspan=2 | {{icon|mil tech}} 军事科技 !! width=&quot;225px&quot; rowspan=2 | {{icon|cavalry|40px}} 兵种名称&amp;lt;ref name=&quot;names&quot;/&gt;&#10;! colspan=2 style=&quot;background-color: #00bfff;&quot; | {{icon|fire}} 火力 !! colspan=2 style=&quot;background-color: #ff6a6a;&quot; | {{icon|shock}} 冲击 !! colspan=2 style=&quot;background-color: #caff70;&quot; | {{icon|land morale}} 士气 !! rowspan=2 | 属性点数&amp;lt;br&gt;合计&#10;|-&#10;! 攻击 !! 防御 !! 攻击 !! 防御 !! 攻击 !! 防御&#10;|-&#10;| 6 || style=&quot;text-align:left&quot; | 中美骑手 ||  ||  || {{pips|2|off}} || {{pips|1|def}} || {{pips|1|off}} || {{pips|1|def}} || 5&#10;|-&#10;| 10 || style=&quot;text-align:left&quot; | 中美骑兵 ||  || {{pips|1|def}} || {{pips|3|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|2|def}} || 10&#10;|-&#10;| 14 || style=&quot;text-align:left&quot; | 中美骠骑兵 || {{pips|1|off}} || {{pips|1|def}} || {{pips|3|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|2|def}} || 12&#10;|-&#10;| 19 || style=&quot;text-align:left&quot; | 中美密袭骑兵 || {{pips|1|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|2|def}} || 14&#10;|-&#10;| 23 || style=&quot;text-align:left&quot; | 中美龙骑兵 || {{pips|2|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|3|def}} || {{pips|4|off}} || {{pips|4|def}} || 18&#10;|}&#10;&#10;=== {{icon|South American}} 南美洲兵种组 ===&#10;{{SVersion|1.30}}&#10;&#039;&#039;&#039;注：&#039;&#039;&#039;此兵种组也与 {{icon|Andean}} 安第斯科技组共享使用。&#10;&#10;{| class=&quot;wikitable sortable mw-datatable&quot; style=&quot;text-align:center&quot;&#10;! rowspan=2 | {{icon|mil tech}} 军事科技 !! width=&quot;225px&quot; rowspan=2 | {{icon|infantry|40px}} 兵种名称&#10;! colspan=2 style=&quot;background-color: #00bfff;&quot; | {{icon|fire}} 火力 !! colspan=2 style=&quot;background-color: #ff6a6a;&quot; | {{icon|shock}} 冲击 !! colspan=2 style=&quot;background-color: #caff70;&quot; | {{icon|land morale}} 士气 !! rowspan=2 | 属性点数&amp;lt;br&gt;合计&#10;|-&#10;! 攻击 !! 防御 !! 攻击 !! 防御 !! 攻击 !! 防御&#10;|-&#10;| 1 || style=&quot;text-align:left&quot; | 美洲山地战士 ||  ||  ||  || {{pips|1|def}} || {{pips|1|off}} || {{pips|1|def}} || 3&#10;|-&#10;| 1 || style=&quot;text-align:left&quot; | 南美矛兵 ||  ||  || {{pips|1|off}} || {{pips|1|def}} || {{pips|1|off}} ||  || 3&#10;|-&#10;| 5 || style=&quot;text-align:left&quot; | 印加斧兵 ||  ||  || {{pips|1|off}} ||  || {{pips|2|off}} || {{pips|1|def}} || 4&#10;|-&#10;| 5 || style=&quot;text-align:left&quot; | 印加投石兵 ||  ||  || {{pips|2|off}} || {{pips|1|def}} || {{pips|1|off}} ||  || 4&#10;|-&#10;| 5 || style=&quot;text-align:left&quot; | 改良美洲山地战士 ||  ||  ||  || {{pips|2|def}} ||  || {{pips|2|def}} || 4&#10;|-&#10;| 5 || style=&quot;text-align:left&quot; | 南美丛林战士 ||  ||  || {{pips|1|off}} || {{pips|1|def}} || {{pips|1|off}} || {{pips|1|def}} || 4&#10;|-&#10;| 10 || style=&quot;text-align:left&quot; | 美洲防御滑膛枪兵 || {{pips|1|off}} || {{pips|1|def}} || {{pips|1|off}} || {{pips|2|def}} || {{pips|1|off}} || {{pips|2|def}} || 8&#10;|-&#10;| 10 || style=&quot;text-align:left&quot; | 南美火绳枪兵 || {{pips|1|off}} || {{pips|2|def}} || {{pips|1|off}} || {{pips|1|def}} || {{pips|2|off}} || {{pips|1|def}} || 8&#10;|-&#10;| 14 || style=&quot;text-align:left&quot; | 改良美洲滑膛枪兵 || {{pips|2|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|2|def}} || 12&#10;|-&#10;| 19 || style=&quot;text-align:left&quot; | 印加游击步兵 || {{pips|2|off}} || {{pips|3|def}} || {{pips|2|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|3|def}} || 14&#10;|-&#10;| 19 || style=&quot;text-align:left&quot; | 南美游击步兵 || {{pips|2|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|3|def}} || 14&#10;|-&#10;| 26 || style=&quot;text-align:left&quot; | 西式印加步兵 || {{pips|4|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|3|def}} || 19&#10;|-&#10;| 26 || style=&quot;text-align:left&quot; | 西式南美步兵 || {{pips|3|off}} || {{pips|4|def}} || {{pips|2|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|4|def}} || 19&#10;|-&#10;| 30 || style=&quot;text-align:left&quot; | 改良西式印加步兵 || {{pips|4|off}} || {{pips|4|def}} || {{pips|3|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|3|def}} || 20&#10;|}&#10;{{clear}}&#10;{| class=&quot;wikitable sortable mw-datatable&quot; style=&quot;text-align:center&quot;&#10;! rowspan=2 | {{icon|mil tech}} 军事科技 !! width=&quot;225px&quot; rowspan=2 | {{icon|cavalry|40px}} 兵种名称&amp;lt;ref name=&quot;names&quot;/&gt;&#10;! colspan=2 style=&quot;background-color: #00bfff;&quot; | {{icon|fire}} 火力 !! colspan=2 style=&quot;background-color: #ff6a6a;&quot; | {{icon|shock}} 冲击 !! colspan=2 style=&quot;background-color: #caff70;&quot; | {{icon|land morale}} 士气 !! rowspan=2 | 属性点数&amp;lt;br&gt;合计&#10;|-&#10;! 攻击 !! 防御 !! 攻击 !! 防御 !! 攻击 !! 防御&#10;|-&#10;| 6 || style=&quot;text-align:left&quot; | 南美骑手 ||  ||  || {{pips|2|off}} || {{pips|1|def}} || {{pips|1|off}} || {{pips|1|def}} || 5&#10;|-&#10;| 10 || style=&quot;text-align:left&quot; | 南美骑兵 ||  || {{pips|1|def}} || {{pips|3|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|2|def}} || 10&#10;|-&#10;| 14 || style=&quot;text-align:left&quot; | 南美骠骑兵 || {{pips|1|off}} || {{pips|1|def}} || {{pips|3|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|2|def}} || 12&#10;|-&#10;| 19 || style=&quot;text-align:left&quot; | 南美密袭骑兵 || {{pips|1|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|2|def}} || 14&#10;|-&#10;| 23 || style=&quot;text-align:left&quot; | 南美龙骑兵 || {{pips|2|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|3|def}} || {{pips|4|off}} || {{pips|4|def}} || 18&#10;|}&#10;&#10;=== {{icon|High American}} 高等美洲兵种组 ===&#10;{{SVersion|1.35}}&#10;高等美洲科技组、兵种组通常情况下不会在游戏中出现。在不开启随机新大陆、自定义国家或转档器时，首都位于北美洲、南美洲或者随机新世界，&#039;&#039;&#039;且&#039;&#039;&#039;科技组为 {{icon|north american}} 北美、 {{icon|mesoamerican}} 中美、 {{icon|south american}} 南美或 {{icon|andean}} 安第斯科技组的国家可以通过完成[[新世界任务]]“日落入侵”，将科技组、兵种组变更为 {{icon|High american}} 高等美洲。&#10;&#10;除此之外，高等美洲科技组/兵种组国家可以通过如下方式在游戏中出现：&#10;* 在随机新大陆中启用“幻想元素”选项后，随机产生拥有高等美洲科技组的国家（需要DLC {{icon|cop}} 征服天堂）；&#10;* 在自定义国家选项中使用高等美洲科技组；&#10;* 从启用“日落入侵”DLC的[[十字军之王2]]转档。&#10;&#10;{| class=&quot;wikitable sortable mw-datatable&quot; style=&quot;text-align:center&quot;&#10;! rowspan=2 | {{icon|mil tech}} 军事科技 !! width=&quot;225px&quot; rowspan=2 | {{icon|infantry|40px}} 兵种名称&#10;! colspan=2 style=&quot;background-color: #00bfff;&quot; | {{icon|fire}} 火力 !! colspan=2 style=&quot;background-color: #ff6a6a;&quot; | {{icon|shock}} 冲击 !! colspan=2 style=&quot;background-color: #caff70;&quot; | {{icon|land morale}} 士气 !! rowspan=2 | 属性点数&amp;lt;br&gt;合计&#10;|-&#10;! 攻击 !! 防御 !! 攻击 !! 防御 !! 攻击 !! 防御&#10;|-&#10;| 1 || style=&quot;text-align:left&quot; | 火女神战士 || {{pips|1|off}} || {{pips|1|def}} ||  || {{pips|1|def}} || {{pips|1|off}} ||  || 4&#10;|-&#10;| 5 || style=&quot;text-align:left&quot; | 改良火女神战士 || {{pips|2|off}} || {{pips|1|def}} || {{pips|1|off}} || {{pips|1|def}} || {{pips|2|off}} ||  || 7&#10;|-&#10;| 9 || style=&quot;text-align:left&quot; | 火神战士 || {{pips|3|off}} || {{pips|2|def}} || {{pips|1|off}} || {{pips|1|def}} || {{pips|3|off}} || {{pips|2|def}} || 12&#10;|-&#10;| 12 || style=&quot;text-align:left&quot; | 火神步兵 || {{pips|3|off}} || {{pips|3|def}} || {{pips|2|off}} || {{pips|1|def}} || {{pips|4|off}} || {{pips|3|def}} || 16&#10;|-&#10;| 18 || style=&quot;text-align:left&quot; | 雷神步兵 || {{pips|3|off}} || {{pips|3|def}} || {{pips|2|off}} || {{pips|2|def}} || {{pips|4|off}} || {{pips|3|def}} || 17&#10;|-&#10;| 23 || style=&quot;text-align:left&quot; | 外国风步兵 || {{pips|4|off}} || {{pips|3|def}} || {{pips|2|off}} || {{pips|2|def}} || {{pips|4|off}} || {{pips|3|def}} || 18&#10;|-&#10;| 26 || style=&quot;text-align:left&quot; | 改良外国风步兵 || {{pips|4|off}} || {{pips|4|def}} || {{pips|3|off}} || {{pips|3|def}} || {{pips|4|off}} || {{pips|3|def}} || 21&#10;|-&#10;| 30 || style=&quot;text-align:left&quot; | 改良雷神步兵 || {{pips|4|off}} || {{pips|4|def}} || {{pips|4|off}} || {{pips|3|def}} || {{pips|4|off}} || {{pips|3|def}} || 22&#10;|}&#10;{{clear}}&#10;{| class=&quot;wikitable sortable mw-datatable&quot; style=&quot;text-align:center&quot;&#10;! rowspan=2 | {{icon|mil tech}} 军事科技 !! width=&quot;225px&quot; rowspan=2 | {{icon|cavalry|40px}} 兵种名称&#10;! colspan=2 style=&quot;background-color: #00bfff;&quot; | {{icon|fire}} 火力 !! colspan=2 style=&quot;background-color: #ff6a6a;&quot; | {{icon|shock}} 冲击 !! colspan=2 style=&quot;background-color: #caff70;&quot; | {{icon|land morale}} 士气 !! rowspan=2 | 属性点数&amp;lt;br&gt;合计&#10;|-&#10;! 攻击 !! 防御 !! 攻击 !! 防御 !! 攻击 !! 防御&#10;|-&#10;| 6 || style=&quot;text-align:left&quot; | 美洲骑手 || {{pips|1|off}} ||  || {{pips|2|off}} || {{pips|1|def}} || {{pips|1|off}} || {{pips|1|def}} || 6&#10;|-&#10;| 10 || style=&quot;text-align:left&quot; | 火神骑兵 || {{pips|2|off}} || {{pips|1|def}} || {{pips|3|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|2|def}} || 12&#10;|-&#10;| 14 || style=&quot;text-align:left&quot; | 美洲骠骑兵 || {{pips|2|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|2|def}} || 14&#10;|-&#10;| 19 || style=&quot;text-align:left&quot; | 美洲密袭骑兵 || {{pips|3|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|2|def}} || 16&#10;|-&#10;| 23 || style=&quot;text-align:left&quot; | 美洲龙骑兵 || {{pips|4|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|3|def}} || {{pips|4|off}} || {{pips|4|def}} || 20&#10;|}&#10;&#10;== 不同科技等级下的最强组别 ==&#10;{{SVersion|1.31}}&#10;&#039;&#039;&#039;注：&#039;&#039;&#039; 为了避免混乱部分组别使用同一个图标来代表：&#10;# {{icon|North American}}{{green|北美组}}也同时代表了 {{icon|Andean}}{{green|安第斯组}}、{{icon|Mesoamerican}}{{green|中美组}}和 {{icon|South American}}{{green|南美组}}；&#10;# {{icon|West African}}{{green|西非组}}也同时代表了 {{icon|Central African}}{{green|中非组}}和 {{icon|East African}}{{green|东非组}}；&#10;# {{icon|High American}}{{red|高等美洲组}}从头至尾都是当之无愧的最强兵种组，但其并不会出现在绝大多数的游戏当中，故于下表省略。&#10;# {{icon|Eastern}}{{red|东方}}的骑兵在28级科技组前都是没有任何火力攻击点数的，而火力攻击点数对骑兵的价值微乎其微，因而在仅由点数和进行的排名中，东方骑兵的强度并不能得到完全的体现。也正因此，{{icon|High American}}{{red|高等美洲组}}的骑兵要比看上去的要弱得多。&#10;&amp;lt;div class=&quot;col-sm-4 col-xs-12&quot;&gt;&#10;; 步兵&#10;{| class=&quot;wikitable&quot; style=&quot;text-align:right&quot;&#10;! {{icon|mil tech}} 军事科技 !! 最强的[[科技组]]&#10;|-&#10;| 1−4 级 || {{icon|Nomad}}{{red|游牧}}&#10;|-&#10;| 5−8 级 || {{icon|West African}}{{red|西非}} {{icon|Aboriginal}}{{red|澳洲原住民}} {{icon|Polynesian}}{{red|波利尼西亚}} &#10;|-&#10;| 9 级 || {{icon|Muslim}}{{red|穆斯林}} {{icon|Anatolian}}{{red|安纳托利亚}} {{icon|Indian}}{{red|印度}}&#10;|-&#10;| 10−11 级 || {{icon|North American}}{{red|北美}} {{icon|Aboriginal}}{{red|澳洲原住民}} {{icon|Polynesian}}{{red|波利尼西亚}} &#10;|-&#10;| 12−13 级 || {{icon|Anatolian}}{{red|安纳托利亚}}&#10;|-&#10;| 14 级 || {{icon|Anatolian}}{{red|安纳托利亚}} {{icon|North American}}{{red|北美}} {{icon|Aboriginal}}{{red|澳洲原住民}} {{icon|Polynesian}}{{red|波利尼西亚}} &#10;|-&#10;| 15−17 级 || {{icon|Muslim}}{{red|穆斯林}} {{icon|Chinese}}{{red|中华}} {{icon|West African}}{{red|西非}}&#10;|-&#10;| 18 级 || {{icon|Indian}}{{red|印度}}&#10;|-&#10;| 19−22 级 || {{icon|Aboriginal}}{{red|澳洲原住民}} {{icon|Polynesian}}{{red|波利尼西亚}} &#10;|-&#10;| 23−25 级 || {{icon|Muslim}}{{red|穆斯林}} {{icon|Eastern}}{{red|东方}} {{icon|Indian}}{{red|印度}} {{icon|Western}}{{red|西方}} {{icon|Aboriginal}}{{red|澳洲原住民}} {{icon|Polynesian}}{{red|波利尼西亚}} &#10;|-&#10;| 26−29 级 || {{icon|Aboriginal}}{{red|澳洲原住民}} {{icon|Polynesian}}{{red|波利尼西亚}} &#10;|-&#10;| 30−32 级 || {{icon|Western}}{{red|西方}} {{icon|Aboriginal}}{{red|澳洲原住民}} {{icon|Polynesian}}{{red|波利尼西亚}} &#10;|}&amp;lt;/div&gt;&#10;&amp;lt;div class=&quot;col-sm-6 col-xs-12&quot;&gt;&#10;; 骑兵&#10;{| class=&quot;wikitable&quot; style=&quot;text-align:right&quot;&#10;! {{icon|mil tech}} 军事科技 !! 最强的[[科技组]]&#10;|-&#10;| 1-5 级 || {{icon|Nomad}}{{red|游牧}}&#10;|-&#10;| 6-9 级 || {{icon|Chinese}}{{red|中华}} {{icon|Anatolian}}{{red|安纳托利亚}} {{icon|Muslim}}{{red|穆斯林}} {{icon|West African}}{{red|西非}} {{icon|Indian}}{{red|印度}} {{icon|Nomad}}{{red|游牧}}&#10;|-&#10;| 10-13 级 || {{icon|Anatolian}}{{red|安纳托利亚}} {{icon|North American}}{{red|北美}} {{icon|West African}}{{red|西非}} {{icon|Indian}}{{red|印度}} {{icon|Nomad}}{{red|游牧}} {{icon|Aboriginal}}{{red|澳洲原住民}} {{icon|Polynesian}}{{red|波利尼西亚}} &#10;|-&#10;| 14-16 级 || {{icon|Chinese}}{{red|中华}} {{icon|Eastern}}{{red|东方}} {{icon|North American}}{{red|北美}} {{icon|West African}}{{red|西非}} {{icon|Indian}}{{red|印度}} {{icon|Nomad}}{{red|游牧}} {{icon|Aboriginal}}{{red|澳洲原住民}} {{icon|Polynesian}}{{red|波利尼西亚}} &#10;|-&#10;| 17 级 || {{icon|Chinese}}{{red|中华}} {{icon|Indian}}{{red|印度}}&#10;|-&#10;| 18-21 级 || {{icon|Western}}{{red|西方}}&#10;|-&#10;| 22 级 || {{icon|Eastern}}{{red|东方}}&#10;|-&#10;| 23-25 级 || {{icon|North American}}{{red|北美}} {{icon|Western}}{{red|西方}} {{icon|Aboriginal}}{{red|澳洲原住民}} {{icon|Polynesian}}{{red|波利尼西亚}} &#10;|-&#10;| 26-32 级 || {{icon|Western}}{{red|西方}}&#10;|}&amp;lt;/div&gt;&#10;{{clear}}&#10;&#10;== 参考资料 ==&#10;&amp;lt;references/&gt;&#10;&#10;{{military navbox}}&#10;[[Category:军事]]&#10;[[en:Land_units]]&#10;本页使用的模板：&#10;&#10;Template:Ambox 2020（查看源代码）Template:BTRow（查看源代码）Template:Bonus table（查看源代码）Template:Clear（查看源代码）（受保护）Template:Green（查看源代码）（受保护）Template:Grey-bd（查看源代码）Template:Icon（查看源代码）（受保护）Template:Icon/a（查看源代码）Template:Icon/c（查看源代码）Template:Icon/e（查看源代码）Template:Icon/f（查看源代码）Template:Icon/g（查看源代码）Template:Icon/h（查看源代码）Template:Icon/i（查看源代码）Template:Icon/l（查看源代码）Template:Icon/m（查看源代码）Template:Icon/n（查看源代码）Template:Icon/p（查看源代码）Template:Icon/r（查看源代码）Template:Icon/s（查看源代码）Template:Icon/t（查看源代码）Template:Icon/w（查看源代码）Template:Military navbox（查看源代码）（受保护）Template:Navbox（查看源代码）（受保护）Template:Navboxgroup（查看源代码）（受保护）Template:Original researh（查看源代码）Template:Path（查看源代码）（受保护）Template:Pips（查看源代码）Template:Red（查看源代码）（受保护）Template:SVersion（查看源代码）（受保护）Template:Sversion（查看源代码）Template:Version（查看源代码）（受保护）Template:白字（查看源代码）Template:重定向（查看源代码）返回陆军单位。&#10;"/>
+<meta name="keywords" content="欧陆风云4百科,陆军单位"/>
+<meta name="apple-mobile-web-app-capable" content="Yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+<meta name="mobile-web-app-capable" content="Yes"/>
+<meta name="theme-color" content="#103D8F"/>
+<meta name="msapplication-navbutton-color" content="#103D8F"/>
+<meta name="twitter:card" content="summary"/>
+<link rel="icon" href="https://www.eu4cn.com/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="https://www.eu4cn.com/opensearch_desc.php" title="欧陆风云4百科 (zh)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://www.eu4cn.com/api.php?action=rsd"/>
+<link rel="alternate" hreflang="zh" href="https://www.eu4cn.com/zh/陆军单位"/>
+<link rel="alternate" hreflang="zh-Hans" href="https://www.eu4cn.com/zh-hans/陆军单位"/>
+<link rel="alternate" hreflang="zh-Hant" href="https://www.eu4cn.com/zh-hant/陆军单位"/>
+<link rel="alternate" hreflang="zh-Hans-CN" href="https://www.eu4cn.com/zh-cn/陆军单位"/>
+<link rel="alternate" hreflang="zh-Hant-HK" href="https://www.eu4cn.com/zh-hk/陆军单位"/>
+<link rel="alternate" hreflang="zh-Hant-MO" href="https://www.eu4cn.com/zh-mo/陆军单位"/>
+<link rel="alternate" hreflang="zh-Hans-MY" href="https://www.eu4cn.com/zh-my/陆军单位"/>
+<link rel="alternate" hreflang="zh-Hans-SG" href="https://www.eu4cn.com/zh-sg/陆军单位"/>
+<link rel="alternate" hreflang="zh-Hant-TW" href="https://www.eu4cn.com/zh-tw/陆军单位"/>
+<link rel="alternate" hreflang="x-default" href="https://www.eu4cn.com/wiki/陆军单位"/>
+<link rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+<link rel="alternate" type="application/atom+xml" title="欧陆风云4百科的Atom feed" href="https://www.eu4cn.com/index.php?title=Special:%E6%9C%80%E8%BF%91%E6%9B%B4%E6%94%B9&amp;feed=atom"/>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script data-ad-client="ca-pub-1612414434963106" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114739240-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-114739240-1');
+</script>
+<meta property="og:title" content="陆军单位"/>
+<meta property="og:site_name" content="欧陆风云4百科"/>
+<meta property="og:url" content="https://www.eu4cn.com/wiki/%E9%99%86%E5%86%9B%E5%8D%95%E4%BD%8D"/>
+<meta property="og:image" content="https://www.eu4cn.com/images/logo/logo.png"/>
+<meta property="article:modified_time" content="2023-07-08T14:44:46Z"/>
+<meta property="article:published_time" content="2023-07-08T14:44:46Z"/>
+<script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"Article","name":"\u67e5\u770b\u201c\u9646\u519b\u5355\u4f4d\u201d\u7684\u6e90\u4ee3\u7801 - \u6b27\u9646\u98ce\u4e914\u767e\u79d1\uff0c\u4eba\u4eba\u53ef\u4ee5\u7f16\u8f91\u7684\u6b27\u9646\u98ce\u4e914\u4e2d\u6587\u767e\u79d1\u5168\u4e66","headline":"\u67e5\u770b\u201c\u9646\u519b\u5355\u4f4d\u201d\u7684\u6e90\u4ee3\u7801 - \u6b27\u9646\u98ce\u4e914\u767e\u79d1\uff0c\u4eba\u4eba\u53ef\u4ee5\u7f16\u8f91\u7684\u6b27\u9646\u98ce\u4e914\u4e2d\u6587\u767e\u79d1\u5168\u4e66","mainEntityOfPage":"\u67e5\u770b\u201c\u9646\u519b\u5355\u4f4d\u201d\u7684\u6e90\u4ee3\u7801","identifier":"https:\/\/www.eu4cn.com\/wiki\/%E9%99%86%E5%86%9B%E5%8D%95%E4%BD%8D","url":"https:\/\/www.eu4cn.com\/wiki\/%E9%99%86%E5%86%9B%E5%8D%95%E4%BD%8D","dateModified":"2023-07-08T14:44:46Z","datePublished":"2023-07-08T14:44:46Z","image":{"@type":"ImageObject","url":"https:\/\/www.eu4cn.com\/images\/logo\/logo.png"},"author":{"@type":"Organization","name":"\u6b27\u9646\u98ce\u4e914\u767e\u79d1","url":"https:\/\/www.eu4cn.com","logo":{"@type":"ImageObject","url":"https:\/\/www.eu4cn.com\/images\/logo\/logo.png","caption":"\u6b27\u9646\u98ce\u4e914\u767e\u79d1"}},"publisher":{"@type":"Organization","name":"\u6b27\u9646\u98ce\u4e914\u767e\u79d1","url":"https:\/\/www.eu4cn.com","logo":{"@type":"ImageObject","url":"https:\/\/www.eu4cn.com\/images\/logo\/logo.png","caption":"\u6b27\u9646\u98ce\u4e914\u767e\u79d1"}},"potentialAction":{"@type":"SearchAction","target":"https:\/\/www.eu4cn.com\/index.php?title=Special:Search&search={search_term}","query-input":"required name=search_term"}}</script>
+<link rel="stylesheet" href="http://www.unpkg.com/@fortawesome/fontawesome-free@5.15.1/css/all.css" />
+<link rel="stylesheet" href="http://www.unpkg.com/@fortawesome/fontawesome-free@5.15.1/css/v4-shims.css" />
+<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+<body class="Liberty width-size mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-陆军单位 rootpage-陆军单位 skin-liberty action-edit skin--responsive">		<header>
+			<div class="nav-wrapper navbar-fixed-top">
+						<nav class="navbar navbar-dark yamm">
+			<a class="navbar-brand" href="https://www.eu4cn.com/wiki/首页"></a>
+			<ul class="nav navbar-nav">
+				<li class="dropdown nav-item">
+					<a class="nav-link navbar-right" href="#" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+						<div class="navbar-brand-subtitle">欧陆风云4</div>
+						<div class="navbar-family">ParaWikis</div>
+					</a>
+				<ul class="dropdown-menu" aria-labelledby="dLabel">
+					<li>
+		                  <div class="yamm-content">
+		                    <div class="row">
+						 							<ul class="col-sm-4 list-unstyled">
+							<li><p class="meganav-item"><strong>最新百科</strong></p></li>
+								<a href="http://cs2.parawikis.com/" class="dropdown-item meganav-item">都市天际线2百科</a>
+								<a href="http://h3.parawikis.com/" class="dropdown-item meganav-item">英雄无敌3百科</a>
+								<a href="http://vic3.parawikis.com/" class="dropdown-item meganav-item">维多利亚3百科</a>
+								<a href="http://ce2.parawikis.com/" class="dropdown-item meganav-item">奇妙探险队2百科</a>
+								<a href="http://eos.parawikis.com/" class="dropdown-item meganav-item">罪恶帝国百科</a>
+								<a href="http://ir.parawikis.com/" class="dropdown-item meganav-item">英白拉多：罗马百科</a>
+							</ul>
+							<ul class="col-sm-4 list-unstyled">
+								<li><p class="meganav-item"><strong>热门百科</strong></p></li>
+								<a href="http://stellaris.parawikis.com/" class="dropdown-item meganav-item">群星百科</a>
+								<a href="http://www.eu4cn.com/" class="dropdown-item meganav-item">欧陆风云4百科</a>
+								<a href="http://ck2.parawikis.com/" class="dropdown-item meganav-item">十字军之王2百科</a>
+								<a href="http://ck3.parawikis.com/" class="dropdown-item meganav-item">十字军之王3百科</a>
+								<a href="http://hoi4.parawikis.com/" class="dropdown-item meganav-item">钢铁雄心4百科</a>
+								<a href="http://vic2.parawikis.com/" class="dropdown-item meganav-item">维多利亚2百科</a>
+							</ul>
+							<ul class="col-sm-4 list-unstyled">
+								<li><p class="meganav-item"><strong>ParaWikis</strong></p></li>
+								<a href="http://www.parawikis.com/wiki/ParaWikis:申请建站" class="dropdown-item meganav-item">申请建站</a>
+								<a href="http://www.parawikis.com/" class="dropdown-item meganav-item">ParaWikis</a>
+								<a href="http://commons.parawikis.com/" class="dropdown-item meganav-item">ParaCommons</a>
+							</ul>		                    </div>
+		                  </div>
+		                </li>
+				</ul>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="https://www.eu4cn.com/wiki/Special:最近更改" class="nav-link" title="本wiki的最近更改列表[r]" accesskey="r"><span class="fas fa-sync"></span><span class="hide-title">最近更改</span></a>				</li>
+				<li class="nav-item">
+					<a href="https://www.eu4cn.com/wiki/Special:随机页面" class="nav-link" title="加载一个随机页面[x]" accesskey="x"><span class="fa fa-random"></span><span class="hide-title">随机页面</span></a>				</li>
+				<li class="nav-item">
+					<a href="http://shang.qq.com/wpa/qunwpa?idkey=3bb76f6a58594b18c2defdc03af7ec2703fb2e2cc8fef6dadd1dcb896c0ede1a" target="_blank" class="nav-link" title="加入QQ群">
+						<span class="fa fa-qq"></span><span class="hide-title">加入QQ群</span>
+					</a>
+				</li>
+				<li class="dropdown nav-item">
+					<a class="dropdown-toggle nav-link" href="#" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+						<span class="fa fa-wrench"></span><span class="hide-title">工具</span>
+					</a>
+				<ul class="dropdown-menu" aria-labelledby="dLabel">
+					<li id="t-whatlinkshere" class="mw-list-item"><a href="https://www.eu4cn.com/wiki/Special:链入页面/陆军单位" title="所有链接至本页面的wiki页面列表[j]" accesskey="j" class="dropdown-item">链入页面</a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="https://www.eu4cn.com/wiki/Special:链出更改/陆军单位" rel="nofollow" title="链自本页的页面的最近更改[k]" accesskey="k" class="dropdown-item">相关更改</a></li><li id="t-specialpages" class="mw-list-item"><a href="https://www.eu4cn.com/wiki/Special:特殊页面" title="所有特殊页面的列表[q]" accesskey="q" class="dropdown-item">特殊页面</a></li><li id="t-info" class="mw-list-item"><a href="https://www.eu4cn.com/index.php?title=%E9%99%86%E5%86%9B%E5%8D%95%E4%BD%8D&amp;action=info" title="关于此页面的更多信息" class="dropdown-item">页面信息</a></li><li id="t-cargopagevalueslink" class="mw-list-item"><a href="https://www.eu4cn.com/index.php?title=%E9%99%86%E5%86%9B%E5%8D%95%E4%BD%8D&amp;action=pagevalues" rel="cargo-pagevalues" class="dropdown-item">页面值</a></li>				</ul>
+				</li>
+				<li class="dropdown nav-item"><a class="nav-link dropdown-toggle dropdown-toggle-fix" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true" title="帮助"><span class="fa fa-question"></span><span class="hide-title">帮助</span></a><div class="dropdown-menu" role="menu"><a class="dropdown-item" href="https://www.eu4cn.com/wiki/Project:译名手册" title="譯名手冊"><span class="fa fa-book"></span>譯名手冊</a><a class="dropdown-item" href="https://www.eu4cn.com/wiki/Project:字词转换" title="字詞轉換"><span class="fa fa-language"></span>字詞轉換</a><a class="dropdown-item" href="https://www.eu4cn.com/wiki/Project:编辑指南" title="編輯指南"><span class="fa fa-graduation-cap"></span>編輯指南</a><a class="dropdown-item" href="https://www.eu4cn.com/wiki/Project:编辑规范" title="編輯規範"><span class="fa fa-lightbulb"></span>編輯規範</a><a class="dropdown-item" href="https://www.eu4cn.com/wiki/Project:练手沙盒" title="Project:练手沙盒"><span class="fa fa-leaf"></span>練手沙盒</a></div></li><li class="dropdown nav-item"><a class="hidden-xs-down nav-link" data-toggle="" role="button" aria-haspopup="true" aria-expanded="true" title="ParaTranz" href="https://paratranz.cn/"><span class="fa fa-language"></span><span class="hide-title">ParaTranz</span></a></li><li class="dropdown nav-item"><a class="hidden-xs-down nav-link" data-toggle="" role="button" aria-haspopup="true" aria-expanded="true" title="52PCGame" href="http://bbs.52pcgame.net/"><span class="fa fa-comments"></span><span class="hide-title">52PCGame</span></a></li><li class="dropdown nav-item"><a class="hidden-xs-down nav-link" data-toggle="" role="button" aria-haspopup="true" aria-expanded="true" title="Project:捐款" href="https://www.eu4cn.com/wiki/Project:捐款"><span class="fa fa-heart"></span><span class="hide-title">资助我们</span></a></li>			</ul>
+					<div class="navbar-login">
+							<a href="#" class="none-outline" data-toggle="modal" data-target="#login-modal">
+					<span class="fa fa-sign-in"></span>
+				</a>
+					</div>
+									<form action="https://www.eu4cn.com/index.php" id="searchform" class="form-inline">
+			<input type="hidden" name="title" value="Special:搜索"/>
+			<div class="input-group">
+				<input type="search" name="search" placeholder="在欧陆风云4百科搜索" aria-label="在欧陆风云4百科搜索" autocapitalize="sentences" title="在欧陆风云4百科搜索[f]" accesskey="f" class="form-control" id="searchInput"/>				<span class="input-group-btn">
+					<button type="submit" name="go"
+						value="前往" id="searchGoButton"
+							class="btn btn-secondary" type="button"><span class="fa fa-eye"></span></button>
+					<button type="submit" name="fulltext"
+						value="搜索"
+						id="mw-searchButton" class="btn btn-secondary" type="button">
+						<span class="fa fa-search"></span></button>
+				</span>
+			</div>
+		</form>
+			</nav>
+				</div>
+		</header>
+		<section>
+			<div class="content-wrapper">
+							<aside>
+			<div class="liberty-sidebar">
+				<div class="live-recent-wrapper">
+					<div id='mw-data-after-content'>
+	<div class="read-more-container"></div>
+</div>
+												<div
+			class="live-recent"
+			data-article-ns="0|4|10|12|14"
+			data-talk-ns="1|5|7|9|11|13|15"
+		>
+			<div class="live-recent-header">
+			<ul class="nav nav-tabs">
+				<li class="nav-item">
+					<a href="javascript:" class="nav-link active" id="liberty-recent-tab1">
+						最近更改					</a>
+				</li>
+				<li class="nav-item">
+					<a href="javascript:" class="nav-link" id="liberty-recent-tab2">
+						最近讨论					</a>
+				</li>
+			</ul>
+			</div>
+			<div class="live-recent-content">
+				<ul class="live-recent-list" id="live-recent-list">
+					<li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li>				</ul>
+			</div>
+			<div class="live-recent-footer">
+				<a href="https://www.eu4cn.com/wiki/Special:最近更改" title="Special:最近更改"><span class="label label-info">查看更多</span></a>			</div>
+		</div>
+						<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 侧栏 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1612414434963106"
+     data-ad-slot="1728061201"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-K4RD1C6KBW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-K4RD1C6KBW');
+</script>
+				</div>
+										</div>
+			</aside>
+								<div class="container-fluid liberty-content">
+					<div class="liberty-content-header">
+													<div class="alert alert-dismissible fade in alert-info liberty-notice" role="alert">
+								<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+								<div id="localNotice"><div class="sitenotice" lang="zh" dir="ltr"><div style="text-align:center; font-size:125%; line-height: 1; padding: 10px;"><b>欢迎访问欧陆风云4百科！<a href="https://www.eu4cn.com/wiki/Special:用户登录" title="Special:用户登录"><span class="alert-link">注册一个账号</span></a>，一起参与编写吧！这里是<a href="https://www.eu4cn.com/wiki/欧陆风云4百科:当前任务#页面" title="欧陆风云4百科:当前任务"><span class="alert-link">当前的工程</span></a>。</b></div>
+<div style="text-align: center;">如果您想帮助本站建设，欢迎点击<a href="https://www.eu4cn.com/wiki/欧陆风云4百科:捐款" title="欧陆风云4百科:捐款"><b>这里</b></a>捐款！欢迎所有对百科感兴趣的同学加入QQ群：<b>497888338</b>。</div></div></div>							</div>
+															<div class="content-tools">
+				<div class="btn-group" role="group" aria-label="content-tools">
+					<div id="ca-view" class="mw-list-item"><a href="https://www.eu4cn.com/wiki/陆军单位" class="btn btn-secondary tools-btn">阅读</a></div><div id="ca-viewsource" class="selected mw-list-item"><a href="https://www.eu4cn.com/index.php?title=%E9%99%86%E5%86%9B%E5%8D%95%E4%BD%8D&amp;action=edit" title="本页面受到保护。&#10;您可以查看其源代码[e]" accesskey="e" class="btn btn-secondary tools-btn">查看源代码</a></div><div id="ca-history" class="mw-list-item"><a href="https://www.eu4cn.com/index.php?title=%E9%99%86%E5%86%9B%E5%8D%95%E4%BD%8D&amp;action=history" title="本页面过去的版本[h]" accesskey="h" class="btn btn-secondary tools-btn">查看历史</a></div>					<a href="https://www.eu4cn.com/wiki/Talk:陆军单位" class="btn btn-secondary tools-btn" title="关于内容页面的讨论[t]" accesskey="t" id="ca-talk">讨论</a>				</div>
+			</div>
+							<div class="title">
+						<h1>
+							查看“陆军单位”的源代码						</h1>
+						<div class="mw-indicators">
+</div>
+						</div>
+						<div class="contentSub" >
+							←<a href="https://www.eu4cn.com/wiki/陆军单位" title="陆军单位">陆军单位</a>						</div>
+				</div>
+					<div class="liberty-content-main" id="content">
+											<div class="mw-body-content" id="mw-content-text">
+							<div id="mw-content-text" class="mw-body-content"><p>因为以下原因，您没有权限编辑本页：
+</p>
+<div class="permissions-errors">
+<p>您请求的操作仅限属于该用户组的用户执行：<a href="https://www.eu4cn.com/wiki/欧陆风云4百科:用户" title="欧陆风云4百科:用户">用户</a>
+</p>
+</div><hr />
+<p>您可以查看和复制此页面的源代码。
+</p><textarea readonly="" accesskey="," id="wpTextbox1" cols="80" rows="25" style="" class="mw-editfont-monospace" lang="zh" dir="ltr" name="wpTextbox1">{{Version|1.35}}
+{{重定向|各组各类的陆军单位|军队的招募和维护等信息|陆军|陆战机制问题|陆战}}
+本文介绍了游戏中构成[[陆军]]的三种'''陆军单位'''（Land units）&lt;ref>文件位于 {{path|common/units/}} 文件夹内。&lt;/ref>——步兵、骑兵和炮兵，以及它们各自随时代推移的强度变化。陆军单位是[[陆战]]中最为决定性的因素。
+
+== {{icon|infantry|40px}} 步兵 ==
+[[File:Infantry pips.png|right|thumb|500px|{{SVersion|1.29}} 各科技组步兵随科技增长的总点数变化]]
+步兵是军队运行的轴心，是交战中维持阵型不散的中坚力量。所有步兵都至少有{{green|1}}点机动点数。
+
+=== 花费 ===
+这些理念和其他修正降低了招募和维护步兵的成本。
+{{bonus table|inf cost|collapse=yes}}
+
+=== 作战能力 ===
+这些理念和其他修正增加了步兵在战斗中的伤害。
+{{bonus table|inf power|collapse=yes}}
+
+其他修正包括：
+* {{green|+10%}} 政府改革 {{icon|monarchy}} [[大名]]
+* {{green|+10%}} 政府改革 {{icon|monarchy}} [[独立大名]]
+* {{green|+10%}} 政府改革 {{icon|monarchy}} [[君主制#赋予波里伽尔权力|赋予波里伽尔权力]]
+* {{green|+10%}} 作为信仰 {{icon|mayan}} [[玛雅宗教]]的国家进行宗教改革“中央军队改革”
+* {{green|+10%}} 作为 {{icon|mandate}} [[中国皇帝]]颁布“提拔军官”诏令
+* {{green|+10%}} 作为信仰 {{icon|confucian}} [[儒教]]的国家和谐神道教
+* {{green|+5%}} 政府改革 {{icon|theocracy}} [[神权制#整合僧兵|整合僧兵]]
+{{clear}}
+
+== {{icon|cavalry|40px}} 骑兵 ==
+[[File:Cavalry pips.png|right|thumb|500px|{{SVersion|1.29}} 各科技组骑兵随科技增长的总点数变化]]
+前线的部队被填满时，骑兵可以其进行最擅长的侧翼攻击。但骑兵的花费要远远高于步兵，等量骑兵的花费为步兵的2.5倍。所有骑兵都至少拥有{{green|2}}点机动。骑兵的战斗力要强于步兵，尤其是在战斗的冲击阶段更是明显。
+
+但骑兵的编入不得超过其既定比例，一旦超过，全军都将受到的[[军事战术]]惩罚，惩罚数值随骑步比例线性放缩。各种关于 {{icon|cav to inf ratio}} 骑兵比例的修正[[#骑兵比例|请见下]]。
+
+美洲土著科技组直到6级军事科技才可以使用骑兵，以模拟马这种生物在美洲大陆完全灭绝，后又由欧洲人重新引入美洲的这一历史。
+
+=== 花费 ===
+下列理念及修正会减少骑兵的招募和维护花费：
+{{bonus table|cav cost|collapse=yes}}
+
+在启用DLC {{icon|tc|24px}} [[哥萨克]]后，依照哥萨克[[阶层]]的忠诚度和影响力，会有{{red|+20%}}到{{green|−20%}}不等的骑兵花费修正。{{icon|Tribes|24px}} 部落阶层也会有0到{{green|−20%}}不等的骑兵花费修正。
+
+=== 作战能力 ===
+以下理念及修正会改变骑兵的作战能力：
+{{bonus table|cav power|collapse=yes}}
+其他修正包括：
+*{{green|+20%}} 政府改革 {{icon|republic}} [[共和制#谢契拉达|谢契拉达]]
+*在启用DLC {{icon|tc|24px}} 哥萨克后，依照哥萨克阶层的忠诚度和影响力，会有{{red|-10%}}到{{green|+20%}}不等的骑兵作战能力修正
+*{{green|+15%}} 拥有 {{icon|tribe}} [[部落制#部落联盟制|部落联盟制]]政府改革的国家启用政府能力[[部落制#部落忠诚|“训练马术”]]
+
+=== 骑兵比例 ===
+{{Sversion|1.30}}
+骑兵比例又称骑步比，是不计炮兵，单纯地以骑兵数量除以步兵和骑兵总数所得的比例。此处的“数量”指的并非是部队编成时的数量，而是当前骑兵和步兵的实时数量。该数量每日计算，也就是说在骑兵超出比例的次日就将即刻遭受惩罚。鉴于步兵在作战中的伤亡要远大于骑兵，建议在部队配比时就安排超出比例的步兵部队，以免在交战中途受到影响。
+
+骑兵比例的基础值为50%，下列修正会影响此比例：
+{{bonus table|cavalry to infantry ratio}}
+*拥有 {{icon|gov_steppe_horde}} [[草原游牧]]政体获得{{green|+25%|}}
+*作为 {{icon|tengri}} [[长生天]]国家'''不选择'''副宗教获得{{green|+25%|}}
+*激活[[神权制|万物皆归长生天]]政府改革{{green|+25%}}
+*购买 {{icon|age of discovery|24px}} [[地理大发现时代]]的时代能力 [[File:Ab cavalry armies.png|24px]] “骑兵部队”提供{{green|+20%|}}
+*作为 {{icon|sunni}} [[逊尼派]]国家获得{{green|+10%|}}
+*拥有忠诚的 {{icon|Cossacks|24px}} 哥萨克阶层基于其影响力提供最高{{green|+10%|}}
+*拥有谢契拉达政府改革获得{{green|+25%|}}
+
+=== 侧翼攻击 ===
+下列理念会增加侧翼攻击的宽度：
+{{bonus table|cavalry flanking ability}}
+{{clear}}
+
+== {{icon|artillery|40px}} 炮兵 ==
+[[File:Artillery pips.png|right|thumb|500px|{{SVersion|1.29}} 炮兵随科技增长的总点数变化]]
+炮兵既和骑兵、步兵一样参与交战，又能加速[[陆战#围城|围城]]的进程。
+
+和步骑不同的是，炮兵能够在军阵的后排作战，攻击时只发挥自己战斗力的50%，但会将其50%的冲击和火力防御点数（不为整数时向下取整；16级炮兵开始提供一点防御火力点数，29级炮兵提供一点防御冲击点数）加到该支炮兵前的那支部队上。
+
+但一旦炮兵暴露于前排，受到敌军的直接攻击，炮兵将承受双倍的伤害。因此从机制上，一般应保证有充足的步兵、骑兵在前排保护炮兵，使其后排作战。
+
+=== 花费 ===
+下列理念及修正会减少炮兵的招募和维护花费：
+{{bonus table|artillery cost}}
+
+=== 作战能力 ===
+以下理念及修正会增加炮兵的战斗伤害：
+{{bonus table|artillery power}}
+*{{icon|age of revolutions}} [[大革命时代]]的时代能力“改良炮兵射程”：{{green|+20%}}后排炮兵伤害。
+
+=== 炮兵单位列表 ===
+{{SVersion|1.35}}
+所有炮兵都至少拥有{{green|2}}点机动。炮兵的花费高达等量步兵的3倍。
+
+'''请注意：''' 所有科技组都使用同样的炮兵单位。
+{| class="wikitable sortable mw-datatable" style="text-align:center"
+! rowspan=2 | {{icon|mil tech}} 军事科技 !! width="225px" rowspan=2 | {{icon|Artillery|40px}} 名称
+! colspan=2 style="background-color: #00bfff;" | {{icon|fire}} 火力 !! colspan=2 style="background-color: #ff6a6a;" | {{icon|shock}} 冲击 !! colspan=2 style="background-color: #caff70;" | {{icon|land morale}} 士气 !! rowspan=2 | 属性点数&lt;br>合计
+|-
+| 7 || style="text-align:left" | 早期榴弹炮
+| {{pips|1|off}} || || || || || {{pips|1|def}} || 2
+|-
+| 7 || style="text-align:left" | 大型青铜臼炮
+| || || || || {{pips|2|off}} || || 2
+|-
+| 10 || style="text-align:left" | 长管炮
+| {{pips|2|off}} || {{pips|1|def}} || || {{pips|1|def}} || || || 4
+|-
+| 10 || style="text-align:left" | 攻城炮
+| {{pips|1|off}} || || || {{pips|2|def}} || {{pips|1|off}} || || 4
+|-
+| 13 || style="text-align:left" | 大型铸铁加农炮
+| {{pips|2|off}} || {{pips|1|def}} || || {{pips|1|def}} || {{pips|2|off}} || || 6
+|-
+| 13 || style="text-align:left" | 小型铸铁加农炮
+| {{pips|1|off}} || {{pips|1|def}} || || {{pips|2|def}} || {{pips|1|off}} || {{pips|1|def}} || 6
+|-
+| 16 || style="text-align:left" | 前膛装填半加农炮
+| {{pips|2|off}} || {{pips|2|def}} || || {{pips|1|def}} || {{pips|2|off}} || {{pips|1|def}} || 8
+|-
+| 16 || style="text-align:left" | 半长管炮
+| {{pips|1|off}} || {{pips|2|def}} || || {{pips|2|def}} || {{pips|2|off}} || {{pips|1|def}} || 8
+|-
+| 18 || style="text-align:left" | 皮革炮
+| {{pips|3|off}} || {{pips|2|def}} || {{pips|1|off}} || {{pips|1|def}} || {{pips|2|off}} || {{pips|1|def}} || 10
+|-
+| 18 || style="text-align:left" | 前膛装填加农炮
+| {{pips|3|off}} || {{pips|2|def}} || {{pips|1|off}} || {{pips|2|def}} || {{pips|1|off}} || {{pips|1|def}} || 10
+|-
+| 20 || style="text-align:left" | 旋转加农炮
+| {{pips|3|off}} || {{pips|2|def}} || {{pips|1|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|1|def}} || 12
+|-
+| 20 || style="text-align:left" | 榴弹炮
+| {{pips|3|off}} || {{pips|2|def}} || {{pips|1|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|2|def}} || 12
+|-
+| 22 || style="text-align:left" | 库霍恩臼炮
+| {{pips|2|off}} || {{pips|4|def}} || {{pips|1|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|3|def}} || 14
+|-
+| 22 || style="text-align:left" | 骑炮兵
+| {{pips|3|off}} || {{pips|3|def}} || {{pips|1|off}} || {{pips|1|def}} || {{pips|4|off}} || {{pips|2|def}} || 14
+|-
+| 25 || style="text-align:left" | 皇家臼炮
+| {{pips|4|off}} || {{pips|3|def}} || {{pips|1|off}} || {{pips|1|def}} || {{pips|5|off}} || {{pips|2|def}} || 16
+|-
+| 25 || style="text-align:left" | 独角兽炮
+| {{pips|3|off}} || {{pips|4|def}} || {{pips|1|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|3|def}} || 16
+|-
+| 29 || style="text-align:left" | 快速火炮
+| {{pips|5|off}} || {{pips|4|def}} || {{pips|2|off}} || {{pips|2|def}} || {{pips|4|off}} || {{pips|3|def}} || 20
+|-
+| 29 || style="text-align:left" | 炮兵集群
+| {{pips|4|off}} || {{pips|4|def}} || {{pips|2|off}} || {{pips|4|def}} || {{pips|3|off}} || {{pips|3|def}} || 20
+|}
+
+== 兵种组 ==
+{{Original researh}}
+各点数的价值（下式的等号都为约等号）：
+
+步兵火力进攻点：冲击进攻点=1:2(3军科),1:1(30军科)；骑兵火力进攻点：冲击进攻点&lt;1:5（全期）。上面两个比值的精确值可用科技对兵种的火力加成：冲击加成精确计算。
+
+前期（7军科前，之后取决于对方炮兵数量）：冲击防御>士气防御>>火力防御；后期（16军科后炮兵的强势期，双方后排满炮兵，没有一方前排全骑部队的情况下）：火力防御>士气防御>冲击防御。
+
+骑兵进攻冲击点>进攻士气点>>进攻火力点，炮兵进攻火力点>进攻士气点>>进攻冲击点
+
+=== {{icon|western}} 西欧兵种组 ===
+{{SVersion|1.35}}
+{| class="wikitable sortable mw-datatable" style="text-align:center"
+! rowspan=2 | {{icon|mil tech}} 军事科技 !! width="225px" rowspan=2 | {{icon|infantry|40px}} 兵种名称
+! colspan=2 style="background-color: #00bfff;" | {{icon|fire}} 火力 !! colspan=2 style="background-color: #ff6a6a;" | {{icon|shock}} 冲击 !! colspan=2 style="background-color: #caff70;" | {{icon|land morale}} 士气 !! rowspan=2 | 属性点数&lt;br>合计
+|-
+! 攻击 !! 防御 !! 攻击 !! 防御 !! 攻击 !! 防御
+|-
+| 1 || style="text-align:left" | 长戟步兵 ||  ||  || {{pips|1|off}} ||  || {{pips|1|off}} ||  || 2
+|-
+| 1 || style="text-align:left" | 拉丁中世纪步兵 ||  ||  ||  ||  || {{pips|1|off}} || {{pips|1|def}} || 2
+|-
+| 5 || style="text-align:left" | 盖尔外籍佣兵 ||  ||  || {{pips|1|off}} ||  || {{pips|2|off}} ||  || 3
+|-
+| 5 || style="text-align:left" | 长弓兵 ||  ||  || {{pips|1|off}} ||  || {{pips|1|off}} || {{pips|1|def}} || 3
+|-
+| 5 || style="text-align:left" | 重装步兵 ||  ||  ||  || {{pips|1|def}} || {{pips|1|off}} || {{pips|1|def}} || 3
+|-
+| 9 || style="text-align:left" | 意大利雇佣步兵 ||  ||  || {{pips|2|off}} || {{pips|1|def}} || {{pips|1|off}} || {{pips|1|def}} || 5
+|-
+| 9 || style="text-align:left" | 日耳曼长枪兵 ||  ||  || {{pips|1|off}} || {{pips|1|def}} || {{pips|1|off}} || {{pips|2|def}} || 5
+|-
+| 9 || style="text-align:left" | 改良盖尔外籍佣兵 ||  ||  || {{pips|2|off}} ||  || {{pips|2|off}} || {{pips|1|def}} || 5
+|-
+| 12 || style="text-align:left" | 自由射手 || {{pips|1|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|1|def}} || {{pips|3|off}} || {{pips|1|def}} || 10
+|-
+| 12 || style="text-align:left" | 西班牙方阵步兵 || {{pips|1|off}} || {{pips|2|def}} || {{pips|1|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|2|def}} || 10
+|-
+| 15 || style="text-align:left" | 先锋步兵 || {{pips|1|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|1|def}} || {{pips|3|off}} || {{pips|2|def}} || 12
+|-
+| 15 || style="text-align:left" | 毛里茨步兵 || {{pips|2|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|1|def}} || {{pips|3|off}} || {{pips|2|def}} || 12
+|-
+| 19 || style="text-align:left" | 古斯塔夫步兵 || {{pips|3|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|2|def}} || 15
+|-
+| 19 || style="text-align:left" | 高地步兵 || {{pips|2|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|2|def}} || {{pips|4|off}} || {{pips|2|def}} || 15
+|-
+| 19 || style="text-align:left" | 改良方阵步兵 || {{pips|2|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|3|def}} || 15
+|-
+| 23 || style="text-align:left" | 卡尔步兵 || {{pips|3|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|3|def}} || 16
+|-
+| 23 || style="text-align:left" | 边防步兵 || {{pips|2|off}} || {{pips|3|def}} || {{pips|2|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|3|def}} || 16
+|-
+| 23 || style="text-align:left" | 线列步兵 || {{pips|3|off}} || {{pips|3|def}} || {{pips|2|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|3|def}} || 16
+|-
+| 26 || style="text-align:left" | 蓝衣步兵 || {{pips|3|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|3|def}} || {{pips|4|off}} || {{pips|4|def}} || 20
+|-
+| 26 || style="text-align:left" | 腓特烈步兵 || {{pips|4|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|3|def}} || {{pips|4|off}} || {{pips|3|def}} || 20
+|-
+| 26 || style="text-align:left" | 红衣步兵 || {{pips|3|off}} || {{pips|4|def}} || {{pips|3|off}} || {{pips|3|def}} || {{pips|4|off}} || {{pips|3|def}} || 20
+|-
+| 26 || style="text-align:left" | 白衣步兵 || {{pips|4|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|4|def}} || 20
+|-
+| 28 || style="text-align:left" | 冲击步兵 || {{pips|4|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|3|def}} || {{pips|4|off}} || {{pips|4|def}} || 21
+|-
+| 28 || style="text-align:left" | 英国方阵步兵 || {{pips|3|off}} || {{pips|4|def}} || {{pips|3|off}} || {{pips|3|def}} || {{pips|4|off}} || {{pips|4|def}} || 21
+|-
+| 30 || style="text-align:left" | 作训步兵 || {{pips|4|off}} || {{pips|4|def}} || {{pips|3|off}} || {{pips|3|def}} || {{pips|4|off}} || {{pips|4|def}} || 22
+|-
+| 30 || style="text-align:left" | 猎兵 || {{pips|4|off}} || {{pips|4|def}} || {{pips|4|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|4|def}} || 22
+|-
+| 30 || style="text-align:left" | 混合编队步兵 || {{pips|4|off}} || {{pips|3|def}} || {{pips|4|off}} || {{pips|3|def}} || {{pips|4|off}} || {{pips|4|def}} || 22
+|-
+| 30 || style="text-align:left" | 拿破仑方阵步兵 || {{pips|4|off}} || {{pips|4|def}} || {{pips|4|off}} || {{pips|3|def}} || {{pips|4|off}} || {{pips|3|def}} || 22
+|}
+{{clear}}
+{| class="wikitable sortable mw-datatable" style="text-align:center"
+! rowspan=2 | {{icon|mil tech}} 军事科技 !! width="225px" rowspan=2 | {{icon|cavalry|40px}} 兵种名称
+! colspan=2 style="background-color: #00bfff;" | {{icon|fire}} 火力 !! colspan=2 style="background-color: #ff6a6a;" | {{icon|shock}} 冲击 !! colspan=2 style="background-color: #caff70;" | {{icon|land morale}} 士气 !! rowspan=2 | 属性点数&lt;br>合计
+|-
+! 攻击 !! 防御 !! 攻击 !! 防御 !! 攻击 !! 防御
+|-
+| 1 || style="text-align:left" | 突击骑兵 ||  ||  || {{pips|1|off}} || {{pips|1|def}} || {{pips|1|off}} ||  || 3
+|-
+| 1 || style="text-align:left" | 拉丁骑士 ||  ||  || {{pips|1|off}} ||  || {{pips|1|off}} || {{pips|1|def}} || 3
+|-
+| 10 || style="text-align:left" | 黑骑兵 || {{pips|1|off}} ||  || {{pips|2|off}} || {{pips|1|def}} || {{pips|2|off}} || {{pips|2|def}} || 8
+|-
+| 14 || style="text-align:left" | 拉丁回旋骑兵 || {{pips|1|off}} ||  || {{pips|3|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|2|def}} || 10
+|-
+| 18 || style="text-align:left" | 快速骑兵 || {{pips|1|off}} || {{pips|1|def}} || {{pips|4|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|3|def}} || 15
+|-
+| 23 || style="text-align:left" | 佩刀骑兵 || {{pips|1|off}} || {{pips|1|def}} || {{pips|5|off}} || {{pips|3|def}} || {{pips|5|off}} || {{pips|3|def}} || 18
+|-
+| 23 || style="text-align:left" | 拉丁龙骑兵 || {{pips|1|off}} || {{pips|1|def}} || {{pips|4|off}} || {{pips|4|def}} || {{pips|4|off}} || {{pips|4|def}} || 18
+|-
+| 23 || style="text-align:left" | 拉丁骠骑兵 || {{pips|1|off}} || {{pips|2|def}} || {{pips|4|off}} || {{pips|3|def}} || {{pips|4|off}} || {{pips|4|def}} || 18
+|-
+| 26 || style="text-align:left" | 卡宾枪骑兵 || {{pips|2|off}} || {{pips|1|def}} || {{pips|5|off}} || {{pips|4|def}} || {{pips|3|off}} || {{pips|4|def}} || 19
+|-
+| 26 || style="text-align:left" | 改良拉丁骠骑兵 || {{pips|1|off}} || {{pips|2|def}} || {{pips|4|off}} || {{pips|4|def}} || {{pips|4|off}} || {{pips|4|def}} || 19
+|-
+| 26 || style="text-align:left" | 轻枪骑兵 || {{pips|1|off}} || {{pips|2|def}} || {{pips|5|off}} || {{pips|4|def}} || {{pips|4|off}} || {{pips|3|def}} || 19
+|-
+| 28 || style="text-align:left" | 拉丁猎骑兵 || {{pips|2|off}} || {{pips|1|def}} || {{pips|4|off}} || {{pips|4|def}} || {{pips|5|off}} || {{pips|5|def}} || 21
+|-
+| 28 || style="text-align:left" | 拉丁胸甲骑兵 || {{pips|1|off}} || {{pips|2|def}} || {{pips|5|off}} || {{pips|4|def}} || {{pips|4|off}} || {{pips|5|def}} || 21
+|-
+| 28 || style="text-align:left" | 拉丁枪骑兵 ||  || {{pips|2|def}} || {{pips|6|off}} || {{pips|4|def}} || {{pips|5|off}} || {{pips|4|def}} || 21
+|}
+
+=== {{icon|Eastern}} 东欧兵种组 ===
+{{SVersion|1.35}}
+{| class="wikitable sortable mw-datatable" style="text-align:center"
+! rowspan=2 | {{icon|mil tech}}军事科技 !! width="225px" rowspan=2 | {{icon|infantry|40px}} 兵种名称
+! colspan=2 style="background-color: #00bfff;" | {{icon|fire}} 火力 !! colspan=2 style="background-color: #ff6a6a;" | {{icon|shock}} 冲击 !! colspan=2 style="background-color: #caff70;" | {{icon|land morale}} 士气 !! rowspan=2 | 属性点数&lt;br>合计
+|-
+! 攻击 !! 防御 !! 攻击 !! 防御 !! 攻击 !! 防御
+|-
+| 1 || style="text-align:left" | 重斧步兵 ||  ||  ||  ||  || {{pips|1|off}} || {{pips|1|def}} || 2
+|-
+| 1 || style="text-align:left" | 东欧中世纪步兵 ||  ||  || {{pips|1|off}} ||  || {{pips|1|off}} ||  || 2
+|-
+| 5 || style="text-align:left" | 东欧民兵 ||  ||  || {{pips|1|off}} || {{pips|1|def}} || {{pips|1|off}} || {{pips|1|def}} || 4
+|-
+| 9 || style="text-align:left" | 长枪步兵 ||  ||  || {{pips|1|off}} || {{pips|2|def}} || {{pips|1|off}} || {{pips|2|def}} || 6
+|-
+| 12 || style="text-align:left" | 东欧防御滑膛枪兵 || {{pips|2|off}} || {{pips|2|def}} || {{pips|1|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|2|def}} || 11
+|-
+| 12 || style="text-align:left" | 东欧攻击滑膛枪兵 || {{pips|2|off}} || {{pips|1|def}} || {{pips|2|off}} || {{pips|1|def}} || {{pips|3|off}} || {{pips|2|def}} || 11
+|-
+| 15 || style="text-align:left" | 东欧方阵步兵 || {{pips|2|off}} || {{pips|2|def}} || {{pips|1|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|3|def}} || 12
+|-
+| 15 || style="text-align:left" | 新军步兵 || {{pips|3|off}} || {{pips|1|def}} || {{pips|2|off}} || {{pips|1|def}} || {{pips|3|off}} || {{pips|2|def}} || 12
+|-
+| 19 || style="text-align:left" | 萨克森步兵 || {{pips|3|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|2|def}} || 14
+|-
+| 23 || style="text-align:left" | 彼得步兵 || {{pips|2|off}} || {{pips|3|def}} || {{pips|2|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|3|def}} || 16
+|-
+| 26 || style="text-align:left" | 绿衣步兵 || {{pips|3|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|3|def}} || {{pips|4|off}} || {{pips|4|def}} || 20
+|-
+| 30 || style="text-align:left" | 集群步兵 || {{pips|4|off}} || {{pips|3|def}} || {{pips|4|off}} || {{pips|3|def}} || {{pips|4|off}} || {{pips|3|def}} || 21
+|}
+{{clear}}
+{| class="wikitable sortable mw-datatable" style="text-align:center"
+! rowspan=2 | {{icon|mil tech}} 军事科技 !! width="225px" rowspan=2 | {{icon|cavalry|40px}} 兵种名称
+! colspan=2 style="background-color: #00bfff;" | {{icon|fire}} 火力 !! colspan=2 style="background-color: #ff6a6a;" | {{icon|shock}} 冲击 !! colspan=2 style="background-color: #caff70;" | {{icon|land morale}} 士气 !! rowspan=2 | 属性点数&lt;br>合计
+|-
+! 攻击 !! 防御 !! 攻击 !! 防御 !! 攻击 !! 防御
+|-
+| 1 || style="text-align:left" | 亲卫骑兵 ||  ||  ||  || {{pips|1|def}} || {{pips|1|off}} || {{pips|1|def}} || 3
+|-
+| 1 || style="text-align:left" | 东欧骑士 ||  ||  || {{pips|1|off}} ||  || {{pips|1|off}} || {{pips|1|def}} || 3
+|-
+| 6 || style="text-align:left" | 斯忒狄奥提雇佣骑兵 ||  ||  || {{pips|2|off}} || {{pips|1|def}} || {{pips|1|off}} || {{pips|1|def}} || 5
+|-
+| 10 || style="text-align:left" | 东欧骠骑兵 ||  ||  || {{pips|2|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|2|def}} || 9
+|-
+| 14 || style="text-align:left" | 东欧回旋骑兵 || {{pips|2|off}} ||  || {{pips|2|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|3|def}} || 12
+|-
+| 14 || style="text-align:left" | 改良东欧骠骑兵 || {{pips|1|off}} || {{pips|1|def}} || {{pips|3|off}} || {{pips|3|def}} || {{pips|2|off}} || {{pips|2|def}} || 12
+|-
+| 14 || style="text-align:left" | 南方哥萨克骑兵 ||  || {{pips|1|def}} || {{pips|4|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|3|def}} || 12
+|-
+| 22 || style="text-align:left" | 哥萨克骑兵 || {{pips|1|off}} || {{pips|1|def}} || {{pips|4|off}} || {{pips|3|def}} || {{pips|4|off}} || {{pips|4|def}} || 17
+|-
+| 22 || style="text-align:left" | 翼骑兵 ||  || {{pips|1|def}} || {{pips|5|off}} || {{pips|4|def}} || {{pips|4|off}} || {{pips|3|def}} || 17
+|-
+| 26 || style="text-align:left" | 枪骑兵 ||  || {{pips|1|def}} || {{pips|5|off}} || {{pips|4|def}} || {{pips|4|off}} || {{pips|4|def}} || 18
+|-
+| 26 || style="text-align:left" | 改良哥萨克骑兵 || {{pips|1|off}} || {{pips|1|def}} || {{pips|4|off}} || {{pips|4|def}} || {{pips|4|off}} || {{pips|4|def}} || 18
+|-
+| 28 || style="text-align:left" | 新式哥萨克骑兵 || {{pips|2|off}} || {{pips|1|def}} || {{pips|4|off}} || {{pips|4|def}} || {{pips|5|off}} || {{pips|4|def}} || 20
+|-
+| 28 || style="text-align:left" | 东欧胸甲骑兵 || {{pips|1|off}} || {{pips|2|def}} || {{pips|5|off}} || {{pips|4|def}} || {{pips|4|off}} || {{pips|4|def}} || 20
+|}
+
+=== {{icon|Anatolian}} 安纳托利亚兵种组 ===
+{{SVersion|1.35}}
+{| class="wikitable sortable mw-datatable" style="text-align:center"
+! rowspan=2 | {{icon|mil tech}} 军事科技 !! width="225px" rowspan=2 | {{icon|Infantry|40px}} 兵种名称
+! colspan=2 style="background-color: #00bfff;" | {{icon|fire}} 火力 !! colspan=2 style="background-color: #ff6a6a;" | {{icon|shock}} 冲击 !! colspan=2 style="background-color: #caff70;" | {{icon|land morale}} 士气 !! rowspan=2 | 属性点数&lt;br>合计
+|-
+! 攻击 !! 防御 !! 攻击 !! 防御 !! 攻击 !! 防御
+|-
+| 1 || style="text-align:left" | 雅雅步兵 ||  ||  || {{pips|1|off}} ||  || {{pips|1|off}} || {{pips|1|def}} || 3
+|-
+| 5 || style="text-align:left" | 阿扎布步兵 ||  ||  || {{pips|1|off}} || {{pips|1|def}} || {{pips|1|off}} || {{pips|1|def}} || 4
+|-
+| 9 || style="text-align:left" | 耶尼切里步兵 || {{pips|1|off}} ||  || {{pips|1|off}} || {{pips|1|def}} || {{pips|1|off}} || {{pips|2|def}} || 6
+|-
+| 12 || style="text-align:left" | 塞克班步兵 || {{pips|2|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|1|def}} || {{pips|2|off}} || {{pips|3|def}} || 12
+|-
+| 19 || style="text-align:left" | 改良耶尼切里步兵 || {{pips|3|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|2|def}} || 14
+|-
+| 23 || style="text-align:left" | 新制步兵 || {{pips|2|off}} || {{pips|3|def}} || {{pips|2|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|3|def}} || 15
+|-
+| 26 || style="text-align:left" | 东方卡宾枪手 || {{pips|4|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|3|def}} || 19
+|-
+| 30 || style="text-align:left" | 新式东方步兵 || {{pips|3|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|3|def}} || {{pips|4|off}} || {{pips|4|def}} || 20
+|}
+{{clear}}
+{| class="wikitable sortable mw-datatable" style="text-align:center"
+! rowspan=2 | {{icon|mil tech}} 军事科技 !! width="225px" rowspan=2 | {{icon|cavalry|40px}} 兵种名称
+! colspan=2 style="background-color: #00bfff;" | {{icon|fire}} 火力 !! colspan=2 style="background-color: #ff6a6a;" | {{icon|shock}} 冲击 !! colspan=2 style="background-color: #caff70;" | {{icon|land morale}} 士气 !! rowspan=2 | 属性点数&lt;br>合计
+|-
+! 攻击 !! 防御 !! 攻击 !! 防御 !! 攻击 !! 防御
+|-
+| 1 || style="text-align:left" | 穆瑟雷骑兵 ||  ||  || {{pips|2|off}} || {{pips|1|def}} || {{pips|1|off}} || {{pips|1|def}} || 5
+|-
+| 6 || style="text-align:left" | 蒂玛尔贵族骑兵 ||  ||  || {{pips|2|off}} || {{pips|1|def}} || {{pips|2|off}} || {{pips|1|def}} || 6
+|-
+| 10 || style="text-align:left" | 西帕希骑兵 ||  ||  || {{pips|3|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|2|def}} || 10
+|-
+| 18 || style="text-align:left" | 改良西帕希骑兵 || {{pips|1|off}} || {{pips|1|def}} || {{pips|3|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|3|def}} || 14
+|-
+| 23 || style="text-align:left" | 托普拉克利游骑兵 || {{pips|2|off}} ||  || {{pips|4|off}} || {{pips|3|def}} || {{pips|4|off}} || {{pips|3|def}} || 16
+|-
+| 26 || style="text-align:left" | 东方前哨骑兵 || {{pips|1|off}} || {{pips|2|def}} || {{pips|4|off}} || {{pips|3|def}} || {{pips|4|off}} || {{pips|3|def}} || 17
+|-
+| 26 || style="text-align:left" | 东方长枪骑兵 || {{pips|2|off}} || {{pips|1|def}} || {{pips|3|off}} || {{pips|4|def}} || {{pips|4|off}} || {{pips|3|def}} || 17
+|-
+| 28 || style="text-align:left" | 改良枪骑兵 || {{pips|1|off}} || {{pips|1|def}} || {{pips|5|off}} || {{pips|3|def}} || {{pips|5|off}} || {{pips|3|def}} || 18
+|-
+| 28 || style="text-align:left" | 托普拉克利龙骑兵 || {{pips|2|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|3|def}} || {{pips|4|off}} || {{pips|4|def}} || 18
+|}
+
+=== {{icon|Muslim}} 穆斯林兵种组 ===
+{{SVersion|1.35}}
+{| class="wikitable sortable mw-datatable" style="text-align:center"
+! rowspan=2 | {{icon|mil tech}} 军事科技 !! width="225px" rowspan=2 | {{icon|infantry|40px}} 兵种名称
+! colspan=2 style="background-color: #00bfff;" | {{icon|fire}} 火力 !! colspan=2 style="background-color: #ff6a6a;" | {{icon|shock}} 冲击 !! colspan=2 style="background-color: #caff70;" | {{icon|land morale}} 士气 !! rowspan=2 | 属性点数&lt;br>合计
+|-
+! 攻击 !! 防御 !! 攻击 !! 防御 !! 攻击 !! 防御
+|-
+| 1 || style="text-align:left" | 穆斯林弓兵 ||  ||  || {{pips|1|off}} || {{pips|1|def}} ||  || {{pips|1|def}} || 3
+|-
+| 1 || style="text-align:left" | 穆斯林步兵 ||  ||  || {{pips|1|off}} ||  || {{pips|1|off}} || {{pips|1|def}} || 3
+|-
+| 5 || style="text-align:left" | 穆斯林决斗步兵 ||  ||  || {{pips|1|off}} || {{pips|1|def}} || {{pips|1|off}} || {{pips|1|def}} || 4
+|-
+| 9 || style="text-align:left" | 弯刀步兵 ||  ||  || {{pips|2|off}} || {{pips|1|def}} || {{pips|1|off}} || {{pips|2|def}} || 6
+|-
+| 12 || style="text-align:left" | 穆斯林滑膛枪兵 || {{pips|2|off}} || {{pips|1|def}} || {{pips|1|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|3|def}} || 11
+|-
+| 15 || style="text-align:left" | 阿夫沙尔改良步兵 || {{pips|3|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|2|def}} || 13
+|-
+| 23 || style="text-align:left" | 改良穆斯林滑膛枪兵 || {{pips|1|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|2|def}} || {{pips|4|off}} || {{pips|3|def}} || 16
+|-
+| 26 || style="text-align:left" | 穆斯林集群步兵 || {{pips|3|off}} || {{pips|4|def}} || {{pips|3|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|3|def}} || 19
+|-
+| 30 || style="text-align:left" | 穆斯林来复枪兵 || {{pips|3|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|3|def}} || {{pips|4|off}} || {{pips|4|def}} || 20
+|}
+{{clear}}
+{| class="wikitable sortable mw-datatable" style="text-align:center"
+! rowspan=2 | {{icon|mil tech}} 军事科技 !! width="225px" rowspan=2 | {{icon|cavalry|40px}} 兵种名称
+! colspan=2 style="background-color: #00bfff;" | {{icon|fire}} 火力 !! colspan=2 style="background-color: #ff6a6a;" | {{icon|shock}} 冲击 !! colspan=2 style="background-color: #caff70;" | {{icon|land morale}} 士气 !! rowspan=2 | 属性点数&lt;br>合计
+|-
+! 攻击 !! 防御 !! 攻击 !! 防御 !! 攻击 !! 防御
+|-
+| 1 || style="text-align:left" | 冲击骑兵 ||  ||  || {{pips|2|off}} ||  || {{pips|1|off}} || {{pips|1|def}} || 4
+|-
+| 1 || style="text-align:left" | 穆斯林骑兵 ||  ||  || {{pips|1|off}} ||  || {{pips|2|off}} || {{pips|1|def}} || 4
+|-
+| 1 || style="text-align:left" | 穆斯林骑射手 ||  ||  || {{pips|1|off}} || {{pips|1|def}} || {{pips|1|off}} || {{pips|1|def}} || 4
+|-
+| 6 || style="text-align:left" | 昔班尼骑兵 ||  ||  || {{pips|2|off}} || {{pips|1|def}} || {{pips|1|off}} || {{pips|2|def}} || 6
+|-
+| 10 || style="text-align:left" | 奇兹尔巴什骑兵 ||  ||  || {{pips|2|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|2|def}} || 9
+|-
+| 14 || style="text-align:left" | 穆斯林火枪骑兵 || {{pips|1|off}} ||  || {{pips|2|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|2|def}} || 10
+|-
+| 18 || style="text-align:left" | 阿夫沙尔改良骑兵 ||  || {{pips|1|def}} || {{pips|4|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|3|def}} || 14
+|-
+| 18 || style="text-align:left" | 火枪冲锋骑兵 || {{pips|1|off}} || {{pips|1|def}} || {{pips|4|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|2|def}} || 14
+|-
+| 23 || style="text-align:left" | 阿里贝伊改良骑兵 || {{pips|2|off}} || {{pips|1|def}} || {{pips|4|off}} || {{pips|3|def}} || {{pips|4|off}} || {{pips|3|def}} || 17
+|-
+| 23 || style="text-align:left" | 穆斯林龙骑兵 || {{pips|1|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|4|def}} || {{pips|3|off}} || {{pips|4|def}} || 17
+|-
+| 28 || style="text-align:left" | 杜兰尼骑兵 || {{pips|2|off}} || {{pips|1|def}} || {{pips|5|off}} || {{pips|3|def}} || {{pips|4|off}} || {{pips|4|def}} || 19
+|-
+| 28 || style="text-align:left" | 杜兰尼回旋骑兵 || {{pips|1|off}} || {{pips|2|def}} || {{pips|4|off}} || {{pips|5|def}} || {{pips|4|off}} || {{pips|3|def}} || 19
+|}
+
+=== {{icon|Nomad}} 游牧兵种组 ===
+{{SVersion|1.35}}
+{| class="wikitable sortable mw-datatable" style="text-align:center"
+! rowspan=2 | {{icon|mil tech}} 军事科技 !! width="225px" rowspan=2 | {{icon|infantry|40px}} 兵种名称
+! colspan=2 style="background-color: #00bfff;" | {{icon|fire}} 火力 !! colspan=2 style="background-color: #ff6a6a;" | {{icon|shock}} 冲击 !! colspan=2 style="background-color: #caff70;" | {{icon|land morale}} 士气 !! rowspan=2 | 属性点数&lt;br>合计
+|-
+! 攻击 !! 防御 !! 攻击 !! 防御 !! 攻击 !! 防御
+|-
+| 1 || style="text-align:left" | 东方弓兵 ||  ||  || {{pips|1|off}} || {{pips|1|def}} || {{pips|1|off}} || {{pips|1|def}} || 4
+|-
+| 9 || style="text-align:left" | 草原突袭兵 ||  ||  || {{pips|2|off}} || {{pips|1|def}} || {{pips|1|off}} || {{pips|2|def}} || 6
+|-
+| 12 || style="text-align:left" | 草原徒步士兵 || {{pips|1|off}} || {{pips|1|def}} || {{pips|2|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|2|def}} || 10
+|-
+| 15 || style="text-align:left" | 草原滑膛枪兵 || {{pips|2|off}} || {{pips|1|def}} || {{pips|3|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|2|def}} || 12
+|-
+| 19 || style="text-align:left" | 草原步兵 || {{pips|2|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|2|def}} || 14
+|-
+| 26 || style="text-align:left" | 草原来复枪兵 || {{pips|2|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|3|def}} || {{pips|4|off}} || {{pips|4|def}} || 19
+|-
+| 30 || style="text-align:left" | 改良草原来复枪兵 || {{pips|3|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|3|def}} || {{pips|4|off}} || {{pips|4|def}} || 20
+|}
+{{clear}}
+{| class="wikitable sortable mw-datatable" style="text-align:center"
+! rowspan=2 | {{icon|mil tech}} 军事科技 !! width="225px" rowspan=2 | {{icon|cavalry|40px}} 兵种名称
+! colspan=2 style="background-color: #00bfff;" | {{icon|fire}} 火力 !! colspan=2 style="background-color: #ff6a6a;" | {{icon|shock}} 冲击 !! colspan=2 style="background-color: #caff70;" | {{icon|land morale}} 士气 !! rowspan=2 | 属性点数&lt;br>合计
+|-
+! 攻击 !! 防御 !! 攻击 !! 防御 !! 攻击 !! 防御
+|-
+| 1 || style="text-align:left" | 东方草原骑兵 ||  ||  || {{pips|1|off}} || {{pips|1|def}} || {{pips|2|off}} || {{pips|2|def}} || 6
+|-
+| 1 || style="text-align:left" | 东方密袭骑兵 ||  ||  || {{pips|2|off}} || {{pips|1|def}} || {{pips|2|off}} || {{pips|1|def}} || 6
+|-
+| 10 || style="text-align:left" | 草原骑手 ||  ||  || {{pips|3|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|2|def}} || 10
+|-
+| 14 || style="text-align:left" | 草原枪骑兵 ||  ||  || {{pips|3|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|3|def}} || 12
+|-
+| 18 || style="text-align:left" | 草原突袭骑兵 ||  || {{pips|1|def}} || {{pips|3|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|3|def}} || 13
+|-
+| 23 || style="text-align:left" | 草原骑兵 || {{pips|1|off}} || {{pips|1|def}} || {{pips|4|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|3|def}} || 15
+|-
+| 28 || style="text-align:left" | 草原长枪骑兵 || {{pips|1|off}} || {{pips|1|def}} || {{pips|5|off}} || {{pips|4|def}} || {{pips|4|off}} || {{pips|3|def}} || 18
+|}
+
+=== {{icon|Chinese}} 中华兵种组 ===
+{{SVersion|1.35}}
+{| class="wikitable sortable mw-datatable" style="text-align:center"
+! rowspan=2 | {{icon|mil tech}} 军事科技 !! width="225px" rowspan=2 | {{icon|Infantry|40px}} 兵种名称
+! colspan=2 style="background-color: #00bfff;" | {{icon|fire}} 火力 !! colspan=2 style="background-color: #ff6a6a;" | {{icon|shock}} 冲击 !! colspan=2 style="background-color: #caff70;" | {{icon|land morale}} 士气 !! rowspan=2 | 属性点数&lt;br>合计
+|-
+! 攻击 !! 防御 !! 攻击 !! 防御 !! 攻击 !! 防御
+|-
+| 1 || style="text-align:left" | 亚洲长弓兵 ||  ||  || {{pips|1|off}} ||  ||  || {{pips|1|def}} || 2
+|-
+| 1 || style="text-align:left" | 亚洲长矛步兵 ||  ||  ||  || {{pips|1|def}} ||  || {{pips|1|def}} || 2
+|-
+| 1 || style="text-align:left" | 东亚矛兵 ||  ||  ||  || {{pips|1|def}} || {{pips|1|off}} ||  || 2
+|-
+| 5 || style="text-align:left" | 亚洲防御步兵 ||  ||  || {{pips|1|off}} || {{pips|1|def}} || {{pips|1|off}} || {{pips|1|def}} || 4
+|-
+| 5 || style="text-align:left" | 亚洲攻击步兵 ||  ||  || {{pips|1|off}} ||  || {{pips|2|off}} || {{pips|1|def}} || 4
+|-
+| 9 || style="text-align:left" | 亚洲火绳枪兵 || {{pips|1|off}} || {{pips|1|def}} || {{pips|1|off}} || {{pips|1|def}} || {{pips|1|off}} || {{pips|1|def}} || 6
+|-
+| 12 || style="text-align:left" | 八旗步兵 || {{pips|1|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|1|def}} || {{pips|2|off}} || {{pips|2|def}} || 10
+|-
+| 15 || style="text-align:left" | 亚洲集群步兵 || {{pips|3|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|2|def}} || 13
+|-
+| 19 || style="text-align:left" | 亚洲滑膛枪兵 || {{pips|3|off}} || {{pips|3|def}} || {{pips|2|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|2|def}} || 15
+|-
+| 26 || style="text-align:left" | 改良亚洲滑膛枪兵 || {{pips|4|off}} || {{pips|4|def}} || {{pips|3|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|3|def}} || 20
+|}
+{{clear}}
+{| class="wikitable sortable mw-datatable" style="text-align:center"
+! rowspan=2 | {{icon|mil tech}} 军事科技 !! width="225px" rowspan=2 | {{icon|cavalry|40px}} 兵种名称
+! colspan=2 style="background-color: #00bfff;" | {{icon|fire}} 火力 !! colspan=2 style="background-color: #ff6a6a;" | {{icon|shock}} 冲击 !! colspan=2 style="background-color: #caff70;" | {{icon|land morale}} 士气 !! rowspan=2 | 属性点数&lt;br>合计
+|-
+! 攻击 !! 防御 !! 攻击 !! 防御 !! 攻击 !! 防御
+|-
+| 1 || style="text-align:left" | 东亚弓骑兵 ||  ||  ||  || {{pips|1|def}} || {{pips|1|off}} || {{pips|1|def}} || 3
+|-
+| 1 || style="text-align:left" | 东亚弓骑兵 ||  ||  || {{pips|1|off}} ||  || {{pips|1|off}} || {{pips|1|def}} || 3
+|-
+| 6 || style="text-align:left" | 亚洲草原骑兵 ||  ||  || {{pips|2|off}} || {{pips|2|def}} || {{pips|1|off}} || {{pips|1|def}} || 6
+|-
+| 6 || style="text-align:left" | 骑马武士 ||  ||  || {{pips|2|off}} || {{pips|1|def}} || {{pips|2|off}} || {{pips|1|def}} || 6
+|-
+| 10 || style="text-align:left" | 改良亚洲草原骑兵 || {{pips|1|off}} ||  || {{pips|2|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|2|def}} || 9
+|-
+| 14 || style="text-align:left" | 亚洲冲击骑兵 ||  || {{pips|1|def}} || {{pips|3|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|3|def}} || 12
+|-
+| 17 || style="text-align:left" | 八旗骑兵 || {{pips|1|off}} || {{pips|1|def}} || {{pips|3|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|3|def}} || 14
+|-
+| 23 || style="text-align:left" | 亚洲龙骑兵 || {{pips|1|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|3|def}} || {{pips|4|off}} || {{pips|3|def}} || 16
+|-
+| 28 || style="text-align:left" | 绿营骑兵 || {{pips|2|off}} || {{pips|1|def}} || {{pips|4|off}} || {{pips|4|def}} || {{pips|4|off}} || {{pips|4|def}} || 19
+|-
+| 28 || style="text-align:left" | 改良亚洲骑兵 || {{pips|1|off}} || {{pips|2|def}} || {{pips|5|off}} || {{pips|4|def}} || {{pips|3|off}} || {{pips|4|def}} || 19
+|}
+
+=== {{icon|Indian}} 印度兵种组 ===
+{{SVersion|1.35}}
+{| class="wikitable sortable mw-datatable" style="text-align:center"
+! rowspan=2 | {{icon|mil tech}} 军事科技 !! width="225px" rowspan=2 | {{icon|infantry|40px}} 兵种名称
+! colspan=2 style="background-color: #00bfff;" | {{icon|fire}} 火力 !! colspan=2 style="background-color: #ff6a6a;" | {{icon|shock}} 冲击 !! colspan=2 style="background-color: #caff70;" | {{icon|land morale}} 士气 !! rowspan=2 | 属性点数&lt;br>合计
+|-
+! 攻击 !! 防御 !! 攻击 !! 防御 !! 攻击 !! 防御
+|-
+| 1 || style="text-align:left" | 印度步兵 ||  ||  || {{pips|1|off}} ||  || {{pips|1|off}} || {{pips|1|def}} || 3
+|-
+| 5 || style="text-align:left" | 印度火绳枪兵 || {{pips|1|off}} ||  || {{pips|1|off}} || {{pips|1|def}} || {{pips|1|off}} ||  || 4
+|-
+| 9 || style="text-align:left" | 波犁迦罗步兵 || {{pips|1|off}} || {{pips|1|def}} || {{pips|1|off}} || {{pips|1|def}} || {{pips|1|off}} || {{pips|1|def}} || 6
+|-
+| 9 || style="text-align:left" | 波斯火枪步兵 || {{pips|1|off}} ||  || {{pips|1|off}} || {{pips|1|def}} || {{pips|2|off}} || {{pips|1|def}} || 6
+|-
+| 12 || style="text-align:left" | 阿克巴滑膛枪兵 || {{pips|2|off}} || {{pips|2|def}} || {{pips|1|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|2|def}} || 11
+|-
+| 12 || style="text-align:left" | 南印度步兵 || {{pips|2|off}} || {{pips|1|def}} || {{pips|2|off}} || {{pips|1|def}} || {{pips|3|off}} || {{pips|2|def}} || 11
+|-
+| 18 || style="text-align:left" | 德干火枪步兵 || {{pips|3|off}} || {{pips|3|def}} || {{pips|2|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|2|def}} || 14
+|-
+| 18 || style="text-align:left" | 北印度火枪步兵 || {{pips|3|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|2|def}} || 14
+|-
+| 23 || style="text-align:left" | 特伦甘纳步兵 || {{pips|4|off}} || {{pips|3|def}} || {{pips|2|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|3|def}} || 16
+|-
+| 26 || style="text-align:left" | 北印度西帕依步兵 || {{pips|3|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|4|def}} || 19
+|-
+| 30 || style="text-align:left" | 印度正规步兵 || {{pips|4|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|3|def}} || {{pips|4|off}} || {{pips|3|def}} || 20
+|}
+{{clear}}
+{| class="wikitable sortable mw-datatable" style="text-align:center"
+! rowspan=2 | {{icon|mil tech}} 军事科技 !! width="225px" rowspan=2 | {{icon|cavalry|40px}} 兵种名称
+! colspan=2 style="background-color: #00bfff;" | {{icon|fire}} 火力 !! colspan=2 style="background-color: #ff6a6a;" | {{icon|shock}} 冲击 !! colspan=2 style="background-color: #caff70;" | {{icon|land morale}} 士气 !! rowspan=2 | 属性点数&lt;br>合计
+|-
+! 攻击 !! 防御 !! 攻击 !! 防御 !! 攻击 !! 防御
+|-
+| 1 || style="text-align:left" | 骑象弓兵 ||  ||  || {{pips|1|off}} ||  || {{pips|1|off}} || {{pips|1|def}} || 3
+|-
+| 1 || style="text-align:left" | 印度骑兵 ||  ||  ||  || {{pips|1|def}} || {{pips|1|off}} || {{pips|1|def}} || 3
+|-
+| 6 || style="text-align:left" | 印度弓骑兵 ||  ||  || {{pips|2|off}} || {{pips|2|def}} || {{pips|1|off}} || {{pips|1|def}} || 6
+|-
+| 10 || style="text-align:left" | 曼萨布达尔骑兵 || {{pips|1|off}} ||  || {{pips|3|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|2|def}} || 10
+|-
+| 14 || style="text-align:left" | 戴菲特骑兵 || {{pips|2|off}} ||  || {{pips|2|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|2|def}} || 12
+|-
+| 17 || style="text-align:left" | 马拉塔游击骑兵 ||  || {{pips|2|def}} || {{pips|4|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|2|def}} || 14
+|-
+| 23 || style="text-align:left" | 德干轻骑兵 || {{pips|1|off}} || {{pips|1|def}} || {{pips|4|off}} || {{pips|3|def}} || {{pips|4|off}} || {{pips|3|def}} || 16
+|-
+| 28 || style="text-align:left" | 迈索尔轻骑兵 || {{pips|2|off}} || {{pips|1|def}} || {{pips|4|off}} || {{pips|4|def}} || {{pips|3|off}} || {{pips|4|def}} || 18
+|-
+| 28 || style="text-align:left" | 瑟瓦尔骑兵 || {{pips|1|off}} || {{pips|2|def}} || {{pips|4|off}} || {{pips|4|def}} || {{pips|4|off}} || {{pips|3|def}} || 18
+|}
+
+=== {{icon|West African}} 非洲兵种组 ===
+{{SVersion|1.35}}
+'''注：'''此兵种组由 {{icon|Central African}} 中非科技组、{{icon|East African}} 东非科技组以及 {{icon|West African}} 西非科技组共同使用。
+
+{| class="wikitable sortable mw-datatable" style="text-align:center"
+! rowspan=2 | {{icon|mil tech}} 军事科技 !! width="225px" rowspan=2 | {{icon|infantry|40px}} 兵种名称
+! colspan=2 style="background-color: #00bfff;" | {{icon|fire}} 火力 !! colspan=2 style="background-color: #ff6a6a;" | {{icon|shock}} 冲击 !! colspan=2 style="background-color: #caff70;" | {{icon|land morale}} 士气 !! rowspan=2 | 属性点数&lt;br>合计
+|-
+! 攻击 !! 防御 !! 攻击 !! 防御 !! 攻击 !! 防御
+|-
+| 1 || style="text-align:left" | 非洲棍兵 ||  ||  || {{pips|1|off}} ||  || {{pips|1|off}} || {{pips|1|def}} || 3
+|-
+| 1 || style="text-align:left" | 非洲矛兵 ||  ||  ||  || {{pips|1|def}} || {{pips|1|off}} || {{pips|1|def}} || 3
+|-
+| 5 || style="text-align:left" | 中非战士 ||  ||  || {{pips|1|off}} || {{pips|1|def}} || {{pips|2|off}} || {{pips|2|def}} || 6
+|-
+| 5 || style="text-align:left" | 北非战士 ||  ||  || {{pips|2|off}} || {{pips|2|def}} || {{pips|1|off}} || {{pips|1|def}} || 6
+|-
+| 5 || style="text-align:left" | 南非战士 ||  ||  || {{pips|2|off}} || {{pips|1|def}} || {{pips|2|off}} || {{pips|1|def}} || 6
+|-
+| 5 || style="text-align:left" | 西非战士 ||  ||  || {{pips|1|off}} || {{pips|2|def}} || {{pips|1|off}} || {{pips|2|def}} || 6
+|-
+| 12 || style="text-align:left" | 非洲森林战士 || {{pips|1|off}} || {{pips|1|def}} || {{pips|2|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|2|def}} || 10
+|-
+| 12 || style="text-align:left" | 非洲高地战士 || {{pips|2|off}} || {{pips|1|def}} || {{pips|1|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|2|def}} || 10
+|-
+| 12 || style="text-align:left" | 非洲山地战士 || {{pips|1|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|2|def}} || {{pips|1|off}} || {{pips|2|def}} || 10
+|-
+| 12 || style="text-align:left" | 非洲平原战士 || {{pips|2|off}} || {{pips|1|def}} || {{pips|2|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|1|def}} || 10
+|-
+| 15 || style="text-align:left" | 中非滑膛枪兵 || {{pips|3|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|2|def}} || 13
+|-
+| 15 || style="text-align:left" | 东非滑膛枪兵 || {{pips|2|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|3|def}} || 13
+|-
+| 15 || style="text-align:left" | 北非滑膛枪兵 || {{pips|2|off}} || {{pips|3|def}} || {{pips|2|off}} || {{pips|3|def}} || {{pips|1|off}} || {{pips|2|def}} || 13
+|-
+| 15 || style="text-align:left" | 南非滑膛枪兵 || {{pips|3|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|1|def}} || 13
+|-
+| 23 || style="text-align:left" | 中非滑膛枪兵 || {{pips|3|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|2|def}} || 15
+|-
+| 23 || style="text-align:left" | 东非游击步兵 || {{pips|3|off}} || {{pips|3|def}} || {{pips|2|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|3|def}} || 15
+|-
+| 23 || style="text-align:left" | 北非游击步兵 || {{pips|2|off}} || {{pips|3|def}} || {{pips|2|off}} || {{pips|3|def}} || {{pips|2|off}} || {{pips|3|def}} || 15
+|-
+| 26 || style="text-align:left" | 西式中非步兵 || {{pips|3|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|3|def}} || {{pips|4|off}} || {{pips|3|def}} || 19
+|-
+| 26 || style="text-align:left" | 西式东非步兵 || {{pips|4|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|2|def}} || {{pips|4|off}} || {{pips|3|def}} || 19
+|-
+| 26 || style="text-align:left" | 西式北非步兵 || {{pips|3|off}} || {{pips|4|def}} || {{pips|2|off}} || {{pips|4|def}} || {{pips|3|off}} || {{pips|3|def}} || 19
+|-
+| 26 || style="text-align:left" | 西式南非步兵 || {{pips|4|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|3|def}} || 19
+|-
+| 30 || style="text-align:left" | 西非特许步兵 || {{pips|4|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|4|def}} || 20
+|}
+{{clear}}
+{| class="wikitable sortable mw-datatable" style="text-align:center"
+! rowspan=2 | {{icon|mil tech}} 军事科技 !! width="225px" rowspan=2 | {{icon|cavalry|40px}} 兵种名称
+! colspan=2 style="background-color: #00bfff;" | {{icon|fire}} 火力 !! colspan=2 style="background-color: #ff6a6a;" | {{icon|shock}} 冲击 !! colspan=2 style="background-color: #caff70;" | {{icon|land morale}} 士气 !! rowspan=2 | 属性点数&lt;br>合计
+|-
+! 攻击 !! 防御 !! 攻击 !! 防御 !! 攻击 !! 防御
+|-
+| 1 || style="text-align:left" | 阿比西尼亚轻骑兵 ||  ||  || {{pips|1|off}} || {{pips|1|def}} || {{pips|2|off}} ||  || 4
+|-
+| 1 || style="text-align:left" | 曼德卡路骑兵 ||  ||  || {{pips|1|off}} || {{pips|1|def}} || {{pips|1|off}} || {{pips|1|def}} || 4
+|-
+| 6 || style="text-align:left" | 索马里轻骑兵 ||  ||  || {{pips|2|off}} || {{pips|1|def}} || {{pips|1|off}} || {{pips|2|def}} || 6
+|-
+| 6 || style="text-align:left" | 图阿雷格骑兵 ||  ||  || {{pips|2|off}} || {{pips|1|def}} || {{pips|2|off}} || {{pips|1|def}} || 6
+|-
+| 10 || style="text-align:left" | 阿比西尼亚甲胄骑兵 ||  ||  || {{pips|3|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|2|def}} || 10
+|-
+| 10 || style="text-align:left" | 莫西骑兵 ||  ||  || {{pips|2|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|3|def}} || 10
+|-
+| 14 || style="text-align:left" | 非洲骠骑兵 || {{pips|1|off}} ||  || {{pips|3|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|3|def}} || 12
+|-
+| 17 || style="text-align:left" | 非洲密袭骑兵 ||  || {{pips|1|def}} || {{pips|4|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|2|def}} || 13
+|-
+| 23 || style="text-align:left" | 非洲龙骑兵 || {{pips|1|off}} || {{pips|1|def}} || {{pips|3|off}} || {{pips|3|def}} || {{pips|4|off}} || {{pips|4|def}} || 16
+|-
+| 28 || style="text-align:left" | 非洲胸甲骑兵 || {{pips|1|off}} || {{pips|1|def}} || {{pips|4|off}} || {{pips|4|def}} || {{pips|4|off}} || {{pips|4|def}} || 18
+|}
+
+=== {{icon|Polynesian}} 波利尼西亚兵种组 ===
+{{SVersion|1.35}}
+{| class="wikitable sortable mw-datatable" style="text-align:center"
+! rowspan=2 | {{icon|mil tech}} 军事科技 !! width="225px" rowspan=2 | {{icon|Infantry|40px}} 兵种名称
+! colspan=2 style="background-color: #00bfff;" | {{icon|fire}} 火力 !! colspan=2 style="background-color: #ff6a6a;" | {{icon|shock}} 冲击 !! colspan=2 style="background-color: #caff70;" | {{icon|land morale}} 士气 !! rowspan=2 | 属性点数&lt;br>合计
+|-
+! 攻击 !! 防御 !! 攻击 !! 防御 !! 攻击 !! 防御
+|-
+|1级 
+| style="text-align:left" | 波利尼西亚矛兵 ||  ||  ||  || {{pips|1|def}} ||  || {{pips|2|def}} || 3
+|-
+|5级 
+| style="text-align:left" | 改良波利尼西亚矛兵 ||  ||  || {{pips|1|off}} || {{pips|1|def}} || {{pips|1|off}} || {{pips|2|def}} || 5
+|-
+|10级 
+| style="text-align:left" | 波利尼西亚岛屿战士 ||  ||  || {{pips|1|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|3|def}} || 8
+|-
+|14级 
+| style="text-align:left" | 波利尼西亚火绳枪兵 || {{pips|1|off}} || {{pips|2|def}} || {{pips|1|off}} || {{pips|3|def}} || {{pips|2|off}} || {{pips|3|def}} || 12
+|-
+|19级 
+| style="text-align:left" | 波利尼西亚来复枪兵 || {{pips|3|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|2|def}} || 14
+|-
+|26级 
+| style="text-align:left" | 波利尼西亚游击步兵 || {{pips|4|off}} || {{pips|3|def}} || {{pips|4|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|3|def}} || 20
+|}
+{{clear}}
+{| class="wikitable sortable mw-datatable" style="text-align:center"
+! rowspan=2 | {{icon|mil tech}} 军事科技 !! width="225px" rowspan=2 | {{icon|cavalry|40px}} 兵种名称
+! colspan=2 style="background-color: #00bfff;" | {{icon|fire}} 火力 !! colspan=2 style="background-color: #ff6a6a;" | {{icon|shock}} 冲击 !! colspan=2 style="background-color: #caff70;" | {{icon|land morale}} 士气 !! rowspan=2 | 属性点数&lt;br>合计
+|-
+! 攻击 !! 防御 !! 攻击 !! 防御 !! 攻击 !! 防御
+|-
+|6级 
+| style="text-align:left" | 波利尼西亚骑手 ||  ||  || {{pips|2|off}} || {{pips|1|def}} || {{pips|1|off}} || {{pips|1|def}} || 5
+|-
+|10级 
+| style="text-align:left" | 波利尼西亚骑兵 ||  || {{pips|1|def}} || {{pips|3|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|2|def}} || 10
+|-
+|14级 
+| style="text-align:left" | 波利尼西亚骠骑兵 || {{pips|1|off}} || {{pips|1|def}} || {{pips|3|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|2|def}} || 12
+|-
+|18级 
+| style="text-align:left" | 波利尼西亚密袭骑兵 || {{pips|1|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|2|def}} || 14
+|-
+|23级 
+| style="text-align:left" | 波利尼西亚龙骑兵 || {{pips|2|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|3|def}} || {{pips|4|off}} || {{pips|4|def}} || 18
+|}
+
+=== {{icon|Aboriginal}} 澳洲原住民兵种组 ===
+{{SVersion|1.35}}
+{| class="wikitable sortable mw-datatable" style="text-align:center"
+! rowspan=2 | {{icon|mil tech}} 军事科技 !! width="225px" rowspan=2 | {{icon|Infantry|40px}} 兵种名称
+! colspan=2 style="background-color: #00bfff;" | {{icon|fire}} 火力 !! colspan=2 style="background-color: #ff6a6a;" | {{icon|shock}} 冲击 !! colspan=2 style="background-color: #caff70;" | {{icon|land morale}} 士气 !! rowspan=2 | 属性点数&lt;br>合计
+|-
+! 攻击 !! 防御 !! 攻击 !! 防御 !! 攻击 !! 防御
+|-
+|1级 
+| style="text-align:left" | 澳洲原住民矛兵 ||  ||  || {{pips|2|off}} ||  || {{pips|1|off}} ||  || 3
+|-
+|1级 
+| style="text-align:left" | 回旋镖猎手 ||  ||  ||  || {{pips|1|def}} ||  || {{pips|2|def}} || 3
+|-
+|5级 
+| style="text-align:left" | 澳洲原住民伏击手 ||  ||  || {{pips|1|off}} || {{pips|2|def}} || {{pips|1|off}} || {{pips|1|def}} || 5
+|-
+|5级 
+| style="text-align:left" | 仪式战士 ||  ||  || {{pips|2|off}} || {{pips|2|def}} || {{pips|1|off}} ||  || 5
+|-
+|5级 
+| style="text-align:left" | 改良回旋镖战士 ||  ||  || {{pips|1|off}} || {{pips|1|def}} || {{pips|1|off}} || {{pips|2|def}} || 5
+|-
+|10级 
+| style="text-align:left" | 内陆战士 ||  ||  || {{pips|1|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|3|def}} || 8
+|-
+|14级 
+| style="text-align:left" | 伏击火绳枪兵 || {{pips|1|off}} || {{pips|2|def}} || {{pips|1|off}} || {{pips|3|def}} || {{pips|2|off}} || {{pips|3|def}} || 12
+|-
+|14级 
+| style="text-align:left" | 攻击火绳枪兵 || {{pips|2|off}} || {{pips|1|def}} || {{pips|3|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|2|def}} || 12
+|-
+|19级 
+| style="text-align:left" | 边疆来复枪兵 || {{pips|3|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|2|def}} || 14
+|-
+|26级 
+| style="text-align:left" | 黑色战争步兵 || {{pips|4|off}} || {{pips|3|def}} || {{pips|4|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|3|def}} || 20
+|}
+{{clear}}
+{| class="wikitable sortable mw-datatable" style="text-align:center"
+! rowspan=2 | {{icon|mil tech}} 军事科技 !! width="225px" rowspan=2 | {{icon|cavalry|40px}} 兵种名称
+! colspan=2 style="background-color: #00bfff;" | {{icon|fire}} 火力 !! colspan=2 style="background-color: #ff6a6a;" | {{icon|shock}} 冲击 !! colspan=2 style="background-color: #caff70;" | {{icon|land morale}} 士气 !! rowspan=2 | 属性点数&lt;br>合计
+|-
+! 攻击 !! 防御 !! 攻击 !! 防御 !! 攻击 !! 防御
+|-
+|6级 
+| style="text-align:left" | 澳洲原住民骑手 ||  ||  || {{pips|2|off}} || {{pips|1|def}} || {{pips|1|off}} || {{pips|1|def}} || 5
+|-
+|10级 
+| style="text-align:left" | 澳洲原住民骑兵 ||  || {{pips|1|def}} || {{pips|3|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|2|def}} || 10
+|-
+|14级 
+| style="text-align:left" | 澳洲原住民骠骑兵 || {{pips|1|off}} || {{pips|1|def}} || {{pips|3|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|2|def}} || 12
+|-
+|18级 
+| style="text-align:left" | 澳洲原住民密袭骑兵 || {{pips|1|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|2|def}} || 14
+|-
+|23级 
+| style="text-align:left" | 澳洲原住民龙骑兵 || {{pips|2|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|3|def}} || {{pips|4|off}} || {{pips|4|def}} || 18
+|}
+
+=== {{icon|North American}} 北美洲兵种组 ===
+{{SVersion|1.35}}
+{| class="wikitable sortable mw-datatable" style="text-align:center"
+! rowspan=2 | {{icon|mil tech}} 军事科技 !! width="225px" rowspan=2 | {{icon|infantry|40px}} 兵种名称
+! colspan=2 style="background-color: #00bfff;" | {{icon|fire}} 火力 !! colspan=2 style="background-color: #ff6a6a;" | {{icon|shock}} 冲击 !! colspan=2 style="background-color: #caff70;" | {{icon|land morale}} 士气 !! rowspan=2 | 属性点数&lt;br>合计
+|-
+! 攻击 !! 防御 !! 攻击 !! 防御 !! 攻击 !! 防御
+|-
+| 1 || style="text-align:left" | 棍棒兵 ||  ||  || {{pips|1|off}} ||  || {{pips|1|off}} || {{pips|1|def}} || 3
+|-
+| 1 || style="text-align:left" | 美洲原住民弓箭手 ||  ||  ||  || {{pips|1|def}} || {{pips|1|off}} || {{pips|1|def}} || 3
+|-
+| 5 || style="text-align:left" | 阿尔冈昆斧兵 ||  ||  ||  || {{pips|1|def}} || {{pips|2|off}} || {{pips|1|def}} || 4
+|-
+| 5 || style="text-align:left" | 伏击步兵 ||  ||  || {{pips|1|off}} ||  || {{pips|2|off}} || {{pips|1|def}} || 4
+|-
+| 5 || style="text-align:left" | 美洲平原战士 ||  ||  || {{pips|1|off}} || {{pips|1|def}} || {{pips|1|off}} || {{pips|1|def}} || 4
+|-
+| 10 || style="text-align:left" | 美洲原住民山地战士 || {{pips|1|off}} || {{pips|1|def}} || {{pips|1|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|1|def}} || 8
+|-
+| 14 || style="text-align:left" | 克里克火绳枪兵 || {{pips|2|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|2|def}} || 12
+|-
+| 14 || style="text-align:left" | 美洲原住民火绳枪兵 || {{pips|2|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|1|def}} || {{pips|3|off}} || {{pips|2|def}} || 12
+|-
+| 19 || style="text-align:left" | 来复枪侦查步兵 || {{pips|3|off}} || {{pips|3|def}} || {{pips|2|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|2|def}} || 14
+|-
+| 26 || style="text-align:left" | 北美游击步兵 || {{pips|4|off}} || {{pips|3|def}} || {{pips|2|off}} || {{pips|4|def}} || {{pips|3|off}} || {{pips|3|def}} || 19
+|-
+| 30 || style="text-align:left" | 西式美洲步兵 || {{pips|4|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|3|def}} || {{pips|4|off}} || {{pips|3|def}} || 20
+|}
+{{clear}}
+{| class="wikitable sortable mw-datatable" style="text-align:center"
+! rowspan=2 | {{icon|mil tech}} 军事科技 !! width="225px" rowspan=2 | {{icon|cavalry|40px}} 兵种名称&lt;ref name="names">所有美洲科技组（除 {{icon|High American}} 高等美洲科技组外）的骑兵单位属性点数完全一致，仅有兵种名称不同。&lt;/ref>
+
+! colspan=2 style="background-color: #00bfff;" | {{icon|fire}} 火力 !! colspan=2 style="background-color: #ff6a6a;" | {{icon|shock}} 冲击 !! colspan=2 style="background-color: #caff70;" | {{icon|land morale}} 士气 !! rowspan=2 | 属性点数&lt;br>合计
+|-
+! 攻击 !! 防御 !! 攻击 !! 防御 !! 攻击 !! 防御
+|-
+| 6 || style="text-align:left" | 北美骑手 ||  ||  || {{pips|2|off}} || {{pips|1|def}} || {{pips|1|off}} || {{pips|1|def}} || 5
+|-
+| 10 || style="text-align:left" | 北美骑兵 ||  || {{pips|1|def}} || {{pips|3|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|2|def}} || 10
+|-
+| 14 || style="text-align:left" | 北美骠骑兵 || {{pips|1|off}} || {{pips|1|def}} || {{pips|3|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|2|def}} || 12
+|-
+| 19 || style="text-align:left" | 北美密袭骑兵 || {{pips|1|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|2|def}} || 14
+|-
+| 23 || style="text-align:left" | 北美龙骑兵 || {{pips|2|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|3|def}} || {{pips|4|off}} || {{pips|4|def}} || 18
+|}
+
+=== {{icon|Mesoamerican}} 中美洲兵种组 ===
+{{SVersion|1.35}}
+{| class="wikitable sortable mw-datatable" style="text-align:center"
+! rowspan=2 | {{icon|mil tech}} 军事科技 !! width="225px" rowspan=2 | {{icon|infantry|40px}} 兵种名称
+! colspan=2 style="background-color: #00bfff;" | {{icon|fire}} 火力 !! colspan=2 style="background-color: #ff6a6a;" | {{icon|shock}} 冲击 !! colspan=2 style="background-color: #caff70;" | {{icon|land morale}} 士气 !! rowspan=2 | 属性点数&lt;br>合计
+|-
+! 攻击 !! 防御 !! 攻击 !! 防御 !! 攻击 !! 防御
+|-
+| 1 || style="text-align:left" | 中美洲矛兵 ||  ||  || {{pips|1|off}} ||  || {{pips|1|off}} || {{pips|1|def}} || 3
+|-
+| 5 || style="text-align:left" | 美洲森林战士 ||  ||  || {{pips|1|off}} || {{pips|1|def}} || {{pips|1|off}} || {{pips|1|def}} || 4
+|-
+| 5 || style="text-align:left" | 美洲山地战士 ||  ||  ||  || {{pips|2|def}} || {{pips|1|off}} || {{pips|1|def}} || 4
+|-
+| 5 || style="text-align:left" | 美洲平原战士 ||  ||  || {{pips|1|off}} ||  || {{pips|2|off}} || {{pips|1|def}} || 4
+|-
+| 10 || style="text-align:left" | 改良美洲森林战士 ||  ||  || {{pips|2|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|2|def}} || 8
+|-
+| 10 || style="text-align:left" | 改良美洲山地战士 ||  ||  || {{pips|3|off}} || {{pips|1|def}} || {{pips|2|off}} || {{pips|2|def}} || 8
+|-
+| 10 || style="text-align:left" | 改良美洲平原战士 ||  ||  || {{pips|1|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|2|def}} || 8
+|-
+| 14 || style="text-align:left" | 美洲森林滑膛枪兵 || {{pips|2|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|2|def}} || 12
+|-
+| 14 || style="text-align:left" | 美洲山地滑膛枪兵 || {{pips|2|off}} || {{pips|1|def}} || {{pips|3|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|2|def}} || 12
+|-
+| 14 || style="text-align:left" | 美洲攻击滑膛枪兵 || {{pips|2|off}} || {{pips|1|def}} || {{pips|1|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|3|def}} || 12
+|-
+| 19 || style="text-align:left" | 美洲游击步兵 || {{pips|3|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|2|def}} || 14
+|-
+| 19 || style="text-align:left" | 中美洲游击步兵 || {{pips|2|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|3|def}} || 14
+|-
+| 26 || style="text-align:left" | 西式美洲山地步兵 || {{pips|3|off}} || {{pips|4|def}} || {{pips|2|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|4|def}} || 19
+|-
+| 26 || style="text-align:left" | 西式美洲平原步兵|| {{pips|4|off}} || {{pips|3|def}} || {{pips|4|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|2|def}} || 19
+|-
+| 30 || style="text-align:left" | 西式中美步兵 || {{pips|4|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|4|def}} || 20
+|}
+{{clear}}
+{| class="wikitable sortable mw-datatable" style="text-align:center"
+! rowspan=2 | {{icon|mil tech}} 军事科技 !! width="225px" rowspan=2 | {{icon|cavalry|40px}} 兵种名称&lt;ref name="names"/>
+! colspan=2 style="background-color: #00bfff;" | {{icon|fire}} 火力 !! colspan=2 style="background-color: #ff6a6a;" | {{icon|shock}} 冲击 !! colspan=2 style="background-color: #caff70;" | {{icon|land morale}} 士气 !! rowspan=2 | 属性点数&lt;br>合计
+|-
+! 攻击 !! 防御 !! 攻击 !! 防御 !! 攻击 !! 防御
+|-
+| 6 || style="text-align:left" | 中美骑手 ||  ||  || {{pips|2|off}} || {{pips|1|def}} || {{pips|1|off}} || {{pips|1|def}} || 5
+|-
+| 10 || style="text-align:left" | 中美骑兵 ||  || {{pips|1|def}} || {{pips|3|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|2|def}} || 10
+|-
+| 14 || style="text-align:left" | 中美骠骑兵 || {{pips|1|off}} || {{pips|1|def}} || {{pips|3|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|2|def}} || 12
+|-
+| 19 || style="text-align:left" | 中美密袭骑兵 || {{pips|1|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|2|def}} || 14
+|-
+| 23 || style="text-align:left" | 中美龙骑兵 || {{pips|2|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|3|def}} || {{pips|4|off}} || {{pips|4|def}} || 18
+|}
+
+=== {{icon|South American}} 南美洲兵种组 ===
+{{SVersion|1.30}}
+'''注：'''此兵种组也与 {{icon|Andean}} 安第斯科技组共享使用。
+
+{| class="wikitable sortable mw-datatable" style="text-align:center"
+! rowspan=2 | {{icon|mil tech}} 军事科技 !! width="225px" rowspan=2 | {{icon|infantry|40px}} 兵种名称
+! colspan=2 style="background-color: #00bfff;" | {{icon|fire}} 火力 !! colspan=2 style="background-color: #ff6a6a;" | {{icon|shock}} 冲击 !! colspan=2 style="background-color: #caff70;" | {{icon|land morale}} 士气 !! rowspan=2 | 属性点数&lt;br>合计
+|-
+! 攻击 !! 防御 !! 攻击 !! 防御 !! 攻击 !! 防御
+|-
+| 1 || style="text-align:left" | 美洲山地战士 ||  ||  ||  || {{pips|1|def}} || {{pips|1|off}} || {{pips|1|def}} || 3
+|-
+| 1 || style="text-align:left" | 南美矛兵 ||  ||  || {{pips|1|off}} || {{pips|1|def}} || {{pips|1|off}} ||  || 3
+|-
+| 5 || style="text-align:left" | 印加斧兵 ||  ||  || {{pips|1|off}} ||  || {{pips|2|off}} || {{pips|1|def}} || 4
+|-
+| 5 || style="text-align:left" | 印加投石兵 ||  ||  || {{pips|2|off}} || {{pips|1|def}} || {{pips|1|off}} ||  || 4
+|-
+| 5 || style="text-align:left" | 改良美洲山地战士 ||  ||  ||  || {{pips|2|def}} ||  || {{pips|2|def}} || 4
+|-
+| 5 || style="text-align:left" | 南美丛林战士 ||  ||  || {{pips|1|off}} || {{pips|1|def}} || {{pips|1|off}} || {{pips|1|def}} || 4
+|-
+| 10 || style="text-align:left" | 美洲防御滑膛枪兵 || {{pips|1|off}} || {{pips|1|def}} || {{pips|1|off}} || {{pips|2|def}} || {{pips|1|off}} || {{pips|2|def}} || 8
+|-
+| 10 || style="text-align:left" | 南美火绳枪兵 || {{pips|1|off}} || {{pips|2|def}} || {{pips|1|off}} || {{pips|1|def}} || {{pips|2|off}} || {{pips|1|def}} || 8
+|-
+| 14 || style="text-align:left" | 改良美洲滑膛枪兵 || {{pips|2|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|2|def}} || 12
+|-
+| 19 || style="text-align:left" | 印加游击步兵 || {{pips|2|off}} || {{pips|3|def}} || {{pips|2|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|3|def}} || 14
+|-
+| 19 || style="text-align:left" | 南美游击步兵 || {{pips|2|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|3|def}} || 14
+|-
+| 26 || style="text-align:left" | 西式印加步兵 || {{pips|4|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|3|def}} || 19
+|-
+| 26 || style="text-align:left" | 西式南美步兵 || {{pips|3|off}} || {{pips|4|def}} || {{pips|2|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|4|def}} || 19
+|-
+| 30 || style="text-align:left" | 改良西式印加步兵 || {{pips|4|off}} || {{pips|4|def}} || {{pips|3|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|3|def}} || 20
+|}
+{{clear}}
+{| class="wikitable sortable mw-datatable" style="text-align:center"
+! rowspan=2 | {{icon|mil tech}} 军事科技 !! width="225px" rowspan=2 | {{icon|cavalry|40px}} 兵种名称&lt;ref name="names"/>
+! colspan=2 style="background-color: #00bfff;" | {{icon|fire}} 火力 !! colspan=2 style="background-color: #ff6a6a;" | {{icon|shock}} 冲击 !! colspan=2 style="background-color: #caff70;" | {{icon|land morale}} 士气 !! rowspan=2 | 属性点数&lt;br>合计
+|-
+! 攻击 !! 防御 !! 攻击 !! 防御 !! 攻击 !! 防御
+|-
+| 6 || style="text-align:left" | 南美骑手 ||  ||  || {{pips|2|off}} || {{pips|1|def}} || {{pips|1|off}} || {{pips|1|def}} || 5
+|-
+| 10 || style="text-align:left" | 南美骑兵 ||  || {{pips|1|def}} || {{pips|3|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|2|def}} || 10
+|-
+| 14 || style="text-align:left" | 南美骠骑兵 || {{pips|1|off}} || {{pips|1|def}} || {{pips|3|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|2|def}} || 12
+|-
+| 19 || style="text-align:left" | 南美密袭骑兵 || {{pips|1|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|2|def}} || 14
+|-
+| 23 || style="text-align:left" | 南美龙骑兵 || {{pips|2|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|3|def}} || {{pips|4|off}} || {{pips|4|def}} || 18
+|}
+
+=== {{icon|High American}} 高等美洲兵种组 ===
+{{SVersion|1.35}}
+高等美洲科技组、兵种组通常情况下不会在游戏中出现。在不开启随机新大陆、自定义国家或转档器时，首都位于北美洲、南美洲或者随机新世界，'''且'''科技组为 {{icon|north american}} 北美、 {{icon|mesoamerican}} 中美、 {{icon|south american}} 南美或 {{icon|andean}} 安第斯科技组的国家可以通过完成[[新世界任务]]“日落入侵”，将科技组、兵种组变更为 {{icon|High american}} 高等美洲。
+
+除此之外，高等美洲科技组/兵种组国家可以通过如下方式在游戏中出现：
+* 在随机新大陆中启用“幻想元素”选项后，随机产生拥有高等美洲科技组的国家（需要DLC {{icon|cop}} 征服天堂）；
+* 在自定义国家选项中使用高等美洲科技组；
+* 从启用“日落入侵”DLC的[[十字军之王2]]转档。
+
+{| class="wikitable sortable mw-datatable" style="text-align:center"
+! rowspan=2 | {{icon|mil tech}} 军事科技 !! width="225px" rowspan=2 | {{icon|infantry|40px}} 兵种名称
+! colspan=2 style="background-color: #00bfff;" | {{icon|fire}} 火力 !! colspan=2 style="background-color: #ff6a6a;" | {{icon|shock}} 冲击 !! colspan=2 style="background-color: #caff70;" | {{icon|land morale}} 士气 !! rowspan=2 | 属性点数&lt;br>合计
+|-
+! 攻击 !! 防御 !! 攻击 !! 防御 !! 攻击 !! 防御
+|-
+| 1 || style="text-align:left" | 火女神战士 || {{pips|1|off}} || {{pips|1|def}} ||  || {{pips|1|def}} || {{pips|1|off}} ||  || 4
+|-
+| 5 || style="text-align:left" | 改良火女神战士 || {{pips|2|off}} || {{pips|1|def}} || {{pips|1|off}} || {{pips|1|def}} || {{pips|2|off}} ||  || 7
+|-
+| 9 || style="text-align:left" | 火神战士 || {{pips|3|off}} || {{pips|2|def}} || {{pips|1|off}} || {{pips|1|def}} || {{pips|3|off}} || {{pips|2|def}} || 12
+|-
+| 12 || style="text-align:left" | 火神步兵 || {{pips|3|off}} || {{pips|3|def}} || {{pips|2|off}} || {{pips|1|def}} || {{pips|4|off}} || {{pips|3|def}} || 16
+|-
+| 18 || style="text-align:left" | 雷神步兵 || {{pips|3|off}} || {{pips|3|def}} || {{pips|2|off}} || {{pips|2|def}} || {{pips|4|off}} || {{pips|3|def}} || 17
+|-
+| 23 || style="text-align:left" | 外国风步兵 || {{pips|4|off}} || {{pips|3|def}} || {{pips|2|off}} || {{pips|2|def}} || {{pips|4|off}} || {{pips|3|def}} || 18
+|-
+| 26 || style="text-align:left" | 改良外国风步兵 || {{pips|4|off}} || {{pips|4|def}} || {{pips|3|off}} || {{pips|3|def}} || {{pips|4|off}} || {{pips|3|def}} || 21
+|-
+| 30 || style="text-align:left" | 改良雷神步兵 || {{pips|4|off}} || {{pips|4|def}} || {{pips|4|off}} || {{pips|3|def}} || {{pips|4|off}} || {{pips|3|def}} || 22
+|}
+{{clear}}
+{| class="wikitable sortable mw-datatable" style="text-align:center"
+! rowspan=2 | {{icon|mil tech}} 军事科技 !! width="225px" rowspan=2 | {{icon|cavalry|40px}} 兵种名称
+! colspan=2 style="background-color: #00bfff;" | {{icon|fire}} 火力 !! colspan=2 style="background-color: #ff6a6a;" | {{icon|shock}} 冲击 !! colspan=2 style="background-color: #caff70;" | {{icon|land morale}} 士气 !! rowspan=2 | 属性点数&lt;br>合计
+|-
+! 攻击 !! 防御 !! 攻击 !! 防御 !! 攻击 !! 防御
+|-
+| 6 || style="text-align:left" | 美洲骑手 || {{pips|1|off}} ||  || {{pips|2|off}} || {{pips|1|def}} || {{pips|1|off}} || {{pips|1|def}} || 6
+|-
+| 10 || style="text-align:left" | 火神骑兵 || {{pips|2|off}} || {{pips|1|def}} || {{pips|3|off}} || {{pips|2|def}} || {{pips|2|off}} || {{pips|2|def}} || 12
+|-
+| 14 || style="text-align:left" | 美洲骠骑兵 || {{pips|2|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|2|def}} || 14
+|-
+| 19 || style="text-align:left" | 美洲密袭骑兵 || {{pips|3|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|3|def}} || {{pips|3|off}} || {{pips|2|def}} || 16
+|-
+| 23 || style="text-align:left" | 美洲龙骑兵 || {{pips|4|off}} || {{pips|2|def}} || {{pips|3|off}} || {{pips|3|def}} || {{pips|4|off}} || {{pips|4|def}} || 20
+|}
+
+== 不同科技等级下的最强组别 ==
+{{SVersion|1.31}}
+'''注：''' 为了避免混乱部分组别使用同一个图标来代表：
+# {{icon|North American}}{{green|北美组}}也同时代表了 {{icon|Andean}}{{green|安第斯组}}、{{icon|Mesoamerican}}{{green|中美组}}和 {{icon|South American}}{{green|南美组}}；
+# {{icon|West African}}{{green|西非组}}也同时代表了 {{icon|Central African}}{{green|中非组}}和 {{icon|East African}}{{green|东非组}}；
+# {{icon|High American}}{{red|高等美洲组}}从头至尾都是当之无愧的最强兵种组，但其并不会出现在绝大多数的游戏当中，故于下表省略。
+# {{icon|Eastern}}{{red|东方}}的骑兵在28级科技组前都是没有任何火力攻击点数的，而火力攻击点数对骑兵的价值微乎其微，因而在仅由点数和进行的排名中，东方骑兵的强度并不能得到完全的体现。也正因此，{{icon|High American}}{{red|高等美洲组}}的骑兵要比看上去的要弱得多。
+&lt;div class="col-sm-4 col-xs-12">
+; 步兵
+{| class="wikitable" style="text-align:right"
+! {{icon|mil tech}} 军事科技 !! 最强的[[科技组]]
+|-
+| 1−4 级 || {{icon|Nomad}}{{red|游牧}}
+|-
+| 5−8 级 || {{icon|West African}}{{red|西非}} {{icon|Aboriginal}}{{red|澳洲原住民}} {{icon|Polynesian}}{{red|波利尼西亚}} 
+|-
+| 9 级 || {{icon|Muslim}}{{red|穆斯林}} {{icon|Anatolian}}{{red|安纳托利亚}} {{icon|Indian}}{{red|印度}}
+|-
+| 10−11 级 || {{icon|North American}}{{red|北美}} {{icon|Aboriginal}}{{red|澳洲原住民}} {{icon|Polynesian}}{{red|波利尼西亚}} 
+|-
+| 12−13 级 || {{icon|Anatolian}}{{red|安纳托利亚}}
+|-
+| 14 级 || {{icon|Anatolian}}{{red|安纳托利亚}} {{icon|North American}}{{red|北美}} {{icon|Aboriginal}}{{red|澳洲原住民}} {{icon|Polynesian}}{{red|波利尼西亚}} 
+|-
+| 15−17 级 || {{icon|Muslim}}{{red|穆斯林}} {{icon|Chinese}}{{red|中华}} {{icon|West African}}{{red|西非}}
+|-
+| 18 级 || {{icon|Indian}}{{red|印度}}
+|-
+| 19−22 级 || {{icon|Aboriginal}}{{red|澳洲原住民}} {{icon|Polynesian}}{{red|波利尼西亚}} 
+|-
+| 23−25 级 || {{icon|Muslim}}{{red|穆斯林}} {{icon|Eastern}}{{red|东方}} {{icon|Indian}}{{red|印度}} {{icon|Western}}{{red|西方}} {{icon|Aboriginal}}{{red|澳洲原住民}} {{icon|Polynesian}}{{red|波利尼西亚}} 
+|-
+| 26−29 级 || {{icon|Aboriginal}}{{red|澳洲原住民}} {{icon|Polynesian}}{{red|波利尼西亚}} 
+|-
+| 30−32 级 || {{icon|Western}}{{red|西方}} {{icon|Aboriginal}}{{red|澳洲原住民}} {{icon|Polynesian}}{{red|波利尼西亚}} 
+|}&lt;/div>
+&lt;div class="col-sm-6 col-xs-12">
+; 骑兵
+{| class="wikitable" style="text-align:right"
+! {{icon|mil tech}} 军事科技 !! 最强的[[科技组]]
+|-
+| 1-5 级 || {{icon|Nomad}}{{red|游牧}}
+|-
+| 6-9 级 || {{icon|Chinese}}{{red|中华}} {{icon|Anatolian}}{{red|安纳托利亚}} {{icon|Muslim}}{{red|穆斯林}} {{icon|West African}}{{red|西非}} {{icon|Indian}}{{red|印度}} {{icon|Nomad}}{{red|游牧}}
+|-
+| 10-13 级 || {{icon|Anatolian}}{{red|安纳托利亚}} {{icon|North American}}{{red|北美}} {{icon|West African}}{{red|西非}} {{icon|Indian}}{{red|印度}} {{icon|Nomad}}{{red|游牧}} {{icon|Aboriginal}}{{red|澳洲原住民}} {{icon|Polynesian}}{{red|波利尼西亚}} 
+|-
+| 14-16 级 || {{icon|Chinese}}{{red|中华}} {{icon|Eastern}}{{red|东方}} {{icon|North American}}{{red|北美}} {{icon|West African}}{{red|西非}} {{icon|Indian}}{{red|印度}} {{icon|Nomad}}{{red|游牧}} {{icon|Aboriginal}}{{red|澳洲原住民}} {{icon|Polynesian}}{{red|波利尼西亚}} 
+|-
+| 17 级 || {{icon|Chinese}}{{red|中华}} {{icon|Indian}}{{red|印度}}
+|-
+| 18-21 级 || {{icon|Western}}{{red|西方}}
+|-
+| 22 级 || {{icon|Eastern}}{{red|东方}}
+|-
+| 23-25 级 || {{icon|North American}}{{red|北美}} {{icon|Western}}{{red|西方}} {{icon|Aboriginal}}{{red|澳洲原住民}} {{icon|Polynesian}}{{red|波利尼西亚}} 
+|-
+| 26-32 级 || {{icon|Western}}{{red|西方}}
+|}&lt;/div>
+{{clear}}
+
+== 参考资料 ==
+&lt;references/>
+
+{{military navbox}}
+[[Category:军事]]
+[[en:Land_units]]
+</textarea><div class="templatesUsed"><div class="mw-templatesUsedExplanation"><p>本页使用的模板：
+</p></div><ul>
+<li><a href="https://www.eu4cn.com/wiki/Template:Ambox_2020" title="Template:Ambox 2020">Template:Ambox 2020</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Ambox_2020&amp;action=edit" title="Template:Ambox 2020">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:BTRow" title="Template:BTRow">Template:BTRow</a>（<a href="https://www.eu4cn.com/index.php?title=Template:BTRow&amp;action=edit" title="Template:BTRow">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Bonus_table" title="Template:Bonus table">Template:Bonus table</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Bonus_table&amp;action=edit" title="Template:Bonus table">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Clear" title="Template:Clear">Template:Clear</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Clear&amp;action=edit" title="Template:Clear">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Green" title="Template:Green">Template:Green</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Green&amp;action=edit" title="Template:Green">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Grey-bd" title="Template:Grey-bd">Template:Grey-bd</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Grey-bd&amp;action=edit" title="Template:Grey-bd">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon" title="Template:Icon">Template:Icon</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon&amp;action=edit" title="Template:Icon">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/a" title="Template:Icon/a">Template:Icon/a</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/a&amp;action=edit" title="Template:Icon/a">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/c" title="Template:Icon/c">Template:Icon/c</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/c&amp;action=edit" title="Template:Icon/c">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/e" title="Template:Icon/e">Template:Icon/e</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/e&amp;action=edit" title="Template:Icon/e">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/f" title="Template:Icon/f">Template:Icon/f</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/f&amp;action=edit" title="Template:Icon/f">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/g" title="Template:Icon/g">Template:Icon/g</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/g&amp;action=edit" title="Template:Icon/g">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/h" title="Template:Icon/h">Template:Icon/h</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/h&amp;action=edit" title="Template:Icon/h">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/i" title="Template:Icon/i">Template:Icon/i</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/i&amp;action=edit" title="Template:Icon/i">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/l" title="Template:Icon/l">Template:Icon/l</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/l&amp;action=edit" title="Template:Icon/l">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/m" title="Template:Icon/m">Template:Icon/m</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/m&amp;action=edit" title="Template:Icon/m">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/n" title="Template:Icon/n">Template:Icon/n</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/n&amp;action=edit" title="Template:Icon/n">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/p" title="Template:Icon/p">Template:Icon/p</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/p&amp;action=edit" title="Template:Icon/p">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/r" title="Template:Icon/r">Template:Icon/r</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/r&amp;action=edit" title="Template:Icon/r">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/s" title="Template:Icon/s">Template:Icon/s</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/s&amp;action=edit" title="Template:Icon/s">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/t" title="Template:Icon/t">Template:Icon/t</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/t&amp;action=edit" title="Template:Icon/t">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/w" title="Template:Icon/w">Template:Icon/w</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/w&amp;action=edit" title="Template:Icon/w">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Military_navbox" title="Template:Military navbox">Template:Military navbox</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Military_navbox&amp;action=edit" title="Template:Military navbox">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Navbox" title="Template:Navbox">Template:Navbox</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Navbox&amp;action=edit" title="Template:Navbox">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Navboxgroup" title="Template:Navboxgroup">Template:Navboxgroup</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Navboxgroup&amp;action=edit" title="Template:Navboxgroup">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Original_researh" title="Template:Original researh">Template:Original researh</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Original_researh&amp;action=edit" title="Template:Original researh">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Path" title="Template:Path">Template:Path</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Path&amp;action=edit" title="Template:Path">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Pips" title="Template:Pips">Template:Pips</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Pips&amp;action=edit" title="Template:Pips">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Red" title="Template:Red">Template:Red</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Red&amp;action=edit" title="Template:Red">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:SVersion" title="Template:SVersion">Template:SVersion</a>（<a href="https://www.eu4cn.com/index.php?title=Template:SVersion&amp;action=edit" title="Template:SVersion">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Sversion" class="mw-redirect" title="Template:Sversion">Template:Sversion</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Sversion&amp;action=edit" class="mw-redirect" title="Template:Sversion">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Version" title="Template:Version">Template:Version</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Version&amp;action=edit" title="Template:Version">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:白字" title="Template:白字">Template:白字</a>（<a href="https://www.eu4cn.com/index.php?title=Template:%E7%99%BD%E5%AD%97&amp;action=edit" title="Template:白字">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:重定向" title="Template:重定向">Template:重定向</a>（<a href="https://www.eu4cn.com/index.php?title=Template:%E9%87%8D%E5%AE%9A%E5%90%91&amp;action=edit" title="Template:重定向">查看源代码</a>）</li></ul></div><p id="mw-returnto">返回<a href="https://www.eu4cn.com/wiki/陆军单位" title="陆军单位">陆军单位</a>。</p>
+</div>						</div>
+				</div>
+				<footer>
+				<div class="liberty-footer">
+										<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>					<div class="bottom-ads mobile-ab">
+						<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+						<!-- 移动端底部 -->
+						<ins class="adsbygoogle mobile-ab"
+						     style="display:block"
+						     data-ad-client="ca-pub-1612414434963106"
+						     data-ad-slot="3303553671"
+						     data-ad-format="auto"
+						     data-full-width-responsive="true"></ins>
+						<script>
+						     (adsbygoogle = window.adsbygoogle || []).push({});
+						</script>
+					</div>
+								<ul class="footer-places">
+									<li class="footer-places-privacy">
+						<a href="https://www.eu4cn.com/wiki/欧陆风云4百科:隐私政策">隐私政策</a>					</li>
+									<li class="footer-places-about">
+						<a href="https://www.eu4cn.com/wiki/欧陆风云4百科:关于">关于欧陆风云4百科</a>					</li>
+									<li class="footer-places-disclaimer">
+						<a href="https://www.eu4cn.com/wiki/欧陆风云4百科:免责声明">免责声明</a>					</li>
+							</ul>
+					<ul class="footer-icons">
+									<li class="footer-copyrightico">
+						<a href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="https://www.eu4cn.com/resources/assets/licenses/cc-by-nc-sa.png" alt="知识共享署名-非商业性使用-相同方式共享" width="88" height="31" loading="lazy"/></a>					</li>
+										<li class="footer-poweredbyico">
+						<a href="https://www.mediawiki.org/"><img src="https://www.eu4cn.com/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"/></a><a href="https://www.eu4cn.com/"><img src="https://www.eu4cn.com/images/footerlogo.png" width="88" height="31" loading="lazy"/></a>					</li>
+								</ul>
+						</div>
+				</footer>
+			</div>
+		</div>
+		</section>
+				<div class="modal fade login-modal" id="login-modal" tabindex="-1"
+			 role="dialog" aria-labelledby="login-modalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-sm" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<h4 class="modal-title">登录</h4>
+					</div>
+					<div class="modal-body">
+						<div id="modal-login-alert" class="alert alert-hidden alert-danger" role="alert">
+						</div>
+						<form id="modal-loginform" name="userlogin" class="modal-loginform"
+							  method="post">
+							<input class="loginText form-control" id="wpName1" tabindex="1"
+								   placeholder="请输入您的用户名" value="" name="lgname">
+							<label for="inputPassword" class="sr-only">密码</label>
+							<input class="loginPassword form-control" id="wpPassword1" tabindex="2"
+								   placeholder="请输入您的密码" type="password" name="lgpassword">
+							<div class="modal-checkbox">
+								<input name="lgremember" type="checkbox" value="1" id="lgremember" tabindex="3">
+								<label for="lgremember">记住登录</label>
+							</div>
+							<input class="btn btn-success btn-block" type="submit" value="登录" tabindex="4">
+							<a href="https://www.eu4cn.com/index.php?title=Special:%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95&amp;type=signup&amp;returnto=%E9%99%86%E5%86%9B%E5%8D%95%E4%BD%8D" class="btn btn-primary btn-block" title="Special:用户登录" tabindex="5" type="submit">加入欧陆风云4百科</a>							<a href="https://www.eu4cn.com/wiki/Special:重置密码" title="Special:重置密码">忘记密码？</a>                            <br>
+							<a href="https://www.eu4cn.com/wiki/Special:用户登录" title="Special:用户登录">其他方式登录</a>							<input type="hidden" name="action" value="login" />
+							<input type="hidden" name="format" value="json" />
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">⧼liberty-btn-close⧽</button>
+						<button type="button" class="btn btn-primary">⧼liberty-btn-save-changes⧽</button>
+					</div>
+				</div>
+			</div>
+		</div>
+			</body>
+<!-- Mirrored from www.eu4cn.com/index.php?title=%E9%99%86%E5%86%9B%E5%8D%95%E4%BD%8D&action=edit by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 May 2024 11:48:51 GMT -->
+</html>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?8b9cdb5f260cf613f39a508fbf9dd707";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.005","walltime":"0.006","ppvisitednodes":{"value":7,"limit":1000000},"postexpandincludesize":{"value":18,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":100},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20240506110600","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":2176});});</script>
+</body>
+</html>

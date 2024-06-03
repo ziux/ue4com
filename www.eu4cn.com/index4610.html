@@ -1,0 +1,987 @@
+ <!DOCTYPE html>
+<html class="client-nojs" lang="zh" dir="ltr">
+
+<!-- Mirrored from www.eu4cn.com/index.php?title=%E8%A1%A5%E4%B8%81&action=edit by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 May 2024 14:59:46 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>查看“补丁”的源代码 - 欧陆风云4百科，人人可以编辑的欧陆风云4中文百科全书</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"zh","wgMonthNames":["","1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"],"wgRequestId":"2be909239864e7aeeeaed9fe","wgCSPNonce":false,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"补丁","wgTitle":"补丁","wgCurRevisionId":101023,"wgRevisionId":0,"wgArticleId":1244,"wgIsArticle":false,"wgIsRedirect":false,"wgAction":"edit","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageContentLanguage":"zh","wgPageContentModel":"wikitext","wgRelevantPageName":"补丁","wgRelevantArticleId":1244,"wgUserVariant":"zh","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgCargoDefaultQueryLimit":100,"wgCargoMapClusteringMinimum":80,"wgCargoMonthNames":["1月","2月","3月"
+,"4月","5月","6月","7月","8月","9月","10月","11月","12月"],"wgCargoMonthNamesShort":["1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"],"wgCargoWeekDays":["星期日","星期一","星期二","星期三","星期四","星期五","星期六"],"wgCargoWeekDaysShort":["日","一","二","三","四","五","六"],"wgPageFormsTargetName":null,"wgPageFormsAutocompleteValues":[],"wgPageFormsAutocompleteOnAllChars":false,"wgPageFormsFieldProperties":[],"wgPageFormsCargoFields":[],"wgPageFormsDependentFields":[],"wgPageFormsCalendarValues":[],"wgPageFormsCalendarParams":[],"wgPageFormsCalendarHTML":null,"wgPageFormsGridValues":[],"wgPageFormsGridParams":[],"wgPageFormsContLangYes":null,"wgPageFormsContLangNo":null,"wgPageFormsContLangMonths":[],"wgPageFormsHeightForMinimizingInstances":800,"wgPageFormsShowOnSelect":[],"wgPageFormsScriptPath":"/extensions/PageForms","edgValues":null,"wgPageFormsEDSettings":null,"wgAmericanDates":false,"wgVisualEditor":{
+"pageLanguageCode":"zh","pageLanguageDir":"ltr","pageVariantFallbacks":["zh-hans","zh-hant","zh-cn","zh-tw","zh-hk","zh-sg","zh-mo","zh-my"]},"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgSmjUseCdn":false,"wgSmjUseChem":true,"wgSmjDisplayMath":[],"wgSmjExtraInlineMath":[],"wgSmjScale":1,"wgSmjEnableMenu":true,"wgSmjDisplayAlign":"left","wgEditSubmitButtonLabelPublish":false};RLSTATE={"site.styles":"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.liberty.styles":"ready","jquery.tablesorter.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready"};RLPAGEMODULES=["ext.SimpleMathJax","mediawiki.action.edit.collapsibleFooter","site","mediawiki.page.ready","jquery.tablesorter","ext.HighlightjsIntegration","ext.CodeMirror","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.gadget.UserLinkAvatar","ext.gadget.notifyConversion","ext.gadget.notifyAdsense","ext.gadget.Edittools-vector",
+"skins.liberty.bootstrap","skins.liberty.layoutjs","skins.liberty.liverc","skins.liberty.loginjs"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});});});</script>
+<link rel="stylesheet" href="loadd623.css?lang=zh&amp;modules=ext.visualEditor.desktopArticleTarget.noscript%7Cjquery.tablesorter.styles%7Cskins.liberty.styles&amp;only=styles&amp;skin=liberty"/>
+<script async="" src="load7991.php?lang=zh&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=liberty"></script>
+<style>.Liberty .nav-wrapper,
+		.Liberty .nav-wrapper .navbar .form-inline .btn:hover,
+		.Liberty .nav-wrapper .navbar .form-inline .btn:focus,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link.active::before,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link:hover::before,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link:focus::before,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link:active::before,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-footer .label,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .contributioncredits-footer .label,
+		.Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools .tools-btn:hover,
+		.Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools .tools-btn:focus,
+		.Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools .tools-btn:active,
+		.btn-primary,
+		.header-template, .section-template {
+			background-color: #103D8F;
+		}
+
+		.btn-primary,
+		.section-template-border {
+			border-color: #103D8F;
+		}
+
+		.Liberty .nav-wrapper .navbar .form-inline .btn:hover,
+		.Liberty .nav-wrapper .navbar .form-inline .btn:focus {
+			border-color: #002E7D;
+		}
+
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link.active::before,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link:hover::before,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link:focus::before,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link:active::before {
+			border-bottom: 2px solid #103D8F;
+		}
+
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-footer .label:hover,
+		.Liberty .nav-wrapper .navbar .navbar-nav .nav-item .nav-link:hover,
+		.Liberty .nav-wrapper .navbar .navbar-nav .nav-item .nav-link:focus,
+		.dropdown-menu .dropdown-item:hover,
+		.btn-primary:hover,
+		.btn-primary:focus {
+			background-color: #002E7D;
+		}
+
+
+		.Liberty .content-wrapper #liberty-bottombtn,
+		.Liberty .content-wrapper #liberty-bottombtn:hover {
+			background-color: #103D8F;
+		}</style><style>@media (prefers-color-scheme: dark) { body, .Liberty, .dropdown-menu, .dropdown-item, .Liberty .nav-wrapper .navbar .form-inline .btn, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link.active, .Liberty .content-wrapper .liberty-content .liberty-content-main table.wikitable tr > th, .Liberty .content-wrapper .liberty-content .liberty-content-main table.wikitable tr > td, table.mw_metadata th, .Liberty .content-wrapper .liberty-content .liberty-content-main table.infobox th, #preferences fieldset:not(.prefsection), #preferences div.mw-prefs-buttons, .navbox, .navbox-subgroup, .navbox > tbody > tr:nth-child(even) > .navbox-list, .Liberty .nav-wrapper .navbar .form-inline .form-control {
+			background-color: #000;
+			color: #DDD;
+		}
+
+		.liberty-content-header, .liberty-footer, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-footer, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item, .Liberty .content-wrapper .liberty-content .liberty-content-header, .Liberty .content-wrapper .liberty-footer, .editOptions, html .wikiEditor-ui-toolbar, #pagehistory li.selected, .mw-datatable td, .Liberty .content-wrapper .liberty-content .liberty-content-main table.wikitable tr > td, table.mw_metadata td, .Liberty .content-wrapper .liberty-content .liberty-content-main table.wikitable, .Liberty .content-wrapper .liberty-content .liberty-content-main table.infobox, #preferences, .navbox-list, .dropdown-divider, .Liberty .content-wrapper .liberty-content .bottom-ads {
+			background-color: #1F2023;
+			color: #DDD;
+		}
+
+		.Liberty .content-wrapper .liberty-content .liberty-content-main, .mw-datatable th, .mw-datatable tr:hover td, textarea, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-content, div.mw-warning-with-logexcerpt, div.mw-lag-warn-high, div.mw-cascadeprotectedwarning, div#mw-protect-cascadeon, .mildtable th {
+			background-color: #000 !important;
+		}
+
+		.Liberty .content-wrapper .liberty-content .liberty-content-header .title>h1, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-content .live-recent-list .recent-item, caption { color: #DDD; }
+
+		.btn-secondary, .Liberty .content-wrapper .liberty-footer .catlinks, .rcpages-btn { background: transparent; color: #DDD; }
+
+
+		#pagehistory li { border: 0; }
+
+		.Liberty .content-wrapper .liberty-footer, .Liberty .content-wrapper .liberty-content .liberty-content-header, .Liberty .content-wrapper .liberty-content .liberty-content-main, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-footer, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-content, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item + .nav-item, .Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools .tools-btn:hover, .Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools .tools-btn:focus, .Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools .tools-btn, .dropdown-menu, .dropdown-divider, .Liberty .content-wrapper .liberty-content .liberty-content-main fieldset, hr, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-content .live-recent-list li, .mw-changeslist-legend, .Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools { border-color: #555; }
+
+		.flow-post, .Liberty .content-wrapper .liberty-content .liberty-content-main .toc .toctext { color: #DDD; }
+		.flow-topic-titlebar { color: #000; }
+		.flow-ui-navigationWidget { color: #FFF; }
+		.Liberty .content-wrapper .liberty-content .liberty-content-main .toccolours, .Liberty .content-wrapper .liberty-content .liberty-content-main .toc ul, .Liberty .content-wrapper .liberty-content .liberty-content-main .toc li { background-color: #000; }
+		.Liberty .content-wrapper .liberty-content .liberty-content-main .toc .toctitle { background-color: #1F2023; } }</style>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="loada6ee.css?lang=zh&amp;modules=site.styles&amp;only=styles&amp;skin=liberty"/>
+<meta name="generator" content="MediaWiki 1.39.3"/>
+<meta name="robots" content="noindex,nofollow"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta property="og:image" content="https://www.eu4cn.com/images/d/de/Dlc_top_curly.png"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="408"/>
+<meta property="og:image" content="https://www.eu4cn.com/images/d/de/Dlc_top_curly.png"/>
+<meta property="og:image:width" content="800"/>
+<meta property="og:image:height" content="272"/>
+<meta property="og:image:width" content="640"/>
+<meta property="og:image:height" content="218"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="description" content="因为以下原因，您没有权限编辑本页：&#10;&#10;&#10;您请求的操作仅限属于该用户组的用户执行：用户&#10;&#10;&#10;您可以查看和复制此页面的源代码。&#10;-{T|zh-hans:补丁;zh-hant:修補程式}-&#10;{{version column}}&#10;&#039;&#039;&#039;补丁&#039;&#039;&#039;是游戏版本的免费升级。重要更新通常随[[DLC]]共同发布，是提供游戏新功能的补丁。普通更新通常是修复BUG与调节游戏平衡，它们通常不会提供新功能。&#10;&#10;==版本历史==&#10;&#10;{| class=&quot;mildtable sortable&quot;&#10;! width=&quot;70px&quot; |版本&#10;! width=&quot;135px&quot; |日期&#10;! width=&quot;70px&quot; |校验码&#10;! width=&quot;520px&quot; |描述&#10;|-&#10;|[[1.36 版本|1.36]]&#10;|2023年11月6日&#10;|ebe5&#10;|第35个主要补丁(aka &quot;Byzantium&quot;)。伴随 [[King of Kings]] 发行。&#10;|-&#10;| [[1.35.X 版本#1.35.6|1.35.6]]&#10;| 2023年7月5日&#10;| 1ede&#10;| Hotfix&#10;|-&#10;| [[1.35.X 版本#1.35.5|1.35.5]]&#10;| 2023年6月27日&#10;| 74fa&#10;| Hotfix&#10;|-&#10;| [[1.35.X 版本#1.35.4|1.35.4]]&#10;| 2023年6月20日&#10;| deea&#10;| Patch&#10;|-&#10;| [[1.35.X 版本#1.35.3|1.35.3]]&#10;| 2023年5月5日&#10;| f6b8&#10;| Hotfix&#10;|-&#10;| [[1.35.X 版本#1.35.2|1.35.2]]&#10;| 2023年5月4日&#10;| b7e6&#10;| Patch&#10;|-&#10;| [[1.35.X 版本#1.35.1|1.35.1]]&#10;| 2023年4月20日&#10;| 39c3&#10;| Hotfix&#10;|-&#10;|[[1.35 版本|1.35]]&#10;|2023年4月18日&#10;|d460&#10;|第34个主要补丁(aka &quot;Ottomans&quot;)。伴随 [[Domination]] 发行。&#10;|-&#10;|[[1.34.X 版本#1.34.5|1.34.5]]&#10;|2022年11月23日&#10;|2f83&#10;|为GOG商店的兼容性补丁&#10;|-&#10;|[[1.34.X 版本#1.34.4|1.34.4]]&#10;|2022年10月13日&#10;|ac5e&#10;|Patch&#10;|-&#10;|[[1.34.X 版本#1.34.3|1.34.3]]&#10;| 2022年9月22日&#10;|19f1&#10;|Hotfix&#10;|-&#10;|[[1.34 版本#1.34|1.34.2]]&#10;|2022年9月13日&#10;|5955&#10;|Hotfix&amp;lt;ref name=&quot;1.34&quot;&gt;由于原定发行日所发布的版本实际为1.34.2版本，1.34版本并未公开发布，其校验码也未知。&amp;lt;/ref&gt;&#10;|-&#10;|[[1.34 版本#1.34|1.34]]&#10;|2022年9月13日&#10;| -&#10;|第33个主要补丁(aka &quot;Sweden&quot;)。伴随 [[Lions of the North]] 发行。&amp;lt;ref name=&quot;1.34&quot; /&gt;&#10;|-&#10;|[[1.33.X 版本#1.33.3|1.33.3]]&#10;|2022年4月7日&#10;|5010&#10;|Hotfix&#10;|-&#10;|&#10;[[1.33.X 版本#1.33.2|1.33.2]]&#10;|2022年3月2日&#10;|108e&#10;|1.33内容正式发布。&#10;|-&#10;|[[1.33 版本|1.33]]&#10;|N/A&amp;lt;ref&gt;1.33版本仅发布测试版，1.33.2版本才是正式发布。&amp;lt;/ref&gt;&#10;| -&#10;|第32个主要补丁(aka &quot;France&quot;)。&#10;|-&#10;|[[1.32.X 版本#1.32.2|1.32.2]]&#10;|2021年11月30日&#10;|1835&#10;|Bugfix&#10;|-&#10;|[[1.32.X 版本#1.32.1|1.32.1]]&#10;|2021年11月15日&#10;|78cb&#10;|Hotfix&#10;|-&#10;|[[1.32]]&#10;|2021年11月11日&#10;|f507&#10;|第31个主要补丁(aka &quot;Songhai&quot;)。伴随 [[Origins]] 发行。&#10;|-&#10;|[[1.31.X 版本#1.31.6|1.31.6]]&#10;|2021年9月30日&#10;| 157c&#10;|Compatibility patch&#10;|-&#10;|[[1.31.X 版本#1.31.5|1.31.5]]&#10;|2021年6月8日&#10;|3261&#10;|Patch&#10;|-&#10;|[[1.31.X 版本#1.31.4|1.31.4]]&#10;|2021年6月3日&#10;|0f53&#10;|Patch&#10;|-&#10;|[[1.31.X 版本#1.31.3|1.31.3]]&#10;|2021年5月12日&#10;|984a&#10;|Hotfix&#10;|-&#10;|[[1.31.X 版本#1.31.2|1.31.2]]&#10;|2021年5月3日&#10;|3ad4&#10;|Hotfix&#10;|-&#10;|[[1.31.X 版本#1.31.1|1.31.1]]&#10;| 2021年4月28日&#10;|19c6&#10;|Hotfix&#10;|-&#10;|[[1.31 版本|1.31]]&#10;|2021年4月27日&#10;|0fb9&#10;|第30个主要补丁(aka &quot;Majapahit&quot;)。伴随 [[Leviathan]] 发行。&#10;|-&#10;|[[1.30.X_版本#1.30.1|1.30.1]]&#10;|2020年6月9日&#10;|583f&#10;|hotfix&amp;lt;ref name=&quot;1.30&quot;&gt;由于原定发行日所发布的版本实际为1.30.1版本，1.30版本并未公开发布，其校验码也未知。&amp;lt;/ref&gt;&#10;|-&#10;|[[1.30]]&#10;|2020年6月9日&#10;| -&#10;|第29个主要补丁（aka &quot;Austria&quot;）。伴随 [[Emperor]] 发行。&amp;lt;ref name=&quot;1.30&quot; /&gt;&#10;|-&#10;|[[1.29.X 版本##1.29.6|1.29.6]]&#10;|2020年4月23日&#10;|b3ef&#10;|hotfix&#10;|-&#10;|[[1.29.X 版本#1.29.5|1.29.5]]&#10;|2020年2月7日&#10;|dc1b&#10;|hotfix&#10;|-&#10;|[[1.29.X 版本#1.29.4|1.29.4]]&#10;|2020年1月21日&#10;|4a70&#10;|Minor&#10;|-&#10;|[[1.29.X 版本#1.29.3|1.29.3]]&#10;|2019年12月9日&#10;|258d&#10;|Patch&#10;|-&#10;|[[1.29.X 版本#1.29.2|1.29.2]]&#10;|2019年10月2日&#10;|e022&#10;|Hotfix&#10;|-&#10;|[[1.29.X 版本#1.29.1|1.29.1]]&#10;|2019年9月20日&#10;|e8b2&#10;|Hotfix&#10;|-&#10;|[[1.29]]&#10;|2019年9月17日&#10;|ea57&#10;|第28个主要补丁（aka &quot;Manchu&quot;）。只有64位可执行。&#10;|-&#10;|[[1.28.X 版本#1.28.3|1.28.3]]&#10;| 2019年2月4日&#10;|3ba8&#10;|Patch&#10;|-&#10;|[[1.28.X 版本#1.28.2|1.28.2]]&#10;|2018年12月18日&#10;|d9f4&#10;|Hotfix&#10;|- &#10;|[[1.28.X 版本#1.28.1|1.28.1]]&#10;|2018年12月11日&#10;|4648&#10;|Hotfix&#10;|-&#10;|[[1.28]]&#10;|2018年12月11日&#10;|f937&#10;|第27个主要补丁（aka &quot;Spain&quot;）。伴随 [[Golden Century]] 发行。&#10;|-&#10;|[[1.27.X 版本#1.27.2|1.27.2]]&#10;|2018年10月4日&#10;|f496&#10;|Hotfix&#10;|-&#10;|[[1.27]]&#10;|2018年10月1日&#10;|edf9&#10;|第26个主要补丁（aka &quot;Poland&quot;）&#10;|-&#10;|[[1.26.X 版本#1.26.1|1.26.1]]&#10;|2018年9月17日&#10;|7513&#10;|Hotfix&#10;|-&#10;|[[1.26]]&#10;|2018年9月6日&#10;|6196&#10;|第25个主要补丁（aka &quot;Mughals&quot;）。伴随 [[Dharma]] 发行。&#10;|-&#10;|[[1.25.1]]&#10;|2018年3月28日&#10;| 39a3&#10;|Hotfix&#10;|-&#10;|[[1.25]]&#10;|2018年3月20日&#10;|0fb2&#10;|第24个主要补丁（aka &quot;England&quot;）。伴随 [[Rule Britannia]] 发行。&#10;|-&#10;|[[1.24.X 版本#1.24.1|1.24.1]]&#10;|2017年12月14日&#10;|0625&#10;|Hotfix&#10;|-&#10;|[[1.24]]&#10;|2017年12月12日&#10;|c6bc&#10;|第23个主要补丁（aka &quot;Japan&quot;）。&#10;|-&#10;|[[1.23.X 版本#1.23.1|1.23.1]]&#10;|2017年11月29日&#10;|1dc0&#10;|Hotfix&#10;|-&#10;|[[1.23]]&#10;|2017年11月16日&#10;|1b5e&#10;|第22个主要补丁（aka &quot;Persia&quot;）。伴随 [[Cradle of Civilization]] 发行。&#10;|-&#10;|[[1.22.X 版本#1.22.2|1.22.2]]&#10;|2017年8月17日&#10;|7645&#10;|Hotfix&#10;|-&#10;|[[1.22.X 版本#1.22.1|1.22.1]]&#10;|2017年6月20日&#10;| 3d00&#10;|Hotfix&#10;|-&#10;|[[1.22]]&#10;|2017年6月14日&#10;|b6eb&#10;|第21个主要补丁（aka &quot;Russia&quot;）。伴随 [[Third Rome]] 发行。&#10;|-&#10;|[[1.21.X 版本#1.21.1|1.21.1]]&#10;|2017年4月27日&#10;|63a8&#10;|Hotfix&#10;|-&#10;|[[1.21]]&#10;|2017年4月25日&#10;|bbec&#10;|第20个主要补丁（aka &quot;Hungary&quot;）&#10;|-&#10;|[[1.20.X 版本#1.20.1|1.20.1]]&#10;|2017年4月11日&#10;|07f1&#10;|Hotfix&#10;|-&#10;|[[1.20]]&#10;|2017年4月6日&#10;|072a&#10;|第19个主要补丁（aka &quot;Ming&quot;）。伴随 [[Mandate of Heaven]] 发行。&#10;|-&#10;|[[1.19.X 版本#1.19.2|1.19.2]]&#10;|2016年11月30日&#10;|7dd8&#10;|Hotfix&#10;|-&#10;|[[1.19]]&#10;|2016年11月24日&#10;|fa37&#10;|第18个主要补丁（aka &quot;Denmark&quot;）&#10;|-&#10;|[[1.18.X 版本#1.18.4|1.18.4]]&#10;|2016年10月27日&#10;|f968&#10;|Hotfix&#10;|-&#10;|[[1.18.X 版本#1.18.3|1.18.3]]&#10;|2016年10月14日&#10;|9198&#10;|Hotfix&#10;|-&#10;|[[1.18.X 版本#1.18.2|1.18.2]]&#10;|2016年10月12日&#10;|197c&#10;| Hotfix&#10;|-&#10;|[[1.18]]&#10;|2016年10月11日&#10;|35d6&#10;|第17个主要补丁（aka &quot;Prussia&quot;）。伴随 [[Rights of Man]] 发行。&#10;|-&#10;|[[1.17.1]]&#10;|2016年6月9日&#10;|6704&#10;|Hotfix&#10;|-&#10;|[[1.17]]&#10;|2016年3月11日&#10;|f236&#10;|第16个主要补丁.&#10;|-&#10;|[[1.16.3]]&#10;|2016年4月14日&#10;|6227&#10;|Hotfix&#10;|-&#10;|[[1.16.2]]&#10;|2016年4月8日&#10;|3a8e&#10;|Hotfix&#10;|-&#10;|[[1.16]]&#10;|2016年4月5日&#10;|60a9&#10;|第15个主要补丁。伴随 [[Mare Nostrum]] 发行。&#10;|-&#10;|[[1.15.1]]&#10;|2016年2月1日&#10;|8ad5&#10;|Hotfix&#10;|-&#10;|[[1.15]]&#10;|2016年1月27日&#10;|e5f7&#10;|第14个主要补丁。&#10;|-&#10;|[[1.14.4]]&#10;|2016年1月4日&#10;|e1a1&#10;|Hotfix&#10;|-&#10;|[[1.14.3]]&#10;|2015年12月9日&#10;|f611&#10;|Hotfix&#10;|-&#10;|[[1.14.2]]&#10;|2015年12月4日&#10;|4c26&#10;|Hotfix&#10;|-&#10;|[[1.14.1]]&#10;|2015年12月3日&#10;|d7f1&#10;|Hotfix&#10;|-&#10;|[[1.14]]&#10;|2015年12月1日&#10;|fb1c&#10;|第13个主要补丁。伴随 [[The Cossacks]] 发行。&#10;|-&#10;|[[1.13.2]]&#10;|2015年10月27日&#10;|04fe&#10;|Hotfix&#10;|-&#10;|[[1.13.1]]&#10;|2015年8月31日&#10;|13a0&#10;|Hotfix&#10;|-&#10;|[[1.13]]&#10;|2015年8月27日&#10;|30a2&#10;|第12个主要补丁.&#10;|-&#10;|[[1.12.2]]&#10;|2015年6月18日&#10;|551a&#10;|Hotfix&#10;|-&#10;|[[1.12.1]]&#10;|2015年6月12日&#10;|ae85&#10;|Hotfix&#10;|-&#10;|[[1.12]]&#10;|2015年6月9日&#10;|6550&#10;|第11个主要补丁。伴随 [[Common Sense]] 发行。&#10;|-&#10;|[[1.11.4]]&#10;|2015年3月23日&#10;|63fd&#10;|Hotfix&#10;|-&#10;|[[1.11.3]]&#10;|2015年3月13日&#10;|62b3&#10;|Hotfix&#10;|-&#10;|[[1.11.2]]&#10;|2015年3月11日&#10;|4dee&#10;|Hotfix&#10;|-&#10;|[[1.11.1]]&#10;|2015年3月10日&#10;|547a&#10;|Hotfix&#10;|-&#10;|[[1.11]]&#10;|2015年3月8日&#10;|6f52&#10;|第10个主要补丁。伴随 [[Women in History]] 发行。&#10;|-&#10;|[[1.10.1]]&#10;| 2015年2月27日&#10;|1ef5&#10;|Hotfix&#10;|-&#10;|[[1.10]]&#10;|2015年2月26日&#10;|89ca&#10;|第9个主要补丁。伴随 [[El Dorado]] 发行。&#10;|-&#10;|[[1.9.2]]&#10;|2014年12月11日&#10;|e938&#10;|Hotfix&#10;|-&#10;|[[1.9.1]]&#10;|2014年12月10日&#10;|f555&#10;|Hotfix&#10;|-&#10;|[[1.9]]&#10;|2014年12月9日&#10;|6845&#10;|第8个主要补丁。主要是错误修复和 [[灾难]] 系统。&#10;|-&#10;|[[1.8.1]]&#10;|2014年11月10日&#10;|5d13&#10;|Hotfix&#10;|-&#10;|[[1.8]]&#10;|2014年10月30日&#10;|7d1c&#10;|第7个主要补丁。伴随 [[Art of War]] 发行。&#10;|-&#10;|[[1.7.3]]&#10;|2014年7月31日&#10;|7d7e&#10;|Hotfix&#10;|-&#10;|[[1.7]]&#10;|2014年7月16日&#10;|f2a1&#10;|第6个主要补丁。伴随 [[Res Publica]] 发行。&#10;|-&#10;|[[1.6.2]]&#10;|2014年7月4日&#10;|e98d&#10;|Hotfix&#10;|-&#10;|[[1.6.1]]&#10;|2014年5月30日&#10;|4a16&#10;|Hotfix&#10;|-&#10;|[[1.6]]&#10;|2014年5月29日&#10;|d96a&#10;|第5个主要补丁。伴随 [[Wealth of Nations]] 发行。&#10;|-&#10;|[[1.5.1]]&#10;|2014年3月3日&#10;|0ef1&#10;|Hotfix&#10;|-&#10;|[[1.5]]&#10;|2014年2月19日&#10;|ea3d&#10;|第4个主要补丁.&#10;|-&#10;|[[1.4.1]]&#10;| 2014年1月20日&#10;|ea04&#10;|Hotfix&#10;|-&#10;|[[1.4]]&#10;|2014年1月14日&#10;|c814&#10;|第3个主要补丁。伴随 [[Conquest of Paradise]] 发行。&#10;|-&#10;|[[1.3.X 版本#1.3.2|1.3.2]]&#10;|2013年11月12日&#10;|d2a0&#10;|Hotfix&#10;|-&#10;|[[1.3.X 版本#1.3.1|1.3.1]]&#10;|2013年11月4日&#10;|1683&#10;|Hotfix&#10;|-&#10;|[[1.3]]&#10;|2013年10月29日&#10;|2289&#10;|第2个主要补丁&#10;|-&#10;|[[1.2.X 版本#1.2.2|1.2.2]]&#10;|2013年10月3日&#10;|fe2b&#10;|Hotfix&#10;|-&#10;|[[1.2.X 版本#1.2.1|1.2.1]]&#10;|2013年9月26日&#10;|42e8&#10;|Hotfix&#10;|-&#10;|[[1.2]]&#10;|2013年9月24日&#10;|86c2&#10;|第1个主要补丁。与次要DLC一起发行。&#10;|-&#10;|[[1.1.X 版本#1.1.3|1.1.3]]&#10;|2013年8月27日&#10;|976f&#10;|Hotfix&#10;|-&#10;|[[1.1.X 版本#1.1.2|1.1.2]]&#10;|2013年8月22日&#10;|408b&#10;|Hotfix&#10;|-&#10;|[[1.1.X 版本#1.1.1|1.1.1]]&#10;|2013年8月19日&#10;|78f9&#10;|Hotfix&#10;|-&#10;|[[1.1.X 版本#1.1|1.1]]&#10;|2013年8月13日&#10;|17db&#10;|发行版本&#10;|-&#10;|0.900p&#10;|2013年7月17日&#10;|XXXX&#10;|预发行（预览）版本&#10;|}&#10;&#10;==参考资料==&#10;&amp;lt;references /&gt;&#10;&#10;[[Category:补丁|*]]&#10;[[en:Patches]]&#10;本页使用的模板：&#10;&#10;Template:Infobox（查看源代码）（受保护）Template:Infobox/row（查看源代码）Template:Nav column（查看源代码）Template:Version column（查看源代码）（受半保护）返回补丁。&#10;"/>
+<meta name="keywords" content="欧陆风云4百科,补丁"/>
+<meta name="apple-mobile-web-app-capable" content="Yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+<meta name="mobile-web-app-capable" content="Yes"/>
+<meta name="theme-color" content="#103D8F"/>
+<meta name="msapplication-navbutton-color" content="#103D8F"/>
+<meta name="twitter:card" content="summary"/>
+<link rel="icon" href="https://www.eu4cn.com/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="https://www.eu4cn.com/opensearch_desc.php" title="欧陆风云4百科 (zh)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://www.eu4cn.com/api.php?action=rsd"/>
+<link rel="alternate" hreflang="zh" href="https://www.eu4cn.com/zh/补丁"/>
+<link rel="alternate" hreflang="zh-Hans" href="https://www.eu4cn.com/zh-hans/补丁"/>
+<link rel="alternate" hreflang="zh-Hant" href="https://www.eu4cn.com/zh-hant/补丁"/>
+<link rel="alternate" hreflang="zh-Hans-CN" href="https://www.eu4cn.com/zh-cn/补丁"/>
+<link rel="alternate" hreflang="zh-Hant-HK" href="https://www.eu4cn.com/zh-hk/补丁"/>
+<link rel="alternate" hreflang="zh-Hant-MO" href="https://www.eu4cn.com/zh-mo/补丁"/>
+<link rel="alternate" hreflang="zh-Hans-MY" href="https://www.eu4cn.com/zh-my/补丁"/>
+<link rel="alternate" hreflang="zh-Hans-SG" href="https://www.eu4cn.com/zh-sg/补丁"/>
+<link rel="alternate" hreflang="zh-Hant-TW" href="https://www.eu4cn.com/zh-tw/补丁"/>
+<link rel="alternate" hreflang="x-default" href="https://www.eu4cn.com/wiki/补丁"/>
+<link rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+<link rel="alternate" type="application/atom+xml" title="欧陆风云4百科的Atom feed" href="https://www.eu4cn.com/index.php?title=Special:%E6%9C%80%E8%BF%91%E6%9B%B4%E6%94%B9&amp;feed=atom"/>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script data-ad-client="ca-pub-1612414434963106" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114739240-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-114739240-1');
+</script>
+<meta property="og:title" content="补丁"/>
+<meta property="og:site_name" content="欧陆风云4百科"/>
+<meta property="og:url" content="https://www.eu4cn.com/wiki/%E8%A1%A5%E4%B8%81"/>
+<meta property="article:modified_time" content="2023-11-06T10:25:08Z"/>
+<meta property="article:published_time" content="2023-11-06T10:25:08Z"/>
+<script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"Article","name":"\u67e5\u770b\u201c\u8865\u4e01\u201d\u7684\u6e90\u4ee3\u7801 - \u6b27\u9646\u98ce\u4e914\u767e\u79d1\uff0c\u4eba\u4eba\u53ef\u4ee5\u7f16\u8f91\u7684\u6b27\u9646\u98ce\u4e914\u4e2d\u6587\u767e\u79d1\u5168\u4e66","headline":"\u67e5\u770b\u201c\u8865\u4e01\u201d\u7684\u6e90\u4ee3\u7801 - \u6b27\u9646\u98ce\u4e914\u767e\u79d1\uff0c\u4eba\u4eba\u53ef\u4ee5\u7f16\u8f91\u7684\u6b27\u9646\u98ce\u4e914\u4e2d\u6587\u767e\u79d1\u5168\u4e66","mainEntityOfPage":"\u67e5\u770b\u201c\u8865\u4e01\u201d\u7684\u6e90\u4ee3\u7801","identifier":"https:\/\/www.eu4cn.com\/wiki\/%E8%A1%A5%E4%B8%81","url":"https:\/\/www.eu4cn.com\/wiki\/%E8%A1%A5%E4%B8%81","dateModified":"2023-11-06T10:25:08Z","datePublished":"2023-11-06T10:25:08Z","image":{"@type":"ImageObject","url":"https:\/\/www.eu4cn.com\/images\/logo\/logo.png"},"author":{"@type":"Organization","name":"\u6b27\u9646\u98ce\u4e914\u767e\u79d1","url":"https:\/\/www.eu4cn.com","logo":{"@type":"ImageObject","url":"https:\/\/www.eu4cn.com\/images\/logo\/logo.png","caption":"\u6b27\u9646\u98ce\u4e914\u767e\u79d1"}},"publisher":{"@type":"Organization","name":"\u6b27\u9646\u98ce\u4e914\u767e\u79d1","url":"https:\/\/www.eu4cn.com","logo":{"@type":"ImageObject","url":"https:\/\/www.eu4cn.com\/images\/logo\/logo.png","caption":"\u6b27\u9646\u98ce\u4e914\u767e\u79d1"}},"potentialAction":{"@type":"SearchAction","target":"https:\/\/www.eu4cn.com\/index.php?title=Special:Search&search={search_term}","query-input":"required name=search_term"}}</script>
+<link rel="stylesheet" href="http://www.unpkg.com/@fortawesome/fontawesome-free@5.15.1/css/all.css" />
+<link rel="stylesheet" href="http://www.unpkg.com/@fortawesome/fontawesome-free@5.15.1/css/v4-shims.css" />
+<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+<body class="Liberty width-size mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-补丁 rootpage-补丁 skin-liberty action-edit skin--responsive">		<header>
+			<div class="nav-wrapper navbar-fixed-top">
+						<nav class="navbar navbar-dark yamm">
+			<a class="navbar-brand" href="https://www.eu4cn.com/wiki/首页"></a>
+			<ul class="nav navbar-nav">
+				<li class="dropdown nav-item">
+					<a class="nav-link navbar-right" href="#" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+						<div class="navbar-brand-subtitle">欧陆风云4</div>
+						<div class="navbar-family">ParaWikis</div>
+					</a>
+				<ul class="dropdown-menu" aria-labelledby="dLabel">
+					<li>
+		                  <div class="yamm-content">
+		                    <div class="row">
+						 							<ul class="col-sm-4 list-unstyled">
+							<li><p class="meganav-item"><strong>最新百科</strong></p></li>
+								<a href="http://cs2.parawikis.com/" class="dropdown-item meganav-item">都市天际线2百科</a>
+								<a href="http://h3.parawikis.com/" class="dropdown-item meganav-item">英雄无敌3百科</a>
+								<a href="http://vic3.parawikis.com/" class="dropdown-item meganav-item">维多利亚3百科</a>
+								<a href="http://ce2.parawikis.com/" class="dropdown-item meganav-item">奇妙探险队2百科</a>
+								<a href="http://eos.parawikis.com/" class="dropdown-item meganav-item">罪恶帝国百科</a>
+								<a href="http://ir.parawikis.com/" class="dropdown-item meganav-item">英白拉多：罗马百科</a>
+							</ul>
+							<ul class="col-sm-4 list-unstyled">
+								<li><p class="meganav-item"><strong>热门百科</strong></p></li>
+								<a href="http://stellaris.parawikis.com/" class="dropdown-item meganav-item">群星百科</a>
+								<a href="http://www.eu4cn.com/" class="dropdown-item meganav-item">欧陆风云4百科</a>
+								<a href="http://ck2.parawikis.com/" class="dropdown-item meganav-item">十字军之王2百科</a>
+								<a href="http://ck3.parawikis.com/" class="dropdown-item meganav-item">十字军之王3百科</a>
+								<a href="http://hoi4.parawikis.com/" class="dropdown-item meganav-item">钢铁雄心4百科</a>
+								<a href="http://vic2.parawikis.com/" class="dropdown-item meganav-item">维多利亚2百科</a>
+							</ul>
+							<ul class="col-sm-4 list-unstyled">
+								<li><p class="meganav-item"><strong>ParaWikis</strong></p></li>
+								<a href="http://www.parawikis.com/wiki/ParaWikis:申请建站" class="dropdown-item meganav-item">申请建站</a>
+								<a href="http://www.parawikis.com/" class="dropdown-item meganav-item">ParaWikis</a>
+								<a href="http://commons.parawikis.com/" class="dropdown-item meganav-item">ParaCommons</a>
+							</ul>		                    </div>
+		                  </div>
+		                </li>
+				</ul>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="https://www.eu4cn.com/wiki/Special:最近更改" class="nav-link" title="本wiki的最近更改列表[r]" accesskey="r"><span class="fas fa-sync"></span><span class="hide-title">最近更改</span></a>				</li>
+				<li class="nav-item">
+					<a href="https://www.eu4cn.com/wiki/Special:随机页面" class="nav-link" title="加载一个随机页面[x]" accesskey="x"><span class="fa fa-random"></span><span class="hide-title">随机页面</span></a>				</li>
+				<li class="nav-item">
+					<a href="http://shang.qq.com/wpa/qunwpa?idkey=3bb76f6a58594b18c2defdc03af7ec2703fb2e2cc8fef6dadd1dcb896c0ede1a" target="_blank" class="nav-link" title="加入QQ群">
+						<span class="fa fa-qq"></span><span class="hide-title">加入QQ群</span>
+					</a>
+				</li>
+				<li class="dropdown nav-item">
+					<a class="dropdown-toggle nav-link" href="#" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+						<span class="fa fa-wrench"></span><span class="hide-title">工具</span>
+					</a>
+				<ul class="dropdown-menu" aria-labelledby="dLabel">
+					<li id="t-whatlinkshere" class="mw-list-item"><a href="https://www.eu4cn.com/wiki/Special:链入页面/补丁" title="所有链接至本页面的wiki页面列表[j]" accesskey="j" class="dropdown-item">链入页面</a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="https://www.eu4cn.com/wiki/Special:链出更改/补丁" rel="nofollow" title="链自本页的页面的最近更改[k]" accesskey="k" class="dropdown-item">相关更改</a></li><li id="t-specialpages" class="mw-list-item"><a href="https://www.eu4cn.com/wiki/Special:特殊页面" title="所有特殊页面的列表[q]" accesskey="q" class="dropdown-item">特殊页面</a></li><li id="t-info" class="mw-list-item"><a href="https://www.eu4cn.com/index.php?title=%E8%A1%A5%E4%B8%81&amp;action=info" title="关于此页面的更多信息" class="dropdown-item">页面信息</a></li><li id="t-cargopagevalueslink" class="mw-list-item"><a href="https://www.eu4cn.com/index.php?title=%E8%A1%A5%E4%B8%81&amp;action=pagevalues" rel="cargo-pagevalues" class="dropdown-item">页面值</a></li>				</ul>
+				</li>
+				<li class="dropdown nav-item"><a class="nav-link dropdown-toggle dropdown-toggle-fix" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true" title="帮助"><span class="fa fa-question"></span><span class="hide-title">帮助</span></a><div class="dropdown-menu" role="menu"><a class="dropdown-item" href="https://www.eu4cn.com/wiki/Project:译名手册" title="譯名手冊"><span class="fa fa-book"></span>譯名手冊</a><a class="dropdown-item" href="https://www.eu4cn.com/wiki/Project:字词转换" title="字詞轉換"><span class="fa fa-language"></span>字詞轉換</a><a class="dropdown-item" href="https://www.eu4cn.com/wiki/Project:编辑指南" title="編輯指南"><span class="fa fa-graduation-cap"></span>編輯指南</a><a class="dropdown-item" href="https://www.eu4cn.com/wiki/Project:编辑规范" title="編輯規範"><span class="fa fa-lightbulb"></span>編輯規範</a><a class="dropdown-item" href="https://www.eu4cn.com/wiki/Project:练手沙盒" title="Project:练手沙盒"><span class="fa fa-leaf"></span>練手沙盒</a></div></li><li class="dropdown nav-item"><a class="hidden-xs-down nav-link" data-toggle="" role="button" aria-haspopup="true" aria-expanded="true" title="ParaTranz" href="https://paratranz.cn/"><span class="fa fa-language"></span><span class="hide-title">ParaTranz</span></a></li><li class="dropdown nav-item"><a class="hidden-xs-down nav-link" data-toggle="" role="button" aria-haspopup="true" aria-expanded="true" title="52PCGame" href="http://bbs.52pcgame.net/"><span class="fa fa-comments"></span><span class="hide-title">52PCGame</span></a></li><li class="dropdown nav-item"><a class="hidden-xs-down nav-link" data-toggle="" role="button" aria-haspopup="true" aria-expanded="true" title="Project:捐款" href="https://www.eu4cn.com/wiki/Project:捐款"><span class="fa fa-heart"></span><span class="hide-title">资助我们</span></a></li>			</ul>
+					<div class="navbar-login">
+							<a href="#" class="none-outline" data-toggle="modal" data-target="#login-modal">
+					<span class="fa fa-sign-in"></span>
+				</a>
+					</div>
+									<form action="https://www.eu4cn.com/index.php" id="searchform" class="form-inline">
+			<input type="hidden" name="title" value="Special:搜索"/>
+			<div class="input-group">
+				<input type="search" name="search" placeholder="在欧陆风云4百科搜索" aria-label="在欧陆风云4百科搜索" autocapitalize="sentences" title="在欧陆风云4百科搜索[f]" accesskey="f" class="form-control" id="searchInput"/>				<span class="input-group-btn">
+					<button type="submit" name="go"
+						value="前往" id="searchGoButton"
+							class="btn btn-secondary" type="button"><span class="fa fa-eye"></span></button>
+					<button type="submit" name="fulltext"
+						value="搜索"
+						id="mw-searchButton" class="btn btn-secondary" type="button">
+						<span class="fa fa-search"></span></button>
+				</span>
+			</div>
+		</form>
+			</nav>
+				</div>
+		</header>
+		<section>
+			<div class="content-wrapper">
+							<aside>
+			<div class="liberty-sidebar">
+				<div class="live-recent-wrapper">
+					<div id='mw-data-after-content'>
+	<div class="read-more-container"></div>
+</div>
+												<div
+			class="live-recent"
+			data-article-ns="0|4|10|12|14"
+			data-talk-ns="1|5|7|9|11|13|15"
+		>
+			<div class="live-recent-header">
+			<ul class="nav nav-tabs">
+				<li class="nav-item">
+					<a href="javascript:" class="nav-link active" id="liberty-recent-tab1">
+						最近更改					</a>
+				</li>
+				<li class="nav-item">
+					<a href="javascript:" class="nav-link" id="liberty-recent-tab2">
+						最近讨论					</a>
+				</li>
+			</ul>
+			</div>
+			<div class="live-recent-content">
+				<ul class="live-recent-list" id="live-recent-list">
+					<li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li>				</ul>
+			</div>
+			<div class="live-recent-footer">
+				<a href="https://www.eu4cn.com/wiki/Special:最近更改" title="Special:最近更改"><span class="label label-info">查看更多</span></a>			</div>
+		</div>
+						<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 侧栏 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1612414434963106"
+     data-ad-slot="1728061201"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-K4RD1C6KBW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-K4RD1C6KBW');
+</script>
+				</div>
+										</div>
+			</aside>
+								<div class="container-fluid liberty-content">
+					<div class="liberty-content-header">
+													<div class="alert alert-dismissible fade in alert-info liberty-notice" role="alert">
+								<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+								<div id="localNotice"><div class="sitenotice" lang="zh" dir="ltr"><div style="text-align:center; font-size:125%; line-height: 1; padding: 10px;"><b>欢迎访问欧陆风云4百科！<a href="https://www.eu4cn.com/wiki/Special:用户登录" title="Special:用户登录"><span class="alert-link">注册一个账号</span></a>，一起参与编写吧！这里是<a href="https://www.eu4cn.com/wiki/欧陆风云4百科:当前任务#页面" title="欧陆风云4百科:当前任务"><span class="alert-link">当前的工程</span></a>。</b></div>
+<div style="text-align: center;">如果您想帮助本站建设，欢迎点击<a href="https://www.eu4cn.com/wiki/欧陆风云4百科:捐款" title="欧陆风云4百科:捐款"><b>这里</b></a>捐款！欢迎所有对百科感兴趣的同学加入QQ群：<b>497888338</b>。</div></div></div>							</div>
+															<div class="content-tools">
+				<div class="btn-group" role="group" aria-label="content-tools">
+					<div id="ca-view" class="mw-list-item"><a href="https://www.eu4cn.com/wiki/补丁" class="btn btn-secondary tools-btn">阅读</a></div><div id="ca-viewsource" class="selected mw-list-item"><a href="https://www.eu4cn.com/index.php?title=%E8%A1%A5%E4%B8%81&amp;action=edit" title="本页面受到保护。&#10;您可以查看其源代码[e]" accesskey="e" class="btn btn-secondary tools-btn">查看源代码</a></div><div id="ca-history" class="mw-list-item"><a href="https://www.eu4cn.com/index.php?title=%E8%A1%A5%E4%B8%81&amp;action=history" title="本页面过去的版本[h]" accesskey="h" class="btn btn-secondary tools-btn">查看历史</a></div>					<a href="https://www.eu4cn.com/wiki/Talk:补丁" class="btn btn-secondary tools-btn" title="关于内容页面的讨论[t]" accesskey="t" id="ca-talk">讨论</a>				</div>
+			</div>
+							<div class="title">
+						<h1>
+							查看“补丁”的源代码						</h1>
+						<div class="mw-indicators">
+</div>
+						</div>
+						<div class="contentSub" >
+							←<a href="https://www.eu4cn.com/wiki/补丁" title="补丁">补丁</a>						</div>
+				</div>
+					<div class="liberty-content-main" id="content">
+											<div class="mw-body-content" id="mw-content-text">
+							<div id="mw-content-text" class="mw-body-content"><p>因为以下原因，您没有权限编辑本页：
+</p>
+<div class="permissions-errors">
+<p>您请求的操作仅限属于该用户组的用户执行：<a href="https://www.eu4cn.com/wiki/欧陆风云4百科:用户" title="欧陆风云4百科:用户">用户</a>
+</p>
+</div><hr />
+<p>您可以查看和复制此页面的源代码。
+</p><textarea readonly="" accesskey="," id="wpTextbox1" cols="80" rows="25" style="" class="mw-editfont-monospace" lang="zh" dir="ltr" name="wpTextbox1">-{T|zh-hans:补丁;zh-hant:修補程式}-
+{{version column}}
+'''补丁'''是游戏版本的免费升级。重要更新通常随[[DLC]]共同发布，是提供游戏新功能的补丁。普通更新通常是修复BUG与调节游戏平衡，它们通常不会提供新功能。
+
+==版本历史==
+
+{| class="mildtable sortable"
+! width="70px" |版本
+! width="135px" |日期
+! width="70px" |校验码
+! width="520px" |描述
+|-
+|[[1.36 版本|1.36]]
+|2023年11月6日
+|ebe5
+|第35个主要补丁(aka "Byzantium")。伴随 [[King of Kings]] 发行。
+|-
+| [[1.35.X 版本#1.35.6|1.35.6]]
+| 2023年7月5日
+| 1ede
+| Hotfix
+|-
+| [[1.35.X 版本#1.35.5|1.35.5]]
+| 2023年6月27日
+| 74fa
+| Hotfix
+|-
+| [[1.35.X 版本#1.35.4|1.35.4]]
+| 2023年6月20日
+| deea
+| Patch
+|-
+| [[1.35.X 版本#1.35.3|1.35.3]]
+| 2023年5月5日
+| f6b8
+| Hotfix
+|-
+| [[1.35.X 版本#1.35.2|1.35.2]]
+| 2023年5月4日
+| b7e6
+| Patch
+|-
+| [[1.35.X 版本#1.35.1|1.35.1]]
+| 2023年4月20日
+| 39c3
+| Hotfix
+|-
+|[[1.35 版本|1.35]]
+|2023年4月18日
+|d460
+|第34个主要补丁(aka "Ottomans")。伴随 [[Domination]] 发行。
+|-
+|[[1.34.X 版本#1.34.5|1.34.5]]
+|2022年11月23日
+|2f83
+|为GOG商店的兼容性补丁
+|-
+|[[1.34.X 版本#1.34.4|1.34.4]]
+|2022年10月13日
+|ac5e
+|Patch
+|-
+|[[1.34.X 版本#1.34.3|1.34.3]]
+| 2022年9月22日
+|19f1
+|Hotfix
+|-
+|[[1.34 版本#1.34|1.34.2]]
+|2022年9月13日
+|5955
+|Hotfix&lt;ref name="1.34">由于原定发行日所发布的版本实际为1.34.2版本，1.34版本并未公开发布，其校验码也未知。&lt;/ref>
+|-
+|[[1.34 版本#1.34|1.34]]
+|2022年9月13日
+| -
+|第33个主要补丁(aka "Sweden")。伴随 [[Lions of the North]] 发行。&lt;ref name="1.34" />
+|-
+|[[1.33.X 版本#1.33.3|1.33.3]]
+|2022年4月7日
+|5010
+|Hotfix
+|-
+|
+[[1.33.X 版本#1.33.2|1.33.2]]
+|2022年3月2日
+|108e
+|1.33内容正式发布。
+|-
+|[[1.33 版本|1.33]]
+|N/A&lt;ref>1.33版本仅发布测试版，1.33.2版本才是正式发布。&lt;/ref>
+| -
+|第32个主要补丁(aka "France")。
+|-
+|[[1.32.X 版本#1.32.2|1.32.2]]
+|2021年11月30日
+|1835
+|Bugfix
+|-
+|[[1.32.X 版本#1.32.1|1.32.1]]
+|2021年11月15日
+|78cb
+|Hotfix
+|-
+|[[1.32]]
+|2021年11月11日
+|f507
+|第31个主要补丁(aka "Songhai")。伴随 [[Origins]] 发行。
+|-
+|[[1.31.X 版本#1.31.6|1.31.6]]
+|2021年9月30日
+| 157c
+|Compatibility patch
+|-
+|[[1.31.X 版本#1.31.5|1.31.5]]
+|2021年6月8日
+|3261
+|Patch
+|-
+|[[1.31.X 版本#1.31.4|1.31.4]]
+|2021年6月3日
+|0f53
+|Patch
+|-
+|[[1.31.X 版本#1.31.3|1.31.3]]
+|2021年5月12日
+|984a
+|Hotfix
+|-
+|[[1.31.X 版本#1.31.2|1.31.2]]
+|2021年5月3日
+|3ad4
+|Hotfix
+|-
+|[[1.31.X 版本#1.31.1|1.31.1]]
+| 2021年4月28日
+|19c6
+|Hotfix
+|-
+|[[1.31 版本|1.31]]
+|2021年4月27日
+|0fb9
+|第30个主要补丁(aka "Majapahit")。伴随 [[Leviathan]] 发行。
+|-
+|[[1.30.X_版本#1.30.1|1.30.1]]
+|2020年6月9日
+|583f
+|hotfix&lt;ref name="1.30">由于原定发行日所发布的版本实际为1.30.1版本，1.30版本并未公开发布，其校验码也未知。&lt;/ref>
+|-
+|[[1.30]]
+|2020年6月9日
+| -
+|第29个主要补丁（aka "Austria"）。伴随 [[Emperor]] 发行。&lt;ref name="1.30" />
+|-
+|[[1.29.X 版本##1.29.6|1.29.6]]
+|2020年4月23日
+|b3ef
+|hotfix
+|-
+|[[1.29.X 版本#1.29.5|1.29.5]]
+|2020年2月7日
+|dc1b
+|hotfix
+|-
+|[[1.29.X 版本#1.29.4|1.29.4]]
+|2020年1月21日
+|4a70
+|Minor
+|-
+|[[1.29.X 版本#1.29.3|1.29.3]]
+|2019年12月9日
+|258d
+|Patch
+|-
+|[[1.29.X 版本#1.29.2|1.29.2]]
+|2019年10月2日
+|e022
+|Hotfix
+|-
+|[[1.29.X 版本#1.29.1|1.29.1]]
+|2019年9月20日
+|e8b2
+|Hotfix
+|-
+|[[1.29]]
+|2019年9月17日
+|ea57
+|第28个主要补丁（aka "Manchu"）。只有64位可执行。
+|-
+|[[1.28.X 版本#1.28.3|1.28.3]]
+| 2019年2月4日
+|3ba8
+|Patch
+|-
+|[[1.28.X 版本#1.28.2|1.28.2]]
+|2018年12月18日
+|d9f4
+|Hotfix
+|- 
+|[[1.28.X 版本#1.28.1|1.28.1]]
+|2018年12月11日
+|4648
+|Hotfix
+|-
+|[[1.28]]
+|2018年12月11日
+|f937
+|第27个主要补丁（aka "Spain"）。伴随 [[Golden Century]] 发行。
+|-
+|[[1.27.X 版本#1.27.2|1.27.2]]
+|2018年10月4日
+|f496
+|Hotfix
+|-
+|[[1.27]]
+|2018年10月1日
+|edf9
+|第26个主要补丁（aka "Poland"）
+|-
+|[[1.26.X 版本#1.26.1|1.26.1]]
+|2018年9月17日
+|7513
+|Hotfix
+|-
+|[[1.26]]
+|2018年9月6日
+|6196
+|第25个主要补丁（aka "Mughals"）。伴随 [[Dharma]] 发行。
+|-
+|[[1.25.1]]
+|2018年3月28日
+| 39a3
+|Hotfix
+|-
+|[[1.25]]
+|2018年3月20日
+|0fb2
+|第24个主要补丁（aka "England"）。伴随 [[Rule Britannia]] 发行。
+|-
+|[[1.24.X 版本#1.24.1|1.24.1]]
+|2017年12月14日
+|0625
+|Hotfix
+|-
+|[[1.24]]
+|2017年12月12日
+|c6bc
+|第23个主要补丁（aka "Japan"）。
+|-
+|[[1.23.X 版本#1.23.1|1.23.1]]
+|2017年11月29日
+|1dc0
+|Hotfix
+|-
+|[[1.23]]
+|2017年11月16日
+|1b5e
+|第22个主要补丁（aka "Persia"）。伴随 [[Cradle of Civilization]] 发行。
+|-
+|[[1.22.X 版本#1.22.2|1.22.2]]
+|2017年8月17日
+|7645
+|Hotfix
+|-
+|[[1.22.X 版本#1.22.1|1.22.1]]
+|2017年6月20日
+| 3d00
+|Hotfix
+|-
+|[[1.22]]
+|2017年6月14日
+|b6eb
+|第21个主要补丁（aka "Russia"）。伴随 [[Third Rome]] 发行。
+|-
+|[[1.21.X 版本#1.21.1|1.21.1]]
+|2017年4月27日
+|63a8
+|Hotfix
+|-
+|[[1.21]]
+|2017年4月25日
+|bbec
+|第20个主要补丁（aka "Hungary"）
+|-
+|[[1.20.X 版本#1.20.1|1.20.1]]
+|2017年4月11日
+|07f1
+|Hotfix
+|-
+|[[1.20]]
+|2017年4月6日
+|072a
+|第19个主要补丁（aka "Ming"）。伴随 [[Mandate of Heaven]] 发行。
+|-
+|[[1.19.X 版本#1.19.2|1.19.2]]
+|2016年11月30日
+|7dd8
+|Hotfix
+|-
+|[[1.19]]
+|2016年11月24日
+|fa37
+|第18个主要补丁（aka "Denmark"）
+|-
+|[[1.18.X 版本#1.18.4|1.18.4]]
+|2016年10月27日
+|f968
+|Hotfix
+|-
+|[[1.18.X 版本#1.18.3|1.18.3]]
+|2016年10月14日
+|9198
+|Hotfix
+|-
+|[[1.18.X 版本#1.18.2|1.18.2]]
+|2016年10月12日
+|197c
+| Hotfix
+|-
+|[[1.18]]
+|2016年10月11日
+|35d6
+|第17个主要补丁（aka "Prussia"）。伴随 [[Rights of Man]] 发行。
+|-
+|[[1.17.1]]
+|2016年6月9日
+|6704
+|Hotfix
+|-
+|[[1.17]]
+|2016年3月11日
+|f236
+|第16个主要补丁.
+|-
+|[[1.16.3]]
+|2016年4月14日
+|6227
+|Hotfix
+|-
+|[[1.16.2]]
+|2016年4月8日
+|3a8e
+|Hotfix
+|-
+|[[1.16]]
+|2016年4月5日
+|60a9
+|第15个主要补丁。伴随 [[Mare Nostrum]] 发行。
+|-
+|[[1.15.1]]
+|2016年2月1日
+|8ad5
+|Hotfix
+|-
+|[[1.15]]
+|2016年1月27日
+|e5f7
+|第14个主要补丁。
+|-
+|[[1.14.4]]
+|2016年1月4日
+|e1a1
+|Hotfix
+|-
+|[[1.14.3]]
+|2015年12月9日
+|f611
+|Hotfix
+|-
+|[[1.14.2]]
+|2015年12月4日
+|4c26
+|Hotfix
+|-
+|[[1.14.1]]
+|2015年12月3日
+|d7f1
+|Hotfix
+|-
+|[[1.14]]
+|2015年12月1日
+|fb1c
+|第13个主要补丁。伴随 [[The Cossacks]] 发行。
+|-
+|[[1.13.2]]
+|2015年10月27日
+|04fe
+|Hotfix
+|-
+|[[1.13.1]]
+|2015年8月31日
+|13a0
+|Hotfix
+|-
+|[[1.13]]
+|2015年8月27日
+|30a2
+|第12个主要补丁.
+|-
+|[[1.12.2]]
+|2015年6月18日
+|551a
+|Hotfix
+|-
+|[[1.12.1]]
+|2015年6月12日
+|ae85
+|Hotfix
+|-
+|[[1.12]]
+|2015年6月9日
+|6550
+|第11个主要补丁。伴随 [[Common Sense]] 发行。
+|-
+|[[1.11.4]]
+|2015年3月23日
+|63fd
+|Hotfix
+|-
+|[[1.11.3]]
+|2015年3月13日
+|62b3
+|Hotfix
+|-
+|[[1.11.2]]
+|2015年3月11日
+|4dee
+|Hotfix
+|-
+|[[1.11.1]]
+|2015年3月10日
+|547a
+|Hotfix
+|-
+|[[1.11]]
+|2015年3月8日
+|6f52
+|第10个主要补丁。伴随 [[Women in History]] 发行。
+|-
+|[[1.10.1]]
+| 2015年2月27日
+|1ef5
+|Hotfix
+|-
+|[[1.10]]
+|2015年2月26日
+|89ca
+|第9个主要补丁。伴随 [[El Dorado]] 发行。
+|-
+|[[1.9.2]]
+|2014年12月11日
+|e938
+|Hotfix
+|-
+|[[1.9.1]]
+|2014年12月10日
+|f555
+|Hotfix
+|-
+|[[1.9]]
+|2014年12月9日
+|6845
+|第8个主要补丁。主要是错误修复和 [[灾难]] 系统。
+|-
+|[[1.8.1]]
+|2014年11月10日
+|5d13
+|Hotfix
+|-
+|[[1.8]]
+|2014年10月30日
+|7d1c
+|第7个主要补丁。伴随 [[Art of War]] 发行。
+|-
+|[[1.7.3]]
+|2014年7月31日
+|7d7e
+|Hotfix
+|-
+|[[1.7]]
+|2014年7月16日
+|f2a1
+|第6个主要补丁。伴随 [[Res Publica]] 发行。
+|-
+|[[1.6.2]]
+|2014年7月4日
+|e98d
+|Hotfix
+|-
+|[[1.6.1]]
+|2014年5月30日
+|4a16
+|Hotfix
+|-
+|[[1.6]]
+|2014年5月29日
+|d96a
+|第5个主要补丁。伴随 [[Wealth of Nations]] 发行。
+|-
+|[[1.5.1]]
+|2014年3月3日
+|0ef1
+|Hotfix
+|-
+|[[1.5]]
+|2014年2月19日
+|ea3d
+|第4个主要补丁.
+|-
+|[[1.4.1]]
+| 2014年1月20日
+|ea04
+|Hotfix
+|-
+|[[1.4]]
+|2014年1月14日
+|c814
+|第3个主要补丁。伴随 [[Conquest of Paradise]] 发行。
+|-
+|[[1.3.X 版本#1.3.2|1.3.2]]
+|2013年11月12日
+|d2a0
+|Hotfix
+|-
+|[[1.3.X 版本#1.3.1|1.3.1]]
+|2013年11月4日
+|1683
+|Hotfix
+|-
+|[[1.3]]
+|2013年10月29日
+|2289
+|第2个主要补丁
+|-
+|[[1.2.X 版本#1.2.2|1.2.2]]
+|2013年10月3日
+|fe2b
+|Hotfix
+|-
+|[[1.2.X 版本#1.2.1|1.2.1]]
+|2013年9月26日
+|42e8
+|Hotfix
+|-
+|[[1.2]]
+|2013年9月24日
+|86c2
+|第1个主要补丁。与次要DLC一起发行。
+|-
+|[[1.1.X 版本#1.1.3|1.1.3]]
+|2013年8月27日
+|976f
+|Hotfix
+|-
+|[[1.1.X 版本#1.1.2|1.1.2]]
+|2013年8月22日
+|408b
+|Hotfix
+|-
+|[[1.1.X 版本#1.1.1|1.1.1]]
+|2013年8月19日
+|78f9
+|Hotfix
+|-
+|[[1.1.X 版本#1.1|1.1]]
+|2013年8月13日
+|17db
+|发行版本
+|-
+|0.900p
+|2013年7月17日
+|XXXX
+|预发行（预览）版本
+|}
+
+==参考资料==
+&lt;references />
+
+[[Category:补丁|*]]
+[[en:Patches]]
+</textarea><div class="templatesUsed"><div class="mw-templatesUsedExplanation"><p>本页使用的模板：
+</p></div><ul>
+<li><a href="https://www.eu4cn.com/wiki/Template:Infobox" title="Template:Infobox">Template:Infobox</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Infobox&amp;action=edit" title="Template:Infobox">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Infobox/row" title="Template:Infobox/row">Template:Infobox/row</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Infobox/row&amp;action=edit" title="Template:Infobox/row">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Nav_column" title="Template:Nav column">Template:Nav column</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Nav_column&amp;action=edit" title="Template:Nav column">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Version_column" title="Template:Version column">Template:Version column</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Version_column&amp;action=edit" title="Template:Version column">查看源代码</a>）（受半保护）</li></ul></div><p id="mw-returnto">返回<a href="https://www.eu4cn.com/wiki/补丁" title="补丁">补丁</a>。</p>
+</div>						</div>
+				</div>
+				<footer>
+				<div class="liberty-footer">
+										<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>					<div class="bottom-ads mobile-ab">
+						<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+						<!-- 移动端底部 -->
+						<ins class="adsbygoogle mobile-ab"
+						     style="display:block"
+						     data-ad-client="ca-pub-1612414434963106"
+						     data-ad-slot="3303553671"
+						     data-ad-format="auto"
+						     data-full-width-responsive="true"></ins>
+						<script>
+						     (adsbygoogle = window.adsbygoogle || []).push({});
+						</script>
+					</div>
+								<ul class="footer-places">
+									<li class="footer-places-privacy">
+						<a href="https://www.eu4cn.com/wiki/欧陆风云4百科:隐私政策">隐私政策</a>					</li>
+									<li class="footer-places-about">
+						<a href="https://www.eu4cn.com/wiki/欧陆风云4百科:关于">关于欧陆风云4百科</a>					</li>
+									<li class="footer-places-disclaimer">
+						<a href="https://www.eu4cn.com/wiki/欧陆风云4百科:免责声明">免责声明</a>					</li>
+							</ul>
+					<ul class="footer-icons">
+									<li class="footer-copyrightico">
+						<a href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="https://www.eu4cn.com/resources/assets/licenses/cc-by-nc-sa.png" alt="知识共享署名-非商业性使用-相同方式共享" width="88" height="31" loading="lazy"/></a>					</li>
+										<li class="footer-poweredbyico">
+						<a href="https://www.mediawiki.org/"><img src="https://www.eu4cn.com/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"/></a><a href="https://www.eu4cn.com/"><img src="https://www.eu4cn.com/images/footerlogo.png" width="88" height="31" loading="lazy"/></a>					</li>
+								</ul>
+						</div>
+				</footer>
+			</div>
+		</div>
+		</section>
+				<div class="modal fade login-modal" id="login-modal" tabindex="-1"
+			 role="dialog" aria-labelledby="login-modalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-sm" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<h4 class="modal-title">登录</h4>
+					</div>
+					<div class="modal-body">
+						<div id="modal-login-alert" class="alert alert-hidden alert-danger" role="alert">
+						</div>
+						<form id="modal-loginform" name="userlogin" class="modal-loginform"
+							  method="post">
+							<input class="loginText form-control" id="wpName1" tabindex="1"
+								   placeholder="请输入您的用户名" value="" name="lgname">
+							<label for="inputPassword" class="sr-only">密码</label>
+							<input class="loginPassword form-control" id="wpPassword1" tabindex="2"
+								   placeholder="请输入您的密码" type="password" name="lgpassword">
+							<div class="modal-checkbox">
+								<input name="lgremember" type="checkbox" value="1" id="lgremember" tabindex="3">
+								<label for="lgremember">记住登录</label>
+							</div>
+							<input class="btn btn-success btn-block" type="submit" value="登录" tabindex="4">
+							<a href="https://www.eu4cn.com/index.php?title=Special:%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95&amp;type=signup&amp;returnto=%E8%A1%A5%E4%B8%81" class="btn btn-primary btn-block" title="Special:用户登录" tabindex="5" type="submit">加入欧陆风云4百科</a>							<a href="https://www.eu4cn.com/wiki/Special:重置密码" title="Special:重置密码">忘记密码？</a>                            <br>
+							<a href="https://www.eu4cn.com/wiki/Special:用户登录" title="Special:用户登录">其他方式登录</a>							<input type="hidden" name="action" value="login" />
+							<input type="hidden" name="format" value="json" />
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">⧼liberty-btn-close⧽</button>
+						<button type="button" class="btn btn-primary">⧼liberty-btn-save-changes⧽</button>
+					</div>
+				</div>
+			</div>
+		</div>
+			</body>
+<!-- Mirrored from www.eu4cn.com/index.php?title=%E8%A1%A5%E4%B8%81&action=edit by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 May 2024 14:59:46 GMT -->
+</html>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?8b9cdb5f260cf613f39a508fbf9dd707";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.004","walltime":"0.006","ppvisitednodes":{"value":7,"limit":1000000},"postexpandincludesize":{"value":18,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":100},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20240506112522","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":1952});});</script>
+</body>
+</html>

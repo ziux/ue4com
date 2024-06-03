@@ -1,0 +1,1252 @@
+ <!DOCTYPE html>
+<html class="client-nojs" lang="zh" dir="ltr">
+
+<!-- Mirrored from www.eu4cn.com/index.php?title=%E9%99%86%E6%88%98&action=edit by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 May 2024 11:30:10 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>查看“陆战”的源代码 - 欧陆风云4百科，人人可以编辑的欧陆风云4中文百科全书</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"zh","wgMonthNames":["","1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"],"wgRequestId":"335d17775d3d924495515cf3","wgCSPNonce":false,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"陆战","wgTitle":"陆战","wgCurRevisionId":102058,"wgRevisionId":0,"wgArticleId":1007,"wgIsArticle":false,"wgIsRedirect":false,"wgAction":"edit","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageContentLanguage":"zh","wgPageContentModel":"wikitext","wgRelevantPageName":"陆战","wgRelevantArticleId":1007,"wgUserVariant":"zh","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgCargoDefaultQueryLimit":100,"wgCargoMapClusteringMinimum":80,"wgCargoMonthNames":["1月","2月","3月"
+,"4月","5月","6月","7月","8月","9月","10月","11月","12月"],"wgCargoMonthNamesShort":["1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"],"wgCargoWeekDays":["星期日","星期一","星期二","星期三","星期四","星期五","星期六"],"wgCargoWeekDaysShort":["日","一","二","三","四","五","六"],"wgPageFormsTargetName":null,"wgPageFormsAutocompleteValues":[],"wgPageFormsAutocompleteOnAllChars":false,"wgPageFormsFieldProperties":[],"wgPageFormsCargoFields":[],"wgPageFormsDependentFields":[],"wgPageFormsCalendarValues":[],"wgPageFormsCalendarParams":[],"wgPageFormsCalendarHTML":null,"wgPageFormsGridValues":[],"wgPageFormsGridParams":[],"wgPageFormsContLangYes":null,"wgPageFormsContLangNo":null,"wgPageFormsContLangMonths":[],"wgPageFormsHeightForMinimizingInstances":800,"wgPageFormsShowOnSelect":[],"wgPageFormsScriptPath":"/extensions/PageForms","edgValues":null,"wgPageFormsEDSettings":null,"wgAmericanDates":false,"wgVisualEditor":{
+"pageLanguageCode":"zh","pageLanguageDir":"ltr","pageVariantFallbacks":["zh-hans","zh-hant","zh-cn","zh-tw","zh-hk","zh-sg","zh-mo","zh-my"]},"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgSmjUseCdn":false,"wgSmjUseChem":true,"wgSmjDisplayMath":[],"wgSmjExtraInlineMath":[],"wgSmjScale":1,"wgSmjEnableMenu":true,"wgSmjDisplayAlign":"left","wgEditSubmitButtonLabelPublish":false};RLSTATE={"site.styles":"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.liberty.styles":"ready","jquery.tablesorter.styles":"ready","jquery.makeCollapsible.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready"};RLPAGEMODULES=["ext.SimpleMathJax","mediawiki.action.edit.collapsibleFooter","site","mediawiki.page.ready","jquery.tablesorter","jquery.makeCollapsible","ext.HighlightjsIntegration","ext.CodeMirror","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.gadget.UserLinkAvatar","ext.gadget.notifyConversion",
+"ext.gadget.notifyAdsense","ext.gadget.Edittools-vector","skins.liberty.bootstrap","skins.liberty.layoutjs","skins.liberty.liverc","skins.liberty.loginjs"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});});});</script>
+<link rel="stylesheet" href="loade7b8.css?lang=zh&amp;modules=ext.visualEditor.desktopArticleTarget.noscript%7Cjquery.makeCollapsible.styles%7Cjquery.tablesorter.styles%7Cskins.liberty.styles&amp;only=styles&amp;skin=liberty"/>
+<script async="" src="load7991.php?lang=zh&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=liberty"></script>
+<style>.Liberty .nav-wrapper,
+		.Liberty .nav-wrapper .navbar .form-inline .btn:hover,
+		.Liberty .nav-wrapper .navbar .form-inline .btn:focus,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link.active::before,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link:hover::before,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link:focus::before,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link:active::before,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-footer .label,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .contributioncredits-footer .label,
+		.Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools .tools-btn:hover,
+		.Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools .tools-btn:focus,
+		.Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools .tools-btn:active,
+		.btn-primary,
+		.header-template, .section-template {
+			background-color: #103D8F;
+		}
+
+		.btn-primary,
+		.section-template-border {
+			border-color: #103D8F;
+		}
+
+		.Liberty .nav-wrapper .navbar .form-inline .btn:hover,
+		.Liberty .nav-wrapper .navbar .form-inline .btn:focus {
+			border-color: #002E7D;
+		}
+
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link.active::before,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link:hover::before,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link:focus::before,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link:active::before {
+			border-bottom: 2px solid #103D8F;
+		}
+
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-footer .label:hover,
+		.Liberty .nav-wrapper .navbar .navbar-nav .nav-item .nav-link:hover,
+		.Liberty .nav-wrapper .navbar .navbar-nav .nav-item .nav-link:focus,
+		.dropdown-menu .dropdown-item:hover,
+		.btn-primary:hover,
+		.btn-primary:focus {
+			background-color: #002E7D;
+		}
+
+
+		.Liberty .content-wrapper #liberty-bottombtn,
+		.Liberty .content-wrapper #liberty-bottombtn:hover {
+			background-color: #103D8F;
+		}</style><style>@media (prefers-color-scheme: dark) { body, .Liberty, .dropdown-menu, .dropdown-item, .Liberty .nav-wrapper .navbar .form-inline .btn, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link.active, .Liberty .content-wrapper .liberty-content .liberty-content-main table.wikitable tr > th, .Liberty .content-wrapper .liberty-content .liberty-content-main table.wikitable tr > td, table.mw_metadata th, .Liberty .content-wrapper .liberty-content .liberty-content-main table.infobox th, #preferences fieldset:not(.prefsection), #preferences div.mw-prefs-buttons, .navbox, .navbox-subgroup, .navbox > tbody > tr:nth-child(even) > .navbox-list, .Liberty .nav-wrapper .navbar .form-inline .form-control {
+			background-color: #000;
+			color: #DDD;
+		}
+
+		.liberty-content-header, .liberty-footer, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-footer, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item, .Liberty .content-wrapper .liberty-content .liberty-content-header, .Liberty .content-wrapper .liberty-footer, .editOptions, html .wikiEditor-ui-toolbar, #pagehistory li.selected, .mw-datatable td, .Liberty .content-wrapper .liberty-content .liberty-content-main table.wikitable tr > td, table.mw_metadata td, .Liberty .content-wrapper .liberty-content .liberty-content-main table.wikitable, .Liberty .content-wrapper .liberty-content .liberty-content-main table.infobox, #preferences, .navbox-list, .dropdown-divider, .Liberty .content-wrapper .liberty-content .bottom-ads {
+			background-color: #1F2023;
+			color: #DDD;
+		}
+
+		.Liberty .content-wrapper .liberty-content .liberty-content-main, .mw-datatable th, .mw-datatable tr:hover td, textarea, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-content, div.mw-warning-with-logexcerpt, div.mw-lag-warn-high, div.mw-cascadeprotectedwarning, div#mw-protect-cascadeon, .mildtable th {
+			background-color: #000 !important;
+		}
+
+		.Liberty .content-wrapper .liberty-content .liberty-content-header .title>h1, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-content .live-recent-list .recent-item, caption { color: #DDD; }
+
+		.btn-secondary, .Liberty .content-wrapper .liberty-footer .catlinks, .rcpages-btn { background: transparent; color: #DDD; }
+
+
+		#pagehistory li { border: 0; }
+
+		.Liberty .content-wrapper .liberty-footer, .Liberty .content-wrapper .liberty-content .liberty-content-header, .Liberty .content-wrapper .liberty-content .liberty-content-main, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-footer, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-content, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item + .nav-item, .Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools .tools-btn:hover, .Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools .tools-btn:focus, .Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools .tools-btn, .dropdown-menu, .dropdown-divider, .Liberty .content-wrapper .liberty-content .liberty-content-main fieldset, hr, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-content .live-recent-list li, .mw-changeslist-legend, .Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools { border-color: #555; }
+
+		.flow-post, .Liberty .content-wrapper .liberty-content .liberty-content-main .toc .toctext { color: #DDD; }
+		.flow-topic-titlebar { color: #000; }
+		.flow-ui-navigationWidget { color: #FFF; }
+		.Liberty .content-wrapper .liberty-content .liberty-content-main .toccolours, .Liberty .content-wrapper .liberty-content .liberty-content-main .toc ul, .Liberty .content-wrapper .liberty-content .liberty-content-main .toc li { background-color: #000; }
+		.Liberty .content-wrapper .liberty-content .liberty-content-main .toc .toctitle { background-color: #1F2023; } }</style>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="loada6ee.css?lang=zh&amp;modules=site.styles&amp;only=styles&amp;skin=liberty"/>
+<meta name="generator" content="MediaWiki 1.39.3"/>
+<meta name="robots" content="noindex,nofollow"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="description" content="因为以下原因，您没有权限编辑本页：&#10;&#10;&#10;您请求的操作仅限属于该用户组的用户执行：用户&#10;&#10;&#10;您可以查看和复制此页面的源代码。&#10;{{Version|1.24}}&#10;{{Hatnote|本章主要讲述&#039;&#039;&#039;陆军战斗构成&#039;&#039;&#039;。关于招募和维持陆军的信息请参见[[陆军]]。关于陆军的兵种分类信息请参见[[陆军单位]]。关于将领的信息请参见[[将领]]。}}&#10;陆战就是是部署和调动一切军事资源对敌作战，一般情况下，这会直接影响战争的结果。在欧陆风云4中绝大部分战斗都是以陆地展开的，当然[[海战]]也很重要，但是失去陆权才是游戏中战争胜败的通常原因。因此，陆战的艺术意义重大，其复杂性我们将在这里尽可能充分地加以讨论。&#10;&#10;== 战斗界面 ==&#10;{{SVersion|Timeless}}一场战斗不仅仅是由一些简单的修正或者掷骰子的数字所决定的，而是通过一个复杂的模拟，让双方的军队部署在两排阵地中，让陆军单位与面前的敌人作战，同时在允许的情况下，敌人侧翼的陆军单位（有足够高的侧翼距离）可以在不同的位置间进行移动。与此同时，还要考虑撤退机制、消灭或击溃士气低落的单位、进行增援已经部署预备队。&#10;&#10;可惜的是，欧陆风云4的战斗系统，其战斗界面并不能非常直观或明确地，让玩家看到哪个部队正与哪个部队战斗或一支部队正向什么地方移动。因此，有必要通过本章内容来明确决定陆战胜利的各要素。&#10;[[File:陆战胜利.png|替代=|居中|缩略图|800x800像素|一般情况下陆战的结束界面]]&#10;&#10;== 地形 ==&#10;{{SVersion|1.24}}&#10;[[File:Terrain map.png|thumb|800px|center|地形地图，每一省份东南两条像素边境线属于他们本身]]&#10;&#10;每个省份的地形都显示在&#039;&#039;&#039;地形&#039;&#039;&#039;和&#039;&#039;&#039;简易地形&#039;&#039;&#039;地图模式。&#039;&#039;&#039;地形&#039;&#039;&#039;模式展示了一张自然外观的地图，而&#039;&#039;&#039;简易地形&#039;&#039;&#039;模式的色彩代表了每一个省份的地形类别；如果有需要，两者都有工具提示来显示当前的地形类别、堡垒等级以及当前的冬季状态。一些地形对在该省运动的军队增加了移动花费的惩罚，同时对攻击方增加了一种负面的地形修正，不同类型的地形有不同的修正效果。&#10;&#10;这里列出了地形的类型和它们给予的修正效果。&#10;&amp;lt;section begin=terrain combat/&gt;&#10;{|class=&quot;wikitable sortable mw-collapsible mw-collapsed&quot; style=&quot;text-align:right&quot;&#10;! width=&quot;500px&quot; | 地形&#10;! {{icon|supply limit|24px}}&amp;lt;br&gt;补给上限 !! {{icon|local defensiveness|24px}}&amp;lt;br&gt;本地防御效率 !! {{icon|movement speed|24px}}&amp;lt;br&gt;移动花费 !! &amp;lt;br&gt;攻击方惩罚 !! &amp;lt;br&gt;当地发展成本 &#10;|-&#10;| style=&quot;text-align:left&quot; | [[File:combat terrain arctic.png|Glacial terrain]] 冰川&#10;| {{green|+2}} || || {{red|+25%}} || {{red|−1}} || {{red|+50%}}&#10;|-&#10;| style=&quot;text-align:left&quot; | [[File:combat terrain farmlands.png|Farmlands terrain]] 农田&#10;| {{green|+10}} || || {{red|+10%}} || || {{green|−5%}}&#10;|-&#10;| style=&quot;text-align:left&quot; | [[File:combat terrain forest.png|Forest terrain]] 森林&#10;| {{green|+4}} || || {{red|+25%}} || {{red|−1}} || {{red|+20%}}&#10;|-&#10;| style=&quot;text-align:left&quot; | [[File:combat terrain hills.png|Hills terrain]] 丘陵&#10;| {{green|+5}} || {{green|+10%}} || {{red|+40%}} || {{red|−1}}  || {{red|+25%}}&#10;|-&#10;| style=&quot;text-align:left&quot; | [[File:combat terrain woods.png|Woods terrain]] 树林&#10;| {{green|+6}} || || {{red|+10%}} || {{red|−1}}  || {{red|+15%}}&#10;|-&#10;| style=&quot;text-align:left&quot; | [[File:combat terrain mountains.png|Mountain terrain]] 山脉&#10;| {{green|+4}} || {{green|+25%}} || {{red|+50%}} || {{red|−2}} || {{red|+35%}}&#10;|-&#10;| style=&quot;text-align:left&quot; | [[File:combat terrain grasslands.png|Grasslands terrain]] 草原&#10;| {{green|+8}} || || || ||&#10;|-&#10;| style=&quot;text-align:left&quot; | [[File:combat terrain jungle.png|Jungle terrain]] 丛林&#10;| {{green|+5}} || || {{red|+50%}} || {{red|−1}} || {{red|+35%}}&#10;|-&#10;| style=&quot;text-align:left&quot; | [[File:combat terrain marsh.png|Marsh terrain]] 沼泽&#10;| {{green|+5}} || || {{red|+30%}} || {{red|−1}} || {{red|+25%}}&#10;|-&#10;| style=&quot;text-align:left&quot; | [[File:combat terrain desert.png|Desert terrain]] 沙漠&#10;| {{green|+4}} || || {{red|+5%}} || || {{red|+50%}}&#10;|-&#10;| style=&quot;text-align:left&quot; | [[File:combat terrain coastal desert.png|Coastal Desert terrain]] 海岸沙滩&#10;| {{green|+4}} || || || || {{red|+35%}}&#10;|-&#10;| style=&quot;text-align:left&quot; | [[File:combat terrain inland ocean.png|Coastline terrain]] 海岸线&#10;| {{green|+6}} || || || || {{red|+25%}}&#10;|-&#10;| style=&quot;text-align:left&quot; | [[File:combat terrain drylands.png|Drylands terrain]] 旱地&#10;| {{green|+7}} || || || || {{red|+5%}}&#10;|-&#10;| style=&quot;text-align:left&quot; | [[File:combat terrain highlands.png|Highlands terrain]] 高原&#10;| {{green|+6}} || {{green|+10%}} || {{red|+40%}} || {{red|−1}} || {{red|+20%}}&#10;|-&#10;| style=&quot;text-align:left&quot; | [[File:combat terrain savannah.png|Savannah terrain]] 稀树草原&#10;| {{green|+6}} || || || || {{red|+15%}}&#10;|-&#10;| style=&quot;text-align:left&quot; | [[File:combat terrain steppe.png|Steppe terrain]] 大草原&#10;| {{green|+6}} || || ||  || {{red|+20%}}&#10;|}&#10;&amp;lt;section end=terrain combat/&gt;&#10;&#10;===穿越惩罚===&#10;穿越惩罚将减少攻击方所有骰子得数，情况如下：&#10;* &#039;&#039;&#039;穿越河流&#039;&#039;&#039;: 所有骰子得数 {{red|-1}}。&#10;: 两省份之间的河流会在省份窗口中以一个小河流标志显示，将鼠标悬停于其上将可以看到这个省份与哪个省份之间需要跨河。&#10;* &#039;&#039;&#039;穿越海峡&#039;&#039;&#039;: 所有骰子得数 {{red|-2}}。移步[[海峡]]界面查看所有海峡列表。&#10;* &#039;&#039;&#039;两栖登陆&#039;&#039;&#039;: 所有骰子得数 {{red|-2}}。&#10;: 这种情况包括了从海上发起攻击和直接登陆港口作战。&#10;当攻击方军队来自复数个省份时，任意一支部队遭到的穿越惩罚都会由全军承担。如果攻击方将领的机动性比防守方将领的高，则攻击方不会受到任何穿越惩罚。对将领机动性的检定是每日都会进行的，所以，即使高机动将领总有机会力挽狂澜——甚至是在他没有第一时间到达战场的情况下。&#10;&#10;===围城期间爆发的战斗===&#10;通常来说，“攻击方”被定义为相对于进入一个已有敌方单位所在省份的军队，而“防御方”则定义为早于“攻击方”之前就已经占据该省份的军队。然而，当一只军队正在围攻一个有堡垒的省份并且该省份未被攻占时遭到堡垒省份所有者军队或其盟友军队的攻击，则双方的角色就会对调：围攻堡垒的一方会被判定为“攻击方”， 同时企图破坏围攻的一方会被判定为“防御方”。进攻和地形惩罚都适用于“攻击方”, 同时不论进攻的“防御方”将领有多少机动点数，穿越河流和穿越海峡的攻击惩罚都判定无效。&#10;&#10;玩家可以在建造堡垒时考虑到这一点，同时也可以在战争以此来决定优先围攻哪个堡垒或去解救已方被围攻堡垒。必须要注意的是&#039;&#039;&#039;仅适用于带有堡垒的省份&#039;&#039;&#039;。&#10;&#10;== 战斗部署 ==&#10;{{SVersion|1.24}}&#10;=== 军团组成 ===&#10;{{main|陆军#不同兵种的配比}}&#10;为了保障军队的作战效率最大化，适当的军团组合（步骑炮比例搭配）是非常重要的。&#10;&#10;=== 战线宽度 ===&#10;{{N|战线宽度|Combat width|X=，旧译：&#039;&#039;&#039;战场宽度&#039;&#039;&#039;、&#039;&#039;&#039;战斗宽度&#039;&#039;&#039;}}决定一场战斗会有多少单位能有效的参加战斗。如果有足够的单位，每1战线宽度都能在前后两排分别站立1个单位。基础战线宽度值为15。&amp;lt;ref&gt;See in {{path|common/defines.lua}}: BASE_COMBAT_WIDTH = 15.0&amp;lt;/ref&gt;随着军事科技的进步，战线宽度会不断扩大，这使得各国能有效使用更多士兵参加战斗。除了美洲土著以外的所有国家的科技都从2或3级开始，所以他们的起始战线宽度是20。一场战斗中对阵双方的战斗宽度会默认使用参与者中战斗宽度较大一方的值。&#10;&amp;lt;br&gt;这是不同军事科技下战线宽度的对应表格。&#10;&#10;{| class=&quot;wikitable&quot; style=&quot;text-align:right&quot;&#10;! {{icon|mil tech}} 军事科技等级&#10;|0级||2级||5级||6级||8级||11级||14级||16级||18级||20级||22级||24级||26级&#10;|-&#10;! {{icon|combat width}} 战线宽度&#10;|15||20||22||24||25||27||29||30||32||34||36||38||40&#10;|}&#10;&#10;=== 排兵布阵 ===&#10;[[陆军单位]]阵型的排列是由AI自动完成的，玩家无法介入。本节解析AI的布阵策略。通过不断的观察和实验，我们得出了一个共同的结论，即游戏中的排兵布阵取决于每支部队（1K）的兵力和总体的[[陆军#不同兵种的配比|陆军]]兵种组成。&#10;&#10;下图中，小框里面打叉代表步兵，小框里面一条斜杠代表骑兵，小框里面带一点代表炮兵。&#10;&#10;&#039;&#039;&#039;注：本段落在参考英文wiki的基础上，由中文百科群成员实验后修改完成。&#039;&#039;&#039;&#10;&#10;====布阵原则====&#10;#前排先布置步兵，再布置骑兵。&#10;#后排先布置炮兵，再布置步兵和骑兵。&#10;#骑兵从两边向中央布置，步兵和炮兵从中央向两边布置。&#10;#布置方案以战场中线为基准&#039;&#039;&#039;尽可能的对称&#039;&#039;&#039;。&#10;#步兵和骑兵在后排布置时只能布置在&#039;&#039;&#039;相同兵种之后&#039;&#039;&#039;，除非一方数目不足而另一方数目过量。&#10;&#10;====步兵不足时的布阵====&#10;{{Battle|single=1|float=right||{{Battle/C|INF}}{{Battle/C|INF}}{{Battle/C|INF}}{{Battle/C|INF}}{{Battle/C|INF}}{{Battle/C|INF}}}}&#10;{{Battle|single=1|float=right||{{Battle/C|CAV}}{{Battle/C|CAV}}{{Battle/C|CAV}}{{Battle/C|CAV}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|CAV}}{{Battle/C|CAV}}{{Battle/C|CAV}}{{Battle/C|CAV}}}}&#10;{{Battle|single=1|float=right&#10;|{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}&#10;|{{Battle/C|CAV}}{{Battle/C|CAV}}{{Battle/C|CAV}}{{Battle/C|CAV}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|CAV}}{{Battle/C|CAV}}{{Battle/C|CAV}}{{Battle/C|CAV}}&#10;}}&#10;{{Battle|single=1|float=right&#10;|{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}&#10;|{{Battle/C|CAV}}{{Battle/C|CAV}}{{Battle/C|CAV}}{{Battle/C|CAV}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|CAV}}{{Battle/C|CAV}}{{Battle/C|CAV}}{{Battle/C|CAV}}&#10;}}&#10;{{Battle|single=1|float=right&#10;|{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}&#10;|{{Battle/C|CAV}}{{Battle/C|CAV}}{{Battle/C|CAV}}{{Battle/C|CAV}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|CAV}}{{Battle/C|CAV}}{{Battle/C|CAV}}{{Battle/C|CAV}}{{Battle/C|ART|green}}&#10;}}&#10;若步兵数小于战线宽度的一半，则按以下规则布阵。&#10;#将步兵从中央开始布置在前排。&#10;#将骑兵从中间向两边的布置在前排的两侧剩余位置。&#10;#将炮兵从中央开始布置在后排，但&#039;&#039;&#039;不得超过前排的宽度&#039;&#039;&#039;，即炮兵的前方必须有骑兵或步兵。&#10;#若后排仍有剩余空位：&#10;:*若第2步中骑兵数目足以充满前排，则将剩余骑兵布置在后排的两侧，&#039;&#039;&#039;从两边向中央部署&#039;&#039;&#039;。&#10;:*若第2步中骑兵不足以填满前排，则将剩余炮兵&#039;&#039;&#039;从中央向两边&#039;&#039;&#039;的布置在前后两排，&#039;&#039;&#039;使前后两排宽度相同或前排略宽1个格子&#039;&#039;&#039;。&#10;&#10;====步兵充足时的布阵====&#10;{{Battle|single=1|float=right||{{Battle/C|INF}}{{Battle/C|INF}}{{Battle/C|INF}}{{Battle/C|INF}}{{Battle/C|INF}}{{Battle/C|INF}}{{Battle/C|INF}}{{Battle/C|INF}}}}&#10;{{Battle|single=1|float=right||{{Battle/C|CAV}}{{Battle/C|CAV}}{{Battle/C|CAV}}{{Battle/C|CAV}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|CAV}}{{Battle/C|CAV}}{{Battle/C|CAV}}{{Battle/C|CAV}}}}&#10;{{Battle|single=1|float=right&#10;|{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}&#10;|{{Battle/C|CAV}}{{Battle/C|CAV}}{{Battle/C|CAV}}{{Battle/C|CAV}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|CAV}}{{Battle/C|CAV}}{{Battle/C|CAV}}{{Battle/C|CAV}}&#10;}}&#10;{{Battle|single=1|float=right&#10;|{{Battle/C|INF}}{{Battle/C|INF}}{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}{{Battle/C|INF}}{{Battle/C|INF}}&#10;|{{Battle/C|CAV}}{{Battle/C|CAV}}{{Battle/C|CAV}}{{Battle/C|CAV}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|CAV}}{{Battle/C|CAV}}{{Battle/C|CAV}}{{Battle/C|CAV}}&#10;}}&#10;{{Battle|single=1|float=right&#10;|{{Battle/C|CAV}}{{Battle/C|CAV}}{{Battle/C|CAV}}{{Battle/C|CAV}}{{Battle/C|INF}}{{Battle/C|INF}}{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}{{Battle/C|INF}}{{Battle/C|INF}}{{Battle/C|CAV}}{{Battle/C|CAV}}{{Battle/C|CAV}}{{Battle/C|CAV}}&#10;|{{Battle/C|CAV}}{{Battle/C|CAV}}{{Battle/C|CAV}}{{Battle/C|CAV}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|CAV}}{{Battle/C|CAV}}{{Battle/C|CAV}}{{Battle/C|CAV}}&#10;}}&#10;步兵数大于等于战场宽度的一半，则按以下规则布阵。&#10;#将步兵从中央开始布置在前排，左右对称，但在两边各空出 &#039;&#039;&#039;min{ 战场宽度/4 , 骑兵数/2 }&#039;&#039;&#039; 的位置(此处除法为整除，小数部分舍去)。&#10;#将骑兵布置在第1步中前排空出的位置中。&#10;#将炮兵布置在后排中央。&#10;#若后排仍有空位：&#10;:*空位对应的前排位置为步兵的，此位置优先放置步兵。&#10;:*空位对应前排位置为骑兵的，此位置优先放置骑兵。&#10;:*若步兵或骑兵一方数目不足，则数目充足的一方可跨过&quot;步骑分界线&quot;向另一方位置部署。&#10;&#10;== 战斗过程 ==&#10;{{Sversion|1.24}}&#10;当两支敌对的军团在一个省份相遇时，战斗就会发生直到其中一支被击溃或全军覆没。&#10;&#10;=== 战斗概念 ===&#10;在介绍之前，重温并补充一些本节的概念：&#10;&#10;* 军团：玩家和AI操控的作战单位，由许多部队编成。&#10;* 部队：游戏中的基本作战单位，人数上限为1000。多支部队可组成军团提高战斗力。&#10;* 攻击方/防御方：“攻击方”被定义为相对于进入一个已有敌方单位所在省份的军队，而“防御方”则定义为早于“攻击方”之前就已经占据该省份的军队。&#10;* 我方/敌方：此为战斗概念。EU4为即时战略游戏，也就是说，战斗中不存在战棋游戏中“你只攻击，我只挨打”的情况。当一支部队猛烈打击对手时，对方部队也会予以反击，双方的攻击是同时计算的。因为，为了防止与上述的攻击方/防御方混淆，这里将两支交手的军团简称为{{Green|我方}}和{{Red|敌方}}。&#10;* 参战部队/未参战部队/参与战斗的部队：在一场战斗中，受战线宽度和侧翼攻击范围限制，并非所有派过去的部队都能第一时间打击敌人。因此，将单位时间内对对方部队输出的部队叫&#039;&#039;&#039;参战部队&#039;&#039;&#039;；与此相对应的，在战斗中，但没有打击对方部队的，叫&#039;&#039;&#039;未参战部队&#039;&#039;&#039;，这些部队大多作为预备役，在参战部队败下阵后会支援前线；而该部队无论参战或是不参战，不管在不在战场上，只要其身处战斗，都叫&#039;&#039;&#039;参与战斗的部队&#039;&#039;&#039;，这些部队每天都会受到士气惩罚。&#10;&#10;=== 战斗画面 ===&#10;如下为陆战画面，其中：&#10;&#10;红框：撤退标识，当战斗经过两轮火力-冲击阶段（12天）时，玩家可点击此按钮，将部队有序撤离。&#10;&#10;绿框：参战将领信息及将领特质。&#10;&#10;黄框：部分决定骰子点数的变量，例如骰子，将领点数，地形等。&#10;&#10;蓝框：参战军团的平均士气。注意与下文中平均最大士气区分开。&#10;&#10;紫框：参战军团的平均训练度，平均最大士气和军事战术。&#10;&#10;浅橙框：&#039;&#039;&#039;前排&#039;&#039;&#039;步兵/骑兵数量及全部炮兵的数量。骑兵左上角的加/减号代表前排骑兵比例是否合适。&#10;&#10;粉框：上面粉框代表双方军团的战斗部署。不同国家的部队用不同颜色标识。随着人员伤亡，小框颜色会逐渐变浅。将鼠标悬停在小框上，则可显示该部队的具体信息：实时人数、士气，训练度等。而将鼠标悬停在下面粉框时，可查看本场战斗的战线宽度。&#10;&#10;上文出现的概念均于下文解释。&#10;[[File:陆战场面2.png|居中|缩略图|452x452像素|欧陆风云4的陆战画面]]&#10;&#10;=== 阶段 ===&#10;战斗由一系列&#039;&#039;&#039;持续三天&#039;&#039;&#039;的阶段组成，在&#039;&#039;&#039;火力&#039;&#039;&#039;与&#039;&#039;&#039;冲击&#039;&#039;&#039;阶段之间交替进行，战斗一开始为火力阶段。一般来说，步兵和炮兵在火力阶段能打出大量输出，而骑兵能在冲击阶段大杀四方。&#10;&#10;=== 攻击目标 ===&#10;攻击目标由AI自行选择，前排部队和后排炮兵可以攻击任何在其攻击范围内的敌军。单支部队只可以攻击一支部队，但却可以承受多支敌方部队的攻击。一般情况下前排部队只与其正面的敌人交战，但如果其正面没有部队迎战，前排部队会在侧翼攻击范围内打击其正面相邻区域的敌军。因此，在陆战中，其他条件不变下，顶满战线宽度的军团，其优势要比没有顶满的强。战斗中其正面没有敌人的部队，在侧翼攻击范围允许下，可以攻击周边敌军部队，这样敌军部队会遭受多支部队打击，增加战损。&#10;&#10;有时，如果能造成敌军更多损失的话，前排部队有时候也会不顾一切地执行侧翼攻击。这种不顾一切执行侧翼攻击的状况，通常会发生在敌军全部为炮兵或者陆军兵种十分落后的情况下。&#10;&#10;后排的步兵和骑兵部队不能发动进攻，他们只有在其正前方的我方部队败退后顶上前排。炮兵是唯一可以从后排发起攻击的兵种，但在后排攻击的炮兵只会造成50%的基本战损。大时代能力{{Icon|artillery damage from back row}}“改良炮兵射程”会增加20%后排炮兵伤害，能将该数字提升至70%。&#10;&#10;下图显示了攻击正面部队、攻击侧翼部队以及未参战三种情况：&#10;[[File:攻击目标.png|居中|缩略图|400x400像素|单支部队的攻击目标]]&#10;&#10;=== 战斗系统 ===&#10;EU4的战斗系统使用四个公式来计算参战部队的人员伤亡和士气打击：&#10;&#10;在如下公式中，&amp;lt;math&gt; Atk&amp;lt;/math&gt;代表{{Green|我方}}，&amp;lt;math&gt; Def&amp;lt;/math&gt;代表{{Red|敌方}}。若无特殊说明，以下公式均代入{{Green|我方}}视角。&#10;&#10;==== 骰子点数(Pips) ====&#10;每个&#039;&#039;&#039;阶段（持续三天的火力/冲击）&#039;&#039;&#039;开始，双方都会掷骰子。产生的点数将直接影响部队在这个阶段中，每天对敌军造成的士气打击和人员伤亡。&#10;&#10;骰子计算公式如下：&#10;&#10;&amp;lt;math&gt; Pips_{T} = Roll +  \max (0, Leader_{Atk} - Leader_{Def}) + Pips_{Atk} - Pips_{Def} - Terrain&amp;lt;/math&gt;&#10;&#10;其中：&#10;* 骰子 (&amp;lt;math&gt;Roll&amp;lt;/math&gt;)：一个0-9的随机数，每个阶段开始时投掷一次。&#10;* [[将领]]属性 (&amp;lt;math&gt;Leader&amp;lt;/math&gt;){{Icon|land leader fire}}{{Icon|land leader shock}}：领军将领的属性分别影响相应阶段（火力/冲击）。&#10;*{{Green|我方}}/{{Red|敌方}}部队[[陆军单位]]属性 (&amp;lt;math&gt;Pips&amp;lt;/math&gt;){{Icon|fire}}{{Icon|shock}}{{Icon|land morale}}{{pips|12|off}}{{Pips|12|def}}：我方/敌方部队的攻击/防御点数（火力/冲击/士气）。请注意，这是兵种自带的点数，要与下文说的{{Green|我方}}部队伤害区分开来。后排炮兵会将其50%的冲击和火力防御点数（不为整数则就近取小值。16级炮兵开始提供一点防御火力点数，29级炮兵提供一点防御冲击点数）赋予到该支炮兵前的那只部队上。&#10;* [[地形]]修正 (&amp;lt;math&gt;Terrain&amp;lt;/math&gt;)：恶劣地形会给攻击方部队造成进攻惩罚。&#10;&#10;==== 基础战损(Multipliers) ====&#10;在清算最后的人员伤亡和士气打击前，系统还会计算单支部队造成的“基础战损”：&#10;&#10;&amp;lt;math&gt; Multipliers = \frac{Strength}{1000} \cdot \frac{Damage }{Tactics} \cdot (1 + CombatAbility) \cdot (1 + Discipline) \cdot (1 + \frac{Round}{100})&amp;lt;/math&gt; &#10;&#10;其中：&#10;&#10;*{{Green|我方}}部队人数 (&amp;lt;math&gt;Strength&amp;lt;/math&gt;){{Icon|manpower}}：若我方部队人数不满员，输出伤害按比例减少。&#10;*{{Green|我方}}部队伤害 (&amp;lt;math&gt;Damage&amp;lt;/math&gt;){{Icon|fire}}{{Icon|shock}}：此项由军事科技等级及修正（步兵火力/骑兵冲击一类）决定。详见 [[科技#军事科技对陆军的累计加成效果|军事科技对陆军的累计加成效果]]。&#10;*{{Red|敌方}}部队[[军事战术]]最终值 (&amp;lt;math&gt;Tactics&amp;lt;/math&gt;){{Icon|Military tactics}}：敌方部队的军事战术最终值。&#10;*{{Green|我方}}部队[[作战能力]]加成 (&amp;lt;math&gt;CombatAbility&amp;lt;/math&gt;){{Icon|inf power}}{{Icon|cav power}}{{Icon|art power}}：我方部队的步兵/骑兵/炮兵作战能力加成。&#10;*{{Green|我方}}单位[[训练度]] (&amp;lt;math&gt;Discipline&amp;lt;/math&gt;){{Icon|discipline}}：我方部队的训练度。&#10;*交战军团战斗时间 (&amp;lt;math&gt;Round&amp;lt;/math&gt;){{Icon|time}}：当军团开始战斗时，每天的基础战损增加&amp;lt;math&gt;1\%&amp;lt;/math&gt;，第一天以&amp;lt;math&gt;1\%&amp;lt;/math&gt;开始。&#10;*后排炮兵输出时，此值应再乘以&amp;lt;math&gt;50\%&amp;lt;/math&gt;。大时代能力{{Icon|artillery damage from back row}}“改良炮兵射程”会增加20%后排炮兵伤害，能将该修正提升至&amp;lt;math&gt;70\%&amp;lt;/math&gt;。&#10;&#10;====人员伤亡(Casualties)====&#10;在骰子点数和基础战损计算完毕后，系统立刻计算{{Red|敌方}}部队受{{Green|我方}}部队打击下的伤亡人数。需要注意的是，这是一支敌方部队受一支我方部队打击的计算公式，若该敌方部队受到多支我方部队打击，则将每一项分开计算，并最后加在一起：&#10;&#10;&amp;lt;math&gt; Casualties=(15+5\times Pips_{T})\cdot Multipliers\cdot(1+Damage_{Mod})\cdot(1+DamageRev_{Mod}) &amp;lt;/math&gt;&#10;&#10;其中：&#10;&#10;*骰子点数(&amp;lt;math&gt;Pips_{T}&amp;lt;/math&gt;)：第一个公式采用火力/冲击点数后的计算结果。&#10;*基础战损(&amp;lt;math&gt;Multipliers&amp;lt;/math&gt;)：第二个公式的计算结果。&#10;*{{Green|我方}}部队阶段修正 (&amp;lt;math&gt;Damage_{Mod}&amp;lt;/math&gt;){{Icon|land fire damage}}{{icon|shock damage}}：我方部队增加火力与冲击伤害的修正。&#10;*{{Red|敌方}}部队阶段修正 (&amp;lt;math&gt;DamageRev_{Mod}&amp;lt;/math&gt;){{Icon|fire damage received}}{{Icon|shock damage received}}：敌方部队降低火力与冲击伤害的修正。&#10;*需要注意的是，当炮兵暴露于前排，受到对面部队直接攻击时，其会受到双倍的人员伤亡。&#10;&#10;====士气打击(MoraleCasualties)====&#10;在骰子点数和基础战损计算完毕后，系统立刻计算{{Red|敌方}}部队受{{Green|我方}}部队进攻下的士气打击。需要注意的是，这是一支敌方部队受一支我方部队打击的计算公式，若该敌方部队受到多支我方部队打击，则将每一项分开计算，并最后加在一起。并且，在军团和战斗界面中，玩家无法看到单支部队的士气值，只能看到所有部队士气值的平均值：&#10;&#10;&amp;lt;math&gt; MoraleCasualties = (15 + 5 \cdot Pips) \cdot Multipliers \cdot (1 + DamageModifier)\cdot (1 + DamageReceived) \cdot\frac{MaxMorale}{540} + PassiveMoraleDamage \cdot ( 1 - RO) &amp;lt;/math&gt;&#10;&#10;其中：&#10;&#10;*骰子点数(&amp;lt;math&gt;Pips_{T}&amp;lt;/math&gt;)：第一个公式采用士气点数后的计算结果。&#10;*基础战损(&amp;lt;math&gt;Multipliers&amp;lt;/math&gt;)：第二个公式的计算结果。&#10;*{{Green|我方}}部队士气最大值(&amp;lt;math&gt;MaxMorale&amp;lt;/math&gt;)：我方部队士气的最大值。一般情况下，战斗中此值可视为固定值。&#10;*{{Green|我方}}士气打击调整 (&amp;lt;math&gt;DamageModifier&amp;lt;/math&gt;)：我方的士气打击调整值&#10;*{{Red|敌方}}受到士气打击调整 (&amp;lt;math&gt;DamageReceived&amp;lt;/math&gt;)：敌方的受到士气打击调整值&#10;&#10;*士气损耗 (&amp;lt;math&gt;PassiveMoraleDamage &amp;lt;/math&gt;)：所有参与战斗的部队每天敌方最大士气1%的士气损耗。未参战部队会受到每天2%敌方最大士气的士气损耗，故而将精锐部队置于后方非常不划算。但是，当陆军职业度达到80%后，该值可下降50%(&amp;lt;math&gt;RO&amp;lt;/math&gt;)。&#10;*需要注意的是，当炮兵暴露于前排，受到对面部队直接攻击时，其会受到双倍的士气打击。&#10;&#10;有几个独特的国家理念可以减少火力和冲击阶段受到的损伤、加强输出的伤害：&#10;&#10;&#039;&#039;&#039;增加火力伤害的的理念：&#039;&#039;&#039;&#10;{{bonus table|land fire damage}}&#10;&#10;&#039;&#039;&#039;增加冲击伤害的的理念：&#039;&#039;&#039;&#10;{{bonus table|shock damage}}&#10;&#10;信仰 {{icon|Jafari}} [[伊斯兰教#伊斯兰教法学派|贾法里派]]的伊斯兰教国家也会获得 {{icon|shock damage}}{{green|+10%}} 冲击伤害&#10;&#10;&#039;&#039;&#039;减少火力伤害的的理念：&#039;&#039;&#039;&#10;{{bonus table|fire damage received}}&#10;&#10;&#039;&#039;&#039;减少冲击伤害的的理念：&#039;&#039;&#039;&#10;{{bonus table|shock damage received}}&#10;&#10;信仰 {{icon|Zaidi}} [[伊斯兰教#伊斯兰教法学派|宰德派]]的伊斯兰教国家也会获得 {{icon|shock damage received}}{{green|-10%}} 受到的冲击伤害&#10;&#10;信仰 {{icon|Hussite}} [[基督教#胡斯派|胡斯派]]的国家也会获得 {{icon|shock damage received}}{{green|-5%}} 受到的冲击伤害&#10;&#10;===&#039;Zombie&#039; regiments===&#10;{{SVersion|1.34}}&#10;In principle, units on the frontline retreat and are replaced by reserve units when they reach either 0 morale or 0 regiment strength. However, before patch 1.34 this mechanic did not function when regiment strength reaches 0 before morale reaches 0 during the first 12 days of a battle. When this occurred, the 0-strength regiment stayed on the frontline until the first 12 days passed. This remains true even when the 0 strength regiment reaches 0 morale during the first 12 days.&#10;&#10;===Overkill===&#10;&#10;When a regiment deals morale or kill casualties to a target that has less morale or regiment strength remaining, the excess morale or kill casualties are not distributed to other units. Thus a regiment that has 0.01 morale left after a phase will absorb an entire other day of kill &amp;amp; morale casualties.&#10;&#10;===战斗结果===&#10;在战斗过程中，前排部队人数或士气一旦归零，系统判定此部队即丧失作战能力，将其移出战场，其位置由周边部队补上，优先选择正后排的步兵/骑兵，其次是原位置左边或右边的部队。（但在人数归0的情况下，系统没有将此部队除名，不过军团界面中此部队的人数显示为0）如果此时战场上存在未参战步兵/骑兵部队，即将其从军团前排侧翼补上以维持战斗。&#10;&#10;当战斗中的一方军团总人数（极为少见）或士气率先降为0，系统判定该方失败。在没有全歼的情况下，这支军团会撤退到其控制区内休养生息，以便投入下一场战斗。&#10;&#10;大部分情况下，失败方会遭受严重的人员损失，但不至于被悉数歼灭。但在以下三个情况中，{{Red|敌方}}军团可以被全歼：&#10;&#10;# 开始战斗时{{Red|敌方}}军团士气为&#039;&#039;&#039;0&#039;&#039;&#039;。&#10;#战斗结束时，{{Green|我方}}军团&#039;&#039;&#039;存活人数&#039;&#039;&#039;（并非人数上限）为{{Red|敌方}}的10倍及以上，并且{{Green|我方}}军事科技至少比{{Red|敌方}}的高2级。&#10;#在两轮火力-冲击阶段（12天）内，将{{Red|敌方}}军团&#039;&#039;&#039;前排投入战斗（即不显示为“处于预备队”）的部队士气&#039;&#039;&#039;降到&#039;&#039;&#039;0&#039;&#039;&#039;的同时，{{Green|我方}}军团&#039;&#039;&#039;存活人数&#039;&#039;&#039;（并非人数上限）为{{Red|敌方}}的2倍及以上。&#10;&#10;==战斗统计==&#10;{{Sversion|1.24}}&#10;以下介绍上述公式中出现的概念。其中大部分都可以从[[陆军单位]]和[[陆军]]界面找到详细介绍。&#10;&#10;===军事战术===&#10;军事战术会减少己方部队在战斗中受到的伤害。[[科技|军事科技]]的提高会提高军事战术的基础值，而训练也会增加军事战术。军事战术的最终值为：&#10;&#10;&amp;lt;math&gt;军事战术最终值 = 军事战术基础值 \times 训练度&amp;lt;/math&gt;&#10;{| class=&quot;wikitable&quot; style=&quot;text-align:center&quot;&#10;! style=&quot;width:220px&quot; |{{icon|mil tech}} 军事科技等级&#10;! style=&quot;width:50px&quot; |0 级&#10;! style=&quot;width:50px&quot; |4 级&#10;! style=&quot;width:50px&quot; |6 级&#10;! style=&quot;width:50px&quot; |7 级&#10;! style=&quot;width:50px&quot; |9 级&#10;! style=&quot;width:50px&quot; |12 级&#10;! style=&quot;width:50px&quot; |15 级&#10;! style=&quot;width:50px&quot; |19 级&#10;! style=&quot;width:50px&quot; |21 级&#10;! style=&quot;width:50px&quot; |23 级&#10;! style=&quot;width:50px&quot; |24 级&#10;! style=&quot;width:50px&quot; |30 级&#10;! style=&quot;width:50px&quot; |32 级&#10;|-&#10;!{{icon|Military tactics}} 军事战术基础值&#10;|0.5||0.75||1.0||1.25||1.5||1.75||2.0||2.25||2.5||2.75||3.0||3.25||3.5&#10;|}&#10;&#10;===属性点数===&#10;{| style=&quot;margin: 0 auto;&quot;&#10;|[[File:dots_offensive.png]]&#10;|[[File:dots_defensive.png]]&#10;|}&#10;&#10;每支部队的进攻和防御能力体现为三种数值：火力、冲击和士气。攻击能力使用黄点表示，防御能力使用绿点表示。在不同的战斗阶段，每支部队都使用自身的攻击能力输出伤害，使用自身的防御能力抵御伤害。&amp;lt;ref&gt;http://steamcommunity.com/app/236850/discussions/0/864976115458051703/&amp;lt;/ref&gt; &amp;lt;br /&gt;&#10;由此，我们可以推断出，高攻击力在玩家拥有比对手更多兵力时比高防御力更有价值，反之则反。&#10;这是因为，一支数量庞大，作战宽度更大的军队，势必拥有更宽广的杀伤区，这时高攻击力可以在相同时间内对敌方军队造成更大的伤亡。&#10;如果，敌方军队由10队步兵和10队炮兵组成，而玩家手中只有10队步兵时，高防御力将显著减少玩家在陆战中的损耗——因为防御力可以同时减少来自步兵和炮兵远射的攻击。&#10;一言蔽之，玩家如果打算供养一支大军，炮兵和步兵的攻击力越高越好，因为多数情况下，防御方的每一团要承受来自于进攻方两个团（步兵和炮兵）的进攻。&#10;在炮兵出现早期，（比如，7级军事科技时，一个炮兵团有1点冲击修正，没有火力修正；一个步兵团有0.35火力修正和0.5冲击修正）推荐使用高炮兵比率配合高冲击修正的将领。这样，玩家会在冲击阶段对敌军造成的伤害将会大大提升。反过来说，在游戏前期通过堆防御力来减少来自冲击阶段的伤害是可取的。&amp;lt;br&gt;&#10;在7级军事科技之后，无论是游牧民族还是开化国家，如果玩家养得起一支与攻击宽度相等的炮兵，一个火力修正高的将领配合火力攻击力为2的步兵和火力冲击均为1的炮兵是比较合适的。&#10;&#10;===侧翼攻击范围===&#10;侧翼攻击范围决定了一支部队可能进行侧翼攻击的攻击范围（距离）。1点侧翼攻击范围代表该部队能够攻击其正面部队左方或右方1格的部队，以此类推。后排炮兵在计算距离时会投影到前排部队上，所以炮兵的侧翼攻击范围概念和步兵/骑兵是一样的。&#10;&#10;步兵基本侧翼攻击范围为 1，骑兵/炮兵为 2。&#10;&#10;随着游戏的进行，军事科技会逐渐增强部队的侧翼攻击范围。&#10;下表介绍的就是军事科技等级对侧翼攻击范围的影响。&#10;&#10;{| class=&quot;wikitable&quot; style=&quot;text-align:center&quot;&#10;! style=&quot;width:220px&quot; |{{icon|mil tech}} 军事科技等级&#10;! style=&quot;width:50px&quot; |0 级&#10;! style=&quot;width:50px&quot; |10 级&#10;! style=&quot;width:50px&quot; |18 级&#10;! style=&quot;width:50px&quot; |23 级&#10;! style=&quot;width:50px&quot; |28 级&#10;! style=&quot;width:50px&quot; |30 级&#10;|-&#10;!{{icon|flanking range}} 对侧翼攻击的改善&#10;|0&#10;|{{green|+25%}}|| {{green|+50%}}||{{green|+100%}} || {{green|+125%}}||{{green|+150%}}&#10;|-&#10;!{{icon|infantry}} 步兵侧翼攻击范围&#10;|1||1||1||2||2||2&#10;|-&#10;!{{icon|cavalry}} 骑兵侧翼攻击范围&#10;| 2||2||3||4||4||5&#10;|-&#10;!{{icon|artillery}} 炮兵侧翼攻击范围&#10;|2|| 2||3||4||4||5&#10;|}&#10;{{clear}}&#10;一支部队（1K）, 当它拥有 75% 以上的兵力参加战斗就可以 {{green|100%}} 的获得当前侧翼攻击范围；&amp;lt;br /&gt;&#10;如果兵力在 50% 至 75% 之间，参加战斗时只能获得其 {{red|75%}} 的侧翼攻击范围；&amp;lt;br /&gt;&#10;若兵力仅剩 25% 至 50% ，战斗中的侧翼攻击范围将只能达到 {{red|50%}}。&amp;lt;br /&gt;&#10;{| class=&quot;wikitable&quot; style=&quot;text-align:right&quot;&#10;!单支部队兵力&#10;| 1000–750 人||749–500 人||499–250 人||249–0 人&#10;|-&#10;!侧翼攻击范围&#10;|{{green|100%}}||{{red|75%}}||{{red|50%}}||{{red|25%}}&#10;|}&#10;其最终数值将四舍五入，总为整数。&#10;&#10;一些理念可以增强骑兵侧翼攻击范围：&#10;{{bonus table|cavalry flanking ability}}&#10;&#10;===士气===&#10;士气是陆战中非常重要的因素。每天，参与战斗的部队都会无条件减少0.03点士气。如果一支军团遭到了敌方的杀伤，则会损失更多的士气。一旦一支军团的士气最终降为了0，这个军团将会尝试从战场撤退。但是，在两个火力-冲击阶段完成（12天）之前，是不可以撤退的，在此之前士气归零且兵力少于敌方一半的军团会被彻底消灭，全军从游戏中被移除。&#10;&#10;一支士气在0.50以下的军团会进入低组织度状态，这一状态会在部队所属国家旗帜上方以黑旗标记，选中军团后也能在士气条附近看到火焰的标记。一支低组织度的军团在士气恢复到0.50以上之前是无法移动的。在低陆军维护费状况下征募的军队就是个例子。&#10;&#10;如果一支军团战败，但其士气仍使其不至于陷入低组织度状态，这支军团会被迫撤退到一个被我方控制的省份（被玩家，玩家的战时盟友拥有或占领的省份）。这个省份可以是一个距离战役发生地很远的省份。军团会优先选择高发展度，拥有要塞并且不与敌军接触的省份作为撤退的目的地。在撤退途中，除非军团已经到达了撤退目的地（或者没有到达撤退目的地之前士气就已经恢复至100%），军团既不可能投入战斗，也不可以被控制。在撤退的军团的移动速度总是比相同条件下的正常军团稍快，在撤退途中，军团会以正常比例恢复士气。如果在大范围内没有被友方占据的省份可供休整，军团会溃散，强制移动一个省份的距离。完成这一移动后，如果每月维护检定没有完成，这支军团可以立即被攻击（通常是在士气极低的情况下）。溃散的军团在移动结束后，会获得少许士气恢复。这一机制可以用于快速击垮敌军的有生力量，但是这个机制同样会作用于玩家的军团。&#10;&#10;在两个火力-冲击阶段结束之后，如果军团剩余士气大于0.50，这时，军团可以接受撤退指令。撤退指令允许玩家控制撤退目的地，如果撤退时士气小于0.50，撤退目的地是不可控的。如果复数支军团参与了一场战斗，一些符合条件的团会接受撤退指令，而剩下的士气不足以接受撤退指令的团会留在战斗中。&#10;&#10;赢下一场战斗会使胜利方军团的士气恢复最大值的50%，而在一场战斗中撤退会根据撤出的团的数量减少其他仍在战斗中的盟军的士气。&#10;&#10;在一场战斗结束后，军队必须花费一定时间恢复士气，恢复值将在每月的1日结算，但处于战斗中的军队不会恢复士气。&#10;&#10;*一支溃散的军团一旦停止溃退状态将获得额外的士气奖励。&#10;*[[强行军]]时士气无法恢复。&#10;&#10;如果不想军队溃退到非常远的位置，可以考虑将军队维护费拉倒最低，然后军队就会在溃退中因士气过低而停止溃退。这种方法在全国只有一支军队时格外有用。&#10;&#10;士气与训练之争：首先说结论前期训练强于士气，后期士气强于训练。&#10;&#10;前期（没有炮兵或炮兵输出较弱时）：首先，在双方士气相等时，前排部队将于剩下400人左右时士气归零。所以当只有前排对战时，即便提高士气，令已然损失惨重的部队继续留在场上战斗，能造成的战果也很有限，在势均力敌的血战中反而会降低自己的战损比。当然前期提高士气也自然有好处。在意图一次接战全歼对方部队时，需要满足对方士气归零和对方人数少于我方一半两个要求。所以在这种情况下，士气高到足以令对方小股部队在12天内被击败便足够。另一种情况，意图击败对方一次后追上全歼，这种情况士气同样有用，但值得注意的是仍需将对方人数降至自己一半一下。&#10;&#10;后期（炮兵输出较强时）：后期炮兵输出常常占到一半，且当炮兵与前排比例得当时，炮兵将与前排同时撤退，无法被杀伤。要令对方的炮兵熄火，唯有用足够的士气杀伤把他们吓退，所以士气杀伤便尤为重要，尤其对于有很大炮兵加成的国家（法国，俄罗斯：.....西班牙：正是在下）。另外，不论在单机还是联机中，此时的大国都已有数支足以填满战场的部队，很难在战役中将对方秒杀。一场战争的输赢常常取决于几次大会战的胜负，士气对胜负的影响高于训练，更显士气之重要。&#10;&#10;流言终结者：士气是血量，训练是输出——错。士气和训练都是令部队更能抗也更能打的加成。简单来说，不同在于，训练更影响战损比，士气更影响胜负（甚至会有害于战损比）。同时等额训练度与士气的获取难度比约为1：2，请自行斟酌。&#10;&#10;====士气修正====&#10;以下修正可以增加国家陆军的最大士气：&#10;*陆军维护费：从 {{red|0.51}} 的最低维护费士气值到最大维护费的本国最高士气值。&#10;*理念和政策：&#10;{{bonus table|land morale|collapse=yes}}&#10;*提高军事科技：&#10;**军事科技（0）：{{green|+2.0}}&#10;** 军事科技（3）：{{green|+0.5}}（累加 {{green|+2.5}}）&#10;**军事科技（4）：{{green|+0.5}}（累加 {{green|+3.0}}）&#10;**军事科技（15）：{{green|+1.0}}（累加 {{green|+4.0}}）&#10;**军事科技（26）：{{green|+1.0}}（累加 {{green|+5.0}}）&#10;**军事科技（30）：{{green|+1.0}}（累加 {{green|+6.0}}）&#10;其他的国家奖励：&#10;*威望：100威望{{green|+10%}}，-100威望{{red|-10%}}&#10;*力量投射：100点力量投射{{green|+10%}}&#10;*顾问-陆军改革者：{{green|+10%}}&#10;*陆军传统：100传统 {{green|+25%}}&#10;*是[[宗教#信仰守护者|信仰守护者]]：{{green|+5%}}&#10;*每点{{icon|impious|24px}}负虔诚{{green|+0.1%}}&#10;宗教：&#10;*{{icon|Shia}}什叶派：{{green|+5%}}&#10;*{{icon|Protestant}}新教开启教会信条“教徒宽恕祈祷者”：{{green|+5%}}&#10;*{{icon|Reformed}}改革宗激活“战争”焦点（需要DLC {{icon|WoN}} 国富论）：{{green|+10%}}&#10;*{{icon|Vajrayana}}金刚乘佛教：{{green|+5%}}&#10;*{{icon|Shinto}}神道教：{{green|+10%}}&#10;*{{icon|Sikh}}锡克教：{{green|+10%}}&#10;*{{icon|Inti}}因蒂崇拜“雅拿领主”：{{green|+10%}}&#10;*{{icon|Nahuatl}}纳瓦特尔神话： {{green|+10%}}&#10;*{{icon|Tengri}}长生天选择什叶派、纳瓦特尔或锡克教为兼容宗教：{{green|+5%}}&#10;政体或政府改革：&#10;*革命共和国：{{green|+10%}}&#10;*革命国家：{{green|+10%}}&#10;*总统独裁：{{green|+10%}}&#10;*军事独裁：{{green|+10%}}&#10;*大名或独立大名：{{green|+10%}}&#10;*革命帝国制：{{green|+10%}}&#10;*革命原则：{{green|+10%}}&#10;* 公民：{{green|+10%}}&#10;*与异端开战：{{green|+10%}}&#10;*斐扬派体系“革命主义者”掌权：{{green|+10%}}&#10;*商业共和国“贵族”派系掌权：{{green|+5%}}&#10;*护国议会：{{green|+5%}}&#10;*安布罗共和国：{{green|+5%}}&#10;*农民共和制：{{green|+5%}}&#10;*卡尔沙的力量：{{green|+5%}}&#10;*在册普尔比亚人：{{green|+5%}}&#10;&#10;====士气恢复====&#10;每个月，一支部队会恢复自身最大士气值的15%。以下修正可以提高每月士气恢复的速度：&#10;*军团在己方控制区域内：{{green|+5%}}&#10;*陆军传统：100陆军传统 {{green|+10%}}&#10;*其他事件、决议和修正&#10;*赢得战斗的部队士气将获得极大地鼓舞，这是为了防止部队赢得一场激烈战斗后立即被后续敌军攻击而轻易被摧毁的状况。这种情况士气恢复取决于战胜的敌军相对于己方力量的对比。&#10;*一些理念和政策&#10;{{bonus table|land morale recovery}}&#10;&#10;==={{anchor|Insufficient support}} 骑兵比例===&#10;{{#lsth:陆军单位|骑兵比例}}&#10;&#10;==要塞==&#10;{{SVersion|1.24}}&#10;要塞的作用是抵御敌军，保家卫国。&#10;&#10;===要塞等级与驻军===&#10;以下修正会影响要塞等级：&#10;&#10;*首都：{{icon|capital}} 首都省份获得+1 {{icon|fort level}} 要塞等级。&#10;*[[建筑#要塞|要塞]]：每个建筑等级+2 {{icon|fort level}} 要塞等级。&#10;&#10;每级要塞会使该省份的驻军增加1000。以下理念与政策同样影响省份的最大驻军数：&#10;{{bonus table|garrison size}}&#10;&#10;驻军数量每个月会恢复 {{green|5%}}，每点省份基础人力额外加 {{green|1%}}。以下理念与政策同样影响驻军恢复：&#10;{{bonus table|national garrison growth}}&#10;&#10;===要塞维护===&#10;每级要塞消耗{{icon|d}}1金币用于维护。控制要塞的国家可以封存要塞，获得如下效果：要塞维护费用减半，但要塞等级归零且所有驻军都被移除。没有要塞建筑的首都要塞无法被封存；有要塞建筑的首都要塞在封存时依然保持1要塞等级和1000驻军。取消封存后，要塞驻军会以常速恢复。首都所在省份的堡垒等级至少为1，这个等级可以叠加在任何修建在首都的堡垒等级之上; 这个免费的堡垒不需要占据额外的建造格子,不需要维护费, 不能被封存。在首都省份的已建造堡垒可以正常封存，但是免费的1级堡垒仍然会存在。&#10;&#10;&#10;不论是否封存，要塞维护费用都受以下修正影响：&#10;{{bonus table|fort maintenance|collapse=yes}}&#10;&#10;骑士团政体也能获得要塞维护费 {{icon|fort maintenance}} {{green|−20%}} 的修正。&#10;&#10;专制主义时代的时代能力 防御性堡垒 会给予一个堡垒维护费 {{icon|fort maintenance}} {{green|−100%}} 的效果如果这些堡垒建造在与宿敌接壤的边界上。.&#10;&#10;===要塞控制区===&#10;{{main|要塞控制区}}&#10;未封存的要塞（不包括免费的首都要塞）拥有一片要塞控制区。要塞控制区可以阻止敌人穿过该要塞所在的省份或与之相邻的省份。&#10;&#10;===围城===&#10;当敌对军队进入一个省份并停止移动，一场围城/占领（在本节，围城/围攻专指攻击拥有驻军的省份，占领专指攻击没有驻军的省份）就判定开始。为了围城能进展下去，要塞驻军每有1000人，围攻方必须有3000人。如果一个省份没有驻军（不管是没有要塞还是要塞驻军为0），1K人就足以保证在1个月内占领该省份。任何单位类型都可以用来围城，但是当围攻一个要塞省份时，只有步兵能够在城墙破裂后进行强攻，同时炮兵能加速围城(见下文)。只要围攻者一直存在，围城的进展就不会减少，但只要围攻者离开该省份，围城进展就会立刻消失。&#10;&#10;围城军队总是会遭受至少 {{red|1%}} 基础的 {{icon|attrition}} [[陆军#补给和损耗|损耗]], 即使这个省份不存在要塞。此规则仅适用于围攻敌对省份，当已方或已方盟军围攻夺回被占领友方省份，此条规则即被忽略。&#10;&#10;一只围城的军队当发生战斗时总是会被算作“攻击方”并受到省份惩罚，同时取决于该军队进入该省的方式，在发生战斗时会有一个附加的穿越惩罚。&#10;*若敌国的叛军进行围城时，本国军队进攻它们，则他们算作进攻方，而本国军队同样算作防御方，并且可以利用省份的地形惩罚。（尽管此时本国仍然在和敌国交战）如果本国军队战斗胜利，那么叛军在该省份所有的围城进度都将被你继承，在敌国有叛军时可以以此减轻围城压力。&#10;&#10;====突袭====&#10;{{expansion|aow}}&#10;驻军可以被命令从要塞中突袭与敌对军队发生战斗，需要花费 {{icon|mil|24px}}{{red|10}} 军事点数。（[[File:Sortie from siege.png|24px]] “突袭围城”的按键在围城界面可以找到）如果只由步兵组成的驻军在突袭战斗中失败，则该省份和要塞将被占领。可以在围城与驻军双方军力几乎相等的情况下使用。&#10;&#10;利用突袭可以免费获得军队，当敌军围城时，向其进攻，并命令突围，在战斗结束的那一天暂停游戏，并将两只军队合并，这样就可以白得要塞卫戍部队的军队。当然，要塞守军数量会清零。此法在1.25仍然有效，毕竟需要花费军事点数来换取军队，不是白得的军队。&#10;&#10;====围城过程====&#10;欧陆风云4的围城系统采用的是间隔判定，意味着系统将使用两个最基本的变量：判定间隔和判定结果。两者互相独立，互不干涉，并同时受一系列修正影响：&#10;&#10;=====围城时间=====&#10;每隔一段时间，围城就会进行一次判定。我们将此判定间隔称为&#039;&#039;&#039;围城周期&#039;&#039;&#039;。围城周期的公式如下所示：&#10;&#10;&amp;lt;math&gt; 围城周期=30\times (1-围城能力+要塞防御\pm 战术差异)&amp;lt;/math&gt;&#10;&#10;其中：&#10;&#10;*围城能力{{icon|siege ability}}：进攻方的围城能力。&#10;*要塞防御{{icon|fort defense}}：指全局的{{icon|fort defense}} 要塞防御和单个省份的 {{icon|local defensiveness}} 省份防御之和。&#10;*战术差异{{icon|tactics}}：每0.25双方军事战术差异影响6.25%。例如玩家的军事战术高于敌人0.5，则玩家的围城进度就会快12.5%，同时敌人的围城进度会慢12.5%。只有军事战术基础值的差异会对围城进度有影响，训练度增益对围城阶段没有作用。&#10;&#10;&#039;&#039;&#039;围城能力&#039;&#039;&#039;被以下理念和政策所影响：&#10;{{bonus table|Siege Ability}}&#10;更多的修正:&#10;*{{icon|War exhaustion}} 厌战：{{red|−1%}} 每1点&#10;*{{icon|Army Tradition}} 军事传统：{{green|+5%}} 在100%时&#10;*{{icon|Spy network construction}} 间谍网：{{green|+20%}} 在100%时（需开启DLC {{icon|mn}} [[我们的海]]）&#10;*{{icon|tengri}} 长生天选择 {{icon|coptic}} 科普特为兼容宗教：{{green|+10%}}（需开启DLC {{icon|tc}} [[哥萨克]]）&#10;*{{icon|hindu}} 印度教选择 {{icon|shakti}} 沙克蒂为主神：{{green|+5%}}（需开启DLC {{icon|won}} [[国富论]]）&#10;*{{icon|army professionalism}} 军队职业度：{{green|+20%}} 在100%时 （需开启DLC {{icon|coc}} [[文明的摇篮]] )&#10;*将领特性攻城专家：{{green|+15%}}&#10;*改善内陆贸易政策：{{green|+10%}}&#10;*地理大发现时代能力：{{green|+33%}} 乌尔班大炮（仅 {{flag|奥斯曼}}可用）（需开启DLC 天命）&#10;&#10;&#039;&#039;&#039;要塞防御&#039;&#039;&#039; 被以下理念和政策所影响：&#10;{{bonus table|Fort Defense|collapse=yes}}&#10;&#10;更多的修正:&#10;*{{icon|hindu}} 印度教以 {{icon|vishnu}} 毗湿奴作为主神时：{{green|+20%}}（仅在启用DLC {{icon|won}} 国富论可用时）&#10;*{{icon|norse}} 诺斯信仰以 {{icon|tor}} 托尔作为主神时：{{green|+10%}}（在启用DLC {{icon|ed}} [[黄金国]]可用时或者是来自于[[十字军之王2]]的转档时可用）&#10;*{{icon|being pious}} 负虔诚的穆斯林君主（显示为&quot;神秘主义&quot;）：{{green|+20%}} 在-100虔诚度时。&#10;*{{icon|coptic}} 科普特正教：{{green|+10%}}&#10;*力量投射{{green|+10%}}（力量投射为100%时）&#10;*直属州法案防御法令 {{green|+33%}}&#10;*军事顾问要塞工程师 {{green|+20%}}&#10;*幸运国：{{green|+10%}}&#10;*特定的[[Generic_events|事件]]可以在较短的一段时间内增加围攻能力或者要塞防御&#10;*地形：&#10;**丘陵：{{green|+10%}}&#10;**高原：{{green|+10%}}&#10;**山脉：{{green|+25%}}&#10;&#10;=====围城判定=====&#10;在每一围城周期结束后，系统会进行一次围城判定。判定后根据最终点数产生不同结果，判定公式如下：&#10;&#10;&amp;lt;math&gt; 判定点数=骰子得数+要塞等级+围城进度+将领围城能力+炮兵奖励+封锁+城墙破裂&amp;lt;/math&gt;&#10;&#10;其中：&#10;&#10;*&#039;&#039;&#039;骰子得数&#039;&#039;&#039;：一个1-14的随机数。&#10;*&#039;&#039;&#039;要塞等级&#039;&#039;&#039;：防御方的要塞等级越高，在围城进度上的惩罚越高。每级要塞会给这个值{{Red|-1}}，但也有例外：&#10;**&#039;&#039;&#039;过时的要塞&#039;&#039;&#039;：如果围城方的军事科技允许建造更为先进的要塞，围攻相对老旧的要塞会获得{{Green|+1}}的修正。举个例子：如果围城方可以建造棱堡（4级要塞），在围攻城堡（2级要塞）时就会获得+2的骰子得数修正。&#10;**&#039;&#039;&#039;守军不足&#039;&#039;&#039;：驻军数量低于50%时，此值变为{{Green|+1}}。如果这个要塞无人防守（一种情况是在这个月刚刚被激活），省份将被视为没有要塞，而围攻也会极快完成。因此，当玩家能够补充驻军时，切记在刚围攻下要塞时补充驻军，以防敌军在要塞驻军薄弱时迅速夺回。&#10;&#10;*&#039;&#039;&#039;围城进度&#039;&#039;&#039;：围城时最重要的修正。随着围城的持续，这个奖励值会从&#039;&#039;&#039;0&#039;&#039;&#039;开始，根据骰子得数慢慢累积。首都要塞或二级堡垒的最大值是{{Green|12}}，每个要塞等级将会使这个数字{{Green|+1}}，{{Green|15}}为上限。围城进度增长图表在下一节“效果”中。&#10;*&#039;&#039;&#039;将领围城能力&#039;&#039;&#039;：如果围城部队拥有将领，将领的围攻能力（{{Green|0-6}}）会加入这一数值作为奖励。&#10;*&#039;&#039;&#039;炮兵奖励&#039;&#039;&#039;：如果有炮兵参与围城，将会为围城进度添加{{Green|1-5}}的奖励。如果有[[File:Ab napoleonic warfare.png|24px]] ”拿破仑战术“能力，会在这一数值的&#039;&#039;&#039;上限&#039;&#039;&#039; {{green|+3}}。&#10;**奖励值公式：&amp;lt;math&gt; 奖励值=\frac{围城炮兵数量}{1000\times 编号}&amp;lt;/math&gt;，如下表所列。&#10;**无论要塞等级，只要有炮兵参与围城，就会至少获得+1的奖励。&#10;**若围攻的首都额外修有要塞，则忽略首都自带的1级要塞。&#10;**这里的炮兵数量为炮兵&#039;&#039;&#039;存活人数&#039;&#039;&#039;而非人数上限。10支100人的炮兵部队同1支1000人的炮兵部队相当。&#10;::{| class=&quot;wikitable&quot;&#10;!编号 &#10;!要塞等级（下）/奖励值（右）/最少炮兵数量（表格中）!!+1!!+2!!+3!!+4 !! +5!!+6!!+7!!+8&#10;|-&#10;|1&#10;|仅有首都要塞||1000||2000||3000||4000||5000|| 6000|| 7000|| 8000&#10;|-&#10;|2&#10;|城堡（2级要塞)||1000|| 4000||6000||8000||10000||12000||14000||16000&#10;|-&#10;|3&#10;|要塞（4级要塞)||1000 ||6000||9000||12000||15000||18000||21000||24000&#10;|- eg.&#10;|4&#10;|星堡（6级要塞)||1000||8000||12000||16000||20000||24000||28000||32000&#10;|-&#10;|5&#10;|要塞（8级要塞)||1000||10000||15000||20000||25000||30000||35000||40000&#10;|}&#10;*&#039;&#039;&#039;封锁&#039;&#039;&#039;：&#10;**如果省份沿海，而且未被完全封锁，会遭到 {{red|-2}} 的惩罚，如果围城方对省份有合法宣称，惩罚会变成 {{red|-1}}。所有未达到100%封锁率的封锁对围城进度没有意义。需要注意的是，封锁省份的舰队并不一定要是围攻国甚至是围攻方的，甚至另一场战争另一国对省份的封锁也会对本方的围城有所帮助。&#10;**葡萄牙[[海军学说]]“葡萄牙海军陆战队”为被完全封锁的省份提供 {{green|+1}} 修正。&#10;**[[宗教改革时代]]能力“浮动炮台”为被完全封锁的省份提供 {{green|+1}} 修正。&#10;**[[旗舰]]选择“臼炮”作为特殊能力为被完全封锁的省份提供 {{green|+1}} 修正。&#10;**如果沿海要塞被叛军占据，则在围城时不受未封锁惩罚，与围攻内陆要塞无异。&#10;*&#039;&#039;&#039;城墙破裂&#039;&#039;&#039;：每次城墙破裂时，该修正都会{{Green|+1}}，上限{{Green|+3}}。只要该修正至少有{{Green|+1}}的值，围城方就可以强攻该要塞。城墙破裂有一套独有的判定公式，参见下一节“效果”。&#10;可能的最高初始判定点数是+17：首都要塞-1，过时的要塞+3，守军不足+1，将领的围城能力+6，至少8个炮兵团+8；可能的最低初始判定点数是-11：8级的要塞-8，首都要塞-1，省份未被封锁-2。&#10;&#10;最后，不论你此时的围城进度是多少，只要骰子的结果是14，就会判定为城墙破裂，只要骰子的结果为1，就会判定为疫病爆发。二者皆为1/14的概率，此概率无法被增减。&#10;&#10;特别的，每次当你的围城部队击退前来解围的敌军时，围城进度都会进行一次roll点，与天数无关，哪怕要塞守军并未参战。&#10;&#10;特定判定点数下攻克省份的时间如下表所示：&#10;&#10;{| class=&quot;wikitable&quot;&#10;!判定点数&#10;|−9&#10;|−8&#10;|−7&#10;|−6&#10;|−5&#10;|−4&#10;| −3&#10;|−2&#10;|−1&#10;|0&#10;|-&#10;!攻克率 %&#10;|−100.00%&#10;|−92.86%&#10;|−85.71%&#10;|−78.57%&#10;| −71.43%&#10;|−64.29%&#10;|−57.14%&#10;|−50.00%&#10;|−42.86%&#10;|−35.71%&#10;|-&#10;!平均攻克所需周期&#10;|43.18&#10;|30.51&#10;|25.24&#10;|21.44&#10;|17.42&#10;|14.75&#10;|12.65&#10;|10.87&#10;|9.41&#10;|8.20&#10;|-&#10;! 年可攻克省份数&#10;|0.28&#10;|0.40&#10;|0.48&#10;|0.57&#10;|0.70&#10;|0.82&#10;|0.96&#10;|1.12&#10;|1.29&#10;| 1.48&#10;|}&#10;&#10;{| class=&quot;wikitable&quot;&#10;!判定点数&#10;|1&#10;|2&#10;|3&#10;|4&#10;|5&#10;|6&#10;|7&#10;| 8&#10;|9&#10;|10&#10;|无要塞&#10;|-&#10;!攻克率 %&#10;|−28.57%&#10;| −21.43%&#10;|−14.29%&#10;|−7.14%&#10;|0.00%&#10;|7.14%&#10;|14.29%&#10;|21.43%&#10;|28.57%&#10;|35.71%&#10;|100%&#10;|-&#10;!平均攻克所需周期&#10;|7.24&#10;|6.48&#10;|5.78&#10;|5.13&#10;|4.52&#10;|3.86&#10;|3.27&#10;|2.82&#10;|2.46&#10;|2.17&#10;|1&#10;|-&#10;!年可攻克省份数&#10;|1.68&#10;|1.88&#10;|2.10&#10;|2.37&#10;|2.69&#10;|3.15&#10;|3.72&#10;|4.32&#10;|4.95&#10;|5.60&#10;|12&#10;|}&#10;&#10;&#10;&quot;年可攻克省份数&quot;是以标准围城周期，30天一周期计算的。&#10;&#10;=====围城效果=====&#10;在围城过程中，攻守双方会出现各种各样的情况：&#10;*如果骰子得数为1，疾病会在围城部队中爆发，造成围城部队5%的人数伤亡，而围城进度在此次判定中不会变化。&#10;*城墙破裂判定和围城判定同时进行，判定式如下。城墙破裂只可能在下述式子成立，或者要塞被炮击的情况下出现。并且，城墙破裂时，游戏会发出砖块掉落的音效，提示城墙破裂一次。&#10;&amp;lt;math&gt;\text{骰子得数} + \frac{\text{炮兵围城修正} + \text{过时的要塞修正}}{3} + \frac{\text{攻击方能够修建要塞的最高等级}}{10} \geqslant 14&amp;lt;/math&gt; &#10;&#10;如果出现城墙破裂，则除守军投降以外，下表的结果都可以忽视。如果守军未投降，则城墙破裂修正 {{green|+1}}，围城进度 {{green|+2}}。&#10;&#10;*下表是&#039;&#039;&#039;判定点数&#039;&#039;&#039;对围城进度的影响：&#10;{| class=&quot;wikitable&quot;&#10;!判定点数!!显示情况!!效果!!守军损失（以下守军数量为数量上限，并非实时数量）&#10;|-&#10;|4 及以下||维持现状||–||–&#10;|-&#10;|5 – 11||补给短缺||+1 围城进度||−1% 守军数量&#10;|-&#10;| 12 – 13||食物短缺&#10;| +2 围城进度||−3% 守军数量&#10;|-&#10;|14 – 15||饮水短缺||+3 围城进度||−5% 守军数量&#10;|-&#10;| 16 – 19|| 守军潜逃||+2 围城进度||−10% 守军数量&#10;|-&#10;|20 及以上||守军投降！||攻克要塞||–&#10;|}&#10;&#10;*即使因其他修正导致判定点数大于20，围城方也至少需要+6的骰子得数来攻克要塞。&#10;====炮兵弹幕====&#10;{{expansion|moh}}&#10;仅在围城军团中满员炮兵团数与要塞等级相等时才可以选择以炮兵弹幕炮击要塞。这会消耗围城方 {{red|50}} {{icon|mil|24px}} 军事点数，并在城墙上轰出三个洞，而这会直接导致围城进度 {{green|+3}}。围城判定导致的城墙破裂依旧会增加围城进度，但不会提供高于 {{green|+3}} 的城墙破裂修正。&#10;&#10;==== 海上炮击====&#10;{{expansion|gc}}&#10;海上炮击的作用与炮兵弹幕相同。使用条件要求：临海省份的海域上舰队的火炮数/100 &gt; 要塞等级，才可以执行海上炮击。同样会消耗围城方 {{red|50}} {{icon|mil|24px}} 军事点数。&#10;&amp;lt;br&gt;葡萄牙专属海军学说[[Naval_warfare#Portuguese_Marines|葡萄牙海军陆战队]]与[[Naval_units#Portuguese_Bombardier|旗舰修正]]可以降低海上炮击的点数花费。这两项修正后，最低可花费{{red|10}}{{icon|mil|24px}}军事点来使用海上炮击。&#10;&#10;====强攻====&#10;只要城墙破裂出现了至少一次，围城方就可以选择派围城步兵强攻。这虽然会大大加快守军投降的速度，但是通常要以 {{red|5}} {{icon|mil|24px}} 军事点数和大量人力为代价。只有步兵可以参与强攻。如果在守军投降之前，围城方因强攻损失了所有步兵单位，围城军团中的骑兵和炮兵将会以通常方式继续围城。&#10;强攻的具体战斗机制不会显示在围城界面中，其计算方式大概为在守军和围城部队步兵中展开一场战斗。每个阶段为3天，且均为冲击阶段，仅有5倍于守军数量的围城方步兵能够对守军造成伤害，但是守军可以对所有的围城方步兵造成伤害，步兵冲击、围城方将领围城点数、防御效率与其他陆军部队质量修正都会对战斗结果造成影响。为提高围城效率、降低围城损失，可以选择将围城步兵部队分离成两组并每三天进行一次合并补充，将强攻士兵保持在守军数量5倍以上。不参与围攻的部队则在移动一小段时间后取消移动以保证不参与到围攻当中，这样做的目的是保证前线有足够多的部队杀伤守军，而后备部队不被守军杀伤。&#10;&#10;==单支部队的机制==&#10;{{Main|陆军}}&#10;{{SVersion|1.24}}&#10;===流亡===&#10;在流亡的部队可以从单位标志旁的黑旗鉴别出来。流亡中的部队不能参与战斗，围攻省份或者是探索，而且永远不会揭示战争迷雾，甚至是他们所在的省份的战争迷雾。但是，流亡中的部队可以穿越除了不可用土地外的任何领土，而不需军事通行权。流亡中的部队仍旧受损耗影响，流亡的团仍然可以再编成，尽管一支军团不能混编流亡的团和未流亡的团。&amp;lt;br&gt;&#10;&#10;在下列情况发生时，一支军团会流亡：&#10;*在战争结束后，如果一支军团所处的领土没有和平时期的军事通行权，则会流亡。这是为了避免军团在和平时被永远困住以及一些其他的黑科技。&#10;*在战争开始的瞬间，仅取得军事通行权而在中立国或敌对国省份中的军团会流亡。这是为了避免一国为了取得战略优势，在他国预先部署军队的做法。但在未殖民地区，盟友或附庸领地上的军队不会流亡，即使那个盟友没有被召唤加入战争。&#10;&#10;在下列情况之一满足时，流亡状态会结束：&#10;*军团进入了一个被本国或附庸拥有或控制的领土。&#10;**这包含被占领的他国领土。&#10;*登上在某一海域或者移动向某一海域的运输船。&#10;&#10;==={{icon|looting speed}} 劫掠===&#10;每个省份会有一个战利品条。这是一笔随省份发展度变化，可被劫掠的金钱：每个省份的1点发展等级会给予该省份1单位杜卡特的战利品。玩家的军团可以在围城时劫掠战利品，在省份被占领后同样可以继续劫掠，但是这必须要军团呆在目标省份内。能够劫掠的战利品数目基于省份内驻扎的部队种类和数量。一支满人力的步兵/骑兵/炮兵团每月会劫掠0.1/0.3/0.05杜卡特。&amp;lt;ref&gt;See in {{path|defines}} under &amp;lt;code&gt;INF_LOOT&amp;lt;/code&gt;, &amp;lt;code&gt;CAV_LOOT&amp;lt;/code&gt; and &amp;lt;code&gt;ART_LOOT&amp;lt;/code&gt;.&amp;lt;/ref&gt;当省份的战利品被全部劫掠，省份战利品条归零时，省份会在最后一次有效劫掠的两年后以每月10%的速度恢复战利品。&#10;&#10;劫掠是 {{icon|devastation}} [[荒废度]]增加的主要原因，而荒废度会大大减少省份的生产所得、人力产出、补给限制以及思潮传播速度，同时会增加省份发展的价格。持续劫掠他们的省份是在长期战争中挫败大国的一个好方法。&#10;&#10;有很多理念会增加 {{icon|looting speed}} 劫掠速度，这会定量增加每月劫掠的 {{icon|ducats}} 金币数额（从而导致抢光一个省份的时间缩短）。&#10;{{bonus table|looting speed}}&#10;&#10;===挂靠其他军团===&#10;这一指令会将玩家的军团挂靠于一支友军军团，使他们在移动和战斗时不会离友军太远。除了战斗时，任何时候都可以解除挂靠。一支挂靠的军团不能通过港口进行运输。挂靠至AI的部队会使AI的部队改变性格，使其更具积极性，更乐于主动求战。&#10;&#10;===[[File:Attack natives.png|32px]]攻击土著===&#10;{{see also|殖民#土著}}&#10;&#10;在殖民地或未殖民地区的土著可以凭借这一军事行动减少。一支等同于当地土著人数（向最近的“千”单位进行取舍）的军团会在当地出现，如果想要肃清当地土著，这一战必须要打胜。这一行动会耗费 {{icon|mil}} 军事点数，取决于土著的 {{icon|aggressiveness|22px}} 攻击性和 {{icon|ferocity|22px}} 狂暴性，清剿土著的好处在于避免将来可能随机出现或因军团路过而导致的土著劫掠殖民地，但如果肃清成功，会显著减少这一省份的潜在发展力和同化奖励。&#10;&#10;===焦土战术===&#10;若在一个同时被拥有和被控制的省份上，同时这一省份未执行焦土战术，一支军团可以消耗 {{red|5}} {{icon|mil|24px}} 军事点数来执行焦土战术。这会增加 {{red|5}} 点 {{icon|devastation}} 省份[[荒废度]]，给予省份为期60月的&#039;&#039;&#039;“焦土战术”&#039;&#039;&#039;修正，效果如下：&amp;lt;ref&gt;参见 {{path|common/static_modifiers/00_static_modifiers.txt}} ([[Static modifiers#焦土战术]])。&amp;lt;/ref&gt;&#10;{{#lst:Static modifiers|Scorched Earth}}&#10;&#10;造成的{{red|5%}}荒废度本身带有如下的效果：&#10;{|&#10;|{{icon|local goods produced modifier}}&#10;| style=&quot;text-align:right&quot; |{{red|−5%}}||本地贸易货物生产修正&#10;|-&#10;|{{icon|supply limit modifier}}&#10;| style=&quot;text-align:right&quot; |{{red|−2.5%}}||补给上限修正&#10;|-&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;   &#10;|{{icon|local institution spread}} || style=&quot;text-align:right&quot; | {{red|−5%}} || 思潮传播速度&#10;|-&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;  &#10;|{{icon|local development cost}}|| style=&quot;text-align:right&quot; |{{red|+0.5%}}||{{DLC-only|本地提升发展度花费}}&#10;|-&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#10;|{{icon|local manpower modifier}}|| style=&quot;text-align:right&quot; |{{red|−5%}}||本地人力修正&#10;|-&#10;|{{icon|local sailors modifier}} || style=&quot;text-align:right&quot; |{{red|−5%}}||本地水手修正&#10;|-&#10;|{{icon|local hostile movement speed}}|| style=&quot;text-align:right&quot; |{{green|−1.25%}}||本地敌军移动速度&#10;|-&#10;|{{icon|local movement speed}}|| style=&quot;text-align:right&quot; |{{red|−1.25%}}||本地友军移动速度&#10;|}&#10;&#10;焦土战术在玩家军队不足以抵挡侵略者，或者省份较易被占领时不失为一种防守战略。这会增加敌方损耗（打击敌方的人力），也会让省份变得更加不值得被获取。虽然玩家也会因此减少一些收入，但是如果玩家将要失去这个省份，将这个省份对敌方的价值尽可能降低也是一种减少损失的思路。&#10;&#10;===剿灭叛军===&#10;在选中军团的状态下，点击剿灭叛军的按钮会让这支军团自动前往寻找并与自军周围的叛军作战。在叛军被全部剿灭后，这支军团会回到初始出发地。被命令移动的军团会停止剿灭叛军的行动。军团不会攻击比自军规模大的叛军。&#10;&#10;===强行军===&#10;使军团移动速度加快50%，但是每经过一个省份会消耗 {{red|2}} {{icon|mil|24px}} 军事点数。[[File:Forced_march.png|28px|link=]] 强行军会在15级 {{icon|adm tech}} [[行政科技]]时解锁。强行军途中，军团不会恢复士气。在[[大革命时代]]时可以解锁改良强行军能力，使强行军耗费的 {{icon|mil|24px}} 军事点数为0。（需DLC {{icon|moh}} 天命）&#10;&#10;==参考资料==&#10;&amp;lt;references /&gt;&#10;视频教程&#10;#Blind_BeN：https://www.bilibili.com/video/av20695336&#10;#Blind_BeN：https://www.bilibili.com/video/av42409406&#10;&#10;[[Category:军事]]&#10;{{military navbox}}&#10;[[en:Land_warfare]]&#10;本页使用的模板：&#10;&#10;Static modifiers（查看源代码）陆军单位（查看源代码）静态修正（查看源代码）Template:Ambox（查看源代码）（受保护）Template:Ambox/core（查看源代码）（受保护）Template:Ambox 2020（查看源代码）Template:Anchor（查看源代码）Template:BTRow（查看源代码）Template:Battle（查看源代码）Template:Battle/C（查看源代码）Template:Bonus table（查看源代码）Template:Clear（查看源代码）（受保护）Template:Country data Ottomans（查看源代码）Template:Country data 奥斯曼（查看源代码）Template:DLC-only（查看源代码）Template:Expansion（查看源代码）Template:Flag（查看源代码）（受保护）Template:Flag/core（查看源代码）Template:Green（查看源代码）（受保护）Template:Grey-bd（查看源代码）Template:Hatnote（查看源代码）（受保护）Template:Icon（查看源代码）（受保护）Template:Icon/a（查看源代码）Template:Icon/b（查看源代码）Template:Icon/c（查看源代码）Template:Icon/d（查看源代码）Template:Icon/e（查看源代码）Template:Icon/f（查看源代码）Template:Icon/g（查看源代码）Template:Icon/h（查看源代码）Template:Icon/i（查看源代码）Template:Icon/j（查看源代码）Template:Icon/l（查看源代码）Template:Icon/m（查看源代码）Template:Icon/n（查看源代码）Template:Icon/p（查看源代码）Template:Icon/r（查看源代码）Template:Icon/s（查看源代码）Template:Icon/t（查看源代码）Template:Icon/v（查看源代码）Template:Icon/w（查看源代码）Template:Icon/xyz（查看源代码）Template:Icon/z（查看源代码）Template:Main（查看源代码）（受保护）Template:Military navbox（查看源代码）（受保护）Template:N（查看源代码）Template:Navbox（查看源代码）（受保护）Template:Navboxgroup（查看源代码）（受保护）Template:Path（查看源代码）（受保护）Template:Pips（查看源代码）Template:Red（查看源代码）（受保护）Template:SVersion（查看源代码）（受保护）Template:See also（查看源代码）Template:Sversion（查看源代码）Template:Version（查看源代码）（受保护）Template:白字（查看源代码）返回陆战。&#10;"/>
+<meta name="keywords" content="欧陆风云4百科,陆战"/>
+<meta name="apple-mobile-web-app-capable" content="Yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+<meta name="mobile-web-app-capable" content="Yes"/>
+<meta name="theme-color" content="#103D8F"/>
+<meta name="msapplication-navbutton-color" content="#103D8F"/>
+<meta name="twitter:card" content="summary"/>
+<link rel="icon" href="https://www.eu4cn.com/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="https://www.eu4cn.com/opensearch_desc.php" title="欧陆风云4百科 (zh)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://www.eu4cn.com/api.php?action=rsd"/>
+<link rel="alternate" hreflang="zh" href="https://www.eu4cn.com/zh/陆战"/>
+<link rel="alternate" hreflang="zh-Hans" href="https://www.eu4cn.com/zh-hans/陆战"/>
+<link rel="alternate" hreflang="zh-Hant" href="https://www.eu4cn.com/zh-hant/陆战"/>
+<link rel="alternate" hreflang="zh-Hans-CN" href="https://www.eu4cn.com/zh-cn/陆战"/>
+<link rel="alternate" hreflang="zh-Hant-HK" href="https://www.eu4cn.com/zh-hk/陆战"/>
+<link rel="alternate" hreflang="zh-Hant-MO" href="https://www.eu4cn.com/zh-mo/陆战"/>
+<link rel="alternate" hreflang="zh-Hans-MY" href="https://www.eu4cn.com/zh-my/陆战"/>
+<link rel="alternate" hreflang="zh-Hans-SG" href="https://www.eu4cn.com/zh-sg/陆战"/>
+<link rel="alternate" hreflang="zh-Hant-TW" href="https://www.eu4cn.com/zh-tw/陆战"/>
+<link rel="alternate" hreflang="x-default" href="https://www.eu4cn.com/wiki/陆战"/>
+<link rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+<link rel="alternate" type="application/atom+xml" title="欧陆风云4百科的Atom feed" href="https://www.eu4cn.com/index.php?title=Special:%E6%9C%80%E8%BF%91%E6%9B%B4%E6%94%B9&amp;feed=atom"/>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script data-ad-client="ca-pub-1612414434963106" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114739240-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-114739240-1');
+</script>
+<meta property="og:title" content="陆战"/>
+<meta property="og:site_name" content="欧陆风云4百科"/>
+<meta property="og:url" content="https://www.eu4cn.com/wiki/%E9%99%86%E6%88%98"/>
+<meta property="og:image" content="https://www.eu4cn.com/images/logo/logo.png"/>
+<meta property="article:modified_time" content="2023-12-25T15:54:13Z"/>
+<meta property="article:published_time" content="2023-12-25T15:54:13Z"/>
+<script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"Article","name":"\u67e5\u770b\u201c\u9646\u6218\u201d\u7684\u6e90\u4ee3\u7801 - \u6b27\u9646\u98ce\u4e914\u767e\u79d1\uff0c\u4eba\u4eba\u53ef\u4ee5\u7f16\u8f91\u7684\u6b27\u9646\u98ce\u4e914\u4e2d\u6587\u767e\u79d1\u5168\u4e66","headline":"\u67e5\u770b\u201c\u9646\u6218\u201d\u7684\u6e90\u4ee3\u7801 - \u6b27\u9646\u98ce\u4e914\u767e\u79d1\uff0c\u4eba\u4eba\u53ef\u4ee5\u7f16\u8f91\u7684\u6b27\u9646\u98ce\u4e914\u4e2d\u6587\u767e\u79d1\u5168\u4e66","mainEntityOfPage":"\u67e5\u770b\u201c\u9646\u6218\u201d\u7684\u6e90\u4ee3\u7801","identifier":"https:\/\/www.eu4cn.com\/wiki\/%E9%99%86%E6%88%98","url":"https:\/\/www.eu4cn.com\/wiki\/%E9%99%86%E6%88%98","dateModified":"2023-12-25T15:54:13Z","datePublished":"2023-12-25T15:54:13Z","image":{"@type":"ImageObject","url":"https:\/\/www.eu4cn.com\/images\/logo\/logo.png"},"author":{"@type":"Organization","name":"\u6b27\u9646\u98ce\u4e914\u767e\u79d1","url":"https:\/\/www.eu4cn.com","logo":{"@type":"ImageObject","url":"https:\/\/www.eu4cn.com\/images\/logo\/logo.png","caption":"\u6b27\u9646\u98ce\u4e914\u767e\u79d1"}},"publisher":{"@type":"Organization","name":"\u6b27\u9646\u98ce\u4e914\u767e\u79d1","url":"https:\/\/www.eu4cn.com","logo":{"@type":"ImageObject","url":"https:\/\/www.eu4cn.com\/images\/logo\/logo.png","caption":"\u6b27\u9646\u98ce\u4e914\u767e\u79d1"}},"potentialAction":{"@type":"SearchAction","target":"https:\/\/www.eu4cn.com\/index.php?title=Special:Search&search={search_term}","query-input":"required name=search_term"}}</script>
+<link rel="stylesheet" href="http://www.unpkg.com/@fortawesome/fontawesome-free@5.15.1/css/all.css" />
+<link rel="stylesheet" href="http://www.unpkg.com/@fortawesome/fontawesome-free@5.15.1/css/v4-shims.css" />
+<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+<body class="Liberty width-size mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-陆战 rootpage-陆战 skin-liberty action-edit skin--responsive">		<header>
+			<div class="nav-wrapper navbar-fixed-top">
+						<nav class="navbar navbar-dark yamm">
+			<a class="navbar-brand" href="https://www.eu4cn.com/wiki/首页"></a>
+			<ul class="nav navbar-nav">
+				<li class="dropdown nav-item">
+					<a class="nav-link navbar-right" href="#" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+						<div class="navbar-brand-subtitle">欧陆风云4</div>
+						<div class="navbar-family">ParaWikis</div>
+					</a>
+				<ul class="dropdown-menu" aria-labelledby="dLabel">
+					<li>
+		                  <div class="yamm-content">
+		                    <div class="row">
+						 							<ul class="col-sm-4 list-unstyled">
+							<li><p class="meganav-item"><strong>最新百科</strong></p></li>
+								<a href="http://cs2.parawikis.com/" class="dropdown-item meganav-item">都市天际线2百科</a>
+								<a href="http://h3.parawikis.com/" class="dropdown-item meganav-item">英雄无敌3百科</a>
+								<a href="http://vic3.parawikis.com/" class="dropdown-item meganav-item">维多利亚3百科</a>
+								<a href="http://ce2.parawikis.com/" class="dropdown-item meganav-item">奇妙探险队2百科</a>
+								<a href="http://eos.parawikis.com/" class="dropdown-item meganav-item">罪恶帝国百科</a>
+								<a href="http://ir.parawikis.com/" class="dropdown-item meganav-item">英白拉多：罗马百科</a>
+							</ul>
+							<ul class="col-sm-4 list-unstyled">
+								<li><p class="meganav-item"><strong>热门百科</strong></p></li>
+								<a href="http://stellaris.parawikis.com/" class="dropdown-item meganav-item">群星百科</a>
+								<a href="http://www.eu4cn.com/" class="dropdown-item meganav-item">欧陆风云4百科</a>
+								<a href="http://ck2.parawikis.com/" class="dropdown-item meganav-item">十字军之王2百科</a>
+								<a href="http://ck3.parawikis.com/" class="dropdown-item meganav-item">十字军之王3百科</a>
+								<a href="http://hoi4.parawikis.com/" class="dropdown-item meganav-item">钢铁雄心4百科</a>
+								<a href="http://vic2.parawikis.com/" class="dropdown-item meganav-item">维多利亚2百科</a>
+							</ul>
+							<ul class="col-sm-4 list-unstyled">
+								<li><p class="meganav-item"><strong>ParaWikis</strong></p></li>
+								<a href="http://www.parawikis.com/wiki/ParaWikis:申请建站" class="dropdown-item meganav-item">申请建站</a>
+								<a href="http://www.parawikis.com/" class="dropdown-item meganav-item">ParaWikis</a>
+								<a href="http://commons.parawikis.com/" class="dropdown-item meganav-item">ParaCommons</a>
+							</ul>		                    </div>
+		                  </div>
+		                </li>
+				</ul>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="https://www.eu4cn.com/wiki/Special:最近更改" class="nav-link" title="本wiki的最近更改列表[r]" accesskey="r"><span class="fas fa-sync"></span><span class="hide-title">最近更改</span></a>				</li>
+				<li class="nav-item">
+					<a href="https://www.eu4cn.com/wiki/Special:随机页面" class="nav-link" title="加载一个随机页面[x]" accesskey="x"><span class="fa fa-random"></span><span class="hide-title">随机页面</span></a>				</li>
+				<li class="nav-item">
+					<a href="http://shang.qq.com/wpa/qunwpa?idkey=3bb76f6a58594b18c2defdc03af7ec2703fb2e2cc8fef6dadd1dcb896c0ede1a" target="_blank" class="nav-link" title="加入QQ群">
+						<span class="fa fa-qq"></span><span class="hide-title">加入QQ群</span>
+					</a>
+				</li>
+				<li class="dropdown nav-item">
+					<a class="dropdown-toggle nav-link" href="#" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+						<span class="fa fa-wrench"></span><span class="hide-title">工具</span>
+					</a>
+				<ul class="dropdown-menu" aria-labelledby="dLabel">
+					<li id="t-whatlinkshere" class="mw-list-item"><a href="https://www.eu4cn.com/wiki/Special:链入页面/陆战" title="所有链接至本页面的wiki页面列表[j]" accesskey="j" class="dropdown-item">链入页面</a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="https://www.eu4cn.com/wiki/Special:链出更改/陆战" rel="nofollow" title="链自本页的页面的最近更改[k]" accesskey="k" class="dropdown-item">相关更改</a></li><li id="t-specialpages" class="mw-list-item"><a href="https://www.eu4cn.com/wiki/Special:特殊页面" title="所有特殊页面的列表[q]" accesskey="q" class="dropdown-item">特殊页面</a></li><li id="t-info" class="mw-list-item"><a href="https://www.eu4cn.com/index.php?title=%E9%99%86%E6%88%98&amp;action=info" title="关于此页面的更多信息" class="dropdown-item">页面信息</a></li><li id="t-cargopagevalueslink" class="mw-list-item"><a href="https://www.eu4cn.com/index.php?title=%E9%99%86%E6%88%98&amp;action=pagevalues" rel="cargo-pagevalues" class="dropdown-item">页面值</a></li>				</ul>
+				</li>
+				<li class="dropdown nav-item"><a class="nav-link dropdown-toggle dropdown-toggle-fix" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true" title="帮助"><span class="fa fa-question"></span><span class="hide-title">帮助</span></a><div class="dropdown-menu" role="menu"><a class="dropdown-item" href="https://www.eu4cn.com/wiki/Project:译名手册" title="譯名手冊"><span class="fa fa-book"></span>譯名手冊</a><a class="dropdown-item" href="https://www.eu4cn.com/wiki/Project:字词转换" title="字詞轉換"><span class="fa fa-language"></span>字詞轉換</a><a class="dropdown-item" href="https://www.eu4cn.com/wiki/Project:编辑指南" title="編輯指南"><span class="fa fa-graduation-cap"></span>編輯指南</a><a class="dropdown-item" href="https://www.eu4cn.com/wiki/Project:编辑规范" title="編輯規範"><span class="fa fa-lightbulb"></span>編輯規範</a><a class="dropdown-item" href="https://www.eu4cn.com/wiki/Project:练手沙盒" title="Project:练手沙盒"><span class="fa fa-leaf"></span>練手沙盒</a></div></li><li class="dropdown nav-item"><a class="hidden-xs-down nav-link" data-toggle="" role="button" aria-haspopup="true" aria-expanded="true" title="ParaTranz" href="https://paratranz.cn/"><span class="fa fa-language"></span><span class="hide-title">ParaTranz</span></a></li><li class="dropdown nav-item"><a class="hidden-xs-down nav-link" data-toggle="" role="button" aria-haspopup="true" aria-expanded="true" title="52PCGame" href="http://bbs.52pcgame.net/"><span class="fa fa-comments"></span><span class="hide-title">52PCGame</span></a></li><li class="dropdown nav-item"><a class="hidden-xs-down nav-link" data-toggle="" role="button" aria-haspopup="true" aria-expanded="true" title="Project:捐款" href="https://www.eu4cn.com/wiki/Project:捐款"><span class="fa fa-heart"></span><span class="hide-title">资助我们</span></a></li>			</ul>
+					<div class="navbar-login">
+							<a href="#" class="none-outline" data-toggle="modal" data-target="#login-modal">
+					<span class="fa fa-sign-in"></span>
+				</a>
+					</div>
+									<form action="https://www.eu4cn.com/index.php" id="searchform" class="form-inline">
+			<input type="hidden" name="title" value="Special:搜索"/>
+			<div class="input-group">
+				<input type="search" name="search" placeholder="在欧陆风云4百科搜索" aria-label="在欧陆风云4百科搜索" autocapitalize="sentences" title="在欧陆风云4百科搜索[f]" accesskey="f" class="form-control" id="searchInput"/>				<span class="input-group-btn">
+					<button type="submit" name="go"
+						value="前往" id="searchGoButton"
+							class="btn btn-secondary" type="button"><span class="fa fa-eye"></span></button>
+					<button type="submit" name="fulltext"
+						value="搜索"
+						id="mw-searchButton" class="btn btn-secondary" type="button">
+						<span class="fa fa-search"></span></button>
+				</span>
+			</div>
+		</form>
+			</nav>
+				</div>
+		</header>
+		<section>
+			<div class="content-wrapper">
+							<aside>
+			<div class="liberty-sidebar">
+				<div class="live-recent-wrapper">
+					<div id='mw-data-after-content'>
+	<div class="read-more-container"></div>
+</div>
+												<div
+			class="live-recent"
+			data-article-ns="0|4|10|12|14"
+			data-talk-ns="1|5|7|9|11|13|15"
+		>
+			<div class="live-recent-header">
+			<ul class="nav nav-tabs">
+				<li class="nav-item">
+					<a href="javascript:" class="nav-link active" id="liberty-recent-tab1">
+						最近更改					</a>
+				</li>
+				<li class="nav-item">
+					<a href="javascript:" class="nav-link" id="liberty-recent-tab2">
+						最近讨论					</a>
+				</li>
+			</ul>
+			</div>
+			<div class="live-recent-content">
+				<ul class="live-recent-list" id="live-recent-list">
+					<li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li>				</ul>
+			</div>
+			<div class="live-recent-footer">
+				<a href="https://www.eu4cn.com/wiki/Special:最近更改" title="Special:最近更改"><span class="label label-info">查看更多</span></a>			</div>
+		</div>
+						<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 侧栏 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1612414434963106"
+     data-ad-slot="1728061201"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-K4RD1C6KBW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-K4RD1C6KBW');
+</script>
+				</div>
+										</div>
+			</aside>
+								<div class="container-fluid liberty-content">
+					<div class="liberty-content-header">
+													<div class="alert alert-dismissible fade in alert-info liberty-notice" role="alert">
+								<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+								<div id="localNotice"><div class="sitenotice" lang="zh" dir="ltr"><div style="text-align:center; font-size:125%; line-height: 1; padding: 10px;"><b>欢迎访问欧陆风云4百科！<a href="https://www.eu4cn.com/wiki/Special:用户登录" title="Special:用户登录"><span class="alert-link">注册一个账号</span></a>，一起参与编写吧！这里是<a href="https://www.eu4cn.com/wiki/欧陆风云4百科:当前任务#页面" title="欧陆风云4百科:当前任务"><span class="alert-link">当前的工程</span></a>。</b></div>
+<div style="text-align: center;">如果您想帮助本站建设，欢迎点击<a href="https://www.eu4cn.com/wiki/欧陆风云4百科:捐款" title="欧陆风云4百科:捐款"><b>这里</b></a>捐款！欢迎所有对百科感兴趣的同学加入QQ群：<b>497888338</b>。</div></div></div>							</div>
+															<div class="content-tools">
+				<div class="btn-group" role="group" aria-label="content-tools">
+					<div id="ca-view" class="mw-list-item"><a href="https://www.eu4cn.com/wiki/陆战" class="btn btn-secondary tools-btn">阅读</a></div><div id="ca-viewsource" class="selected mw-list-item"><a href="https://www.eu4cn.com/index.php?title=%E9%99%86%E6%88%98&amp;action=edit" title="本页面受到保护。&#10;您可以查看其源代码[e]" accesskey="e" class="btn btn-secondary tools-btn">查看源代码</a></div><div id="ca-history" class="mw-list-item"><a href="https://www.eu4cn.com/index.php?title=%E9%99%86%E6%88%98&amp;action=history" title="本页面过去的版本[h]" accesskey="h" class="btn btn-secondary tools-btn">查看历史</a></div>					<a href="https://www.eu4cn.com/wiki/Talk:陆战" class="btn btn-secondary tools-btn" title="关于内容页面的讨论[t]" accesskey="t" id="ca-talk">讨论</a>				</div>
+			</div>
+							<div class="title">
+						<h1>
+							查看“陆战”的源代码						</h1>
+						<div class="mw-indicators">
+</div>
+						</div>
+						<div class="contentSub" >
+							←<a href="https://www.eu4cn.com/wiki/陆战" title="陆战">陆战</a>						</div>
+				</div>
+					<div class="liberty-content-main" id="content">
+											<div class="mw-body-content" id="mw-content-text">
+							<div id="mw-content-text" class="mw-body-content"><p>因为以下原因，您没有权限编辑本页：
+</p>
+<div class="permissions-errors">
+<p>您请求的操作仅限属于该用户组的用户执行：<a href="https://www.eu4cn.com/wiki/欧陆风云4百科:用户" title="欧陆风云4百科:用户">用户</a>
+</p>
+</div><hr />
+<p>您可以查看和复制此页面的源代码。
+</p><textarea readonly="" accesskey="," id="wpTextbox1" cols="80" rows="25" style="" class="mw-editfont-monospace" lang="zh" dir="ltr" name="wpTextbox1">{{Version|1.24}}
+{{Hatnote|本章主要讲述'''陆军战斗构成'''。关于招募和维持陆军的信息请参见[[陆军]]。关于陆军的兵种分类信息请参见[[陆军单位]]。关于将领的信息请参见[[将领]]。}}
+陆战就是是部署和调动一切军事资源对敌作战，一般情况下，这会直接影响战争的结果。在欧陆风云4中绝大部分战斗都是以陆地展开的，当然[[海战]]也很重要，但是失去陆权才是游戏中战争胜败的通常原因。因此，陆战的艺术意义重大，其复杂性我们将在这里尽可能充分地加以讨论。
+
+== 战斗界面 ==
+{{SVersion|Timeless}}一场战斗不仅仅是由一些简单的修正或者掷骰子的数字所决定的，而是通过一个复杂的模拟，让双方的军队部署在两排阵地中，让陆军单位与面前的敌人作战，同时在允许的情况下，敌人侧翼的陆军单位（有足够高的侧翼距离）可以在不同的位置间进行移动。与此同时，还要考虑撤退机制、消灭或击溃士气低落的单位、进行增援已经部署预备队。
+
+可惜的是，欧陆风云4的战斗系统，其战斗界面并不能非常直观或明确地，让玩家看到哪个部队正与哪个部队战斗或一支部队正向什么地方移动。因此，有必要通过本章内容来明确决定陆战胜利的各要素。
+[[File:陆战胜利.png|替代=|居中|缩略图|800x800像素|一般情况下陆战的结束界面]]
+
+== 地形 ==
+{{SVersion|1.24}}
+[[File:Terrain map.png|thumb|800px|center|地形地图，每一省份东南两条像素边境线属于他们本身]]
+
+每个省份的地形都显示在'''地形'''和'''简易地形'''地图模式。'''地形'''模式展示了一张自然外观的地图，而'''简易地形'''模式的色彩代表了每一个省份的地形类别；如果有需要，两者都有工具提示来显示当前的地形类别、堡垒等级以及当前的冬季状态。一些地形对在该省运动的军队增加了移动花费的惩罚，同时对攻击方增加了一种负面的地形修正，不同类型的地形有不同的修正效果。
+
+这里列出了地形的类型和它们给予的修正效果。
+&lt;section begin=terrain combat/>
+{|class="wikitable sortable mw-collapsible mw-collapsed" style="text-align:right"
+! width="500px" | 地形
+! {{icon|supply limit|24px}}&lt;br>补给上限 !! {{icon|local defensiveness|24px}}&lt;br>本地防御效率 !! {{icon|movement speed|24px}}&lt;br>移动花费 !! &lt;br>攻击方惩罚 !! &lt;br>当地发展成本 
+|-
+| style="text-align:left" | [[File:combat terrain arctic.png|Glacial terrain]] 冰川
+| {{green|+2}} || || {{red|+25%}} || {{red|−1}} || {{red|+50%}}
+|-
+| style="text-align:left" | [[File:combat terrain farmlands.png|Farmlands terrain]] 农田
+| {{green|+10}} || || {{red|+10%}} || || {{green|−5%}}
+|-
+| style="text-align:left" | [[File:combat terrain forest.png|Forest terrain]] 森林
+| {{green|+4}} || || {{red|+25%}} || {{red|−1}} || {{red|+20%}}
+|-
+| style="text-align:left" | [[File:combat terrain hills.png|Hills terrain]] 丘陵
+| {{green|+5}} || {{green|+10%}} || {{red|+40%}} || {{red|−1}}  || {{red|+25%}}
+|-
+| style="text-align:left" | [[File:combat terrain woods.png|Woods terrain]] 树林
+| {{green|+6}} || || {{red|+10%}} || {{red|−1}}  || {{red|+15%}}
+|-
+| style="text-align:left" | [[File:combat terrain mountains.png|Mountain terrain]] 山脉
+| {{green|+4}} || {{green|+25%}} || {{red|+50%}} || {{red|−2}} || {{red|+35%}}
+|-
+| style="text-align:left" | [[File:combat terrain grasslands.png|Grasslands terrain]] 草原
+| {{green|+8}} || || || ||
+|-
+| style="text-align:left" | [[File:combat terrain jungle.png|Jungle terrain]] 丛林
+| {{green|+5}} || || {{red|+50%}} || {{red|−1}} || {{red|+35%}}
+|-
+| style="text-align:left" | [[File:combat terrain marsh.png|Marsh terrain]] 沼泽
+| {{green|+5}} || || {{red|+30%}} || {{red|−1}} || {{red|+25%}}
+|-
+| style="text-align:left" | [[File:combat terrain desert.png|Desert terrain]] 沙漠
+| {{green|+4}} || || {{red|+5%}} || || {{red|+50%}}
+|-
+| style="text-align:left" | [[File:combat terrain coastal desert.png|Coastal Desert terrain]] 海岸沙滩
+| {{green|+4}} || || || || {{red|+35%}}
+|-
+| style="text-align:left" | [[File:combat terrain inland ocean.png|Coastline terrain]] 海岸线
+| {{green|+6}} || || || || {{red|+25%}}
+|-
+| style="text-align:left" | [[File:combat terrain drylands.png|Drylands terrain]] 旱地
+| {{green|+7}} || || || || {{red|+5%}}
+|-
+| style="text-align:left" | [[File:combat terrain highlands.png|Highlands terrain]] 高原
+| {{green|+6}} || {{green|+10%}} || {{red|+40%}} || {{red|−1}} || {{red|+20%}}
+|-
+| style="text-align:left" | [[File:combat terrain savannah.png|Savannah terrain]] 稀树草原
+| {{green|+6}} || || || || {{red|+15%}}
+|-
+| style="text-align:left" | [[File:combat terrain steppe.png|Steppe terrain]] 大草原
+| {{green|+6}} || || ||  || {{red|+20%}}
+|}
+&lt;section end=terrain combat/>
+
+===穿越惩罚===
+穿越惩罚将减少攻击方所有骰子得数，情况如下：
+* '''穿越河流''': 所有骰子得数 {{red|-1}}。
+: 两省份之间的河流会在省份窗口中以一个小河流标志显示，将鼠标悬停于其上将可以看到这个省份与哪个省份之间需要跨河。
+* '''穿越海峡''': 所有骰子得数 {{red|-2}}。移步[[海峡]]界面查看所有海峡列表。
+* '''两栖登陆''': 所有骰子得数 {{red|-2}}。
+: 这种情况包括了从海上发起攻击和直接登陆港口作战。
+当攻击方军队来自复数个省份时，任意一支部队遭到的穿越惩罚都会由全军承担。如果攻击方将领的机动性比防守方将领的高，则攻击方不会受到任何穿越惩罚。对将领机动性的检定是每日都会进行的，所以，即使高机动将领总有机会力挽狂澜——甚至是在他没有第一时间到达战场的情况下。
+
+===围城期间爆发的战斗===
+通常来说，“攻击方”被定义为相对于进入一个已有敌方单位所在省份的军队，而“防御方”则定义为早于“攻击方”之前就已经占据该省份的军队。然而，当一只军队正在围攻一个有堡垒的省份并且该省份未被攻占时遭到堡垒省份所有者军队或其盟友军队的攻击，则双方的角色就会对调：围攻堡垒的一方会被判定为“攻击方”， 同时企图破坏围攻的一方会被判定为“防御方”。进攻和地形惩罚都适用于“攻击方”, 同时不论进攻的“防御方”将领有多少机动点数，穿越河流和穿越海峡的攻击惩罚都判定无效。
+
+玩家可以在建造堡垒时考虑到这一点，同时也可以在战争以此来决定优先围攻哪个堡垒或去解救已方被围攻堡垒。必须要注意的是'''仅适用于带有堡垒的省份'''。
+
+== 战斗部署 ==
+{{SVersion|1.24}}
+=== 军团组成 ===
+{{main|陆军#不同兵种的配比}}
+为了保障军队的作战效率最大化，适当的军团组合（步骑炮比例搭配）是非常重要的。
+
+=== 战线宽度 ===
+{{N|战线宽度|Combat width|X=，旧译：'''战场宽度'''、'''战斗宽度'''}}决定一场战斗会有多少单位能有效的参加战斗。如果有足够的单位，每1战线宽度都能在前后两排分别站立1个单位。基础战线宽度值为15。&lt;ref>See in {{path|common/defines.lua}}: BASE_COMBAT_WIDTH = 15.0&lt;/ref>随着军事科技的进步，战线宽度会不断扩大，这使得各国能有效使用更多士兵参加战斗。除了美洲土著以外的所有国家的科技都从2或3级开始，所以他们的起始战线宽度是20。一场战斗中对阵双方的战斗宽度会默认使用参与者中战斗宽度较大一方的值。
+&lt;br>这是不同军事科技下战线宽度的对应表格。
+
+{| class="wikitable" style="text-align:right"
+! {{icon|mil tech}} 军事科技等级
+|0级||2级||5级||6级||8级||11级||14级||16级||18级||20级||22级||24级||26级
+|-
+! {{icon|combat width}} 战线宽度
+|15||20||22||24||25||27||29||30||32||34||36||38||40
+|}
+
+=== 排兵布阵 ===
+[[陆军单位]]阵型的排列是由AI自动完成的，玩家无法介入。本节解析AI的布阵策略。通过不断的观察和实验，我们得出了一个共同的结论，即游戏中的排兵布阵取决于每支部队（1K）的兵力和总体的[[陆军#不同兵种的配比|陆军]]兵种组成。
+
+下图中，小框里面打叉代表步兵，小框里面一条斜杠代表骑兵，小框里面带一点代表炮兵。
+
+'''注：本段落在参考英文wiki的基础上，由中文百科群成员实验后修改完成。'''
+
+====布阵原则====
+#前排先布置步兵，再布置骑兵。
+#后排先布置炮兵，再布置步兵和骑兵。
+#骑兵从两边向中央布置，步兵和炮兵从中央向两边布置。
+#布置方案以战场中线为基准'''尽可能的对称'''。
+#步兵和骑兵在后排布置时只能布置在'''相同兵种之后'''，除非一方数目不足而另一方数目过量。
+
+====步兵不足时的布阵====
+{{Battle|single=1|float=right||{{Battle/C|INF}}{{Battle/C|INF}}{{Battle/C|INF}}{{Battle/C|INF}}{{Battle/C|INF}}{{Battle/C|INF}}}}
+{{Battle|single=1|float=right||{{Battle/C|CAV}}{{Battle/C|CAV}}{{Battle/C|CAV}}{{Battle/C|CAV}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|CAV}}{{Battle/C|CAV}}{{Battle/C|CAV}}{{Battle/C|CAV}}}}
+{{Battle|single=1|float=right
+|{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}
+|{{Battle/C|CAV}}{{Battle/C|CAV}}{{Battle/C|CAV}}{{Battle/C|CAV}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|CAV}}{{Battle/C|CAV}}{{Battle/C|CAV}}{{Battle/C|CAV}}
+}}
+{{Battle|single=1|float=right
+|{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}
+|{{Battle/C|CAV}}{{Battle/C|CAV}}{{Battle/C|CAV}}{{Battle/C|CAV}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|CAV}}{{Battle/C|CAV}}{{Battle/C|CAV}}{{Battle/C|CAV}}
+}}
+{{Battle|single=1|float=right
+|{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}
+|{{Battle/C|CAV}}{{Battle/C|CAV}}{{Battle/C|CAV}}{{Battle/C|CAV}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|CAV}}{{Battle/C|CAV}}{{Battle/C|CAV}}{{Battle/C|CAV}}{{Battle/C|ART|green}}
+}}
+若步兵数小于战线宽度的一半，则按以下规则布阵。
+#将步兵从中央开始布置在前排。
+#将骑兵从中间向两边的布置在前排的两侧剩余位置。
+#将炮兵从中央开始布置在后排，但'''不得超过前排的宽度'''，即炮兵的前方必须有骑兵或步兵。
+#若后排仍有剩余空位：
+:*若第2步中骑兵数目足以充满前排，则将剩余骑兵布置在后排的两侧，'''从两边向中央部署'''。
+:*若第2步中骑兵不足以填满前排，则将剩余炮兵'''从中央向两边'''的布置在前后两排，'''使前后两排宽度相同或前排略宽1个格子'''。
+
+====步兵充足时的布阵====
+{{Battle|single=1|float=right||{{Battle/C|INF}}{{Battle/C|INF}}{{Battle/C|INF}}{{Battle/C|INF}}{{Battle/C|INF}}{{Battle/C|INF}}{{Battle/C|INF}}{{Battle/C|INF}}}}
+{{Battle|single=1|float=right||{{Battle/C|CAV}}{{Battle/C|CAV}}{{Battle/C|CAV}}{{Battle/C|CAV}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|CAV}}{{Battle/C|CAV}}{{Battle/C|CAV}}{{Battle/C|CAV}}}}
+{{Battle|single=1|float=right
+|{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}
+|{{Battle/C|CAV}}{{Battle/C|CAV}}{{Battle/C|CAV}}{{Battle/C|CAV}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|CAV}}{{Battle/C|CAV}}{{Battle/C|CAV}}{{Battle/C|CAV}}
+}}
+{{Battle|single=1|float=right
+|{{Battle/C|INF}}{{Battle/C|INF}}{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}{{Battle/C|INF}}{{Battle/C|INF}}
+|{{Battle/C|CAV}}{{Battle/C|CAV}}{{Battle/C|CAV}}{{Battle/C|CAV}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|CAV}}{{Battle/C|CAV}}{{Battle/C|CAV}}{{Battle/C|CAV}}
+}}
+{{Battle|single=1|float=right
+|{{Battle/C|CAV}}{{Battle/C|CAV}}{{Battle/C|CAV}}{{Battle/C|CAV}}{{Battle/C|INF}}{{Battle/C|INF}}{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}{{Battle/C|ART|pink}}{{Battle/C|INF}}{{Battle/C|INF}}{{Battle/C|CAV}}{{Battle/C|CAV}}{{Battle/C|CAV}}{{Battle/C|CAV}}
+|{{Battle/C|CAV}}{{Battle/C|CAV}}{{Battle/C|CAV}}{{Battle/C|CAV}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|INF|pink}}{{Battle/C|CAV}}{{Battle/C|CAV}}{{Battle/C|CAV}}{{Battle/C|CAV}}
+}}
+步兵数大于等于战场宽度的一半，则按以下规则布阵。
+#将步兵从中央开始布置在前排，左右对称，但在两边各空出 '''min{ 战场宽度/4 , 骑兵数/2 }''' 的位置(此处除法为整除，小数部分舍去)。
+#将骑兵布置在第1步中前排空出的位置中。
+#将炮兵布置在后排中央。
+#若后排仍有空位：
+:*空位对应的前排位置为步兵的，此位置优先放置步兵。
+:*空位对应前排位置为骑兵的，此位置优先放置骑兵。
+:*若步兵或骑兵一方数目不足，则数目充足的一方可跨过"步骑分界线"向另一方位置部署。
+
+== 战斗过程 ==
+{{Sversion|1.24}}
+当两支敌对的军团在一个省份相遇时，战斗就会发生直到其中一支被击溃或全军覆没。
+
+=== 战斗概念 ===
+在介绍之前，重温并补充一些本节的概念：
+
+* 军团：玩家和AI操控的作战单位，由许多部队编成。
+* 部队：游戏中的基本作战单位，人数上限为1000。多支部队可组成军团提高战斗力。
+* 攻击方/防御方：“攻击方”被定义为相对于进入一个已有敌方单位所在省份的军队，而“防御方”则定义为早于“攻击方”之前就已经占据该省份的军队。
+* 我方/敌方：此为战斗概念。EU4为即时战略游戏，也就是说，战斗中不存在战棋游戏中“你只攻击，我只挨打”的情况。当一支部队猛烈打击对手时，对方部队也会予以反击，双方的攻击是同时计算的。因为，为了防止与上述的攻击方/防御方混淆，这里将两支交手的军团简称为{{Green|我方}}和{{Red|敌方}}。
+* 参战部队/未参战部队/参与战斗的部队：在一场战斗中，受战线宽度和侧翼攻击范围限制，并非所有派过去的部队都能第一时间打击敌人。因此，将单位时间内对对方部队输出的部队叫'''参战部队'''；与此相对应的，在战斗中，但没有打击对方部队的，叫'''未参战部队'''，这些部队大多作为预备役，在参战部队败下阵后会支援前线；而该部队无论参战或是不参战，不管在不在战场上，只要其身处战斗，都叫'''参与战斗的部队'''，这些部队每天都会受到士气惩罚。
+
+=== 战斗画面 ===
+如下为陆战画面，其中：
+
+红框：撤退标识，当战斗经过两轮火力-冲击阶段（12天）时，玩家可点击此按钮，将部队有序撤离。
+
+绿框：参战将领信息及将领特质。
+
+黄框：部分决定骰子点数的变量，例如骰子，将领点数，地形等。
+
+蓝框：参战军团的平均士气。注意与下文中平均最大士气区分开。
+
+紫框：参战军团的平均训练度，平均最大士气和军事战术。
+
+浅橙框：'''前排'''步兵/骑兵数量及全部炮兵的数量。骑兵左上角的加/减号代表前排骑兵比例是否合适。
+
+粉框：上面粉框代表双方军团的战斗部署。不同国家的部队用不同颜色标识。随着人员伤亡，小框颜色会逐渐变浅。将鼠标悬停在小框上，则可显示该部队的具体信息：实时人数、士气，训练度等。而将鼠标悬停在下面粉框时，可查看本场战斗的战线宽度。
+
+上文出现的概念均于下文解释。
+[[File:陆战场面2.png|居中|缩略图|452x452像素|欧陆风云4的陆战画面]]
+
+=== 阶段 ===
+战斗由一系列'''持续三天'''的阶段组成，在'''火力'''与'''冲击'''阶段之间交替进行，战斗一开始为火力阶段。一般来说，步兵和炮兵在火力阶段能打出大量输出，而骑兵能在冲击阶段大杀四方。
+
+=== 攻击目标 ===
+攻击目标由AI自行选择，前排部队和后排炮兵可以攻击任何在其攻击范围内的敌军。单支部队只可以攻击一支部队，但却可以承受多支敌方部队的攻击。一般情况下前排部队只与其正面的敌人交战，但如果其正面没有部队迎战，前排部队会在侧翼攻击范围内打击其正面相邻区域的敌军。因此，在陆战中，其他条件不变下，顶满战线宽度的军团，其优势要比没有顶满的强。战斗中其正面没有敌人的部队，在侧翼攻击范围允许下，可以攻击周边敌军部队，这样敌军部队会遭受多支部队打击，增加战损。
+
+有时，如果能造成敌军更多损失的话，前排部队有时候也会不顾一切地执行侧翼攻击。这种不顾一切执行侧翼攻击的状况，通常会发生在敌军全部为炮兵或者陆军兵种十分落后的情况下。
+
+后排的步兵和骑兵部队不能发动进攻，他们只有在其正前方的我方部队败退后顶上前排。炮兵是唯一可以从后排发起攻击的兵种，但在后排攻击的炮兵只会造成50%的基本战损。大时代能力{{Icon|artillery damage from back row}}“改良炮兵射程”会增加20%后排炮兵伤害，能将该数字提升至70%。
+
+下图显示了攻击正面部队、攻击侧翼部队以及未参战三种情况：
+[[File:攻击目标.png|居中|缩略图|400x400像素|单支部队的攻击目标]]
+
+=== 战斗系统 ===
+EU4的战斗系统使用四个公式来计算参战部队的人员伤亡和士气打击：
+
+在如下公式中，&lt;math> Atk&lt;/math>代表{{Green|我方}}，&lt;math> Def&lt;/math>代表{{Red|敌方}}。若无特殊说明，以下公式均代入{{Green|我方}}视角。
+
+==== 骰子点数(Pips) ====
+每个'''阶段（持续三天的火力/冲击）'''开始，双方都会掷骰子。产生的点数将直接影响部队在这个阶段中，每天对敌军造成的士气打击和人员伤亡。
+
+骰子计算公式如下：
+
+&lt;math> Pips_{T} = Roll +  \max (0, Leader_{Atk} - Leader_{Def}) + Pips_{Atk} - Pips_{Def} - Terrain&lt;/math>
+
+其中：
+* 骰子 (&lt;math>Roll&lt;/math>)：一个0-9的随机数，每个阶段开始时投掷一次。
+* [[将领]]属性 (&lt;math>Leader&lt;/math>){{Icon|land leader fire}}{{Icon|land leader shock}}：领军将领的属性分别影响相应阶段（火力/冲击）。
+*{{Green|我方}}/{{Red|敌方}}部队[[陆军单位]]属性 (&lt;math>Pips&lt;/math>){{Icon|fire}}{{Icon|shock}}{{Icon|land morale}}{{pips|12|off}}{{Pips|12|def}}：我方/敌方部队的攻击/防御点数（火力/冲击/士气）。请注意，这是兵种自带的点数，要与下文说的{{Green|我方}}部队伤害区分开来。后排炮兵会将其50%的冲击和火力防御点数（不为整数则就近取小值。16级炮兵开始提供一点防御火力点数，29级炮兵提供一点防御冲击点数）赋予到该支炮兵前的那只部队上。
+* [[地形]]修正 (&lt;math>Terrain&lt;/math>)：恶劣地形会给攻击方部队造成进攻惩罚。
+
+==== 基础战损(Multipliers) ====
+在清算最后的人员伤亡和士气打击前，系统还会计算单支部队造成的“基础战损”：
+
+&lt;math> Multipliers = \frac{Strength}{1000} \cdot \frac{Damage }{Tactics} \cdot (1 + CombatAbility) \cdot (1 + Discipline) \cdot (1 + \frac{Round}{100})&lt;/math> 
+
+其中：
+
+*{{Green|我方}}部队人数 (&lt;math>Strength&lt;/math>){{Icon|manpower}}：若我方部队人数不满员，输出伤害按比例减少。
+*{{Green|我方}}部队伤害 (&lt;math>Damage&lt;/math>){{Icon|fire}}{{Icon|shock}}：此项由军事科技等级及修正（步兵火力/骑兵冲击一类）决定。详见 [[科技#军事科技对陆军的累计加成效果|军事科技对陆军的累计加成效果]]。
+*{{Red|敌方}}部队[[军事战术]]最终值 (&lt;math>Tactics&lt;/math>){{Icon|Military tactics}}：敌方部队的军事战术最终值。
+*{{Green|我方}}部队[[作战能力]]加成 (&lt;math>CombatAbility&lt;/math>){{Icon|inf power}}{{Icon|cav power}}{{Icon|art power}}：我方部队的步兵/骑兵/炮兵作战能力加成。
+*{{Green|我方}}单位[[训练度]] (&lt;math>Discipline&lt;/math>){{Icon|discipline}}：我方部队的训练度。
+*交战军团战斗时间 (&lt;math>Round&lt;/math>){{Icon|time}}：当军团开始战斗时，每天的基础战损增加&lt;math>1\%&lt;/math>，第一天以&lt;math>1\%&lt;/math>开始。
+*后排炮兵输出时，此值应再乘以&lt;math>50\%&lt;/math>。大时代能力{{Icon|artillery damage from back row}}“改良炮兵射程”会增加20%后排炮兵伤害，能将该修正提升至&lt;math>70\%&lt;/math>。
+
+====人员伤亡(Casualties)====
+在骰子点数和基础战损计算完毕后，系统立刻计算{{Red|敌方}}部队受{{Green|我方}}部队打击下的伤亡人数。需要注意的是，这是一支敌方部队受一支我方部队打击的计算公式，若该敌方部队受到多支我方部队打击，则将每一项分开计算，并最后加在一起：
+
+&lt;math> Casualties=(15+5\times Pips_{T})\cdot Multipliers\cdot(1+Damage_{Mod})\cdot(1+DamageRev_{Mod}) &lt;/math>
+
+其中：
+
+*骰子点数(&lt;math>Pips_{T}&lt;/math>)：第一个公式采用火力/冲击点数后的计算结果。
+*基础战损(&lt;math>Multipliers&lt;/math>)：第二个公式的计算结果。
+*{{Green|我方}}部队阶段修正 (&lt;math>Damage_{Mod}&lt;/math>){{Icon|land fire damage}}{{icon|shock damage}}：我方部队增加火力与冲击伤害的修正。
+*{{Red|敌方}}部队阶段修正 (&lt;math>DamageRev_{Mod}&lt;/math>){{Icon|fire damage received}}{{Icon|shock damage received}}：敌方部队降低火力与冲击伤害的修正。
+*需要注意的是，当炮兵暴露于前排，受到对面部队直接攻击时，其会受到双倍的人员伤亡。
+
+====士气打击(MoraleCasualties)====
+在骰子点数和基础战损计算完毕后，系统立刻计算{{Red|敌方}}部队受{{Green|我方}}部队进攻下的士气打击。需要注意的是，这是一支敌方部队受一支我方部队打击的计算公式，若该敌方部队受到多支我方部队打击，则将每一项分开计算，并最后加在一起。并且，在军团和战斗界面中，玩家无法看到单支部队的士气值，只能看到所有部队士气值的平均值：
+
+&lt;math> MoraleCasualties = (15 + 5 \cdot Pips) \cdot Multipliers \cdot (1 + DamageModifier)\cdot (1 + DamageReceived) \cdot\frac{MaxMorale}{540} + PassiveMoraleDamage \cdot ( 1 - RO) &lt;/math>
+
+其中：
+
+*骰子点数(&lt;math>Pips_{T}&lt;/math>)：第一个公式采用士气点数后的计算结果。
+*基础战损(&lt;math>Multipliers&lt;/math>)：第二个公式的计算结果。
+*{{Green|我方}}部队士气最大值(&lt;math>MaxMorale&lt;/math>)：我方部队士气的最大值。一般情况下，战斗中此值可视为固定值。
+*{{Green|我方}}士气打击调整 (&lt;math>DamageModifier&lt;/math>)：我方的士气打击调整值
+*{{Red|敌方}}受到士气打击调整 (&lt;math>DamageReceived&lt;/math>)：敌方的受到士气打击调整值
+
+*士气损耗 (&lt;math>PassiveMoraleDamage &lt;/math>)：所有参与战斗的部队每天敌方最大士气1%的士气损耗。未参战部队会受到每天2%敌方最大士气的士气损耗，故而将精锐部队置于后方非常不划算。但是，当陆军职业度达到80%后，该值可下降50%(&lt;math>RO&lt;/math>)。
+*需要注意的是，当炮兵暴露于前排，受到对面部队直接攻击时，其会受到双倍的士气打击。
+
+有几个独特的国家理念可以减少火力和冲击阶段受到的损伤、加强输出的伤害：
+
+'''增加火力伤害的的理念：'''
+{{bonus table|land fire damage}}
+
+'''增加冲击伤害的的理念：'''
+{{bonus table|shock damage}}
+
+信仰 {{icon|Jafari}} [[伊斯兰教#伊斯兰教法学派|贾法里派]]的伊斯兰教国家也会获得 {{icon|shock damage}}{{green|+10%}} 冲击伤害
+
+'''减少火力伤害的的理念：'''
+{{bonus table|fire damage received}}
+
+'''减少冲击伤害的的理念：'''
+{{bonus table|shock damage received}}
+
+信仰 {{icon|Zaidi}} [[伊斯兰教#伊斯兰教法学派|宰德派]]的伊斯兰教国家也会获得 {{icon|shock damage received}}{{green|-10%}} 受到的冲击伤害
+
+信仰 {{icon|Hussite}} [[基督教#胡斯派|胡斯派]]的国家也会获得 {{icon|shock damage received}}{{green|-5%}} 受到的冲击伤害
+
+==='Zombie' regiments===
+{{SVersion|1.34}}
+In principle, units on the frontline retreat and are replaced by reserve units when they reach either 0 morale or 0 regiment strength. However, before patch 1.34 this mechanic did not function when regiment strength reaches 0 before morale reaches 0 during the first 12 days of a battle. When this occurred, the 0-strength regiment stayed on the frontline until the first 12 days passed. This remains true even when the 0 strength regiment reaches 0 morale during the first 12 days.
+
+===Overkill===
+
+When a regiment deals morale or kill casualties to a target that has less morale or regiment strength remaining, the excess morale or kill casualties are not distributed to other units. Thus a regiment that has 0.01 morale left after a phase will absorb an entire other day of kill &amp; morale casualties.
+
+===战斗结果===
+在战斗过程中，前排部队人数或士气一旦归零，系统判定此部队即丧失作战能力，将其移出战场，其位置由周边部队补上，优先选择正后排的步兵/骑兵，其次是原位置左边或右边的部队。（但在人数归0的情况下，系统没有将此部队除名，不过军团界面中此部队的人数显示为0）如果此时战场上存在未参战步兵/骑兵部队，即将其从军团前排侧翼补上以维持战斗。
+
+当战斗中的一方军团总人数（极为少见）或士气率先降为0，系统判定该方失败。在没有全歼的情况下，这支军团会撤退到其控制区内休养生息，以便投入下一场战斗。
+
+大部分情况下，失败方会遭受严重的人员损失，但不至于被悉数歼灭。但在以下三个情况中，{{Red|敌方}}军团可以被全歼：
+
+# 开始战斗时{{Red|敌方}}军团士气为'''0'''。
+#战斗结束时，{{Green|我方}}军团'''存活人数'''（并非人数上限）为{{Red|敌方}}的10倍及以上，并且{{Green|我方}}军事科技至少比{{Red|敌方}}的高2级。
+#在两轮火力-冲击阶段（12天）内，将{{Red|敌方}}军团'''前排投入战斗（即不显示为“处于预备队”）的部队士气'''降到'''0'''的同时，{{Green|我方}}军团'''存活人数'''（并非人数上限）为{{Red|敌方}}的2倍及以上。
+
+==战斗统计==
+{{Sversion|1.24}}
+以下介绍上述公式中出现的概念。其中大部分都可以从[[陆军单位]]和[[陆军]]界面找到详细介绍。
+
+===军事战术===
+军事战术会减少己方部队在战斗中受到的伤害。[[科技|军事科技]]的提高会提高军事战术的基础值，而训练也会增加军事战术。军事战术的最终值为：
+
+&lt;math>军事战术最终值 = 军事战术基础值 \times 训练度&lt;/math>
+{| class="wikitable" style="text-align:center"
+! style="width:220px" |{{icon|mil tech}} 军事科技等级
+! style="width:50px" |0 级
+! style="width:50px" |4 级
+! style="width:50px" |6 级
+! style="width:50px" |7 级
+! style="width:50px" |9 级
+! style="width:50px" |12 级
+! style="width:50px" |15 级
+! style="width:50px" |19 级
+! style="width:50px" |21 级
+! style="width:50px" |23 级
+! style="width:50px" |24 级
+! style="width:50px" |30 级
+! style="width:50px" |32 级
+|-
+!{{icon|Military tactics}} 军事战术基础值
+|0.5||0.75||1.0||1.25||1.5||1.75||2.0||2.25||2.5||2.75||3.0||3.25||3.5
+|}
+
+===属性点数===
+{| style="margin: 0 auto;"
+|[[File:dots_offensive.png]]
+|[[File:dots_defensive.png]]
+|}
+
+每支部队的进攻和防御能力体现为三种数值：火力、冲击和士气。攻击能力使用黄点表示，防御能力使用绿点表示。在不同的战斗阶段，每支部队都使用自身的攻击能力输出伤害，使用自身的防御能力抵御伤害。&lt;ref>http://steamcommunity.com/app/236850/discussions/0/864976115458051703/&lt;/ref> &lt;br />
+由此，我们可以推断出，高攻击力在玩家拥有比对手更多兵力时比高防御力更有价值，反之则反。
+这是因为，一支数量庞大，作战宽度更大的军队，势必拥有更宽广的杀伤区，这时高攻击力可以在相同时间内对敌方军队造成更大的伤亡。
+如果，敌方军队由10队步兵和10队炮兵组成，而玩家手中只有10队步兵时，高防御力将显著减少玩家在陆战中的损耗——因为防御力可以同时减少来自步兵和炮兵远射的攻击。
+一言蔽之，玩家如果打算供养一支大军，炮兵和步兵的攻击力越高越好，因为多数情况下，防御方的每一团要承受来自于进攻方两个团（步兵和炮兵）的进攻。
+在炮兵出现早期，（比如，7级军事科技时，一个炮兵团有1点冲击修正，没有火力修正；一个步兵团有0.35火力修正和0.5冲击修正）推荐使用高炮兵比率配合高冲击修正的将领。这样，玩家会在冲击阶段对敌军造成的伤害将会大大提升。反过来说，在游戏前期通过堆防御力来减少来自冲击阶段的伤害是可取的。&lt;br>
+在7级军事科技之后，无论是游牧民族还是开化国家，如果玩家养得起一支与攻击宽度相等的炮兵，一个火力修正高的将领配合火力攻击力为2的步兵和火力冲击均为1的炮兵是比较合适的。
+
+===侧翼攻击范围===
+侧翼攻击范围决定了一支部队可能进行侧翼攻击的攻击范围（距离）。1点侧翼攻击范围代表该部队能够攻击其正面部队左方或右方1格的部队，以此类推。后排炮兵在计算距离时会投影到前排部队上，所以炮兵的侧翼攻击范围概念和步兵/骑兵是一样的。
+
+步兵基本侧翼攻击范围为 1，骑兵/炮兵为 2。
+
+随着游戏的进行，军事科技会逐渐增强部队的侧翼攻击范围。
+下表介绍的就是军事科技等级对侧翼攻击范围的影响。
+
+{| class="wikitable" style="text-align:center"
+! style="width:220px" |{{icon|mil tech}} 军事科技等级
+! style="width:50px" |0 级
+! style="width:50px" |10 级
+! style="width:50px" |18 级
+! style="width:50px" |23 级
+! style="width:50px" |28 级
+! style="width:50px" |30 级
+|-
+!{{icon|flanking range}} 对侧翼攻击的改善
+|0
+|{{green|+25%}}|| {{green|+50%}}||{{green|+100%}} || {{green|+125%}}||{{green|+150%}}
+|-
+!{{icon|infantry}} 步兵侧翼攻击范围
+|1||1||1||2||2||2
+|-
+!{{icon|cavalry}} 骑兵侧翼攻击范围
+| 2||2||3||4||4||5
+|-
+!{{icon|artillery}} 炮兵侧翼攻击范围
+|2|| 2||3||4||4||5
+|}
+{{clear}}
+一支部队（1K）, 当它拥有 75% 以上的兵力参加战斗就可以 {{green|100%}} 的获得当前侧翼攻击范围；&lt;br />
+如果兵力在 50% 至 75% 之间，参加战斗时只能获得其 {{red|75%}} 的侧翼攻击范围；&lt;br />
+若兵力仅剩 25% 至 50% ，战斗中的侧翼攻击范围将只能达到 {{red|50%}}。&lt;br />
+{| class="wikitable" style="text-align:right"
+!单支部队兵力
+| 1000–750 人||749–500 人||499–250 人||249–0 人
+|-
+!侧翼攻击范围
+|{{green|100%}}||{{red|75%}}||{{red|50%}}||{{red|25%}}
+|}
+其最终数值将四舍五入，总为整数。
+
+一些理念可以增强骑兵侧翼攻击范围：
+{{bonus table|cavalry flanking ability}}
+
+===士气===
+士气是陆战中非常重要的因素。每天，参与战斗的部队都会无条件减少0.03点士气。如果一支军团遭到了敌方的杀伤，则会损失更多的士气。一旦一支军团的士气最终降为了0，这个军团将会尝试从战场撤退。但是，在两个火力-冲击阶段完成（12天）之前，是不可以撤退的，在此之前士气归零且兵力少于敌方一半的军团会被彻底消灭，全军从游戏中被移除。
+
+一支士气在0.50以下的军团会进入低组织度状态，这一状态会在部队所属国家旗帜上方以黑旗标记，选中军团后也能在士气条附近看到火焰的标记。一支低组织度的军团在士气恢复到0.50以上之前是无法移动的。在低陆军维护费状况下征募的军队就是个例子。
+
+如果一支军团战败，但其士气仍使其不至于陷入低组织度状态，这支军团会被迫撤退到一个被我方控制的省份（被玩家，玩家的战时盟友拥有或占领的省份）。这个省份可以是一个距离战役发生地很远的省份。军团会优先选择高发展度，拥有要塞并且不与敌军接触的省份作为撤退的目的地。在撤退途中，除非军团已经到达了撤退目的地（或者没有到达撤退目的地之前士气就已经恢复至100%），军团既不可能投入战斗，也不可以被控制。在撤退的军团的移动速度总是比相同条件下的正常军团稍快，在撤退途中，军团会以正常比例恢复士气。如果在大范围内没有被友方占据的省份可供休整，军团会溃散，强制移动一个省份的距离。完成这一移动后，如果每月维护检定没有完成，这支军团可以立即被攻击（通常是在士气极低的情况下）。溃散的军团在移动结束后，会获得少许士气恢复。这一机制可以用于快速击垮敌军的有生力量，但是这个机制同样会作用于玩家的军团。
+
+在两个火力-冲击阶段结束之后，如果军团剩余士气大于0.50，这时，军团可以接受撤退指令。撤退指令允许玩家控制撤退目的地，如果撤退时士气小于0.50，撤退目的地是不可控的。如果复数支军团参与了一场战斗，一些符合条件的团会接受撤退指令，而剩下的士气不足以接受撤退指令的团会留在战斗中。
+
+赢下一场战斗会使胜利方军团的士气恢复最大值的50%，而在一场战斗中撤退会根据撤出的团的数量减少其他仍在战斗中的盟军的士气。
+
+在一场战斗结束后，军队必须花费一定时间恢复士气，恢复值将在每月的1日结算，但处于战斗中的军队不会恢复士气。
+
+*一支溃散的军团一旦停止溃退状态将获得额外的士气奖励。
+*[[强行军]]时士气无法恢复。
+
+如果不想军队溃退到非常远的位置，可以考虑将军队维护费拉倒最低，然后军队就会在溃退中因士气过低而停止溃退。这种方法在全国只有一支军队时格外有用。
+
+士气与训练之争：首先说结论前期训练强于士气，后期士气强于训练。
+
+前期（没有炮兵或炮兵输出较弱时）：首先，在双方士气相等时，前排部队将于剩下400人左右时士气归零。所以当只有前排对战时，即便提高士气，令已然损失惨重的部队继续留在场上战斗，能造成的战果也很有限，在势均力敌的血战中反而会降低自己的战损比。当然前期提高士气也自然有好处。在意图一次接战全歼对方部队时，需要满足对方士气归零和对方人数少于我方一半两个要求。所以在这种情况下，士气高到足以令对方小股部队在12天内被击败便足够。另一种情况，意图击败对方一次后追上全歼，这种情况士气同样有用，但值得注意的是仍需将对方人数降至自己一半一下。
+
+后期（炮兵输出较强时）：后期炮兵输出常常占到一半，且当炮兵与前排比例得当时，炮兵将与前排同时撤退，无法被杀伤。要令对方的炮兵熄火，唯有用足够的士气杀伤把他们吓退，所以士气杀伤便尤为重要，尤其对于有很大炮兵加成的国家（法国，俄罗斯：.....西班牙：正是在下）。另外，不论在单机还是联机中，此时的大国都已有数支足以填满战场的部队，很难在战役中将对方秒杀。一场战争的输赢常常取决于几次大会战的胜负，士气对胜负的影响高于训练，更显士气之重要。
+
+流言终结者：士气是血量，训练是输出——错。士气和训练都是令部队更能抗也更能打的加成。简单来说，不同在于，训练更影响战损比，士气更影响胜负（甚至会有害于战损比）。同时等额训练度与士气的获取难度比约为1：2，请自行斟酌。
+
+====士气修正====
+以下修正可以增加国家陆军的最大士气：
+*陆军维护费：从 {{red|0.51}} 的最低维护费士气值到最大维护费的本国最高士气值。
+*理念和政策：
+{{bonus table|land morale|collapse=yes}}
+*提高军事科技：
+**军事科技（0）：{{green|+2.0}}
+** 军事科技（3）：{{green|+0.5}}（累加 {{green|+2.5}}）
+**军事科技（4）：{{green|+0.5}}（累加 {{green|+3.0}}）
+**军事科技（15）：{{green|+1.0}}（累加 {{green|+4.0}}）
+**军事科技（26）：{{green|+1.0}}（累加 {{green|+5.0}}）
+**军事科技（30）：{{green|+1.0}}（累加 {{green|+6.0}}）
+其他的国家奖励：
+*威望：100威望{{green|+10%}}，-100威望{{red|-10%}}
+*力量投射：100点力量投射{{green|+10%}}
+*顾问-陆军改革者：{{green|+10%}}
+*陆军传统：100传统 {{green|+25%}}
+*是[[宗教#信仰守护者|信仰守护者]]：{{green|+5%}}
+*每点{{icon|impious|24px}}负虔诚{{green|+0.1%}}
+宗教：
+*{{icon|Shia}}什叶派：{{green|+5%}}
+*{{icon|Protestant}}新教开启教会信条“教徒宽恕祈祷者”：{{green|+5%}}
+*{{icon|Reformed}}改革宗激活“战争”焦点（需要DLC {{icon|WoN}} 国富论）：{{green|+10%}}
+*{{icon|Vajrayana}}金刚乘佛教：{{green|+5%}}
+*{{icon|Shinto}}神道教：{{green|+10%}}
+*{{icon|Sikh}}锡克教：{{green|+10%}}
+*{{icon|Inti}}因蒂崇拜“雅拿领主”：{{green|+10%}}
+*{{icon|Nahuatl}}纳瓦特尔神话： {{green|+10%}}
+*{{icon|Tengri}}长生天选择什叶派、纳瓦特尔或锡克教为兼容宗教：{{green|+5%}}
+政体或政府改革：
+*革命共和国：{{green|+10%}}
+*革命国家：{{green|+10%}}
+*总统独裁：{{green|+10%}}
+*军事独裁：{{green|+10%}}
+*大名或独立大名：{{green|+10%}}
+*革命帝国制：{{green|+10%}}
+*革命原则：{{green|+10%}}
+* 公民：{{green|+10%}}
+*与异端开战：{{green|+10%}}
+*斐扬派体系“革命主义者”掌权：{{green|+10%}}
+*商业共和国“贵族”派系掌权：{{green|+5%}}
+*护国议会：{{green|+5%}}
+*安布罗共和国：{{green|+5%}}
+*农民共和制：{{green|+5%}}
+*卡尔沙的力量：{{green|+5%}}
+*在册普尔比亚人：{{green|+5%}}
+
+====士气恢复====
+每个月，一支部队会恢复自身最大士气值的15%。以下修正可以提高每月士气恢复的速度：
+*军团在己方控制区域内：{{green|+5%}}
+*陆军传统：100陆军传统 {{green|+10%}}
+*其他事件、决议和修正
+*赢得战斗的部队士气将获得极大地鼓舞，这是为了防止部队赢得一场激烈战斗后立即被后续敌军攻击而轻易被摧毁的状况。这种情况士气恢复取决于战胜的敌军相对于己方力量的对比。
+*一些理念和政策
+{{bonus table|land morale recovery}}
+
+==={{anchor|Insufficient support}} 骑兵比例===
+{{#lsth:陆军单位|骑兵比例}}
+
+==要塞==
+{{SVersion|1.24}}
+要塞的作用是抵御敌军，保家卫国。
+
+===要塞等级与驻军===
+以下修正会影响要塞等级：
+
+*首都：{{icon|capital}} 首都省份获得+1 {{icon|fort level}} 要塞等级。
+*[[建筑#要塞|要塞]]：每个建筑等级+2 {{icon|fort level}} 要塞等级。
+
+每级要塞会使该省份的驻军增加1000。以下理念与政策同样影响省份的最大驻军数：
+{{bonus table|garrison size}}
+
+驻军数量每个月会恢复 {{green|5%}}，每点省份基础人力额外加 {{green|1%}}。以下理念与政策同样影响驻军恢复：
+{{bonus table|national garrison growth}}
+
+===要塞维护===
+每级要塞消耗{{icon|d}}1金币用于维护。控制要塞的国家可以封存要塞，获得如下效果：要塞维护费用减半，但要塞等级归零且所有驻军都被移除。没有要塞建筑的首都要塞无法被封存；有要塞建筑的首都要塞在封存时依然保持1要塞等级和1000驻军。取消封存后，要塞驻军会以常速恢复。首都所在省份的堡垒等级至少为1，这个等级可以叠加在任何修建在首都的堡垒等级之上; 这个免费的堡垒不需要占据额外的建造格子,不需要维护费, 不能被封存。在首都省份的已建造堡垒可以正常封存，但是免费的1级堡垒仍然会存在。
+
+
+不论是否封存，要塞维护费用都受以下修正影响：
+{{bonus table|fort maintenance|collapse=yes}}
+
+骑士团政体也能获得要塞维护费 {{icon|fort maintenance}} {{green|−20%}} 的修正。
+
+专制主义时代的时代能力 防御性堡垒 会给予一个堡垒维护费 {{icon|fort maintenance}} {{green|−100%}} 的效果如果这些堡垒建造在与宿敌接壤的边界上。.
+
+===要塞控制区===
+{{main|要塞控制区}}
+未封存的要塞（不包括免费的首都要塞）拥有一片要塞控制区。要塞控制区可以阻止敌人穿过该要塞所在的省份或与之相邻的省份。
+
+===围城===
+当敌对军队进入一个省份并停止移动，一场围城/占领（在本节，围城/围攻专指攻击拥有驻军的省份，占领专指攻击没有驻军的省份）就判定开始。为了围城能进展下去，要塞驻军每有1000人，围攻方必须有3000人。如果一个省份没有驻军（不管是没有要塞还是要塞驻军为0），1K人就足以保证在1个月内占领该省份。任何单位类型都可以用来围城，但是当围攻一个要塞省份时，只有步兵能够在城墙破裂后进行强攻，同时炮兵能加速围城(见下文)。只要围攻者一直存在，围城的进展就不会减少，但只要围攻者离开该省份，围城进展就会立刻消失。
+
+围城军队总是会遭受至少 {{red|1%}} 基础的 {{icon|attrition}} [[陆军#补给和损耗|损耗]], 即使这个省份不存在要塞。此规则仅适用于围攻敌对省份，当已方或已方盟军围攻夺回被占领友方省份，此条规则即被忽略。
+
+一只围城的军队当发生战斗时总是会被算作“攻击方”并受到省份惩罚，同时取决于该军队进入该省的方式，在发生战斗时会有一个附加的穿越惩罚。
+*若敌国的叛军进行围城时，本国军队进攻它们，则他们算作进攻方，而本国军队同样算作防御方，并且可以利用省份的地形惩罚。（尽管此时本国仍然在和敌国交战）如果本国军队战斗胜利，那么叛军在该省份所有的围城进度都将被你继承，在敌国有叛军时可以以此减轻围城压力。
+
+====突袭====
+{{expansion|aow}}
+驻军可以被命令从要塞中突袭与敌对军队发生战斗，需要花费 {{icon|mil|24px}}{{red|10}} 军事点数。（[[File:Sortie from siege.png|24px]] “突袭围城”的按键在围城界面可以找到）如果只由步兵组成的驻军在突袭战斗中失败，则该省份和要塞将被占领。可以在围城与驻军双方军力几乎相等的情况下使用。
+
+利用突袭可以免费获得军队，当敌军围城时，向其进攻，并命令突围，在战斗结束的那一天暂停游戏，并将两只军队合并，这样就可以白得要塞卫戍部队的军队。当然，要塞守军数量会清零。此法在1.25仍然有效，毕竟需要花费军事点数来换取军队，不是白得的军队。
+
+====围城过程====
+欧陆风云4的围城系统采用的是间隔判定，意味着系统将使用两个最基本的变量：判定间隔和判定结果。两者互相独立，互不干涉，并同时受一系列修正影响：
+
+=====围城时间=====
+每隔一段时间，围城就会进行一次判定。我们将此判定间隔称为'''围城周期'''。围城周期的公式如下所示：
+
+&lt;math> 围城周期=30\times (1-围城能力+要塞防御\pm 战术差异)&lt;/math>
+
+其中：
+
+*围城能力{{icon|siege ability}}：进攻方的围城能力。
+*要塞防御{{icon|fort defense}}：指全局的{{icon|fort defense}} 要塞防御和单个省份的 {{icon|local defensiveness}} 省份防御之和。
+*战术差异{{icon|tactics}}：每0.25双方军事战术差异影响6.25%。例如玩家的军事战术高于敌人0.5，则玩家的围城进度就会快12.5%，同时敌人的围城进度会慢12.5%。只有军事战术基础值的差异会对围城进度有影响，训练度增益对围城阶段没有作用。
+
+'''围城能力'''被以下理念和政策所影响：
+{{bonus table|Siege Ability}}
+更多的修正:
+*{{icon|War exhaustion}} 厌战：{{red|−1%}} 每1点
+*{{icon|Army Tradition}} 军事传统：{{green|+5%}} 在100%时
+*{{icon|Spy network construction}} 间谍网：{{green|+20%}} 在100%时（需开启DLC {{icon|mn}} [[我们的海]]）
+*{{icon|tengri}} 长生天选择 {{icon|coptic}} 科普特为兼容宗教：{{green|+10%}}（需开启DLC {{icon|tc}} [[哥萨克]]）
+*{{icon|hindu}} 印度教选择 {{icon|shakti}} 沙克蒂为主神：{{green|+5%}}（需开启DLC {{icon|won}} [[国富论]]）
+*{{icon|army professionalism}} 军队职业度：{{green|+20%}} 在100%时 （需开启DLC {{icon|coc}} [[文明的摇篮]] )
+*将领特性攻城专家：{{green|+15%}}
+*改善内陆贸易政策：{{green|+10%}}
+*地理大发现时代能力：{{green|+33%}} 乌尔班大炮（仅 {{flag|奥斯曼}}可用）（需开启DLC 天命）
+
+'''要塞防御''' 被以下理念和政策所影响：
+{{bonus table|Fort Defense|collapse=yes}}
+
+更多的修正:
+*{{icon|hindu}} 印度教以 {{icon|vishnu}} 毗湿奴作为主神时：{{green|+20%}}（仅在启用DLC {{icon|won}} 国富论可用时）
+*{{icon|norse}} 诺斯信仰以 {{icon|tor}} 托尔作为主神时：{{green|+10%}}（在启用DLC {{icon|ed}} [[黄金国]]可用时或者是来自于[[十字军之王2]]的转档时可用）
+*{{icon|being pious}} 负虔诚的穆斯林君主（显示为"神秘主义"）：{{green|+20%}} 在-100虔诚度时。
+*{{icon|coptic}} 科普特正教：{{green|+10%}}
+*力量投射{{green|+10%}}（力量投射为100%时）
+*直属州法案防御法令 {{green|+33%}}
+*军事顾问要塞工程师 {{green|+20%}}
+*幸运国：{{green|+10%}}
+*特定的[[Generic_events|事件]]可以在较短的一段时间内增加围攻能力或者要塞防御
+*地形：
+**丘陵：{{green|+10%}}
+**高原：{{green|+10%}}
+**山脉：{{green|+25%}}
+
+=====围城判定=====
+在每一围城周期结束后，系统会进行一次围城判定。判定后根据最终点数产生不同结果，判定公式如下：
+
+&lt;math> 判定点数=骰子得数+要塞等级+围城进度+将领围城能力+炮兵奖励+封锁+城墙破裂&lt;/math>
+
+其中：
+
+*'''骰子得数'''：一个1-14的随机数。
+*'''要塞等级'''：防御方的要塞等级越高，在围城进度上的惩罚越高。每级要塞会给这个值{{Red|-1}}，但也有例外：
+**'''过时的要塞'''：如果围城方的军事科技允许建造更为先进的要塞，围攻相对老旧的要塞会获得{{Green|+1}}的修正。举个例子：如果围城方可以建造棱堡（4级要塞），在围攻城堡（2级要塞）时就会获得+2的骰子得数修正。
+**'''守军不足'''：驻军数量低于50%时，此值变为{{Green|+1}}。如果这个要塞无人防守（一种情况是在这个月刚刚被激活），省份将被视为没有要塞，而围攻也会极快完成。因此，当玩家能够补充驻军时，切记在刚围攻下要塞时补充驻军，以防敌军在要塞驻军薄弱时迅速夺回。
+
+*'''围城进度'''：围城时最重要的修正。随着围城的持续，这个奖励值会从'''0'''开始，根据骰子得数慢慢累积。首都要塞或二级堡垒的最大值是{{Green|12}}，每个要塞等级将会使这个数字{{Green|+1}}，{{Green|15}}为上限。围城进度增长图表在下一节“效果”中。
+*'''将领围城能力'''：如果围城部队拥有将领，将领的围攻能力（{{Green|0-6}}）会加入这一数值作为奖励。
+*'''炮兵奖励'''：如果有炮兵参与围城，将会为围城进度添加{{Green|1-5}}的奖励。如果有[[File:Ab napoleonic warfare.png|24px]] ”拿破仑战术“能力，会在这一数值的'''上限''' {{green|+3}}。
+**奖励值公式：&lt;math> 奖励值=\frac{围城炮兵数量}{1000\times 编号}&lt;/math>，如下表所列。
+**无论要塞等级，只要有炮兵参与围城，就会至少获得+1的奖励。
+**若围攻的首都额外修有要塞，则忽略首都自带的1级要塞。
+**这里的炮兵数量为炮兵'''存活人数'''而非人数上限。10支100人的炮兵部队同1支1000人的炮兵部队相当。
+::{| class="wikitable"
+!编号 
+!要塞等级（下）/奖励值（右）/最少炮兵数量（表格中）!!+1!!+2!!+3!!+4 !! +5!!+6!!+7!!+8
+|-
+|1
+|仅有首都要塞||1000||2000||3000||4000||5000|| 6000|| 7000|| 8000
+|-
+|2
+|城堡（2级要塞)||1000|| 4000||6000||8000||10000||12000||14000||16000
+|-
+|3
+|要塞（4级要塞)||1000 ||6000||9000||12000||15000||18000||21000||24000
+|- eg.
+|4
+|星堡（6级要塞)||1000||8000||12000||16000||20000||24000||28000||32000
+|-
+|5
+|要塞（8级要塞)||1000||10000||15000||20000||25000||30000||35000||40000
+|}
+*'''封锁'''：
+**如果省份沿海，而且未被完全封锁，会遭到 {{red|-2}} 的惩罚，如果围城方对省份有合法宣称，惩罚会变成 {{red|-1}}。所有未达到100%封锁率的封锁对围城进度没有意义。需要注意的是，封锁省份的舰队并不一定要是围攻国甚至是围攻方的，甚至另一场战争另一国对省份的封锁也会对本方的围城有所帮助。
+**葡萄牙[[海军学说]]“葡萄牙海军陆战队”为被完全封锁的省份提供 {{green|+1}} 修正。
+**[[宗教改革时代]]能力“浮动炮台”为被完全封锁的省份提供 {{green|+1}} 修正。
+**[[旗舰]]选择“臼炮”作为特殊能力为被完全封锁的省份提供 {{green|+1}} 修正。
+**如果沿海要塞被叛军占据，则在围城时不受未封锁惩罚，与围攻内陆要塞无异。
+*'''城墙破裂'''：每次城墙破裂时，该修正都会{{Green|+1}}，上限{{Green|+3}}。只要该修正至少有{{Green|+1}}的值，围城方就可以强攻该要塞。城墙破裂有一套独有的判定公式，参见下一节“效果”。
+可能的最高初始判定点数是+17：首都要塞-1，过时的要塞+3，守军不足+1，将领的围城能力+6，至少8个炮兵团+8；可能的最低初始判定点数是-11：8级的要塞-8，首都要塞-1，省份未被封锁-2。
+
+最后，不论你此时的围城进度是多少，只要骰子的结果是14，就会判定为城墙破裂，只要骰子的结果为1，就会判定为疫病爆发。二者皆为1/14的概率，此概率无法被增减。
+
+特别的，每次当你的围城部队击退前来解围的敌军时，围城进度都会进行一次roll点，与天数无关，哪怕要塞守军并未参战。
+
+特定判定点数下攻克省份的时间如下表所示：
+
+{| class="wikitable"
+!判定点数
+|−9
+|−8
+|−7
+|−6
+|−5
+|−4
+| −3
+|−2
+|−1
+|0
+|-
+!攻克率 %
+|−100.00%
+|−92.86%
+|−85.71%
+|−78.57%
+| −71.43%
+|−64.29%
+|−57.14%
+|−50.00%
+|−42.86%
+|−35.71%
+|-
+!平均攻克所需周期
+|43.18
+|30.51
+|25.24
+|21.44
+|17.42
+|14.75
+|12.65
+|10.87
+|9.41
+|8.20
+|-
+! 年可攻克省份数
+|0.28
+|0.40
+|0.48
+|0.57
+|0.70
+|0.82
+|0.96
+|1.12
+|1.29
+| 1.48
+|}
+
+{| class="wikitable"
+!判定点数
+|1
+|2
+|3
+|4
+|5
+|6
+|7
+| 8
+|9
+|10
+|无要塞
+|-
+!攻克率 %
+|−28.57%
+| −21.43%
+|−14.29%
+|−7.14%
+|0.00%
+|7.14%
+|14.29%
+|21.43%
+|28.57%
+|35.71%
+|100%
+|-
+!平均攻克所需周期
+|7.24
+|6.48
+|5.78
+|5.13
+|4.52
+|3.86
+|3.27
+|2.82
+|2.46
+|2.17
+|1
+|-
+!年可攻克省份数
+|1.68
+|1.88
+|2.10
+|2.37
+|2.69
+|3.15
+|3.72
+|4.32
+|4.95
+|5.60
+|12
+|}
+
+
+"年可攻克省份数"是以标准围城周期，30天一周期计算的。
+
+=====围城效果=====
+在围城过程中，攻守双方会出现各种各样的情况：
+*如果骰子得数为1，疾病会在围城部队中爆发，造成围城部队5%的人数伤亡，而围城进度在此次判定中不会变化。
+*城墙破裂判定和围城判定同时进行，判定式如下。城墙破裂只可能在下述式子成立，或者要塞被炮击的情况下出现。并且，城墙破裂时，游戏会发出砖块掉落的音效，提示城墙破裂一次。
+&lt;math>\text{骰子得数} + \frac{\text{炮兵围城修正} + \text{过时的要塞修正}}{3} + \frac{\text{攻击方能够修建要塞的最高等级}}{10} \geqslant 14&lt;/math> 
+
+如果出现城墙破裂，则除守军投降以外，下表的结果都可以忽视。如果守军未投降，则城墙破裂修正 {{green|+1}}，围城进度 {{green|+2}}。
+
+*下表是'''判定点数'''对围城进度的影响：
+{| class="wikitable"
+!判定点数!!显示情况!!效果!!守军损失（以下守军数量为数量上限，并非实时数量）
+|-
+|4 及以下||维持现状||–||–
+|-
+|5 – 11||补给短缺||+1 围城进度||−1% 守军数量
+|-
+| 12 – 13||食物短缺
+| +2 围城进度||−3% 守军数量
+|-
+|14 – 15||饮水短缺||+3 围城进度||−5% 守军数量
+|-
+| 16 – 19|| 守军潜逃||+2 围城进度||−10% 守军数量
+|-
+|20 及以上||守军投降！||攻克要塞||–
+|}
+
+*即使因其他修正导致判定点数大于20，围城方也至少需要+6的骰子得数来攻克要塞。
+====炮兵弹幕====
+{{expansion|moh}}
+仅在围城军团中满员炮兵团数与要塞等级相等时才可以选择以炮兵弹幕炮击要塞。这会消耗围城方 {{red|50}} {{icon|mil|24px}} 军事点数，并在城墙上轰出三个洞，而这会直接导致围城进度 {{green|+3}}。围城判定导致的城墙破裂依旧会增加围城进度，但不会提供高于 {{green|+3}} 的城墙破裂修正。
+
+==== 海上炮击====
+{{expansion|gc}}
+海上炮击的作用与炮兵弹幕相同。使用条件要求：临海省份的海域上舰队的火炮数/100 > 要塞等级，才可以执行海上炮击。同样会消耗围城方 {{red|50}} {{icon|mil|24px}} 军事点数。
+&lt;br>葡萄牙专属海军学说[[Naval_warfare#Portuguese_Marines|葡萄牙海军陆战队]]与[[Naval_units#Portuguese_Bombardier|旗舰修正]]可以降低海上炮击的点数花费。这两项修正后，最低可花费{{red|10}}{{icon|mil|24px}}军事点来使用海上炮击。
+
+====强攻====
+只要城墙破裂出现了至少一次，围城方就可以选择派围城步兵强攻。这虽然会大大加快守军投降的速度，但是通常要以 {{red|5}} {{icon|mil|24px}} 军事点数和大量人力为代价。只有步兵可以参与强攻。如果在守军投降之前，围城方因强攻损失了所有步兵单位，围城军团中的骑兵和炮兵将会以通常方式继续围城。
+强攻的具体战斗机制不会显示在围城界面中，其计算方式大概为在守军和围城部队步兵中展开一场战斗。每个阶段为3天，且均为冲击阶段，仅有5倍于守军数量的围城方步兵能够对守军造成伤害，但是守军可以对所有的围城方步兵造成伤害，步兵冲击、围城方将领围城点数、防御效率与其他陆军部队质量修正都会对战斗结果造成影响。为提高围城效率、降低围城损失，可以选择将围城步兵部队分离成两组并每三天进行一次合并补充，将强攻士兵保持在守军数量5倍以上。不参与围攻的部队则在移动一小段时间后取消移动以保证不参与到围攻当中，这样做的目的是保证前线有足够多的部队杀伤守军，而后备部队不被守军杀伤。
+
+==单支部队的机制==
+{{Main|陆军}}
+{{SVersion|1.24}}
+===流亡===
+在流亡的部队可以从单位标志旁的黑旗鉴别出来。流亡中的部队不能参与战斗，围攻省份或者是探索，而且永远不会揭示战争迷雾，甚至是他们所在的省份的战争迷雾。但是，流亡中的部队可以穿越除了不可用土地外的任何领土，而不需军事通行权。流亡中的部队仍旧受损耗影响，流亡的团仍然可以再编成，尽管一支军团不能混编流亡的团和未流亡的团。&lt;br>
+
+在下列情况发生时，一支军团会流亡：
+*在战争结束后，如果一支军团所处的领土没有和平时期的军事通行权，则会流亡。这是为了避免军团在和平时被永远困住以及一些其他的黑科技。
+*在战争开始的瞬间，仅取得军事通行权而在中立国或敌对国省份中的军团会流亡。这是为了避免一国为了取得战略优势，在他国预先部署军队的做法。但在未殖民地区，盟友或附庸领地上的军队不会流亡，即使那个盟友没有被召唤加入战争。
+
+在下列情况之一满足时，流亡状态会结束：
+*军团进入了一个被本国或附庸拥有或控制的领土。
+**这包含被占领的他国领土。
+*登上在某一海域或者移动向某一海域的运输船。
+
+==={{icon|looting speed}} 劫掠===
+每个省份会有一个战利品条。这是一笔随省份发展度变化，可被劫掠的金钱：每个省份的1点发展等级会给予该省份1单位杜卡特的战利品。玩家的军团可以在围城时劫掠战利品，在省份被占领后同样可以继续劫掠，但是这必须要军团呆在目标省份内。能够劫掠的战利品数目基于省份内驻扎的部队种类和数量。一支满人力的步兵/骑兵/炮兵团每月会劫掠0.1/0.3/0.05杜卡特。&lt;ref>See in {{path|defines}} under &lt;code>INF_LOOT&lt;/code>, &lt;code>CAV_LOOT&lt;/code> and &lt;code>ART_LOOT&lt;/code>.&lt;/ref>当省份的战利品被全部劫掠，省份战利品条归零时，省份会在最后一次有效劫掠的两年后以每月10%的速度恢复战利品。
+
+劫掠是 {{icon|devastation}} [[荒废度]]增加的主要原因，而荒废度会大大减少省份的生产所得、人力产出、补给限制以及思潮传播速度，同时会增加省份发展的价格。持续劫掠他们的省份是在长期战争中挫败大国的一个好方法。
+
+有很多理念会增加 {{icon|looting speed}} 劫掠速度，这会定量增加每月劫掠的 {{icon|ducats}} 金币数额（从而导致抢光一个省份的时间缩短）。
+{{bonus table|looting speed}}
+
+===挂靠其他军团===
+这一指令会将玩家的军团挂靠于一支友军军团，使他们在移动和战斗时不会离友军太远。除了战斗时，任何时候都可以解除挂靠。一支挂靠的军团不能通过港口进行运输。挂靠至AI的部队会使AI的部队改变性格，使其更具积极性，更乐于主动求战。
+
+===[[File:Attack natives.png|32px]]攻击土著===
+{{see also|殖民#土著}}
+
+在殖民地或未殖民地区的土著可以凭借这一军事行动减少。一支等同于当地土著人数（向最近的“千”单位进行取舍）的军团会在当地出现，如果想要肃清当地土著，这一战必须要打胜。这一行动会耗费 {{icon|mil}} 军事点数，取决于土著的 {{icon|aggressiveness|22px}} 攻击性和 {{icon|ferocity|22px}} 狂暴性，清剿土著的好处在于避免将来可能随机出现或因军团路过而导致的土著劫掠殖民地，但如果肃清成功，会显著减少这一省份的潜在发展力和同化奖励。
+
+===焦土战术===
+若在一个同时被拥有和被控制的省份上，同时这一省份未执行焦土战术，一支军团可以消耗 {{red|5}} {{icon|mil|24px}} 军事点数来执行焦土战术。这会增加 {{red|5}} 点 {{icon|devastation}} 省份[[荒废度]]，给予省份为期60月的'''“焦土战术”'''修正，效果如下：&lt;ref>参见 {{path|common/static_modifiers/00_static_modifiers.txt}} ([[Static modifiers#焦土战术]])。&lt;/ref>
+{{#lst:Static modifiers|Scorched Earth}}
+
+造成的{{red|5%}}荒废度本身带有如下的效果：
+{|
+|{{icon|local goods produced modifier}}
+| style="text-align:right" |{{red|−5%}}||本地贸易货物生产修正
+|-
+|{{icon|supply limit modifier}}
+| style="text-align:right" |{{red|−2.5%}}||补给上限修正
+|-
+									   
+|{{icon|local institution spread}} || style="text-align:right" | {{red|−5%}} || 思潮传播速度
+|-
+								  
+|{{icon|local development cost}}|| style="text-align:right" |{{red|+0.5%}}||{{DLC-only|本地提升发展度花费}}
+|-
+								
+|{{icon|local manpower modifier}}|| style="text-align:right" |{{red|−5%}}||本地人力修正
+|-
+|{{icon|local sailors modifier}} || style="text-align:right" |{{red|−5%}}||本地水手修正
+|-
+|{{icon|local hostile movement speed}}|| style="text-align:right" |{{green|−1.25%}}||本地敌军移动速度
+|-
+|{{icon|local movement speed}}|| style="text-align:right" |{{red|−1.25%}}||本地友军移动速度
+|}
+
+焦土战术在玩家军队不足以抵挡侵略者，或者省份较易被占领时不失为一种防守战略。这会增加敌方损耗（打击敌方的人力），也会让省份变得更加不值得被获取。虽然玩家也会因此减少一些收入，但是如果玩家将要失去这个省份，将这个省份对敌方的价值尽可能降低也是一种减少损失的思路。
+
+===剿灭叛军===
+在选中军团的状态下，点击剿灭叛军的按钮会让这支军团自动前往寻找并与自军周围的叛军作战。在叛军被全部剿灭后，这支军团会回到初始出发地。被命令移动的军团会停止剿灭叛军的行动。军团不会攻击比自军规模大的叛军。
+
+===强行军===
+使军团移动速度加快50%，但是每经过一个省份会消耗 {{red|2}} {{icon|mil|24px}} 军事点数。[[File:Forced_march.png|28px|link=]] 强行军会在15级 {{icon|adm tech}} [[行政科技]]时解锁。强行军途中，军团不会恢复士气。在[[大革命时代]]时可以解锁改良强行军能力，使强行军耗费的 {{icon|mil|24px}} 军事点数为0。（需DLC {{icon|moh}} 天命）
+
+==参考资料==
+&lt;references />
+视频教程
+#Blind_BeN：https://www.bilibili.com/video/av20695336
+#Blind_BeN：https://www.bilibili.com/video/av42409406
+
+[[Category:军事]]
+{{military navbox}}
+[[en:Land_warfare]]
+</textarea><div class="templatesUsed"><div class="mw-templatesUsedExplanation"><p>本页使用的模板：
+</p></div><ul>
+<li><a href="https://www.eu4cn.com/wiki/Static_modifiers" class="mw-redirect" title="Static modifiers">Static modifiers</a>（<a href="https://www.eu4cn.com/index.php?title=Static_modifiers&amp;action=edit" class="mw-redirect" title="Static modifiers">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/陆军单位" title="陆军单位">陆军单位</a>（<a href="https://www.eu4cn.com/index.php?title=%E9%99%86%E5%86%9B%E5%8D%95%E4%BD%8D&amp;action=edit" title="陆军单位">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/静态修正" title="静态修正">静态修正</a>（<a href="https://www.eu4cn.com/index.php?title=%E9%9D%99%E6%80%81%E4%BF%AE%E6%AD%A3&amp;action=edit" title="静态修正">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Ambox" title="Template:Ambox">Template:Ambox</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Ambox&amp;action=edit" title="Template:Ambox">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Ambox/core" title="Template:Ambox/core">Template:Ambox/core</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Ambox/core&amp;action=edit" title="Template:Ambox/core">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Ambox_2020" title="Template:Ambox 2020">Template:Ambox 2020</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Ambox_2020&amp;action=edit" title="Template:Ambox 2020">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Anchor" title="Template:Anchor">Template:Anchor</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Anchor&amp;action=edit" title="Template:Anchor">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:BTRow" title="Template:BTRow">Template:BTRow</a>（<a href="https://www.eu4cn.com/index.php?title=Template:BTRow&amp;action=edit" title="Template:BTRow">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Battle" title="Template:Battle">Template:Battle</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Battle&amp;action=edit" title="Template:Battle">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Battle/C" title="Template:Battle/C">Template:Battle/C</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Battle/C&amp;action=edit" title="Template:Battle/C">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Bonus_table" title="Template:Bonus table">Template:Bonus table</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Bonus_table&amp;action=edit" title="Template:Bonus table">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Clear" title="Template:Clear">Template:Clear</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Clear&amp;action=edit" title="Template:Clear">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Country_data_Ottomans" title="Template:Country data Ottomans">Template:Country data Ottomans</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Country_data_Ottomans&amp;action=edit" title="Template:Country data Ottomans">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Country_data_奥斯曼" class="mw-redirect" title="Template:Country data 奥斯曼">Template:Country data 奥斯曼</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Country_data_%E5%A5%A5%E6%96%AF%E6%9B%BC&amp;action=edit" class="mw-redirect" title="Template:Country data 奥斯曼">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:DLC-only" title="Template:DLC-only">Template:DLC-only</a>（<a href="https://www.eu4cn.com/index.php?title=Template:DLC-only&amp;action=edit" title="Template:DLC-only">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Expansion" title="Template:Expansion">Template:Expansion</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Expansion&amp;action=edit" title="Template:Expansion">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Flag" title="Template:Flag">Template:Flag</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Flag&amp;action=edit" title="Template:Flag">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Flag/core" title="Template:Flag/core">Template:Flag/core</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Flag/core&amp;action=edit" title="Template:Flag/core">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Green" title="Template:Green">Template:Green</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Green&amp;action=edit" title="Template:Green">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Grey-bd" title="Template:Grey-bd">Template:Grey-bd</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Grey-bd&amp;action=edit" title="Template:Grey-bd">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Hatnote" title="Template:Hatnote">Template:Hatnote</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Hatnote&amp;action=edit" title="Template:Hatnote">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon" title="Template:Icon">Template:Icon</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon&amp;action=edit" title="Template:Icon">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/a" title="Template:Icon/a">Template:Icon/a</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/a&amp;action=edit" title="Template:Icon/a">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/b" title="Template:Icon/b">Template:Icon/b</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/b&amp;action=edit" title="Template:Icon/b">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/c" title="Template:Icon/c">Template:Icon/c</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/c&amp;action=edit" title="Template:Icon/c">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/d" title="Template:Icon/d">Template:Icon/d</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/d&amp;action=edit" title="Template:Icon/d">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/e" title="Template:Icon/e">Template:Icon/e</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/e&amp;action=edit" title="Template:Icon/e">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/f" title="Template:Icon/f">Template:Icon/f</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/f&amp;action=edit" title="Template:Icon/f">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/g" title="Template:Icon/g">Template:Icon/g</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/g&amp;action=edit" title="Template:Icon/g">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/h" title="Template:Icon/h">Template:Icon/h</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/h&amp;action=edit" title="Template:Icon/h">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/i" title="Template:Icon/i">Template:Icon/i</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/i&amp;action=edit" title="Template:Icon/i">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/j" title="Template:Icon/j">Template:Icon/j</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/j&amp;action=edit" title="Template:Icon/j">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/l" title="Template:Icon/l">Template:Icon/l</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/l&amp;action=edit" title="Template:Icon/l">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/m" title="Template:Icon/m">Template:Icon/m</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/m&amp;action=edit" title="Template:Icon/m">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/n" title="Template:Icon/n">Template:Icon/n</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/n&amp;action=edit" title="Template:Icon/n">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/p" title="Template:Icon/p">Template:Icon/p</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/p&amp;action=edit" title="Template:Icon/p">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/r" title="Template:Icon/r">Template:Icon/r</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/r&amp;action=edit" title="Template:Icon/r">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/s" title="Template:Icon/s">Template:Icon/s</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/s&amp;action=edit" title="Template:Icon/s">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/t" title="Template:Icon/t">Template:Icon/t</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/t&amp;action=edit" title="Template:Icon/t">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/v" title="Template:Icon/v">Template:Icon/v</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/v&amp;action=edit" title="Template:Icon/v">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/w" title="Template:Icon/w">Template:Icon/w</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/w&amp;action=edit" title="Template:Icon/w">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/xyz" title="Template:Icon/xyz">Template:Icon/xyz</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/xyz&amp;action=edit" title="Template:Icon/xyz">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/z" title="Template:Icon/z">Template:Icon/z</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/z&amp;action=edit" title="Template:Icon/z">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Main" title="Template:Main">Template:Main</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Main&amp;action=edit" title="Template:Main">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Military_navbox" title="Template:Military navbox">Template:Military navbox</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Military_navbox&amp;action=edit" title="Template:Military navbox">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:N" title="Template:N">Template:N</a>（<a href="https://www.eu4cn.com/index.php?title=Template:N&amp;action=edit" title="Template:N">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Navbox" title="Template:Navbox">Template:Navbox</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Navbox&amp;action=edit" title="Template:Navbox">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Navboxgroup" title="Template:Navboxgroup">Template:Navboxgroup</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Navboxgroup&amp;action=edit" title="Template:Navboxgroup">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Path" title="Template:Path">Template:Path</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Path&amp;action=edit" title="Template:Path">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Pips" title="Template:Pips">Template:Pips</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Pips&amp;action=edit" title="Template:Pips">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Red" title="Template:Red">Template:Red</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Red&amp;action=edit" title="Template:Red">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:SVersion" title="Template:SVersion">Template:SVersion</a>（<a href="https://www.eu4cn.com/index.php?title=Template:SVersion&amp;action=edit" title="Template:SVersion">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:See_also" title="Template:See also">Template:See also</a>（<a href="https://www.eu4cn.com/index.php?title=Template:See_also&amp;action=edit" title="Template:See also">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Sversion" class="mw-redirect" title="Template:Sversion">Template:Sversion</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Sversion&amp;action=edit" class="mw-redirect" title="Template:Sversion">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Version" title="Template:Version">Template:Version</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Version&amp;action=edit" title="Template:Version">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:白字" title="Template:白字">Template:白字</a>（<a href="https://www.eu4cn.com/index.php?title=Template:%E7%99%BD%E5%AD%97&amp;action=edit" title="Template:白字">查看源代码</a>）</li></ul></div><p id="mw-returnto">返回<a href="https://www.eu4cn.com/wiki/陆战" title="陆战">陆战</a>。</p>
+</div>						</div>
+				</div>
+				<footer>
+				<div class="liberty-footer">
+										<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>					<div class="bottom-ads mobile-ab">
+						<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+						<!-- 移动端底部 -->
+						<ins class="adsbygoogle mobile-ab"
+						     style="display:block"
+						     data-ad-client="ca-pub-1612414434963106"
+						     data-ad-slot="3303553671"
+						     data-ad-format="auto"
+						     data-full-width-responsive="true"></ins>
+						<script>
+						     (adsbygoogle = window.adsbygoogle || []).push({});
+						</script>
+					</div>
+								<ul class="footer-places">
+									<li class="footer-places-privacy">
+						<a href="https://www.eu4cn.com/wiki/欧陆风云4百科:隐私政策">隐私政策</a>					</li>
+									<li class="footer-places-about">
+						<a href="https://www.eu4cn.com/wiki/欧陆风云4百科:关于">关于欧陆风云4百科</a>					</li>
+									<li class="footer-places-disclaimer">
+						<a href="https://www.eu4cn.com/wiki/欧陆风云4百科:免责声明">免责声明</a>					</li>
+							</ul>
+					<ul class="footer-icons">
+									<li class="footer-copyrightico">
+						<a href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="https://www.eu4cn.com/resources/assets/licenses/cc-by-nc-sa.png" alt="知识共享署名-非商业性使用-相同方式共享" width="88" height="31" loading="lazy"/></a>					</li>
+										<li class="footer-poweredbyico">
+						<a href="https://www.mediawiki.org/"><img src="https://www.eu4cn.com/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"/></a><a href="https://www.eu4cn.com/"><img src="https://www.eu4cn.com/images/footerlogo.png" width="88" height="31" loading="lazy"/></a>					</li>
+								</ul>
+						</div>
+				</footer>
+			</div>
+		</div>
+		</section>
+				<div class="modal fade login-modal" id="login-modal" tabindex="-1"
+			 role="dialog" aria-labelledby="login-modalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-sm" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<h4 class="modal-title">登录</h4>
+					</div>
+					<div class="modal-body">
+						<div id="modal-login-alert" class="alert alert-hidden alert-danger" role="alert">
+						</div>
+						<form id="modal-loginform" name="userlogin" class="modal-loginform"
+							  method="post">
+							<input class="loginText form-control" id="wpName1" tabindex="1"
+								   placeholder="请输入您的用户名" value="" name="lgname">
+							<label for="inputPassword" class="sr-only">密码</label>
+							<input class="loginPassword form-control" id="wpPassword1" tabindex="2"
+								   placeholder="请输入您的密码" type="password" name="lgpassword">
+							<div class="modal-checkbox">
+								<input name="lgremember" type="checkbox" value="1" id="lgremember" tabindex="3">
+								<label for="lgremember">记住登录</label>
+							</div>
+							<input class="btn btn-success btn-block" type="submit" value="登录" tabindex="4">
+							<a href="https://www.eu4cn.com/index.php?title=Special:%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95&amp;type=signup&amp;returnto=%E9%99%86%E6%88%98" class="btn btn-primary btn-block" title="Special:用户登录" tabindex="5" type="submit">加入欧陆风云4百科</a>							<a href="https://www.eu4cn.com/wiki/Special:重置密码" title="Special:重置密码">忘记密码？</a>                            <br>
+							<a href="https://www.eu4cn.com/wiki/Special:用户登录" title="Special:用户登录">其他方式登录</a>							<input type="hidden" name="action" value="login" />
+							<input type="hidden" name="format" value="json" />
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">⧼liberty-btn-close⧽</button>
+						<button type="button" class="btn btn-primary">⧼liberty-btn-save-changes⧽</button>
+					</div>
+				</div>
+			</div>
+		</div>
+			</body>
+<!-- Mirrored from www.eu4cn.com/index.php?title=%E9%99%86%E6%88%98&action=edit by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 May 2024 11:30:10 GMT -->
+</html>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?8b9cdb5f260cf613f39a508fbf9dd707";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.004","walltime":"0.006","ppvisitednodes":{"value":7,"limit":1000000},"postexpandincludesize":{"value":18,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":100},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20240506110031","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":2036});});</script>
+</body>
+</html>

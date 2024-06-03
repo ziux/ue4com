@@ -1,0 +1,1498 @@
+ <!DOCTYPE html>
+<html class="client-nojs" lang="zh" dir="ltr">
+
+<!-- Mirrored from www.eu4cn.com/index.php?title=%E9%9A%8F%E6%9C%BA%E6%96%B0%E4%B8%96%E7%95%8C&action=edit by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 May 2024 22:23:31 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>查看“随机新世界”的源代码 - 欧陆风云4百科，人人可以编辑的欧陆风云4中文百科全书</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"zh","wgMonthNames":["","1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"],"wgRequestId":"541e2da7c0cca5a980d038e5","wgCSPNonce":false,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"随机新世界","wgTitle":"随机新世界","wgCurRevisionId":100319,"wgRevisionId":0,"wgArticleId":6119,"wgIsArticle":false,"wgIsRedirect":false,"wgAction":"edit","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageContentLanguage":"zh","wgPageContentModel":"wikitext","wgRelevantPageName":"随机新世界","wgRelevantArticleId":6119,"wgUserVariant":"zh","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgCargoDefaultQueryLimit":100,"wgCargoMapClusteringMinimum":80,
+"wgCargoMonthNames":["1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"],"wgCargoMonthNamesShort":["1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"],"wgCargoWeekDays":["星期日","星期一","星期二","星期三","星期四","星期五","星期六"],"wgCargoWeekDaysShort":["日","一","二","三","四","五","六"],"wgPageFormsTargetName":null,"wgPageFormsAutocompleteValues":[],"wgPageFormsAutocompleteOnAllChars":false,"wgPageFormsFieldProperties":[],"wgPageFormsCargoFields":[],"wgPageFormsDependentFields":[],"wgPageFormsCalendarValues":[],"wgPageFormsCalendarParams":[],"wgPageFormsCalendarHTML":null,"wgPageFormsGridValues":[],"wgPageFormsGridParams":[],"wgPageFormsContLangYes":null,"wgPageFormsContLangNo":null,"wgPageFormsContLangMonths":[],"wgPageFormsHeightForMinimizingInstances":800,"wgPageFormsShowOnSelect":[],"wgPageFormsScriptPath":"/extensions/PageForms","edgValues":null,"wgPageFormsEDSettings":null,
+"wgAmericanDates":false,"wgVisualEditor":{"pageLanguageCode":"zh","pageLanguageDir":"ltr","pageVariantFallbacks":["zh-hans","zh-hant","zh-cn","zh-tw","zh-hk","zh-sg","zh-mo","zh-my"]},"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgSmjUseCdn":false,"wgSmjUseChem":true,"wgSmjDisplayMath":[],"wgSmjExtraInlineMath":[],"wgSmjScale":1,"wgSmjEnableMenu":true,"wgSmjDisplayAlign":"left","wgEditSubmitButtonLabelPublish":false};RLSTATE={"site.styles":"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.liberty.styles":"ready","jquery.tablesorter.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready"};RLPAGEMODULES=["ext.SimpleMathJax","mediawiki.action.edit.collapsibleFooter","site","mediawiki.page.ready","jquery.tablesorter","ext.HighlightjsIntegration","ext.CodeMirror","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.gadget.UserLinkAvatar","ext.gadget.notifyConversion","ext.gadget.notifyAdsense",
+"ext.gadget.Edittools-vector","skins.liberty.bootstrap","skins.liberty.layoutjs","skins.liberty.liverc","skins.liberty.loginjs"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});});});</script>
+<link rel="stylesheet" href="loadd623.css?lang=zh&amp;modules=ext.visualEditor.desktopArticleTarget.noscript%7Cjquery.tablesorter.styles%7Cskins.liberty.styles&amp;only=styles&amp;skin=liberty"/>
+<script async="" src="load7991.php?lang=zh&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=liberty"></script>
+<style>.Liberty .nav-wrapper,
+		.Liberty .nav-wrapper .navbar .form-inline .btn:hover,
+		.Liberty .nav-wrapper .navbar .form-inline .btn:focus,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link.active::before,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link:hover::before,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link:focus::before,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link:active::before,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-footer .label,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .contributioncredits-footer .label,
+		.Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools .tools-btn:hover,
+		.Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools .tools-btn:focus,
+		.Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools .tools-btn:active,
+		.btn-primary,
+		.header-template, .section-template {
+			background-color: #103D8F;
+		}
+
+		.btn-primary,
+		.section-template-border {
+			border-color: #103D8F;
+		}
+
+		.Liberty .nav-wrapper .navbar .form-inline .btn:hover,
+		.Liberty .nav-wrapper .navbar .form-inline .btn:focus {
+			border-color: #002E7D;
+		}
+
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link.active::before,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link:hover::before,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link:focus::before,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link:active::before {
+			border-bottom: 2px solid #103D8F;
+		}
+
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-footer .label:hover,
+		.Liberty .nav-wrapper .navbar .navbar-nav .nav-item .nav-link:hover,
+		.Liberty .nav-wrapper .navbar .navbar-nav .nav-item .nav-link:focus,
+		.dropdown-menu .dropdown-item:hover,
+		.btn-primary:hover,
+		.btn-primary:focus {
+			background-color: #002E7D;
+		}
+
+
+		.Liberty .content-wrapper #liberty-bottombtn,
+		.Liberty .content-wrapper #liberty-bottombtn:hover {
+			background-color: #103D8F;
+		}</style><style>@media (prefers-color-scheme: dark) { body, .Liberty, .dropdown-menu, .dropdown-item, .Liberty .nav-wrapper .navbar .form-inline .btn, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link.active, .Liberty .content-wrapper .liberty-content .liberty-content-main table.wikitable tr > th, .Liberty .content-wrapper .liberty-content .liberty-content-main table.wikitable tr > td, table.mw_metadata th, .Liberty .content-wrapper .liberty-content .liberty-content-main table.infobox th, #preferences fieldset:not(.prefsection), #preferences div.mw-prefs-buttons, .navbox, .navbox-subgroup, .navbox > tbody > tr:nth-child(even) > .navbox-list, .Liberty .nav-wrapper .navbar .form-inline .form-control {
+			background-color: #000;
+			color: #DDD;
+		}
+
+		.liberty-content-header, .liberty-footer, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-footer, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item, .Liberty .content-wrapper .liberty-content .liberty-content-header, .Liberty .content-wrapper .liberty-footer, .editOptions, html .wikiEditor-ui-toolbar, #pagehistory li.selected, .mw-datatable td, .Liberty .content-wrapper .liberty-content .liberty-content-main table.wikitable tr > td, table.mw_metadata td, .Liberty .content-wrapper .liberty-content .liberty-content-main table.wikitable, .Liberty .content-wrapper .liberty-content .liberty-content-main table.infobox, #preferences, .navbox-list, .dropdown-divider, .Liberty .content-wrapper .liberty-content .bottom-ads {
+			background-color: #1F2023;
+			color: #DDD;
+		}
+
+		.Liberty .content-wrapper .liberty-content .liberty-content-main, .mw-datatable th, .mw-datatable tr:hover td, textarea, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-content, div.mw-warning-with-logexcerpt, div.mw-lag-warn-high, div.mw-cascadeprotectedwarning, div#mw-protect-cascadeon, .mildtable th {
+			background-color: #000 !important;
+		}
+
+		.Liberty .content-wrapper .liberty-content .liberty-content-header .title>h1, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-content .live-recent-list .recent-item, caption { color: #DDD; }
+
+		.btn-secondary, .Liberty .content-wrapper .liberty-footer .catlinks, .rcpages-btn { background: transparent; color: #DDD; }
+
+
+		#pagehistory li { border: 0; }
+
+		.Liberty .content-wrapper .liberty-footer, .Liberty .content-wrapper .liberty-content .liberty-content-header, .Liberty .content-wrapper .liberty-content .liberty-content-main, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-footer, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-content, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item + .nav-item, .Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools .tools-btn:hover, .Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools .tools-btn:focus, .Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools .tools-btn, .dropdown-menu, .dropdown-divider, .Liberty .content-wrapper .liberty-content .liberty-content-main fieldset, hr, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-content .live-recent-list li, .mw-changeslist-legend, .Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools { border-color: #555; }
+
+		.flow-post, .Liberty .content-wrapper .liberty-content .liberty-content-main .toc .toctext { color: #DDD; }
+		.flow-topic-titlebar { color: #000; }
+		.flow-ui-navigationWidget { color: #FFF; }
+		.Liberty .content-wrapper .liberty-content .liberty-content-main .toccolours, .Liberty .content-wrapper .liberty-content .liberty-content-main .toc ul, .Liberty .content-wrapper .liberty-content .liberty-content-main .toc li { background-color: #000; }
+		.Liberty .content-wrapper .liberty-content .liberty-content-main .toc .toctitle { background-color: #1F2023; } }</style>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="loada6ee.css?lang=zh&amp;modules=site.styles&amp;only=styles&amp;skin=liberty"/>
+<meta name="generator" content="MediaWiki 1.39.3"/>
+<meta name="robots" content="noindex,nofollow"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta property="og:image" content="https://www.eu4cn.com/images/c/ca/EU4RandomNewWorld.png"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="957"/>
+<meta property="og:image" content="https://www.eu4cn.com/images/thumb/c/ca/EU4RandomNewWorld.png/800px-EU4RandomNewWorld.png"/>
+<meta property="og:image:width" content="800"/>
+<meta property="og:image:height" content="638"/>
+<meta property="og:image" content="https://www.eu4cn.com/images/thumb/c/ca/EU4RandomNewWorld.png/640px-EU4RandomNewWorld.png"/>
+<meta property="og:image:width" content="640"/>
+<meta property="og:image:height" content="510"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="description" content="因为以下原因，您没有权限编辑本页：&#10;&#10;&#10;您请求的操作仅限属于该用户组的用户执行：用户&#10;&#10;&#10;您可以查看和复制此页面的源代码。&#10;{{Version|1.23}}&#10;{{Expansion|cop|small=no}}&#10;[[File:EU4RandomNewWorld.png|400px|thumb|right|随机新世界的一例（1.14 版本后）]]&#10;__ToC__&#10;{{N|随机新世界|Random New World}}是游戏开始时国家选择画面中的一个选项。该选项开启后，亚速尔、冰岛一线以西，东西伯利亚、威克岛、新西兰一线以东都会被全新的地貌所替代。在[[1.14 版本]]之前，地图的生成是程序化的；而之后，随机新世界地图将由128种不同的预设板块&amp;lt;ref&gt;随机新世界板块可参见 {{path|map/random/tiles/}}&amp;lt;/ref&gt;拟真地组合而成。板块的选择有权重，以确保新世界地图的乐趣和平衡，比如说随机生成的新世界中必定会有一块“大陆”，其上必定会有一大块连续的地域可供殖民。&#10;&#10;在生成地图之后就会在板块上加载26种不同的剧本&amp;lt;ref&gt;随机新世界剧本可参见 {{path|map/random/RNWScenarios.txt}}&amp;lt;/ref&gt;。每个[[区域]]都会加载不同剧本，以生成其板块大小、气候和其他修正。那些更基础的剧本中随机产生的国家会更加普通，其文化、宗教等都与原本的美洲世界相仿。这些剧本大都是原有新世界的变体，但其中也有一些独特性存在。而有些剧本则更加迷离，其中会包含很多魔幻的历史。比如科技高度发达的美洲土著、世界边缘的绝境之墙、新世界中的镜像印度等等。这些选项都可以依玩家喜好自由开关。&#10;&#10;[[贸易节点]]会根据随机的新世界动态生成，其商路会自动连入亚非欧三大洲。这可能会使东亚或非洲的某些非常规国家选择殖民，并形成新的有趣局势。随机新世界中的省份会根据根据剧本主题依照名字库动态命名，而新世界中的[[区域]]、[[殖民区域]]和[[贸易节点]]会以其中的关键省份命名。随机新世界中的国家也会动态生成相应的旗帜和理念。&#10;&#10;将来可能还会加入更多的板块类型和剧本，以及可用于与好友分享新世界的“随机种子”机制。此外，随机新世界的mod修改高度自由，玩家可以自己创建板块等，并分享给他人游玩。&#10;&#10;&#039;&#039;&#039;注意：&#039;&#039;&#039; 随机新世界文件改派会改变游戏的校验码&amp;lt;ref&gt;官方论坛 [[forum:892682|Random New World Rework]]， 2015-11-26&amp;lt;/ref&gt;。&#10;&#10;&#039;&#039;&#039;注意：&#039;&#039;&#039; 在[[1.30 版本]]随机新世界功能存在bug，生成的殖民地贸易节点中无法派遣商人引导贸易流向&amp;lt;ref&gt;官方论坛 [[forum:1312226|EU IV - RNW lack tracks of trade nodes]]， 2020-01-22&amp;lt;/ref&gt;。&#10;&#10;&#039;&#039;&#039;注意：&#039;&#039;&#039; 启用随机新世界后很多国家与殖民美洲相关的任务会消失或无法完成。目前只有[[挪威任务]]、[[瑞典任务]]、[[丹麦任务]]、[[利沃尼亚任务]]、[[利沃尼亚骑士团任务]]制作了专门适配随机新世界的殖民任务。&#10;&#10;== 随机新世界方案 ==&#10;{{SVersion|1.25}}&#10;&#039;&#039;&#039;注：&#039;&#039;&#039; 以下内容中：&#039;&#039;&#039;幻想&#039;&#039;&#039; = 采用幻想设置，{{green|T}} = {{green|T}}emperate（温带，即不是热带、干旱、极地的气候。）兵种组中若为“-”，则表示和科技组相同。&#10;{| class=&quot;wikitable sortable&quot;&#10;! rowspan=2| 剧本 !! class=&quot;unsortable&quot; style=&quot;background-color: blue; color: white;&quot; colspan=4| 采集触发器 !! class=&quot;unsortable&quot; style=&quot;background-color: red; color: white;&quot; colspan=4| 土著 !! class=&quot;unsortable&quot; style=&quot;background-color: green; color: white;&quot; colspan=7| 国家 !! class=&quot;unsortable&quot; rowspan=2 | 备注 !! class=&quot;unsortable&quot; rowspan=2 | 国家名称&#10;|-&#10;! 几率 !! {{icon|province|24px}} &gt; !! 幻想 !! class=&quot;unsortable&quot; | 气候&#10;! 数量 !! [[进攻性]] !! [[ferocity|残暴性]] !! 宗教&#10;! 总计 !! 大小 !! 科技组 !! 兵种组 !! 政体 !! 文化(组) !! 宗教&#10;|-&#10;| 空白的泛灵论 || 500 || || || {{icon|arid}}{{icon|tropical}}&#10;| data-sort-value=&quot;5&quot; | 5 - 20 || 1 - 6 || 1 - 3 || {{icon|Animist}}&#10;| || || || || || ||&#10;| 没有特定主题&#10;|&#10;|-&#10;| 空白的图腾崇拜者 || 500 || || || {{icon|arctic}}{{green|T}}&#10;| data-sort-value=&quot;5&quot; | 5 - 20 || 1 - 6 || 1 - 3 || {{icon|Totemist}}&#10;| || || || || || ||&#10;| 没有特定主题&#10;|&#10;|-&#10;| 泛灵论王国 || 200 || 30 || || {{icon|arid}}{{icon|tropical}}&#10;| data-sort-value=&quot;5&quot; | 5 - 20 || 1 - 6 || 1 - 3 || {{icon|Animist}}&#10;| 3 - 10 || data-sort-value=&quot;5,015&quot; | 5 - 15 || {{icon|South American}} 南美 || - || {{icon|Monarchy}} 君主制 || || {{icon|Animist}} || || {{Collapse|*Tanana&#10;*Wappo&#10;*Wintu&#10;*Zuni&#10;*Tututni&#10;*Seri&#10;*Shashta&#10;*Jumano&#10;*Kalina&#10;*Lipa&#10;*Nanticoke&#10;*Nauset&#10;*Gigra&#10;*Loup&#10;*Uchi&#10;*Yuki&#10;*Sekani&#10;*Samish&#10;*Shanel&#10;*Eeyou&#10;}}&#10;|-&#10;| 泛灵论部落 || 1000 || 30 || || {{icon|arid}}{{icon|tropical}}&#10;| data-sort-value=&quot;5&quot; | 5 - 20 || 1 - 6 || 1 - 3 || {{icon|Animist}}&#10;| 5 - 20 || data-sort-value=&quot;1,003&quot; | 1 - 3 || {{icon|South American}} 南美 || - || {{icon|tribe}} 部落制 || || {{icon|Animist}} || 国家间距离很远，可以进行[[迁徙]] ||&#10;{{collapse|*Arauluche&#10;*Namuncurcha&#10;*Quitrui&#10;*Tapanghuli&#10;*Cavipichau&#10;*Crambastamos&#10;*Tiaroru&#10;*Mainimbaba&#10;*Abapombero&#10;*Paranreto&#10;*Mametcunay&#10;*Tupinua&#10;*Ruptere&#10;*Guazamandu&#10;*Bizorué&#10;*Tinambi&#10;*Pochipahu&#10;*Abacahi&#10;*Fibajara&#10;*Moegau&#10;*Lagoqu&#10;*Terepeca&#10;*Socaxi&#10;*Santumbo&#10;}}&#10;|-&#10;| 图腾崇拜者王国 || 200 || 30 || || {{icon|arctic}}{{green|T}}&#10;| data-sort-value=&quot;5&quot; | 5 - 20 || 1 - 6 || 1 - 3 || {{icon|Totemist}}&#10;| 3 - 10 || data-sort-value=&quot;5,015&quot; | 5 - 15 || {{icon|North American}} 北美 || - ||{{icon|Monarchy}} 君主制 || || {{icon|Totemist}}&#10;|&#10;|{{collapse|*Eno&#10;*Gwichin&#10;*Ofo&#10;*Otoe&#10;*Pomo&#10;*Ute&#10;*Comox&#10;*Hidatsa&#10;*Hopi&#10;*Haisla&#10;*Lassik&#10;*Nawat&#10;*Puquina&#10;*Uru&#10;*Yavapai&#10;*Yuma&#10;*Yurok&#10;*Opata&#10;*Hoopa&#10;*Cupa&#10;}}&#10;|-&#10;| 图腾崇拜者部落 || 1000 || 30 || || {{icon|arctic}}{{green|T}}&#10;| data-sort-value=&quot;5&quot; | 5 - 20 || 1 - 6 || 1 - 3 || {{icon|Totemist}}&#10;| 5 - 20 || data-sort-value=&quot;1,003&quot; | 1 - 3 || {{icon|North American}} 北美 || - ||{{icon|tribe}} 部落制 || || {{icon|Totemist}}&#10;| 国家间距离很远，可以进行迁徙&#10;| {{collapse|*Tetonkah&#10;*Munhacke&#10;*Hekawi&#10;*Chelsedex&#10;*Bodenabé&#10;*Sequot&#10;*Attanonton&#10;*Attaboi&#10;*Chonuihara&#10;*Khioegara&#10;*Teongouten&#10;*Masquois&#10;*Tsoumatseh&#10;*Brislychaux&#10;*Wayansas&#10;*Nanegchik&#10;*Kawpanonk&#10;*Quibihon&#10;*Washois&#10;*Ninishee&#10;*Tippekapee&#10;*Pocabés&#10;*Sezekisic&#10;*Bangausee&#10;*Giyesgi&#10;*Ominoreg&#10;*Tiocapa&#10;}}&#10;|-&#10;| 玛雅王国 || 1000 || 30 || || {{icon|arid}}{{icon|tropical}}&#10;| data-sort-value=&quot;5&quot; | 5 - 20 || 1 - 6 || 1 - 3 || {{icon|Mayan}}&#10;| 5 - 10 || data-sort-value=&quot;4,006&quot; | 4 - 6 || {{icon|Mesoamerican}} 中美洲 || - ||{{icon|Monarchy}} 君主制 || 玛雅 || {{icon|Mayan}}&#10;| 国家间距离很近&#10;| {{collapse|*Aritiza&#10;*Petenkaj&#10;*Piche&#10;*Foankal&#10;*Kuzuhil&#10;*Tanayuc&#10;*Kiq&#039;kaam&#10;*Qambot&#10;*Tamserbo&#10;*Kroh&#10;*Johlmik&#10;*Quqache&#10;*Kichantz&#10;*Yucajil&#10;*Kitzekamal&#10;*Quitzilok&#10;*Tamaib&#10;*Coymub&#10;*Tzutjaib&#10;*Binalré&#10;*Xelamam&#10;*Capulkah&#10;*Piputal&#10;}}&#10;|-&#10;| 纳瓦特尔王国 || 1000 || 30 || || {{icon|arid}}{{icon|tropical}}&#10;| data-sort-value=&quot;5&quot; | 5 - 20 || 1 - 6 || 1 - 3 || {{icon|Nahuatl}}&#10;| 7 - 14 || data-sort-value=&quot;2,005&quot; | 2 - 5 || {{icon|Mesoamerican}} 中美洲 || - ||{{icon|Monarchy}} 君主制 || 中美洲 || {{icon|Nahuatl}}&#10;| 国家间距离很近&#10;| {{collapse|*Ixconocho&#10;*Massaluca&#10;*Tejascan&#10;*Panemec&#10;*Guastahua&#10;*Tlaxtique&#10;*Zopochec&#10;*Tarastami&#10;*Mixotlan&#10;*Acaziltetl&#10;*Zapatatec&#10;*Tolanixec&#10;*Pultico&#10;*Mecazin&#10;*Olimtec&#10;*Quachlatzin&#10;*Coatlaque&#10;*Zotri&#10;*Tepetlax&#10;*Athadisqopan&#10;*Nodaca&#10;*Itzopan}}&#10;|-&#10;| 因蒂王国 || 1000 || 30 || || {{icon|arid}}{{icon|tropical}}&#10;| data-sort-value=&quot;5&quot; | 5 - 20 || 1 - 6 || 1 - 3 || {{icon|Inti}}&#10;| 5 - 10 || data-sort-value=&quot;2,005&quot; | 2 - 5 || {{icon|Andean}} 安第斯 || - || {{icon|Monarchy}} 君主制 || 安第斯 || {{icon|Inti}}&#10;| 国家间距离很近&#10;| {{collapse|&#10;*Concocha&#10;*Tikiqutra&#10;*Tiqsiteyu&#10;*Hukantinsuyo&#10;*Yuraqo&#10;*Andeqatso&#10;*Tocanti&#10;*Ayamarqo&#10;*Itaqanta&#10;*Iqtachi&#10;*Anqucallo&#10;*Limaru&#10;*Cascasaco&#10;*Bolurimac&#10;*Quigualachu&#10;*Sapacuti&#10;*Pachahanu&#10;*Oclanqui&#10;*Pizartuyo&#10;*Fernanpa&#10;*Sotopuna&#10;*Fransicaja&#10;}}&#10;|-&#10;| 亚特兰蒂斯遗民 || 10000 || || {{icon|yes}} ||&#10;| data-sort-value=&quot;2&quot; | 2 - 15 || 2 - 6 || 1 - 3 || {{icon|Animist}}&#10;| 1 || data-sort-value=&quot;3,008&quot; | 3 - 8 || {{icon|High American}} 高等美洲 || - ||{{icon|Monarchy}} 君主制 || 希腊 || {{icon|Animist}}&#10;| &quot;亚特兰蒂斯&quot; 主题，使用西欧版本的图像效果&#10;| 亚特兰蒂斯&#10;|-&#10;| 中华殖民地 || 20 || 10 || {{icon|yes}} || {{icon|arid}}{{icon|tropical}}{{green|T}}&#10;| data-sort-value=&quot;5&quot; | 5 - 20 || 1 - 6 || 1 - 3 || {{icon|Animist}}&#10;| 1 || data-sort-value=&quot;5,010&quot; | 5 - 10 || {{icon|High American}} 高等美洲 || {{icon|chinese}}中华 || {{icon|Republic}} 共和制 || 江淮|| {{icon|Confucian}}&#10;| 基于海岸线建立，使用亚洲版本的图像效果&#10;| &#10;*瀛洲&#10;*郑和地&#10;|-&#10;| 哥伦布说对了 1 || 10000 || 10 || {{icon|yes}} ||&#10;| data-sort-value=&quot;2&quot; | 2 - 15 || 2 - 6 || 1 - 3 || {{icon|Hindu}}&#10;| 5 - 20 || data-sort-value=&quot;1,020&quot; | 1 - 20 || {{icon|Indian}} 印度 || - ||{{icon|Monarchy}} 君主制 || 印度斯坦 || {{icon|Hindu}}&#10;| 所有土地均被控制; &quot;印度&quot; 主题&#10;| {{collapse|&#10;*Janupur&#10;*Heldi&#10;*Panjub&#10;*Beglan&#10;*Turhit&#10;*Warghal&#10;*Rimshak&#10;*Angrak&#10;*Kaladh&#10;*Hock&#10;*Rupinam&#10;*Uratrip&#10;*Chachar&#10;*Massam&#10;*Ayidas&#10;*Khandjar&#10;*Wanagond&#10;*Ratsab&#10;*Andach&#10;*Khandelbagh&#10;*Khandelbund&#10;}}&amp;lt;ref name=ind&gt;这些是很多真实存在印度国家的变形词。&amp;lt;/ref&gt;&#10;|-&#10;| 哥伦布说对了 2 || 10000 || 10 || {{icon|yes}} ||&#10;| data-sort-value=&quot;2&quot; | 2 - 15 || 2 - 6 || 1 - 3 || {{icon|Hindu}}&#10;| 5 - 20 || data-sort-value=&quot;1,020&quot; | 1 - 20 || {{icon|Indian}} 印度 || - || {{icon|Monarchy}} 君主制 || 达罗毗荼 || {{icon|Hindu}}&#10;| 所有土地均被控制; &quot;印度&quot; 主题&#10;| {{collapse|&#10;*Nagarvij&#10;*Rabalam&#10;*Assori&#10;*Ardandh&#10;*Naffaj&#10;*Kalan Sri&#10;*Arudaim&#10;*Erosym&#10;*Denav&#10;*Nichok&#10;*Carnot&#10;*Pijabur&#10;*Olgonkad&#10;*Idalek&#10;*Hamanbis&#10;*Rantatic&#10;*Ingeeg&#10;*Andyk&#10;*Ottek&#10;*Erhlak&#10;*Nacced&#10;}}&amp;lt;ref name=ind /&gt;&#10;|-&#10;| 哥伦布说对了 3 || 10000 || 10 || {{icon|yes}} ||&#10;| data-sort-value=&quot;2&quot; | 2 - 15 || 2 - 6 || 1 - 3 || {{icon|Hindu}}&#10;| 5 - 20 || data-sort-value=&quot;1,020&quot; | 1 - 20 || {{icon|Indian}} 印度 || - ||  {{icon|Monarchy}} 君主制 || 西雅利安 || {{icon|Hindu}}&#10;| 所有土地均被控制; &quot;印度&quot; 主题&#10;| {{collapse|&#10;*Juragat&#10;*Mawer&#10;*Warmar&#10;*Otadhi&#10;*Hundar&#10;*Molwa&#10;*Dinsh&#10;*Rawaihtak&#10;*Rerab&#10;*Deshaljang&#10;*Deshkand&#10;*Kantarew&#10;*Raugan&#10;*Bagalna&#10;*Arobad&#10;*Ramathas&#10;*Salmerjai&#10;*Nagarmahed&#10;*Ultam&#10;*Abansh&#10;*Uchistanbal&#10;}}&amp;lt;ref name=ind /&gt;&#10;|-&#10;| [[wikipedia:Thor_Heyerdahl#Boats Ra and Ra II|海尔达尔]]说得对&amp;lt;ref&gt;托尔·海尔达尔是挪威的人类学者、海洋生物学者、探险家。1969年和1970年，以埃及古王室墓室笔画为本，制造芦苇船（纸莎草船）“太阳”号，两次模拟古代探险的伟大航程，终于横跨大西洋，自摩洛哥的萨非港直达加勒比海的巴巴多斯，从而证明了地中海古代文明可能通过这样的方式传播至美洲。&amp;lt;/ref&gt; || 10 || 10 || {{icon|yes}} || {{icon|arid}}&#10;| data-sort-value=&quot;5&quot; | 5 - 20 || 1 - 6 || 1 - 3 || {{icon|Animist}}&#10;| 1 || data-sort-value=&quot;5,010&quot; | 5 - 10 || {{icon|High American}} 高等美洲|| {{icon|Mesoamerican}}中美洲 || {{icon|Monarchy}} 君主制 || 埃及|| {{icon|Animist}}&#10;| 基于海岸线建立&#10;| Kemet&amp;lt;ref&gt;古埃及的名称，意为“黑土”&amp;lt;/ref&gt;&#10;|-&#10;| 高等美洲因蒂帝国 || 20 || 30 || {{icon|yes}} || {{icon|arid}}{{icon|tropical}}{{green|T}}&#10;| data-sort-value=&quot;20&quot; | 20 - 50 || 3 - 9 || 3 - 6 || {{icon|Inti}}&#10;| 1 || data-sort-value=&quot;30,050&quot; | 30 - 50 || {{icon|High American}} 高等美洲 || - || {{icon|Monarchy}} 君主制 || 安第斯 || {{icon|Inti}}&#10;| &#10;| 灼热帝国&#10;|-&#10;| 高等美洲玛雅帝国 || 20 || 30 || {{icon|yes}} || {{icon|arid}}{{icon|tropical}}{{green|T}}&#10;| data-sort-value=&quot;20&quot; | 20 - 50 || 3 - 9 || 3 - 6 || {{icon|Mayan}}&#10;| 1 || data-sort-value=&quot;30,050&quot; | 30 - 50 || {{icon|High American}} 高等美洲 || - || {{icon|Monarchy}} 君主制 || 玛雅 || {{icon|Mayan}}&#10;|&#10;|绯红帝国&#10;|-&#10;| 高等美洲纳瓦特尔帝国 || 20 || 30 || {{icon|yes}} || {{icon|arid}}{{icon|tropical}}{{green|T}}&#10;| data-sort-value=&quot;20&quot; | 20 - 50 || 3 - 9 || 3 - 6 || {{icon|Nahuatl}}&#10;| 1 || data-sort-value=&quot;30,050&quot; | 30 - 50 || {{icon|High American}} 高等美洲 || - || {{icon|Monarchy}} 君主制 || 中美洲 || {{icon|Nahuatl}}&#10;|&#10;| 黑曜石帝国&#10;|-&#10;| 高等美洲共和国 || 15 || 30 || {{icon|yes}} || {{green|T}}&#10;| data-sort-value=&quot;20&quot; | 20 - 50 || 3 - 9 || 3 - 6 || {{icon|Totemist}}&#10;| 1 || data-sort-value=&quot;30,050&quot; | 30 - 50 || {{icon|High American}} 高等美洲 || - || {{icon|Republic}} 共和制 || 易洛魁 || {{icon|Totemist}}&#10;| &#10;| 长屋同盟&#10;|-&#10;| 童女地 || 10 || 10 || {{icon|yes}} || {{icon|tropical}}{{green|T}}&#10;| data-sort-value=&quot;5&quot; | 5 - 20 || 1 - 6 || 1 - 3 || {{icon|Hindu}}&#10;| 1 || data-sort-value=&quot;10,015&quot; | 10 - 15 || {{icon|High American}} 高等美洲 || {{icon|Indian}}印度 || {{icon|Monarchy}} 君主制 || 泰米尔 || {{icon|Hindu}}&#10;| 基于海岸线建立，使用印度版本的图像效果&#10;| Kumarinadu&amp;lt;ref&gt;泰米尔语中对本大陆的称谓&amp;lt;/ref&gt;&#10;|-&#10;| 失落的巴尔干人 || 10 || 10 || {{icon|yes}} || {{icon|arctic}}{{icon|arid}}{{green|T}}&#10;| data-sort-value=&quot;5&quot; | 5 - 20 || 1 - 6 || 1 - 3 || {{icon|Animist}}&#10;| 2 || data-sort-value=&quot;2,004&quot; | 2 - 4 || {{icon|High American}} 高等美洲 || {{icon|eastern}}东欧 || {{icon|tribe}} 部落制 || 塞尔维亚 || {{icon|Animist}}&#10;| 使用东欧版本的图像效果&#10;|&#10;* 失落波斯尼亚&#10;* 失落塞尔维亚&#10;|-&#10;| 失落的圣殿骑士团 || 10 || 10 || {{icon|yes}} || {{icon|arid}}{{green|T}}&#10;| data-sort-value=&quot;2&quot; | 2 - 15 || 2 - 6 || 1 - 3 || {{icon|Catholic}}&#10;| 1 || data-sort-value=&quot;2,005&quot; | 2 - 5 || {{icon|High American}} 高等美洲 || {{icon|western}}西欧 ||{{icon|Theocracy}} 骑士团 || 法兰西 || {{icon|Tengri}}&amp;lt;ref&gt;据rnw_scenario中注释，选择长生天是由于十四世纪时圣堂武士疯狂崇拜巴弗灭（Baphomet），基督教邪神&amp;lt;/ref&gt;&#10;| 基于海岸线建立，使用西欧版本的图像效果&#10;| 圣殿骑士团&#10;|-&#10;| 失踪的犹太人 || 10 || 10 || {{icon|yes}} || {{icon|arctic}}{{icon|arid}}{{green|T}}&#10;| data-sort-value=&quot;5&quot; | 5 - 20 || 1 - 6 || 1 - 3 || {{icon|Jewish}}&#10;| 1 || data-sort-value=&quot;3,010&quot; | 3 - 10 || {{icon|High American}} 高等美洲 || {{icon|muslim}}穆斯林 ||{{icon|tribe}} 部落制 || 叙利亚 || {{icon|Jewish}}&#10;| 使用穆斯林版本的图像效果&#10;|&#10;|-&#10;| 圣约瑟骑士团 || 10 || 10 || {{icon|yes}} || {{icon|arid}}&#10;| data-sort-value=&quot;5&quot; | 5 - 20 || 1 - 6 || 1 - 3 || {{icon|Animist}}&#10;| 1 || data-sort-value=&quot;5,010&quot; | 5 - 10 || {{icon|High American}} 高等美洲 || {{icon|western}}西欧 ||{{icon|Theocracy}} 骑士团 || 英格兰 || {{icon|Reformed}}&#10;| 基于沙漠建立，使用西欧版本的图像效果&#10;| 圣约瑟骑士团&#10;|-&#10;| 秘境丹麦&amp;lt;ref&gt;在早期版本的EU4转档VIC2转档器中，由于bug，格陵兰会被转换成一个名为“秘境丹麦”的国家。&amp;lt;/ref&gt; || 10 || 5 - 20 || {{icon|yes}} || {{icon|arctic}}{{green|T}}&#10;| data-sort-value=&quot;5&quot; | 5 - 20 || 1 - 6 || 1 - 3 || {{icon|Animist}}&#10;| 1 || data-sort-value=&quot;5,010&quot; | 5 - 10 || {{icon|High American}} 高等美洲 || {{icon|western}}西欧 ||{{icon|Republic}} 共和制 || 丹麦 || {{icon|Zoroastrian}}&#10;| 基于海岸线建立，使用西欧版本的图像效果&#10;| 秘境丹麦&#10;|-&#10;| 文兰|| 30 || 10 || {{icon|yes}} || {{icon|arctic}}{{green|T}}&#10;| data-sort-value=&quot;5&quot; | 5 - 20 || 1 - 6 || 1 - 3 || {{icon|Animist}}&#10;| 1 || data-sort-value=&quot;5,010&quot; | 5 - 10 || {{icon|High American}} 高等美洲 || {{icon|western}}西欧 ||{{icon|Monarchy}} 君主制 || 挪威|| {{icon|Norse}}&#10;| 基于海岸线建立，使用西欧版本的图像效果&#10;| 文兰&#10;|}&#10;&#10;== 随机新世界板块 ==&#10;{{SVersion|1.23}}&#10;&#039;&#039;&#039;图示：&#039;&#039;&#039; &#039;&#039;&#039;ICT&#039;&#039;&#039; =  1级内陆贸易中心，&#039;&#039;&#039;INH&#039;&#039;&#039; = 1级沿岸贸易中心，{{icon|estuary}} = 河口。&#10;&#10;&#039;&#039;&#039;注：&#039;&#039;&#039; 以下所有的地块名称，除了&#039;&#039;johan1&#039;&#039;和&#039;&#039;water&#039;&#039;，都以&quot;&#039;&#039;tile&#039;&#039;&quot;作为文件名首个单词，此处省略。&#10;&#10;{| class=&quot;wikitable sortable&quot;&#10;! 名称!! 权重!! 大小&#10;! 陆地省份数目!! 海洋区块数目!! 地区数目&#10;! 是否为大陆!! 索引号&amp;lt;ref&gt;部分剧本只在特定索引号中出现，例如平行世界印度的剧本需要索引号10，而亚特兰蒂斯剧本对应20&amp;lt;/ref&gt;&#10;! class=&quot;unsortable&quot; | 省份修正!! class=&quot;unsortable&quot; | 附注&#10;|-&#10;| johan1 || 100 || data-sort-value=&quot;2,002&quot; | 2 × 2&#10;| 58 || 6 ||&#10;| ||&#10;| INH (×3) ||&#10;|-&#10;| 0 || 50 || data-sort-value=&quot;7,007&quot; | 7 × 7&#10;| 185 || 21 || 2&#10;| {{icon|yes}} ||&#10;| ICT (×2), INH (×5), {{icon|estuary}} (×4) ||&#10;|-&#10;| 2 || 100 || data-sort-value=&quot;2,002&quot; | 2 × 2&#10;| 30 || 10 ||&#10;| ||&#10;| {{icon|estuary}} ||&#10;|-&#10;| 3 || 100 || data-sort-value=&quot;2,002&quot; | 2 × 2&#10;| 32 || 8 ||&#10;| ||&#10;| ||&#10;|-&#10;| 4 || 100 || data-sort-value=&quot;4,004&quot; | 4 × 4&#10;| 97 || 15 || 2&#10;| ||&#10;| {{icon|estuary}} ||&#10;|-&#10;| 5 || 100 || data-sort-value=&quot;2,002&quot; | 2 × 2&#10;| 23 || 10 ||&#10;| ||&#10;| INH ||&#10;|-&#10;| danubian1 || 100 || data-sort-value=&quot;2,002&quot; | 2 × 2&#10;| 26 || 4 ||&#10;| ||&#10;| INH ||&#10;|-&#10;| danubian2 || 100 || data-sort-value=&quot;2,002&quot; | 2 × 2&#10;| 27 || 5 ||&#10;| ||&#10;| INH ||&#10;|-&#10;| danubian3 || 100 || data-sort-value=&quot;6,006&quot; | 6 × 6&#10;| 215 || 16 || 2&#10;| {{icon|yes}} ||&#10;| ICT, INH (×4) ||&#10;|-&#10;| danubian4 || 100 || data-sort-value=&quot;2,002&quot; | 2 × 2&#10;| 37 || 5 ||&#10;| ||&#10;| ||&#10;|-&#10;| danubian5 || 100 || data-sort-value=&quot;4,004&quot; | 4 × 4&#10;| 79 || 31 ||&#10;| ||&#10;| INH (×3) ||&#10;|-&#10;| danubian6 || 100 || data-sort-value=&quot;2,002&quot; | 2 × 2&#10;| 35 || 5 ||&#10;| ||&#10;| ||&#10;|-&#10;| danubian7 || 100 || data-sort-value=&quot;2,002&quot; | 2 × 2&#10;| 24 || 4 ||&#10;| ||&#10;| INH ||&#10;|-&#10;| danubian8 || 100 || data-sort-value=&quot;4,004&quot; | 4 × 4&#10;| 150 || 23 || 2&#10;| ||&#10;| INH (×4) ||&#10;|-&#10;| danubian9 || 100 || data-sort-value=&quot;2,002&quot; | 2 × 2&#10;| 24 || 4 ||&#10;| ||&#10;| INH (×2) ||&#10;|-&#10;| danubian10 || 100 || data-sort-value=&quot;2,002&quot; | 2 × 2&#10;| 22 || 4 ||&#10;| ||&#10;| ||&#10;|-&#10;| danubian11 || 100 || data-sort-value=&quot;2,002&quot; | 2 × 2&#10;| 17 || 4 ||&#10;| ||&#10;| ||&#10;|-&#10;| danubian12 || 100 || data-sort-value=&quot;2,002&quot; | 2 × 2&#10;| 20 || 4 ||&#10;| ||&#10;| ||&#10;|-&#10;| elmorte || 100 || data-sort-value=&quot;10,007&quot; | 10 × 7&#10;| 477 || 29 || 3&#10;| {{icon|yes}} ||&#10;| ICT (×2), INH (×6), {{icon|estuary}} (×4) || &#039;&#039;不&#039;&#039;旋转; 仅出现在&#039;&#039;北侧&#039;&#039;边缘&#10;|-&#10;| elmorte2 || 100 || data-sort-value=&quot;9,009&quot; | 9 × 9&#10;| 559 || 38 || 6&#10;| || 1&#10;| ICT (×5), INH (×3), {{icon|estuary}} (×5) ||&#10;|-&#10;| elzephor1 || 100 || data-sort-value=&quot;18,009&quot; | 18 × 9&#10;| 703 || 88 || 18&#10;| {{icon|yes}} ||&#10;| ICT (×6), INH (×18), {{icon|estuary}} (×21), 天堂 (×6) || 为现实世界马尔维纳斯群岛放大版&#10;|-&#10;| elzephor2 || 100 || data-sort-value=&quot;14,012&quot; | 14 × 12&#10;| 809 || 58 || 15&#10;| {{icon|yes}} ||&#10;| ICT (×3), INH (×19), {{icon|estuary}} (×25) || 热带气候; &quot;Mountains&quot; 主题；为现实世界无冰盖的南极大陆&#10;|-&#10;| elzephor3 || 100 || data-sort-value=&quot;13,013&quot; | 13 × 13&#10;| 612 || 51 || 11&#10;| {{icon|yes}} ||&#10;| ICT (×9), INH (×12), {{icon|estuary}} (×45) || &#039;&#039;不&#039;&#039;旋转；为现实世界夏洛特皇后群岛放大版&#10;|-&#10;| farthestindia || 10 || data-sort-value=&quot;5,005&quot; | 5 × 5&#10;| 164 || 15 || 3&#10;| || 10&#10;| ICT (×2), INH (×6), {{icon|estuary}} (×5) || &#039;&#039;&#039;幻想剧本&#039;&#039;&#039;; 仅出现在&#039;&#039;赤道&#039;&#039;; &quot;印度&quot; 主题&#10;|-&#10;| fryza || 100 || data-sort-value=&quot;5,005&quot; | 5 × 5&#10;| 80 || 11 ||&#10;| ||&#10;| {{icon|estuary}} (×5) ||&#10;|-&#10;| fryzb || 50 || data-sort-value=&quot;11,011&quot; | 11 × 11&#10;| 381 || 58 || 4&#10;| {{icon|yes}} || 3&#10;| ICT, INH (×3), {{icon|estuary}} (×5) ||&#10;|-&#10;| fryzB2 || 50 || data-sort-value=&quot;9,010&quot; | 9 × 10&#10;| 385 || 57 || 4&#10;| {{icon|yes}} || 3&#10;| ICT, INH (×3), {{icon|estuary}} (×5) || &#039;&#039;不&#039;&#039;旋转; 仅出现在&#039;&#039;北侧&#039;&#039;边缘&#10;|-&#10;| fryzC || 50 || data-sort-value=&quot;10,010&quot; | 10 × 10&#10;| 445 || 46 || 2&#10;| {{icon|yes}} || 2&#10;| ICT (×3), INH (×7), {{icon|estuary}} (×10) ||&#10;|-&#10;| fryzC2 || 50 || data-sort-value=&quot;8,009&quot; | 8 × 9&#10;| 444 || 46 || 2&#10;| {{icon|yes}} || 2&#10;| ICT (×3), INH (×7), {{icon|estuary}} (×7) || &#039;&#039;不&#039;&#039;旋转; 仅出现在&#039;&#039;南侧&#039;&#039;边缘&#10;|-&#10;| fryzD || 100 || data-sort-value=&quot;7,007&quot; | 7 × 7&#10;| 289 || 62 || 2&#10;| {{icon|yes}} ||&#10;| ICT (×2), INH (×6), {{icon|estuary}} (×3) ||&#10;|-&#10;| fryzE || 10 || data-sort-value=&quot;5,006&quot; | 5 × 6&#10;| 134 || 37 || 1&#10;| || 20&#10;| INH (×4), {{icon|estuary}} (×4), 亚特兰蒂斯遗迹 || &#039;&#039;&#039;幻想剧本&#039;&#039;&#039;&#10;|-&#10;| fryzF || 100 || data-sort-value=&quot;4,004&quot; | 4 × 4&#10;| 101 || 23 || 3&#10;| ||&#10;| ICT, INH, {{icon|estuary}} (×4) ||&#10;|-&#10;| mef1 || 100 || data-sort-value=&quot;12,012&quot; | 12 × 12&#10;| 692 || 71 || 7&#10;| {{icon|yes}} ||&#10;| ICT (×3), INH (×6), {{icon|estuary}} (×9) || 热带气候; &quot;PDX&quot; 主题&#10;|-&#10;| mef2 || 100 || data-sort-value=&quot;6,012&quot; | 6 × 12&#10;| 393 || 51 || 4&#10;| {{icon|yes}} ||&#10;| ICT (×2), INH (×5), {{icon|estuary}} (×7) || &quot;The Three Mountains&quot; 主题&#10;|-&#10;| ofa1 || 100 || data-sort-value=&quot;4,002&quot; | 4 × 2&#10;| 46 || 14 || 1&#10;| ||&#10;| {{icon|estuary}} ||&#10;|-&#10;| ofa2 || 100 || data-sort-value=&quot;2,002&quot; | 2 × 2&#10;| 21 || 7 ||&#10;| ||&#10;| INH ||&#10;|-&#10;| ofa3 || 100 || data-sort-value=&quot;11,011&quot; | 11 × 11&#10;| 569 || 115 || 3&#10;| {{icon|yes}} ||&#10;| ICT, INH (×2), {{icon|estuary}} ||&#10;|-&#10;| ofa4 || 100 || data-sort-value=&quot;10,008&quot; | 10 × 8&#10;| 404 || 62 || 3&#10;| {{icon|yes}} ||&#10;| INH (×7), {{icon|estuary}} (×2) || &#039;&#039;不&#039;&#039;旋转; 仅出现在&#039;&#039;南侧&#039;&#039;边缘&#10;|-&#10;| ofa5 || 100 || data-sort-value=&quot;2,002&quot; | 2 × 2&#10;| 30 || 8 ||&#10;| ||&#10;| INH ||&#10;|-&#10;| ofa6 || 100 || data-sort-value=&quot;4,004&quot; | 4 × 4&#10;| 130 || 25 || 1&#10;| ||&#10;| INH ||&#10;|-&#10;| ofa7 || 100 || data-sort-value=&quot;1,001&quot; | 1 × 1&#10;| 18 || 9 ||&#10;| ||&#10;| ||&#10;|-&#10;| ofa8 || 100 || data-sort-value=&quot;2,001&quot; | 2 × 1&#10;| 15 || 6 ||&#10;| ||&#10;| ||&#10;|-&#10;| ofa10 || 100 || data-sort-value=&quot;1,001&quot; | 1 × 1&#10;| 7 || 4 ||&#10;| ||&#10;| ||&#10;|-&#10;| oltner1 || 50 || data-sort-value=&quot;6,006&quot; | 6 × 6&#10;| 152 || 32 || 2&#10;| {{icon|yes}} ||&#10;| INH (×4), {{icon|estuary}} ||&#10;|-&#10;| oltner2 || 100 || data-sort-value=&quot;16,016&quot; | 16 × 16&#10;| 848 || 89 || 18&#10;| {{icon|yes}} ||&#10;| ICT (×12), INH (×24), {{icon|estuary}} (×7) || &#039;&#039;不&#039;&#039;旋转; 仅出现在&#039;&#039;北侧&#039;&#039;边缘; 热带气候&#10;|-&#10;| oltner3 || 100 || data-sort-value=&quot;8,008&quot; | 8 × 8&#10;| 470 || 57 || 5&#10;| {{icon|yes}} ||&#10;| ICT (×5), INH (×9), {{icon|estuary}} (×3) || &#039;&#039;不&#039;&#039;旋转; 仅出现在&#039;&#039;北侧&#039;&#039;边缘&#10;|-&#10;| oltner4 || 100 || data-sort-value=&quot;2,002&quot; | 2 × 2&#10;| 47 || 13 ||&#10;| ||&#10;| ICT, INH ||&#10;|-&#10;| oltner5 || 100 || data-sort-value=&quot;2,002&quot; | 2 × 2&#10;| 58 || 14 ||&#10;| ||&#10;| INH (×2) ||&#10;|-&#10;| oltner6 || 75 || data-sort-value=&quot;5,003&quot; | 5 × 3&#10;| 160 || 16 || 3&#10;| ||&#10;| ICT (×2), INH (×5), 彗星矿物 ||&#10;|-&#10;| oltner7 || 50 || data-sort-value=&quot;12,006&quot; | 12 × 6&#10;| 632 || 51 || 8&#10;| {{icon|yes}} ||&#10;| ICT (×8), INH (×11), {{icon|estuary}} (×3), 天堂 (×4) || &#10;|-&#10;| oltner8 || 15 || data-sort-value=&quot;2,001&quot; | 2 × 1&#10;| 11 || 3 ||&#10;| ||&#10;| INH || &#039;&#039;&#039;幻想剧本&#039;&#039;&#039;; &quot;利维坦&quot; 主题&amp;lt;ref&gt;[[群星]]中有一个对应的星球异常点，在一颗星球某处发现了奇怪形状的大陆，经调查发现是巨型生物（利维坦）的遗骸，而本板块最中央的荒芜之地也形似利维坦残余的骨架。&amp;lt;/ref&gt;&#10;|-&#10;| oltner9 || 100 || data-sort-value=&quot;1,001&quot; | 1 × 1&#10;| 4 || 3 ||&#10;| ||&#10;| ||&#10;|-&#10;| oltner10 || 100 || data-sort-value=&quot;1,001&quot; | 1 × 1&#10;| 3 || 2 ||&#10;| ||&#10;| ||&#10;|-&#10;| oltner11 || 100 || data-sort-value=&quot;1,001&quot; | 1 × 1&#10;| 3 || 2 ||&#10;| ||&#10;| ||&#10;|-&#10;| oltner12 || 100 || data-sort-value=&quot;1,004&quot; | 1 × 4&#10;| 22 || 9 ||&#10;| ||&#10;| ||&#10;|-&#10;| oltner13 || 100 || data-sort-value=&quot;3,002&quot; | 3 × 2&#10;| 44 || 10 ||&#10;| ||&#10;| ||&#10;|-&#10;| oltner14 || 100 || data-sort-value=&quot;2,004&quot; | 2 × 4&#10;| 55 || 15 ||&#10;| ||&#10;| ||&#10;|-&#10;| oltner15 || 100 || data-sort-value=&quot;1,004&quot; | 1 × 4&#10;| 43 || 15 ||&#10;| ||&#10;| ||&#10;|-&#10;| oltner16 || 100 || data-sort-value=&quot;3,004&quot; | 3 × 4&#10;| 62 || 13 ||&#10;| ||&#10;| ICT, INH (×2) || &#039;&#039;不&#039;&#039;旋转; 仅出现在&#039;&#039;北侧&#039;&#039;边缘&#10;|-&#10;| oltner17 || 100 || data-sort-value=&quot;1,001&quot; | 1 × 1&#10;| 3 || 2 ||&#10;| ||&#10;| ||&#10;|-&#10;| oltner18 || 10000 || data-sort-value=&quot;1,001&quot; | 1 × 1&#10;| 3 || 2 ||&#10;| ||&#10;| ||&#10;|-&#10;| oltner19 || 100 || data-sort-value=&quot;1,001&quot; | 1 × 1&#10;| 3 || 2 ||&#10;| ||&#10;| ||&#10;|-&#10;| oltner20 || 100 || data-sort-value=&quot;3,004&quot; | 3 × 4&#10;| 56 || 10 ||&#10;| ||&#10;| INH (×2) || &#039;&#039;不&#039;&#039;旋转; 仅出现在&#039;&#039;北侧&#039;&#039;边缘&#10;|-&#10;| oltner21 || 100 || data-sort-value=&quot;2,002&quot; | 2 × 2&#10;| 17 || 8 ||&#10;| ||&#10;| INH ||&#10;|-&#10;| oltner22 || 100 || data-sort-value=&quot;1,003&quot; | 1 × 3&#10;| 15 || 7 ||&#10;| ||&#10;| INH || &#039;&#039;不&#039;&#039;旋转; 仅出现在&#039;&#039;南侧&#039;&#039;边缘&#10;|-&#10;| oltner23 || 100 || data-sort-value=&quot;1,001&quot; | 1 × 1&#10;| 5 || 3 ||&#10;| ||&#10;| ||&#10;|-&#10;| oltner24 || 100 || data-sort-value=&quot;3,004&quot; | 3 × 4&#10;| 27 || 6 ||&#10;| ||&#10;| INH || &#039;&#039;不&#039;&#039;旋转; 仅出现在&#039;&#039;南侧&#039;&#039;边缘&#10;|-&#10;| oltner25 || 100 || data-sort-value=&quot;1,001&quot; | 1 × 1&#10;| 6 || 2 ||&#10;| ||&#10;| ||&#10;|-&#10;| oltner26 || 100 || data-sort-value=&quot;3,003&quot; | 3 × 3&#10;| 56 || 11 ||&#10;| ||&#10;| ICT, INH (×2) ||&#10;|-&#10;| oltner27 || 100 || data-sort-value=&quot;1,001&quot; | 1 × 1&#10;| 3 || 2 ||&#10;| ||&#10;| ||&#10;|-&#10;| oltner28 || 100 || data-sort-value=&quot;1,002&quot; | 1 × 2&#10;| 17 || 5 ||&#10;| ||&#10;| INH ||&#10;|-&#10;| oltner29 || 100 || data-sort-value=&quot;4,004&quot; | 4 × 4&#10;| 67 || 10 ||&#10;| ||&#10;| ICT, INH (×2) ||&#10;|-&#10;| oltner30 || 100 || data-sort-value=&quot;4,004&quot; | 4 × 4&#10;| 48 || 10 ||&#10;| ||&#10;| INH (×2) ||&#10;|-&#10;| oltner31 || 100 || data-sort-value=&quot;1,001&quot; | 1 × 1&#10;| 3 || 2 ||&#10;| ||&#10;| ||&#10;|-&#10;| paradox || 2 || data-sort-value=&quot;2,002&quot; | 2 × 2&#10;| 30 || 11 || 1&#10;| ||&#10;| INH || &#039;&#039;&#039;幻想剧本&#039;&#039;&#039;; &#039;&#039;不&#039;&#039;旋转; &quot;p社logo&quot; 主题&#10;|-&#10;| poh1 || 100 || data-sort-value=&quot;3,003&quot; | 3 × 3&#10;| 43 || 9 ||&#10;| ||&#10;| INH (×2) ||&#10;|-&#10;| poh2 || 35 || data-sort-value=&quot;1,001&quot; | 1 × 1&#10;| 5 || 5 ||&#10;| ||&#10;| || &#039;&#039;&#039;幻想剧本&#039;&#039;&#039;; 仅出现在&#039;&#039;赤道&#039;&#039;&#10;|-&#10;| poh3 || 100 || data-sort-value=&quot;2,001&quot; | 2 × 1&#10;| 24 || 4 ||&#10;| ||&#10;| INH || &#039;&#039;不&#039;&#039;旋转; 仅出现在&#039;&#039;南侧&#039;&#039;边缘&#10;|-&#10;| poh4 || 100 || data-sort-value=&quot;3,002&quot; | 3 × 2&#10;| 19 || 6 ||&#10;| ||&#10;| ||&#10;|-&#10;| poh5 || 100 || data-sort-value=&quot;2,002&quot; | 2 × 2&#10;| 24 || 5 ||&#10;| ||&#10;| INH ||&#10;|-&#10;| poh6 || 100 || data-sort-value=&quot;4,004&quot; | 4 × 4&#10;| 135 || 22 ||&#10;| ||&#10;| INH (×3) ||&#10;|-&#10;| poh7 || 100 || data-sort-value=&quot;5,003&quot; | 5 × 3&#10;| 138 || 17 ||&#10;| ||&#10;| INH (×3) || &#039;&#039;不&#039;&#039;旋转&#10;|-&#10;| poh8 || 75 || data-sort-value=&quot;1,001&quot; | 1 × 1&#10;| 8 || 5 ||&#10;| ||&#10;| INH ||&#10;|-&#10;| poh9 || 100 || data-sort-value=&quot;1,001&quot; | 1 × 1&#10;| 7 || 4 ||&#10;| ||&#10;| ||&#10;|-&#10;| poh10 || 100 || data-sort-value=&quot;1,001&quot; | 1 × 1&#10;| 2 || 1 ||&#10;| ||&#10;| ||&#10;|-&#10;| poh11 || 100 || data-sort-value=&quot;1,001&quot; | 1 × 1&#10;| 1 || 1 ||&#10;| ||&#10;| ||&#10;|-&#10;| poh12 || 100 || data-sort-value=&quot;1,001&quot; | 1 × 1&#10;| 1 || 2 ||&#10;| ||&#10;| ||&#10;|-&#10;| poh13 || 25 || data-sort-value=&quot;3,016&quot; | 3 × 16&#10;| 347 || 64 || 3&#10;| {{icon|yes}} ||&#10;| ICT (×2), INH (×5), 恶魔之门 || &#039;&#039;&#039;幻想剧本&#039;&#039;&#039;; &quot;恶魔之门&quot; 主题&#10;|-&#10;| poh14 || 100 || data-sort-value=&quot;8,009&quot; | 8 × 9&#10;| 283 || 72 || 3&#10;| {{icon|yes}} ||&#10;| INH (×5) || &#039;&#039;不&#039;&#039;旋转; 仅出现在&#039;&#039;北侧&#039;&#039;边缘&#10;|-&#10;| poh15 || 100 || data-sort-value=&quot;18,006&quot; | 18 × 6&#10;| 186 || 88 || 3&#10;| {{icon|yes}} || 15&#10;| ICT, INH (×5), {{icon|estuary}} || &#039;&#039;不&#039;&#039;旋转; 仅出现在&#039;&#039;北侧&#039;&#039;边缘&#10;|-&#10;| poh16 || 100 || data-sort-value=&quot;18,003&quot; | 18 × 3&#10;| 53 || 36 || 1&#10;| {{icon|yes}} || 15&#10;| INH (×4) || &#039;&#039;不&#039;&#039;旋转; 仅出现在&#039;&#039;北侧&#039;&#039;边缘&#10;|-&#10;| poh17 || 100 || data-sort-value=&quot;4,003&quot; | 4 × 3&#10;| 14 || 12 || 1&#10;| || 15&#10;| INH ||&#10;|-&#10;| poh18 || 100 || data-sort-value=&quot;10,004&quot; | 10 × 4&#10;| 124 || 46 || 2&#10;| {{icon|yes}} || 15&#10;| ICT, INH (×2), {{icon|estuary}} ||&#10;|-&#10;| poh19 || 20 || data-sort-value=&quot;4,004&quot; | 4 × 4&#10;| 69 || 12 || 1&#10;| ||&#10;| ICT, INH (×4), {{icon|estuary}} || &#039;&#039;&#039;幻想剧本&#039;&#039;&#039;; &#039;&#039;不&#039;&#039;旋转; &quot;财宝岛&quot; 主题；形似人类颅骨&#10;|-&#10;| poh20 || 100 || data-sort-value=&quot;5,004&quot; | 5 × 4&#10;| 103 || 18 || 1&#10;| ||&#10;| INH (×5), {{icon|estuary}} (×2) ||&#10;|-&#10;| poh21 || 100 || data-sort-value=&quot;8,005&quot; | 8 × 5&#10;| 161 || 32 || 2&#10;| {{icon|yes}} ||&#10;| ICT, INH (×5), {{icon|estuary}} (×4) ||&#10;|-&#10;| poh22 || 100 || data-sort-value=&quot;18,012&quot; | 18 × 12&#10;| 814 || 114 || 5&#10;| {{icon|yes}} ||&#10;| ICT (×9), INH (×9), {{icon|estuary}} (×8) || &#039;&#039;不&#039;&#039;旋转&#10;|-&#10;| poh23 || 50 || data-sort-value=&quot;7,007&quot; | 7 × 7&#10;| 259 || 44 || 3&#10;| ||&#10;| ICT, INH (×6), {{icon|estuary}} (×3) || &#039;&#039;&#039;幻想剧本&#039;&#039;&#039;&#10;|-&#10;| poh24 || 100 || data-sort-value=&quot;8,003&quot; | 8 × 3&#10;| 91 || 30 || 1&#10;| ||&#10;| INH (×7) ||&#10;|-&#10;| poh25 || 100 || data-sort-value=&quot;7,005&quot; | 7 × 5&#10;| 204 || 20 || 2&#10;| ||&#10;| ICT, INH (×4), {{icon|estuary}} (×2) ||&#10;|-&#10;| poh26 || 100 || data-sort-value=&quot;5,004&quot; | 5 × 4&#10;| 144 || 14 || 1&#10;| ||&#10;| ICT, INH (×2), {{icon|estuary}} ||&#10;|-&#10;| poh27 || 100 || data-sort-value=&quot;9,007&quot; | 9 × 7&#10;| 290 || 38 || 2&#10;| {{icon|yes}} ||&#10;| ICT, INH (×6), {{icon|estuary}} (×7) ||&#10;|-&#10;| poh28 || 100 || data-sort-value=&quot;9,012&quot; | 9 × 12&#10;| 387 || 46 || 3&#10;| {{icon|yes}} ||&#10;| ICT, INH (×11), {{icon|estuary}} (×6) ||&#10;|-&#10;| poh29 || 100 || data-sort-value=&quot;10,007&quot; | 10 × 7&#10;| 381 || 31 || 2&#10;| {{icon|yes}} ||&#10;| ICT (×3), INH (×6), {{icon|estuary}} (×4) ||&#10;|-&#10;| poh30 || 100 || data-sort-value=&quot;13,010&quot; | 13 × 10&#10;| 741 || 28 || 4&#10;| {{icon|yes}} ||&#10;| ICT (×8), INH (×2), {{icon|estuary}} (×7) ||&#10;|-&#10;| poh31 || 100 || data-sort-value=&quot;5,005&quot; | 5 × 5&#10;| 103 || 34 || 2&#10;| ||&#10;| INH (×7) ||&#10;|-&#10;| poh32 || 100 || data-sort-value=&quot;7,003&quot; | 7 × 3&#10;| 108 || 20 || 2&#10;| ||&#10;| ICT (×3), INH (×5), {{icon|estuary}} (×4) ||&#10;|-&#10;| poh33 || 100 || data-sort-value=&quot;18,010&quot; | 18 × 10&#10;| 608 || 56 || 4&#10;| {{icon|yes}} ||&#10;| INH (×15), {{icon|estuary}} (×5) || &#039;&#039;不&#039;&#039;旋转; 仅出现在&#039;&#039;南侧&#039;&#039;边缘; &quot;极地&quot; 主题&#10;|-&#10;| poh34 || 100 || data-sort-value=&quot;7,006&quot; | 7 × 6&#10;| 259 || 14 || 2&#10;| ||&#10;| ICT (×2), INH (×4), {{icon|estuary}} (×4) ||&#10;|-&#10;| poh35 || 100 || data-sort-value=&quot;9,007&quot; | 9 × 7&#10;| 413 || 20 || 2&#10;| {{icon|yes}} ||&#10;| ICT (×2), INH (×6), {{icon|estuary}} (×5) ||&#10;|-&#10;| poh36 || 100 || data-sort-value=&quot;12,016&quot; | 12 × 16&#10;| 538 || 41 || 3&#10;| {{icon|yes}} ||&#10;| ICT, INH (×16), {{icon|estuary}} (×3) || &#039;&#039;不&#039;&#039;旋转; &quot;极地&quot; 主题&#10;|-&#10;| poh37 || 100 || data-sort-value=&quot;6,005&quot; | 6 × 5&#10;| 141 || 17 || 2&#10;| ||&#10;| INH (×8), {{icon|estuary}} (×2) ||&#10;|-&#10;| poh38 || 100 || data-sort-value=&quot;4,003&quot; | 4 × 3&#10;| 52 || 11 || 1&#10;| ||&#10;| INH (×2), {{icon|estuary}} ||&#10;|-&#10;| poh39 || 100 || data-sort-value=&quot;6,004&quot; | 6 × 4&#10;| 64 || 19 || 1&#10;| ||&#10;| INH (×7), {{icon|estuary}} (×2) ||&#10;|-&#10;| poh40 || 100 || data-sort-value=&quot;10,003&quot; | 10 × 3&#10;| 84 || 20 || 1&#10;| ||&#10;| INH (×8) ||&#10;|-&#10;| poh41 || 100 || data-sort-value=&quot;11,008&quot; | 11 × 8&#10;| 318 || 22 || 2&#10;| {{icon|yes}} ||&#10;| ICT (×5), INH (×14), {{icon|estuary}} (×3) || &#039;&#039;不&#039;&#039;旋转&#10;|-&#10;| poh42 || 100 || data-sort-value=&quot;10,007&quot; | 10 × 7&#10;| 219 || 29 || 2&#10;| ||&#10;| ICT, INH (×7), {{icon|estuary}} (×5) ||&#10;|-&#10;| poh43 || 100 || data-sort-value=&quot;12,008&quot; | 12 × 8&#10;| 525 || 26 || 3&#10;| {{icon|yes}} ||&#10;| ICT (×9), INH (×11), {{icon|estuary}} (×9) ||&#10;|-&#10;| poh44 || 100 || data-sort-value=&quot;9,006&quot; | 9 × 6&#10;| 233 || 16 || 3&#10;| ||&#10;| INH (×14), {{icon|estuary}} ||&#10;|-&#10;| poh45 || 100 || data-sort-value=&quot;13,007&quot; | 13 × 7&#10;| 479 || 29 || 4&#10;| {{icon|yes}} ||&#10;| ICT (×4), INH (×21), {{icon|estuary}} (×3) ||&#10;|-&#10;| poh46 || 100 || data-sort-value=&quot;5,003&quot; | 5 × 3&#10;| 94 || 10 || 2&#10;| ||&#10;| INH (×12) ||&#10;|-&#10;| poh47 || 100 || data-sort-value=&quot;6,004&quot; | 6 × 4&#10;| 127 || 11 || 2&#10;| ||&#10;| INH (×5), {{icon|estuary}} (×2) ||&#10;|-&#10;| poh48 || 100 || data-sort-value=&quot;4,006&quot; | 4 × 6&#10;| 82 || 14 || 1&#10;| ||&#10;| INH (×10), {{icon|estuary}} ||&#10;|-&#10;| poh49 || 100 || data-sort-value=&quot;7,007&quot; | 7 × 7&#10;| 249 || 15 || 2&#10;| ||&#10;| ICT (×5), INH (×7), {{icon|estuary}} (×4) ||&#10;|-&#10;| poh50 || 100 || data-sort-value=&quot;4,005&quot; | 4 × 5&#10;| 106 || 18 || 2&#10;| ||&#10;| ICT, INH (×7), {{icon|estuary}} ||&#10;|-&#10;| water1 || 30 || data-sort-value=&quot;1,001&quot; | 1 × 1&#10;| || ||&#10;| || -1&#10;| ||&#10;|-&#10;| water2 || 30 || data-sort-value=&quot;2,002&quot; | 2 × 2&#10;| || 1 ||&#10;| || -1&#10;| ||&#10;|-&#10;| water3 || 30 || data-sort-value=&quot;4,004&quot; | 4 × 4&#10;| || 4 ||&#10;| || -1&#10;| ||&#10;|}&#10;===专有修正===&#10;以下省份修正仅出现于RNW剧本中：&#10;&#10;====彗星矿物====&#10;*{{icon|local goods produced|28px}} {{green|+5.0}} 本地商品产出 &#10;&#10;====天堂====&#10;*{{icon|local goods produced|28px}} {{green|+1.0}} 本地商品产出 &#10;*{{icon|local development cost|28px}} {{DLC-only|本地提升发展度花费|-10}}&#10;&#10;====恶魔之门====&#10;*{{icon|local trade power|28px}} {{green|+10}} 本地贸易竞争力&#10;*{{icon|local development cost|28px}} {{DLC-only|本地提升发展度花费|-5}}&#10;*{{icon|naval forcelimit|28px}} {{green|+2}} 海军规模上限&#10;&#10;====亚特兰蒂斯遗迹====&#10;*{{icon|tech cost|28px}} {{green|-5%}} 科技花费&#10;*{{icon|inst spread|28px}} {{green|+10%}} 本地思潮传播&#10;&#10;&#10;==成就==&#10;{{Achievement|我在哪？|作为随机新世界土著国家，探索整个新世界。|image=Where am I?.png|en=Where am I?}}&#10;== 参考资料 ==&#10;&amp;lt;references/&gt;&#10;&#10;[[Category:游戏概念]]&#10;[[en:Random_New_World]]&#10;本页使用的模板：&#10;&#10;Template:Achievement（查看源代码）Template:Ambox（查看源代码）（受保护）Template:Ambox/core（查看源代码）（受保护）Template:Ambox 2020（查看源代码）Template:Anchor（查看源代码）Template:Collapse（查看源代码）（受保护）Template:DLC-only（查看源代码）Template:Expansion（查看源代码）Template:Green（查看源代码）（受保护）Template:Icon（查看源代码）（受保护）Template:Icon/a（查看源代码）Template:Icon/c（查看源代码）Template:Icon/e（查看源代码）Template:Icon/h（查看源代码）Template:Icon/i（查看源代码）Template:Icon/j（查看源代码）Template:Icon/l（查看源代码）Template:Icon/m（查看源代码）Template:Icon/n（查看源代码）Template:Icon/p（查看源代码）Template:Icon/r（查看源代码）Template:Icon/s（查看源代码）Template:Icon/t（查看源代码）Template:Icon/w（查看源代码）Template:Icon/xyz（查看源代码）Template:Icon/y（查看源代码）Template:Icon/z（查看源代码）Template:Iconbox（查看源代码）Template:N（查看源代码）Template:Path（查看源代码）（受保护）Template:SVersion（查看源代码）（受保护）Template:Version（查看源代码）（受保护）返回随机新世界。&#10;"/>
+<meta name="keywords" content="欧陆风云4百科,随机新世界"/>
+<meta name="apple-mobile-web-app-capable" content="Yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+<meta name="mobile-web-app-capable" content="Yes"/>
+<meta name="theme-color" content="#103D8F"/>
+<meta name="msapplication-navbutton-color" content="#103D8F"/>
+<meta name="twitter:card" content="summary"/>
+<link rel="icon" href="https://www.eu4cn.com/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="https://www.eu4cn.com/opensearch_desc.php" title="欧陆风云4百科 (zh)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://www.eu4cn.com/api.php?action=rsd"/>
+<link rel="alternate" hreflang="zh" href="https://www.eu4cn.com/zh/随机新世界"/>
+<link rel="alternate" hreflang="zh-Hans" href="https://www.eu4cn.com/zh-hans/随机新世界"/>
+<link rel="alternate" hreflang="zh-Hant" href="https://www.eu4cn.com/zh-hant/随机新世界"/>
+<link rel="alternate" hreflang="zh-Hans-CN" href="https://www.eu4cn.com/zh-cn/随机新世界"/>
+<link rel="alternate" hreflang="zh-Hant-HK" href="https://www.eu4cn.com/zh-hk/随机新世界"/>
+<link rel="alternate" hreflang="zh-Hant-MO" href="https://www.eu4cn.com/zh-mo/随机新世界"/>
+<link rel="alternate" hreflang="zh-Hans-MY" href="https://www.eu4cn.com/zh-my/随机新世界"/>
+<link rel="alternate" hreflang="zh-Hans-SG" href="https://www.eu4cn.com/zh-sg/随机新世界"/>
+<link rel="alternate" hreflang="zh-Hant-TW" href="https://www.eu4cn.com/zh-tw/随机新世界"/>
+<link rel="alternate" hreflang="x-default" href="https://www.eu4cn.com/wiki/随机新世界"/>
+<link rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+<link rel="alternate" type="application/atom+xml" title="欧陆风云4百科的Atom feed" href="https://www.eu4cn.com/index.php?title=Special:%E6%9C%80%E8%BF%91%E6%9B%B4%E6%94%B9&amp;feed=atom"/>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script data-ad-client="ca-pub-1612414434963106" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114739240-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-114739240-1');
+</script>
+<meta property="og:title" content="随机新世界"/>
+<meta property="og:site_name" content="欧陆风云4百科"/>
+<meta property="og:url" content="https://www.eu4cn.com/wiki/%E9%9A%8F%E6%9C%BA%E6%96%B0%E4%B8%96%E7%95%8C"/>
+<meta property="article:modified_time" content="2023-10-12T14:48:22Z"/>
+<meta property="article:published_time" content="2023-10-12T14:48:22Z"/>
+<script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"Article","name":"\u67e5\u770b\u201c\u968f\u673a\u65b0\u4e16\u754c\u201d\u7684\u6e90\u4ee3\u7801 - \u6b27\u9646\u98ce\u4e914\u767e\u79d1\uff0c\u4eba\u4eba\u53ef\u4ee5\u7f16\u8f91\u7684\u6b27\u9646\u98ce\u4e914\u4e2d\u6587\u767e\u79d1\u5168\u4e66","headline":"\u67e5\u770b\u201c\u968f\u673a\u65b0\u4e16\u754c\u201d\u7684\u6e90\u4ee3\u7801 - \u6b27\u9646\u98ce\u4e914\u767e\u79d1\uff0c\u4eba\u4eba\u53ef\u4ee5\u7f16\u8f91\u7684\u6b27\u9646\u98ce\u4e914\u4e2d\u6587\u767e\u79d1\u5168\u4e66","mainEntityOfPage":"\u67e5\u770b\u201c\u968f\u673a\u65b0\u4e16\u754c\u201d\u7684\u6e90\u4ee3\u7801","identifier":"https:\/\/www.eu4cn.com\/wiki\/%E9%9A%8F%E6%9C%BA%E6%96%B0%E4%B8%96%E7%95%8C","url":"https:\/\/www.eu4cn.com\/wiki\/%E9%9A%8F%E6%9C%BA%E6%96%B0%E4%B8%96%E7%95%8C","dateModified":"2023-10-12T14:48:22Z","datePublished":"2023-10-12T14:48:22Z","image":{"@type":"ImageObject","url":"https:\/\/www.eu4cn.com\/images\/logo\/logo.png"},"author":{"@type":"Organization","name":"\u6b27\u9646\u98ce\u4e914\u767e\u79d1","url":"https:\/\/www.eu4cn.com","logo":{"@type":"ImageObject","url":"https:\/\/www.eu4cn.com\/images\/logo\/logo.png","caption":"\u6b27\u9646\u98ce\u4e914\u767e\u79d1"}},"publisher":{"@type":"Organization","name":"\u6b27\u9646\u98ce\u4e914\u767e\u79d1","url":"https:\/\/www.eu4cn.com","logo":{"@type":"ImageObject","url":"https:\/\/www.eu4cn.com\/images\/logo\/logo.png","caption":"\u6b27\u9646\u98ce\u4e914\u767e\u79d1"}},"potentialAction":{"@type":"SearchAction","target":"https:\/\/www.eu4cn.com\/index.php?title=Special:Search&search={search_term}","query-input":"required name=search_term"}}</script>
+<link rel="stylesheet" href="http://www.unpkg.com/@fortawesome/fontawesome-free@5.15.1/css/all.css" />
+<link rel="stylesheet" href="http://www.unpkg.com/@fortawesome/fontawesome-free@5.15.1/css/v4-shims.css" />
+<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+<body class="Liberty width-size mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-随机新世界 rootpage-随机新世界 skin-liberty action-edit skin--responsive">		<header>
+			<div class="nav-wrapper navbar-fixed-top">
+						<nav class="navbar navbar-dark yamm">
+			<a class="navbar-brand" href="https://www.eu4cn.com/wiki/首页"></a>
+			<ul class="nav navbar-nav">
+				<li class="dropdown nav-item">
+					<a class="nav-link navbar-right" href="#" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+						<div class="navbar-brand-subtitle">欧陆风云4</div>
+						<div class="navbar-family">ParaWikis</div>
+					</a>
+				<ul class="dropdown-menu" aria-labelledby="dLabel">
+					<li>
+		                  <div class="yamm-content">
+		                    <div class="row">
+						 							<ul class="col-sm-4 list-unstyled">
+							<li><p class="meganav-item"><strong>最新百科</strong></p></li>
+								<a href="http://cs2.parawikis.com/" class="dropdown-item meganav-item">都市天际线2百科</a>
+								<a href="http://h3.parawikis.com/" class="dropdown-item meganav-item">英雄无敌3百科</a>
+								<a href="http://vic3.parawikis.com/" class="dropdown-item meganav-item">维多利亚3百科</a>
+								<a href="http://ce2.parawikis.com/" class="dropdown-item meganav-item">奇妙探险队2百科</a>
+								<a href="http://eos.parawikis.com/" class="dropdown-item meganav-item">罪恶帝国百科</a>
+								<a href="http://ir.parawikis.com/" class="dropdown-item meganav-item">英白拉多：罗马百科</a>
+							</ul>
+							<ul class="col-sm-4 list-unstyled">
+								<li><p class="meganav-item"><strong>热门百科</strong></p></li>
+								<a href="http://stellaris.parawikis.com/" class="dropdown-item meganav-item">群星百科</a>
+								<a href="http://www.eu4cn.com/" class="dropdown-item meganav-item">欧陆风云4百科</a>
+								<a href="http://ck2.parawikis.com/" class="dropdown-item meganav-item">十字军之王2百科</a>
+								<a href="http://ck3.parawikis.com/" class="dropdown-item meganav-item">十字军之王3百科</a>
+								<a href="http://hoi4.parawikis.com/" class="dropdown-item meganav-item">钢铁雄心4百科</a>
+								<a href="http://vic2.parawikis.com/" class="dropdown-item meganav-item">维多利亚2百科</a>
+							</ul>
+							<ul class="col-sm-4 list-unstyled">
+								<li><p class="meganav-item"><strong>ParaWikis</strong></p></li>
+								<a href="http://www.parawikis.com/wiki/ParaWikis:申请建站" class="dropdown-item meganav-item">申请建站</a>
+								<a href="http://www.parawikis.com/" class="dropdown-item meganav-item">ParaWikis</a>
+								<a href="http://commons.parawikis.com/" class="dropdown-item meganav-item">ParaCommons</a>
+							</ul>		                    </div>
+		                  </div>
+		                </li>
+				</ul>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="https://www.eu4cn.com/wiki/Special:最近更改" class="nav-link" title="本wiki的最近更改列表[r]" accesskey="r"><span class="fas fa-sync"></span><span class="hide-title">最近更改</span></a>				</li>
+				<li class="nav-item">
+					<a href="https://www.eu4cn.com/wiki/Special:随机页面" class="nav-link" title="加载一个随机页面[x]" accesskey="x"><span class="fa fa-random"></span><span class="hide-title">随机页面</span></a>				</li>
+				<li class="nav-item">
+					<a href="http://shang.qq.com/wpa/qunwpa?idkey=3bb76f6a58594b18c2defdc03af7ec2703fb2e2cc8fef6dadd1dcb896c0ede1a" target="_blank" class="nav-link" title="加入QQ群">
+						<span class="fa fa-qq"></span><span class="hide-title">加入QQ群</span>
+					</a>
+				</li>
+				<li class="dropdown nav-item">
+					<a class="dropdown-toggle nav-link" href="#" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+						<span class="fa fa-wrench"></span><span class="hide-title">工具</span>
+					</a>
+				<ul class="dropdown-menu" aria-labelledby="dLabel">
+					<li id="t-whatlinkshere" class="mw-list-item"><a href="https://www.eu4cn.com/wiki/Special:链入页面/随机新世界" title="所有链接至本页面的wiki页面列表[j]" accesskey="j" class="dropdown-item">链入页面</a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="https://www.eu4cn.com/wiki/Special:链出更改/随机新世界" rel="nofollow" title="链自本页的页面的最近更改[k]" accesskey="k" class="dropdown-item">相关更改</a></li><li id="t-specialpages" class="mw-list-item"><a href="https://www.eu4cn.com/wiki/Special:特殊页面" title="所有特殊页面的列表[q]" accesskey="q" class="dropdown-item">特殊页面</a></li><li id="t-info" class="mw-list-item"><a href="https://www.eu4cn.com/index.php?title=%E9%9A%8F%E6%9C%BA%E6%96%B0%E4%B8%96%E7%95%8C&amp;action=info" title="关于此页面的更多信息" class="dropdown-item">页面信息</a></li><li id="t-cargopagevalueslink" class="mw-list-item"><a href="https://www.eu4cn.com/index.php?title=%E9%9A%8F%E6%9C%BA%E6%96%B0%E4%B8%96%E7%95%8C&amp;action=pagevalues" rel="cargo-pagevalues" class="dropdown-item">页面值</a></li>				</ul>
+				</li>
+				<li class="dropdown nav-item"><a class="nav-link dropdown-toggle dropdown-toggle-fix" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true" title="帮助"><span class="fa fa-question"></span><span class="hide-title">帮助</span></a><div class="dropdown-menu" role="menu"><a class="dropdown-item" href="https://www.eu4cn.com/wiki/Project:译名手册" title="譯名手冊"><span class="fa fa-book"></span>譯名手冊</a><a class="dropdown-item" href="https://www.eu4cn.com/wiki/Project:字词转换" title="字詞轉換"><span class="fa fa-language"></span>字詞轉換</a><a class="dropdown-item" href="https://www.eu4cn.com/wiki/Project:编辑指南" title="編輯指南"><span class="fa fa-graduation-cap"></span>編輯指南</a><a class="dropdown-item" href="https://www.eu4cn.com/wiki/Project:编辑规范" title="編輯規範"><span class="fa fa-lightbulb"></span>編輯規範</a><a class="dropdown-item" href="https://www.eu4cn.com/wiki/Project:练手沙盒" title="Project:练手沙盒"><span class="fa fa-leaf"></span>練手沙盒</a></div></li><li class="dropdown nav-item"><a class="hidden-xs-down nav-link" data-toggle="" role="button" aria-haspopup="true" aria-expanded="true" title="ParaTranz" href="https://paratranz.cn/"><span class="fa fa-language"></span><span class="hide-title">ParaTranz</span></a></li><li class="dropdown nav-item"><a class="hidden-xs-down nav-link" data-toggle="" role="button" aria-haspopup="true" aria-expanded="true" title="52PCGame" href="http://bbs.52pcgame.net/"><span class="fa fa-comments"></span><span class="hide-title">52PCGame</span></a></li><li class="dropdown nav-item"><a class="hidden-xs-down nav-link" data-toggle="" role="button" aria-haspopup="true" aria-expanded="true" title="Project:捐款" href="https://www.eu4cn.com/wiki/Project:捐款"><span class="fa fa-heart"></span><span class="hide-title">资助我们</span></a></li>			</ul>
+					<div class="navbar-login">
+							<a href="#" class="none-outline" data-toggle="modal" data-target="#login-modal">
+					<span class="fa fa-sign-in"></span>
+				</a>
+					</div>
+									<form action="https://www.eu4cn.com/index.php" id="searchform" class="form-inline">
+			<input type="hidden" name="title" value="Special:搜索"/>
+			<div class="input-group">
+				<input type="search" name="search" placeholder="在欧陆风云4百科搜索" aria-label="在欧陆风云4百科搜索" autocapitalize="sentences" title="在欧陆风云4百科搜索[f]" accesskey="f" class="form-control" id="searchInput"/>				<span class="input-group-btn">
+					<button type="submit" name="go"
+						value="前往" id="searchGoButton"
+							class="btn btn-secondary" type="button"><span class="fa fa-eye"></span></button>
+					<button type="submit" name="fulltext"
+						value="搜索"
+						id="mw-searchButton" class="btn btn-secondary" type="button">
+						<span class="fa fa-search"></span></button>
+				</span>
+			</div>
+		</form>
+			</nav>
+				</div>
+		</header>
+		<section>
+			<div class="content-wrapper">
+							<aside>
+			<div class="liberty-sidebar">
+				<div class="live-recent-wrapper">
+					<div id='mw-data-after-content'>
+	<div class="read-more-container"></div>
+</div>
+												<div
+			class="live-recent"
+			data-article-ns="0|4|10|12|14"
+			data-talk-ns="1|5|7|9|11|13|15"
+		>
+			<div class="live-recent-header">
+			<ul class="nav nav-tabs">
+				<li class="nav-item">
+					<a href="javascript:" class="nav-link active" id="liberty-recent-tab1">
+						最近更改					</a>
+				</li>
+				<li class="nav-item">
+					<a href="javascript:" class="nav-link" id="liberty-recent-tab2">
+						最近讨论					</a>
+				</li>
+			</ul>
+			</div>
+			<div class="live-recent-content">
+				<ul class="live-recent-list" id="live-recent-list">
+					<li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li>				</ul>
+			</div>
+			<div class="live-recent-footer">
+				<a href="https://www.eu4cn.com/wiki/Special:最近更改" title="Special:最近更改"><span class="label label-info">查看更多</span></a>			</div>
+		</div>
+						<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 侧栏 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1612414434963106"
+     data-ad-slot="1728061201"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-K4RD1C6KBW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-K4RD1C6KBW');
+</script>
+				</div>
+										</div>
+			</aside>
+								<div class="container-fluid liberty-content">
+					<div class="liberty-content-header">
+													<div class="alert alert-dismissible fade in alert-info liberty-notice" role="alert">
+								<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+								<div id="localNotice"><div class="sitenotice" lang="zh" dir="ltr"><div style="text-align:center; font-size:125%; line-height: 1; padding: 10px;"><b>欢迎访问欧陆风云4百科！<a href="https://www.eu4cn.com/wiki/Special:用户登录" title="Special:用户登录"><span class="alert-link">注册一个账号</span></a>，一起参与编写吧！这里是<a href="https://www.eu4cn.com/wiki/欧陆风云4百科:当前任务#页面" title="欧陆风云4百科:当前任务"><span class="alert-link">当前的工程</span></a>。</b></div>
+<div style="text-align: center;">如果您想帮助本站建设，欢迎点击<a href="https://www.eu4cn.com/wiki/欧陆风云4百科:捐款" title="欧陆风云4百科:捐款"><b>这里</b></a>捐款！欢迎所有对百科感兴趣的同学加入QQ群：<b>497888338</b>。</div></div></div>							</div>
+															<div class="content-tools">
+				<div class="btn-group" role="group" aria-label="content-tools">
+					<div id="ca-view" class="mw-list-item"><a href="https://www.eu4cn.com/wiki/随机新世界" class="btn btn-secondary tools-btn">阅读</a></div><div id="ca-viewsource" class="selected mw-list-item"><a href="https://www.eu4cn.com/index.php?title=%E9%9A%8F%E6%9C%BA%E6%96%B0%E4%B8%96%E7%95%8C&amp;action=edit" title="本页面受到保护。&#10;您可以查看其源代码[e]" accesskey="e" class="btn btn-secondary tools-btn">查看源代码</a></div><div id="ca-history" class="mw-list-item"><a href="https://www.eu4cn.com/index.php?title=%E9%9A%8F%E6%9C%BA%E6%96%B0%E4%B8%96%E7%95%8C&amp;action=history" title="本页面过去的版本[h]" accesskey="h" class="btn btn-secondary tools-btn">查看历史</a></div>					<a href="https://www.eu4cn.com/wiki/Talk:随机新世界" class="btn btn-secondary tools-btn" title="关于内容页面的讨论[t]" accesskey="t" id="ca-talk">讨论</a>				</div>
+			</div>
+							<div class="title">
+						<h1>
+							查看“随机新世界”的源代码						</h1>
+						<div class="mw-indicators">
+</div>
+						</div>
+						<div class="contentSub" >
+							←<a href="https://www.eu4cn.com/wiki/随机新世界" title="随机新世界">随机新世界</a>						</div>
+				</div>
+					<div class="liberty-content-main" id="content">
+											<div class="mw-body-content" id="mw-content-text">
+							<div id="mw-content-text" class="mw-body-content"><p>因为以下原因，您没有权限编辑本页：
+</p>
+<div class="permissions-errors">
+<p>您请求的操作仅限属于该用户组的用户执行：<a href="https://www.eu4cn.com/wiki/欧陆风云4百科:用户" title="欧陆风云4百科:用户">用户</a>
+</p>
+</div><hr />
+<p>您可以查看和复制此页面的源代码。
+</p><textarea readonly="" accesskey="," id="wpTextbox1" cols="80" rows="25" style="" class="mw-editfont-monospace" lang="zh" dir="ltr" name="wpTextbox1">{{Version|1.23}}
+{{Expansion|cop|small=no}}
+[[File:EU4RandomNewWorld.png|400px|thumb|right|随机新世界的一例（1.14 版本后）]]
+__ToC__
+{{N|随机新世界|Random New World}}是游戏开始时国家选择画面中的一个选项。该选项开启后，亚速尔、冰岛一线以西，东西伯利亚、威克岛、新西兰一线以东都会被全新的地貌所替代。在[[1.14 版本]]之前，地图的生成是程序化的；而之后，随机新世界地图将由128种不同的预设板块&lt;ref>随机新世界板块可参见 {{path|map/random/tiles/}}&lt;/ref>拟真地组合而成。板块的选择有权重，以确保新世界地图的乐趣和平衡，比如说随机生成的新世界中必定会有一块“大陆”，其上必定会有一大块连续的地域可供殖民。
+
+在生成地图之后就会在板块上加载26种不同的剧本&lt;ref>随机新世界剧本可参见 {{path|map/random/RNWScenarios.txt}}&lt;/ref>。每个[[区域]]都会加载不同剧本，以生成其板块大小、气候和其他修正。那些更基础的剧本中随机产生的国家会更加普通，其文化、宗教等都与原本的美洲世界相仿。这些剧本大都是原有新世界的变体，但其中也有一些独特性存在。而有些剧本则更加迷离，其中会包含很多魔幻的历史。比如科技高度发达的美洲土著、世界边缘的绝境之墙、新世界中的镜像印度等等。这些选项都可以依玩家喜好自由开关。
+
+[[贸易节点]]会根据随机的新世界动态生成，其商路会自动连入亚非欧三大洲。这可能会使东亚或非洲的某些非常规国家选择殖民，并形成新的有趣局势。随机新世界中的省份会根据根据剧本主题依照名字库动态命名，而新世界中的[[区域]]、[[殖民区域]]和[[贸易节点]]会以其中的关键省份命名。随机新世界中的国家也会动态生成相应的旗帜和理念。
+
+将来可能还会加入更多的板块类型和剧本，以及可用于与好友分享新世界的“随机种子”机制。此外，随机新世界的mod修改高度自由，玩家可以自己创建板块等，并分享给他人游玩。
+
+'''注意：''' 随机新世界文件改派会改变游戏的校验码&lt;ref>官方论坛 [[forum:892682|Random New World Rework]]， 2015-11-26&lt;/ref>。
+
+'''注意：''' 在[[1.30 版本]]随机新世界功能存在bug，生成的殖民地贸易节点中无法派遣商人引导贸易流向&lt;ref>官方论坛 [[forum:1312226|EU IV - RNW lack tracks of trade nodes]]， 2020-01-22&lt;/ref>。
+
+'''注意：''' 启用随机新世界后很多国家与殖民美洲相关的任务会消失或无法完成。目前只有[[挪威任务]]、[[瑞典任务]]、[[丹麦任务]]、[[利沃尼亚任务]]、[[利沃尼亚骑士团任务]]制作了专门适配随机新世界的殖民任务。
+
+== 随机新世界方案 ==
+{{SVersion|1.25}}
+'''注：''' 以下内容中：'''幻想''' = 采用幻想设置，{{green|T}} = {{green|T}}emperate（温带，即不是热带、干旱、极地的气候。）兵种组中若为“-”，则表示和科技组相同。
+{| class="wikitable sortable"
+! rowspan=2| 剧本 !! class="unsortable" style="background-color: blue; color: white;" colspan=4| 采集触发器 !! class="unsortable" style="background-color: red; color: white;" colspan=4| 土著 !! class="unsortable" style="background-color: green; color: white;" colspan=7| 国家 !! class="unsortable" rowspan=2 | 备注 !! class="unsortable" rowspan=2 | 国家名称
+|-
+! 几率 !! {{icon|province|24px}} > !! 幻想 !! class="unsortable" | 气候
+! 数量 !! [[进攻性]] !! [[ferocity|残暴性]] !! 宗教
+! 总计 !! 大小 !! 科技组 !! 兵种组 !! 政体 !! 文化(组) !! 宗教
+|-
+| 空白的泛灵论 || 500 || || || {{icon|arid}}{{icon|tropical}}
+| data-sort-value="5" | 5 - 20 || 1 - 6 || 1 - 3 || {{icon|Animist}}
+| || || || || || ||
+| 没有特定主题
+|
+|-
+| 空白的图腾崇拜者 || 500 || || || {{icon|arctic}}{{green|T}}
+| data-sort-value="5" | 5 - 20 || 1 - 6 || 1 - 3 || {{icon|Totemist}}
+| || || || || || ||
+| 没有特定主题
+|
+|-
+| 泛灵论王国 || 200 || 30 || || {{icon|arid}}{{icon|tropical}}
+| data-sort-value="5" | 5 - 20 || 1 - 6 || 1 - 3 || {{icon|Animist}}
+| 3 - 10 || data-sort-value="5,015" | 5 - 15 || {{icon|South American}} 南美 || - || {{icon|Monarchy}} 君主制 || || {{icon|Animist}} || || {{Collapse|*Tanana
+*Wappo
+*Wintu
+*Zuni
+*Tututni
+*Seri
+*Shashta
+*Jumano
+*Kalina
+*Lipa
+*Nanticoke
+*Nauset
+*Gigra
+*Loup
+*Uchi
+*Yuki
+*Sekani
+*Samish
+*Shanel
+*Eeyou
+}}
+|-
+| 泛灵论部落 || 1000 || 30 || || {{icon|arid}}{{icon|tropical}}
+| data-sort-value="5" | 5 - 20 || 1 - 6 || 1 - 3 || {{icon|Animist}}
+| 5 - 20 || data-sort-value="1,003" | 1 - 3 || {{icon|South American}} 南美 || - || {{icon|tribe}} 部落制 || || {{icon|Animist}} || 国家间距离很远，可以进行[[迁徙]] ||
+{{collapse|*Arauluche
+*Namuncurcha
+*Quitrui
+*Tapanghuli
+*Cavipichau
+*Crambastamos
+*Tiaroru
+*Mainimbaba
+*Abapombero
+*Paranreto
+*Mametcunay
+*Tupinua
+*Ruptere
+*Guazamandu
+*Bizorué
+*Tinambi
+*Pochipahu
+*Abacahi
+*Fibajara
+*Moegau
+*Lagoqu
+*Terepeca
+*Socaxi
+*Santumbo
+}}
+|-
+| 图腾崇拜者王国 || 200 || 30 || || {{icon|arctic}}{{green|T}}
+| data-sort-value="5" | 5 - 20 || 1 - 6 || 1 - 3 || {{icon|Totemist}}
+| 3 - 10 || data-sort-value="5,015" | 5 - 15 || {{icon|North American}} 北美 || - ||{{icon|Monarchy}} 君主制 || || {{icon|Totemist}}
+|
+|{{collapse|*Eno
+*Gwichin
+*Ofo
+*Otoe
+*Pomo
+*Ute
+*Comox
+*Hidatsa
+*Hopi
+*Haisla
+*Lassik
+*Nawat
+*Puquina
+*Uru
+*Yavapai
+*Yuma
+*Yurok
+*Opata
+*Hoopa
+*Cupa
+}}
+|-
+| 图腾崇拜者部落 || 1000 || 30 || || {{icon|arctic}}{{green|T}}
+| data-sort-value="5" | 5 - 20 || 1 - 6 || 1 - 3 || {{icon|Totemist}}
+| 5 - 20 || data-sort-value="1,003" | 1 - 3 || {{icon|North American}} 北美 || - ||{{icon|tribe}} 部落制 || || {{icon|Totemist}}
+| 国家间距离很远，可以进行迁徙
+| {{collapse|*Tetonkah
+*Munhacke
+*Hekawi
+*Chelsedex
+*Bodenabé
+*Sequot
+*Attanonton
+*Attaboi
+*Chonuihara
+*Khioegara
+*Teongouten
+*Masquois
+*Tsoumatseh
+*Brislychaux
+*Wayansas
+*Nanegchik
+*Kawpanonk
+*Quibihon
+*Washois
+*Ninishee
+*Tippekapee
+*Pocabés
+*Sezekisic
+*Bangausee
+*Giyesgi
+*Ominoreg
+*Tiocapa
+}}
+|-
+| 玛雅王国 || 1000 || 30 || || {{icon|arid}}{{icon|tropical}}
+| data-sort-value="5" | 5 - 20 || 1 - 6 || 1 - 3 || {{icon|Mayan}}
+| 5 - 10 || data-sort-value="4,006" | 4 - 6 || {{icon|Mesoamerican}} 中美洲 || - ||{{icon|Monarchy}} 君主制 || 玛雅 || {{icon|Mayan}}
+| 国家间距离很近
+| {{collapse|*Aritiza
+*Petenkaj
+*Piche
+*Foankal
+*Kuzuhil
+*Tanayuc
+*Kiq'kaam
+*Qambot
+*Tamserbo
+*Kroh
+*Johlmik
+*Quqache
+*Kichantz
+*Yucajil
+*Kitzekamal
+*Quitzilok
+*Tamaib
+*Coymub
+*Tzutjaib
+*Binalré
+*Xelamam
+*Capulkah
+*Piputal
+}}
+|-
+| 纳瓦特尔王国 || 1000 || 30 || || {{icon|arid}}{{icon|tropical}}
+| data-sort-value="5" | 5 - 20 || 1 - 6 || 1 - 3 || {{icon|Nahuatl}}
+| 7 - 14 || data-sort-value="2,005" | 2 - 5 || {{icon|Mesoamerican}} 中美洲 || - ||{{icon|Monarchy}} 君主制 || 中美洲 || {{icon|Nahuatl}}
+| 国家间距离很近
+| {{collapse|*Ixconocho
+*Massaluca
+*Tejascan
+*Panemec
+*Guastahua
+*Tlaxtique
+*Zopochec
+*Tarastami
+*Mixotlan
+*Acaziltetl
+*Zapatatec
+*Tolanixec
+*Pultico
+*Mecazin
+*Olimtec
+*Quachlatzin
+*Coatlaque
+*Zotri
+*Tepetlax
+*Athadisqopan
+*Nodaca
+*Itzopan}}
+|-
+| 因蒂王国 || 1000 || 30 || || {{icon|arid}}{{icon|tropical}}
+| data-sort-value="5" | 5 - 20 || 1 - 6 || 1 - 3 || {{icon|Inti}}
+| 5 - 10 || data-sort-value="2,005" | 2 - 5 || {{icon|Andean}} 安第斯 || - || {{icon|Monarchy}} 君主制 || 安第斯 || {{icon|Inti}}
+| 国家间距离很近
+| {{collapse|
+*Concocha
+*Tikiqutra
+*Tiqsiteyu
+*Hukantinsuyo
+*Yuraqo
+*Andeqatso
+*Tocanti
+*Ayamarqo
+*Itaqanta
+*Iqtachi
+*Anqucallo
+*Limaru
+*Cascasaco
+*Bolurimac
+*Quigualachu
+*Sapacuti
+*Pachahanu
+*Oclanqui
+*Pizartuyo
+*Fernanpa
+*Sotopuna
+*Fransicaja
+}}
+|-
+| 亚特兰蒂斯遗民 || 10000 || || {{icon|yes}} ||
+| data-sort-value="2" | 2 - 15 || 2 - 6 || 1 - 3 || {{icon|Animist}}
+| 1 || data-sort-value="3,008" | 3 - 8 || {{icon|High American}} 高等美洲 || - ||{{icon|Monarchy}} 君主制 || 希腊 || {{icon|Animist}}
+| "亚特兰蒂斯" 主题，使用西欧版本的图像效果
+| 亚特兰蒂斯
+|-
+| 中华殖民地 || 20 || 10 || {{icon|yes}} || {{icon|arid}}{{icon|tropical}}{{green|T}}
+| data-sort-value="5" | 5 - 20 || 1 - 6 || 1 - 3 || {{icon|Animist}}
+| 1 || data-sort-value="5,010" | 5 - 10 || {{icon|High American}} 高等美洲 || {{icon|chinese}}中华 || {{icon|Republic}} 共和制 || 江淮|| {{icon|Confucian}}
+| 基于海岸线建立，使用亚洲版本的图像效果
+| 
+*瀛洲
+*郑和地
+|-
+| 哥伦布说对了 1 || 10000 || 10 || {{icon|yes}} ||
+| data-sort-value="2" | 2 - 15 || 2 - 6 || 1 - 3 || {{icon|Hindu}}
+| 5 - 20 || data-sort-value="1,020" | 1 - 20 || {{icon|Indian}} 印度 || - ||{{icon|Monarchy}} 君主制 || 印度斯坦 || {{icon|Hindu}}
+| 所有土地均被控制; "印度" 主题
+| {{collapse|
+*Janupur
+*Heldi
+*Panjub
+*Beglan
+*Turhit
+*Warghal
+*Rimshak
+*Angrak
+*Kaladh
+*Hock
+*Rupinam
+*Uratrip
+*Chachar
+*Massam
+*Ayidas
+*Khandjar
+*Wanagond
+*Ratsab
+*Andach
+*Khandelbagh
+*Khandelbund
+}}&lt;ref name=ind>这些是很多真实存在印度国家的变形词。&lt;/ref>
+|-
+| 哥伦布说对了 2 || 10000 || 10 || {{icon|yes}} ||
+| data-sort-value="2" | 2 - 15 || 2 - 6 || 1 - 3 || {{icon|Hindu}}
+| 5 - 20 || data-sort-value="1,020" | 1 - 20 || {{icon|Indian}} 印度 || - || {{icon|Monarchy}} 君主制 || 达罗毗荼 || {{icon|Hindu}}
+| 所有土地均被控制; "印度" 主题
+| {{collapse|
+*Nagarvij
+*Rabalam
+*Assori
+*Ardandh
+*Naffaj
+*Kalan Sri
+*Arudaim
+*Erosym
+*Denav
+*Nichok
+*Carnot
+*Pijabur
+*Olgonkad
+*Idalek
+*Hamanbis
+*Rantatic
+*Ingeeg
+*Andyk
+*Ottek
+*Erhlak
+*Nacced
+}}&lt;ref name=ind />
+|-
+| 哥伦布说对了 3 || 10000 || 10 || {{icon|yes}} ||
+| data-sort-value="2" | 2 - 15 || 2 - 6 || 1 - 3 || {{icon|Hindu}}
+| 5 - 20 || data-sort-value="1,020" | 1 - 20 || {{icon|Indian}} 印度 || - ||  {{icon|Monarchy}} 君主制 || 西雅利安 || {{icon|Hindu}}
+| 所有土地均被控制; "印度" 主题
+| {{collapse|
+*Juragat
+*Mawer
+*Warmar
+*Otadhi
+*Hundar
+*Molwa
+*Dinsh
+*Rawaihtak
+*Rerab
+*Deshaljang
+*Deshkand
+*Kantarew
+*Raugan
+*Bagalna
+*Arobad
+*Ramathas
+*Salmerjai
+*Nagarmahed
+*Ultam
+*Abansh
+*Uchistanbal
+}}&lt;ref name=ind />
+|-
+| [[wikipedia:Thor_Heyerdahl#Boats Ra and Ra II|海尔达尔]]说得对&lt;ref>托尔·海尔达尔是挪威的人类学者、海洋生物学者、探险家。1969年和1970年，以埃及古王室墓室笔画为本，制造芦苇船（纸莎草船）“太阳”号，两次模拟古代探险的伟大航程，终于横跨大西洋，自摩洛哥的萨非港直达加勒比海的巴巴多斯，从而证明了地中海古代文明可能通过这样的方式传播至美洲。&lt;/ref> || 10 || 10 || {{icon|yes}} || {{icon|arid}}
+| data-sort-value="5" | 5 - 20 || 1 - 6 || 1 - 3 || {{icon|Animist}}
+| 1 || data-sort-value="5,010" | 5 - 10 || {{icon|High American}} 高等美洲|| {{icon|Mesoamerican}}中美洲 || {{icon|Monarchy}} 君主制 || 埃及|| {{icon|Animist}}
+| 基于海岸线建立
+| Kemet&lt;ref>古埃及的名称，意为“黑土”&lt;/ref>
+|-
+| 高等美洲因蒂帝国 || 20 || 30 || {{icon|yes}} || {{icon|arid}}{{icon|tropical}}{{green|T}}
+| data-sort-value="20" | 20 - 50 || 3 - 9 || 3 - 6 || {{icon|Inti}}
+| 1 || data-sort-value="30,050" | 30 - 50 || {{icon|High American}} 高等美洲 || - || {{icon|Monarchy}} 君主制 || 安第斯 || {{icon|Inti}}
+| 
+| 灼热帝国
+|-
+| 高等美洲玛雅帝国 || 20 || 30 || {{icon|yes}} || {{icon|arid}}{{icon|tropical}}{{green|T}}
+| data-sort-value="20" | 20 - 50 || 3 - 9 || 3 - 6 || {{icon|Mayan}}
+| 1 || data-sort-value="30,050" | 30 - 50 || {{icon|High American}} 高等美洲 || - || {{icon|Monarchy}} 君主制 || 玛雅 || {{icon|Mayan}}
+|
+|绯红帝国
+|-
+| 高等美洲纳瓦特尔帝国 || 20 || 30 || {{icon|yes}} || {{icon|arid}}{{icon|tropical}}{{green|T}}
+| data-sort-value="20" | 20 - 50 || 3 - 9 || 3 - 6 || {{icon|Nahuatl}}
+| 1 || data-sort-value="30,050" | 30 - 50 || {{icon|High American}} 高等美洲 || - || {{icon|Monarchy}} 君主制 || 中美洲 || {{icon|Nahuatl}}
+|
+| 黑曜石帝国
+|-
+| 高等美洲共和国 || 15 || 30 || {{icon|yes}} || {{green|T}}
+| data-sort-value="20" | 20 - 50 || 3 - 9 || 3 - 6 || {{icon|Totemist}}
+| 1 || data-sort-value="30,050" | 30 - 50 || {{icon|High American}} 高等美洲 || - || {{icon|Republic}} 共和制 || 易洛魁 || {{icon|Totemist}}
+| 
+| 长屋同盟
+|-
+| 童女地 || 10 || 10 || {{icon|yes}} || {{icon|tropical}}{{green|T}}
+| data-sort-value="5" | 5 - 20 || 1 - 6 || 1 - 3 || {{icon|Hindu}}
+| 1 || data-sort-value="10,015" | 10 - 15 || {{icon|High American}} 高等美洲 || {{icon|Indian}}印度 || {{icon|Monarchy}} 君主制 || 泰米尔 || {{icon|Hindu}}
+| 基于海岸线建立，使用印度版本的图像效果
+| Kumarinadu&lt;ref>泰米尔语中对本大陆的称谓&lt;/ref>
+|-
+| 失落的巴尔干人 || 10 || 10 || {{icon|yes}} || {{icon|arctic}}{{icon|arid}}{{green|T}}
+| data-sort-value="5" | 5 - 20 || 1 - 6 || 1 - 3 || {{icon|Animist}}
+| 2 || data-sort-value="2,004" | 2 - 4 || {{icon|High American}} 高等美洲 || {{icon|eastern}}东欧 || {{icon|tribe}} 部落制 || 塞尔维亚 || {{icon|Animist}}
+| 使用东欧版本的图像效果
+|
+* 失落波斯尼亚
+* 失落塞尔维亚
+|-
+| 失落的圣殿骑士团 || 10 || 10 || {{icon|yes}} || {{icon|arid}}{{green|T}}
+| data-sort-value="2" | 2 - 15 || 2 - 6 || 1 - 3 || {{icon|Catholic}}
+| 1 || data-sort-value="2,005" | 2 - 5 || {{icon|High American}} 高等美洲 || {{icon|western}}西欧 ||{{icon|Theocracy}} 骑士团 || 法兰西 || {{icon|Tengri}}&lt;ref>据rnw_scenario中注释，选择长生天是由于十四世纪时圣堂武士疯狂崇拜巴弗灭（Baphomet），基督教邪神&lt;/ref>
+| 基于海岸线建立，使用西欧版本的图像效果
+| 圣殿骑士团
+|-
+| 失踪的犹太人 || 10 || 10 || {{icon|yes}} || {{icon|arctic}}{{icon|arid}}{{green|T}}
+| data-sort-value="5" | 5 - 20 || 1 - 6 || 1 - 3 || {{icon|Jewish}}
+| 1 || data-sort-value="3,010" | 3 - 10 || {{icon|High American}} 高等美洲 || {{icon|muslim}}穆斯林 ||{{icon|tribe}} 部落制 || 叙利亚 || {{icon|Jewish}}
+| 使用穆斯林版本的图像效果
+|
+|-
+| 圣约瑟骑士团 || 10 || 10 || {{icon|yes}} || {{icon|arid}}
+| data-sort-value="5" | 5 - 20 || 1 - 6 || 1 - 3 || {{icon|Animist}}
+| 1 || data-sort-value="5,010" | 5 - 10 || {{icon|High American}} 高等美洲 || {{icon|western}}西欧 ||{{icon|Theocracy}} 骑士团 || 英格兰 || {{icon|Reformed}}
+| 基于沙漠建立，使用西欧版本的图像效果
+| 圣约瑟骑士团
+|-
+| 秘境丹麦&lt;ref>在早期版本的EU4转档VIC2转档器中，由于bug，格陵兰会被转换成一个名为“秘境丹麦”的国家。&lt;/ref> || 10 || 5 - 20 || {{icon|yes}} || {{icon|arctic}}{{green|T}}
+| data-sort-value="5" | 5 - 20 || 1 - 6 || 1 - 3 || {{icon|Animist}}
+| 1 || data-sort-value="5,010" | 5 - 10 || {{icon|High American}} 高等美洲 || {{icon|western}}西欧 ||{{icon|Republic}} 共和制 || 丹麦 || {{icon|Zoroastrian}}
+| 基于海岸线建立，使用西欧版本的图像效果
+| 秘境丹麦
+|-
+| 文兰|| 30 || 10 || {{icon|yes}} || {{icon|arctic}}{{green|T}}
+| data-sort-value="5" | 5 - 20 || 1 - 6 || 1 - 3 || {{icon|Animist}}
+| 1 || data-sort-value="5,010" | 5 - 10 || {{icon|High American}} 高等美洲 || {{icon|western}}西欧 ||{{icon|Monarchy}} 君主制 || 挪威|| {{icon|Norse}}
+| 基于海岸线建立，使用西欧版本的图像效果
+| 文兰
+|}
+
+== 随机新世界板块 ==
+{{SVersion|1.23}}
+'''图示：''' '''ICT''' =  1级内陆贸易中心，'''INH''' = 1级沿岸贸易中心，{{icon|estuary}} = 河口。
+
+'''注：''' 以下所有的地块名称，除了''johan1''和''water''，都以"''tile''"作为文件名首个单词，此处省略。
+
+{| class="wikitable sortable"
+! 名称!! 权重!! 大小
+! 陆地省份数目!! 海洋区块数目!! 地区数目
+! 是否为大陆!! 索引号&lt;ref>部分剧本只在特定索引号中出现，例如平行世界印度的剧本需要索引号10，而亚特兰蒂斯剧本对应20&lt;/ref>
+! class="unsortable" | 省份修正!! class="unsortable" | 附注
+|-
+| johan1 || 100 || data-sort-value="2,002" | 2 × 2
+| 58 || 6 ||
+| ||
+| INH (×3) ||
+|-
+| 0 || 50 || data-sort-value="7,007" | 7 × 7
+| 185 || 21 || 2
+| {{icon|yes}} ||
+| ICT (×2), INH (×5), {{icon|estuary}} (×4) ||
+|-
+| 2 || 100 || data-sort-value="2,002" | 2 × 2
+| 30 || 10 ||
+| ||
+| {{icon|estuary}} ||
+|-
+| 3 || 100 || data-sort-value="2,002" | 2 × 2
+| 32 || 8 ||
+| ||
+| ||
+|-
+| 4 || 100 || data-sort-value="4,004" | 4 × 4
+| 97 || 15 || 2
+| ||
+| {{icon|estuary}} ||
+|-
+| 5 || 100 || data-sort-value="2,002" | 2 × 2
+| 23 || 10 ||
+| ||
+| INH ||
+|-
+| danubian1 || 100 || data-sort-value="2,002" | 2 × 2
+| 26 || 4 ||
+| ||
+| INH ||
+|-
+| danubian2 || 100 || data-sort-value="2,002" | 2 × 2
+| 27 || 5 ||
+| ||
+| INH ||
+|-
+| danubian3 || 100 || data-sort-value="6,006" | 6 × 6
+| 215 || 16 || 2
+| {{icon|yes}} ||
+| ICT, INH (×4) ||
+|-
+| danubian4 || 100 || data-sort-value="2,002" | 2 × 2
+| 37 || 5 ||
+| ||
+| ||
+|-
+| danubian5 || 100 || data-sort-value="4,004" | 4 × 4
+| 79 || 31 ||
+| ||
+| INH (×3) ||
+|-
+| danubian6 || 100 || data-sort-value="2,002" | 2 × 2
+| 35 || 5 ||
+| ||
+| ||
+|-
+| danubian7 || 100 || data-sort-value="2,002" | 2 × 2
+| 24 || 4 ||
+| ||
+| INH ||
+|-
+| danubian8 || 100 || data-sort-value="4,004" | 4 × 4
+| 150 || 23 || 2
+| ||
+| INH (×4) ||
+|-
+| danubian9 || 100 || data-sort-value="2,002" | 2 × 2
+| 24 || 4 ||
+| ||
+| INH (×2) ||
+|-
+| danubian10 || 100 || data-sort-value="2,002" | 2 × 2
+| 22 || 4 ||
+| ||
+| ||
+|-
+| danubian11 || 100 || data-sort-value="2,002" | 2 × 2
+| 17 || 4 ||
+| ||
+| ||
+|-
+| danubian12 || 100 || data-sort-value="2,002" | 2 × 2
+| 20 || 4 ||
+| ||
+| ||
+|-
+| elmorte || 100 || data-sort-value="10,007" | 10 × 7
+| 477 || 29 || 3
+| {{icon|yes}} ||
+| ICT (×2), INH (×6), {{icon|estuary}} (×4) || ''不''旋转; 仅出现在''北侧''边缘
+|-
+| elmorte2 || 100 || data-sort-value="9,009" | 9 × 9
+| 559 || 38 || 6
+| || 1
+| ICT (×5), INH (×3), {{icon|estuary}} (×5) ||
+|-
+| elzephor1 || 100 || data-sort-value="18,009" | 18 × 9
+| 703 || 88 || 18
+| {{icon|yes}} ||
+| ICT (×6), INH (×18), {{icon|estuary}} (×21), 天堂 (×6) || 为现实世界马尔维纳斯群岛放大版
+|-
+| elzephor2 || 100 || data-sort-value="14,012" | 14 × 12
+| 809 || 58 || 15
+| {{icon|yes}} ||
+| ICT (×3), INH (×19), {{icon|estuary}} (×25) || 热带气候; "Mountains" 主题；为现实世界无冰盖的南极大陆
+|-
+| elzephor3 || 100 || data-sort-value="13,013" | 13 × 13
+| 612 || 51 || 11
+| {{icon|yes}} ||
+| ICT (×9), INH (×12), {{icon|estuary}} (×45) || ''不''旋转；为现实世界夏洛特皇后群岛放大版
+|-
+| farthestindia || 10 || data-sort-value="5,005" | 5 × 5
+| 164 || 15 || 3
+| || 10
+| ICT (×2), INH (×6), {{icon|estuary}} (×5) || '''幻想剧本'''; 仅出现在''赤道''; "印度" 主题
+|-
+| fryza || 100 || data-sort-value="5,005" | 5 × 5
+| 80 || 11 ||
+| ||
+| {{icon|estuary}} (×5) ||
+|-
+| fryzb || 50 || data-sort-value="11,011" | 11 × 11
+| 381 || 58 || 4
+| {{icon|yes}} || 3
+| ICT, INH (×3), {{icon|estuary}} (×5) ||
+|-
+| fryzB2 || 50 || data-sort-value="9,010" | 9 × 10
+| 385 || 57 || 4
+| {{icon|yes}} || 3
+| ICT, INH (×3), {{icon|estuary}} (×5) || ''不''旋转; 仅出现在''北侧''边缘
+|-
+| fryzC || 50 || data-sort-value="10,010" | 10 × 10
+| 445 || 46 || 2
+| {{icon|yes}} || 2
+| ICT (×3), INH (×7), {{icon|estuary}} (×10) ||
+|-
+| fryzC2 || 50 || data-sort-value="8,009" | 8 × 9
+| 444 || 46 || 2
+| {{icon|yes}} || 2
+| ICT (×3), INH (×7), {{icon|estuary}} (×7) || ''不''旋转; 仅出现在''南侧''边缘
+|-
+| fryzD || 100 || data-sort-value="7,007" | 7 × 7
+| 289 || 62 || 2
+| {{icon|yes}} ||
+| ICT (×2), INH (×6), {{icon|estuary}} (×3) ||
+|-
+| fryzE || 10 || data-sort-value="5,006" | 5 × 6
+| 134 || 37 || 1
+| || 20
+| INH (×4), {{icon|estuary}} (×4), 亚特兰蒂斯遗迹 || '''幻想剧本'''
+|-
+| fryzF || 100 || data-sort-value="4,004" | 4 × 4
+| 101 || 23 || 3
+| ||
+| ICT, INH, {{icon|estuary}} (×4) ||
+|-
+| mef1 || 100 || data-sort-value="12,012" | 12 × 12
+| 692 || 71 || 7
+| {{icon|yes}} ||
+| ICT (×3), INH (×6), {{icon|estuary}} (×9) || 热带气候; "PDX" 主题
+|-
+| mef2 || 100 || data-sort-value="6,012" | 6 × 12
+| 393 || 51 || 4
+| {{icon|yes}} ||
+| ICT (×2), INH (×5), {{icon|estuary}} (×7) || "The Three Mountains" 主题
+|-
+| ofa1 || 100 || data-sort-value="4,002" | 4 × 2
+| 46 || 14 || 1
+| ||
+| {{icon|estuary}} ||
+|-
+| ofa2 || 100 || data-sort-value="2,002" | 2 × 2
+| 21 || 7 ||
+| ||
+| INH ||
+|-
+| ofa3 || 100 || data-sort-value="11,011" | 11 × 11
+| 569 || 115 || 3
+| {{icon|yes}} ||
+| ICT, INH (×2), {{icon|estuary}} ||
+|-
+| ofa4 || 100 || data-sort-value="10,008" | 10 × 8
+| 404 || 62 || 3
+| {{icon|yes}} ||
+| INH (×7), {{icon|estuary}} (×2) || ''不''旋转; 仅出现在''南侧''边缘
+|-
+| ofa5 || 100 || data-sort-value="2,002" | 2 × 2
+| 30 || 8 ||
+| ||
+| INH ||
+|-
+| ofa6 || 100 || data-sort-value="4,004" | 4 × 4
+| 130 || 25 || 1
+| ||
+| INH ||
+|-
+| ofa7 || 100 || data-sort-value="1,001" | 1 × 1
+| 18 || 9 ||
+| ||
+| ||
+|-
+| ofa8 || 100 || data-sort-value="2,001" | 2 × 1
+| 15 || 6 ||
+| ||
+| ||
+|-
+| ofa10 || 100 || data-sort-value="1,001" | 1 × 1
+| 7 || 4 ||
+| ||
+| ||
+|-
+| oltner1 || 50 || data-sort-value="6,006" | 6 × 6
+| 152 || 32 || 2
+| {{icon|yes}} ||
+| INH (×4), {{icon|estuary}} ||
+|-
+| oltner2 || 100 || data-sort-value="16,016" | 16 × 16
+| 848 || 89 || 18
+| {{icon|yes}} ||
+| ICT (×12), INH (×24), {{icon|estuary}} (×7) || ''不''旋转; 仅出现在''北侧''边缘; 热带气候
+|-
+| oltner3 || 100 || data-sort-value="8,008" | 8 × 8
+| 470 || 57 || 5
+| {{icon|yes}} ||
+| ICT (×5), INH (×9), {{icon|estuary}} (×3) || ''不''旋转; 仅出现在''北侧''边缘
+|-
+| oltner4 || 100 || data-sort-value="2,002" | 2 × 2
+| 47 || 13 ||
+| ||
+| ICT, INH ||
+|-
+| oltner5 || 100 || data-sort-value="2,002" | 2 × 2
+| 58 || 14 ||
+| ||
+| INH (×2) ||
+|-
+| oltner6 || 75 || data-sort-value="5,003" | 5 × 3
+| 160 || 16 || 3
+| ||
+| ICT (×2), INH (×5), 彗星矿物 ||
+|-
+| oltner7 || 50 || data-sort-value="12,006" | 12 × 6
+| 632 || 51 || 8
+| {{icon|yes}} ||
+| ICT (×8), INH (×11), {{icon|estuary}} (×3), 天堂 (×4) || 
+|-
+| oltner8 || 15 || data-sort-value="2,001" | 2 × 1
+| 11 || 3 ||
+| ||
+| INH || '''幻想剧本'''; "利维坦" 主题&lt;ref>[[群星]]中有一个对应的星球异常点，在一颗星球某处发现了奇怪形状的大陆，经调查发现是巨型生物（利维坦）的遗骸，而本板块最中央的荒芜之地也形似利维坦残余的骨架。&lt;/ref>
+|-
+| oltner9 || 100 || data-sort-value="1,001" | 1 × 1
+| 4 || 3 ||
+| ||
+| ||
+|-
+| oltner10 || 100 || data-sort-value="1,001" | 1 × 1
+| 3 || 2 ||
+| ||
+| ||
+|-
+| oltner11 || 100 || data-sort-value="1,001" | 1 × 1
+| 3 || 2 ||
+| ||
+| ||
+|-
+| oltner12 || 100 || data-sort-value="1,004" | 1 × 4
+| 22 || 9 ||
+| ||
+| ||
+|-
+| oltner13 || 100 || data-sort-value="3,002" | 3 × 2
+| 44 || 10 ||
+| ||
+| ||
+|-
+| oltner14 || 100 || data-sort-value="2,004" | 2 × 4
+| 55 || 15 ||
+| ||
+| ||
+|-
+| oltner15 || 100 || data-sort-value="1,004" | 1 × 4
+| 43 || 15 ||
+| ||
+| ||
+|-
+| oltner16 || 100 || data-sort-value="3,004" | 3 × 4
+| 62 || 13 ||
+| ||
+| ICT, INH (×2) || ''不''旋转; 仅出现在''北侧''边缘
+|-
+| oltner17 || 100 || data-sort-value="1,001" | 1 × 1
+| 3 || 2 ||
+| ||
+| ||
+|-
+| oltner18 || 10000 || data-sort-value="1,001" | 1 × 1
+| 3 || 2 ||
+| ||
+| ||
+|-
+| oltner19 || 100 || data-sort-value="1,001" | 1 × 1
+| 3 || 2 ||
+| ||
+| ||
+|-
+| oltner20 || 100 || data-sort-value="3,004" | 3 × 4
+| 56 || 10 ||
+| ||
+| INH (×2) || ''不''旋转; 仅出现在''北侧''边缘
+|-
+| oltner21 || 100 || data-sort-value="2,002" | 2 × 2
+| 17 || 8 ||
+| ||
+| INH ||
+|-
+| oltner22 || 100 || data-sort-value="1,003" | 1 × 3
+| 15 || 7 ||
+| ||
+| INH || ''不''旋转; 仅出现在''南侧''边缘
+|-
+| oltner23 || 100 || data-sort-value="1,001" | 1 × 1
+| 5 || 3 ||
+| ||
+| ||
+|-
+| oltner24 || 100 || data-sort-value="3,004" | 3 × 4
+| 27 || 6 ||
+| ||
+| INH || ''不''旋转; 仅出现在''南侧''边缘
+|-
+| oltner25 || 100 || data-sort-value="1,001" | 1 × 1
+| 6 || 2 ||
+| ||
+| ||
+|-
+| oltner26 || 100 || data-sort-value="3,003" | 3 × 3
+| 56 || 11 ||
+| ||
+| ICT, INH (×2) ||
+|-
+| oltner27 || 100 || data-sort-value="1,001" | 1 × 1
+| 3 || 2 ||
+| ||
+| ||
+|-
+| oltner28 || 100 || data-sort-value="1,002" | 1 × 2
+| 17 || 5 ||
+| ||
+| INH ||
+|-
+| oltner29 || 100 || data-sort-value="4,004" | 4 × 4
+| 67 || 10 ||
+| ||
+| ICT, INH (×2) ||
+|-
+| oltner30 || 100 || data-sort-value="4,004" | 4 × 4
+| 48 || 10 ||
+| ||
+| INH (×2) ||
+|-
+| oltner31 || 100 || data-sort-value="1,001" | 1 × 1
+| 3 || 2 ||
+| ||
+| ||
+|-
+| paradox || 2 || data-sort-value="2,002" | 2 × 2
+| 30 || 11 || 1
+| ||
+| INH || '''幻想剧本'''; ''不''旋转; "p社logo" 主题
+|-
+| poh1 || 100 || data-sort-value="3,003" | 3 × 3
+| 43 || 9 ||
+| ||
+| INH (×2) ||
+|-
+| poh2 || 35 || data-sort-value="1,001" | 1 × 1
+| 5 || 5 ||
+| ||
+| || '''幻想剧本'''; 仅出现在''赤道''
+|-
+| poh3 || 100 || data-sort-value="2,001" | 2 × 1
+| 24 || 4 ||
+| ||
+| INH || ''不''旋转; 仅出现在''南侧''边缘
+|-
+| poh4 || 100 || data-sort-value="3,002" | 3 × 2
+| 19 || 6 ||
+| ||
+| ||
+|-
+| poh5 || 100 || data-sort-value="2,002" | 2 × 2
+| 24 || 5 ||
+| ||
+| INH ||
+|-
+| poh6 || 100 || data-sort-value="4,004" | 4 × 4
+| 135 || 22 ||
+| ||
+| INH (×3) ||
+|-
+| poh7 || 100 || data-sort-value="5,003" | 5 × 3
+| 138 || 17 ||
+| ||
+| INH (×3) || ''不''旋转
+|-
+| poh8 || 75 || data-sort-value="1,001" | 1 × 1
+| 8 || 5 ||
+| ||
+| INH ||
+|-
+| poh9 || 100 || data-sort-value="1,001" | 1 × 1
+| 7 || 4 ||
+| ||
+| ||
+|-
+| poh10 || 100 || data-sort-value="1,001" | 1 × 1
+| 2 || 1 ||
+| ||
+| ||
+|-
+| poh11 || 100 || data-sort-value="1,001" | 1 × 1
+| 1 || 1 ||
+| ||
+| ||
+|-
+| poh12 || 100 || data-sort-value="1,001" | 1 × 1
+| 1 || 2 ||
+| ||
+| ||
+|-
+| poh13 || 25 || data-sort-value="3,016" | 3 × 16
+| 347 || 64 || 3
+| {{icon|yes}} ||
+| ICT (×2), INH (×5), 恶魔之门 || '''幻想剧本'''; "恶魔之门" 主题
+|-
+| poh14 || 100 || data-sort-value="8,009" | 8 × 9
+| 283 || 72 || 3
+| {{icon|yes}} ||
+| INH (×5) || ''不''旋转; 仅出现在''北侧''边缘
+|-
+| poh15 || 100 || data-sort-value="18,006" | 18 × 6
+| 186 || 88 || 3
+| {{icon|yes}} || 15
+| ICT, INH (×5), {{icon|estuary}} || ''不''旋转; 仅出现在''北侧''边缘
+|-
+| poh16 || 100 || data-sort-value="18,003" | 18 × 3
+| 53 || 36 || 1
+| {{icon|yes}} || 15
+| INH (×4) || ''不''旋转; 仅出现在''北侧''边缘
+|-
+| poh17 || 100 || data-sort-value="4,003" | 4 × 3
+| 14 || 12 || 1
+| || 15
+| INH ||
+|-
+| poh18 || 100 || data-sort-value="10,004" | 10 × 4
+| 124 || 46 || 2
+| {{icon|yes}} || 15
+| ICT, INH (×2), {{icon|estuary}} ||
+|-
+| poh19 || 20 || data-sort-value="4,004" | 4 × 4
+| 69 || 12 || 1
+| ||
+| ICT, INH (×4), {{icon|estuary}} || '''幻想剧本'''; ''不''旋转; "财宝岛" 主题；形似人类颅骨
+|-
+| poh20 || 100 || data-sort-value="5,004" | 5 × 4
+| 103 || 18 || 1
+| ||
+| INH (×5), {{icon|estuary}} (×2) ||
+|-
+| poh21 || 100 || data-sort-value="8,005" | 8 × 5
+| 161 || 32 || 2
+| {{icon|yes}} ||
+| ICT, INH (×5), {{icon|estuary}} (×4) ||
+|-
+| poh22 || 100 || data-sort-value="18,012" | 18 × 12
+| 814 || 114 || 5
+| {{icon|yes}} ||
+| ICT (×9), INH (×9), {{icon|estuary}} (×8) || ''不''旋转
+|-
+| poh23 || 50 || data-sort-value="7,007" | 7 × 7
+| 259 || 44 || 3
+| ||
+| ICT, INH (×6), {{icon|estuary}} (×3) || '''幻想剧本'''
+|-
+| poh24 || 100 || data-sort-value="8,003" | 8 × 3
+| 91 || 30 || 1
+| ||
+| INH (×7) ||
+|-
+| poh25 || 100 || data-sort-value="7,005" | 7 × 5
+| 204 || 20 || 2
+| ||
+| ICT, INH (×4), {{icon|estuary}} (×2) ||
+|-
+| poh26 || 100 || data-sort-value="5,004" | 5 × 4
+| 144 || 14 || 1
+| ||
+| ICT, INH (×2), {{icon|estuary}} ||
+|-
+| poh27 || 100 || data-sort-value="9,007" | 9 × 7
+| 290 || 38 || 2
+| {{icon|yes}} ||
+| ICT, INH (×6), {{icon|estuary}} (×7) ||
+|-
+| poh28 || 100 || data-sort-value="9,012" | 9 × 12
+| 387 || 46 || 3
+| {{icon|yes}} ||
+| ICT, INH (×11), {{icon|estuary}} (×6) ||
+|-
+| poh29 || 100 || data-sort-value="10,007" | 10 × 7
+| 381 || 31 || 2
+| {{icon|yes}} ||
+| ICT (×3), INH (×6), {{icon|estuary}} (×4) ||
+|-
+| poh30 || 100 || data-sort-value="13,010" | 13 × 10
+| 741 || 28 || 4
+| {{icon|yes}} ||
+| ICT (×8), INH (×2), {{icon|estuary}} (×7) ||
+|-
+| poh31 || 100 || data-sort-value="5,005" | 5 × 5
+| 103 || 34 || 2
+| ||
+| INH (×7) ||
+|-
+| poh32 || 100 || data-sort-value="7,003" | 7 × 3
+| 108 || 20 || 2
+| ||
+| ICT (×3), INH (×5), {{icon|estuary}} (×4) ||
+|-
+| poh33 || 100 || data-sort-value="18,010" | 18 × 10
+| 608 || 56 || 4
+| {{icon|yes}} ||
+| INH (×15), {{icon|estuary}} (×5) || ''不''旋转; 仅出现在''南侧''边缘; "极地" 主题
+|-
+| poh34 || 100 || data-sort-value="7,006" | 7 × 6
+| 259 || 14 || 2
+| ||
+| ICT (×2), INH (×4), {{icon|estuary}} (×4) ||
+|-
+| poh35 || 100 || data-sort-value="9,007" | 9 × 7
+| 413 || 20 || 2
+| {{icon|yes}} ||
+| ICT (×2), INH (×6), {{icon|estuary}} (×5) ||
+|-
+| poh36 || 100 || data-sort-value="12,016" | 12 × 16
+| 538 || 41 || 3
+| {{icon|yes}} ||
+| ICT, INH (×16), {{icon|estuary}} (×3) || ''不''旋转; "极地" 主题
+|-
+| poh37 || 100 || data-sort-value="6,005" | 6 × 5
+| 141 || 17 || 2
+| ||
+| INH (×8), {{icon|estuary}} (×2) ||
+|-
+| poh38 || 100 || data-sort-value="4,003" | 4 × 3
+| 52 || 11 || 1
+| ||
+| INH (×2), {{icon|estuary}} ||
+|-
+| poh39 || 100 || data-sort-value="6,004" | 6 × 4
+| 64 || 19 || 1
+| ||
+| INH (×7), {{icon|estuary}} (×2) ||
+|-
+| poh40 || 100 || data-sort-value="10,003" | 10 × 3
+| 84 || 20 || 1
+| ||
+| INH (×8) ||
+|-
+| poh41 || 100 || data-sort-value="11,008" | 11 × 8
+| 318 || 22 || 2
+| {{icon|yes}} ||
+| ICT (×5), INH (×14), {{icon|estuary}} (×3) || ''不''旋转
+|-
+| poh42 || 100 || data-sort-value="10,007" | 10 × 7
+| 219 || 29 || 2
+| ||
+| ICT, INH (×7), {{icon|estuary}} (×5) ||
+|-
+| poh43 || 100 || data-sort-value="12,008" | 12 × 8
+| 525 || 26 || 3
+| {{icon|yes}} ||
+| ICT (×9), INH (×11), {{icon|estuary}} (×9) ||
+|-
+| poh44 || 100 || data-sort-value="9,006" | 9 × 6
+| 233 || 16 || 3
+| ||
+| INH (×14), {{icon|estuary}} ||
+|-
+| poh45 || 100 || data-sort-value="13,007" | 13 × 7
+| 479 || 29 || 4
+| {{icon|yes}} ||
+| ICT (×4), INH (×21), {{icon|estuary}} (×3) ||
+|-
+| poh46 || 100 || data-sort-value="5,003" | 5 × 3
+| 94 || 10 || 2
+| ||
+| INH (×12) ||
+|-
+| poh47 || 100 || data-sort-value="6,004" | 6 × 4
+| 127 || 11 || 2
+| ||
+| INH (×5), {{icon|estuary}} (×2) ||
+|-
+| poh48 || 100 || data-sort-value="4,006" | 4 × 6
+| 82 || 14 || 1
+| ||
+| INH (×10), {{icon|estuary}} ||
+|-
+| poh49 || 100 || data-sort-value="7,007" | 7 × 7
+| 249 || 15 || 2
+| ||
+| ICT (×5), INH (×7), {{icon|estuary}} (×4) ||
+|-
+| poh50 || 100 || data-sort-value="4,005" | 4 × 5
+| 106 || 18 || 2
+| ||
+| ICT, INH (×7), {{icon|estuary}} ||
+|-
+| water1 || 30 || data-sort-value="1,001" | 1 × 1
+| || ||
+| || -1
+| ||
+|-
+| water2 || 30 || data-sort-value="2,002" | 2 × 2
+| || 1 ||
+| || -1
+| ||
+|-
+| water3 || 30 || data-sort-value="4,004" | 4 × 4
+| || 4 ||
+| || -1
+| ||
+|}
+===专有修正===
+以下省份修正仅出现于RNW剧本中：
+
+====彗星矿物====
+*{{icon|local goods produced|28px}} {{green|+5.0}} 本地商品产出 
+
+====天堂====
+*{{icon|local goods produced|28px}} {{green|+1.0}} 本地商品产出 
+*{{icon|local development cost|28px}} {{DLC-only|本地提升发展度花费|-10}}
+
+====恶魔之门====
+*{{icon|local trade power|28px}} {{green|+10}} 本地贸易竞争力
+*{{icon|local development cost|28px}} {{DLC-only|本地提升发展度花费|-5}}
+*{{icon|naval forcelimit|28px}} {{green|+2}} 海军规模上限
+
+====亚特兰蒂斯遗迹====
+*{{icon|tech cost|28px}} {{green|-5%}} 科技花费
+*{{icon|inst spread|28px}} {{green|+10%}} 本地思潮传播
+
+
+==成就==
+{{Achievement|我在哪？|作为随机新世界土著国家，探索整个新世界。|image=Where am I?.png|en=Where am I?}}
+== 参考资料 ==
+&lt;references/>
+
+[[Category:游戏概念]]
+[[en:Random_New_World]]
+</textarea><div class="templatesUsed"><div class="mw-templatesUsedExplanation"><p>本页使用的模板：
+</p></div><ul>
+<li><a href="https://www.eu4cn.com/wiki/Template:Achievement" class="mw-redirect" title="Template:Achievement">Template:Achievement</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Achievement&amp;action=edit" class="mw-redirect" title="Template:Achievement">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Ambox" title="Template:Ambox">Template:Ambox</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Ambox&amp;action=edit" title="Template:Ambox">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Ambox/core" title="Template:Ambox/core">Template:Ambox/core</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Ambox/core&amp;action=edit" title="Template:Ambox/core">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Ambox_2020" title="Template:Ambox 2020">Template:Ambox 2020</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Ambox_2020&amp;action=edit" title="Template:Ambox 2020">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Anchor" title="Template:Anchor">Template:Anchor</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Anchor&amp;action=edit" title="Template:Anchor">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Collapse" title="Template:Collapse">Template:Collapse</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Collapse&amp;action=edit" title="Template:Collapse">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:DLC-only" title="Template:DLC-only">Template:DLC-only</a>（<a href="https://www.eu4cn.com/index.php?title=Template:DLC-only&amp;action=edit" title="Template:DLC-only">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Expansion" title="Template:Expansion">Template:Expansion</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Expansion&amp;action=edit" title="Template:Expansion">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Green" title="Template:Green">Template:Green</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Green&amp;action=edit" title="Template:Green">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon" title="Template:Icon">Template:Icon</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon&amp;action=edit" title="Template:Icon">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/a" title="Template:Icon/a">Template:Icon/a</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/a&amp;action=edit" title="Template:Icon/a">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/c" title="Template:Icon/c">Template:Icon/c</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/c&amp;action=edit" title="Template:Icon/c">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/e" title="Template:Icon/e">Template:Icon/e</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/e&amp;action=edit" title="Template:Icon/e">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/h" title="Template:Icon/h">Template:Icon/h</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/h&amp;action=edit" title="Template:Icon/h">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/i" title="Template:Icon/i">Template:Icon/i</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/i&amp;action=edit" title="Template:Icon/i">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/j" title="Template:Icon/j">Template:Icon/j</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/j&amp;action=edit" title="Template:Icon/j">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/l" title="Template:Icon/l">Template:Icon/l</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/l&amp;action=edit" title="Template:Icon/l">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/m" title="Template:Icon/m">Template:Icon/m</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/m&amp;action=edit" title="Template:Icon/m">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/n" title="Template:Icon/n">Template:Icon/n</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/n&amp;action=edit" title="Template:Icon/n">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/p" title="Template:Icon/p">Template:Icon/p</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/p&amp;action=edit" title="Template:Icon/p">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/r" title="Template:Icon/r">Template:Icon/r</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/r&amp;action=edit" title="Template:Icon/r">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/s" title="Template:Icon/s">Template:Icon/s</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/s&amp;action=edit" title="Template:Icon/s">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/t" title="Template:Icon/t">Template:Icon/t</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/t&amp;action=edit" title="Template:Icon/t">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/w" title="Template:Icon/w">Template:Icon/w</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/w&amp;action=edit" title="Template:Icon/w">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/xyz" title="Template:Icon/xyz">Template:Icon/xyz</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/xyz&amp;action=edit" title="Template:Icon/xyz">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/y" title="Template:Icon/y">Template:Icon/y</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/y&amp;action=edit" title="Template:Icon/y">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/z" title="Template:Icon/z">Template:Icon/z</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/z&amp;action=edit" title="Template:Icon/z">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Iconbox" title="Template:Iconbox">Template:Iconbox</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Iconbox&amp;action=edit" title="Template:Iconbox">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:N" title="Template:N">Template:N</a>（<a href="https://www.eu4cn.com/index.php?title=Template:N&amp;action=edit" title="Template:N">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Path" title="Template:Path">Template:Path</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Path&amp;action=edit" title="Template:Path">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:SVersion" title="Template:SVersion">Template:SVersion</a>（<a href="https://www.eu4cn.com/index.php?title=Template:SVersion&amp;action=edit" title="Template:SVersion">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Version" title="Template:Version">Template:Version</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Version&amp;action=edit" title="Template:Version">查看源代码</a>）（受保护）</li></ul></div><p id="mw-returnto">返回<a href="https://www.eu4cn.com/wiki/随机新世界" title="随机新世界">随机新世界</a>。</p>
+</div>						</div>
+				</div>
+				<footer>
+				<div class="liberty-footer">
+										<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>					<div class="bottom-ads mobile-ab">
+						<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+						<!-- 移动端底部 -->
+						<ins class="adsbygoogle mobile-ab"
+						     style="display:block"
+						     data-ad-client="ca-pub-1612414434963106"
+						     data-ad-slot="3303553671"
+						     data-ad-format="auto"
+						     data-full-width-responsive="true"></ins>
+						<script>
+						     (adsbygoogle = window.adsbygoogle || []).push({});
+						</script>
+					</div>
+								<ul class="footer-places">
+									<li class="footer-places-privacy">
+						<a href="https://www.eu4cn.com/wiki/欧陆风云4百科:隐私政策">隐私政策</a>					</li>
+									<li class="footer-places-about">
+						<a href="https://www.eu4cn.com/wiki/欧陆风云4百科:关于">关于欧陆风云4百科</a>					</li>
+									<li class="footer-places-disclaimer">
+						<a href="https://www.eu4cn.com/wiki/欧陆风云4百科:免责声明">免责声明</a>					</li>
+							</ul>
+					<ul class="footer-icons">
+									<li class="footer-copyrightico">
+						<a href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="https://www.eu4cn.com/resources/assets/licenses/cc-by-nc-sa.png" alt="知识共享署名-非商业性使用-相同方式共享" width="88" height="31" loading="lazy"/></a>					</li>
+										<li class="footer-poweredbyico">
+						<a href="https://www.mediawiki.org/"><img src="https://www.eu4cn.com/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"/></a><a href="https://www.eu4cn.com/"><img src="https://www.eu4cn.com/images/footerlogo.png" width="88" height="31" loading="lazy"/></a>					</li>
+								</ul>
+						</div>
+				</footer>
+			</div>
+		</div>
+		</section>
+				<div class="modal fade login-modal" id="login-modal" tabindex="-1"
+			 role="dialog" aria-labelledby="login-modalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-sm" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<h4 class="modal-title">登录</h4>
+					</div>
+					<div class="modal-body">
+						<div id="modal-login-alert" class="alert alert-hidden alert-danger" role="alert">
+						</div>
+						<form id="modal-loginform" name="userlogin" class="modal-loginform"
+							  method="post">
+							<input class="loginText form-control" id="wpName1" tabindex="1"
+								   placeholder="请输入您的用户名" value="" name="lgname">
+							<label for="inputPassword" class="sr-only">密码</label>
+							<input class="loginPassword form-control" id="wpPassword1" tabindex="2"
+								   placeholder="请输入您的密码" type="password" name="lgpassword">
+							<div class="modal-checkbox">
+								<input name="lgremember" type="checkbox" value="1" id="lgremember" tabindex="3">
+								<label for="lgremember">记住登录</label>
+							</div>
+							<input class="btn btn-success btn-block" type="submit" value="登录" tabindex="4">
+							<a href="https://www.eu4cn.com/index.php?title=Special:%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95&amp;type=signup&amp;returnto=%E9%9A%8F%E6%9C%BA%E6%96%B0%E4%B8%96%E7%95%8C" class="btn btn-primary btn-block" title="Special:用户登录" tabindex="5" type="submit">加入欧陆风云4百科</a>							<a href="https://www.eu4cn.com/wiki/Special:重置密码" title="Special:重置密码">忘记密码？</a>                            <br>
+							<a href="https://www.eu4cn.com/wiki/Special:用户登录" title="Special:用户登录">其他方式登录</a>							<input type="hidden" name="action" value="login" />
+							<input type="hidden" name="format" value="json" />
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">⧼liberty-btn-close⧽</button>
+						<button type="button" class="btn btn-primary">⧼liberty-btn-save-changes⧽</button>
+					</div>
+				</div>
+			</div>
+		</div>
+			</body>
+<!-- Mirrored from www.eu4cn.com/index.php?title=%E9%9A%8F%E6%9C%BA%E6%96%B0%E4%B8%96%E7%95%8C&action=edit by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 May 2024 22:23:31 GMT -->
+</html>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?8b9cdb5f260cf613f39a508fbf9dd707";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.004","walltime":"0.006","ppvisitednodes":{"value":7,"limit":1000000},"postexpandincludesize":{"value":18,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":100},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20240506121213","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":2001});});</script>
+</body>
+</html>

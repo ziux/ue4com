@@ -1,0 +1,954 @@
+ <!DOCTYPE html>
+<html class="client-nojs" lang="zh" dir="ltr">
+
+<!-- Mirrored from www.eu4cn.com/index.php?title=%E6%AE%96%E6%B0%91&action=edit by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 May 2024 00:39:56 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>查看“殖民”的源代码 - 欧陆风云4百科，人人可以编辑的欧陆风云4中文百科全书</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"zh","wgMonthNames":["","1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"],"wgRequestId":"5b742b2fa127ff71326b40c4","wgCSPNonce":false,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"殖民","wgTitle":"殖民","wgCurRevisionId":95298,"wgRevisionId":0,"wgArticleId":224,"wgIsArticle":false,"wgIsRedirect":false,"wgAction":"edit","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageContentLanguage":"zh","wgPageContentModel":"wikitext","wgRelevantPageName":"殖民","wgRelevantArticleId":224,"wgUserVariant":"zh","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgCargoDefaultQueryLimit":100,"wgCargoMapClusteringMinimum":80,"wgCargoMonthNames":["1月","2月","3月",
+"4月","5月","6月","7月","8月","9月","10月","11月","12月"],"wgCargoMonthNamesShort":["1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"],"wgCargoWeekDays":["星期日","星期一","星期二","星期三","星期四","星期五","星期六"],"wgCargoWeekDaysShort":["日","一","二","三","四","五","六"],"wgPageFormsTargetName":null,"wgPageFormsAutocompleteValues":[],"wgPageFormsAutocompleteOnAllChars":false,"wgPageFormsFieldProperties":[],"wgPageFormsCargoFields":[],"wgPageFormsDependentFields":[],"wgPageFormsCalendarValues":[],"wgPageFormsCalendarParams":[],"wgPageFormsCalendarHTML":null,"wgPageFormsGridValues":[],"wgPageFormsGridParams":[],"wgPageFormsContLangYes":null,"wgPageFormsContLangNo":null,"wgPageFormsContLangMonths":[],"wgPageFormsHeightForMinimizingInstances":800,"wgPageFormsShowOnSelect":[],"wgPageFormsScriptPath":"/extensions/PageForms","edgValues":null,"wgPageFormsEDSettings":null,"wgAmericanDates":false,"wgVisualEditor":{
+"pageLanguageCode":"zh","pageLanguageDir":"ltr","pageVariantFallbacks":["zh-hans","zh-hant","zh-cn","zh-tw","zh-hk","zh-sg","zh-mo","zh-my"]},"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgSmjUseCdn":false,"wgSmjUseChem":true,"wgSmjDisplayMath":[],"wgSmjExtraInlineMath":[],"wgSmjScale":1,"wgSmjEnableMenu":true,"wgSmjDisplayAlign":"left","wgEditSubmitButtonLabelPublish":false};RLSTATE={"site.styles":"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.liberty.styles":"ready","jquery.tablesorter.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready"};RLPAGEMODULES=["ext.SimpleMathJax","mediawiki.action.edit.collapsibleFooter","site","mediawiki.page.ready","jquery.tablesorter","ext.HighlightjsIntegration","ext.CodeMirror","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.gadget.UserLinkAvatar","ext.gadget.notifyConversion","ext.gadget.notifyAdsense","ext.gadget.Edittools-vector",
+"skins.liberty.bootstrap","skins.liberty.layoutjs","skins.liberty.liverc","skins.liberty.loginjs"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});});});</script>
+<link rel="stylesheet" href="loadd623.css?lang=zh&amp;modules=ext.visualEditor.desktopArticleTarget.noscript%7Cjquery.tablesorter.styles%7Cskins.liberty.styles&amp;only=styles&amp;skin=liberty"/>
+<script async="" src="load7991.php?lang=zh&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=liberty"></script>
+<style>.Liberty .nav-wrapper,
+		.Liberty .nav-wrapper .navbar .form-inline .btn:hover,
+		.Liberty .nav-wrapper .navbar .form-inline .btn:focus,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link.active::before,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link:hover::before,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link:focus::before,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link:active::before,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-footer .label,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .contributioncredits-footer .label,
+		.Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools .tools-btn:hover,
+		.Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools .tools-btn:focus,
+		.Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools .tools-btn:active,
+		.btn-primary,
+		.header-template, .section-template {
+			background-color: #103D8F;
+		}
+
+		.btn-primary,
+		.section-template-border {
+			border-color: #103D8F;
+		}
+
+		.Liberty .nav-wrapper .navbar .form-inline .btn:hover,
+		.Liberty .nav-wrapper .navbar .form-inline .btn:focus {
+			border-color: #002E7D;
+		}
+
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link.active::before,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link:hover::before,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link:focus::before,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link:active::before {
+			border-bottom: 2px solid #103D8F;
+		}
+
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-footer .label:hover,
+		.Liberty .nav-wrapper .navbar .navbar-nav .nav-item .nav-link:hover,
+		.Liberty .nav-wrapper .navbar .navbar-nav .nav-item .nav-link:focus,
+		.dropdown-menu .dropdown-item:hover,
+		.btn-primary:hover,
+		.btn-primary:focus {
+			background-color: #002E7D;
+		}
+
+
+		.Liberty .content-wrapper #liberty-bottombtn,
+		.Liberty .content-wrapper #liberty-bottombtn:hover {
+			background-color: #103D8F;
+		}</style><style>@media (prefers-color-scheme: dark) { body, .Liberty, .dropdown-menu, .dropdown-item, .Liberty .nav-wrapper .navbar .form-inline .btn, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link.active, .Liberty .content-wrapper .liberty-content .liberty-content-main table.wikitable tr > th, .Liberty .content-wrapper .liberty-content .liberty-content-main table.wikitable tr > td, table.mw_metadata th, .Liberty .content-wrapper .liberty-content .liberty-content-main table.infobox th, #preferences fieldset:not(.prefsection), #preferences div.mw-prefs-buttons, .navbox, .navbox-subgroup, .navbox > tbody > tr:nth-child(even) > .navbox-list, .Liberty .nav-wrapper .navbar .form-inline .form-control {
+			background-color: #000;
+			color: #DDD;
+		}
+
+		.liberty-content-header, .liberty-footer, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-footer, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item, .Liberty .content-wrapper .liberty-content .liberty-content-header, .Liberty .content-wrapper .liberty-footer, .editOptions, html .wikiEditor-ui-toolbar, #pagehistory li.selected, .mw-datatable td, .Liberty .content-wrapper .liberty-content .liberty-content-main table.wikitable tr > td, table.mw_metadata td, .Liberty .content-wrapper .liberty-content .liberty-content-main table.wikitable, .Liberty .content-wrapper .liberty-content .liberty-content-main table.infobox, #preferences, .navbox-list, .dropdown-divider, .Liberty .content-wrapper .liberty-content .bottom-ads {
+			background-color: #1F2023;
+			color: #DDD;
+		}
+
+		.Liberty .content-wrapper .liberty-content .liberty-content-main, .mw-datatable th, .mw-datatable tr:hover td, textarea, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-content, div.mw-warning-with-logexcerpt, div.mw-lag-warn-high, div.mw-cascadeprotectedwarning, div#mw-protect-cascadeon, .mildtable th {
+			background-color: #000 !important;
+		}
+
+		.Liberty .content-wrapper .liberty-content .liberty-content-header .title>h1, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-content .live-recent-list .recent-item, caption { color: #DDD; }
+
+		.btn-secondary, .Liberty .content-wrapper .liberty-footer .catlinks, .rcpages-btn { background: transparent; color: #DDD; }
+
+
+		#pagehistory li { border: 0; }
+
+		.Liberty .content-wrapper .liberty-footer, .Liberty .content-wrapper .liberty-content .liberty-content-header, .Liberty .content-wrapper .liberty-content .liberty-content-main, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-footer, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-content, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item + .nav-item, .Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools .tools-btn:hover, .Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools .tools-btn:focus, .Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools .tools-btn, .dropdown-menu, .dropdown-divider, .Liberty .content-wrapper .liberty-content .liberty-content-main fieldset, hr, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-content .live-recent-list li, .mw-changeslist-legend, .Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools { border-color: #555; }
+
+		.flow-post, .Liberty .content-wrapper .liberty-content .liberty-content-main .toc .toctext { color: #DDD; }
+		.flow-topic-titlebar { color: #000; }
+		.flow-ui-navigationWidget { color: #FFF; }
+		.Liberty .content-wrapper .liberty-content .liberty-content-main .toccolours, .Liberty .content-wrapper .liberty-content .liberty-content-main .toc ul, .Liberty .content-wrapper .liberty-content .liberty-content-main .toc li { background-color: #000; }
+		.Liberty .content-wrapper .liberty-content .liberty-content-main .toc .toctitle { background-color: #1F2023; } }</style>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="loada6ee.css?lang=zh&amp;modules=site.styles&amp;only=styles&amp;skin=liberty"/>
+<meta name="generator" content="MediaWiki 1.39.3"/>
+<meta name="robots" content="noindex,nofollow"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="description" content="因为以下原因，您没有权限编辑本页：&#10;&#10;&#10;您请求的操作仅限属于该用户组的用户执行：用户&#10;&#10;&#10;您可以查看和复制此页面的源代码。&#10;{{Version|1.29}}&#10;&#039;&#039;&#039;殖民&#039;&#039;&#039;是游戏中的一项重要内容。各国都可以在美洲、亚洲、非洲、澳洲以及西伯利亚与太平洋岛屿进行探索、殖民。&#10;&#10;__TOC__&#10;== 殖民的目的和前提 ==&#10;殖民最大的收益，是可以增加殖民国的收入和后勤保障。海外殖民省份可以为其殖民母国带来巨大的[[贸易收入]]提升，同时也为远赴海外的海陆军提供了落脚点。&#10;&#10;殖民活动的主要形式之一是建立一个 {{icon|Colonial nation}}[[殖民领]]。殖民领是一种AI操控的[[附属国]]，会建立自己的海陆两军，并为宗主国贡献贸易力量和其他收益；另一种形式是创建 {{icon|Trade company}}[[贸易公司]]，将一些自治领地中的省份交由贸易公司管理，会在相应[[节点]]为本国提供极大的贸易增益。这两种殖民手段分别适用于不同的地区。&#10;&#10;除了这两种方式之外，任何国家也都可以选择[[直属州与自治领地|直辖]]海外[[直属州与自治领地|领地]]，这样无论领土离本国有多远，都可以100%地从中获益。不过[[直属州与自治领地|直辖]]那些殖民区域的省份可能并没什么必要，因为随着殖民地的扩张，这些省份往往终将建立起一个殖民领。而对于殖民区域以外的地区，比起[[直属州与自治领地|直辖]]这些海外省份，建立贸易公司可能是更好的选择，尤其是对于处在欧洲西部的国家，因其可以提供更高的贸易力量，且可以忽略当地由于宗教不同而带来的负面影响。然而对其他国家来说，直辖这些省份的收益有时也很可观。&#10;&#10;要进行殖民，一个国家需要满足以下条件：&#10;*拥有 {{icon|colonist}}殖民者。殖民者可以通过[[理念组]]、一些[[国家理念]]、[[国会]]议题、三种美洲原始宗教（{{Religion|Nahuatl}}、{{Religion|Mayan}}、{{Religion|Inti}}）的宗教改革等方式获得和[[土著理念]]获得。在游戏刚刚开局时，没有任何国家拥有可用的殖民者，因而只有在开启所需的[[理念组]]或激活某些[[国家理念]]后，才能获得殖民者。&#10;**当DLC {{icon|tr}} 第三罗马启用时，{{flag|俄罗斯}}在解锁其第二项国家理念“西伯利亚前哨站”后，可以建立[[西伯利亚拓荒区]]，这种特殊的机制允许其不需要殖民者就可以向与其首都在陆上相连的省份建立殖民地。创建[[自定义国家]]时也可以选择这条理念。&#10;*在该国家的 {{icon|colonial range}}殖民范围内有尚未被任何国家占据的可殖民省份。&#10;&#10;拥有殖民者、且有满足条件的未殖民省份时，就可以选择向这个省份派出殖民者进行殖民。&#10;&#10;维护殖民地的建设需要一定的 {{icon|ducats}}金钱；还需要设法处理与当地原住民关系的问题——派出军队镇压可能的暴乱，或通过选择较温和的土著政策等方式降低暴乱出现的可能性。&#10;&#10;== 探索 ==&#10;{{SVersion|1.30}}&#10;游戏开局时，大多数的可殖民省份位于美洲新大陆（或[[随机新世界]]）、非洲、西伯利亚、东印度群岛、澳大利亚和太平洋诸岛。对于不同科技组的国家来说，他们在游戏开局时可见的世界范围也不同，往往都有一些未殖民省份在其可见范围内，但更多的未殖民省份都在[[未知地域]]的覆盖之下。探明这些地区是殖民的必要条件。&#10;&#10;而说到如何探明这些地区，就要看你是否启用DLC {{icon|ed}} [[黄金国]]了。也有之下这些要素不受DLC影响：&#10;&#10;* 必定需要 {{icon|conquistador}} [[征服者]]来探索陆地省份（除非国家处于战争状态，见下），需要 {{icon|explorer}} [[探险家]]来探索海洋省份。此二者为特殊的[[军事领袖]]，雇佣时生成的能力值只以对应传统的80%计算，但具备探索未知地域的能力。&#10;* {{icon|exploration}} [[探索理念组]]的第一项{{icon|idea}}理念“探索新世界”，为解锁 {{icon|conquistador}} [[征服者]]、 {{icon|explorer}} [[探险家]]的条件。个别国家（尤其是 {{flag|Portugal}}）在1444年刚开局尚无此理念的情况下就已经拥有一位探险家，也有少数国家（比如 {{flag|HSA}}）可以通过任务获得一名探险家，因而可以在尚未开启探索理念的情况下就开始进行探索。&#10;** {{flag|Norway}}的第二项国家理念“祖先的呼唤”也会允许其征召 {{icon|conquistador}} [[征服者]]和 {{icon|explorer}} [[探险家]]，从而可以探索未知地带。这也是目前游戏中唯一可以绕过 {{icon|exploration}} 探索理念组获得这两种军事领袖的方式。&#10;* 在战时，军队可以自由进出&#039;&#039;&#039;所有&#039;&#039;&#039;敌方省份，甚至直接进入未知地域，无视可能的堡垒和封港影响。只需要给军队下达向未知地域去的移动指令，无论该移动是否可行，军队都将执行移动指令。此种移动耗费的时间与征服者的探索时间完全相同。当移动完成后，军队要么进入省份，要么发现移动被阻挡而停止移动。但无论如何省份都会被探明。&#10;* 高[[陆军传统]]下雇佣的征服者将有几率探开邻接省份。&#10;* 未探索的陆地省份每个月都有几率被其相邻省份的拥有国所知（平均需3~5年）。{{flag|Russia}}和 {{icon|Colonial nation}}殖民领的[[国家理念]]，以及可立即探明相邻省份。&#10;* 对一个国家来说，单个省份的地图传播基于该国（以下称为A国）与他国的接触。某未知省份的地图传播到A国的一般条件为：&#10;** A国已发现其相邻省份，超过25年。&#10;** 该省份的所有国已发现A国的首都省份，超过30年。&#10;** 属同一文化组或同一宗教组的A国邻国已发现该省份，超过75年。&#10;&#10;任何国家经由外交行动[[申请共享地图]]发现指定[[区域]]内的所有省份，该行动需要目标国家完全探索该区域、需要一定量的 {{icon|prestige}} 威望、还需要提出国有单位位于相邻区域，且需目标国家愿意提供给其这些地图。此外，[[间谍]]选项中的“窃取地图”允许花费间谍网点数获得某个指定地区内全部省份的地图，而且无需花费[[威望]]。&#10;&#10;=== 无DLC {{icon|ed}} 黄金国时的探索 ===&#10;* {{icon|conquistador}}征服者指挥的陆军（人数任意）可以进入未知地域内的省份，并借此探明之。如果该省份被某国所有，且军队并无军事通行权，该省份仍将被探明，但军队将不会移动。征服者可以随意穿行那些原始国家（新世界[[科技组]]的政府未改革国家）的国土，无需通行权。&#10;* {{icon|explorer}}探险家指挥的海军（数量任意）可以进入未知地域内的海域，并借此探明之。在某片海域中的探索中，将有机会发现该海域的沿海省份（探险家的[[机动]]会增加这一几率）。派一艘船在某一海域来回航行，终归会探明所有的沿海省份（约需6~12个月）。探索时船只损耗正常计算，停泊协议可以有效拓张你的探索范围。&#10;&#10;=== 有DLC {{icon|ed}} 黄金国时的探索 ===&#10;*除了在部队移动向未知省份过程中一并探知这个省份的常规方式， {{icon|conquistador}} 征服者指挥的陆军（人数任意）可以执行探索黄金七城任务。军队处在[[殖民区域]]之内，且该国首都不在殖民区域，才可以在军队面板中选择这个任务。执行该任务的军队会自动穿行于未知地域之中，不停地探开省份，不停触发各种事件。无论是否使用黄金七城行动，探索由土著国家控制的省份都不需要军事通行权。&#10;* 如果你想探索非殖民区域的省份，或国家首都就位于殖民区域，那么探索方式与上述无DLC {{icon|ed}} 黄金国时完全相同。&#10;* {{icon|explorer}} 探险家指挥的海军（至少含3艘 {{icon|light ship}} 轻型船只或3艘 {{icon|heavy ship}} 重型船只）可以于舰队面板中选择探索任务，随后舰队会自动探索相应海域。&#10;** 任务目标可以选择“水域”，这样就只会探索外海和沿岸海域；也可以选择“海岸”，这样才能探索沿岸省份。一般来说，探索“海岸”要在相应“水域”探索完成之后才能选择。探索外海时，会探索完所有海域然后返回；探索沿岸海域时，会依次探索所有沿岸省份然后返回。右键直接点击未知领域，如果该区域在探索范围之内，也会自动开始该区域的探索。&#10;** 探索任务中的舰队不受损耗影响，但只能探索 {{icon|colonial range}} 殖民范围之内的区域。且任务中的船只不可召回、不可变更任务，只能选择解散，这有可能导致带队的探险家死亡。探索任务中会触发数个事件。如果探险家在任务中死亡，舰队将自动返回，此返程过程计算损耗。&#10;** 探险家也可以执行&#039;&#039;&#039;环球航行&#039;&#039;&#039;任务。此任务中船只将正常损耗：船只会沉没，探险家也会死亡。与一般的探索任务相同，执行环球航行任务的船只同样不可召回、变更任务。这也意味着在进行此任务前，你必须做好充分的准备工作。第一个环球成功的国家将获得 {{icon|prestige}}{{green|+100}} 威望，之后的每一个成功的国家都将获得 {{icon|prestige}}{{green|+10}} 威望。每个国家只能完成一次环球航行，可以不停地尝试直到成功为止。&#10;&#10;=={{icon|colonists}} 殖民者 ==&#10;{{SVersion|1.30}}&#10;需要向可殖民省份派出殖民者，才能建立殖民地。以下理念组或国家理念可以给予殖民者：&#10;{{bonus table|colonists}}&#10;&#10;{{Religion|Nahuatl}}、{{Religion|Mayan}}、{{Religion|Inti}}的五项宗教改革之一中都有一项可以获得一个殖民者。[[土著议会]]的[[土著理念|土著理念：氏族迁徙]]也会提供一个殖民者。对于已经完成了探索理念或扩张理念的国家，如果其拥有[[国会]]，也可以通过议案“特许殖民地”，在10年内获得一个额外的殖民者。&#10;&#10;=== 土著政策 ===&#10;{{expansion|tc}}&#10;[[File:Native policies.png|thumbnail|right|土著政策的游戏内图示]]&#10;土著政策是一个国家在遍布全球的殖民之中对待各地原住民的通用政策。一旦国家获得第一个殖民者（无论何种方式），就&#039;&#039;&#039;必须&#039;&#039;&#039;选择一个土著政策。初次选择是免费的，之后的每次更改都将花费 {{red|-1}} {{icon|stability}} 稳定度，更改没有冷却时间。&#10;&#10;&#039;&#039;&#039;原住民共存政策&#039;&#039;&#039;提供 {{green|−100%}} 的 {{icon|native uprising chance}} [[土著暴乱]]几率，即把所有殖民地的暴乱概率降为0。此政策可以让玩家几乎完全不必担心土著暴乱，从而节省精力，在向新的、较远的地区殖民时也不必再费心派驻军队。&#10;&#10;这种政策特别适用于那些需要把军队投入大规模战争，或经济实力、军事实力都有限的国家；也适用于那些前期战斗力偏弱，易折损于凶残土著的国家，这主要是指开局时科技较低的撒哈拉以南及美洲本土国家。&#10;&#10;&#039;&#039;&#039;原住民市易政策&#039;&#039;&#039;提供 {{green|−50%}} 的 {{icon|native uprising chance}} 土著暴乱几率（即让[[进攻性]]减半）和 {{green|+50%}} 的 {{icon|native assimilation}} [[土著同化]]。&#10;&#10;土著同化可以带来在殖民完成后带来一些额外的收益。当殖民地完成时，其商品产量受下式加成：&#10;&#10;&amp;lt;math&gt;\text{土著人口} \div 20,000&amp;lt;/math&gt;（向下舍入）。&#10;&#10;而贸易性的土著政策可使此加成再增加 {{green|50%}}。&#10;&#10;此政策尤其适合 {{flag|France}}，该国的[[国家理念]]可以将[[进攻性]]再减少50%，从而能够完全消除土著叛乱；完成[[探索理念]]和[[扩张理念]]后解锁的[[政策]]也同样可以减少50%土著暴乱几率，因而也可以与该种土著政策配合使用；即使没有以上加成，这种政策也可以大大减少土著暴乱，因而适合那些拥有镇压小打小闹的能力，又想完全掌控殖民地的国家；也适合那些在区域内占有强大贸易比率的国家。&#10;&#10;&#039;&#039;&#039;原住民弹压政策&#039;&#039;&#039;提供 {{green|+20}} 的 {{icon|global settler increase}} 全局移民增长。该政策在游戏早期可以大大加快殖民速度，但在高科技等级下效果并不显著。殖民地省份将需要军队驻扎以防备土著暴乱，因为此政策并不减少 {{icon|native uprising chance}} 暴乱几率。这在开拓一块新的、较远的殖民地时可能较为麻烦。在选择这种土著政策时，可以考虑配合着使用军事指令 [[File:Attack natives.png|28px]] [[攻击土著]]。&#10;&#10;==={{icon|colonial range}} 殖民范围 ===&#10;&#039;&#039;&#039;殖民范围&#039;&#039;&#039;指一国从其任意[[核心]]省份起算的可殖民范围。此范围总是从距离最近的核心省份起算，其数值受[[科技#外交科技|外交科技]]等级、事件、顾问、任务、政策、理念和其他各类增益加成。第三国的停泊许可不影响此范围。此范围亦影响[[探险家]]可执行探索任务的最远距离。如果国家没有港口，那么无论殖民范围多广，国家将只能殖民相邻的陆地省份。&#10;&#10;可以把地图模式切换为“殖民”，来查看某省份的殖民范围，并观察你想殖民的省份。该模式下绿色为范围内，而红色为范围外。&#10;&#10;{{bonus table|colonial Range}}&#10;AI国家自带{{green|+25%}}的殖民范围加成，以补偿AI的智力水平，因为AI不会像玩家一样殖民一块飞地作为跳板。&#10;&#10;[[顾问#外交型|航海家顾问]]给予 {{green|+20%}} 的殖民范围加成。&#10;&#10;==={{icon|colonist time}} 行程时间 ===&#10;{{SVersion|1.30}}&#10;殖民者去往目标省份建立殖民地所花费的行程时间与[[商人]]和[[外交官]]的 {{icon|envoy travel time}} [[使者#使者行程时间|行程时间]]不尽相同。此时间的基础值主要取决于首都与目标的海上航行距离，除非二者直接经陆地相连。行程路线起点取首都港口或与内陆首都直连的某港口，终点取目标省份建港处或距目标省份最近的港口。&#10;&#10;&amp;lt;s&gt;&#039;&#039;&#039;例&#039;&#039;&#039;：{{flag|Portugal}} 首都为里斯本。现在想殖民 {{Province|839}}，该省份邻接中美洲西岸的玛雅国家 {{flag|Kiche}}。此时殖民者必须绕过南美的合恩角，然后再北上到中美洲。然而，如果 {{flag|Portugal}}事先殖民邻接匹普的东岸省份 {{Province|2637}}，之后殖民者再去匹普就无需再走这么一条邪路了。&amp;lt;/s&gt;&#10;1.30版本中这个例子不再适用，因为提到的两个省份都给到了新的玛雅国家{{flag|乔尔蒂}}，不再是未殖民省份。&#10;&#10;鉴于游戏中计算行程时间的方法较为固定，可能导致殖民者实际的行程时间比看起来要更长。比如，想殖民一个不与首都直连的港口省份，殖民者就只会直接奔向该省份的港口，即便“先到另一个港口然后转陆路”其实会快得多（尤其是中美洲的某些省份，邻接两片大洋但只有一边有港口）；或者想殖民内陆省份时也有类似问题。这些与常识不符的算法有时会让你低估殖民者的行程时间。&#10;&#10;[[殖民区域]]内，尤其是北美的国家，行程时间可能会比预期长得多。这是因为当前首都可能沿海，然后殖民者就会开始环美洲航行之旅，虽然走陆路可能只要两步。迁都至内陆可以有效解决此问题。&#10;&#10;殖民者的海上移动速度比陆上或沿岸移动速度要快。比如对欧洲国家来说，加勒比在地图上比撒哈拉以南非洲要远，但去加勒比却要更快。&#10;&#10;自[[1.28.X 版本#1.28.2|1.28.2]]版本起，殖民者的行程时间受到 {{icon|envoy travel time}}  [[使者#使者行程时间|行程时间]]的修正。如果殖民地建造完成或你主动召回殖民者，那么殖民者会瞬间到家，即返程无行程时间。&#10;&#10;只要一个国家向一个未殖民省份派出了殖民者，无论这个殖民者要走多长时间，除非该国殖民地被摧毁，否则其他国家都无法向其目标省份派遣殖民者，即使理论上其他国家的殖民者到达这个殖民地需要的时间更短。&#10;&#10;=== 促进垦殖 ===&#10;&amp;lt;section begin=SettlementGrowth/&gt;{{SVersion|1.29}}{{expansion|dhr}}&#10;你可以派遣空闲的 {{icon|colonist}} 殖民者去组织移民提升省份的发展度。根据省份发展度及发展度修正每年有几率随机提升 {{green|+1}} 基础税收、基础生产和基础人力之一，最低有 {{green|5%}}几率。&amp;lt;section end=SettlementGrowth/&gt;&#10;&#10;=== 驱逐少数族群 ===&#10;{{SVersion|1.33}}&#10;{{expansion|gc}}&#10;[[File:Expel_minorities.png|thumb|480px|驱逐少数族群]]&#10;一个国家可以选择从本国&#039;&#039;&#039;驱逐少数族群&#039;&#039;&#039;去往殖民区域进行殖民。与本国主流文化不相同，或信仰的宗教与国教不相同的省份，可以被视为“少数族群”。这会使殖民地省份获得这个被驱逐出的省份原有的宗教、文化。在这块殖民地建立的过程中可以获得更高的{{icon|colonist chance}}新移民几率，原省份的发展度越高，获得的新移民几率加成越高。而在殖民完成后，这块殖民地可以获得额外的发展度，原省份的发展度越高，最终可能获得的额外发展度就越高；但是，在这块殖民地获得发展度的同时，驱逐出的省份也会有对应的减少。&#10;&#10;只有向[[殖民领#殖民区域列表|殖民区域]]（即新大陆和澳大利亚）的省份殖民时才能驱逐少数族群；只能从[[直属州]]的核心省份驱逐少数族群，且该省份不能有[[分离主义]]，但是驱逐少数族裔将移除原省份的宗教狂热修正，并将获得一个为期20年的修正，带来{{Icon|missionary strength}}{{Green|+5%}}本地传教强度和{{Icon|culture conversion cost}}{{Green|-25%}}本地转变文化花费。当殖民者到达、驱逐开始后，就不能撤回这个殖民者，直到殖民地建设完毕、驱逐完成；但仍可以直接放弃这块殖民地。当这个殖民地省份被敌人或暴乱的土著占领时，殖民者会被强制遣返，这时驱逐进程会停止。&#10;&#10;这类殖民地的维护费可以受到 {{icon|expel minority cost}} 驱逐少数族群花费的修正：&#10;&#10;{| class=&quot;mildtable&quot;&#10;! {{icon|expel minority cost}} &#10;! 条件&#10;|-&#10;| align=right | {{green|−25%}} || 完成法国任务 &#039;&#039;&#039;部署龙骑兵&#039;&#039;&#039;&#10;|&#10;|-&#10;| align=right | {{green|−100%}} || 拥有&#039;&#039;&#039;流放殖民地公司&#039;&#039;&#039;政府改革&#10;|}&#10;&#10;== 人口 ==&#10;{{SVersion|1.29}}&#10;一旦殖民者到达一个新省份，其初始人口就为&#039;&#039;&#039;10&#039;&#039;&#039;。人口的增长基于 {{icon|global settler increase}} [[殖民#全局移民增长|全局移民增长]]修正，此修正主要靠 {{icon|dip tech}} [[外交科技]]等级增加，也靠某些理念或其他修正。&#10;&#10;此外只要殖民地有殖民者在，每月就有机会额外增加&#039;&#039;&#039;25&#039;&#039;&#039;人口。一旦人口超过&#039;&#039;&#039;400&#039;&#039;&#039;，该地就会根据地理位置随机出产一种[[商品]]。可以将鼠标悬停于未殖民省份省份窗口的 {{icon|unknown}} 问号图标上，查看该省份的可能商品列表。人口达到&#039;&#039;&#039;1000&#039;&#039;&#039;时殖民地就会变为真正的城市，而掉到&#039;&#039;&#039;0&#039;&#039;&#039;时殖民地将被摧毁：这可能是来自于土著的破坏、各类事件、或战争中敌国的刻意破坏。想重开殖民地就要重新派遣殖民者，一切从头开始。&#10;&#10;只要你想，殖民者可以去任何地方，也可以随时召回殖民者，让他去往另一个殖民地。在使用 [[File:Seize colony.png|28px]] [[殖民#占领|夺取殖民地]]后，甚至可以将殖民者派到敌国的殖民地去。此类殖民地的文化和宗教会暂时与旧主保持一致，但在殖民者到达之时会瞬间转化为与新主相同。&#10;&#10;=== 全局移民增长 ===&#10;{{anchor|增长}}殖民地的移民每月由均一数额增长。此数额就是 [[file:global settler increase.png|24px]] 全局移民增长，即每年殖民地的额外移民数。例如某省份每年的全局移民增长加上其本地移民增长为15，则本殖民地平时每月移民1人，每隔4个月有一次移民2人，合计每年15人。外交科技会提供全局移民增长的加成：&#10;&#10;{|class = &quot;mildtable&quot;&#10;! 外交科技 !!全局移民增长&amp;lt;br/&gt;（累计）&#10;|-&#10;| 1 || 10&#10;|-&#10;| 3 || 25&#10;|-&#10;| 10 || 35&#10;|-&#10;| 15 || 50&#10;|-&#10;| 23 || 75&#10;|-&#10;| 26 || 100&#10;|-&#10;| 32 || 150&#10;|}&#10;&#10;全局移民增长亦受下列加成：&#10;{{bonus table|global settler increase}}&#10;还有以下固定修正：&#10;{|class = &quot;mildtable sortable&quot;&#10;! 年度 [[file:global settler increase.png|24px]] !! 修正&#10;|-&#10;| style=&quot;text-align:right&quot; | {{red|−125}} 至 {{green|0 }}&#10;| 殖民地维护费&#10;|-&#10;| style=&quot;text-align:right&quot; | {{red|−5 }}&#10;| 未控制相邻省份&#10;|-&#10;| style=&quot;text-align:right&quot; | {{red|−10 }}&#10;| {{icon|arctic|24px}}极地&#10;|-&#10;| style=&quot;text-align:right&quot; | {{red|−10 }}&#10;| {{icon|arid|24px}}干旱&#10;|-&#10;| style=&quot;text-align:right&quot; | {{red|−10 }}&#10;| {{icon|tropical|24px}}热带雨林&#10;|-&#10;| style=&quot;text-align:right&quot; | {{green|+10 }}&#10;| [[#托尔德西里亚斯条约|托尔德西里亚斯条约]]（在由教皇划归该{{icon|catholic|24px}}天主教国家的殖民区域内殖民）&#10;|-&#10;| style=&quot;text-align:right&quot; | {{red|−20 }}&#10;| 违反托尔德西里亚斯条约（在由教皇划归其他{{icon|catholic|24px}}天主教国家的殖民区域内殖民）&#10;|-&#10;| style=&quot;text-align:right&quot; | {{green|+20 }}&#10;| 控制{{icon|cotton|24px}}棉花贸易&#10;|-&#10;| style=&quot;text-align:right&quot; | {{green|+10 }}&#10;| &#039;&#039;&#039;“新大陆福音事业”&#039;&#039;&#039;的市民[[阶层]]互动&#10;|-&#10;| style=&quot;text-align:right&quot; | {{green|+15 }}&#10;| &#039;&#039;&#039;“驱逐异端”&#039;&#039;&#039; {{icon|protestant|24px}}的新教[[信条]]&#10;|-&#10;| style=&quot;text-align:right&quot; | {{green|+10 }}&#10;| {{icon|tengri|24px}}长生天的次要信仰为{{icon|orthodox|24px}}东正教&#10;|-&#10;| style=&quot;text-align:right&quot; | {{green|+20 }}&#10;| &#039;&#039;&#039;“特许殖民地”&#039;&#039;&#039;的[[国会]]议案&#10;|-&#10;| style=&quot;text-align:right&quot; | {{green|+20 }}&#10;| [[#土著政策|土著政策：压制]]&#10;|-&#10;| style=&quot;text-align:right&quot; | {{green|+50 }}&#10;| {{flag|葡萄牙}}在[[地理大发现时代]]的专属能力&#039;&#039;&#039;“葡萄牙殖民地增长”&#039;&#039;&#039;（需要DLC {{nowrap|{{icon|moh}} 天命}}）&#10;|}&#10;&#10;==={{icon|colonist chance}} 新移民几率 ===&#10;如果一个殖民地有殖民者在工作，那么每个月都有几率迁来25名新移民。理论上，可以认为每1%的几率平均对应每年{{green|+3}}的移民增长（0.01人每月×12月×25人）。新移民几率由下列因素影响：&#10;&#10;{|class = &quot;wikitable sortable&quot;&#10;! 修正 !! 几率 !! 年度平均新移民&#10;|-&#10;| 基础值 || 10% || 30&#10;|-&#10;| 每100人口 (“殖民地级别”)&amp;lt;ref&gt;参见{{path|common/static_modifiers/00_static_modifiers.txt}} ([[Static_modifiers#殖民地级别]])。&amp;lt;/ref&gt; || {{red|−1%}} || −3&#10;|-&#10;| 每1%的[[生产效率]]&amp;lt;ref&gt;参见{{path|common/static_modifiers/00_static_modifiers.txt}} ([[Static_modifiers#生产效率]])。&amp;lt;/ref&gt; || {{green|0.2%}} || 0.6&#10;|-&#10;| 每点本地土著进攻性&amp;lt;ref&gt;参见{{path|common/static_modifiers/00_static_modifiers.txt}} ([[Static_modifiers#土著进攻性]])。&amp;lt;/ref&gt; || {{red|−0.5%}} || −1.5&#10;|-&#10;| 同一宗教 || {{green|1%}} || 3&#10;|-&#10;| 同一文化 || {{green|1%}} || 3&#10;|-&#10;| 同一文化组 || {{green|1%}} || 3&#10;|}&#10;&#10;某些理念和政策也会增加新移民几率。&#10;&#10;{{bonus table|settler chance}}&#10;&#10;=== 殖民地成长的各种重要修正 ===&#10;==== 地形 ====&#10;&#10;可殖民省份的地形会影响殖民地的成长。干旱、极地或热带雨林的殖民地会获得 {{icon|global settler increase}}{{red|-10}} 的移民惩罚，未拥有相邻省份的殖民地也会获得 {{icon|global settler increase}}{{red|-5}} 的惩罚。&#10;&#10;想先其他国家一步掌握某区域的殖民主导地位，就要好好考虑殖民地的地形，但也别忘了考虑当地土著的强度，并且最好优先抢占[[贸易中心]]等地区。&#10;&#10;==== 事件 ====&#10;{{main|探索理念组事件}}&#10;{{main|扩张理念组事件}}&#10;[[理念组#探索|探索]]和[[理念组#扩张|扩张]]理念组会解锁数个直接修正殖民地成长速度的事件，有正面的也有负面的。&#039;&#039;[[探索理念组事件#ideagroups.1200|Colonist Rush]]&#039;&#039;和&#039;&#039;[[扩张理念组事件#ideagroups.1502|Colonial Enthusiasm]]&#039;&#039;  事件会给予下面这个限时但强力的修正：&#10;&#10;本国获得修正“{{ruby|&#039;&#039;&#039;殖民热潮&#039;&#039;&#039;|Colonial Enthusiasm}}”持续 {{icon|time}} &#039;&#039;&#039;10&#039;&#039;&#039; 年，给予下列效果：&#10;*{{icon|settler chance}} 定居几率 {{green|+5%}}&#10;*{{icon|global settler increase}} 全国移民增加 {{green|+25}}&#10;&#10;某些历史上的主要殖民国家，例如 {{flag|Spain}}和 {{flag|Portugal}}等，有许多独特的与殖民相关的事件和任务。&#10;&#10;==== 任务 ====&#10;一些历史上的主要殖民国家或是其它拥有殖民扩张潜力的国家在[[任务树]]中往往都包括了向新世界乃至东方，或者邻近的处女地殖民的任务选项。完成这些任务可能获得关税收入、移民增长、定居几率、贸易效率等方面的奖励，从而促使玩家向这一地区以及其它未殖民省份积极扩张。要体验这些国家的完整任务树，可能需要某些特定的DLC。&#10;&#10;探索新世界的某些任务也会奖励“殖民热潮”修正，但多个同样的修正并不叠加。&#10;&#10;拥有殖民相关任务的任务树：&#10;&#10;{{multiColumn|&#10;*{{Flagicon|Andalusia}} [[安达卢西亚任务]]&#10;*{{Flagicon|BLI}} [[巴厘任务]]&#10;* [[柏柏尔任务]] &#10;*{{Flagicon|BRI}} [[布列塔尼任务]]&#10;*{{Flagicon|Brunei}} [[文莱任务]]&#10;*{{Flagicon|卡斯蒂利亚}} {{Flagicon|西班牙}}  [[卡斯蒂利亚任务]]/[[西班牙任务]]&#10;*{{Flagicon|Champa}} [[占婆任务]]&#10;*{{Flagicon|Dai Viet}} [[大越任务]]&#10;*{{Flagicon|England}} {{Flagicon|Great Britain}} [[英格兰任务]]/[[不列颠任务]]&#10;*{{Flagicon|FLA}} [[佛兰德任务]]&#10;*{{Flagicon|France}} [[法兰西任务]]&#10;*{{Flagicon|Germany}} [[德意志任务]]&#10;*{{Flagicon|Ireland}} [[爱尔兰任务]]&#10;*{{Flagicon|Japan}} [[日本任务]] &#10;*{{Flagicon|HSA}} [[吕贝克任务]]&#10;*{{Flagicon|MAJ}} [[满者伯夷任务]]&#10;*{{Flagicon|Ming}} [[中华任务]]&#10;*{{Flagicon|Morocco}} [[摩洛哥任务]]&#10;*{{Flagicon|Muscovy}} {{Flagicon|Russia}} [[莫斯科任务]]/[[俄罗斯任务]]&#10;*{{Flagicon|Netherlands}} [[尼德兰任务]]&#10;* [[海盗任务]]&#10;*{{Flagicon|Portugal}} [[葡萄牙任务]]&#10;*{{Flagicon|Scotland}} [[苏格兰任务]]&#10;*{{Flagicon|Sweden}} [[瑞典任务]]&#10;*[[香料群岛任务]]&#10;*{{Flagicon|United States}} [[美国任务]]&#10;&#10;|3}}&#10;&#10;==== 托德西里亚斯条约 ====&#10;{{expansion|ed}}&#10;在DLC[[黄金国]]中，在某区域第一个组建[[天主教]][[殖民领]]的国家如果与 {{flag|教宗国}}的关系是正面的，则会被教皇分配该区域的殖民权（只需建立的殖民领国教是天主教即可，而非殖民母国；这意味着较为罕见的情况下，殖民母国本身不是天主教国家，而使用驱逐天主教少数群体的等方法而使自己的殖民领国家变为天主教，导致触发托德西里亚斯条约）。而该国（仅当信仰为[[天主教]]时）与该[[殖民领]]均会获得该区域内 {{icon|global settler increase}}{{green|+10}} 的全局移民增长。国家可拥有的[[殖民领]]与可被分配的殖民区域均没有上限。&#10;&#10;如果其他天主教国家也在此区域内殖民，就会获得&#039;&#039;&#039;“违反托德西里亚斯条约”&#039;&#039;&#039;的惩罚。这不仅带来 {{icon|global settler increase}}{{red|-20}} 的本地移民减少，还会带来 {{icon|papal influence}}{{red|-10}} 的年度教廷影响减少和 {{icon|relation}}{{red|-50}} 与教宗国及与该国的关系。在条约树立前已有的殖民地不受此影响，只有条约后新建的殖民地获得惩罚。在停战合约中夺取殖民地、从这一殖民地区的土著国家手中征服省份也不会获得惩罚。一个国家已经建立的殖民领向其他国家已获许可的殖民地区进行殖民也会受到惩罚，但其母国不会受到关系和教廷影响力的惩罚。&#10;&#10;作为特例的是，拥有殖民权天主教国家的天主教[[附属国]]在宗主宣称的地区不仅不会受到违反条约惩罚，还可以享受和宗主相同的 {{icon|global settler increase}}{{green|+10}} 全局移民增长加成。&#10;&#10;此修正仅影响天主教国家；其他宗教的国家完全不受任何正负面影响。&#10;&#10;如果某区域的获得许可的国家被完全吞并，则条约在该区域即时作废，一个在该区域已拥有殖民领或第一个新建殖民领的国家会重新获得分配。&#10;&#10;托德西里亚斯条约在历史上是由西葡二国以约西经46°37&#039;为界平分新世界的条约，但在游戏中任何满足条件的国家均可参与。&#10;&#10;==== 土著政策 ====&#10;{{expansion|tc}}&#10;在DLC[[哥萨克]]中，国家必须选择一种土著政策，以决定该国对全球土著的通用策略。此政策只影响可殖民省份的当地土著，不影响成型的土著国家。&#10;&#10;如果选择了“压制”，就可以获得 {{icon|global settler increase}}{{green|+20}} 的全局移民增长，但会遭遇更多土著暴乱。其他两种政策不影响全局移民。&#10;&#10;==== 遭遇原住民 ====&#10;{{main|土著事件}}&#10;在DLC哥萨克中，在基督教国家于新世界建立的殖民地人口少于300时，会触发&#039;&#039;&#039;[[土著事件#遭遇原住民|遭遇原住民]]&#039;&#039;&#039;事件。该事件的3个选项均会导致事件发生，这些事件可能暂时增加 {{icon|global settler increase}} 全局移民增长和 {{icon|colonist chance}} 本地移民几率，且会依选项触发其他关联事件。非基督教国家无此类事件。&#10;&#10;==== 维护费 ====&#10;殖民地维护费是国家维持殖民地所需的资金，可由[[经济]]页面的滑条调整。在满维护费下，第&amp;lt;math&gt;i&amp;lt;/math&gt;个殖民地每年花费：&#10;&#10;&amp;lt;math&gt;\text{年度花费} = \left( 24 + \frac{\text{基础税收 + 基础生产 + 基础人力}}{4} \right) \cdot \left(1 + \max \left( i - \text{殖民者数}, 0 \right)^2 \right) &amp;lt;/math&gt;&#10;&#10;如上式所示，国家每年可维持的殖民地数等于其殖民者数。之后每多一个殖民地，维护费都会成平方增长：&#10;{|class = &quot;mildtable&quot;&#10;|-&#10;! 超额殖民地数 !! 该殖民地维护费倍数&#10;|-&#10;| 1 || 2倍 (1+1²)&#10;|-&#10;| 2 || 5倍 (1+2²)&#10;|-&#10;| 3 || 10倍 (1+3²)&#10;|-&#10;| 4 || 17倍 (1+4²)&#10;|}&#10;注意：与军队超额不同，每一个超额的殖民地之维护费倍数独立增加，而非增加所有殖民地的维护费。所以超额之后最新建的殖民地维护费也最高。&#10;&#10;== 土著 ==&#10;{{SVersion|1.30}}&#10;可殖民的省份常有土著居住。土著会在多种因素的影响下进攻殖民地，也经常攻击那些从省份上路过的军队。然而土著攻击的概率受进攻性影响，所以“共存”的土著政策会完全抹除这些攻击，“贸易”的土著政策会使此概率减半。这对美洲土著国家的影响尤其显著，因为在美洲作战常常需要横跨大量未殖民区域，而这些国家的[[军事科技]]初始仅为1，与本地土著战斗的代价极为沉重，有些时候无法击败大量的土著。&#10;&#10;=== 人口 ===&#10;[[File:Native population map.png|thumb|600px|{{SVersion|1.23|image}} 1444年土著人口]]&#10;土著的人口决定了每次攻击的部队数量。土著人口可经由军事指令 [[File:Attack natives.png|28px]] [[攻击土著]]永久减少，此指令消耗少量 {{icon|mil}} 军事点数，其数值比例于当地土著人口，{{icon|aggressiveness|20px}} 攻击性和 {{icon|ferocity|20px}} 残暴性。直到完全驱走当地土著居民为止，可能需要多次执行该指令，因为因低士气而溃散的军队并没有被杀死，所以不减少当地的人口。&#10;&#10;&#10;==== {{icon|native assimilation}}土著同化 ====&#10;当殖民地成功转变为城市，将有一个名为“土著同化增益”的 {{icon|goods produced}} 商品产出类增益，其效果取决于当地剩余土著人口。此增益公式为：&#10;&#10;&amp;lt;math&gt;\text{土著同化增益} = \frac{\text{土著人口}}{20000}&amp;lt;/math&gt;&#10;&#10;例如，完成殖民时仍拥有1400土著的省份会给予&amp;lt;math&gt;1400 \div 20000 = 0.07&amp;lt;/math&gt;的生产增益。达到4000土著时则给予 {{green|+0.2}} 生产，这与增加一点生产 {{icon|development}} 发展度的效果相同。因此，在土著不发生暴乱或者已经派兵保护的情况下，能放着土著不管总是有益的。&#10;&#10;选择[[殖民#土著政策|土著政策：贸易]]将给予土著同化 {{green|+50%}}，商品生产通常只和当地土著人口有关，而此政策却在此之上另有50%的增幅。前例的1400土著省份在此政策下，商品生产增益达到0.105(e.g., &amp;lt;math&gt;1400 \div 20000 \cdot 1.5 = 0.105&amp;lt;/math&gt;)。&#10;&#10;{{bonus table|native assimilation}}&#10;&#10;=== 土著暴乱 ===&#10;在你殖民一个省份时，当地土著有几率发生暴乱，摧毁殖民地、驱赶外来的入侵者。当土著暴乱发生时，将有土著部队出现，进攻本地驻军，或在无驻军时围城。部队数量等于该省份土著人口（四舍五入至千位）。一旦围城成功（因殖民地无堡垒仅需一个月），每支土著部队会 {{red|−100}} 该殖民地人口，并在人口降至0时完全摧毁该殖民地。一旦发生暴乱，无论成功与否，都会有为期一年的冷却期，期间暴乱概率将降为0。冷却期过后概率照常计算。&#10;{{bonus table|native uprising chance}}&#10;&#10;==== 进攻性 ====&#10;[[File:Native aggressiveness map.png|thumb|600px|{{SVersion|1.23|image}} 1444年土著进攻性]]&#10;[[File:Aggressiveness icon.png|20px]]进攻性量化了本地土著进攻殖民地的概率，从0点到10点。每有一点进攻性，月度土著暴乱概率增加1%。&#10;选择[[殖民#土著政策|土著政策：贸易]]将获得 {{green|−50%}} 暴乱几率，可使进攻性减半。选择[[殖民#土著政策|土著政策：共存]]将获得 {{green|−100%}} 暴乱几率，移除所有殖民地的进攻性，使暴乱不再发生。&#10;&#10;==== 残暴性 ====&#10;[[File:Ferocity icon.png|20px]]残暴性则量化了本地土著的战斗力，从0点到10点。每点残暴性增加暴乱部队5%的战斗伤害。但其对围城后的人口减少没有影响。&#10;&#10;=== 单位 ===&#10;土著使用低科技等级单位：&#10;&#10;{| class=&quot;wikitable sortable&quot; width=&quot;900px&quot;&#10;|-&#10;! 地区 !! 单位名 !! 进攻 {{icon|land morale}} !! 防御 {{icon|land morale}} !!  进攻 {{icon|fire}} !! 防御 {{icon|fire}} !!  进攻 {{icon|shock}} !! 防御 {{icon|shock}} !! 总点数&#10;|-&#10;| 美洲 || 印第安弓箭手 || {{pips|1|off}} || {{pips|0|def}} || {{pips|0|off}} || {{pips|0|def}} || {{pips|1|off}} || {{pips|0|def}} || 2&#10;|-&#10;| 非洲 || 非洲矛兵 || {{pips|1|off}} || {{pips|1|def}} || {{pips|0|off}} || {{pips|0|def}} || {{pips|1|off}} || {{pips|0|def}} || 3&#10;|-&#10;| 亚洲 || 东亚长枪兵 || {{pips|1|off}} || {{pips|0|def}} || {{pips|0|off}} || {{pips|0|def}} || {{pips|1|off}} || {{pips|0|def}} || 2&#10;|-&#10;| 北极圈 || 弓骑兵 || {{pips|1|off}} || {{pips|0|def}} || {{pips|0|off}} || {{pips|0|def}} || {{pips|1|off}} || {{pips|1|def}} || 3&#10;|}&#10;&#10;== 占领 ==&#10;{{SVersion|1.30}}&#10;在战时，殖民地就和普通省份一样，可被敌国占领。殖民地依旧会成长，但之上的殖民者会被遣返回国。驻扎其上的敌军可以执行&#039;&#039;&#039;夺取殖民地&#039;&#039;&#039;，花费25 {{icon|mmp}} [[军事点数]]。此行动会转变殖民地的所有权。但直到新主的殖民者到达之前，其宗教和文化都保持与旧主相同。此殖民地就和普通殖民地一样，需要新主付维护费。且也可能因超限导致维护费上涨。&#10;&#10;另一个行动叫 [[File:Burn_colony.png|28px|link=]] &#039;&#039;&#039;烧毁殖民地&#039;&#039;&#039;，花费5 {{icon|mmp}} [[军事点数]]。这将把殖民地完全摧毁，重新变回未殖民省份。&#10;&#10;需要注意的是，殖民地被占领时也能继续成长，是有可能在被占领的情况下成长为城市的。除非你在殖民完成前就已经「夺取」了殖民地，否则该完成的省份将不可使用「夺取殖民地」行动，殖民完成后仍属于其原主人。&#10;&#10;== 殖民省份 ==&#10;{{SVersion|1.32}}&#10;&#10;一旦殖民完成，殖民地就会变成一个完整的省份。除非你选择直辖之，否则新的省份会成为你的[[自治领地]]，意味着其最低[[自治度]]为90%，且无法分配给省份[[国会]]席位。然而，你还是可以于此处建造[[建筑]]、招募部队、修建船只或提升发展度，而且现在可以从此殖民省份起算[[造核距离]]和殖民距离了。&#10;&#10;如果你直辖了此省份，此殖民省份就会变成一个真真正正完整无缺的省份了。其自治度最低可以会降到0%，而且可以[[国会]]席位。&#10;&#10;当你在某个殖民区域内的殖民省份不到5个时，殖民省份还会直接受你的控制。一旦达到或超过5个，这些省份会组建一个殖民领。因此不推荐在殖民区域直辖省份。&#10;&#10;殖民省份会接受其母国的[[宗教]]和[[文化]]。对于贸易公司地区的省份，如果土著人口为零，也会接受母国的宗教和文化，否则其省份会维持原有的宗教与文化。&#10;&#10;此外无论是否核心省份，殖民省份都不会给母国任何的[[过度扩张]]。这意味着就算该省份是其母国从他国手里所抢得，只要该省份是由殖民所生成，就不会导致任何的过度扩张，但仍然会产生[[叛乱]]。&#10;&#10;== 殖民附属国==&#10;{{SVersion|Timeless}}&#10;{{main|殖民领}}&#10;{{main|贸易公司}}&#10;&#10;[[殖民领]]是由殖民（或于殖民区域征服）所组建的附属国。殖民区域包括美洲和大洋洲。&#10;&#10;[[贸易公司]]则在除首都所在区域之外均可建立，建立贸易公司不需要完整造核。&#10;&#10;[[殖民领]]和[[贸易公司]]都可以控制某节点处的[[贸易值]]，还可以获得额外的[[商人]]和海外军事控制，此外还有一些给母国的其他好处。&#10;&#10;== 黄金七城和青春之泉 ==&#10;{{SVersion|1.29}}&#10;{{main|黄金七城事件}}&#10;&#10;在DLC {{icon|ed}} 黄金国中，可以使用 {{icon|conquistador}} 征服者探索殖民区域的未知地域，在新世界古老传说的搜查过程中，会触发某些事件。这些事件会提供君主点数，{{icon|ducat}} 金币或 {{icon|prestige}} 威望，并为你的新世界探索增添更多乐趣与收获。黄金七城和青春之泉事件链可以提供大量 {{icon|ducat}} 金币并且使得殖民区域省份获得永久修正。&#10;&#10;{| class=&quot;wikitable sortable&quot;&#10;! 地点&#10;! 失败&#10;! 部分发现&#10;! 完全发现&#10;! 永久修正&#10;|-&#10;| 黄金国&#10;| {{red|-10}} {{icon|prestige}}&#10;| &#10;*{{green|+400}} {{icon|ducat}} &#10;*省份获得{{icon|base tax|28px}}{{icon|production|28px}}{{icon|manpower|28px}}三项发展度各{{green|2}}点&#10;| &#10;*{{green|+800}} {{icon|ducat}} &#10;*省份获得{{icon|base tax|28px}}{{icon|production|28px}}{{icon|manpower|28px}}三项发展度各{{green|4}}点&#10;|{{ruby|&#039;&#039;&#039;黄金国&#039;&#039;&#039;|El Dorado}}：&#10;* {{icon|local goods produced modifier|28px}} {{green|+50%}} 本地商品产出修正&#10;* {{icon|local development cost|28px}} {{green|−20%}} 本地提升发展度花费&#10;* {{icon|local unrest|28px}} {{green|−3}} 本地叛乱&#10;&#10;|-&#10;| 锡沃拉&#10;| {{red|-10}} {{icon|prestige}}&#10;|&#10;*{{green|+400}} {{icon|ducat}} &#10;*省份获得{{icon|base tax|28px}}{{icon|production|28px}}{{icon|manpower|28px}}三项发展度各{{green|2}}点&#10;| &#10;*{{green|+800}} {{icon|ducat}} &#10;*省份获得{{icon|base tax|28px}}{{icon|production|28px}}{{icon|manpower|28px}}三项发展度各{{green|4}}点&#10;|{{ruby|&#039;&#039;&#039;锡沃拉&#039;&#039;&#039;|Cibola}}：&#10;* {{icon|tax income|28px}} {{green|+5}} 全局税收&#10;&#10;|-&#10;| 凯撒之城 &#10;| {{red|-10}} {{icon|prestige}}&#10;|&#10;*省份获得{{icon|base tax|28px}}{{icon|production|28px}}{{icon|manpower|28px}}三项发展度各{{green|2}}点&#10;| &#10;*{{green|+800}} {{icon|ducat}} &#10;*省份获得{{icon|base tax|28px}}{{icon|production|28px}}{{icon|manpower|28px}}三项发展度各{{green|4}}点&#10;|{{ruby|&#039;&#039;&#039;凯撒之城&#039;&#039;&#039;|City of the Caesars}}：&#10;* {{icon|local trade power modifier|28px}} {{green|+100%}} 本地贸易力量修正&#10;* {{icon|local goods produced modifier|28px}} {{green|+50%}} 本地商品产出修正&#10;* {{icon|local development cost|28px}} {{green|−20%}} 本地提升发展度花费&#10;|-&#10;| 拉普拉塔山&#10;| {{red|-10}} {{icon|prestige}}&#10;|&#10;*{{green|+400}} {{icon|ducat}} &#10;*省份获得{{icon|base tax|28px}}{{icon|production|28px}}{{icon|manpower|28px}}三项发展度各{{green|2}}点&#10;| &#10;*{{green|+800}} {{icon|ducat}} &#10;*省份获得{{icon|base tax|28px}}{{icon|production|28px}}{{icon|manpower|28px}}三项发展度各{{green|4}}点&#10;|{{ruby|&#039;&#039;&#039;拉普拉塔山&#039;&#039;&#039;|Sierra de la Plata}}：&#10;* {{icon|local tax modifier|28px}} {{green|+50%}} 本地税收修正&#10;* {{icon|local institution spread|28px}} {{green|+100%}} 本地思潮传播&#10;* {{icon|local development cost|28px}} {{green|−20%}} 本地提升发展度花费&#10;|-&#10;| 诺伦贝加&#10;| {{red|-10}}{{icon|prestige}}&#10;|&#10;*{{green|+400}} {{icon|ducat}} &#10;*省份获得{{icon|base tax|28px}}{{icon|production|28px}}{{icon|manpower|28px}}三项发展度各{{green|2}}点&#10;| &#10;*{{green|+800}} {{icon|ducat}} &#10;*省份获得{{icon|base tax|28px}}{{icon|production|28px}}{{icon|manpower|28px}}三项发展度各{{green|4}}点&#10;|{{ruby|&#039;&#039;&#039;诺伦贝加&#039;&#039;&#039;|Norumbega}}：&#10;* {{icon|local development cost|28px}} {{green|−20%}} 本地提升发展度花费&#10;* {{icon|local trade power modifier|28px}} {{green|+50%}} 本地贸易力量修正&#10;* {{icon|local goods produced modifier|28px}} {{green|+50%}} 本地商品产出修正&#10;|-&#10;| 萨格奈王国&#10;| {{red|-10}} {{icon|prestige}}&#10;|&#10;*{{green|+400}} {{icon|ducat}} &#10;*省份获得{{icon|base tax|28px}}{{icon|production|28px}}{{icon|manpower|28px}}三项发展度各{{green|2}}点&#10;| &#10;*{{green|+800}} {{icon|ducat}} &#10;*省份获得{{icon|base tax|28px}}{{icon|production|28px}}{{icon|manpower|28px}}三项发展度各{{green|4}}点&#10;|{{ruby|&#039;&#039;&#039;萨格奈王国&#039;&#039;&#039;|Kingdom of Saguenay}}：&#10;* {{icon|local goods produced modifier|28px}} {{green|+25%}} 本地商品产出修正&#10;* {{icon|local trade power modifier|28px}} {{green|+25%}} 本地贸易力量修正&#10;* {{icon|local development cost|28px}} {{green|−20%}} 本地提升发展度花费&#10;|-&#10;| 基维拉&#10;| {{red|-10}} {{icon|prestige}}&#10;|&#10;*{{green|+400}} {{icon|ducat}} &#10;*省份获得{{icon|base tax|28px}}{{icon|production|28px}}{{icon|manpower|28px}}三项发展度各{{green|2}}点&#10;| &#10;*{{green|+800}} {{icon|ducat}} &#10;*省份获得{{icon|base tax|28px}}{{icon|production|28px}}{{icon|manpower|28px}}三项发展度各{{green|4}}点&#10;|{{ruby|&#039;&#039;&#039;基维拉&#039;&#039;&#039;|Quivira}}：&#10;* {{icon|local production efficiency|28px}} {{green|+25%}} 本地生产效率&#10;* {{icon|local tax modifier|28px}} {{green|+25%}} 本地税收修正&#10;* {{icon|local construction cost|28px}} {{green|−50%}} 本地建设花费&#10;* {{icon|local development cost|28px}} {{green|−20%}} 本地提升发展度花费&#10;|-&#10;| 青春之泉&#10;| {{red|-10}} {{icon|prestige}}&#10;|&#10;*{{green|+400}} {{icon|ducat}} &#10;*省份获得{{icon|base tax|28px}}{{icon|production|28px}}{{icon|manpower|28px}}三项发展度各{{green|2}}点&#10;| &#10;*{{green|+800}} {{icon|ducat}} &#10;*省份获得{{icon|base tax|28px}}{{icon|production|28px}}{{icon|manpower|28px}}三项发展度各{{green|4}}点&#10;|{{ruby|&#039;&#039;&#039;青春之泉&#039;&#039;&#039;|Fountain of Youth}}：&#10;* {{icon|local construction cost|28px}} {{green|−50%}} 本地建设花费&#10;* {{icon|local settler increase|28px}} {{green|+30}} 本地移民增加&#10;* {{icon|local unrest|28px}} {{green|−3}} 本地叛乱&#10;* {{icon|local tax modifier|28px}} {{green|+25%}} 本地税收修正&#10;|}&#10;&#10;== 西伯利亚拓荒区 ==&#10;&amp;lt;section begin=SiberianFrontier/&gt;{{SVersion|1.29}}&#10;{{expansion|tr}}&#10;{{See also|西伯利亚殖民事件}}&#10;DLC {{icon|tr}} [[第三罗马]]解锁了 {{flag|Russia}}的专属殖民机制，加速其扩张进入西伯利亚。一旦 {{flag|Russia}}解鎖了第二個國家理念“西伯利亚前哨站”，與其首都通過非殖民地省份直接陸地相連的未殖民省份便可以建立西伯利亞前哨站。建立前哨站需要花费 {{green|20}} {{icon|dip|24px}} 外交点数，但无需支付前哨站月度殖民地维护费用，{{icon|local settler increase}} 移民人数逐月随机增长 {{green|+5}}与{{green|+15}}之间的一个数值。但因为可以同时建立多个西伯利亚拓荒区，{{flag|Russia}}很快就会毗邻太平洋。&#10;&#10;创建[[自定义国家]]时，也可以选择“允许创建西伯利亚拓荒区”的国家理念；显然它的可使用地区并不只是西伯利亚。&amp;lt;section end=SiberianFrontier/&gt;&#10;&#10;==殖民的策略==&#10;{{main|殖民策略}}&#10;&#10;==AI的殖民倾向==&#10;&#10;测试结果表明，对于一个AI控制的国家，若某个未殖民省份所属的贸易节点无法将贸易额导向任何一个该国拥有省份的贸易节点，则AI永远不会殖民该省份，不论其殖民距离内是否有其它可殖民省份。举例：AI控制的{{flag|Ming}}在不进行扩张的情况下永远不会殖民东南亚的未殖民省份，因为{{flag|Ming}}开局仅在玉门、西安、北京、杭州、广州、成都几个贸易节点拥有省份，而东南亚的马六甲、摩鹿加贸易节点无法导向上述任何一个贸易节点。而对于美洲的加利福尼亚节点，因为有“加利福尼亚→吉林→北京”的贸易路线，所以{{flag|Ming}}会殖民加利福尼亚节点的省份。&#10;&#10;== 参考资料 ==&#10;&amp;lt;references/&gt;&#10;&#10;[[Category:经济]]&#10;{{economy navbox}}&#10;{{diplomacy navbox}}&#10;[[en:Colonization]]&#10;本页使用的模板：&#10;&#10;Template:Ambox（查看源代码）（受保护）Template:Ambox/core（查看源代码）（受保护）Template:Ambox 2020（查看源代码）Template:Anchor（查看源代码）Template:BTRow（查看源代码）Template:Bonus table（查看源代码）Template:Clear（查看源代码）（受保护）Template:Country data Andalusia（查看源代码）Template:Country data BLI（查看源代码）Template:Country data BRI（查看源代码）Template:Country data Bali（查看源代码）Template:Country data Brittany（查看源代码）Template:Country data Brunei（查看源代码）Template:Country data Castile（查看源代码）Template:Country data Champa（查看源代码）Template:Country data Chorti（查看源代码）Template:Country data Dai Viet（查看源代码）Template:Country data England（查看源代码）Template:Country data FLA（查看源代码）Template:Country data Flanders（查看源代码）Template:Country data France（查看源代码）Template:Country data Germany（查看源代码）Template:Country data Great Britain（查看源代码）Template:Country data HSA（查看源代码）Template:Country data Ireland（查看源代码）Template:Country data Japan（查看源代码）Template:Country data Kiche（查看源代码）Template:Country data Lübeck（查看源代码）Template:Country data MAJ（查看源代码）Template:Country data Majapahit（查看源代码）Template:Country data Ming（查看源代码）Template:Country data Morocco（查看源代码）Template:Country data Muscovy（查看源代码）Template:Country data Netherlands（查看源代码）Template:Country data Norway（查看源代码）Template:Country data Portugal（查看源代码）Template:Country data Russia（查看源代码）Template:Country data Scotland（查看源代码）Template:Country data Spain（查看源代码）Template:Country data Sweden（查看源代码）Template:Country data The Papal State（查看源代码）Template:Country data United States（查看源代码）Template:Country data 乔尔蒂（查看源代码）Template:Country data 俄罗斯（查看源代码）Template:Country data 卡斯蒂利亚（查看源代码）Template:Country data 教宗国（查看源代码）Template:Country data 葡萄牙（查看源代码）Template:Country data 西班牙（查看源代码）Template:Diplomacy navbox（查看源代码）（受保护）Template:Economy navbox（查看源代码）（受保护）Template:Expansion（查看源代码）Template:Flag（查看源代码）（受保护）Template:Flag/core（查看源代码）Template:Flagicon（查看源代码）Template:Flagicon/core（查看源代码）（受保护）Template:Green（查看源代码）（受保护）Template:Grey-bd（查看源代码）Template:Hatnote（查看源代码）（受保护）Template:Icon（查看源代码）（受保护）Template:Icon/a（查看源代码）Template:Icon/b（查看源代码）Template:Icon/c（查看源代码）Template:Icon/d（查看源代码）Template:Icon/e（查看源代码）Template:Icon/f（查看源代码）Template:Icon/g（查看源代码）Template:Icon/h（查看源代码）Template:Icon/i（查看源代码）Template:Icon/l（查看源代码）Template:Icon/m（查看源代码）Template:Icon/n（查看源代码）Template:Icon/o（查看源代码）Template:Icon/p（查看源代码）Template:Icon/r（查看源代码）Template:Icon/s（查看源代码）Template:Icon/t（查看源代码）Template:Icon/u（查看源代码）Template:Main（查看源代码）（受保护）Template:MultiColumn（查看源代码）Template:Navbox（查看源代码）（受保护）Template:Navboxgroup（查看源代码）（受保护）Template:Nowrap（查看源代码）Template:Path（查看源代码）（受保护）Template:Pips（查看源代码）Template:Province（查看源代码）（受半保护）Template:Province core（查看源代码）Template:Red（查看源代码）（受保护）Template:Religion（查看源代码）（受半保护）Template:Ruby（查看源代码）Template:SVersion（查看源代码）（受保护）Template:See also（查看源代码）Template:Version（查看源代码）（受保护）Template:Word（查看源代码）Template:白字（查看源代码）返回殖民。&#10;"/>
+<meta name="keywords" content="欧陆风云4百科,殖民"/>
+<meta name="apple-mobile-web-app-capable" content="Yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+<meta name="mobile-web-app-capable" content="Yes"/>
+<meta name="theme-color" content="#103D8F"/>
+<meta name="msapplication-navbutton-color" content="#103D8F"/>
+<meta name="twitter:card" content="summary"/>
+<link rel="icon" href="https://www.eu4cn.com/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="https://www.eu4cn.com/opensearch_desc.php" title="欧陆风云4百科 (zh)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://www.eu4cn.com/api.php?action=rsd"/>
+<link rel="alternate" hreflang="zh" href="https://www.eu4cn.com/zh/殖民"/>
+<link rel="alternate" hreflang="zh-Hans" href="https://www.eu4cn.com/zh-hans/殖民"/>
+<link rel="alternate" hreflang="zh-Hant" href="https://www.eu4cn.com/zh-hant/殖民"/>
+<link rel="alternate" hreflang="zh-Hans-CN" href="https://www.eu4cn.com/zh-cn/殖民"/>
+<link rel="alternate" hreflang="zh-Hant-HK" href="https://www.eu4cn.com/zh-hk/殖民"/>
+<link rel="alternate" hreflang="zh-Hant-MO" href="https://www.eu4cn.com/zh-mo/殖民"/>
+<link rel="alternate" hreflang="zh-Hans-MY" href="https://www.eu4cn.com/zh-my/殖民"/>
+<link rel="alternate" hreflang="zh-Hans-SG" href="https://www.eu4cn.com/zh-sg/殖民"/>
+<link rel="alternate" hreflang="zh-Hant-TW" href="https://www.eu4cn.com/zh-tw/殖民"/>
+<link rel="alternate" hreflang="x-default" href="https://www.eu4cn.com/wiki/殖民"/>
+<link rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+<link rel="alternate" type="application/atom+xml" title="欧陆风云4百科的Atom feed" href="https://www.eu4cn.com/index.php?title=Special:%E6%9C%80%E8%BF%91%E6%9B%B4%E6%94%B9&amp;feed=atom"/>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script data-ad-client="ca-pub-1612414434963106" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114739240-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-114739240-1');
+</script>
+<meta property="og:title" content="殖民"/>
+<meta property="og:site_name" content="欧陆风云4百科"/>
+<meta property="og:url" content="https://www.eu4cn.com/wiki/%E6%AE%96%E6%B0%91"/>
+<meta property="og:image" content="https://www.eu4cn.com/images/logo/logo.png"/>
+<meta property="article:modified_time" content="2023-04-07T10:18:04Z"/>
+<meta property="article:published_time" content="2023-04-07T10:18:04Z"/>
+<script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"Article","name":"\u67e5\u770b\u201c\u6b96\u6c11\u201d\u7684\u6e90\u4ee3\u7801 - \u6b27\u9646\u98ce\u4e914\u767e\u79d1\uff0c\u4eba\u4eba\u53ef\u4ee5\u7f16\u8f91\u7684\u6b27\u9646\u98ce\u4e914\u4e2d\u6587\u767e\u79d1\u5168\u4e66","headline":"\u67e5\u770b\u201c\u6b96\u6c11\u201d\u7684\u6e90\u4ee3\u7801 - \u6b27\u9646\u98ce\u4e914\u767e\u79d1\uff0c\u4eba\u4eba\u53ef\u4ee5\u7f16\u8f91\u7684\u6b27\u9646\u98ce\u4e914\u4e2d\u6587\u767e\u79d1\u5168\u4e66","mainEntityOfPage":"\u67e5\u770b\u201c\u6b96\u6c11\u201d\u7684\u6e90\u4ee3\u7801","identifier":"https:\/\/www.eu4cn.com\/wiki\/%E6%AE%96%E6%B0%91","url":"https:\/\/www.eu4cn.com\/wiki\/%E6%AE%96%E6%B0%91","dateModified":"2023-04-07T10:18:04Z","datePublished":"2023-04-07T10:18:04Z","image":{"@type":"ImageObject","url":"https:\/\/www.eu4cn.com\/images\/logo\/logo.png"},"author":{"@type":"Organization","name":"\u6b27\u9646\u98ce\u4e914\u767e\u79d1","url":"https:\/\/www.eu4cn.com","logo":{"@type":"ImageObject","url":"https:\/\/www.eu4cn.com\/images\/logo\/logo.png","caption":"\u6b27\u9646\u98ce\u4e914\u767e\u79d1"}},"publisher":{"@type":"Organization","name":"\u6b27\u9646\u98ce\u4e914\u767e\u79d1","url":"https:\/\/www.eu4cn.com","logo":{"@type":"ImageObject","url":"https:\/\/www.eu4cn.com\/images\/logo\/logo.png","caption":"\u6b27\u9646\u98ce\u4e914\u767e\u79d1"}},"potentialAction":{"@type":"SearchAction","target":"https:\/\/www.eu4cn.com\/index.php?title=Special:Search&search={search_term}","query-input":"required name=search_term"}}</script>
+<link rel="stylesheet" href="http://www.unpkg.com/@fortawesome/fontawesome-free@5.15.1/css/all.css" />
+<link rel="stylesheet" href="http://www.unpkg.com/@fortawesome/fontawesome-free@5.15.1/css/v4-shims.css" />
+<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+<body class="Liberty width-size mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-殖民 rootpage-殖民 skin-liberty action-edit skin--responsive">		<header>
+			<div class="nav-wrapper navbar-fixed-top">
+						<nav class="navbar navbar-dark yamm">
+			<a class="navbar-brand" href="https://www.eu4cn.com/wiki/首页"></a>
+			<ul class="nav navbar-nav">
+				<li class="dropdown nav-item">
+					<a class="nav-link navbar-right" href="#" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+						<div class="navbar-brand-subtitle">欧陆风云4</div>
+						<div class="navbar-family">ParaWikis</div>
+					</a>
+				<ul class="dropdown-menu" aria-labelledby="dLabel">
+					<li>
+		                  <div class="yamm-content">
+		                    <div class="row">
+						 							<ul class="col-sm-4 list-unstyled">
+							<li><p class="meganav-item"><strong>最新百科</strong></p></li>
+								<a href="http://cs2.parawikis.com/" class="dropdown-item meganav-item">都市天际线2百科</a>
+								<a href="http://h3.parawikis.com/" class="dropdown-item meganav-item">英雄无敌3百科</a>
+								<a href="http://vic3.parawikis.com/" class="dropdown-item meganav-item">维多利亚3百科</a>
+								<a href="http://ce2.parawikis.com/" class="dropdown-item meganav-item">奇妙探险队2百科</a>
+								<a href="http://eos.parawikis.com/" class="dropdown-item meganav-item">罪恶帝国百科</a>
+								<a href="http://ir.parawikis.com/" class="dropdown-item meganav-item">英白拉多：罗马百科</a>
+							</ul>
+							<ul class="col-sm-4 list-unstyled">
+								<li><p class="meganav-item"><strong>热门百科</strong></p></li>
+								<a href="http://stellaris.parawikis.com/" class="dropdown-item meganav-item">群星百科</a>
+								<a href="http://www.eu4cn.com/" class="dropdown-item meganav-item">欧陆风云4百科</a>
+								<a href="http://ck2.parawikis.com/" class="dropdown-item meganav-item">十字军之王2百科</a>
+								<a href="http://ck3.parawikis.com/" class="dropdown-item meganav-item">十字军之王3百科</a>
+								<a href="http://hoi4.parawikis.com/" class="dropdown-item meganav-item">钢铁雄心4百科</a>
+								<a href="http://vic2.parawikis.com/" class="dropdown-item meganav-item">维多利亚2百科</a>
+							</ul>
+							<ul class="col-sm-4 list-unstyled">
+								<li><p class="meganav-item"><strong>ParaWikis</strong></p></li>
+								<a href="http://www.parawikis.com/wiki/ParaWikis:申请建站" class="dropdown-item meganav-item">申请建站</a>
+								<a href="http://www.parawikis.com/" class="dropdown-item meganav-item">ParaWikis</a>
+								<a href="http://commons.parawikis.com/" class="dropdown-item meganav-item">ParaCommons</a>
+							</ul>		                    </div>
+		                  </div>
+		                </li>
+				</ul>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="https://www.eu4cn.com/wiki/Special:最近更改" class="nav-link" title="本wiki的最近更改列表[r]" accesskey="r"><span class="fas fa-sync"></span><span class="hide-title">最近更改</span></a>				</li>
+				<li class="nav-item">
+					<a href="https://www.eu4cn.com/wiki/Special:随机页面" class="nav-link" title="加载一个随机页面[x]" accesskey="x"><span class="fa fa-random"></span><span class="hide-title">随机页面</span></a>				</li>
+				<li class="nav-item">
+					<a href="http://shang.qq.com/wpa/qunwpa?idkey=3bb76f6a58594b18c2defdc03af7ec2703fb2e2cc8fef6dadd1dcb896c0ede1a" target="_blank" class="nav-link" title="加入QQ群">
+						<span class="fa fa-qq"></span><span class="hide-title">加入QQ群</span>
+					</a>
+				</li>
+				<li class="dropdown nav-item">
+					<a class="dropdown-toggle nav-link" href="#" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+						<span class="fa fa-wrench"></span><span class="hide-title">工具</span>
+					</a>
+				<ul class="dropdown-menu" aria-labelledby="dLabel">
+					<li id="t-whatlinkshere" class="mw-list-item"><a href="https://www.eu4cn.com/wiki/Special:链入页面/殖民" title="所有链接至本页面的wiki页面列表[j]" accesskey="j" class="dropdown-item">链入页面</a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="https://www.eu4cn.com/wiki/Special:链出更改/殖民" rel="nofollow" title="链自本页的页面的最近更改[k]" accesskey="k" class="dropdown-item">相关更改</a></li><li id="t-specialpages" class="mw-list-item"><a href="https://www.eu4cn.com/wiki/Special:特殊页面" title="所有特殊页面的列表[q]" accesskey="q" class="dropdown-item">特殊页面</a></li><li id="t-info" class="mw-list-item"><a href="https://www.eu4cn.com/index.php?title=%E6%AE%96%E6%B0%91&amp;action=info" title="关于此页面的更多信息" class="dropdown-item">页面信息</a></li><li id="t-cargopagevalueslink" class="mw-list-item"><a href="https://www.eu4cn.com/index.php?title=%E6%AE%96%E6%B0%91&amp;action=pagevalues" rel="cargo-pagevalues" class="dropdown-item">页面值</a></li>				</ul>
+				</li>
+				<li class="dropdown nav-item"><a class="nav-link dropdown-toggle dropdown-toggle-fix" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true" title="帮助"><span class="fa fa-question"></span><span class="hide-title">帮助</span></a><div class="dropdown-menu" role="menu"><a class="dropdown-item" href="https://www.eu4cn.com/wiki/Project:译名手册" title="譯名手冊"><span class="fa fa-book"></span>譯名手冊</a><a class="dropdown-item" href="https://www.eu4cn.com/wiki/Project:字词转换" title="字詞轉換"><span class="fa fa-language"></span>字詞轉換</a><a class="dropdown-item" href="https://www.eu4cn.com/wiki/Project:编辑指南" title="編輯指南"><span class="fa fa-graduation-cap"></span>編輯指南</a><a class="dropdown-item" href="https://www.eu4cn.com/wiki/Project:编辑规范" title="編輯規範"><span class="fa fa-lightbulb"></span>編輯規範</a><a class="dropdown-item" href="https://www.eu4cn.com/wiki/Project:练手沙盒" title="Project:练手沙盒"><span class="fa fa-leaf"></span>練手沙盒</a></div></li><li class="dropdown nav-item"><a class="hidden-xs-down nav-link" data-toggle="" role="button" aria-haspopup="true" aria-expanded="true" title="ParaTranz" href="https://paratranz.cn/"><span class="fa fa-language"></span><span class="hide-title">ParaTranz</span></a></li><li class="dropdown nav-item"><a class="hidden-xs-down nav-link" data-toggle="" role="button" aria-haspopup="true" aria-expanded="true" title="52PCGame" href="http://bbs.52pcgame.net/"><span class="fa fa-comments"></span><span class="hide-title">52PCGame</span></a></li><li class="dropdown nav-item"><a class="hidden-xs-down nav-link" data-toggle="" role="button" aria-haspopup="true" aria-expanded="true" title="Project:捐款" href="https://www.eu4cn.com/wiki/Project:捐款"><span class="fa fa-heart"></span><span class="hide-title">资助我们</span></a></li>			</ul>
+					<div class="navbar-login">
+							<a href="#" class="none-outline" data-toggle="modal" data-target="#login-modal">
+					<span class="fa fa-sign-in"></span>
+				</a>
+					</div>
+									<form action="https://www.eu4cn.com/index.php" id="searchform" class="form-inline">
+			<input type="hidden" name="title" value="Special:搜索"/>
+			<div class="input-group">
+				<input type="search" name="search" placeholder="在欧陆风云4百科搜索" aria-label="在欧陆风云4百科搜索" autocapitalize="sentences" title="在欧陆风云4百科搜索[f]" accesskey="f" class="form-control" id="searchInput"/>				<span class="input-group-btn">
+					<button type="submit" name="go"
+						value="前往" id="searchGoButton"
+							class="btn btn-secondary" type="button"><span class="fa fa-eye"></span></button>
+					<button type="submit" name="fulltext"
+						value="搜索"
+						id="mw-searchButton" class="btn btn-secondary" type="button">
+						<span class="fa fa-search"></span></button>
+				</span>
+			</div>
+		</form>
+			</nav>
+				</div>
+		</header>
+		<section>
+			<div class="content-wrapper">
+							<aside>
+			<div class="liberty-sidebar">
+				<div class="live-recent-wrapper">
+					<div id='mw-data-after-content'>
+	<div class="read-more-container"></div>
+</div>
+												<div
+			class="live-recent"
+			data-article-ns="0|4|10|12|14"
+			data-talk-ns="1|5|7|9|11|13|15"
+		>
+			<div class="live-recent-header">
+			<ul class="nav nav-tabs">
+				<li class="nav-item">
+					<a href="javascript:" class="nav-link active" id="liberty-recent-tab1">
+						最近更改					</a>
+				</li>
+				<li class="nav-item">
+					<a href="javascript:" class="nav-link" id="liberty-recent-tab2">
+						最近讨论					</a>
+				</li>
+			</ul>
+			</div>
+			<div class="live-recent-content">
+				<ul class="live-recent-list" id="live-recent-list">
+					<li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li>				</ul>
+			</div>
+			<div class="live-recent-footer">
+				<a href="https://www.eu4cn.com/wiki/Special:最近更改" title="Special:最近更改"><span class="label label-info">查看更多</span></a>			</div>
+		</div>
+						<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 侧栏 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1612414434963106"
+     data-ad-slot="1728061201"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-K4RD1C6KBW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-K4RD1C6KBW');
+</script>
+				</div>
+										</div>
+			</aside>
+								<div class="container-fluid liberty-content">
+					<div class="liberty-content-header">
+													<div class="alert alert-dismissible fade in alert-info liberty-notice" role="alert">
+								<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+								<div id="localNotice"><div class="sitenotice" lang="zh" dir="ltr"><div style="text-align:center; font-size:125%; line-height: 1; padding: 10px;"><b>欢迎访问欧陆风云4百科！<a href="https://www.eu4cn.com/wiki/Special:用户登录" title="Special:用户登录"><span class="alert-link">注册一个账号</span></a>，一起参与编写吧！这里是<a href="https://www.eu4cn.com/wiki/欧陆风云4百科:当前任务#页面" title="欧陆风云4百科:当前任务"><span class="alert-link">当前的工程</span></a>。</b></div>
+<div style="text-align: center;">如果您想帮助本站建设，欢迎点击<a href="https://www.eu4cn.com/wiki/欧陆风云4百科:捐款" title="欧陆风云4百科:捐款"><b>这里</b></a>捐款！欢迎所有对百科感兴趣的同学加入QQ群：<b>497888338</b>。</div></div></div>							</div>
+															<div class="content-tools">
+				<div class="btn-group" role="group" aria-label="content-tools">
+					<div id="ca-view" class="mw-list-item"><a href="https://www.eu4cn.com/wiki/殖民" class="btn btn-secondary tools-btn">阅读</a></div><div id="ca-viewsource" class="selected mw-list-item"><a href="https://www.eu4cn.com/index.php?title=%E6%AE%96%E6%B0%91&amp;action=edit" title="本页面受到保护。&#10;您可以查看其源代码[e]" accesskey="e" class="btn btn-secondary tools-btn">查看源代码</a></div><div id="ca-history" class="mw-list-item"><a href="https://www.eu4cn.com/index.php?title=%E6%AE%96%E6%B0%91&amp;action=history" title="本页面过去的版本[h]" accesskey="h" class="btn btn-secondary tools-btn">查看历史</a></div>					<a href="https://www.eu4cn.com/wiki/Talk:殖民" class="btn btn-secondary tools-btn" title="关于内容页面的讨论[t]" accesskey="t" id="ca-talk">讨论</a>				</div>
+			</div>
+							<div class="title">
+						<h1>
+							查看“殖民”的源代码						</h1>
+						<div class="mw-indicators">
+</div>
+						</div>
+						<div class="contentSub" >
+							←<a href="https://www.eu4cn.com/wiki/殖民" title="殖民">殖民</a>						</div>
+				</div>
+					<div class="liberty-content-main" id="content">
+											<div class="mw-body-content" id="mw-content-text">
+							<div id="mw-content-text" class="mw-body-content"><p>因为以下原因，您没有权限编辑本页：
+</p>
+<div class="permissions-errors">
+<p>您请求的操作仅限属于该用户组的用户执行：<a href="https://www.eu4cn.com/wiki/欧陆风云4百科:用户" title="欧陆风云4百科:用户">用户</a>
+</p>
+</div><hr />
+<p>您可以查看和复制此页面的源代码。
+</p><textarea readonly="" accesskey="," id="wpTextbox1" cols="80" rows="25" style="" class="mw-editfont-monospace" lang="zh" dir="ltr" name="wpTextbox1">{{Version|1.29}}
+'''殖民'''是游戏中的一项重要内容。各国都可以在美洲、亚洲、非洲、澳洲以及西伯利亚与太平洋岛屿进行探索、殖民。
+
+__TOC__
+== 殖民的目的和前提 ==
+殖民最大的收益，是可以增加殖民国的收入和后勤保障。海外殖民省份可以为其殖民母国带来巨大的[[贸易收入]]提升，同时也为远赴海外的海陆军提供了落脚点。
+
+殖民活动的主要形式之一是建立一个 {{icon|Colonial nation}}[[殖民领]]。殖民领是一种AI操控的[[附属国]]，会建立自己的海陆两军，并为宗主国贡献贸易力量和其他收益；另一种形式是创建 {{icon|Trade company}}[[贸易公司]]，将一些自治领地中的省份交由贸易公司管理，会在相应[[节点]]为本国提供极大的贸易增益。这两种殖民手段分别适用于不同的地区。
+
+除了这两种方式之外，任何国家也都可以选择[[直属州与自治领地|直辖]]海外[[直属州与自治领地|领地]]，这样无论领土离本国有多远，都可以100%地从中获益。不过[[直属州与自治领地|直辖]]那些殖民区域的省份可能并没什么必要，因为随着殖民地的扩张，这些省份往往终将建立起一个殖民领。而对于殖民区域以外的地区，比起[[直属州与自治领地|直辖]]这些海外省份，建立贸易公司可能是更好的选择，尤其是对于处在欧洲西部的国家，因其可以提供更高的贸易力量，且可以忽略当地由于宗教不同而带来的负面影响。然而对其他国家来说，直辖这些省份的收益有时也很可观。
+
+要进行殖民，一个国家需要满足以下条件：
+*拥有 {{icon|colonist}}殖民者。殖民者可以通过[[理念组]]、一些[[国家理念]]、[[国会]]议题、三种美洲原始宗教（{{Religion|Nahuatl}}、{{Religion|Mayan}}、{{Religion|Inti}}）的宗教改革等方式获得和[[土著理念]]获得。在游戏刚刚开局时，没有任何国家拥有可用的殖民者，因而只有在开启所需的[[理念组]]或激活某些[[国家理念]]后，才能获得殖民者。
+**当DLC {{icon|tr}} 第三罗马启用时，{{flag|俄罗斯}}在解锁其第二项国家理念“西伯利亚前哨站”后，可以建立[[西伯利亚拓荒区]]，这种特殊的机制允许其不需要殖民者就可以向与其首都在陆上相连的省份建立殖民地。创建[[自定义国家]]时也可以选择这条理念。
+*在该国家的 {{icon|colonial range}}殖民范围内有尚未被任何国家占据的可殖民省份。
+
+拥有殖民者、且有满足条件的未殖民省份时，就可以选择向这个省份派出殖民者进行殖民。
+
+维护殖民地的建设需要一定的 {{icon|ducats}}金钱；还需要设法处理与当地原住民关系的问题——派出军队镇压可能的暴乱，或通过选择较温和的土著政策等方式降低暴乱出现的可能性。
+
+== 探索 ==
+{{SVersion|1.30}}
+游戏开局时，大多数的可殖民省份位于美洲新大陆（或[[随机新世界]]）、非洲、西伯利亚、东印度群岛、澳大利亚和太平洋诸岛。对于不同科技组的国家来说，他们在游戏开局时可见的世界范围也不同，往往都有一些未殖民省份在其可见范围内，但更多的未殖民省份都在[[未知地域]]的覆盖之下。探明这些地区是殖民的必要条件。
+
+而说到如何探明这些地区，就要看你是否启用DLC {{icon|ed}} [[黄金国]]了。也有之下这些要素不受DLC影响：
+
+* 必定需要 {{icon|conquistador}} [[征服者]]来探索陆地省份（除非国家处于战争状态，见下），需要 {{icon|explorer}} [[探险家]]来探索海洋省份。此二者为特殊的[[军事领袖]]，雇佣时生成的能力值只以对应传统的80%计算，但具备探索未知地域的能力。
+* {{icon|exploration}} [[探索理念组]]的第一项{{icon|idea}}理念“探索新世界”，为解锁 {{icon|conquistador}} [[征服者]]、 {{icon|explorer}} [[探险家]]的条件。个别国家（尤其是 {{flag|Portugal}}）在1444年刚开局尚无此理念的情况下就已经拥有一位探险家，也有少数国家（比如 {{flag|HSA}}）可以通过任务获得一名探险家，因而可以在尚未开启探索理念的情况下就开始进行探索。
+** {{flag|Norway}}的第二项国家理念“祖先的呼唤”也会允许其征召 {{icon|conquistador}} [[征服者]]和 {{icon|explorer}} [[探险家]]，从而可以探索未知地带。这也是目前游戏中唯一可以绕过 {{icon|exploration}} 探索理念组获得这两种军事领袖的方式。
+* 在战时，军队可以自由进出'''所有'''敌方省份，甚至直接进入未知地域，无视可能的堡垒和封港影响。只需要给军队下达向未知地域去的移动指令，无论该移动是否可行，军队都将执行移动指令。此种移动耗费的时间与征服者的探索时间完全相同。当移动完成后，军队要么进入省份，要么发现移动被阻挡而停止移动。但无论如何省份都会被探明。
+* 高[[陆军传统]]下雇佣的征服者将有几率探开邻接省份。
+* 未探索的陆地省份每个月都有几率被其相邻省份的拥有国所知（平均需3~5年）。{{flag|Russia}}和 {{icon|Colonial nation}}殖民领的[[国家理念]]，以及可立即探明相邻省份。
+* 对一个国家来说，单个省份的地图传播基于该国（以下称为A国）与他国的接触。某未知省份的地图传播到A国的一般条件为：
+** A国已发现其相邻省份，超过25年。
+** 该省份的所有国已发现A国的首都省份，超过30年。
+** 属同一文化组或同一宗教组的A国邻国已发现该省份，超过75年。
+
+任何国家经由外交行动[[申请共享地图]]发现指定[[区域]]内的所有省份，该行动需要目标国家完全探索该区域、需要一定量的 {{icon|prestige}} 威望、还需要提出国有单位位于相邻区域，且需目标国家愿意提供给其这些地图。此外，[[间谍]]选项中的“窃取地图”允许花费间谍网点数获得某个指定地区内全部省份的地图，而且无需花费[[威望]]。
+
+=== 无DLC {{icon|ed}} 黄金国时的探索 ===
+* {{icon|conquistador}}征服者指挥的陆军（人数任意）可以进入未知地域内的省份，并借此探明之。如果该省份被某国所有，且军队并无军事通行权，该省份仍将被探明，但军队将不会移动。征服者可以随意穿行那些原始国家（新世界[[科技组]]的政府未改革国家）的国土，无需通行权。
+* {{icon|explorer}}探险家指挥的海军（数量任意）可以进入未知地域内的海域，并借此探明之。在某片海域中的探索中，将有机会发现该海域的沿海省份（探险家的[[机动]]会增加这一几率）。派一艘船在某一海域来回航行，终归会探明所有的沿海省份（约需6~12个月）。探索时船只损耗正常计算，停泊协议可以有效拓张你的探索范围。
+
+=== 有DLC {{icon|ed}} 黄金国时的探索 ===
+*除了在部队移动向未知省份过程中一并探知这个省份的常规方式， {{icon|conquistador}} 征服者指挥的陆军（人数任意）可以执行探索黄金七城任务。军队处在[[殖民区域]]之内，且该国首都不在殖民区域，才可以在军队面板中选择这个任务。执行该任务的军队会自动穿行于未知地域之中，不停地探开省份，不停触发各种事件。无论是否使用黄金七城行动，探索由土著国家控制的省份都不需要军事通行权。
+* 如果你想探索非殖民区域的省份，或国家首都就位于殖民区域，那么探索方式与上述无DLC {{icon|ed}} 黄金国时完全相同。
+* {{icon|explorer}} 探险家指挥的海军（至少含3艘 {{icon|light ship}} 轻型船只或3艘 {{icon|heavy ship}} 重型船只）可以于舰队面板中选择探索任务，随后舰队会自动探索相应海域。
+** 任务目标可以选择“水域”，这样就只会探索外海和沿岸海域；也可以选择“海岸”，这样才能探索沿岸省份。一般来说，探索“海岸”要在相应“水域”探索完成之后才能选择。探索外海时，会探索完所有海域然后返回；探索沿岸海域时，会依次探索所有沿岸省份然后返回。右键直接点击未知领域，如果该区域在探索范围之内，也会自动开始该区域的探索。
+** 探索任务中的舰队不受损耗影响，但只能探索 {{icon|colonial range}} 殖民范围之内的区域。且任务中的船只不可召回、不可变更任务，只能选择解散，这有可能导致带队的探险家死亡。探索任务中会触发数个事件。如果探险家在任务中死亡，舰队将自动返回，此返程过程计算损耗。
+** 探险家也可以执行'''环球航行'''任务。此任务中船只将正常损耗：船只会沉没，探险家也会死亡。与一般的探索任务相同，执行环球航行任务的船只同样不可召回、变更任务。这也意味着在进行此任务前，你必须做好充分的准备工作。第一个环球成功的国家将获得 {{icon|prestige}}{{green|+100}} 威望，之后的每一个成功的国家都将获得 {{icon|prestige}}{{green|+10}} 威望。每个国家只能完成一次环球航行，可以不停地尝试直到成功为止。
+
+=={{icon|colonists}} 殖民者 ==
+{{SVersion|1.30}}
+需要向可殖民省份派出殖民者，才能建立殖民地。以下理念组或国家理念可以给予殖民者：
+{{bonus table|colonists}}
+
+{{Religion|Nahuatl}}、{{Religion|Mayan}}、{{Religion|Inti}}的五项宗教改革之一中都有一项可以获得一个殖民者。[[土著议会]]的[[土著理念|土著理念：氏族迁徙]]也会提供一个殖民者。对于已经完成了探索理念或扩张理念的国家，如果其拥有[[国会]]，也可以通过议案“特许殖民地”，在10年内获得一个额外的殖民者。
+
+=== 土著政策 ===
+{{expansion|tc}}
+[[File:Native policies.png|thumbnail|right|土著政策的游戏内图示]]
+土著政策是一个国家在遍布全球的殖民之中对待各地原住民的通用政策。一旦国家获得第一个殖民者（无论何种方式），就'''必须'''选择一个土著政策。初次选择是免费的，之后的每次更改都将花费 {{red|-1}} {{icon|stability}} 稳定度，更改没有冷却时间。
+
+'''原住民共存政策'''提供 {{green|−100%}} 的 {{icon|native uprising chance}} [[土著暴乱]]几率，即把所有殖民地的暴乱概率降为0。此政策可以让玩家几乎完全不必担心土著暴乱，从而节省精力，在向新的、较远的地区殖民时也不必再费心派驻军队。
+
+这种政策特别适用于那些需要把军队投入大规模战争，或经济实力、军事实力都有限的国家；也适用于那些前期战斗力偏弱，易折损于凶残土著的国家，这主要是指开局时科技较低的撒哈拉以南及美洲本土国家。
+
+'''原住民市易政策'''提供 {{green|−50%}} 的 {{icon|native uprising chance}} 土著暴乱几率（即让[[进攻性]]减半）和 {{green|+50%}} 的 {{icon|native assimilation}} [[土著同化]]。
+
+土著同化可以带来在殖民完成后带来一些额外的收益。当殖民地完成时，其商品产量受下式加成：
+
+&lt;math>\text{土著人口} \div 20,000&lt;/math>（向下舍入）。
+
+而贸易性的土著政策可使此加成再增加 {{green|50%}}。
+
+此政策尤其适合 {{flag|France}}，该国的[[国家理念]]可以将[[进攻性]]再减少50%，从而能够完全消除土著叛乱；完成[[探索理念]]和[[扩张理念]]后解锁的[[政策]]也同样可以减少50%土著暴乱几率，因而也可以与该种土著政策配合使用；即使没有以上加成，这种政策也可以大大减少土著暴乱，因而适合那些拥有镇压小打小闹的能力，又想完全掌控殖民地的国家；也适合那些在区域内占有强大贸易比率的国家。
+
+'''原住民弹压政策'''提供 {{green|+20}} 的 {{icon|global settler increase}} 全局移民增长。该政策在游戏早期可以大大加快殖民速度，但在高科技等级下效果并不显著。殖民地省份将需要军队驻扎以防备土著暴乱，因为此政策并不减少 {{icon|native uprising chance}} 暴乱几率。这在开拓一块新的、较远的殖民地时可能较为麻烦。在选择这种土著政策时，可以考虑配合着使用军事指令 [[File:Attack natives.png|28px]] [[攻击土著]]。
+
+==={{icon|colonial range}} 殖民范围 ===
+'''殖民范围'''指一国从其任意[[核心]]省份起算的可殖民范围。此范围总是从距离最近的核心省份起算，其数值受[[科技#外交科技|外交科技]]等级、事件、顾问、任务、政策、理念和其他各类增益加成。第三国的停泊许可不影响此范围。此范围亦影响[[探险家]]可执行探索任务的最远距离。如果国家没有港口，那么无论殖民范围多广，国家将只能殖民相邻的陆地省份。
+
+可以把地图模式切换为“殖民”，来查看某省份的殖民范围，并观察你想殖民的省份。该模式下绿色为范围内，而红色为范围外。
+
+{{bonus table|colonial Range}}
+AI国家自带{{green|+25%}}的殖民范围加成，以补偿AI的智力水平，因为AI不会像玩家一样殖民一块飞地作为跳板。
+
+[[顾问#外交型|航海家顾问]]给予 {{green|+20%}} 的殖民范围加成。
+
+==={{icon|colonist time}} 行程时间 ===
+{{SVersion|1.30}}
+殖民者去往目标省份建立殖民地所花费的行程时间与[[商人]]和[[外交官]]的 {{icon|envoy travel time}} [[使者#使者行程时间|行程时间]]不尽相同。此时间的基础值主要取决于首都与目标的海上航行距离，除非二者直接经陆地相连。行程路线起点取首都港口或与内陆首都直连的某港口，终点取目标省份建港处或距目标省份最近的港口。
+
+&lt;s>'''例'''：{{flag|Portugal}} 首都为里斯本。现在想殖民 {{Province|839}}，该省份邻接中美洲西岸的玛雅国家 {{flag|Kiche}}。此时殖民者必须绕过南美的合恩角，然后再北上到中美洲。然而，如果 {{flag|Portugal}}事先殖民邻接匹普的东岸省份 {{Province|2637}}，之后殖民者再去匹普就无需再走这么一条邪路了。&lt;/s>
+1.30版本中这个例子不再适用，因为提到的两个省份都给到了新的玛雅国家{{flag|乔尔蒂}}，不再是未殖民省份。
+
+鉴于游戏中计算行程时间的方法较为固定，可能导致殖民者实际的行程时间比看起来要更长。比如，想殖民一个不与首都直连的港口省份，殖民者就只会直接奔向该省份的港口，即便“先到另一个港口然后转陆路”其实会快得多（尤其是中美洲的某些省份，邻接两片大洋但只有一边有港口）；或者想殖民内陆省份时也有类似问题。这些与常识不符的算法有时会让你低估殖民者的行程时间。
+
+[[殖民区域]]内，尤其是北美的国家，行程时间可能会比预期长得多。这是因为当前首都可能沿海，然后殖民者就会开始环美洲航行之旅，虽然走陆路可能只要两步。迁都至内陆可以有效解决此问题。
+
+殖民者的海上移动速度比陆上或沿岸移动速度要快。比如对欧洲国家来说，加勒比在地图上比撒哈拉以南非洲要远，但去加勒比却要更快。
+
+自[[1.28.X 版本#1.28.2|1.28.2]]版本起，殖民者的行程时间受到 {{icon|envoy travel time}}  [[使者#使者行程时间|行程时间]]的修正。如果殖民地建造完成或你主动召回殖民者，那么殖民者会瞬间到家，即返程无行程时间。
+
+只要一个国家向一个未殖民省份派出了殖民者，无论这个殖民者要走多长时间，除非该国殖民地被摧毁，否则其他国家都无法向其目标省份派遣殖民者，即使理论上其他国家的殖民者到达这个殖民地需要的时间更短。
+
+=== 促进垦殖 ===
+&lt;section begin=SettlementGrowth/>{{SVersion|1.29}}{{expansion|dhr}}
+你可以派遣空闲的 {{icon|colonist}} 殖民者去组织移民提升省份的发展度。根据省份发展度及发展度修正每年有几率随机提升 {{green|+1}} 基础税收、基础生产和基础人力之一，最低有 {{green|5%}}几率。&lt;section end=SettlementGrowth/>
+
+=== 驱逐少数族群 ===
+{{SVersion|1.33}}
+{{expansion|gc}}
+[[File:Expel_minorities.png|thumb|480px|驱逐少数族群]]
+一个国家可以选择从本国'''驱逐少数族群'''去往殖民区域进行殖民。与本国主流文化不相同，或信仰的宗教与国教不相同的省份，可以被视为“少数族群”。这会使殖民地省份获得这个被驱逐出的省份原有的宗教、文化。在这块殖民地建立的过程中可以获得更高的{{icon|colonist chance}}新移民几率，原省份的发展度越高，获得的新移民几率加成越高。而在殖民完成后，这块殖民地可以获得额外的发展度，原省份的发展度越高，最终可能获得的额外发展度就越高；但是，在这块殖民地获得发展度的同时，驱逐出的省份也会有对应的减少。
+
+只有向[[殖民领#殖民区域列表|殖民区域]]（即新大陆和澳大利亚）的省份殖民时才能驱逐少数族群；只能从[[直属州]]的核心省份驱逐少数族群，且该省份不能有[[分离主义]]，但是驱逐少数族裔将移除原省份的宗教狂热修正，并将获得一个为期20年的修正，带来{{Icon|missionary strength}}{{Green|+5%}}本地传教强度和{{Icon|culture conversion cost}}{{Green|-25%}}本地转变文化花费。当殖民者到达、驱逐开始后，就不能撤回这个殖民者，直到殖民地建设完毕、驱逐完成；但仍可以直接放弃这块殖民地。当这个殖民地省份被敌人或暴乱的土著占领时，殖民者会被强制遣返，这时驱逐进程会停止。
+
+这类殖民地的维护费可以受到 {{icon|expel minority cost}} 驱逐少数族群花费的修正：
+
+{| class="mildtable"
+! {{icon|expel minority cost}} 
+! 条件
+|-
+| align=right | {{green|−25%}} || 完成法国任务 '''部署龙骑兵'''
+|
+|-
+| align=right | {{green|−100%}} || 拥有'''流放殖民地公司'''政府改革
+|}
+
+== 人口 ==
+{{SVersion|1.29}}
+一旦殖民者到达一个新省份，其初始人口就为'''10'''。人口的增长基于 {{icon|global settler increase}} [[殖民#全局移民增长|全局移民增长]]修正，此修正主要靠 {{icon|dip tech}} [[外交科技]]等级增加，也靠某些理念或其他修正。
+
+此外只要殖民地有殖民者在，每月就有机会额外增加'''25'''人口。一旦人口超过'''400'''，该地就会根据地理位置随机出产一种[[商品]]。可以将鼠标悬停于未殖民省份省份窗口的 {{icon|unknown}} 问号图标上，查看该省份的可能商品列表。人口达到'''1000'''时殖民地就会变为真正的城市，而掉到'''0'''时殖民地将被摧毁：这可能是来自于土著的破坏、各类事件、或战争中敌国的刻意破坏。想重开殖民地就要重新派遣殖民者，一切从头开始。
+
+只要你想，殖民者可以去任何地方，也可以随时召回殖民者，让他去往另一个殖民地。在使用 [[File:Seize colony.png|28px]] [[殖民#占领|夺取殖民地]]后，甚至可以将殖民者派到敌国的殖民地去。此类殖民地的文化和宗教会暂时与旧主保持一致，但在殖民者到达之时会瞬间转化为与新主相同。
+
+=== 全局移民增长 ===
+{{anchor|增长}}殖民地的移民每月由均一数额增长。此数额就是 [[file:global settler increase.png|24px]] 全局移民增长，即每年殖民地的额外移民数。例如某省份每年的全局移民增长加上其本地移民增长为15，则本殖民地平时每月移民1人，每隔4个月有一次移民2人，合计每年15人。外交科技会提供全局移民增长的加成：
+
+{|class = "mildtable"
+! 外交科技 !!全局移民增长&lt;br/>（累计）
+|-
+| 1 || 10
+|-
+| 3 || 25
+|-
+| 10 || 35
+|-
+| 15 || 50
+|-
+| 23 || 75
+|-
+| 26 || 100
+|-
+| 32 || 150
+|}
+
+全局移民增长亦受下列加成：
+{{bonus table|global settler increase}}
+还有以下固定修正：
+{|class = "mildtable sortable"
+! 年度 [[file:global settler increase.png|24px]] !! 修正
+|-
+| style="text-align:right" | {{red|−125}} 至 {{green|0 }}
+| 殖民地维护费
+|-
+| style="text-align:right" | {{red|−5 }}
+| 未控制相邻省份
+|-
+| style="text-align:right" | {{red|−10 }}
+| {{icon|arctic|24px}}极地
+|-
+| style="text-align:right" | {{red|−10 }}
+| {{icon|arid|24px}}干旱
+|-
+| style="text-align:right" | {{red|−10 }}
+| {{icon|tropical|24px}}热带雨林
+|-
+| style="text-align:right" | {{green|+10 }}
+| [[#托尔德西里亚斯条约|托尔德西里亚斯条约]]（在由教皇划归该{{icon|catholic|24px}}天主教国家的殖民区域内殖民）
+|-
+| style="text-align:right" | {{red|−20 }}
+| 违反托尔德西里亚斯条约（在由教皇划归其他{{icon|catholic|24px}}天主教国家的殖民区域内殖民）
+|-
+| style="text-align:right" | {{green|+20 }}
+| 控制{{icon|cotton|24px}}棉花贸易
+|-
+| style="text-align:right" | {{green|+10 }}
+| '''“新大陆福音事业”'''的市民[[阶层]]互动
+|-
+| style="text-align:right" | {{green|+15 }}
+| '''“驱逐异端”''' {{icon|protestant|24px}}的新教[[信条]]
+|-
+| style="text-align:right" | {{green|+10 }}
+| {{icon|tengri|24px}}长生天的次要信仰为{{icon|orthodox|24px}}东正教
+|-
+| style="text-align:right" | {{green|+20 }}
+| '''“特许殖民地”'''的[[国会]]议案
+|-
+| style="text-align:right" | {{green|+20 }}
+| [[#土著政策|土著政策：压制]]
+|-
+| style="text-align:right" | {{green|+50 }}
+| {{flag|葡萄牙}}在[[地理大发现时代]]的专属能力'''“葡萄牙殖民地增长”'''（需要DLC {{nowrap|{{icon|moh}} 天命}}）
+|}
+
+==={{icon|colonist chance}} 新移民几率 ===
+如果一个殖民地有殖民者在工作，那么每个月都有几率迁来25名新移民。理论上，可以认为每1%的几率平均对应每年{{green|+3}}的移民增长（0.01人每月×12月×25人）。新移民几率由下列因素影响：
+
+{|class = "wikitable sortable"
+! 修正 !! 几率 !! 年度平均新移民
+|-
+| 基础值 || 10% || 30
+|-
+| 每100人口 (“殖民地级别”)&lt;ref>参见{{path|common/static_modifiers/00_static_modifiers.txt}} ([[Static_modifiers#殖民地级别]])。&lt;/ref> || {{red|−1%}} || −3
+|-
+| 每1%的[[生产效率]]&lt;ref>参见{{path|common/static_modifiers/00_static_modifiers.txt}} ([[Static_modifiers#生产效率]])。&lt;/ref> || {{green|0.2%}} || 0.6
+|-
+| 每点本地土著进攻性&lt;ref>参见{{path|common/static_modifiers/00_static_modifiers.txt}} ([[Static_modifiers#土著进攻性]])。&lt;/ref> || {{red|−0.5%}} || −1.5
+|-
+| 同一宗教 || {{green|1%}} || 3
+|-
+| 同一文化 || {{green|1%}} || 3
+|-
+| 同一文化组 || {{green|1%}} || 3
+|}
+
+某些理念和政策也会增加新移民几率。
+
+{{bonus table|settler chance}}
+
+=== 殖民地成长的各种重要修正 ===
+==== 地形 ====
+
+可殖民省份的地形会影响殖民地的成长。干旱、极地或热带雨林的殖民地会获得 {{icon|global settler increase}}{{red|-10}} 的移民惩罚，未拥有相邻省份的殖民地也会获得 {{icon|global settler increase}}{{red|-5}} 的惩罚。
+
+想先其他国家一步掌握某区域的殖民主导地位，就要好好考虑殖民地的地形，但也别忘了考虑当地土著的强度，并且最好优先抢占[[贸易中心]]等地区。
+
+==== 事件 ====
+{{main|探索理念组事件}}
+{{main|扩张理念组事件}}
+[[理念组#探索|探索]]和[[理念组#扩张|扩张]]理念组会解锁数个直接修正殖民地成长速度的事件，有正面的也有负面的。''[[探索理念组事件#ideagroups.1200|Colonist Rush]]''和''[[扩张理念组事件#ideagroups.1502|Colonial Enthusiasm]]''  事件会给予下面这个限时但强力的修正：
+
+本国获得修正“{{ruby|'''殖民热潮'''|Colonial Enthusiasm}}”持续 {{icon|time}} '''10''' 年，给予下列效果：
+*{{icon|settler chance}} 定居几率 {{green|+5%}}
+*{{icon|global settler increase}} 全国移民增加 {{green|+25}}
+
+某些历史上的主要殖民国家，例如 {{flag|Spain}}和 {{flag|Portugal}}等，有许多独特的与殖民相关的事件和任务。
+
+==== 任务 ====
+一些历史上的主要殖民国家或是其它拥有殖民扩张潜力的国家在[[任务树]]中往往都包括了向新世界乃至东方，或者邻近的处女地殖民的任务选项。完成这些任务可能获得关税收入、移民增长、定居几率、贸易效率等方面的奖励，从而促使玩家向这一地区以及其它未殖民省份积极扩张。要体验这些国家的完整任务树，可能需要某些特定的DLC。
+
+探索新世界的某些任务也会奖励“殖民热潮”修正，但多个同样的修正并不叠加。
+
+拥有殖民相关任务的任务树：
+
+{{multiColumn|
+*{{Flagicon|Andalusia}} [[安达卢西亚任务]]
+*{{Flagicon|BLI}} [[巴厘任务]]
+* [[柏柏尔任务]] 
+*{{Flagicon|BRI}} [[布列塔尼任务]]
+*{{Flagicon|Brunei}} [[文莱任务]]
+*{{Flagicon|卡斯蒂利亚}} {{Flagicon|西班牙}}  [[卡斯蒂利亚任务]]/[[西班牙任务]]
+*{{Flagicon|Champa}} [[占婆任务]]
+*{{Flagicon|Dai Viet}} [[大越任务]]
+*{{Flagicon|England}} {{Flagicon|Great Britain}} [[英格兰任务]]/[[不列颠任务]]
+*{{Flagicon|FLA}} [[佛兰德任务]]
+*{{Flagicon|France}} [[法兰西任务]]
+*{{Flagicon|Germany}} [[德意志任务]]
+*{{Flagicon|Ireland}} [[爱尔兰任务]]
+*{{Flagicon|Japan}} [[日本任务]] 
+*{{Flagicon|HSA}} [[吕贝克任务]]
+*{{Flagicon|MAJ}} [[满者伯夷任务]]
+*{{Flagicon|Ming}} [[中华任务]]
+*{{Flagicon|Morocco}} [[摩洛哥任务]]
+*{{Flagicon|Muscovy}} {{Flagicon|Russia}} [[莫斯科任务]]/[[俄罗斯任务]]
+*{{Flagicon|Netherlands}} [[尼德兰任务]]
+* [[海盗任务]]
+*{{Flagicon|Portugal}} [[葡萄牙任务]]
+*{{Flagicon|Scotland}} [[苏格兰任务]]
+*{{Flagicon|Sweden}} [[瑞典任务]]
+*[[香料群岛任务]]
+*{{Flagicon|United States}} [[美国任务]]
+
+|3}}
+
+==== 托德西里亚斯条约 ====
+{{expansion|ed}}
+在DLC[[黄金国]]中，在某区域第一个组建[[天主教]][[殖民领]]的国家如果与 {{flag|教宗国}}的关系是正面的，则会被教皇分配该区域的殖民权（只需建立的殖民领国教是天主教即可，而非殖民母国；这意味着较为罕见的情况下，殖民母国本身不是天主教国家，而使用驱逐天主教少数群体的等方法而使自己的殖民领国家变为天主教，导致触发托德西里亚斯条约）。而该国（仅当信仰为[[天主教]]时）与该[[殖民领]]均会获得该区域内 {{icon|global settler increase}}{{green|+10}} 的全局移民增长。国家可拥有的[[殖民领]]与可被分配的殖民区域均没有上限。
+
+如果其他天主教国家也在此区域内殖民，就会获得'''“违反托德西里亚斯条约”'''的惩罚。这不仅带来 {{icon|global settler increase}}{{red|-20}} 的本地移民减少，还会带来 {{icon|papal influence}}{{red|-10}} 的年度教廷影响减少和 {{icon|relation}}{{red|-50}} 与教宗国及与该国的关系。在条约树立前已有的殖民地不受此影响，只有条约后新建的殖民地获得惩罚。在停战合约中夺取殖民地、从这一殖民地区的土著国家手中征服省份也不会获得惩罚。一个国家已经建立的殖民领向其他国家已获许可的殖民地区进行殖民也会受到惩罚，但其母国不会受到关系和教廷影响力的惩罚。
+
+作为特例的是，拥有殖民权天主教国家的天主教[[附属国]]在宗主宣称的地区不仅不会受到违反条约惩罚，还可以享受和宗主相同的 {{icon|global settler increase}}{{green|+10}} 全局移民增长加成。
+
+此修正仅影响天主教国家；其他宗教的国家完全不受任何正负面影响。
+
+如果某区域的获得许可的国家被完全吞并，则条约在该区域即时作废，一个在该区域已拥有殖民领或第一个新建殖民领的国家会重新获得分配。
+
+托德西里亚斯条约在历史上是由西葡二国以约西经46°37'为界平分新世界的条约，但在游戏中任何满足条件的国家均可参与。
+
+==== 土著政策 ====
+{{expansion|tc}}
+在DLC[[哥萨克]]中，国家必须选择一种土著政策，以决定该国对全球土著的通用策略。此政策只影响可殖民省份的当地土著，不影响成型的土著国家。
+
+如果选择了“压制”，就可以获得 {{icon|global settler increase}}{{green|+20}} 的全局移民增长，但会遭遇更多土著暴乱。其他两种政策不影响全局移民。
+
+==== 遭遇原住民 ====
+{{main|土著事件}}
+在DLC哥萨克中，在基督教国家于新世界建立的殖民地人口少于300时，会触发'''[[土著事件#遭遇原住民|遭遇原住民]]'''事件。该事件的3个选项均会导致事件发生，这些事件可能暂时增加 {{icon|global settler increase}} 全局移民增长和 {{icon|colonist chance}} 本地移民几率，且会依选项触发其他关联事件。非基督教国家无此类事件。
+
+==== 维护费 ====
+殖民地维护费是国家维持殖民地所需的资金，可由[[经济]]页面的滑条调整。在满维护费下，第&lt;math>i&lt;/math>个殖民地每年花费：
+
+&lt;math>\text{年度花费} = \left( 24 + \frac{\text{基础税收 + 基础生产 + 基础人力}}{4} \right) \cdot \left(1 + \max \left( i - \text{殖民者数}, 0 \right)^2 \right) &lt;/math>
+
+如上式所示，国家每年可维持的殖民地数等于其殖民者数。之后每多一个殖民地，维护费都会成平方增长：
+{|class = "mildtable"
+|-
+! 超额殖民地数 !! 该殖民地维护费倍数
+|-
+| 1 || 2倍 (1+1²)
+|-
+| 2 || 5倍 (1+2²)
+|-
+| 3 || 10倍 (1+3²)
+|-
+| 4 || 17倍 (1+4²)
+|}
+注意：与军队超额不同，每一个超额的殖民地之维护费倍数独立增加，而非增加所有殖民地的维护费。所以超额之后最新建的殖民地维护费也最高。
+
+== 土著 ==
+{{SVersion|1.30}}
+可殖民的省份常有土著居住。土著会在多种因素的影响下进攻殖民地，也经常攻击那些从省份上路过的军队。然而土著攻击的概率受进攻性影响，所以“共存”的土著政策会完全抹除这些攻击，“贸易”的土著政策会使此概率减半。这对美洲土著国家的影响尤其显著，因为在美洲作战常常需要横跨大量未殖民区域，而这些国家的[[军事科技]]初始仅为1，与本地土著战斗的代价极为沉重，有些时候无法击败大量的土著。
+
+=== 人口 ===
+[[File:Native population map.png|thumb|600px|{{SVersion|1.23|image}} 1444年土著人口]]
+土著的人口决定了每次攻击的部队数量。土著人口可经由军事指令 [[File:Attack natives.png|28px]] [[攻击土著]]永久减少，此指令消耗少量 {{icon|mil}} 军事点数，其数值比例于当地土著人口，{{icon|aggressiveness|20px}} 攻击性和 {{icon|ferocity|20px}} 残暴性。直到完全驱走当地土著居民为止，可能需要多次执行该指令，因为因低士气而溃散的军队并没有被杀死，所以不减少当地的人口。
+
+
+==== {{icon|native assimilation}}土著同化 ====
+当殖民地成功转变为城市，将有一个名为“土著同化增益”的 {{icon|goods produced}} 商品产出类增益，其效果取决于当地剩余土著人口。此增益公式为：
+
+&lt;math>\text{土著同化增益} = \frac{\text{土著人口}}{20000}&lt;/math>
+
+例如，完成殖民时仍拥有1400土著的省份会给予&lt;math>1400 \div 20000 = 0.07&lt;/math>的生产增益。达到4000土著时则给予 {{green|+0.2}} 生产，这与增加一点生产 {{icon|development}} 发展度的效果相同。因此，在土著不发生暴乱或者已经派兵保护的情况下，能放着土著不管总是有益的。
+
+选择[[殖民#土著政策|土著政策：贸易]]将给予土著同化 {{green|+50%}}，商品生产通常只和当地土著人口有关，而此政策却在此之上另有50%的增幅。前例的1400土著省份在此政策下，商品生产增益达到0.105(e.g., &lt;math>1400 \div 20000 \cdot 1.5 = 0.105&lt;/math>)。
+
+{{bonus table|native assimilation}}
+
+=== 土著暴乱 ===
+在你殖民一个省份时，当地土著有几率发生暴乱，摧毁殖民地、驱赶外来的入侵者。当土著暴乱发生时，将有土著部队出现，进攻本地驻军，或在无驻军时围城。部队数量等于该省份土著人口（四舍五入至千位）。一旦围城成功（因殖民地无堡垒仅需一个月），每支土著部队会 {{red|−100}} 该殖民地人口，并在人口降至0时完全摧毁该殖民地。一旦发生暴乱，无论成功与否，都会有为期一年的冷却期，期间暴乱概率将降为0。冷却期过后概率照常计算。
+{{bonus table|native uprising chance}}
+
+==== 进攻性 ====
+[[File:Native aggressiveness map.png|thumb|600px|{{SVersion|1.23|image}} 1444年土著进攻性]]
+[[File:Aggressiveness icon.png|20px]]进攻性量化了本地土著进攻殖民地的概率，从0点到10点。每有一点进攻性，月度土著暴乱概率增加1%。
+选择[[殖民#土著政策|土著政策：贸易]]将获得 {{green|−50%}} 暴乱几率，可使进攻性减半。选择[[殖民#土著政策|土著政策：共存]]将获得 {{green|−100%}} 暴乱几率，移除所有殖民地的进攻性，使暴乱不再发生。
+
+==== 残暴性 ====
+[[File:Ferocity icon.png|20px]]残暴性则量化了本地土著的战斗力，从0点到10点。每点残暴性增加暴乱部队5%的战斗伤害。但其对围城后的人口减少没有影响。
+
+=== 单位 ===
+土著使用低科技等级单位：
+
+{| class="wikitable sortable" width="900px"
+|-
+! 地区 !! 单位名 !! 进攻 {{icon|land morale}} !! 防御 {{icon|land morale}} !!  进攻 {{icon|fire}} !! 防御 {{icon|fire}} !!  进攻 {{icon|shock}} !! 防御 {{icon|shock}} !! 总点数
+|-
+| 美洲 || 印第安弓箭手 || {{pips|1|off}} || {{pips|0|def}} || {{pips|0|off}} || {{pips|0|def}} || {{pips|1|off}} || {{pips|0|def}} || 2
+|-
+| 非洲 || 非洲矛兵 || {{pips|1|off}} || {{pips|1|def}} || {{pips|0|off}} || {{pips|0|def}} || {{pips|1|off}} || {{pips|0|def}} || 3
+|-
+| 亚洲 || 东亚长枪兵 || {{pips|1|off}} || {{pips|0|def}} || {{pips|0|off}} || {{pips|0|def}} || {{pips|1|off}} || {{pips|0|def}} || 2
+|-
+| 北极圈 || 弓骑兵 || {{pips|1|off}} || {{pips|0|def}} || {{pips|0|off}} || {{pips|0|def}} || {{pips|1|off}} || {{pips|1|def}} || 3
+|}
+
+== 占领 ==
+{{SVersion|1.30}}
+在战时，殖民地就和普通省份一样，可被敌国占领。殖民地依旧会成长，但之上的殖民者会被遣返回国。驻扎其上的敌军可以执行'''夺取殖民地'''，花费25 {{icon|mmp}} [[军事点数]]。此行动会转变殖民地的所有权。但直到新主的殖民者到达之前，其宗教和文化都保持与旧主相同。此殖民地就和普通殖民地一样，需要新主付维护费。且也可能因超限导致维护费上涨。
+
+另一个行动叫 [[File:Burn_colony.png|28px|link=]] '''烧毁殖民地'''，花费5 {{icon|mmp}} [[军事点数]]。这将把殖民地完全摧毁，重新变回未殖民省份。
+
+需要注意的是，殖民地被占领时也能继续成长，是有可能在被占领的情况下成长为城市的。除非你在殖民完成前就已经「夺取」了殖民地，否则该完成的省份将不可使用「夺取殖民地」行动，殖民完成后仍属于其原主人。
+
+== 殖民省份 ==
+{{SVersion|1.32}}
+
+一旦殖民完成，殖民地就会变成一个完整的省份。除非你选择直辖之，否则新的省份会成为你的[[自治领地]]，意味着其最低[[自治度]]为90%，且无法分配给省份[[国会]]席位。然而，你还是可以于此处建造[[建筑]]、招募部队、修建船只或提升发展度，而且现在可以从此殖民省份起算[[造核距离]]和殖民距离了。
+
+如果你直辖了此省份，此殖民省份就会变成一个真真正正完整无缺的省份了。其自治度最低可以会降到0%，而且可以[[国会]]席位。
+
+当你在某个殖民区域内的殖民省份不到5个时，殖民省份还会直接受你的控制。一旦达到或超过5个，这些省份会组建一个殖民领。因此不推荐在殖民区域直辖省份。
+
+殖民省份会接受其母国的[[宗教]]和[[文化]]。对于贸易公司地区的省份，如果土著人口为零，也会接受母国的宗教和文化，否则其省份会维持原有的宗教与文化。
+
+此外无论是否核心省份，殖民省份都不会给母国任何的[[过度扩张]]。这意味着就算该省份是其母国从他国手里所抢得，只要该省份是由殖民所生成，就不会导致任何的过度扩张，但仍然会产生[[叛乱]]。
+
+== 殖民附属国==
+{{SVersion|Timeless}}
+{{main|殖民领}}
+{{main|贸易公司}}
+
+[[殖民领]]是由殖民（或于殖民区域征服）所组建的附属国。殖民区域包括美洲和大洋洲。
+
+[[贸易公司]]则在除首都所在区域之外均可建立，建立贸易公司不需要完整造核。
+
+[[殖民领]]和[[贸易公司]]都可以控制某节点处的[[贸易值]]，还可以获得额外的[[商人]]和海外军事控制，此外还有一些给母国的其他好处。
+
+== 黄金七城和青春之泉 ==
+{{SVersion|1.29}}
+{{main|黄金七城事件}}
+
+在DLC {{icon|ed}} 黄金国中，可以使用 {{icon|conquistador}} 征服者探索殖民区域的未知地域，在新世界古老传说的搜查过程中，会触发某些事件。这些事件会提供君主点数，{{icon|ducat}} 金币或 {{icon|prestige}} 威望，并为你的新世界探索增添更多乐趣与收获。黄金七城和青春之泉事件链可以提供大量 {{icon|ducat}} 金币并且使得殖民区域省份获得永久修正。
+
+{| class="wikitable sortable"
+! 地点
+! 失败
+! 部分发现
+! 完全发现
+! 永久修正
+|-
+| 黄金国
+| {{red|-10}} {{icon|prestige}}
+| 
+*{{green|+400}} {{icon|ducat}} 
+*省份获得{{icon|base tax|28px}}{{icon|production|28px}}{{icon|manpower|28px}}三项发展度各{{green|2}}点
+| 
+*{{green|+800}} {{icon|ducat}} 
+*省份获得{{icon|base tax|28px}}{{icon|production|28px}}{{icon|manpower|28px}}三项发展度各{{green|4}}点
+|{{ruby|'''黄金国'''|El Dorado}}：
+* {{icon|local goods produced modifier|28px}} {{green|+50%}} 本地商品产出修正
+* {{icon|local development cost|28px}} {{green|−20%}} 本地提升发展度花费
+* {{icon|local unrest|28px}} {{green|−3}} 本地叛乱
+
+|-
+| 锡沃拉
+| {{red|-10}} {{icon|prestige}}
+|
+*{{green|+400}} {{icon|ducat}} 
+*省份获得{{icon|base tax|28px}}{{icon|production|28px}}{{icon|manpower|28px}}三项发展度各{{green|2}}点
+| 
+*{{green|+800}} {{icon|ducat}} 
+*省份获得{{icon|base tax|28px}}{{icon|production|28px}}{{icon|manpower|28px}}三项发展度各{{green|4}}点
+|{{ruby|'''锡沃拉'''|Cibola}}：
+* {{icon|tax income|28px}} {{green|+5}} 全局税收
+
+|-
+| 凯撒之城 
+| {{red|-10}} {{icon|prestige}}
+|
+*省份获得{{icon|base tax|28px}}{{icon|production|28px}}{{icon|manpower|28px}}三项发展度各{{green|2}}点
+| 
+*{{green|+800}} {{icon|ducat}} 
+*省份获得{{icon|base tax|28px}}{{icon|production|28px}}{{icon|manpower|28px}}三项发展度各{{green|4}}点
+|{{ruby|'''凯撒之城'''|City of the Caesars}}：
+* {{icon|local trade power modifier|28px}} {{green|+100%}} 本地贸易力量修正
+* {{icon|local goods produced modifier|28px}} {{green|+50%}} 本地商品产出修正
+* {{icon|local development cost|28px}} {{green|−20%}} 本地提升发展度花费
+|-
+| 拉普拉塔山
+| {{red|-10}} {{icon|prestige}}
+|
+*{{green|+400}} {{icon|ducat}} 
+*省份获得{{icon|base tax|28px}}{{icon|production|28px}}{{icon|manpower|28px}}三项发展度各{{green|2}}点
+| 
+*{{green|+800}} {{icon|ducat}} 
+*省份获得{{icon|base tax|28px}}{{icon|production|28px}}{{icon|manpower|28px}}三项发展度各{{green|4}}点
+|{{ruby|'''拉普拉塔山'''|Sierra de la Plata}}：
+* {{icon|local tax modifier|28px}} {{green|+50%}} 本地税收修正
+* {{icon|local institution spread|28px}} {{green|+100%}} 本地思潮传播
+* {{icon|local development cost|28px}} {{green|−20%}} 本地提升发展度花费
+|-
+| 诺伦贝加
+| {{red|-10}}{{icon|prestige}}
+|
+*{{green|+400}} {{icon|ducat}} 
+*省份获得{{icon|base tax|28px}}{{icon|production|28px}}{{icon|manpower|28px}}三项发展度各{{green|2}}点
+| 
+*{{green|+800}} {{icon|ducat}} 
+*省份获得{{icon|base tax|28px}}{{icon|production|28px}}{{icon|manpower|28px}}三项发展度各{{green|4}}点
+|{{ruby|'''诺伦贝加'''|Norumbega}}：
+* {{icon|local development cost|28px}} {{green|−20%}} 本地提升发展度花费
+* {{icon|local trade power modifier|28px}} {{green|+50%}} 本地贸易力量修正
+* {{icon|local goods produced modifier|28px}} {{green|+50%}} 本地商品产出修正
+|-
+| 萨格奈王国
+| {{red|-10}} {{icon|prestige}}
+|
+*{{green|+400}} {{icon|ducat}} 
+*省份获得{{icon|base tax|28px}}{{icon|production|28px}}{{icon|manpower|28px}}三项发展度各{{green|2}}点
+| 
+*{{green|+800}} {{icon|ducat}} 
+*省份获得{{icon|base tax|28px}}{{icon|production|28px}}{{icon|manpower|28px}}三项发展度各{{green|4}}点
+|{{ruby|'''萨格奈王国'''|Kingdom of Saguenay}}：
+* {{icon|local goods produced modifier|28px}} {{green|+25%}} 本地商品产出修正
+* {{icon|local trade power modifier|28px}} {{green|+25%}} 本地贸易力量修正
+* {{icon|local development cost|28px}} {{green|−20%}} 本地提升发展度花费
+|-
+| 基维拉
+| {{red|-10}} {{icon|prestige}}
+|
+*{{green|+400}} {{icon|ducat}} 
+*省份获得{{icon|base tax|28px}}{{icon|production|28px}}{{icon|manpower|28px}}三项发展度各{{green|2}}点
+| 
+*{{green|+800}} {{icon|ducat}} 
+*省份获得{{icon|base tax|28px}}{{icon|production|28px}}{{icon|manpower|28px}}三项发展度各{{green|4}}点
+|{{ruby|'''基维拉'''|Quivira}}：
+* {{icon|local production efficiency|28px}} {{green|+25%}} 本地生产效率
+* {{icon|local tax modifier|28px}} {{green|+25%}} 本地税收修正
+* {{icon|local construction cost|28px}} {{green|−50%}} 本地建设花费
+* {{icon|local development cost|28px}} {{green|−20%}} 本地提升发展度花费
+|-
+| 青春之泉
+| {{red|-10}} {{icon|prestige}}
+|
+*{{green|+400}} {{icon|ducat}} 
+*省份获得{{icon|base tax|28px}}{{icon|production|28px}}{{icon|manpower|28px}}三项发展度各{{green|2}}点
+| 
+*{{green|+800}} {{icon|ducat}} 
+*省份获得{{icon|base tax|28px}}{{icon|production|28px}}{{icon|manpower|28px}}三项发展度各{{green|4}}点
+|{{ruby|'''青春之泉'''|Fountain of Youth}}：
+* {{icon|local construction cost|28px}} {{green|−50%}} 本地建设花费
+* {{icon|local settler increase|28px}} {{green|+30}} 本地移民增加
+* {{icon|local unrest|28px}} {{green|−3}} 本地叛乱
+* {{icon|local tax modifier|28px}} {{green|+25%}} 本地税收修正
+|}
+
+== 西伯利亚拓荒区 ==
+&lt;section begin=SiberianFrontier/>{{SVersion|1.29}}
+{{expansion|tr}}
+{{See also|西伯利亚殖民事件}}
+DLC {{icon|tr}} [[第三罗马]]解锁了 {{flag|Russia}}的专属殖民机制，加速其扩张进入西伯利亚。一旦 {{flag|Russia}}解鎖了第二個國家理念“西伯利亚前哨站”，與其首都通過非殖民地省份直接陸地相連的未殖民省份便可以建立西伯利亞前哨站。建立前哨站需要花费 {{green|20}} {{icon|dip|24px}} 外交点数，但无需支付前哨站月度殖民地维护费用，{{icon|local settler increase}} 移民人数逐月随机增长 {{green|+5}}与{{green|+15}}之间的一个数值。但因为可以同时建立多个西伯利亚拓荒区，{{flag|Russia}}很快就会毗邻太平洋。
+
+创建[[自定义国家]]时，也可以选择“允许创建西伯利亚拓荒区”的国家理念；显然它的可使用地区并不只是西伯利亚。&lt;section end=SiberianFrontier/>
+
+==殖民的策略==
+{{main|殖民策略}}
+
+==AI的殖民倾向==
+
+测试结果表明，对于一个AI控制的国家，若某个未殖民省份所属的贸易节点无法将贸易额导向任何一个该国拥有省份的贸易节点，则AI永远不会殖民该省份，不论其殖民距离内是否有其它可殖民省份。举例：AI控制的{{flag|Ming}}在不进行扩张的情况下永远不会殖民东南亚的未殖民省份，因为{{flag|Ming}}开局仅在玉门、西安、北京、杭州、广州、成都几个贸易节点拥有省份，而东南亚的马六甲、摩鹿加贸易节点无法导向上述任何一个贸易节点。而对于美洲的加利福尼亚节点，因为有“加利福尼亚→吉林→北京”的贸易路线，所以{{flag|Ming}}会殖民加利福尼亚节点的省份。
+
+== 参考资料 ==
+&lt;references/>
+
+[[Category:经济]]
+{{economy navbox}}
+{{diplomacy navbox}}
+[[en:Colonization]]
+</textarea><div class="templatesUsed"><div class="mw-templatesUsedExplanation"><p>本页使用的模板：
+</p></div><ul>
+<li><a href="https://www.eu4cn.com/wiki/Template:Ambox" title="Template:Ambox">Template:Ambox</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Ambox&amp;action=edit" title="Template:Ambox">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Ambox/core" title="Template:Ambox/core">Template:Ambox/core</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Ambox/core&amp;action=edit" title="Template:Ambox/core">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Ambox_2020" title="Template:Ambox 2020">Template:Ambox 2020</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Ambox_2020&amp;action=edit" title="Template:Ambox 2020">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Anchor" title="Template:Anchor">Template:Anchor</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Anchor&amp;action=edit" title="Template:Anchor">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:BTRow" title="Template:BTRow">Template:BTRow</a>（<a href="https://www.eu4cn.com/index.php?title=Template:BTRow&amp;action=edit" title="Template:BTRow">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Bonus_table" title="Template:Bonus table">Template:Bonus table</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Bonus_table&amp;action=edit" title="Template:Bonus table">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Clear" title="Template:Clear">Template:Clear</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Clear&amp;action=edit" title="Template:Clear">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Country_data_Andalusia" title="Template:Country data Andalusia">Template:Country data Andalusia</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Country_data_Andalusia&amp;action=edit" title="Template:Country data Andalusia">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Country_data_BLI" class="mw-redirect" title="Template:Country data BLI">Template:Country data BLI</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Country_data_BLI&amp;action=edit" class="mw-redirect" title="Template:Country data BLI">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Country_data_BRI" class="mw-redirect" title="Template:Country data BRI">Template:Country data BRI</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Country_data_BRI&amp;action=edit" class="mw-redirect" title="Template:Country data BRI">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Country_data_Bali" title="Template:Country data Bali">Template:Country data Bali</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Country_data_Bali&amp;action=edit" title="Template:Country data Bali">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Country_data_Brittany" title="Template:Country data Brittany">Template:Country data Brittany</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Country_data_Brittany&amp;action=edit" title="Template:Country data Brittany">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Country_data_Brunei" title="Template:Country data Brunei">Template:Country data Brunei</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Country_data_Brunei&amp;action=edit" title="Template:Country data Brunei">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Country_data_Castile" title="Template:Country data Castile">Template:Country data Castile</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Country_data_Castile&amp;action=edit" title="Template:Country data Castile">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Country_data_Champa" title="Template:Country data Champa">Template:Country data Champa</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Country_data_Champa&amp;action=edit" title="Template:Country data Champa">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Country_data_Chorti" title="Template:Country data Chorti">Template:Country data Chorti</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Country_data_Chorti&amp;action=edit" title="Template:Country data Chorti">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Country_data_Dai_Viet" title="Template:Country data Dai Viet">Template:Country data Dai Viet</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Country_data_Dai_Viet&amp;action=edit" title="Template:Country data Dai Viet">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Country_data_England" title="Template:Country data England">Template:Country data England</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Country_data_England&amp;action=edit" title="Template:Country data England">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Country_data_FLA" class="mw-redirect" title="Template:Country data FLA">Template:Country data FLA</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Country_data_FLA&amp;action=edit" class="mw-redirect" title="Template:Country data FLA">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Country_data_Flanders" title="Template:Country data Flanders">Template:Country data Flanders</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Country_data_Flanders&amp;action=edit" title="Template:Country data Flanders">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Country_data_France" title="Template:Country data France">Template:Country data France</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Country_data_France&amp;action=edit" title="Template:Country data France">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Country_data_Germany" title="Template:Country data Germany">Template:Country data Germany</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Country_data_Germany&amp;action=edit" title="Template:Country data Germany">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Country_data_Great_Britain" title="Template:Country data Great Britain">Template:Country data Great Britain</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Country_data_Great_Britain&amp;action=edit" title="Template:Country data Great Britain">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Country_data_HSA" class="mw-redirect" title="Template:Country data HSA">Template:Country data HSA</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Country_data_HSA&amp;action=edit" class="mw-redirect" title="Template:Country data HSA">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Country_data_Ireland" title="Template:Country data Ireland">Template:Country data Ireland</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Country_data_Ireland&amp;action=edit" title="Template:Country data Ireland">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Country_data_Japan" title="Template:Country data Japan">Template:Country data Japan</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Country_data_Japan&amp;action=edit" title="Template:Country data Japan">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Country_data_Kiche" title="Template:Country data Kiche">Template:Country data Kiche</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Country_data_Kiche&amp;action=edit" title="Template:Country data Kiche">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Country_data_Lübeck" title="Template:Country data Lübeck">Template:Country data Lübeck</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Country_data_L%C3%BCbeck&amp;action=edit" title="Template:Country data Lübeck">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Country_data_MAJ" class="mw-redirect" title="Template:Country data MAJ">Template:Country data MAJ</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Country_data_MAJ&amp;action=edit" class="mw-redirect" title="Template:Country data MAJ">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Country_data_Majapahit" title="Template:Country data Majapahit">Template:Country data Majapahit</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Country_data_Majapahit&amp;action=edit" title="Template:Country data Majapahit">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Country_data_Ming" title="Template:Country data Ming">Template:Country data Ming</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Country_data_Ming&amp;action=edit" title="Template:Country data Ming">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Country_data_Morocco" title="Template:Country data Morocco">Template:Country data Morocco</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Country_data_Morocco&amp;action=edit" title="Template:Country data Morocco">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Country_data_Muscovy" title="Template:Country data Muscovy">Template:Country data Muscovy</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Country_data_Muscovy&amp;action=edit" title="Template:Country data Muscovy">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Country_data_Netherlands" title="Template:Country data Netherlands">Template:Country data Netherlands</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Country_data_Netherlands&amp;action=edit" title="Template:Country data Netherlands">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Country_data_Norway" title="Template:Country data Norway">Template:Country data Norway</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Country_data_Norway&amp;action=edit" title="Template:Country data Norway">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Country_data_Portugal" title="Template:Country data Portugal">Template:Country data Portugal</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Country_data_Portugal&amp;action=edit" title="Template:Country data Portugal">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Country_data_Russia" title="Template:Country data Russia">Template:Country data Russia</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Country_data_Russia&amp;action=edit" title="Template:Country data Russia">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Country_data_Scotland" title="Template:Country data Scotland">Template:Country data Scotland</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Country_data_Scotland&amp;action=edit" title="Template:Country data Scotland">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Country_data_Spain" title="Template:Country data Spain">Template:Country data Spain</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Country_data_Spain&amp;action=edit" title="Template:Country data Spain">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Country_data_Sweden" title="Template:Country data Sweden">Template:Country data Sweden</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Country_data_Sweden&amp;action=edit" title="Template:Country data Sweden">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Country_data_The_Papal_State" title="Template:Country data The Papal State">Template:Country data The Papal State</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Country_data_The_Papal_State&amp;action=edit" title="Template:Country data The Papal State">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Country_data_United_States" title="Template:Country data United States">Template:Country data United States</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Country_data_United_States&amp;action=edit" title="Template:Country data United States">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Country_data_乔尔蒂" class="mw-redirect" title="Template:Country data 乔尔蒂">Template:Country data 乔尔蒂</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Country_data_%E4%B9%94%E5%B0%94%E8%92%82&amp;action=edit" class="mw-redirect" title="Template:Country data 乔尔蒂">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Country_data_俄罗斯" class="mw-redirect" title="Template:Country data 俄罗斯">Template:Country data 俄罗斯</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Country_data_%E4%BF%84%E7%BD%97%E6%96%AF&amp;action=edit" class="mw-redirect" title="Template:Country data 俄罗斯">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Country_data_卡斯蒂利亚" class="mw-redirect" title="Template:Country data 卡斯蒂利亚">Template:Country data 卡斯蒂利亚</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Country_data_%E5%8D%A1%E6%96%AF%E8%92%82%E5%88%A9%E4%BA%9A&amp;action=edit" class="mw-redirect" title="Template:Country data 卡斯蒂利亚">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Country_data_教宗国" class="mw-redirect" title="Template:Country data 教宗国">Template:Country data 教宗国</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Country_data_%E6%95%99%E5%AE%97%E5%9B%BD&amp;action=edit" class="mw-redirect" title="Template:Country data 教宗国">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Country_data_葡萄牙" class="mw-redirect" title="Template:Country data 葡萄牙">Template:Country data 葡萄牙</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Country_data_%E8%91%A1%E8%90%84%E7%89%99&amp;action=edit" class="mw-redirect" title="Template:Country data 葡萄牙">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Country_data_西班牙" class="mw-redirect" title="Template:Country data 西班牙">Template:Country data 西班牙</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Country_data_%E8%A5%BF%E7%8F%AD%E7%89%99&amp;action=edit" class="mw-redirect" title="Template:Country data 西班牙">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Diplomacy_navbox" title="Template:Diplomacy navbox">Template:Diplomacy navbox</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Diplomacy_navbox&amp;action=edit" title="Template:Diplomacy navbox">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Economy_navbox" title="Template:Economy navbox">Template:Economy navbox</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Economy_navbox&amp;action=edit" title="Template:Economy navbox">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Expansion" title="Template:Expansion">Template:Expansion</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Expansion&amp;action=edit" title="Template:Expansion">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Flag" title="Template:Flag">Template:Flag</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Flag&amp;action=edit" title="Template:Flag">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Flag/core" title="Template:Flag/core">Template:Flag/core</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Flag/core&amp;action=edit" title="Template:Flag/core">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Flagicon" title="Template:Flagicon">Template:Flagicon</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Flagicon&amp;action=edit" title="Template:Flagicon">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Flagicon/core" title="Template:Flagicon/core">Template:Flagicon/core</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Flagicon/core&amp;action=edit" title="Template:Flagicon/core">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Green" title="Template:Green">Template:Green</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Green&amp;action=edit" title="Template:Green">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Grey-bd" title="Template:Grey-bd">Template:Grey-bd</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Grey-bd&amp;action=edit" title="Template:Grey-bd">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Hatnote" title="Template:Hatnote">Template:Hatnote</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Hatnote&amp;action=edit" title="Template:Hatnote">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon" title="Template:Icon">Template:Icon</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon&amp;action=edit" title="Template:Icon">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/a" title="Template:Icon/a">Template:Icon/a</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/a&amp;action=edit" title="Template:Icon/a">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/b" title="Template:Icon/b">Template:Icon/b</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/b&amp;action=edit" title="Template:Icon/b">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/c" title="Template:Icon/c">Template:Icon/c</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/c&amp;action=edit" title="Template:Icon/c">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/d" title="Template:Icon/d">Template:Icon/d</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/d&amp;action=edit" title="Template:Icon/d">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/e" title="Template:Icon/e">Template:Icon/e</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/e&amp;action=edit" title="Template:Icon/e">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/f" title="Template:Icon/f">Template:Icon/f</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/f&amp;action=edit" title="Template:Icon/f">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/g" title="Template:Icon/g">Template:Icon/g</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/g&amp;action=edit" title="Template:Icon/g">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/h" title="Template:Icon/h">Template:Icon/h</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/h&amp;action=edit" title="Template:Icon/h">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/i" title="Template:Icon/i">Template:Icon/i</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/i&amp;action=edit" title="Template:Icon/i">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/l" title="Template:Icon/l">Template:Icon/l</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/l&amp;action=edit" title="Template:Icon/l">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/m" title="Template:Icon/m">Template:Icon/m</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/m&amp;action=edit" title="Template:Icon/m">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/n" title="Template:Icon/n">Template:Icon/n</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/n&amp;action=edit" title="Template:Icon/n">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/o" title="Template:Icon/o">Template:Icon/o</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/o&amp;action=edit" title="Template:Icon/o">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/p" title="Template:Icon/p">Template:Icon/p</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/p&amp;action=edit" title="Template:Icon/p">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/r" title="Template:Icon/r">Template:Icon/r</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/r&amp;action=edit" title="Template:Icon/r">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/s" title="Template:Icon/s">Template:Icon/s</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/s&amp;action=edit" title="Template:Icon/s">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/t" title="Template:Icon/t">Template:Icon/t</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/t&amp;action=edit" title="Template:Icon/t">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/u" title="Template:Icon/u">Template:Icon/u</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/u&amp;action=edit" title="Template:Icon/u">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Main" title="Template:Main">Template:Main</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Main&amp;action=edit" title="Template:Main">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:MultiColumn" title="Template:MultiColumn">Template:MultiColumn</a>（<a href="https://www.eu4cn.com/index.php?title=Template:MultiColumn&amp;action=edit" title="Template:MultiColumn">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Navbox" title="Template:Navbox">Template:Navbox</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Navbox&amp;action=edit" title="Template:Navbox">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Navboxgroup" title="Template:Navboxgroup">Template:Navboxgroup</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Navboxgroup&amp;action=edit" title="Template:Navboxgroup">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Nowrap" title="Template:Nowrap">Template:Nowrap</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Nowrap&amp;action=edit" title="Template:Nowrap">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Path" title="Template:Path">Template:Path</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Path&amp;action=edit" title="Template:Path">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Pips" title="Template:Pips">Template:Pips</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Pips&amp;action=edit" title="Template:Pips">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Province" title="Template:Province">Template:Province</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Province&amp;action=edit" title="Template:Province">查看源代码</a>）（受半保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Province_core" class="mw-redirect" title="Template:Province core">Template:Province core</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Province_core&amp;action=edit" class="mw-redirect" title="Template:Province core">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Red" title="Template:Red">Template:Red</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Red&amp;action=edit" title="Template:Red">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Religion" title="Template:Religion">Template:Religion</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Religion&amp;action=edit" title="Template:Religion">查看源代码</a>）（受半保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Ruby" title="Template:Ruby">Template:Ruby</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Ruby&amp;action=edit" title="Template:Ruby">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:SVersion" title="Template:SVersion">Template:SVersion</a>（<a href="https://www.eu4cn.com/index.php?title=Template:SVersion&amp;action=edit" title="Template:SVersion">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:See_also" title="Template:See also">Template:See also</a>（<a href="https://www.eu4cn.com/index.php?title=Template:See_also&amp;action=edit" title="Template:See also">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Version" title="Template:Version">Template:Version</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Version&amp;action=edit" title="Template:Version">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Word" title="Template:Word">Template:Word</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Word&amp;action=edit" title="Template:Word">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:白字" title="Template:白字">Template:白字</a>（<a href="https://www.eu4cn.com/index.php?title=Template:%E7%99%BD%E5%AD%97&amp;action=edit" title="Template:白字">查看源代码</a>）</li></ul></div><p id="mw-returnto">返回<a href="https://www.eu4cn.com/wiki/殖民" title="殖民">殖民</a>。</p>
+</div>						</div>
+				</div>
+				<footer>
+				<div class="liberty-footer">
+										<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>					<div class="bottom-ads mobile-ab">
+						<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+						<!-- 移动端底部 -->
+						<ins class="adsbygoogle mobile-ab"
+						     style="display:block"
+						     data-ad-client="ca-pub-1612414434963106"
+						     data-ad-slot="3303553671"
+						     data-ad-format="auto"
+						     data-full-width-responsive="true"></ins>
+						<script>
+						     (adsbygoogle = window.adsbygoogle || []).push({});
+						</script>
+					</div>
+								<ul class="footer-places">
+									<li class="footer-places-privacy">
+						<a href="https://www.eu4cn.com/wiki/欧陆风云4百科:隐私政策">隐私政策</a>					</li>
+									<li class="footer-places-about">
+						<a href="https://www.eu4cn.com/wiki/欧陆风云4百科:关于">关于欧陆风云4百科</a>					</li>
+									<li class="footer-places-disclaimer">
+						<a href="https://www.eu4cn.com/wiki/欧陆风云4百科:免责声明">免责声明</a>					</li>
+							</ul>
+					<ul class="footer-icons">
+									<li class="footer-copyrightico">
+						<a href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="https://www.eu4cn.com/resources/assets/licenses/cc-by-nc-sa.png" alt="知识共享署名-非商业性使用-相同方式共享" width="88" height="31" loading="lazy"/></a>					</li>
+										<li class="footer-poweredbyico">
+						<a href="https://www.mediawiki.org/"><img src="https://www.eu4cn.com/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"/></a><a href="https://www.eu4cn.com/"><img src="https://www.eu4cn.com/images/footerlogo.png" width="88" height="31" loading="lazy"/></a>					</li>
+								</ul>
+						</div>
+				</footer>
+			</div>
+		</div>
+		</section>
+				<div class="modal fade login-modal" id="login-modal" tabindex="-1"
+			 role="dialog" aria-labelledby="login-modalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-sm" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<h4 class="modal-title">登录</h4>
+					</div>
+					<div class="modal-body">
+						<div id="modal-login-alert" class="alert alert-hidden alert-danger" role="alert">
+						</div>
+						<form id="modal-loginform" name="userlogin" class="modal-loginform"
+							  method="post">
+							<input class="loginText form-control" id="wpName1" tabindex="1"
+								   placeholder="请输入您的用户名" value="" name="lgname">
+							<label for="inputPassword" class="sr-only">密码</label>
+							<input class="loginPassword form-control" id="wpPassword1" tabindex="2"
+								   placeholder="请输入您的密码" type="password" name="lgpassword">
+							<div class="modal-checkbox">
+								<input name="lgremember" type="checkbox" value="1" id="lgremember" tabindex="3">
+								<label for="lgremember">记住登录</label>
+							</div>
+							<input class="btn btn-success btn-block" type="submit" value="登录" tabindex="4">
+							<a href="https://www.eu4cn.com/index.php?title=Special:%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95&amp;type=signup&amp;returnto=%E6%AE%96%E6%B0%91" class="btn btn-primary btn-block" title="Special:用户登录" tabindex="5" type="submit">加入欧陆风云4百科</a>							<a href="https://www.eu4cn.com/wiki/Special:重置密码" title="Special:重置密码">忘记密码？</a>                            <br>
+							<a href="https://www.eu4cn.com/wiki/Special:用户登录" title="Special:用户登录">其他方式登录</a>							<input type="hidden" name="action" value="login" />
+							<input type="hidden" name="format" value="json" />
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">⧼liberty-btn-close⧽</button>
+						<button type="button" class="btn btn-primary">⧼liberty-btn-save-changes⧽</button>
+					</div>
+				</div>
+			</div>
+		</div>
+			</body>
+<!-- Mirrored from www.eu4cn.com/index.php?title=%E6%AE%96%E6%B0%91&action=edit by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 May 2024 00:39:56 GMT -->
+</html>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?8b9cdb5f260cf613f39a508fbf9dd707";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.005","walltime":"0.007","ppvisitednodes":{"value":7,"limit":1000000},"postexpandincludesize":{"value":18,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":100},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20240506100119","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":2096});});</script>
+</body>
+</html>

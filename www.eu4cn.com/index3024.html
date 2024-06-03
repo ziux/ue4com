@@ -1,0 +1,602 @@
+ <!DOCTYPE html>
+<html class="client-nojs" lang="zh" dir="ltr">
+
+<!-- Mirrored from www.eu4cn.com/index.php?title=%E6%9C%BA%E5%88%B6&action=edit by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 06 May 2024 22:17:04 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>查看“机制”的源代码 - 欧陆风云4百科，人人可以编辑的欧陆风云4中文百科全书</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"zh","wgMonthNames":["","1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"],"wgRequestId":"1999da9ca05c9c5a5e109af7","wgCSPNonce":false,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"机制","wgTitle":"机制","wgCurRevisionId":95243,"wgRevisionId":0,"wgArticleId":1234,"wgIsArticle":false,"wgIsRedirect":false,"wgAction":"edit","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageContentLanguage":"zh","wgPageContentModel":"wikitext","wgRelevantPageName":"机制","wgRelevantArticleId":1234,"wgUserVariant":"zh","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgCargoDefaultQueryLimit":100,"wgCargoMapClusteringMinimum":80,"wgCargoMonthNames":["1月","2月","3月",
+"4月","5月","6月","7月","8月","9月","10月","11月","12月"],"wgCargoMonthNamesShort":["1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"],"wgCargoWeekDays":["星期日","星期一","星期二","星期三","星期四","星期五","星期六"],"wgCargoWeekDaysShort":["日","一","二","三","四","五","六"],"wgPageFormsTargetName":null,"wgPageFormsAutocompleteValues":[],"wgPageFormsAutocompleteOnAllChars":false,"wgPageFormsFieldProperties":[],"wgPageFormsCargoFields":[],"wgPageFormsDependentFields":[],"wgPageFormsCalendarValues":[],"wgPageFormsCalendarParams":[],"wgPageFormsCalendarHTML":null,"wgPageFormsGridValues":[],"wgPageFormsGridParams":[],"wgPageFormsContLangYes":null,"wgPageFormsContLangNo":null,"wgPageFormsContLangMonths":[],"wgPageFormsHeightForMinimizingInstances":800,"wgPageFormsShowOnSelect":[],"wgPageFormsScriptPath":"/extensions/PageForms","edgValues":null,"wgPageFormsEDSettings":null,"wgAmericanDates":false,"wgVisualEditor":{
+"pageLanguageCode":"zh","pageLanguageDir":"ltr","pageVariantFallbacks":["zh-hans","zh-hant","zh-cn","zh-tw","zh-hk","zh-sg","zh-mo","zh-my"]},"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgSmjUseCdn":false,"wgSmjUseChem":true,"wgSmjDisplayMath":[],"wgSmjExtraInlineMath":[],"wgSmjScale":1,"wgSmjEnableMenu":true,"wgSmjDisplayAlign":"left","wgEditSubmitButtonLabelPublish":false};RLSTATE={"site.styles":"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.liberty.styles":"ready","jquery.tablesorter.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready"};RLPAGEMODULES=["ext.SimpleMathJax","mediawiki.action.edit.collapsibleFooter","site","mediawiki.page.ready","jquery.tablesorter","ext.HighlightjsIntegration","ext.CodeMirror","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.gadget.UserLinkAvatar","ext.gadget.notifyConversion","ext.gadget.notifyAdsense","ext.gadget.Edittools-vector",
+"skins.liberty.bootstrap","skins.liberty.layoutjs","skins.liberty.liverc","skins.liberty.loginjs"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});});});</script>
+<link rel="stylesheet" href="loadd623.css?lang=zh&amp;modules=ext.visualEditor.desktopArticleTarget.noscript%7Cjquery.tablesorter.styles%7Cskins.liberty.styles&amp;only=styles&amp;skin=liberty"/>
+<script async="" src="load7991.php?lang=zh&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=liberty"></script>
+<style>.Liberty .nav-wrapper,
+		.Liberty .nav-wrapper .navbar .form-inline .btn:hover,
+		.Liberty .nav-wrapper .navbar .form-inline .btn:focus,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link.active::before,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link:hover::before,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link:focus::before,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link:active::before,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-footer .label,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .contributioncredits-footer .label,
+		.Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools .tools-btn:hover,
+		.Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools .tools-btn:focus,
+		.Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools .tools-btn:active,
+		.btn-primary,
+		.header-template, .section-template {
+			background-color: #103D8F;
+		}
+
+		.btn-primary,
+		.section-template-border {
+			border-color: #103D8F;
+		}
+
+		.Liberty .nav-wrapper .navbar .form-inline .btn:hover,
+		.Liberty .nav-wrapper .navbar .form-inline .btn:focus {
+			border-color: #002E7D;
+		}
+
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link.active::before,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link:hover::before,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link:focus::before,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link:active::before {
+			border-bottom: 2px solid #103D8F;
+		}
+
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-footer .label:hover,
+		.Liberty .nav-wrapper .navbar .navbar-nav .nav-item .nav-link:hover,
+		.Liberty .nav-wrapper .navbar .navbar-nav .nav-item .nav-link:focus,
+		.dropdown-menu .dropdown-item:hover,
+		.btn-primary:hover,
+		.btn-primary:focus {
+			background-color: #002E7D;
+		}
+
+
+		.Liberty .content-wrapper #liberty-bottombtn,
+		.Liberty .content-wrapper #liberty-bottombtn:hover {
+			background-color: #103D8F;
+		}</style><style>@media (prefers-color-scheme: dark) { body, .Liberty, .dropdown-menu, .dropdown-item, .Liberty .nav-wrapper .navbar .form-inline .btn, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link.active, .Liberty .content-wrapper .liberty-content .liberty-content-main table.wikitable tr > th, .Liberty .content-wrapper .liberty-content .liberty-content-main table.wikitable tr > td, table.mw_metadata th, .Liberty .content-wrapper .liberty-content .liberty-content-main table.infobox th, #preferences fieldset:not(.prefsection), #preferences div.mw-prefs-buttons, .navbox, .navbox-subgroup, .navbox > tbody > tr:nth-child(even) > .navbox-list, .Liberty .nav-wrapper .navbar .form-inline .form-control {
+			background-color: #000;
+			color: #DDD;
+		}
+
+		.liberty-content-header, .liberty-footer, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-footer, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item, .Liberty .content-wrapper .liberty-content .liberty-content-header, .Liberty .content-wrapper .liberty-footer, .editOptions, html .wikiEditor-ui-toolbar, #pagehistory li.selected, .mw-datatable td, .Liberty .content-wrapper .liberty-content .liberty-content-main table.wikitable tr > td, table.mw_metadata td, .Liberty .content-wrapper .liberty-content .liberty-content-main table.wikitable, .Liberty .content-wrapper .liberty-content .liberty-content-main table.infobox, #preferences, .navbox-list, .dropdown-divider, .Liberty .content-wrapper .liberty-content .bottom-ads {
+			background-color: #1F2023;
+			color: #DDD;
+		}
+
+		.Liberty .content-wrapper .liberty-content .liberty-content-main, .mw-datatable th, .mw-datatable tr:hover td, textarea, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-content, div.mw-warning-with-logexcerpt, div.mw-lag-warn-high, div.mw-cascadeprotectedwarning, div#mw-protect-cascadeon, .mildtable th {
+			background-color: #000 !important;
+		}
+
+		.Liberty .content-wrapper .liberty-content .liberty-content-header .title>h1, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-content .live-recent-list .recent-item, caption { color: #DDD; }
+
+		.btn-secondary, .Liberty .content-wrapper .liberty-footer .catlinks, .rcpages-btn { background: transparent; color: #DDD; }
+
+
+		#pagehistory li { border: 0; }
+
+		.Liberty .content-wrapper .liberty-footer, .Liberty .content-wrapper .liberty-content .liberty-content-header, .Liberty .content-wrapper .liberty-content .liberty-content-main, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-footer, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-content, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item + .nav-item, .Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools .tools-btn:hover, .Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools .tools-btn:focus, .Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools .tools-btn, .dropdown-menu, .dropdown-divider, .Liberty .content-wrapper .liberty-content .liberty-content-main fieldset, hr, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-content .live-recent-list li, .mw-changeslist-legend, .Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools { border-color: #555; }
+
+		.flow-post, .Liberty .content-wrapper .liberty-content .liberty-content-main .toc .toctext { color: #DDD; }
+		.flow-topic-titlebar { color: #000; }
+		.flow-ui-navigationWidget { color: #FFF; }
+		.Liberty .content-wrapper .liberty-content .liberty-content-main .toccolours, .Liberty .content-wrapper .liberty-content .liberty-content-main .toc ul, .Liberty .content-wrapper .liberty-content .liberty-content-main .toc li { background-color: #000; }
+		.Liberty .content-wrapper .liberty-content .liberty-content-main .toc .toctitle { background-color: #1F2023; } }</style>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="loada6ee.css?lang=zh&amp;modules=site.styles&amp;only=styles&amp;skin=liberty"/>
+<meta name="generator" content="MediaWiki 1.39.3"/>
+<meta name="robots" content="noindex,nofollow"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="description" content="因为以下原因，您没有权限编辑本页：&#10;&#10;&#10;您请求的操作仅限属于该用户组的用户执行：用户&#10;&#10;&#10;您可以查看和复制此页面的源代码。&#10;{{Version|1.22}}&#10;{{N|机制|Mechanics}}在游戏中的各个方面需要具体讨论，此处给出各种机制的简介以及至细节页面的链接。&#10;__NOTOC__&#10;== 经济 ==&#10;{| class=&quot;mildtable sortable&quot; width=70%&#10;! width=1% class=&quot;unsortable&quot; | &#10;! width=15% | 机制&#10;! width=5% | 版本&#10;! width=60% class=&quot;unsortable&quot; | 描述&#10;|-&#10;| {{icon|interest}} || [[经济]] || 1.24|| 经济是最重要的机制之一，需要密切注意。&#10;|-&#10;| {{icon|base tax}} || [[税收]] || 1.24|| 税收是从各省份直接获取的金钱。&#10;|-&#10;| {{icon|Production}} || [[生产]] || 1.24|| 生产涉及到商品生产与贸易。&#10;|-&#10;| {{icon|Trade power}} || [[贸易]] || 1.25|| 贸易是各省份购入及贩卖各类商品之所得。&#10;|-&#10;| {{icon|Development}} || [[发展度]] || 1.24|| 发展度可视作省份的富裕程度，为该省份税收、生产与人力之总和。&#10;|-&#10;| {{icon|Colonist}} || [[殖民]] || 1.25|| 殖民是一种无需发起战争的扩张方法。&#10;|-&#10;| {{icon|goods produced modifier}} || [[商品]] || 1.29|| 世界通行的贸易商品。&#10;|}&#10;&#10;== 战争 ==&#10;{| class=&quot;mildtable sortable&quot; width=70%&#10;! width=1% class=&quot;unsortable&quot; | &#10;! width=15% | 机制&#10;! width=5% | 版本&#10;! width=60% class=&quot;unsortable&quot; | 描述&#10;|-&#10;| {{icon|Manpower}} || [[人力]] || 1.24|| 人力是衡量军队可用人数的一种指标。&#10;|-&#10;| {{icon|War}} || [[战争]] || 1.24|| 战争是外交上的最后手段，是国与国之间的正面对敌。&#10;|-&#10;| {{icon|Fort level}} || [[要塞]] || 1.24|| 要塞是省份坚实的自卫方式。&#10;|-&#10;| {{icon|infantry}} || [[陆军]] || 1.24|| 陆战以陆军为主导。&#10;|-&#10;| {{icon|ship hull}} || [[海军]] || 1.24 || 海战以海军为主导。&#10;|-&#10;| {{icon|Alliance}} || [[军事同盟]] || 1.24 || 国家之间的军事协议。&#10;|-&#10;| {{icon|cb}} || [[宣战理由]] || 1.24|| 发动战争的理由。&#10;|-&#10;| || [[宣称]] || 1.24|| 有史料为证，该地区自古以来就是他国领土。&#10;|-&#10;| || [[遣外雇佣军团]] || 1.24|| 可从其他国家租借的军队。&#10;|-&#10;| {{icon|Discipline}} || [[训练度]] || 1.24|| 军队对敌的作战能力。&#10;|-&#10;| {{icon|land Force limit}} || [[部队上限]] || 1.24|| 陆军或海军的最大规模。&#10;|-&#10;| || [[陆军单位]] || 1.24|| 陆军由陆军单位组成。单位的强度会随游戏进程增长。&#10;|-&#10;| {{icon|army tradition from battles}} || [[陆战]] || 1.24|| 游戏中的交战场面。&#10;|-&#10;| {{icon|general}} || [[将领]] || 1.22|| 海军上将、将军、探索者和征服者。&#10;|-&#10;| {{icon|army tradition}} || [[军事传统]] || 1.24|| 招募的将领能力受军事传统影响。&#10;|-&#10;| || [[海军单位]] || 1.24|| 海军由海军船舰组成。船舰的强度会随游戏进程增长。&#10;|-&#10;| {{icon|Naval tradition from battles}} || [[海战]] || 1.24|| 游戏中的海战场面。&#10;|-&#10;| {{icon|Sailors}} || [[水手]] || 1.23|| 水手是海军可用兵员。&#10;|-&#10;| {{icon|War exhaustion}} || [[厌战度]] || 1.24|| 战事不休，国必衰微。&#10;|-&#10;| {{icon|Power projection}} || [[力量投射]] || 1.24|| 力量投射是一个国家相对其宿敌的强盛程度。&#10;|}&#10;&#10;== 科技 ==&#10;{| class=&quot;mildtable sortable&quot; width=70%&#10;! width=1% class=&quot;unsortable&quot; | &#10;! width=15% | 机制&#10;! width=5% | 版本&#10;! width=60% class=&quot;unsortable&quot; | 描述&#10;|-&#10;| {{icon|Technology}} || [[科技]] || 1.24|| 科技是国家随游戏进程而进化的手段，科技的增长会带来新的能力与新的机遇。&#10;|-&#10;| {{icon|Idea}} || [[国家理念]] || 1.29|| 游戏中的每一个国家都拥有七个国家理念。这些理念决定了某国之所以为该国。&#10;|-&#10;| {{icon|Idea unlock}} || [[理念组]] || 1.26|| 理念代表了一国的倾向及其能力。你可以从理念列表中选择想要的理念。&#10;|-&#10;| {{icon|Technology cost}} || [[思潮]] || 1.24|| 思潮影响你的科技研究花费。此机制替代了之前的西化和科技组机制。&#10;|}&#10;&#10;== 内政 ==&#10;{| class=&quot;mildtable sortable&quot; width=70%&#10;! width=1% class=&quot;unsortable&quot; | &#10;! width=15% | 机制&#10;! width=5% | 版本&#10;! width=60% class=&quot;unsortable&quot; | 描述&#10;|-&#10;| {{icon|province}} || [[省份]] || 1.25|| 省份是一個國家可以擁有的最小陸地單元。&#10;|-&#10;| {{icon|Core}} || [[核心]] || 1.24|| 核心代表对一个省份合法和公认的所有权。&#10;|-&#10;| {{icon|monarchy}} || [[统治者]] || 1.25|| 一國之君。&#10;|-&#10;| {{icon|all power costs}} || [[君主点数]] || 1.24|| 君主点数决定一个国家的发展，代表君主的技能。&#10;|-&#10;| {{icon|Advisors}} || [[顾问]] || 1.24|| 顾问提供额外的君主点数和加成。&#10;|-&#10;| {{icon|Monarchy}} || [[政府]] || 1.23|| 不同的政府提供了可由统治者来选择的不同的机制和国家能得到的奖励。&#10;|- &#10;| {{icon|possible number of buildings}} || [[建筑]] || 1.24|| 建築可用於提升省份的人力、稅收或商品產出。&#10;|-&#10;| {{icon|reform desire}} || [[宗教]] || 1.24|| 宗教乃此地區人民的信仰。&#10;|-&#10;| {{icon|Culture}} || [[文化]] || 1.25|| 文化显示了省份人民共同的民族，以及他们与其他省份民族的对比。&#10;|-&#10;| [[File:Tab_domestic_estates.png|28px]] || [[阶层]] || 1.30|| 阶层是一种转移省份权力来获得加成的方法。&#10;|-&#10;| {{icon|Autonomy}} || [[自治度]] || 1.24|| 自治度用来衡量省份自决的程度。&#10;|-&#10;| {{icon|Stability cost modifier}} || [[稳定度]] || 1.24|| 稳定显示了国家内部凝聚力的多少。&#10;|-&#10;| {{icon|Corruption}} || [[腐败度]] || 1.24|| 侵占，背叛和领袖权威的损失。&#10;|-&#10;| {{icon|unrest}} || [[叛乱]] || 1.23|| 叛亂乃對國家統治事出有因之抵抗。&#10;|-&#10;| {{icon|disaster}} || [[灾难]] || 1.29|| 灾难是降临到一个国家头上的大规模的问题。&#10;|-yes&#10;| || [[运河]] || 1.28|| 值得國家為其深思的大型工程。&#10;|-&#10;| {{icon|Capital}} || [[首都]] || 1.25|| 政府之所在。&#10;|-&#10;| || [[派系]] || 1.29 || 派系代表了一个国家内部具有不同利益的特殊团体。&#10;|-&#10;| {{icon|Overextension}} || [[过度扩张]] || 1.25|| 國家因新獲得的土地所承受之壓力。&#10;|-&#10;| {{icon|Policies}} || [[政策]] || 1.25|| 政策反映了国家行动的倾向。&#10;|-&#10;| || [[宗教与教派]] || 1.23||游戏中多种不同的宗教。&#10;|-&#10;| {{icon|states}} || [[直属州与自治领地]] || 1.28|| 專注于更重要的省份的方法、&#10;|-&#10;| {{icon|tribe}} || [[土著议会]] || 1.25|| 土著國家的特殊政府形式。&#10;|-&#10;| {{icon|tribe}} || [[草原游牧]] || 1.23|| 游牧國家的特殊政府形式。&#10;|-&#10;| {{icon|Mission}} || [[任务]] || 1.28|| 任務是國家的一個具獎勵的目標。&#10;|-&#10;| {{icon|Decision}} || [[决议]] || 1.29|| 決議是一個國家採取的有效措施。&#10;|-&#10;| {{icon|Event}} || [[事件]] || ~ || 时间发生在国家身上，有的是定时发生的历史事件，有的是随机事件。&#10;|}&#10;&#10;== 外交 ==&#10;{| class=&quot;mildtable sortable&quot; width=70%&#10;! width=1% class=&quot;unsortable&quot; | &#10;! width=15% | 机制&#10;! width=5% | 版本&#10;! width=60% class=&quot;unsortable&quot; | 描述&#10;|-&#10;| {{icon|neutral attitude}} || [[关系]] || 1.24|| 两个国家间的直接联系。&#10;|-&#10;| {{icon|Dip}} || [[外交]] || 1.24|| 外交是两个国家互动的机制。&#10;|-&#10;| {{icon|territory}} || [[区域]] || 1.29|| 地区，区域，大区是游戏中对省份分离和分类的方式。&#10;|-&#10;| [[File:Tab_domestic_subject.png|28px]] || [[附属国]] || 1.29|| 被其他国家控制的国家。包括封臣，殖民领，附庸国，贸易公司，和联合统治。&#10;|-&#10;| {{icon|imperial authority}} || [[神圣罗马帝国]] || 1.28|| 神圣罗马帝国是一个由西欧国家组成的松散的联邦，在宗教改革中起到了关键作用。&#10;|-&#10;| {{icon|Personal union}} || [[联合统治]] || 1.24|| 两个或多个国家由一个统治者统治。&#10;|-&#10;| || [[外交反馈]] || 1.23|| 一个国家向另一个国家的回应。&#10;|-&#10;| {{icon|Mandate}} || [[中国皇帝]] || 1.25|| 宣称“&#039;&#039;&#039;天命&#039;&#039;&#039;”的皇帝。&#10;|-&#10;| {{icon|envoy travel time}} || [[使者]] || 1.24|| 使者从一个国家向另一个国家移动。&#10;|-&#10;| {{icon|Espionage}} || [[间谍]] || 1.23|| 外交官并不总是他们看到的那样。&#10;|-&#10;| {{icon|papal influence}} || [[教廷]] || 1.23|| 教宗和元老院。&#10;|-&#10;| {{icon|Prestige}} || [[威望]] || 1.24 || 一个国家在国际上被如何看待。&#10;|}&#10;&#10;== 额外 ==&#10;{| class=&quot;mildtable sortable&quot; width=70%&#10;! width=1% class=&quot;unsortable&quot; | &#10;! width=15% | 机制&#10;! width=5% | 版本&#10;! width=60% class=&quot;unsortable&quot; | 描述&#10;|-&#10;| || [[幸运国家]] || 1.29|| 有些国家相对更为幸运，他们会获得额外优势。&#10;|-&#10;| [[File:Nation designer.png|28px]] || [[自定义国家]] || 1.24|| 自建的新国度。&#10;|-&#10;| || [[随机新世界]] || 1.23|| 随机生成的新大陆。&#10;|-&#10;| || [[评分系统]] || 1.30|| 一套游戏内的评价机制。&#10;|}&#10;&#10;[[Category:游戏概念|#]]&#10;[[en:Mechanics]]&#10;本页使用的模板：&#10;&#10;Template:Icon（查看源代码）（受保护）Template:Icon/a（查看源代码）Template:Icon/b（查看源代码）Template:Icon/c（查看源代码）Template:Icon/d（查看源代码）Template:Icon/e（查看源代码）Template:Icon/f（查看源代码）Template:Icon/g（查看源代码）Template:Icon/i（查看源代码）Template:Icon/l（查看源代码）Template:Icon/m（查看源代码）Template:Icon/n（查看源代码）Template:Icon/o（查看源代码）Template:Icon/p（查看源代码）Template:Icon/r（查看源代码）Template:Icon/s（查看源代码）Template:Icon/t（查看源代码）Template:Icon/u（查看源代码）Template:Icon/w（查看源代码）Template:N（查看源代码）Template:Version（查看源代码）（受保护）返回机制。&#10;"/>
+<meta name="keywords" content="欧陆风云4百科,机制"/>
+<meta name="apple-mobile-web-app-capable" content="Yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+<meta name="mobile-web-app-capable" content="Yes"/>
+<meta name="theme-color" content="#103D8F"/>
+<meta name="msapplication-navbutton-color" content="#103D8F"/>
+<meta name="twitter:card" content="summary"/>
+<link rel="icon" href="https://www.eu4cn.com/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="https://www.eu4cn.com/opensearch_desc.php" title="欧陆风云4百科 (zh)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://www.eu4cn.com/api.php?action=rsd"/>
+<link rel="alternate" hreflang="zh" href="https://www.eu4cn.com/zh/机制"/>
+<link rel="alternate" hreflang="zh-Hans" href="https://www.eu4cn.com/zh-hans/机制"/>
+<link rel="alternate" hreflang="zh-Hant" href="https://www.eu4cn.com/zh-hant/机制"/>
+<link rel="alternate" hreflang="zh-Hans-CN" href="https://www.eu4cn.com/zh-cn/机制"/>
+<link rel="alternate" hreflang="zh-Hant-HK" href="https://www.eu4cn.com/zh-hk/机制"/>
+<link rel="alternate" hreflang="zh-Hant-MO" href="https://www.eu4cn.com/zh-mo/机制"/>
+<link rel="alternate" hreflang="zh-Hans-MY" href="https://www.eu4cn.com/zh-my/机制"/>
+<link rel="alternate" hreflang="zh-Hans-SG" href="https://www.eu4cn.com/zh-sg/机制"/>
+<link rel="alternate" hreflang="zh-Hant-TW" href="https://www.eu4cn.com/zh-tw/机制"/>
+<link rel="alternate" hreflang="x-default" href="https://www.eu4cn.com/wiki/机制"/>
+<link rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+<link rel="alternate" type="application/atom+xml" title="欧陆风云4百科的Atom feed" href="https://www.eu4cn.com/index.php?title=Special:%E6%9C%80%E8%BF%91%E6%9B%B4%E6%94%B9&amp;feed=atom"/>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script data-ad-client="ca-pub-1612414434963106" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114739240-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-114739240-1');
+</script>
+<meta property="og:title" content="机制"/>
+<meta property="og:site_name" content="欧陆风云4百科"/>
+<meta property="og:url" content="https://www.eu4cn.com/wiki/%E6%9C%BA%E5%88%B6"/>
+<meta property="og:image" content="https://www.eu4cn.com/images/logo/logo.png"/>
+<meta property="article:modified_time" content="2023-03-23T14:15:27Z"/>
+<meta property="article:published_time" content="2023-03-23T14:15:27Z"/>
+<script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"Article","name":"\u67e5\u770b\u201c\u673a\u5236\u201d\u7684\u6e90\u4ee3\u7801 - \u6b27\u9646\u98ce\u4e914\u767e\u79d1\uff0c\u4eba\u4eba\u53ef\u4ee5\u7f16\u8f91\u7684\u6b27\u9646\u98ce\u4e914\u4e2d\u6587\u767e\u79d1\u5168\u4e66","headline":"\u67e5\u770b\u201c\u673a\u5236\u201d\u7684\u6e90\u4ee3\u7801 - \u6b27\u9646\u98ce\u4e914\u767e\u79d1\uff0c\u4eba\u4eba\u53ef\u4ee5\u7f16\u8f91\u7684\u6b27\u9646\u98ce\u4e914\u4e2d\u6587\u767e\u79d1\u5168\u4e66","mainEntityOfPage":"\u67e5\u770b\u201c\u673a\u5236\u201d\u7684\u6e90\u4ee3\u7801","identifier":"https:\/\/www.eu4cn.com\/wiki\/%E6%9C%BA%E5%88%B6","url":"https:\/\/www.eu4cn.com\/wiki\/%E6%9C%BA%E5%88%B6","dateModified":"2023-03-23T14:15:27Z","datePublished":"2023-03-23T14:15:27Z","image":{"@type":"ImageObject","url":"https:\/\/www.eu4cn.com\/images\/logo\/logo.png"},"author":{"@type":"Organization","name":"\u6b27\u9646\u98ce\u4e914\u767e\u79d1","url":"https:\/\/www.eu4cn.com","logo":{"@type":"ImageObject","url":"https:\/\/www.eu4cn.com\/images\/logo\/logo.png","caption":"\u6b27\u9646\u98ce\u4e914\u767e\u79d1"}},"publisher":{"@type":"Organization","name":"\u6b27\u9646\u98ce\u4e914\u767e\u79d1","url":"https:\/\/www.eu4cn.com","logo":{"@type":"ImageObject","url":"https:\/\/www.eu4cn.com\/images\/logo\/logo.png","caption":"\u6b27\u9646\u98ce\u4e914\u767e\u79d1"}},"potentialAction":{"@type":"SearchAction","target":"https:\/\/www.eu4cn.com\/index.php?title=Special:Search&search={search_term}","query-input":"required name=search_term"}}</script>
+<link rel="stylesheet" href="http://www.unpkg.com/@fortawesome/fontawesome-free@5.15.1/css/all.css" />
+<link rel="stylesheet" href="http://www.unpkg.com/@fortawesome/fontawesome-free@5.15.1/css/v4-shims.css" />
+<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+<body class="Liberty width-size mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-机制 rootpage-机制 skin-liberty action-edit skin--responsive">		<header>
+			<div class="nav-wrapper navbar-fixed-top">
+						<nav class="navbar navbar-dark yamm">
+			<a class="navbar-brand" href="https://www.eu4cn.com/wiki/首页"></a>
+			<ul class="nav navbar-nav">
+				<li class="dropdown nav-item">
+					<a class="nav-link navbar-right" href="#" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+						<div class="navbar-brand-subtitle">欧陆风云4</div>
+						<div class="navbar-family">ParaWikis</div>
+					</a>
+				<ul class="dropdown-menu" aria-labelledby="dLabel">
+					<li>
+		                  <div class="yamm-content">
+		                    <div class="row">
+						 							<ul class="col-sm-4 list-unstyled">
+							<li><p class="meganav-item"><strong>最新百科</strong></p></li>
+								<a href="http://cs2.parawikis.com/" class="dropdown-item meganav-item">都市天际线2百科</a>
+								<a href="http://h3.parawikis.com/" class="dropdown-item meganav-item">英雄无敌3百科</a>
+								<a href="http://vic3.parawikis.com/" class="dropdown-item meganav-item">维多利亚3百科</a>
+								<a href="http://ce2.parawikis.com/" class="dropdown-item meganav-item">奇妙探险队2百科</a>
+								<a href="http://eos.parawikis.com/" class="dropdown-item meganav-item">罪恶帝国百科</a>
+								<a href="http://ir.parawikis.com/" class="dropdown-item meganav-item">英白拉多：罗马百科</a>
+							</ul>
+							<ul class="col-sm-4 list-unstyled">
+								<li><p class="meganav-item"><strong>热门百科</strong></p></li>
+								<a href="http://stellaris.parawikis.com/" class="dropdown-item meganav-item">群星百科</a>
+								<a href="http://www.eu4cn.com/" class="dropdown-item meganav-item">欧陆风云4百科</a>
+								<a href="http://ck2.parawikis.com/" class="dropdown-item meganav-item">十字军之王2百科</a>
+								<a href="http://ck3.parawikis.com/" class="dropdown-item meganav-item">十字军之王3百科</a>
+								<a href="http://hoi4.parawikis.com/" class="dropdown-item meganav-item">钢铁雄心4百科</a>
+								<a href="http://vic2.parawikis.com/" class="dropdown-item meganav-item">维多利亚2百科</a>
+							</ul>
+							<ul class="col-sm-4 list-unstyled">
+								<li><p class="meganav-item"><strong>ParaWikis</strong></p></li>
+								<a href="http://www.parawikis.com/wiki/ParaWikis:申请建站" class="dropdown-item meganav-item">申请建站</a>
+								<a href="http://www.parawikis.com/" class="dropdown-item meganav-item">ParaWikis</a>
+								<a href="http://commons.parawikis.com/" class="dropdown-item meganav-item">ParaCommons</a>
+							</ul>		                    </div>
+		                  </div>
+		                </li>
+				</ul>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="https://www.eu4cn.com/wiki/Special:最近更改" class="nav-link" title="本wiki的最近更改列表[r]" accesskey="r"><span class="fas fa-sync"></span><span class="hide-title">最近更改</span></a>				</li>
+				<li class="nav-item">
+					<a href="https://www.eu4cn.com/wiki/Special:随机页面" class="nav-link" title="加载一个随机页面[x]" accesskey="x"><span class="fa fa-random"></span><span class="hide-title">随机页面</span></a>				</li>
+				<li class="nav-item">
+					<a href="http://shang.qq.com/wpa/qunwpa?idkey=3bb76f6a58594b18c2defdc03af7ec2703fb2e2cc8fef6dadd1dcb896c0ede1a" target="_blank" class="nav-link" title="加入QQ群">
+						<span class="fa fa-qq"></span><span class="hide-title">加入QQ群</span>
+					</a>
+				</li>
+				<li class="dropdown nav-item">
+					<a class="dropdown-toggle nav-link" href="#" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+						<span class="fa fa-wrench"></span><span class="hide-title">工具</span>
+					</a>
+				<ul class="dropdown-menu" aria-labelledby="dLabel">
+					<li id="t-whatlinkshere" class="mw-list-item"><a href="https://www.eu4cn.com/wiki/Special:链入页面/机制" title="所有链接至本页面的wiki页面列表[j]" accesskey="j" class="dropdown-item">链入页面</a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="https://www.eu4cn.com/wiki/Special:链出更改/机制" rel="nofollow" title="链自本页的页面的最近更改[k]" accesskey="k" class="dropdown-item">相关更改</a></li><li id="t-specialpages" class="mw-list-item"><a href="https://www.eu4cn.com/wiki/Special:特殊页面" title="所有特殊页面的列表[q]" accesskey="q" class="dropdown-item">特殊页面</a></li><li id="t-info" class="mw-list-item"><a href="https://www.eu4cn.com/index.php?title=%E6%9C%BA%E5%88%B6&amp;action=info" title="关于此页面的更多信息" class="dropdown-item">页面信息</a></li><li id="t-cargopagevalueslink" class="mw-list-item"><a href="https://www.eu4cn.com/index.php?title=%E6%9C%BA%E5%88%B6&amp;action=pagevalues" rel="cargo-pagevalues" class="dropdown-item">页面值</a></li>				</ul>
+				</li>
+				<li class="dropdown nav-item"><a class="nav-link dropdown-toggle dropdown-toggle-fix" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true" title="帮助"><span class="fa fa-question"></span><span class="hide-title">帮助</span></a><div class="dropdown-menu" role="menu"><a class="dropdown-item" href="https://www.eu4cn.com/wiki/Project:译名手册" title="譯名手冊"><span class="fa fa-book"></span>譯名手冊</a><a class="dropdown-item" href="https://www.eu4cn.com/wiki/Project:字词转换" title="字詞轉換"><span class="fa fa-language"></span>字詞轉換</a><a class="dropdown-item" href="https://www.eu4cn.com/wiki/Project:编辑指南" title="編輯指南"><span class="fa fa-graduation-cap"></span>編輯指南</a><a class="dropdown-item" href="https://www.eu4cn.com/wiki/Project:编辑规范" title="編輯規範"><span class="fa fa-lightbulb"></span>編輯規範</a><a class="dropdown-item" href="https://www.eu4cn.com/wiki/Project:练手沙盒" title="Project:练手沙盒"><span class="fa fa-leaf"></span>練手沙盒</a></div></li><li class="dropdown nav-item"><a class="hidden-xs-down nav-link" data-toggle="" role="button" aria-haspopup="true" aria-expanded="true" title="ParaTranz" href="https://paratranz.cn/"><span class="fa fa-language"></span><span class="hide-title">ParaTranz</span></a></li><li class="dropdown nav-item"><a class="hidden-xs-down nav-link" data-toggle="" role="button" aria-haspopup="true" aria-expanded="true" title="52PCGame" href="http://bbs.52pcgame.net/"><span class="fa fa-comments"></span><span class="hide-title">52PCGame</span></a></li><li class="dropdown nav-item"><a class="hidden-xs-down nav-link" data-toggle="" role="button" aria-haspopup="true" aria-expanded="true" title="Project:捐款" href="https://www.eu4cn.com/wiki/Project:捐款"><span class="fa fa-heart"></span><span class="hide-title">资助我们</span></a></li>			</ul>
+					<div class="navbar-login">
+							<a href="#" class="none-outline" data-toggle="modal" data-target="#login-modal">
+					<span class="fa fa-sign-in"></span>
+				</a>
+					</div>
+									<form action="https://www.eu4cn.com/index.php" id="searchform" class="form-inline">
+			<input type="hidden" name="title" value="Special:搜索"/>
+			<div class="input-group">
+				<input type="search" name="search" placeholder="在欧陆风云4百科搜索" aria-label="在欧陆风云4百科搜索" autocapitalize="sentences" title="在欧陆风云4百科搜索[f]" accesskey="f" class="form-control" id="searchInput"/>				<span class="input-group-btn">
+					<button type="submit" name="go"
+						value="前往" id="searchGoButton"
+							class="btn btn-secondary" type="button"><span class="fa fa-eye"></span></button>
+					<button type="submit" name="fulltext"
+						value="搜索"
+						id="mw-searchButton" class="btn btn-secondary" type="button">
+						<span class="fa fa-search"></span></button>
+				</span>
+			</div>
+		</form>
+			</nav>
+				</div>
+		</header>
+		<section>
+			<div class="content-wrapper">
+							<aside>
+			<div class="liberty-sidebar">
+				<div class="live-recent-wrapper">
+					<div id='mw-data-after-content'>
+	<div class="read-more-container"></div>
+</div>
+												<div
+			class="live-recent"
+			data-article-ns="0|4|10|12|14"
+			data-talk-ns="1|5|7|9|11|13|15"
+		>
+			<div class="live-recent-header">
+			<ul class="nav nav-tabs">
+				<li class="nav-item">
+					<a href="javascript:" class="nav-link active" id="liberty-recent-tab1">
+						最近更改					</a>
+				</li>
+				<li class="nav-item">
+					<a href="javascript:" class="nav-link" id="liberty-recent-tab2">
+						最近讨论					</a>
+				</li>
+			</ul>
+			</div>
+			<div class="live-recent-content">
+				<ul class="live-recent-list" id="live-recent-list">
+					<li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li>				</ul>
+			</div>
+			<div class="live-recent-footer">
+				<a href="https://www.eu4cn.com/wiki/Special:最近更改" title="Special:最近更改"><span class="label label-info">查看更多</span></a>			</div>
+		</div>
+						<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 侧栏 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1612414434963106"
+     data-ad-slot="1728061201"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-K4RD1C6KBW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-K4RD1C6KBW');
+</script>
+				</div>
+										</div>
+			</aside>
+								<div class="container-fluid liberty-content">
+					<div class="liberty-content-header">
+													<div class="alert alert-dismissible fade in alert-info liberty-notice" role="alert">
+								<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+								<div id="localNotice"><div class="sitenotice" lang="zh" dir="ltr"><div style="text-align:center; font-size:125%; line-height: 1; padding: 10px;"><b>欢迎访问欧陆风云4百科！<a href="https://www.eu4cn.com/wiki/Special:用户登录" title="Special:用户登录"><span class="alert-link">注册一个账号</span></a>，一起参与编写吧！这里是<a href="https://www.eu4cn.com/wiki/欧陆风云4百科:当前任务#页面" title="欧陆风云4百科:当前任务"><span class="alert-link">当前的工程</span></a>。</b></div>
+<div style="text-align: center;">如果您想帮助本站建设，欢迎点击<a href="https://www.eu4cn.com/wiki/欧陆风云4百科:捐款" title="欧陆风云4百科:捐款"><b>这里</b></a>捐款！欢迎所有对百科感兴趣的同学加入QQ群：<b>497888338</b>。</div></div></div>							</div>
+															<div class="content-tools">
+				<div class="btn-group" role="group" aria-label="content-tools">
+					<div id="ca-view" class="mw-list-item"><a href="https://www.eu4cn.com/wiki/机制" class="btn btn-secondary tools-btn">阅读</a></div><div id="ca-viewsource" class="selected mw-list-item"><a href="https://www.eu4cn.com/index.php?title=%E6%9C%BA%E5%88%B6&amp;action=edit" title="本页面受到保护。&#10;您可以查看其源代码[e]" accesskey="e" class="btn btn-secondary tools-btn">查看源代码</a></div><div id="ca-history" class="mw-list-item"><a href="https://www.eu4cn.com/index.php?title=%E6%9C%BA%E5%88%B6&amp;action=history" title="本页面过去的版本[h]" accesskey="h" class="btn btn-secondary tools-btn">查看历史</a></div>					<a href="https://www.eu4cn.com/wiki/Talk:机制" class="btn btn-secondary tools-btn" title="关于内容页面的讨论[t]" accesskey="t" id="ca-talk">讨论</a>				</div>
+			</div>
+							<div class="title">
+						<h1>
+							查看“机制”的源代码						</h1>
+						<div class="mw-indicators">
+</div>
+						</div>
+						<div class="contentSub" >
+							←<a href="https://www.eu4cn.com/wiki/机制" title="机制">机制</a>						</div>
+				</div>
+					<div class="liberty-content-main" id="content">
+											<div class="mw-body-content" id="mw-content-text">
+							<div id="mw-content-text" class="mw-body-content"><p>因为以下原因，您没有权限编辑本页：
+</p>
+<div class="permissions-errors">
+<p>您请求的操作仅限属于该用户组的用户执行：<a href="https://www.eu4cn.com/wiki/欧陆风云4百科:用户" title="欧陆风云4百科:用户">用户</a>
+</p>
+</div><hr />
+<p>您可以查看和复制此页面的源代码。
+</p><textarea readonly="" accesskey="," id="wpTextbox1" cols="80" rows="25" style="" class="mw-editfont-monospace" lang="zh" dir="ltr" name="wpTextbox1">{{Version|1.22}}
+{{N|机制|Mechanics}}在游戏中的各个方面需要具体讨论，此处给出各种机制的简介以及至细节页面的链接。
+__NOTOC__
+== 经济 ==
+{| class="mildtable sortable" width=70%
+! width=1% class="unsortable" | 
+! width=15% | 机制
+! width=5% | 版本
+! width=60% class="unsortable" | 描述
+|-
+| {{icon|interest}} || [[经济]] || 1.24|| 经济是最重要的机制之一，需要密切注意。
+|-
+| {{icon|base tax}} || [[税收]] || 1.24|| 税收是从各省份直接获取的金钱。
+|-
+| {{icon|Production}} || [[生产]] || 1.24|| 生产涉及到商品生产与贸易。
+|-
+| {{icon|Trade power}} || [[贸易]] || 1.25|| 贸易是各省份购入及贩卖各类商品之所得。
+|-
+| {{icon|Development}} || [[发展度]] || 1.24|| 发展度可视作省份的富裕程度，为该省份税收、生产与人力之总和。
+|-
+| {{icon|Colonist}} || [[殖民]] || 1.25|| 殖民是一种无需发起战争的扩张方法。
+|-
+| {{icon|goods produced modifier}} || [[商品]] || 1.29|| 世界通行的贸易商品。
+|}
+
+== 战争 ==
+{| class="mildtable sortable" width=70%
+! width=1% class="unsortable" | 
+! width=15% | 机制
+! width=5% | 版本
+! width=60% class="unsortable" | 描述
+|-
+| {{icon|Manpower}} || [[人力]] || 1.24|| 人力是衡量军队可用人数的一种指标。
+|-
+| {{icon|War}} || [[战争]] || 1.24|| 战争是外交上的最后手段，是国与国之间的正面对敌。
+|-
+| {{icon|Fort level}} || [[要塞]] || 1.24|| 要塞是省份坚实的自卫方式。
+|-
+| {{icon|infantry}} || [[陆军]] || 1.24|| 陆战以陆军为主导。
+|-
+| {{icon|ship hull}} || [[海军]] || 1.24 || 海战以海军为主导。
+|-
+| {{icon|Alliance}} || [[军事同盟]] || 1.24 || 国家之间的军事协议。
+|-
+| {{icon|cb}} || [[宣战理由]] || 1.24|| 发动战争的理由。
+|-
+| || [[宣称]] || 1.24|| 有史料为证，该地区自古以来就是他国领土。
+|-
+| || [[遣外雇佣军团]] || 1.24|| 可从其他国家租借的军队。
+|-
+| {{icon|Discipline}} || [[训练度]] || 1.24|| 军队对敌的作战能力。
+|-
+| {{icon|land Force limit}} || [[部队上限]] || 1.24|| 陆军或海军的最大规模。
+|-
+| || [[陆军单位]] || 1.24|| 陆军由陆军单位组成。单位的强度会随游戏进程增长。
+|-
+| {{icon|army tradition from battles}} || [[陆战]] || 1.24|| 游戏中的交战场面。
+|-
+| {{icon|general}} || [[将领]] || 1.22|| 海军上将、将军、探索者和征服者。
+|-
+| {{icon|army tradition}} || [[军事传统]] || 1.24|| 招募的将领能力受军事传统影响。
+|-
+| || [[海军单位]] || 1.24|| 海军由海军船舰组成。船舰的强度会随游戏进程增长。
+|-
+| {{icon|Naval tradition from battles}} || [[海战]] || 1.24|| 游戏中的海战场面。
+|-
+| {{icon|Sailors}} || [[水手]] || 1.23|| 水手是海军可用兵员。
+|-
+| {{icon|War exhaustion}} || [[厌战度]] || 1.24|| 战事不休，国必衰微。
+|-
+| {{icon|Power projection}} || [[力量投射]] || 1.24|| 力量投射是一个国家相对其宿敌的强盛程度。
+|}
+
+== 科技 ==
+{| class="mildtable sortable" width=70%
+! width=1% class="unsortable" | 
+! width=15% | 机制
+! width=5% | 版本
+! width=60% class="unsortable" | 描述
+|-
+| {{icon|Technology}} || [[科技]] || 1.24|| 科技是国家随游戏进程而进化的手段，科技的增长会带来新的能力与新的机遇。
+|-
+| {{icon|Idea}} || [[国家理念]] || 1.29|| 游戏中的每一个国家都拥有七个国家理念。这些理念决定了某国之所以为该国。
+|-
+| {{icon|Idea unlock}} || [[理念组]] || 1.26|| 理念代表了一国的倾向及其能力。你可以从理念列表中选择想要的理念。
+|-
+| {{icon|Technology cost}} || [[思潮]] || 1.24|| 思潮影响你的科技研究花费。此机制替代了之前的西化和科技组机制。
+|}
+
+== 内政 ==
+{| class="mildtable sortable" width=70%
+! width=1% class="unsortable" | 
+! width=15% | 机制
+! width=5% | 版本
+! width=60% class="unsortable" | 描述
+|-
+| {{icon|province}} || [[省份]] || 1.25|| 省份是一個國家可以擁有的最小陸地單元。
+|-
+| {{icon|Core}} || [[核心]] || 1.24|| 核心代表对一个省份合法和公认的所有权。
+|-
+| {{icon|monarchy}} || [[统治者]] || 1.25|| 一國之君。
+|-
+| {{icon|all power costs}} || [[君主点数]] || 1.24|| 君主点数决定一个国家的发展，代表君主的技能。
+|-
+| {{icon|Advisors}} || [[顾问]] || 1.24|| 顾问提供额外的君主点数和加成。
+|-
+| {{icon|Monarchy}} || [[政府]] || 1.23|| 不同的政府提供了可由统治者来选择的不同的机制和国家能得到的奖励。
+|- 
+| {{icon|possible number of buildings}} || [[建筑]] || 1.24|| 建築可用於提升省份的人力、稅收或商品產出。
+|-
+| {{icon|reform desire}} || [[宗教]] || 1.24|| 宗教乃此地區人民的信仰。
+|-
+| {{icon|Culture}} || [[文化]] || 1.25|| 文化显示了省份人民共同的民族，以及他们与其他省份民族的对比。
+|-
+| [[File:Tab_domestic_estates.png|28px]] || [[阶层]] || 1.30|| 阶层是一种转移省份权力来获得加成的方法。
+|-
+| {{icon|Autonomy}} || [[自治度]] || 1.24|| 自治度用来衡量省份自决的程度。
+|-
+| {{icon|Stability cost modifier}} || [[稳定度]] || 1.24|| 稳定显示了国家内部凝聚力的多少。
+|-
+| {{icon|Corruption}} || [[腐败度]] || 1.24|| 侵占，背叛和领袖权威的损失。
+|-
+| {{icon|unrest}} || [[叛乱]] || 1.23|| 叛亂乃對國家統治事出有因之抵抗。
+|-
+| {{icon|disaster}} || [[灾难]] || 1.29|| 灾难是降临到一个国家头上的大规模的问题。
+|-yes
+| || [[运河]] || 1.28|| 值得國家為其深思的大型工程。
+|-
+| {{icon|Capital}} || [[首都]] || 1.25|| 政府之所在。
+|-
+| || [[派系]] || 1.29 || 派系代表了一个国家内部具有不同利益的特殊团体。
+|-
+| {{icon|Overextension}} || [[过度扩张]] || 1.25|| 國家因新獲得的土地所承受之壓力。
+|-
+| {{icon|Policies}} || [[政策]] || 1.25|| 政策反映了国家行动的倾向。
+|-
+| || [[宗教与教派]] || 1.23||游戏中多种不同的宗教。
+|-
+| {{icon|states}} || [[直属州与自治领地]] || 1.28|| 專注于更重要的省份的方法、
+|-
+| {{icon|tribe}} || [[土著议会]] || 1.25|| 土著國家的特殊政府形式。
+|-
+| {{icon|tribe}} || [[草原游牧]] || 1.23|| 游牧國家的特殊政府形式。
+|-
+| {{icon|Mission}} || [[任务]] || 1.28|| 任務是國家的一個具獎勵的目標。
+|-
+| {{icon|Decision}} || [[决议]] || 1.29|| 決議是一個國家採取的有效措施。
+|-
+| {{icon|Event}} || [[事件]] || ~ || 时间发生在国家身上，有的是定时发生的历史事件，有的是随机事件。
+|}
+
+== 外交 ==
+{| class="mildtable sortable" width=70%
+! width=1% class="unsortable" | 
+! width=15% | 机制
+! width=5% | 版本
+! width=60% class="unsortable" | 描述
+|-
+| {{icon|neutral attitude}} || [[关系]] || 1.24|| 两个国家间的直接联系。
+|-
+| {{icon|Dip}} || [[外交]] || 1.24|| 外交是两个国家互动的机制。
+|-
+| {{icon|territory}} || [[区域]] || 1.29|| 地区，区域，大区是游戏中对省份分离和分类的方式。
+|-
+| [[File:Tab_domestic_subject.png|28px]] || [[附属国]] || 1.29|| 被其他国家控制的国家。包括封臣，殖民领，附庸国，贸易公司，和联合统治。
+|-
+| {{icon|imperial authority}} || [[神圣罗马帝国]] || 1.28|| 神圣罗马帝国是一个由西欧国家组成的松散的联邦，在宗教改革中起到了关键作用。
+|-
+| {{icon|Personal union}} || [[联合统治]] || 1.24|| 两个或多个国家由一个统治者统治。
+|-
+| || [[外交反馈]] || 1.23|| 一个国家向另一个国家的回应。
+|-
+| {{icon|Mandate}} || [[中国皇帝]] || 1.25|| 宣称“'''天命'''”的皇帝。
+|-
+| {{icon|envoy travel time}} || [[使者]] || 1.24|| 使者从一个国家向另一个国家移动。
+|-
+| {{icon|Espionage}} || [[间谍]] || 1.23|| 外交官并不总是他们看到的那样。
+|-
+| {{icon|papal influence}} || [[教廷]] || 1.23|| 教宗和元老院。
+|-
+| {{icon|Prestige}} || [[威望]] || 1.24 || 一个国家在国际上被如何看待。
+|}
+
+== 额外 ==
+{| class="mildtable sortable" width=70%
+! width=1% class="unsortable" | 
+! width=15% | 机制
+! width=5% | 版本
+! width=60% class="unsortable" | 描述
+|-
+| || [[幸运国家]] || 1.29|| 有些国家相对更为幸运，他们会获得额外优势。
+|-
+| [[File:Nation designer.png|28px]] || [[自定义国家]] || 1.24|| 自建的新国度。
+|-
+| || [[随机新世界]] || 1.23|| 随机生成的新大陆。
+|-
+| || [[评分系统]] || 1.30|| 一套游戏内的评价机制。
+|}
+
+[[Category:游戏概念|#]]
+[[en:Mechanics]]
+</textarea><div class="templatesUsed"><div class="mw-templatesUsedExplanation"><p>本页使用的模板：
+</p></div><ul>
+<li><a href="https://www.eu4cn.com/wiki/Template:Icon" title="Template:Icon">Template:Icon</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon&amp;action=edit" title="Template:Icon">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/a" title="Template:Icon/a">Template:Icon/a</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/a&amp;action=edit" title="Template:Icon/a">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/b" title="Template:Icon/b">Template:Icon/b</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/b&amp;action=edit" title="Template:Icon/b">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/c" title="Template:Icon/c">Template:Icon/c</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/c&amp;action=edit" title="Template:Icon/c">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/d" title="Template:Icon/d">Template:Icon/d</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/d&amp;action=edit" title="Template:Icon/d">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/e" title="Template:Icon/e">Template:Icon/e</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/e&amp;action=edit" title="Template:Icon/e">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/f" title="Template:Icon/f">Template:Icon/f</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/f&amp;action=edit" title="Template:Icon/f">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/g" title="Template:Icon/g">Template:Icon/g</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/g&amp;action=edit" title="Template:Icon/g">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/i" title="Template:Icon/i">Template:Icon/i</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/i&amp;action=edit" title="Template:Icon/i">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/l" title="Template:Icon/l">Template:Icon/l</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/l&amp;action=edit" title="Template:Icon/l">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/m" title="Template:Icon/m">Template:Icon/m</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/m&amp;action=edit" title="Template:Icon/m">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/n" title="Template:Icon/n">Template:Icon/n</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/n&amp;action=edit" title="Template:Icon/n">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/o" title="Template:Icon/o">Template:Icon/o</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/o&amp;action=edit" title="Template:Icon/o">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/p" title="Template:Icon/p">Template:Icon/p</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/p&amp;action=edit" title="Template:Icon/p">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/r" title="Template:Icon/r">Template:Icon/r</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/r&amp;action=edit" title="Template:Icon/r">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/s" title="Template:Icon/s">Template:Icon/s</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/s&amp;action=edit" title="Template:Icon/s">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/t" title="Template:Icon/t">Template:Icon/t</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/t&amp;action=edit" title="Template:Icon/t">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/u" title="Template:Icon/u">Template:Icon/u</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/u&amp;action=edit" title="Template:Icon/u">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/w" title="Template:Icon/w">Template:Icon/w</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/w&amp;action=edit" title="Template:Icon/w">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:N" title="Template:N">Template:N</a>（<a href="https://www.eu4cn.com/index.php?title=Template:N&amp;action=edit" title="Template:N">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Version" title="Template:Version">Template:Version</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Version&amp;action=edit" title="Template:Version">查看源代码</a>）（受保护）</li></ul></div><p id="mw-returnto">返回<a href="https://www.eu4cn.com/wiki/机制" title="机制">机制</a>。</p>
+</div>						</div>
+				</div>
+				<footer>
+				<div class="liberty-footer">
+										<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>					<div class="bottom-ads mobile-ab">
+						<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+						<!-- 移动端底部 -->
+						<ins class="adsbygoogle mobile-ab"
+						     style="display:block"
+						     data-ad-client="ca-pub-1612414434963106"
+						     data-ad-slot="3303553671"
+						     data-ad-format="auto"
+						     data-full-width-responsive="true"></ins>
+						<script>
+						     (adsbygoogle = window.adsbygoogle || []).push({});
+						</script>
+					</div>
+								<ul class="footer-places">
+									<li class="footer-places-privacy">
+						<a href="https://www.eu4cn.com/wiki/欧陆风云4百科:隐私政策">隐私政策</a>					</li>
+									<li class="footer-places-about">
+						<a href="https://www.eu4cn.com/wiki/欧陆风云4百科:关于">关于欧陆风云4百科</a>					</li>
+									<li class="footer-places-disclaimer">
+						<a href="https://www.eu4cn.com/wiki/欧陆风云4百科:免责声明">免责声明</a>					</li>
+							</ul>
+					<ul class="footer-icons">
+									<li class="footer-copyrightico">
+						<a href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="https://www.eu4cn.com/resources/assets/licenses/cc-by-nc-sa.png" alt="知识共享署名-非商业性使用-相同方式共享" width="88" height="31" loading="lazy"/></a>					</li>
+										<li class="footer-poweredbyico">
+						<a href="https://www.mediawiki.org/"><img src="https://www.eu4cn.com/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"/></a><a href="https://www.eu4cn.com/"><img src="https://www.eu4cn.com/images/footerlogo.png" width="88" height="31" loading="lazy"/></a>					</li>
+								</ul>
+						</div>
+				</footer>
+			</div>
+		</div>
+		</section>
+				<div class="modal fade login-modal" id="login-modal" tabindex="-1"
+			 role="dialog" aria-labelledby="login-modalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-sm" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<h4 class="modal-title">登录</h4>
+					</div>
+					<div class="modal-body">
+						<div id="modal-login-alert" class="alert alert-hidden alert-danger" role="alert">
+						</div>
+						<form id="modal-loginform" name="userlogin" class="modal-loginform"
+							  method="post">
+							<input class="loginText form-control" id="wpName1" tabindex="1"
+								   placeholder="请输入您的用户名" value="" name="lgname">
+							<label for="inputPassword" class="sr-only">密码</label>
+							<input class="loginPassword form-control" id="wpPassword1" tabindex="2"
+								   placeholder="请输入您的密码" type="password" name="lgpassword">
+							<div class="modal-checkbox">
+								<input name="lgremember" type="checkbox" value="1" id="lgremember" tabindex="3">
+								<label for="lgremember">记住登录</label>
+							</div>
+							<input class="btn btn-success btn-block" type="submit" value="登录" tabindex="4">
+							<a href="https://www.eu4cn.com/index.php?title=Special:%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95&amp;type=signup&amp;returnto=%E6%9C%BA%E5%88%B6" class="btn btn-primary btn-block" title="Special:用户登录" tabindex="5" type="submit">加入欧陆风云4百科</a>							<a href="https://www.eu4cn.com/wiki/Special:重置密码" title="Special:重置密码">忘记密码？</a>                            <br>
+							<a href="https://www.eu4cn.com/wiki/Special:用户登录" title="Special:用户登录">其他方式登录</a>							<input type="hidden" name="action" value="login" />
+							<input type="hidden" name="format" value="json" />
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">⧼liberty-btn-close⧽</button>
+						<button type="button" class="btn btn-primary">⧼liberty-btn-save-changes⧽</button>
+					</div>
+				</div>
+			</div>
+		</div>
+			</body>
+<!-- Mirrored from www.eu4cn.com/index.php?title=%E6%9C%BA%E5%88%B6&action=edit by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 06 May 2024 22:17:04 GMT -->
+</html>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?8b9cdb5f260cf613f39a508fbf9dd707";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.004","walltime":"0.006","ppvisitednodes":{"value":7,"limit":1000000},"postexpandincludesize":{"value":18,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":100},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20240506063957","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":2106});});</script>
+</body>
+</html>

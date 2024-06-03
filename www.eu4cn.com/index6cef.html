@@ -1,0 +1,1375 @@
+ <!DOCTYPE html>
+<html class="client-nojs" lang="zh" dir="ltr">
+
+<!-- Mirrored from www.eu4cn.com/index.php?title=%E5%A4%96%E4%BA%A4&action=edit by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 May 2024 10:56:36 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>查看“外交”的源代码 - 欧陆风云4百科，人人可以编辑的欧陆风云4中文百科全书</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"zh","wgMonthNames":["","1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"],"wgRequestId":"d8577797f7271a0179c8ce0d","wgCSPNonce":false,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"外交","wgTitle":"外交","wgCurRevisionId":97439,"wgRevisionId":0,"wgArticleId":1763,"wgIsArticle":false,"wgIsRedirect":false,"wgAction":"edit","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageContentLanguage":"zh","wgPageContentModel":"wikitext","wgRelevantPageName":"外交","wgRelevantArticleId":1763,"wgUserVariant":"zh","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgCargoDefaultQueryLimit":100,"wgCargoMapClusteringMinimum":80,"wgCargoMonthNames":["1月","2月","3月",
+"4月","5月","6月","7月","8月","9月","10月","11月","12月"],"wgCargoMonthNamesShort":["1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"],"wgCargoWeekDays":["星期日","星期一","星期二","星期三","星期四","星期五","星期六"],"wgCargoWeekDaysShort":["日","一","二","三","四","五","六"],"wgPageFormsTargetName":null,"wgPageFormsAutocompleteValues":[],"wgPageFormsAutocompleteOnAllChars":false,"wgPageFormsFieldProperties":[],"wgPageFormsCargoFields":[],"wgPageFormsDependentFields":[],"wgPageFormsCalendarValues":[],"wgPageFormsCalendarParams":[],"wgPageFormsCalendarHTML":null,"wgPageFormsGridValues":[],"wgPageFormsGridParams":[],"wgPageFormsContLangYes":null,"wgPageFormsContLangNo":null,"wgPageFormsContLangMonths":[],"wgPageFormsHeightForMinimizingInstances":800,"wgPageFormsShowOnSelect":[],"wgPageFormsScriptPath":"/extensions/PageForms","edgValues":null,"wgPageFormsEDSettings":null,"wgAmericanDates":false,"wgVisualEditor":{
+"pageLanguageCode":"zh","pageLanguageDir":"ltr","pageVariantFallbacks":["zh-hans","zh-hant","zh-cn","zh-tw","zh-hk","zh-sg","zh-mo","zh-my"]},"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgSmjUseCdn":false,"wgSmjUseChem":true,"wgSmjDisplayMath":[],"wgSmjExtraInlineMath":[],"wgSmjScale":1,"wgSmjEnableMenu":true,"wgSmjDisplayAlign":"left","wgEditSubmitButtonLabelPublish":false};RLSTATE={"site.styles":"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.liberty.styles":"ready","jquery.tablesorter.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready"};RLPAGEMODULES=["ext.SimpleMathJax","mediawiki.action.edit.collapsibleFooter","site","mediawiki.page.ready","jquery.tablesorter","ext.HighlightjsIntegration","ext.CodeMirror","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.gadget.UserLinkAvatar","ext.gadget.notifyConversion","ext.gadget.notifyAdsense","ext.gadget.Edittools-vector",
+"skins.liberty.bootstrap","skins.liberty.layoutjs","skins.liberty.liverc","skins.liberty.loginjs"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});});});</script>
+<link rel="stylesheet" href="loadd623.css?lang=zh&amp;modules=ext.visualEditor.desktopArticleTarget.noscript%7Cjquery.tablesorter.styles%7Cskins.liberty.styles&amp;only=styles&amp;skin=liberty"/>
+<script async="" src="load7991.php?lang=zh&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=liberty"></script>
+<style>.Liberty .nav-wrapper,
+		.Liberty .nav-wrapper .navbar .form-inline .btn:hover,
+		.Liberty .nav-wrapper .navbar .form-inline .btn:focus,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link.active::before,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link:hover::before,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link:focus::before,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link:active::before,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-footer .label,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .contributioncredits-footer .label,
+		.Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools .tools-btn:hover,
+		.Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools .tools-btn:focus,
+		.Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools .tools-btn:active,
+		.btn-primary,
+		.header-template, .section-template {
+			background-color: #103D8F;
+		}
+
+		.btn-primary,
+		.section-template-border {
+			border-color: #103D8F;
+		}
+
+		.Liberty .nav-wrapper .navbar .form-inline .btn:hover,
+		.Liberty .nav-wrapper .navbar .form-inline .btn:focus {
+			border-color: #002E7D;
+		}
+
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link.active::before,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link:hover::before,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link:focus::before,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link:active::before {
+			border-bottom: 2px solid #103D8F;
+		}
+
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-footer .label:hover,
+		.Liberty .nav-wrapper .navbar .navbar-nav .nav-item .nav-link:hover,
+		.Liberty .nav-wrapper .navbar .navbar-nav .nav-item .nav-link:focus,
+		.dropdown-menu .dropdown-item:hover,
+		.btn-primary:hover,
+		.btn-primary:focus {
+			background-color: #002E7D;
+		}
+
+
+		.Liberty .content-wrapper #liberty-bottombtn,
+		.Liberty .content-wrapper #liberty-bottombtn:hover {
+			background-color: #103D8F;
+		}</style><style>@media (prefers-color-scheme: dark) { body, .Liberty, .dropdown-menu, .dropdown-item, .Liberty .nav-wrapper .navbar .form-inline .btn, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link.active, .Liberty .content-wrapper .liberty-content .liberty-content-main table.wikitable tr > th, .Liberty .content-wrapper .liberty-content .liberty-content-main table.wikitable tr > td, table.mw_metadata th, .Liberty .content-wrapper .liberty-content .liberty-content-main table.infobox th, #preferences fieldset:not(.prefsection), #preferences div.mw-prefs-buttons, .navbox, .navbox-subgroup, .navbox > tbody > tr:nth-child(even) > .navbox-list, .Liberty .nav-wrapper .navbar .form-inline .form-control {
+			background-color: #000;
+			color: #DDD;
+		}
+
+		.liberty-content-header, .liberty-footer, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-footer, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item, .Liberty .content-wrapper .liberty-content .liberty-content-header, .Liberty .content-wrapper .liberty-footer, .editOptions, html .wikiEditor-ui-toolbar, #pagehistory li.selected, .mw-datatable td, .Liberty .content-wrapper .liberty-content .liberty-content-main table.wikitable tr > td, table.mw_metadata td, .Liberty .content-wrapper .liberty-content .liberty-content-main table.wikitable, .Liberty .content-wrapper .liberty-content .liberty-content-main table.infobox, #preferences, .navbox-list, .dropdown-divider, .Liberty .content-wrapper .liberty-content .bottom-ads {
+			background-color: #1F2023;
+			color: #DDD;
+		}
+
+		.Liberty .content-wrapper .liberty-content .liberty-content-main, .mw-datatable th, .mw-datatable tr:hover td, textarea, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-content, div.mw-warning-with-logexcerpt, div.mw-lag-warn-high, div.mw-cascadeprotectedwarning, div#mw-protect-cascadeon, .mildtable th {
+			background-color: #000 !important;
+		}
+
+		.Liberty .content-wrapper .liberty-content .liberty-content-header .title>h1, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-content .live-recent-list .recent-item, caption { color: #DDD; }
+
+		.btn-secondary, .Liberty .content-wrapper .liberty-footer .catlinks, .rcpages-btn { background: transparent; color: #DDD; }
+
+
+		#pagehistory li { border: 0; }
+
+		.Liberty .content-wrapper .liberty-footer, .Liberty .content-wrapper .liberty-content .liberty-content-header, .Liberty .content-wrapper .liberty-content .liberty-content-main, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-footer, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-content, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item + .nav-item, .Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools .tools-btn:hover, .Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools .tools-btn:focus, .Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools .tools-btn, .dropdown-menu, .dropdown-divider, .Liberty .content-wrapper .liberty-content .liberty-content-main fieldset, hr, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-content .live-recent-list li, .mw-changeslist-legend, .Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools { border-color: #555; }
+
+		.flow-post, .Liberty .content-wrapper .liberty-content .liberty-content-main .toc .toctext { color: #DDD; }
+		.flow-topic-titlebar { color: #000; }
+		.flow-ui-navigationWidget { color: #FFF; }
+		.Liberty .content-wrapper .liberty-content .liberty-content-main .toccolours, .Liberty .content-wrapper .liberty-content .liberty-content-main .toc ul, .Liberty .content-wrapper .liberty-content .liberty-content-main .toc li { background-color: #000; }
+		.Liberty .content-wrapper .liberty-content .liberty-content-main .toc .toctitle { background-color: #1F2023; } }</style>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="loada6ee.css?lang=zh&amp;modules=site.styles&amp;only=styles&amp;skin=liberty"/>
+<meta name="generator" content="MediaWiki 1.39.3"/>
+<meta name="robots" content="noindex,nofollow"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta property="og:image" content="https://www.eu4cn.com/images/2/29/UI_tab_diplomacy.png"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="1952"/>
+<meta property="og:image" content="https://www.eu4cn.com/images/2/29/UI_tab_diplomacy.png"/>
+<meta property="og:image:width" content="800"/>
+<meta property="og:image:height" content="1301"/>
+<meta property="og:image:width" content="640"/>
+<meta property="og:image:height" content="1041"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="description" content="因为以下原因，您没有权限编辑本页：&#10;&#10;&#10;您请求的操作仅限属于该用户组的用户执行：用户&#10;&#10;&#10;您可以查看和复制此页面的源代码。&#10;{{Version|1.31}}[[File:UI tab diplomacy.png|thumb||330px|right|作为玩家，查看 {{flag|法兰西}}时的外交界面]]&#10;在欧陆风云4中，所有与他国的关系与行动都包含于&#039;&#039;&#039;外交&#039;&#039;&#039;（英文：&#039;&#039;&#039;Diplomacy&#039;&#039;&#039;）系统之中。&#10;&#10;与他国的[[关系]]会因为结盟、包围网、共同参战、共同的敌人、决议、事件以及让外交官改善关系等来提升，也会由于宣战、成为宿敌、发送侮辱、信仰不同[[宗教]]、撕毁或违背同盟，事件以及决议等降低。外交是一项双边系统，影响着协定双方的关系。&#10;&#10;鼠标悬停观点框，即可查看一国对他国观点的成因。关系的上限与下限为{{green|+200}}/{{red|-200}}。&#10;&#10;外交事务由[[使者#外交官|外交官]]来处理，可用的外交选项取决于国家的[[科技]]。外交选项分为八类：[[#同盟行动|同盟]]、[[#影响行动|影响]]、[[#关系行动|关系]]、[[#王朝行动|王朝]]、[[#秘密行动|秘密]]、[[#经济行动|经济]]、[[#通行行动|通行]]和[[人情]]。&#10;&#10;神圣罗马帝国的皇帝拥有一种额外的行动：[[神圣罗马帝国#皇帝能力|皇帝]]行动。教廷的控制者也拥有一种额外的行动：[[教宗]]行动。&#10;&#10;[[战争#宣战|宣战]]与[[战争#求和|求和]]有单独的外交按钮。&#10;&#10;{{TOC limit|4}}&#10;==外交官==&#10;&#10;{{SVersion|1.26}}&#10;进行大多数外交行动都需要一个 [[File:Diplomat.png|24px]] [[外交官]]。其中的一些行动，比如改善关系、吞并附庸、建立间谍网以及反间谍等，需要一个外交官无限期地执行任务，但你可以手动召回他。需要占用外交官的行动会在按钮上显示一个外交官的图标([[File:Diplomat.png|24px]])。其他的行动则是瞬间完成的。&#10;&#10;开始一项任务之后，外交官会花一段时间到达目标国家并开始其任务。完成一项任务之后，外交官需要再花一段时间旅行回家才能执行下一个任务，所花费的时间基于两个国家首都的距离。外交官的旅行速度是每天 20 单位距离。&#10;&#10;===获得外交官===&#10;&#10;{{SVersion|1.24}}&#10;每个国家默认拥有 2 个 {{icon|diplomat|24px}} 外交官。额外的外交官可以从如下触发、理念以及政策中获得：&#10;&amp;lt;section begin=&quot;Diplomats&quot; /&gt;&#10;{| class=&quot;mildtable&quot; style=&quot;width:45%&quot;&#10;! style=&quot;width:30px&quot; |{{icon|Diplomat|24px}}&#10;! style=&quot;width:300px&quot; |触发条件&#10;|- valign=&quot;top&quot;&#10;| style=&quot;text-align:right&quot; |{{green|+1}}&#10;|{{plainlist|&#10;* 拥有 {{icon|kingdom|24px}} 王国级政府或 {{icon|Empire|24px}} 帝国级政府&#10;* 成为[[教宗|教廷监护]]&#10;* 作为[[神圣罗马帝国#帝国皇帝|帝国皇帝]]进行“[[神圣罗马帝国#帝国改革|建立帝国政府]]”改革&#10;* 作为[[中国皇帝]]进行“[[中国皇帝#改革|改革海禁]]”&#10;* 成为日本的[[政府#幕府将军|幕府将军]]&#10;* 在 {{icon|parliament|24px}} 国会中公开辩论[[国会#议案|外交使团扩编]]&#10;* 作为 {{icon|Tengri|24px}} 长生天国家将 {{icon|theravada|24px}} 上座部佛教作为[[原始宗教#长生天|兼容宗教]]&#10;* AI国家（为某些短期行动保存）&#10;}}&#10;|}&#10;&amp;lt;section end=&quot;Diplomats&quot; /&gt;{{bonus table|diplomats|collapse=yes}}&#10;&#10;==外交关系限额==&#10;&#10;{{SVersion|1.24}}&#10;一个国家只能同时与数量有限的国家达成协定。每一个超过关系限额的关系每月会消耗 1 {{icon|dip}} 外交点数。只有与&#039;&#039;&#039;不同的国家&#039;&#039;&#039;建立的协定才算入外交关系限额内，而不是协定数量。就是说，与一个单独的国家拥有数个协定只算一条外交关系。（比如你与法兰西同时拥有军事同盟和王室联姻，这只算一条外交关系）&#10;&#10;以下协定会被计入外交关系限额中：&#10;&#10;*{{icon|alliance}} [[军事同盟]]&#10;*{{icon|royal marriage}} [[#王室联姻|王室联姻]]&#10;*[[#保证独立|保证独立]]&#10;*拥有一个 {{icon|vassal}} [[附庸国]]、{{icon|march|24px}}  [[卫戍国]]或者 {{icon|personal union}} 被[[联合统治]]的对象&#10;*收到别人给你的[[#通行行动|军事通行权]]&#10;*[[#支持独立|支持独立]]&#10;*拥有一个[[仆从国]]&#10;&#10;以下协定&#039;&#039;&#039;不会&#039;&#039;&#039;被计入外交关系限额中：&#10;&#10;*给予别人[[#通行行动|军事通行权]]&#10;*获得或给予[[#通行行动|舰队停泊权]]&#10;*获得或给予[[经济#向其他国家贷款|贷款]]&#10;*{{icon|coalition}} [[军事同盟#包围网|包围网]]&#10;*[[土著议会]]&#10;*[[禁运]]&#10;*[[#发送警告|警告]]其他国家&#10;*[[#战争援助|提供战争援助]]&#10;*{{icon|colonial subject}} [[殖民地]]、{{icon|tributary}} [[朝贡国]]或 {{icon|vassal}} [[大名]]&#10;*战争赔款&#10;*[[#转移贸易力量|转移贸易力量]]（包括在和平协议里强制要求的转移贸易）&#10;*帝国改革“[[神圣罗马帝国#改革效果列表|宣布实行世袭制]]”通过后，{{icon|imperial authority}} [[神圣罗马帝国#帝国皇帝|神圣罗马皇帝]]与[[神圣罗马帝国#诸侯国|帝国诸侯]]间的 {{icon|vassal}} [[附庸国|附庸]]关系&#10;*收到有条件限制的军事通行权（比如，与神罗皇帝开战时，可以在神罗境内畅行无阻；又比如，A 拥有在 B 的军事通行权，你跟 A 开战，也能得到在 B 的军事通行权）&#10;&#10;===增加外交关系限额===&#10;&#10;基础的外交关系上限是 {{green|4}} 个。&amp;lt;ref&gt;请见 {{path|static modifiers}} ([[Static modifiers#Base values]])。&amp;lt;/ref&gt; 这会被以下情况所改变：&#10;{| class=&quot;mildtable&quot;&#10;! style=&quot;text-align:center; width:30px&quot; |{{icon|diplomatic upkeep|24px}}&#10;!条件&#10;|- valign=&quot;top&quot;&#10;| align=&quot;right&quot; |{{green|+2}}||{{plainlist|&#10;*{{icon|lev}}拥有 [[File:Great_project_level_icon_tier_3.png|24px]]雄伟壮丽级别[[File:Great_project_kanbawzathadi_palace.png|48px]][[伟大工程#名胜列表|勃固王宫]]}}&#10;|- valign=&quot;top&quot;&#10;| align=&quot;right&quot; |{{green|+1}}||{{plainlist|&#10;*{{icon|imperial authority}} 作为[[神圣罗马帝国#帝国皇帝|神圣罗马帝国皇帝]] &#10;*{{icon|GC}}作为{{icon|nahuatl|24px}} [[纳瓦特尔]]宗教国家完成&#039;&#039;&#039;“扩展波其德卡义务”&#039;&#039;&#039;宗教改革&#10;*{{icon|lev}}拥有 [[File:Great_project_level_icon_tier_2.png|24px]]远近闻名级别[[File:Great_project_kanbawzathadi_palace.png|48px]][[伟大工程#名胜列表|勃固王宫]]&#10;*{{icon|lev}}拥有 [[File:Great_project_level_icon_tier_3.png|24px]]雄伟壮丽级别[[File:Great_project_petra.png|48px]][[伟大工程#名胜列表|佩特拉]]&#10;* [[玩家奖励]]&#10;* 作为[[AI]]（&#039;&#039;&#039;为了与玩家外交交互而保留&#039;&#039;&#039;）}}&#10;|- valign=&quot;top&quot;&#10;| align=&quot;right&quot; |{{red|−1}}||{{plainlist|&#10;*{{icon|temples|24px}} [[天朝]]政体国家儒教派系掌权&#10;*[[部落会议]]政体&#10;*{{icon|Kingdom|24px}} 王国级[[政府#部落政府|部落政府]]}}&#10;|- valign=&quot;top&quot;&#10;| align=&quot;right&quot; |{{red|-2}}||{{icon|Duchy|24px}} 公国级[[政府#部落政府|部落政府]]&#10;|}&#10;理念与政策：&#10;{{bonus table|diplomatic upkeep|collapse=yes}}&#10;特定的事件也会暂时性地给你额外的关系上限。&#10;&#10;如：event ideagroups.1503&#10;&#10;==外交声誉==&#10;&#10;{{SVersion|1.24}}&#10;一个国家的 [[File:Diplomatic reputation.png|24px]] 外交声誉代表着其总体的外交能力与信誉。外交声誉可以在国家界面查看。&#10;===效果===&#10;&#10;外交声誉能正面影响本国与独立国家或附属国的外交关系。&#10;&#10;对于本国附庸，每点外交声誉能：&#10;&#10;*{{green|+5%}} 几率继承被联统国家&#10;*{{green|+1}} {{icon|dip}} 吞并附属国时的每月外交点数花费（总花费不变）&#10;*{{green|-3%}} 所有附属国的 {{icon|liberty desire in subjects}} [[附属国#独立倾向|独立倾向]]&#10;&#10;对于其他类型国家，每点外交声誉能在进行外交活动时给予下列效果：&#10;&#10;{| class=&quot;mildtable sortable&quot;&#10;!行动!!奖励&#10;|-&#10;|提议建立[[军事同盟]]||5&#10;|-&#10;|要求加入进攻战争||5&#10;|-&#10;|提议[[王室联姻]]||5&#10;|-&#10;|提议[[附庸国#提议附庸（外交）|附庸]]||3&#10;|- &#10;|提议[[#转移贸易力量|转移贸易力量]]||3&#10;|-&#10;|[[#请求军事通行权|请求军事通行权]]||3&#10;|-&#10;|[[#请求舰队停靠权|请求舰队停靠权]]||3&#10;|-&#10;|[[#申请共享地图|申请共享地图]]||5&#10;|-&#10;|[[神圣罗马帝国#皇帝要求退还神罗领土|要求退还非法领土]]||3&#10;|-&#10;|[[神圣罗马帝国#成立自由市|给予自由市头衔]]||3&#10;|}&#10;&#10;===获得外交声誉===&#10;&#10;外交声誉会因为如下修正与理念、政策或完成某些任务而增加：&#10;====修正====&#10;{| class=&quot;mildtable&quot;&#10;! style=&quot;width:30px&quot; |[[file:diplomatic reputation.png|24px]]&#10;!DLC需求&#10;!条件&#10;|-&#10;| align=&quot;right&quot; |{{green|+5{{0|.00}}}}||{{icon|moh}}||作为{{flag|Austria}}，启用{{icon|Age Of Revolutions|24px}}[[大革命时代]]的时代能力[[File:Ab austria rep.png|28px]]奥地利外交&#10;|-&#10;| align=&quot;right&quot; |{{green|+2{{0|.00}}}}||||控制{{icon|ivory}}象牙贸易的[[贸易奖励]]&#10;|-&#10;| align=&quot;right&quot; |{{green|+2{{0|.00}}}}||{{icon|CS}}||作为{{icon|buddhist}}[[佛教]]国家处于中等业力（-33 ~ 33）&#10;|-&#10;| align=&quot;right&quot; |{{green|+2{{0|.00}}}}||{{icon|lev}}||拥有生效的[[File:Great_project_level_icon_tier_3.png|24px]]雄伟壮丽级别[[File:Great_project_gomateshwara_statue.png|48px]][[伟大工程#名胜列表|巴胡巴利雕像]]&#10;|-&#10;| align=&quot;right&quot; |{{green|+2{{0|.00}}}}||{{icon|lev}}||拥有生效的[[File:Great_project_level_icon_tier_3.png|24px]]雄伟壮丽级别[[File:Great_project_petra.png|48px]][[伟大工程#名胜列表|佩特拉]]&#10;|-&#10;| align=&quot;right&quot; |{{green|+1{{0|.00}}}}||||拥有{{icon|statesman|24px}}政治家[[顾问]]&#10;|-&#10;| align=&quot;right&quot; |{{green|+1{{0|.00}}}}||{{icon|rom}}||[[统治者特质]]为{{icon|diplomatic_reputation}}魅力非凡的说客&#10;|-&#10;| align=&quot;right&quot; |{{green|+1{{0|.00}}}}||{{icon|won}}||作为{{icon|hindu}}[[印度教]]国家，选择{{icon|Ganesha}}象头神（甘尼许）作为君主的主神&#10;|-&#10;| align=&quot;right&quot; |{{green|+1{{0|.00}}}}||||作为{{icon|Fetishist}}[[拜物教]]国家&#10;|-&#10;| align=&quot;right&quot; |{{green|+1{{0|.00}}}}||{{icon|CS}}||(被上级替换)作为{{icon|buddhist}}[[佛教]]国家处于高业力（33 ~ 100）&#10;|-&#10;| align=&quot;right&quot; |{{green|+1{{0|.00}}}}||{{icon|won}}||作为{{icon|Reformed}}[[改革宗]]国家将热情焦点设为稳定&#10;|-&#10;| align=&quot;right&quot; |{{green|+1{{0|.00}}}}||{{icon|tc}}||作为{{icon|Tengri}}[[长生天]]国家以{{icon|catholic}} [[天主教]]为[[相融信仰]]&#10;|-&#10;| align=&quot;right&quot; |{{green|+1{{0|.00}}}}||||作为{{icon|catholic}}[[天主教]]国家将[[教廷影响力]]花费在“&quot;派遣教廷使节”选项上（持续20年）&#10;|-&#10;| align=&quot;right&quot; |{{green|+1{{0|.00}}}}||||作为{{icon|imperial authority}}神圣罗马帝国的皇帝，通过[[File:HRE_institute_reichsregiment.png|28px]]建立帝国政府[[帝国改革#通用改革|帝国改革]]&#10;|-&#10;| align=&quot;right&quot; |{{green|+1{{0|.00}}}}||||作为{{icon|imperial authority}}神圣罗马帝国的皇帝，通过[[File:HRE_enact_gemeiner_pfennig.png|28px]]建立公捐税体系[[帝国改革#通用改革|帝国改革]]&#10;|-&#10;| align=&quot;right&quot; |{{green|+1{{0|.00}}}}||||作为{{icon|imperial authority}}神圣罗马帝国的成员国，通过[[File:HRE_enact_gemeiner_pfennig.png|28px]]建立公捐税体系[[帝国改革#通用改革|帝国改革]]&#10;|-&#10;| align=&quot;right&quot; |{{green|+1{{0|.00}}}}||无{{icon|moh}}||作为拥有[[File:Gov_celestial_empire.png|28px]][[君主制#天朝|天朝]]第一级政府改革的国家由[[file:China eunuch.png|28px|link=派系#天朝]]市舶司[[派系#天朝|派系]]掌权&#10;|-&#10;| align=&quot;right&quot; |{{green|+1{{0|.00}}}}||{{icon|rom}}||作为拥有[[File:Gov_revolutionary_republic.png|28px]][[共和制#革命共和国|革命共和国]]或[[共和制#革命共和国|革命国家]]第一级政府改革的国家由[[file:Imperials.png|28px|link=派系#革命共和国]]帝国派[[派系#革命共和国|派系]]掌权&#10;|-&#10;| align=&quot;right&quot; |{{green|+1{{0|.00}}}}||{{icon|emp}}{{icon|rp}}||作为{{icon|revolution target}}革命国家，拥有[[File:Gov_feuillant_reform.png|28px]][[通用政府改革#斐扬派体系|斐扬派体系]]第五级政府改革，由君主主义者掌权&#10;|-&#10;| align=&quot;right&quot; |{{green|+1{{0|.00}}}}||{{icon|rp}}||作为{{icon|monarchy}}君主制国家，拥有[[File:Gov_states_general.png|28px]][[共和制#联省议会|联省议会]]第五级政府改革，由议会派掌权&#10;|-&#10;| align=&quot;right&quot; |{{green|+1{{0|.00}}}}||{{icon|lev}}||拥有生效的[[File:Great_project_level_icon_tier_2.png|24px]]远近闻名以上级别[[File:Great_project_alhambra.png|48px]][[伟大工程#名胜列表|阿尔罕布拉宫]]&#10;|-&#10;| align=&quot;right&quot; |{{green|+1{{0|.00}}}}||{{icon|lev}}||拥有生效的[[File:Great_project_level_icon_tier_1.png|24px]]引人注目以上级别[[File:Great_project_kanbawzathadi_palace.png|48px]][[伟大工程#名胜列表|勃固王宫]]&#10;|-&#10;| align=&quot;right&quot; |{{green|+1{{0|.00}}}}||{{icon|lev}}||(被上级替换)拥有生效的[[File:Great_project_level_icon_tier_1.png|24px]]引人注目至[[File:Great_project_level_icon_tier_2.png|24px]]远近闻名级别[[File:Great_project_gomateshwara_statue.png|48px]][[伟大工程#名胜列表|巴胡巴利雕像]]&#10;|-&#10;| align=&quot;right&quot; |{{green|+1{{0|.00}}}}||{{icon|lev}}||(被上级替换)拥有生效的[[File:Great_project_level_icon_tier_1.png|24px]]引人注目至[[File:Great_project_level_icon_tier_2.png|24px]]远近闻名级别的[[File:Great_project_petra.png|48px]][[伟大工程#名胜列表|佩特拉]]&#10;|-&#10;| align=&quot;right&quot; |{{green|+1{{0|.00}}}}||||{{icon|legitimacy}}[[正统性]]达到{{green|100}}时。&#10;|-&#10;| align=&quot;right&quot; |{{red|-1{{0|.00}}}}||||{{icon|legitimacy}}[[正统性]]低至{{red|0}}时。&#10;|-&#10;| align=&quot;right&quot; |{{red|-1{{0|.00}}}}||||触发修正[[触发修正#占领罗马|占领罗马]]&#10;|-&#10;| align=&quot;right&quot; |{{red|-2{{0|.00}}}}||||触发修正[[触发修正#教宗国之殇|教宗国之殇]]&#10;|-&#10;| align=&quot;right&quot; |{{red|-2{{0|.00}}}}||{{icon|rom}}||作为拥有[[File:Gov_revolutionary_republic.png|28px]][[共和制#革命共和国|革命共和国]]或[[共和制#革命共和国|革命国家]]第一级政府改革的国家由[[file:Jacobins.png|28px|link=派系#革命共和国]]雅各宾派[[派系#革命共和国|派系]]掌权&#10;|-&#10;| align=&quot;right&quot; |{{red|-2{{0|.00}}}}||||每100%{{icon|overextension}}[[过度扩张]]&#10;|}&#10;&#10;====事件及非永久修正====&#10;*{{icon|imperial authority}} 成为神圣罗马帝国皇帝（使用奥地利时），“成立帝国枢密院”事件中选择“成立新内阁”{{green|+1}}（最晚在1.25版本中已改为持续到游戏结束）&#10;*因 {{icon|decision}} [[Diplomatic missions]] 触发的的修正&#039;外国接触&#039;{{green|+1}} 持续10年&#10;*{{icon|Diplomatic}} 外交理念{{icon|event}} [[Diplomatic_idea_group_events#Improved_Reputation|&#039;Improved Reputation&#039;]] 修正: {{green|+1}} 持续10年&#10;*{{icon|Expansion}} 扩张理念 {{icon|event}} [[Expansion_idea_group_events#Enhanced_Reputation|&#039;Enhanced Reputation&#039;]] 修正: {{green|+1}} 持续10年&#10;*{{icon|Influence}} 影响理念{{icon|event}} [[Influence_idea_group_events#Popular_Noble|&#039;Popular Noble&#039;]] 修正: {{green|+1}} 持续10年&#10;*[[File:Advisor_Diplomat.png|28px]] 外交顾问 {{icon|event}}[[Advisor-related_events#Excellent_Diplomacy|Excellent Diplomacy]]: {{green|+1}} 持续10年&#10;*{{icon|Expansion}} 扩张理念 {{icon|event}} [[Expansion_idea_group_events#Diplomatic_Faux_Pas|&#039;Diplomatic Faux Pas&#039;]] 修正: {{red|-1}} 持续10年&#10;*{{icon|Diplomatic}} 外交理念 {{icon|event}} [[Diplomatic_idea_group_events#Babbling_buffoons|&#039;Babbling buffoons&#039;]] 修正: {{red|-1}} 持续10年&#10;*没有履行同盟义务：{{red|-1}} 持续5年&#10;*吞并附庸国：{{red|-3}} 持续10年&#10;*[[File:Internal_Conflicts.png|28px|link=Internal Conflicts]]内部冲突 {{icon|event}} [[Internal_Conflicts#National_Instability|National Instability]]: {{red|-5}}持续10年&#10;&#10;&#10;====国家理念与传统、理念组与政策====&#10;&#10;{{bonus table|diplomatic reputation|collapse=yes}}&#10;&#10;==外交行动==&#10;&#10;===宣战===&#10;&#10;{{SVersion|Timeless}}{{Main|战争}}{{anchor|Declare war}}&#10;[[战争|宣战]]意味着开始对目标国的军事征服。在宣战界面，你可以选择一个[[宣战理由]]，同时双方的盟国也会在两边列出。赢得[[陆战|战役]]，达成[[宣战理由#War_goals|战争目标]]以及占领省份将为双方积累 {{icon|war score}} [[战争#Warscore|战争分数]] ，决定了[[战争#Peace_terms|和平协议]]将如何签署。战争期间每个国家都能递交一份[[战争#Sue_for_peace|和平请求]]或者选择[[战争#Unconditional_Surrender|无条件投降]]。&#10;&#10;===盟约===&#10;&#10;{{SVersion|Timeless}}同盟行动包括&#039;&#039;&#039;邀请加入贸易同盟&#039;&#039;&#039;和&#039;&#039;&#039;踢出贸易同盟&#039;&#039;&#039;。&#10;====建立包围网====&#10;{{Main|军事同盟#包围网}}&#10;{{icon|coalition|24px}} [[军事同盟#包围网|包围网]]是一个因共同的敌人而结合在一起形成的联盟，因为他们的敌人拥有非常高的&#10;{{icon|aggressive expansion impact}} [[关系#侵略扩张|侵略扩张]]。一旦包围网中的一名成员与被包围的目标进行了直接的战争，所有的包围网成员将会被自动地召唤，不论是进攻战还是防御战。&#10;&#10;====提议结盟====&#10;&#10;{{Main|军事同盟}}&#10;{{icon|alliance|24px}} [[军事同盟]]是两个国家在战争中互相支持的军事协议。联盟的力量取决于与盟友间的[[外交反馈#信任|信任]]与[[外交反馈#人情|人情]]。人情会随着时间而增长，每年&#039;&#039;&#039;比你弱小的同盟国&#039;&#039;&#039;会欠你1人情。你可以通过人情来增加对方对你的信任，每10点人情可以增加5点信任。此外，你还可以通过列强行动中的影响国家(只能影响非列强的国家，且你是列强)来增加对方对你的信任。增加信任可以很大程度上增加你们{{icon|alliance|24px}} [[军事同盟]]的牢固性。&#10;&#10;====支持独立====&#10;&#10;{{Expansion|cop|ed}}&#10;国家可以支持其他国家的独立，前提是被支持独立的国家是一个 {{icon|liberty desire in subjects}} [[附属国#独立倾向|独立倾向]]超过 {{red|50%}} 的附属国，并且对你的关系为正值。如果被支持独立的国家发动了独立战争，所有支持其独立的国家将自动的与其结盟，并参与其与前宗主国的战争。&#10;&#10;{{icon|monarchy}} [[君主制#大名|大名]]作为特殊的附庸国政体，&#039;&#039;&#039;无法&#039;&#039;&#039; 使用该外交行动&#10;&#10;====提供遣外雇佣军团====&#10;&#10;{{Expansion|mn}}&#10;{{Main|遣外雇佣军团}}&#10;一个国家可以以金钱作为交换，向另一个国家借出军队，同时你能继续控制你这支军队。在无修正的情况下，同一时间内最多只能借出 20 队兵。&#10;&#10;==== 贸易联盟 ====&#10;&#10;{{Expansion|mn}}&#10;{{Main|贸易联盟}}&#10;贸易联盟指的是一群联系在一起的小国家，用来促进贸易，互相提供防御性保护。只有一地小国可以加入贸易联盟。一个贸易联盟必须由[[商业共和国]]或[[卫彻共和国]]来领导。&#10;===影响===&#10;&#10;{{SVersion|1.24}}&#10;====强制和平====&#10;强制和平这一行动会要求一场战争中进攻方的盟主与防御方的盟主达成无条件和平。进攻方盟主的拒绝会将提议强制和平的国家带入防御方。但强制和平有一些前提条件：&#10;*强制和平的实施者与进攻方盟主之间不能有[[和约]]。&#10;*强制和平的实施者与防御方盟主之间必须有至少 {{green|+100}} [[关系]]。&#10;*进攻方必须至少有 {{red|-25%}} {{icon|war score}} [[战争得分]] 。&#10;&#10;强制和平是一种加入对你的对手的战争的好方法，避免触发其在防御战时召唤盟友。举个例子，欧洲的非 {{icon|imperial authority}} [[神圣罗马帝国|神罗]]列强可以加入对帝国成员的战争，同时避免与皇帝交战。强制和平也同样可以扭转你的宿敌对他国的侵略。&#10;&#10;====提议附庸====&#10;&#10;{{Main|附庸国#提议附庸（外交）}}&#10;附庸他国将使目标国家成为你的 {{icon|vassalage}} 附庸国。附庸国会被强制召唤入他们宗主国的战争，并且支付他们的一部分 {{icon|vassal income}} [[附庸国#来自附庸的收入|税收]]。&#10;&#10;====放弃附庸====&#10;&#10;使附庸国独立，这一动作将消耗 {{icon|prestige}} {{red|-25}} 威望并降低 &#10;{{red|-200}} 与前附庸国的关系，同时形成宗主国与前附庸国之间为期 &#039;&#039;&#039;5&#039;&#039;&#039; 年的停战协议。&#10;&#10;特别的，当宗主国与附庸国之间存在停战协定时，宗主国无法放弃对附庸国的附庸。&#10;====任命卫戍国====&#10;&#10;{{expansion|aow}}&#10;{{Main|卫戍国}}&#10;将一个附庸国任命为 {{icon|march|24px}} 卫戍国会赋予其可观的军事加成。卫戍国不用向其宗主国缴纳 {{icon|vassal income}} 附庸费，同时无法被外交吞并。&#10;&#10;====撤销卫戍国====&#10;&#10;{{Main|卫戍国}}&#10;撤销一个卫戍国会使其变为普通的 {{icon|vassal}} 附庸状态，使得他可以被外交吞并。这一行为要花费 {{icon|stability}} {{red|-1}} [[稳定度]]并且导致与其的 {{red|-200}} 关系惩罚。&#10;&#10;====吞并附庸====&#10;&#10;{{Main|附庸国#吞并}}&#10;外交吞并会将一个 {{icon|vassal}} [[附庸国]]或者[[仆从国]]并入他们的宗主国，让他们得以直接控制附庸的领土和军队。这个行动会占用 {{icon|diplomat}} [[#外交官|外交官]]，并且在持续消耗 {{icon|dip}} 外交点数。&#10;&#10;====整合====&#10;&#10;{{Main|联合统治#整合}}&#10;外交整合会将一个被 {{icon|personal union}} [[联合统治]]的国家并入他们的君主出身的国家，如同外交吞并[[附庸国]]与[[仆从国]]一般，最终控制被联统国的领土和军队，同时移交被联统国的 {{icon|vassal}} 附庸与 {{icon|colonial nation}} [[殖民领]]的控制权。&#10;&#10;注：外交整合[[联合统治|被联统国]]与外交吞并[[附庸国]]在前提、花费、速度和效果上遵循相同的规则。&#10;&#10;====保证独立====&#10;&#10;[[File:guaranteed.png|24px]] 保证一国的独立会让保证者在其遭受侵略时被召唤入防御战争。保证者不会被被保证者召唤入其盟友的战争，除非被保证者被指定为共同作战的对象。这个行动会占用 {{icon|diplomatic relations}} [[#外交关系限额|外交关系]]，持续到保证者撤回保证或者拒绝加入被保证国的防御战争。被保证者受到攻击时可以如同军事同盟一般召唤保证者加入战争，如果保证者拒绝则会承受跟拒绝军事同盟的战争一样的惩罚。独立保证可以被随时撤销，但是会自动获得一个为期 5 年的单向停战协议（保证者对被保证者）。只有当一国实力远大于一个国家时，才能保证其独立。在该外交行动生效时保证者无法对被保证国宣战，但如果保证者对被保证者的盟友宣战且被保证者加入防御战争，保证独立协议会自动失效。（如 {{flag|FRA}}攻击 {{flag|SCO}}的盟友会使得两者开局时的保证独立协议自动失效）&#10;====发送警告====&#10;&#10;对目标国发送警告可以让你在他进攻你的邻国时被召唤入防御方。拒绝这一召唤会招致相关国家对你的不信任。你可以在外交界面的过滤选项里查看你的邻国列表。你不能警告你已经警告过了的国家，或者那些和你的实力相比不那么弱的国家。一次警告将持续二十年，过期以后你可以再次警告。&#10;====威胁开战====&#10;&#10;{{expansion|cos}}&#10;威胁开战可以让你得到你一块拥有宣称或者核心的省份。如果你的要求被接受了，省份会转移到你的控制之下。如果要求被拒绝，一场以征服为 {{icon|casus belli}} [[宣战理由]]的战争将展开。你不能索要他国的 {{icon|capital province}} 首都省份，这意味着你不能对一地小国威胁开战，你也不能对存在停战协议的国家或者一个朝贡国以外的附属国威胁开战。成功地索要省份会使你得到 {{icon|ae impact}} [[侵略扩张]]，数值等同于你在和平协议中征服这块地，同时会使得目标国减少 {{red|-10}} {{icon|prestige}} [[威望]]。这会在两国间建立为其 &#039;&#039;&#039;5&#039;&#039;&#039; 年的停战协议。当目标国和你的力量差距过大时，他才会考虑让渡省份给你。如果你在索取的省份上有核心，AI 会更愿意放弃领土。如果你最近索要过土地，AI 会倾向于不接受你的要求。&#10;&#10;影响 AI 放弃省份的意愿的因素有：&#10;&#10;{| class=&quot;mildtable&quot;&#10;!因素!!影响&#10;|-&#10;|基础值：||{{red|-20}}&#10;|-&#10;|索取的省份不是索取国的核心：||{{red|-20}}&#10;|-&#10;|军事同盟间的相对力量：||{{red|-100}} 至 {{green|+100}}&#10;|-&#10;|省份相对于 AI 总发展度的价值：||{{red|-1}} 至 {{red|-200}}&#10;|-&#10;|最近被威胁索取过领土：||基础 {{red|-120}}，在停战协议到期后每月增长 {{green|+1}}&#10;|}&#10;===关系===&#10;&#10;{{SVersion|1.24}}&#10;{{see also|关系}}&#10;====改善关系====&#10;&#10;[[File:Improve relations.png|24px]] 你可以派遣一位外交官去改善关系。对附庸国最高可以改善到 {{green|+200}}，对其他国家最高到 {{green|+100}}。如果你把外交官撤回，改善关系会在每年的第一天 {{red|-3}}。已提升的关系越接近 0，改善关系的速率就越快，反之亦然。这个速率可以被{{icon|improve relation modifier}}[[关系#改善关系修正|改善关系]]修正所进一步调整。值得注意的是，从 1.19 版本开始，此修正也会影响侵略扩张降低的速率，因为老版本的“随着时间的推移关系会变得更好”修正被包括入其中了。&#10;&#10;首次派出外交官，或者改善的关系已经降到 &#039;&#039;&#039;0&#039;&#039;&#039; 时，第一次改善关系的提升会翻倍。之后会在每月底结算时提升改善的关系。&#10;&#10;====发送侮辱====&#10;&#10;给目标国发送侮辱会给予对方为期一年 {{icon|casus belli}} &#039;&#039;外交侮辱&#039;&#039;的[[宣战理由]]，并且降低与其的 {{red|-50}} 关系，这会每年 {{green|+5}}。侮辱有时有奇效，因为当你对有 {{green|+100}} 关系的国家宣战时会有  {{red|-1}} 点 {{icon|stability}} [[稳定度]]的惩罚。侮辱你的宿敌会给你 {{green|+5}} 点 {{icon|power projection}} [[力量投射]]，这会每年 {{red|-1}}。只有当你和宿敌间不存在停战协议，或者你此前没有通过侮辱获取过力量投射时，你才能获取力量投射。&#10;===== 轻蔑的侮辱 =====&#10;&#10;{{expansion|dh}}&#10;{{main|轻蔑的侮辱}}&#10;花费{{icon|prestige|24px}} {{red|5}}威望（仅当威望为正时可用）以轻蔑的侮辱对方，轻蔑的侮辱将导致双倍的关系损失&#039;&#039;&#039;外交侮辱&#039;&#039;&#039;的关系修正将被替换为&#039;&#039;&#039;轻蔑的侮辱&#039;&#039;&#039;，此修正将导致关系{{icon|opinion|24px}} {{red|−100}}。对宿敌使用轻蔑的侮辱将会获得{{icon|power projection}} {{green|+10}}力量投射。被侮辱的国家的[[宿敌]]们将会获得对发出侮辱国家的关系修正&#039;&#039;&#039;轻蔑的侮辱宿敌&#039;&#039;&#039;持续10年，获得{{icon|opinion|24px}} {{green|+25}}好感度并且每年衰减{{red|−2.5}}。&#10;===王室===&#10;&#10;{{SVersion|1.24}}&#10;====王室联姻====&#10;{{hatnote|关于王室联姻对统治者的影响，参见[[统治者#王室联姻]]。}}&#10;{{hatnote|关于联合统治，参见[[联合统治]]。}}&#10;&#10;君主制的国家之间可以进行 [[File:Royalmarriage.png|24px]] [[王室联姻]]。有王室联姻的国家之间互相 {{green|+25}} 关系。对与你有王室联姻的国家宣战会导致 {{red|-1}} {{icon|stability}} 稳定度、{{red|+1}} {{icon|war exhaustion}} 厌战度的惩罚。注意，该惩罚仅在直接对目标国家宣战时才会生效；为了避免惩罚，玩家可以对目标国家使用“威胁战争”索取省份，当目标国家拒绝时即可无惩罚开启战争。&#10;&#10;若某一基督教宗教组国家的君主在无继承人时死亡，且该国某一联姻国的威望高于该国，该国可能会产生一名来自该联姻国统治王朝的君主。若该国前任君主已经与该联姻国同王朝，则两国之间会直接建立 {{icon|personal union}} 联合统治。被联统国会如同附庸一般在军事上协同联统国。被联统国不会缴纳贡税，但是可以被继承。{{icon|prestige}} 威望越高，扩张王朝或建立联合统治的概率就越大。&#10;&#10;{{icon|theocracy}} [[政府#神权制|神权制]]和 {{icon|republic}} [[政府#共和制|共和制]]的国家不能进行王室联姻，尼德兰共和国、意大利执政团等特殊政体除外。基督宗教组的国家只能同基督宗教组的国家联姻。非基督宗教组的国家可以任意互相联姻，事实上，联统并不限于基督教宗教组——EU4限制仅基督教国家之间可以产生联合统治的方式，仅仅是限制基督教内外的联姻，同一王朝的非基督教宗教组国家依旧有机会参与这一机制。&#10;&#10;影响AI国家接受王室联姻的意愿的因素有：&#10;&#10;{| class=&quot;mildtable&quot;&#10;!因素!!效果&#10;|-&#10;| rowspan=&quot;8&quot; |对提议方的态度&#10;|{{icon|friendly attitude}} 友谊：{{green|+40}}&#10;|-&#10;|{{icon|protective attitude}} 保护：{{green|+40}}&#10;|-&#10;|{{icon|threatened attitude}} 威胁：{{green|+10}}&#10;|-&#10;|{{icon|neutral attitude}} 中立：{{red|-20}}&#10;|-&#10;|{{icon|domineering attitude}} 支配：{{red|-980}}&#10;|-&#10;|{{icon|hostile attitude}} 敌意：{{red|-1000}}&#10;|-&#10;|{{icon|outraged attitude}} 愤怒：{{red|-1000}}&#10;|-&#10;|{{icon|rivalry attitude}} 宿敌：{{red|-1000}}&#10;|-&#10;| rowspan=&quot;2&quot; |与提议方的关系&#10;|正值：每1点{{green|+0.25}}&#10;|-&#10;|负值：每1点{{red|-0.25}}&#10;|-&#10;|同一文化组||{{green|+20}}&#10;|-&#10;|同一宗教||{{green|+5}}&#10;|-&#10;|邻国||{{green|+5}}&#10;|-&#10;|提议方的外交声誉||每1点{{green|+5}}&#10;|-&#10;|边界距离||每1单位距离{{red|-0.1}}&amp;lt;sup&gt;†&amp;lt;/sup&gt;&#10;|-&#10;|过多外交关系||每超出1外交关系{{red|-50}}&#10;|}&#10;†: 边界距离只能在[[debug mode|debug模式]]中看到。&#10;&#10;====终止王室联姻====&#10;&#10;终止王室联姻会带来 {{red|-1}} 稳定度变化和 {{red|-1}} 威望变化。此外目标国家对本国观点 {{red|-75}}。稳定降低的惩罚可以被 {{icon|Diplomatic|24px}} [[外交理念]]的独特效果，或是成为[[教廷#教廷监护|教廷监护]]而移除。提议王室联姻的君主死亡也会无惩罚解除王室联姻关系。与宿敌断绝王室联姻也不会造成稳定度花费。&#10;====宣称王位====&#10;&#10;{{hatnote|关于增加建立联合统治的机会的信息，参见[[联合统治]]。}}&#10;宣称王位可以获得宣战理由“宣称王位”——强制建立联合统治的军事手段。&#10;&#10;宣称王位需要满足以下条件：&#10;&#10;*与目标国家有 {{icon|royal marriage}} 王室联姻&#10;*与目标国家为&#039;&#039;&#039;同一王朝&#039;&#039;&#039;&#10;*目标国家的继承人为{{red|弱宣称}}，或{{red|无}}继承人&#10;*{{icon|prestige}} [[威望]]高于目标国家&#10;&#10;对某国宣称王位会导致如下外交影响：&#10;&#10;*与其他有[[#王室联姻|王室联姻]]的国家 {{red|-50}} [[关系]]。&#10;*与目标国家 {{red|-100}} 关系，并且 {{icon|prestige}} {{red|-20}} 威望。&#10;*获得针对目标国家的 {{icon|casus belli}} [[宣战理由]]：“宣称王位”。强制建立 {{icon|personal union}} 联合统治的 {{icon|war score}} [[战争#战争分数|战争分数]]是&#039;&#039;&#039;84%&#039;&#039;&#039;，与目标国家的体量无关。&#10;&#10;注意，对有些盟友来说，即使他们愿意加入征服战争，也可能拒绝加入宣称王位战争或王位继承战争，因为他们反对这项联合统治。若目标国家有了强宣称的继承人，宣战理由会失效。&#10;&#10;外交动作“宣称王位”仅对基督教国家可用，因为其它宗教组的国家不允许建立联合统治。此外，{{icon|republic}} 荷兰共和制、寡头共和制和选举君主制可以有王室联姻，但不能被宣称王位，因为这些政体没有继承人。&#10;&#10;====支持继承人====&#10;&#10;支持继承人行动只能作用于那些实行了[[选举君主制]]国家（通常是 {{flag|Poland}}或 {{flag|Commonwealth}}以及自定义国家家）。支持继承人需要两国处于同一个宗教组中。&#10;&#10;对于[[选举君主制]]国家，每个支持继承人的其他国家都有一个单独的支持对象，支持的力度也会不同。[[外交官]]需要一直处于工作状态，才能提升继承人支持力度。&#10;&#10;每月支持力度可以上升1，其几率公式如下：&#10;&#10;&amp;lt;math&gt;\% \text{上升几率} = 2 \cdot \text{外交声誉} + 5 \cdot \frac{\text{两国关系}} {100} &amp;lt;/math&gt;&#10;&#10;[[选举君主制]]国家也可以支持自己家族的继承人，通过花费 {{red|-10}} {{icon|prestige}} 威望来提升5点支持力度。[[选举君主制]]君主死亡时支持力度最高的继承人继位。&#10;&#10;外国继承人继位，其支持者将获得：&#10;&#10;*{{green|+25}} {{icon|prestige}} [[威望]]&#10;*{{green|+10}} {{icon|legitimacy}} [[正统性]]&#10;*{{green|+24x}} {{icon|adm}} 行政点数、{{icon|dip}} 外交点数以及 {{icon|mil}} 军事点数，基于新统治者属性&#10;&#10;如果本国贵族继位，那么所有支持继承人的国家对本国观点 {{red|-20}}&#10;&#10;===秘密行动===&#10;&#10;{{SVersion|Timeless}}{{Main|间谍}}&#10;你可以派外交官去他国建立谍报网络，也可以让他进行反间谍活动来增加抓住来自目标国间谍的概率。当间谍网建立到一定程度时，你就能执行间谍活动，这不需要再派遣一次外交官。你能执行的间谍活动取决于你的外交科技等级。部分间谍活动不需要更高的科技等级，比如伪造宣称、支持叛军以及将贸易争端正当化。&#10;&#10;你可以去&#039;&#039;&#039;[[间谍]]&#039;&#039;&#039;页面了解关于秘密行动的更多细节。&#10;&#10;===经济行动===&#10;&#10;{{SVersion|1.24}}&#10;{{see also|经济}}&#10;====转移贸易力量====&#10;&#10;{{expansion|won}}&#10;转移贸易力量会要求一个非附庸国家将其一定比例的贸易力量转给他国。接受贸易力量的国家不能向转移者宣战，如果100%的贸易力量被转移,两国之间关系上升 {{green|+20}}。本外交行动不占用外交关系。&#10;&#10;下列因素影响接受贸易转移的可能性：&#10;&#10;{| class=&quot;mildtable&quot;&#10;!因素!!效果&#10;|-&#10;|军事力量对比||{{green|+80}} 最大&#10;|-&#10;|基础税收对比||{{green|+20}} 最大&#10;|-&#10;| rowspan=&quot;3&quot; |对提议者的态度&#10;|{{icon|threatened attitude}} 受威胁的：{{green|+20}}&#10;|-&#10;|{{icon|friendly attitude}}友好的：{{green|+10}}&#10;|-&#10;|{{icon|hostile attitude}} 敌意的：{{red|-100}}&#10;|-&#10;|提议者不是同盟国或者独立保证国||{{red|-50}}&#10;|-&#10;|对于提议者的看法||{{green|+0.1}} 每点正面看法&#10;|-&#10;| rowspan=&quot;2&quot; |{{icon|diplomatic reputation}} 外交威望&#10;|正值：{{green|+3}} 每点&#10;|-&#10;|负值：{{red|-2.5}} 每点&#10;|-&#10;|信任度||{{green|+0.2}} 每点正值&#10;|-&#10;| rowspan=&quot;5&quot; |要求转移力量的比例&#10;|开始于10%力量时的 {{green|+20}}，增加于每个百分比阶段的增加&#10;|-&#10;|10–40%：{{red|-1}}&#10;|-&#10;|41-60%：{{red|-3}}&#10;|-&#10;|61-80%：{{red|-5}}&#10;|-&#10;|81-100%：{{red|-7}}&#10;|-&#10;|已经转移力量给提议者的国家数量||{{red|-10}} 每个&#10;|-&#10;|两国边境距离||&#10;|}&#10;&#10;==== 贸易引导 ====&#10;&#10;{{expansion|rb}}&#10;请求一个非附庸国家作为接受协议的国家，使该国家的商人团为发出请求的国家转移贸易至贸易本埠。当贸易引导被激活后，协议双方将均不可以对对方宣战。但是与[[转移贸易力量]]不同，这个协议不会带来关系修正。这将有效地使提出协议的国家在最有利的方式下把持住接受协议的国家，以将贸易从各个节点导向提出协议的国家的最大数目的商人团，所能提供的的贸易力量。实际上，两国之间并没有贸易力量上的转移，所以在各贸易节点各国的贸易额是不变的。并且，如果接受协议的国家与提出协议的国家的贸易本埠相同，那么接受协议的国家将仍然可以依据他们的贸易力量在此处收集贸易值，即这个协议的妙用被很好地浪费掉了，本协议不占用双方任何国家的外交关系。&#10;====宣布禁运====&#10;&#10;该行动会降低受禁运国家在每个本国有贸易力量的贸易区里的 {{icon|trade power}} [[贸易力量]]。禁运宿敌会给予[[力量投射]]，禁运非宿敌会带来[[贸易效率]]惩罚，但可能会因降低受禁运国的贸易力量占比，进而提升贸易收入。此外，如果被禁运国没有使用贸易禁运反制禁运发起国，该国将获得宣战理由{{icon|cb}}贸易争端&#10;&#10;下面是对禁运效率提升的增益：&#10;&#10;{{bonus table|embargo efficiency}}&#10;&#10;==== 思潮分享 ====&#10;&#10;{{Expansion|rb}}&#10;对目标国家进行思潮分享。执行思潮分享后，目标国家的没有接受而我们早已接受的最古老的{{icon|institution}}思潮在目标国家的首都省份的每月传播进展将{{green|+1}}。目标国家需要花费月度{{icon|ducats}}收入的 {{red|10%}} 并且持续十年或者直到被分享的思潮已经传遍了目标国家首都地区的所有省份。&#10;&#10;思潮分享不适用于除了朝贡国以外的附属国，只有宗主国能与附属国思潮分享，同时[[附属国]]也只能向宗主国提供思潮分享。&#10;&#10;====赠送礼物====&#10;&#10;用礼金来提升他们对本国的看法，最高能加{{green|+25}}。礼金的金额为  {{icon|ducats}} 25 杜卡特的整数倍。礼金效果如下：&#10;&#10;&amp;lt;math&gt;\text{关系加成} = \frac{2.4 \cdot \text{给予的杜卡特数量}}{\text{目标国的月收入}}&amp;lt;/math&gt;&#10;&#10;最终修正不为整数则忽略小数部分只要整数部分。此法修正持续5年。多笔礼金没有叠加增益，如果第二笔礼金修正比第一笔大则改为第二笔的修正。&#10;&#10;====提供贷款====&#10;&#10;提供给他国贷款，并要求其缴纳利息。当到贷款到期日时，借债国可以选择不还贷，这会给债主一个宣战理由。当然，如果你足够强大，那么不还也是可以的。在到期日之前，这笔贷款所产生的利息将会从你的每月收入中扣除。AI统治者一般不会接受玩家的贷款要求。&#10;====战争援助====&#10;&#10;该行动会在持续时间内每月向其支付一笔固定金额的资金对其进行援助。此金额从 {{icon|ducats}} 0.1 杜卡特变化到 150% 倍的本月收入，调整幅度为每1%的月收入。战争援助的持续时间从10年变化到400年，调整幅度为10年。&#10;&#10;保持战争援助会提升目标国家对本国的 [[关系]] ，最高可以提升 {{green|+15}} 每年。期间内积累的关系提升将在停止援助或者援助到期时立即失效。因为提前终止援助没有惩罚，因此可以将援助持续时间调的很长。战争援助的效果计算如下：&#10;&#10;&amp;lt;math&gt;\text{年度关系增长} = \frac{12 \cdot \text{月度战争援助}}{\text{目标国的总月收入}}&amp;lt;/math&gt;&#10;&#10;此部分所有的&#039;&#039;每月收入&#039;&#039; 面板上方报告的数值。注意面板金额在下个月更新后，受援助国家的总月收入将会涵盖援助金的那一部分。这将缩小战争援助带来的关系提升幅度，因此一笔长期的小额援助可能更有效。&#10;&#10;&#039;&#039;&#039;例子&#039;&#039;&#039;: A国有10杜卡特的月收入，现在B国每个月援助A国5杜卡特。那么一开始的年关系增长值会是+6每年（B的援助是A一半的收入），并且在下个月这个增长值会跌至每年+4 （现在B的援助只占A三分之一的收入）&#10;&#10;战争援助并不消耗外交关系，所以这使得战争援助成为了一个使目标接受你的外交附庸或吞并的好方法。&#10;&#10;战争援助一个正在与[[宿敌]]交战的国家会增加你的{{icon|power projection}} [[power projection|力量投射]]。&#10;&#10;====出售省份====&#10;&#10;付出 {{icon|prestige}} {{red|-10}} 威望就可以将一个省份卖给另一国家，以此换得0-2000金币。买卖双方都需要处于和平时期，并不能是对方的宿敌，一次交易只能售卖一个省份。&#10;&#10;影响AI购买省份的因素如下：&#10;&#10;{| class=&quot;mildtable&quot;&#10;!因素!!效果&#10;|-&#10;|标价超过国库资金量||{{red|-1000}}&#10;|-&#10;|购买者对此异 [[文化]]组省份无核心或宣称||{{red|-1000}}&#10;|-&#10;|购买者对此异[[宗教]]组省份无核心或宣称||{{red|-1000}}&#10;|-&#10;|购买国在该省份没有核心且正处于{{red|-1000}}的[[overextension|过度扩张]]&#10;|-&#10;|购买者对 [[神圣罗马帝国]]内的省份无核心||{{red|-1000}}&#10;|-&#10;|价格||{{red|-1}} 每超过买家国库50%资金 1%&#10;|-&#10;|省份接壤国境||{{green|+10}}&#10;|-&#10;|相同文化省份||{{green|+10}}&#10;|-&#10;|相同宗教省份||{{green|+10}}&#10;|-&#10;|价格||{{red|-100}} -- {{green|+100}} 基于目标省份发展度&#10;|}&#10;只要价格合适，买家永远会买该省份只要：&#10;&#10;*买家是附庸国，卖家对省份有核心&#10;*买家对省份有核心&#10;&#10;此外，如果一个殖民省份处于不同的殖民区域，殖民领就不会买这一省份。如果对买家来说此省份非常不想得到，那么发展度价格修正会被减半。&#10;&#10;把省份卖给附庸国是一个节省行政点的好办法。这在短期内对避免过度扩张也非常有效，在未来可以用花费{{icon|dip}}外交点数来外交吞并这一省份而不是花费{{icon|adm}}行政点数来核心化这一省份。{{icon|Cossacks}} 哥萨克DLC 允许直接从附庸国界面给附庸省份。&#10;&#10;因为AI在行政点数花费上优先考虑核心化，可以通过卖给他们核心化{{icon|adm}}行政点花费高的的省份，来拖慢他们的行政科技发展。这将在下一行政理念将解锁理念组时格外有用（AI[[葡萄牙]]的第一个理念一般是[[探索理念]]，卖给他们北非的地会拖慢他们行政科技发展）。&#10;&#10;====出售船只====&#10;&#10;{{expansion|aow}}&#10;[[海军|海军]] 可以被以0到1000杜卡特的价格出售给其他国家。如果目标国接受了这些提议，被出售的海军将向目标国效忠。为了向一个国家出售海军，双方都应处于和平状态并且不能互相宿敌。在决定出售时，你可以选择出售哪支舰队以及出售的价格。在AI被询问是否购买舰队时，AI会想方设法保持一定比例的舰船比（比如说，大多数大西洋海岸的国家不想购买桨帆船），并且他们从不会超出海军上限进行购买。他们也同样不会购买任何处于他们补给范围外的船只。所以，为了确保能够成交，购买者应在目标国的补给范围内拥有一支舰队。超出购买者补给范围的舰队将无法被售出。将鼠标悬停在“是/否”栏上会给出决定的因素（显示在下方），如果提供的舰队太大，AI会指定他们想要的舰队数量，从而允许玩家退出出售界面并从这支过于庞大的舰队中分离出AI所想要的船只。如果是拜占庭这类急需出售舰船换取资金的国家建议开局处理完外交事务后尽快出售，毕竟时间一久能出售的商船就会减少，甚至可能得解散一部分，造成损失。&#10;&#10;以下是会影响AI购买船只意愿的因素:&#10;&#10;{| class=&quot;mildtable&quot;&#10;!因素!!效果&#10;|-&#10;| rowspan=&quot;4&quot; |对提议者的态度&#10;|{{icon|friendly attitude}} 友好: {{green|+10}}&#10;|-&#10;|{{icon|threatened attitude}} 被威胁: {{red|-20}}&#10;|-&#10;|{{icon|loyal attitude}} 忠诚: {{green|+10}}&#10;|-&#10;|{{icon|neutral attitude}} 中立: {{red|-10}}&#10;|-&#10;|价格||{{green|+50}} 到 {{red|-200}} 取决于购买者的财政和船只的定价&#10;|-&#10;|购买者不想要x艘某类型的船只||{{red|-10}} 每艘该类型的船只&#10;|-&#10;|外交声誉||{{green|+1}} 每点正外交声誉, {{red|-1}} 每点负外交声誉&#10;|}&#10;&#10;&#10;AI有时会购买过时的船只，当通过外交科技的进步获得新型舰船时，这可以使友邦、盟友和附庸以及其他非竞争国家为升级玩家国家的船只付费。一个富于侵略性的国家可能很难找到愿意购买的买家，并且卖船可能会强化入侵对象的实力。当然，如果你是老牌海军强国，并且不希望失去海上霸主的地位，对于这一行为还是谨慎些为好。&#10;====申请共享地图====&#10;&#10;{{expansion|mn}}&#10;申请共享地图能够使得一个国家向另一个请求分享一个地区的地图。如果该国家同意请求，请求者将以{{icon|prestige}} {{red|-15}} 威望的代价发现该区域所有其还没有发现的省份。给予地图的国家将会收到 {{icon|prestige}} {{green|10}} 威望。此外交选项要求两个国家都必须处于和平，且不能互相宿敌。为了能够使对方分享地图，请求者至少得在该区域相邻的一个区域内有一个单位。&#10;&#10;以下是会影响AI国家同意请求的因素:&#10;&#10;{| class=&quot;mildtable&quot;&#10;!因素!!效果&#10;|-&#10;|边境之间的距离||至多{{green|+20}}&#10;|-&#10;|简单难度||{{green|+10}}&#10;|-&#10;|目标国的威望||{{green|+0.25}}每一点负{{icon|prestige}} 威望&#10;|-&#10;|宿敌在该区域的兴趣||至多{{green|50}}&#10;|-&#10;|目标国在该区域的兴趣||至多{{red|-100}}&#10;|-&#10;|目标国正在殖民||{{red|-1000}}&#10;|-&#10;|非同一宗教组||至多{{red|-20}}&#10;|-&#10;| rowspan=&quot;4&quot; |对提议者的态度&#10;|{{icon|friendly attitude}} 友好: {{green|+25}}&#10;|-&#10;|{{icon|threatened attitude}} 被威胁: {{green|+20}}&#10;|-&#10;|{{icon|hostile attitude}} 敌对: {{red|-1000}}&#10;|-&#10;|{{icon|unknown attitude}} 未知: {{red|-50}}&#10;|-&#10;| rowspan=&quot;3&quot; |该国对提议者的观点&#10;|{{green|+0.25}}每一点正关系&#10;|-&#10;|{{red|-0.25}}每一点负关系&#10;|-&#10;|{{red|-1000}}如果观点低于或等于-25&#10;|-&#10;| rowspan=&quot;2&quot; |{{icon|diplomatic reputation}} 外交声誉&#10;|正: {{green|+5}} 每点外交声誉&#10;|-&#10;|负: {{red|-5}} 每点外交声誉&#10;|-&#10;| rowspan=&quot;3&quot; |信任&#10;|{{green|+1}} 每一点信任度若高于50点信任度&#10;|-&#10;|{{red|-2}} 每一点信任度若低于50点信任度&#10;|-&#10;|{{red|-1000}} 如果信任度低于或等于30&#10;|}&#10;==== 特许贸易公司 ====&#10;{{expansion|dhr}}&#10;此选项允许一个国家从另一个国家购买[[贸易公司]]区域中的一个省份。两国必须处在和平状态才能进行谈判。玩家选择要购买的必须是非首都省份，并移动滑块以改变价格，直到同意的分数高过拒绝。省份对拥有国的重要性越高，拒绝的分数越高。&#10;下面列出了一些因素。&#10;{|class = &quot;mildtable&quot;&#10;! 因素 !! 效果 !! 备注&#10;|-&#10;| 基础值 ||{{red|-3}} || &#10;|-&#10;| {{icon|money}} 给予金钱 || 最高 为{{green|+10}} || &#10;|-&#10;| {{icon|alliance}} 盟友关系 || {{green|+5}} || &#10;|-&#10;| 信任 ||  超过50的每一点{{green|+1}}以及低于50的每一点{{red|−1}} || 最大值为 {{green|+10}} 最小值为 {{red|−50}}&#10;|-&#10;| rowspan=&quot;2&quot; | {{icon|diplomatic reputation}} 外交声誉&#10;| 增加: 每点{{green|+2}} || &#10;|-&#10;| 减少: 每点{{red|−2}}  || &#10;|-&#10;| {{icon|development}} 省份发展度 || &amp;lt;math&gt;\frac{-1} {3} \cdot \text{省份发展度} + 1&amp;lt;/math&gt; || 这个值向下四舍五入,如: -3.33 计算为 -4&#10;|-&#10;| 各省 ||  发展度份额|| &#10;|-&#10;| 附近其他省份 || {{red|−X}} || 只有买方国家的其他省份很重要。这些省份是否属于贸易公司并不重要。省的数量和距离很重要，但这些省的发展并不重要&#10;|-&#10;| {{icon|opinion}} 观点 ||  || 计算公式未知.似乎每40点好感度{{green|+1}} ,但不同情况下阈值不同.&#10;|-&#10;| 受到威胁 || {{red|−100}} || 卖方对买方有{{icon|threatened attitude}} 受到威胁的态度。&#10;|-&#10;| 过于强大 || {{red|−100}} || 卖方国家等级为 [[帝国级&#9;]]&#10;|-&#10;| {{icon|rivalry attitude}} 宿敌 || {{red|−100}} || 卖方是买方的宿敌，或者反过来&#10;|-&#10;| 怀疑非贸易区域 || {{red|−X}} || 这适用于西欧、东欧、黎凡特和波斯次大陆的省份。数值不同。观测值达 {{red|−50}} 和{{red|−70}}&#10;&#10;|}&#10;贸易公司的基本花费取决于殖民范围::&#10;&amp;lt;math&gt;\text{基本花费} = 1000 - 0.5 \cdot \text{殖民范围}&amp;lt;/math&gt;&#10;&#10;===通行权===&#10;&#10;{{SVersion|1.24}}&#10;====请求军事通行权====&#10;向目标国请求军事通行权能够使请求者的军队通过目标国的领土。接受该提议将会提升请求者对目标国的观点{{green|+10}},反之亦然，拒绝将会减少其对目标国的观点{{red|-10}}. 向一个给予了你军事通行的国家宣战将会对[[稳定度]]造成巨大的{{red|-5}}的影响。&#10;&#10;AI国家只会对{{green|正面理由}}比{{red|负面理由}}多的国家允许军事通行权。以下是相关的因素&#10;&#10;{| class=&quot;mildtable&quot;&#10;!因素!!效果&#10;|-&#10;|与宿敌开战||{{green|+150}}&#10;|-&#10;|同盟关系||{{green|+50}}&#10;|-&#10;|请求者的军事力量||至多{{green|+100}}&#10;|-&#10;|与相邻的本国盟友开战|| {{red|-100}}&#10;|-&#10;| rowspan=&quot;8&quot; |对请求者的态度&#10;|{{icon|friendly attitude}} 友善: {{green|+20}}&#10;|-&#10;|{{icon|defensive attitude}} 防御盟友: {{green|+20}}&#10;|-&#10;|{{icon|protective attitude}} 保护: {{green|+20}}&#10;|-&#10;|{{icon|threatened attitude}} 受到威胁: {{green|+20}}&#10;|-&#10;|{{icon|neutral attitude}} 中立: &#039;&#039;&#039;0&#039;&#039;&#039;&#10;|-&#10;|{{icon|unknown attitude}} 未知: &#039;&#039;&#039;0&#039;&#039;&#039;&#10;|-&#10;|{{icon|hostile attitude}} 敌对: {{red|-100}}&#10;|-&#10;|{{icon|rivalry attitude}} 宿敌: {{red|-100}}&#10;|-&#10;| rowspan=&quot;2&quot; |请求者的外交声誉&#10;|正: 每点{{green|+3}}&#10;|-&#10;|负: 每点{{red|-3}}&#10;|-&#10;| rowspan=&quot;2&quot; |对请求者的观点&#10;|正: 每点{{green|+0.2}}&#10;|-&#10;|负: 每点{{red|-0.5}}&#10;|-&#10;|信任度||每点{{green|0.5}}&#10;|}&#10;在战争中，所有参与者之间的军事通行权是共享的。比如说，如果法国与布列塔尼正在战争中对抗勃艮第，并且法国有萨伏伊的军事通行权，那么布列塔尼也会拥有萨伏伊的军事通行权。相似地，勃艮第与其所有的盟友也会拥有萨伏伊的军事通行权。&#10;&#10;附属国总是会向其宗主国提供军事通行权。战争中的所有参加者都会自动给予他们的盟友军事通行权，同时也能向他们敌人的领土进攻。当战争开始时位于非盟友土地上的军队，以及当战争结束时位于无军事通行权的土地上的军队，会被[[放逐]]。被放逐的军队不会与任何敌对单位交战，也不会点亮所在省份的地图，直至回到本土才会恢复正常。&#10;&#10;====提供军事通行权====&#10;&#10;向目标国提供军事通行权，能够允许他们的军队通过请求者的领土。接受该提议将会提升{{green|+10}}点目标国对请求者的观点。AI国家一般对获取军事通行权没什么兴趣，除非他们是该国的盟友或附属国，或者该国是一个领土蔓延了巨大范围的大帝国。AI国家也会在他们需要穿过一个国家进行战争时寻求通行权。当一个国家向他国提供军事通行权时，与该国战争中为盟友或是敌人的国家也都会自动获得军事通行权。&#10;&#10;一个国家不能在该国或该国的敌人依旧在本国领土上有军队时撤回军事通行权。&#10;&#10;====请求舰队停靠权====&#10;&#10;{{anchor|Fleet basing rights}}&#10;获得一个国家的舰队停靠权将会给予你以下好处：&#10;*海军补给范围也会从该国的港口开始延伸&#10;*贸易范围也会从该国的港口开始延伸&#10;*请求者可以在该国的港口里停驻和修复船只&#10;*请求者可以通过在该国的港口停靠装载军队的运输船在该国登陆地面部队。这些地面部队不会被放逐，并且可以移动向任何临近的他们可以进入的省份。&#10;&#10;购买舰队停靠权的花费如下：&#10;&#10;*停靠花费为{{icon|ducats}}0.1杜卡特每月每个港口，并且最低值为{{icon|ducats}} &#039;&#039;&#039;0.5 杜卡特&#039;&#039;&#039;，最高值为&#039;&#039;&#039;2.0杜卡特&#039;&#039;&#039;。这个费用是建立在永久港口的数量上决定的。&#10;*还未成为城市的殖民地港口也可以使用，也按照费用的一部分计算。&#10;*对于接受国而言的未知之地的港口也会按照费用的一部分计算。&#10;*被占领的港口只有在他们能停靠时被算入。&#10;*这个费用可以在经济界面的&#039;&#039;港口停靠费&#039;&#039;一栏被查看。&#10;&#10;不同于之前的版本，现在港口停靠权不会增加殖民范围。然而他们依旧可以作为远洋航行的一个利器被使用。当{{icon|ed}} [[黄金国]]被激活时，港口停靠权在探索海域时没有用处，因为探索海域已经不再产生损耗了。只有当该国拥有2级以上的外交科技时才可以给予港口停靠权。&#10;&#10;下列因素会影响AI国家对于是否给予港口停靠权的决定：&#10;&#10;{| class=&quot;mildtable&quot;&#10;!因素!!效果&#10;|-&#10;|该国与请求者结盟||{{green|+50}}&#10;|-&#10;| rowspan=&quot;2&quot; |该国对请求者的观点&#10;|正: {{green|+0.2}}每点&#10;|-&#10;|负: {{red|-0.5}}每点&#10;|-&#10;| rowspan=&quot;9&quot; |对请求者的态度&#10;|{{icon|friendly attitude}}友好: {{green|+20}}&#10;|-&#10;|{{icon|defensive attitude}}防御同盟: {{green|+20}}&#10;|-&#10;|{{icon|protective attitude}}保护性的: {{green|+20}}&#10;|-&#10;|{{icon|unknown attitude}}未知: &#039;&#039;&#039;0&#039;&#039;&#039;&#10;|-&#10;|{{icon|neutral attitude}}中立: {{red|-20}}&#10;|-&#10;|{{icon|threatened attitude}}被威胁的: {{red|-30}}&#10;|-&#10;|{{icon|hostile attitude}}敌对: {{red|-1000}}&#10;|-&#10;|{{icon|outraged attitude}}被激怒的: {{red|-1000}}&#10;|-&#10;|{{icon|rivalry attitude}}宿敌的: {{red|-1000}}&#10;|-&#10;|信任||每一点正信任{{green|+0.5}}&#10;|-&#10;| rowspan=&quot;2&quot; |请求者的外交声誉&#10;|正: 每点{{green|+3}}&#10;|-&#10;|负: 每点{{red|-3}}&#10;|-&#10;|请求者正在对该国贸易禁运||{{red|-1000}}&#10;|-&#10;|该国正在对请求者贸易禁运||{{red|-1000}}&#10;|}&#10;一旦获得了港口停靠权，AI国家通常不会撤回，除非两国间的关系有剧烈的恶化。&#10;&#10;===教廷行动===&#10;&#10;{{SVersion|Timeless}}{{main|教宗}}&#10;一些特殊的外交行动需要你控制教廷后才能进行，详情可以前往[[教宗]]了解。其中有一个外交行动，发起十字军，允许教廷监护向一个异教国家发起十字军，给予每一个与之交战的天主教国家许多奖励。另一个外交行动，绝罚，会给予被绝罚的国家的天主教邻国一个免费的宣战理由。&#10;&#10;===皇帝行动===&#10;&#10;{{SVersion|Timeless}}{{main|神圣罗马帝国#皇帝能力}}&#10;[[神圣罗马帝国]]的皇帝拥有几个特殊的外交选项。你可以在神圣罗马帝国页面了解这些外交行动的细节。&#10;&#10;===大国行动===&#10;&#10;{{SVersion|Timeless}}{{main|列强}}&#10;{{expansion|rom}}&#10;&#10;发展度和科技水平综合排名世界前 8 的国家获得“列强”的地位。作为一个列强，你可以解锁如下外交行动：&#10;{{#lst:列强|great power}}&#10;&#10;&#039;&#039;&#039;备注：&#039;&#039;&#039; 失去列强地位的国家仍有 5 年的缓冲期，期间可以继续采取列强行动。&#10;&#10;==人情==&#10;{{SVersion|1.31}}&#10;*仅适用于DLC[[利维坦]]{{icon|Leviathan}}激活后&#10;在DLC[[利维坦]]{{icon|Leviathan}}加入后，国家间可以利用人情达成各种利益交换。如果目标国{{Red|拒绝}}，将会获得{{Red|-1}}{{icon|stability}}稳定度因此，在别国请求帮助时，请不要吝啬&#10;===获取人情===&#10;玩家可以向别国发送外交官{{icon|diplomat|24px}}来获取人情，速度取决于你的外交声誉[[File:Diplomatic reputation.png|24px]]和与目标国关系[[File:Improve relations.png|24px]]好坏&#10;===以人情换取金币===&#10;在外交界面中，一国可以用{{Red|10}}人情换取目标国{{ Green|6}}个月的收入{{icon|ducats}}&#10;*{{Red|注意}}&#10;*5年内未索取过&#10;*该国不能是你的属国&#10;*目标国处于和平状态&#10;*目标国国库足够支付&#10;===以人情换取士兵===&#10;在外交界面中，一国可以用{{Red|10}}人情换取目标国{{ Green|6}}个月的后备兵{{icon|manpower}}&#10;*{{Red|注意}}&#10;*5年内未索取过&#10;*该国不能是你的属国&#10;*目标国处于和平状态&#10;*目标国人力池足够支付&#10;===以人情换取水手===&#10;在外交界面中，一国可以用{{Red|10}}人情换取目标国{{ Green|6}}个月的水手{{icon|sailors}}&#10;*{{Red|注意}}&#10;*5年内未索取过&#10;*该国不能是你的属国&#10;*目标国处于和平状态&#10;*目标国人力池足够支付&#10;===找一位亲属作为继承人===&#10;在外交界面中，一国可以用{{Red|90}}人情要求另一国家将自己王朝的王室成员[[File:Royalmarriage.png|24px]]立为继承人。但请{{Red|三思而后行}}，这会让你受到世界上{{Red|所有}}国家的{{Red|－20}}侵略扩张关系惩罚&#10;*{{Red|注意}}&#10;*该国不能是你的属国&#10;*目标国处于和平状态&#10;*该国没有继承人或继承人宣称弱&#10;&#10;===以人情换取信任度===&#10;在外交界面中，一国可以用{{Red|10}}人情换取目标国{{Green|5}}信任&#10;===要求备战===&#10;在外交界面中，一国可以用{{Red|10}}人情换取目标国备战一年，期间目标国不会发起战争，并且在你宣战{{icon|war}}召唤时，该国获得一个{{Green|+20}}的参战意愿，这使得该国将更可能伸出援手&#10;&#10;===断绝盟约===&#10;在外交界面中，一国可以用{{Red|50}}人情换取目标国与另一国断绝盟约{{icon|alliance}}同时，被断绝盟约的国家将获得对你的宣战理由{{icon|cb}}&#039;&#039;&#039;强迫断绝盟约&#039;&#039;&#039;  为期十年&#10;*{{Red|注意}}&#10;*与被断绝盟约国关系低于{{Green|75}}&#10;*被断绝盟约国不是你的盟友&#10;*10年内未要求过&#10;===降低好感度===&#10;在外交界面中，一国可以用{{Red|50}}人情换取目标国与另一国降低{{Red|100}}好感度&#10;*{{Red|注意}}&#10;*与被降低关系国关系低于{{Green|75}}&#10;*被降低关系国不是你的盟友&#10;*10年内未要求过&#10;===归还核心省份===&#10;在外交界面中，一国可以用{{Red|50}}人情换取目标国归还你一个核心[[File:Core Icon.png]]省份&#10;*{{Red|注意}}&#10;*10年内未要求过&#10;&#10;==其他==&#10;&#10;{{SVersion|1.24}}&#10;这些行动不在主列表里，但也是通过外交界面进入的。&#10;===选择宿敌===&#10;&#10;[[File:Rival_interface.png|thumb|330px|right|宿敌机制添加于[[1.6]]版本]]&#10;宿敌是你认为将来可能与之发生冲突的国家。可能的宿敌是那些在军事力量，外交力量与本国相仿，并在一些地区有着相同的领土要求或是争端的国家。如右图所示，宿敌页面显示了可能的宿敌，他们对本国的看法，以及两国之间的海陆军实力对比。一个国家同时只能拥有3个宿敌&amp;lt;ref&gt;请见 {{path|defines}}: &#039;&#039;NUM_POSSIBLE_RIVALS = 3,&#039;&#039;&amp;lt;/ref&gt;。如果一个宿敌变得太弱或是太强，那么它将不再是一个有效的宿敌并被移除。新潜在宿敌的生成更多基于陆军力量对比而不是海军。国家发展度和科技水平也会被考虑。宿敌之间往往距离较近，更强的国家的宿敌可能距离更远。设置宿敌会极大降低两国之间外交关系。宿敌之间很少能成功进行外交活动。宿敌之间必须处于双方互相可见状态。&#10;&#10;选择宿敌能带来下面的好处：&#10;&#10;*宿敌的敌人更愿意与本国结盟&#10;*{{green|+25%}} 在战斗中击败宿敌 {{icon|prestige|24px}} 威望获得&amp;lt;ref&gt;请见 {{path|defines}}: &#039;&#039;RIVAL_PRESTIGE_BONUS = 0.25,&#039;&#039;&amp;lt;/ref&gt;&#10;*没有禁运时的 {{icon|trade efficiency|24px}} 贸易效率惩罚&#10;*{{green|+25%}} 间谍网建设速度&amp;lt;ref&gt;请见 {{path|defines}}: &#039;&#039;RIVAL_SPY_OFFENCE = 0.25,&#039;&#039;&amp;lt;/ref&gt;&#10;*{{green|−33%}} {{icon|dip|24px}} 外交点花费，在和平协议中索取不合法的土地&amp;lt;ref&gt;请见 {{path|defines}}: &#039;&#039;RIVAL_PEACE_COST_REDUCTION = -0.33,&#039;&#039;&amp;lt;/ref&gt;&#10;&#10;拥有一个宿敌，并且实施一些针对他的行动可以获得[[力量投射]]。宿敌数量不足会受到力量投射减少的惩罚。&#10;&#10;更换宿敌需要等待5年&amp;lt;ref&gt;1.35版本被修改，请见 {{path|defines}}: &#039;&#039;CHANGE_RIVAL_YEARS = 5,&#039;&#039;&amp;lt;/ref&gt;，并花费 {{icon|dip|20px}} {{red|100}} 外交点数&amp;lt;ref&gt;请见 {{path|defines}}: &#039;&#039;PS_REPLACE_RIVAL = 100,&#039;&#039;&amp;lt;/ref&gt;。更换宿敌花费可以被{{Nowrap|{{icon|Age of Absolutism|20px}} “专制主义时代”}}的“灵活的宿敌”选项来降低 {{green|50%}} 花费。&#10;&#10;===释放附庸国===&#10;&#10;你可以通过这一行动释放一个国家作为你的 {{icon|vassal}} 附庸国。如果你释放一个国家，他会得到他被你所占据的所有核心省份，除非这个省份是你的首都。释放附庸国不需要在任何一个省份拥有核心。若要释放国家，你需要拥有至少一个省份同时满足：该省份是其核心，并拥有其主流文化。战争期间不能采取此行动。&#10;&#10;这个外交行动可以被善用：&#10;&#10;* 将一个或两个已经灭绝但以前是大国核心的省份并入领土，并将该国作为附庸国释放。 然后，您可以使用收复核心的CB慢慢收回他们以前的所有土地，而无需支付外交点数，而且只需负担侵略性扩张惩罚的25％。&#10;* 如果这个国家接近灭亡，但无论出于何种原因都不能通过外交手段附庸，也应该这样做。 虽然这样造成的侵略扩张要多于强制附庸，但如果国家较小，差异不会很明显，而且您会立即拥有一个拥有较低独立倾向并关系良好的附庸，而不会受到强制附庸和侵略扩张带来的关系减成。&#10;==成就==&#10;&#10;{|&#10;|{{Achievement|资助我所爱|给3个不同的盟友战争援助，至少达到他们月收入的50%，且本国没有赤字。|image=Subsidize my Love.jpg|en=Subsidize my Love}}&#10;|-&#10;|{{Achievement|外交的延续|成功地利用威胁开战从其他国家获得一个省份。|image=The Continuation of Diplomacy.jpg|en=The Continuation of Diplomacy}}&#10;|-&#10;|{{Achievement|直至死亡将我们分开|与他国王室联姻。|image=Until Death Do Us Apart.jpg|en=Until Death Do Us Apart}}&#10;|}&#10;==参考资料==&#10;&#10;&amp;lt;references /&gt;&#10;[[Category:外交]]&#10;&#10;{{diplomacy navbox}}&#10;[[en:Diplomacy]]&#10;本页使用的模板：&#10;&#10;列强（查看源代码）Template:0（查看源代码）Template:Achievement（查看源代码）Template:Ambox（查看源代码）（受保护）Template:Ambox/core（查看源代码）（受保护）Template:Ambox 2020（查看源代码）Template:Anchor（查看源代码）Template:BTRow（查看源代码）Template:Bonus table（查看源代码）Template:Clear（查看源代码）（受保护）Template:Country data Austria（查看源代码）Template:Country data Commonwealth（查看源代码）Template:Country data FRA（查看源代码）Template:Country data France（查看源代码）Template:Country data Poland（查看源代码）Template:Country data SCO（查看源代码）Template:Country data Scotland（查看源代码）Template:Country data 法兰西（查看源代码）Template:Diplomacy navbox（查看源代码）（受保护）Template:Expansion（查看源代码）Template:Flag（查看源代码）（受保护）Template:Flag/core（查看源代码）Template:Green（查看源代码）（受保护）Template:Grey-bd（查看源代码）Template:Hatnote（查看源代码）（受保护）Template:Icon（查看源代码）（受保护）Template:Icon/a（查看源代码）Template:Icon/b（查看源代码）Template:Icon/c（查看源代码）Template:Icon/d（查看源代码）Template:Icon/e（查看源代码）Template:Icon/f（查看源代码）Template:Icon/g（查看源代码）Template:Icon/h（查看源代码）Template:Icon/i（查看源代码）Template:Icon/k（查看源代码）Template:Icon/l（查看源代码）Template:Icon/m（查看源代码）Template:Icon/n（查看源代码）Template:Icon/o（查看源代码）Template:Icon/p（查看源代码）Template:Icon/r（查看源代码）Template:Icon/s（查看源代码）Template:Icon/t（查看源代码）Template:Icon/u（查看源代码）Template:Icon/v（查看源代码）Template:Icon/w（查看源代码）Template:Iconbox（查看源代码）Template:Main（查看源代码）（受保护）Template:Navbox（查看源代码）（受保护）Template:Navboxgroup（查看源代码）（受保护）Template:Nowrap（查看源代码）Template:Path（查看源代码）（受保护）Template:Plainlist（查看源代码）Template:Red（查看源代码）（受保护）Template:SVersion（查看源代码）（受保护）Template:See also（查看源代码）Template:TOC limit（查看源代码）Template:Version（查看源代码）（受保护）Template:白字（查看源代码）返回外交。&#10;"/>
+<meta name="keywords" content="欧陆风云4百科,外交"/>
+<meta name="apple-mobile-web-app-capable" content="Yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+<meta name="mobile-web-app-capable" content="Yes"/>
+<meta name="theme-color" content="#103D8F"/>
+<meta name="msapplication-navbutton-color" content="#103D8F"/>
+<meta name="twitter:card" content="summary"/>
+<link rel="icon" href="https://www.eu4cn.com/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="https://www.eu4cn.com/opensearch_desc.php" title="欧陆风云4百科 (zh)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://www.eu4cn.com/api.php?action=rsd"/>
+<link rel="alternate" hreflang="zh" href="https://www.eu4cn.com/zh/外交"/>
+<link rel="alternate" hreflang="zh-Hans" href="https://www.eu4cn.com/zh-hans/外交"/>
+<link rel="alternate" hreflang="zh-Hant" href="https://www.eu4cn.com/zh-hant/外交"/>
+<link rel="alternate" hreflang="zh-Hans-CN" href="https://www.eu4cn.com/zh-cn/外交"/>
+<link rel="alternate" hreflang="zh-Hant-HK" href="https://www.eu4cn.com/zh-hk/外交"/>
+<link rel="alternate" hreflang="zh-Hant-MO" href="https://www.eu4cn.com/zh-mo/外交"/>
+<link rel="alternate" hreflang="zh-Hans-MY" href="https://www.eu4cn.com/zh-my/外交"/>
+<link rel="alternate" hreflang="zh-Hans-SG" href="https://www.eu4cn.com/zh-sg/外交"/>
+<link rel="alternate" hreflang="zh-Hant-TW" href="https://www.eu4cn.com/zh-tw/外交"/>
+<link rel="alternate" hreflang="x-default" href="https://www.eu4cn.com/wiki/外交"/>
+<link rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+<link rel="alternate" type="application/atom+xml" title="欧陆风云4百科的Atom feed" href="https://www.eu4cn.com/index.php?title=Special:%E6%9C%80%E8%BF%91%E6%9B%B4%E6%94%B9&amp;feed=atom"/>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script data-ad-client="ca-pub-1612414434963106" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114739240-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-114739240-1');
+</script>
+<meta property="og:title" content="外交"/>
+<meta property="og:site_name" content="欧陆风云4百科"/>
+<meta property="og:url" content="https://www.eu4cn.com/wiki/%E5%A4%96%E4%BA%A4"/>
+<meta property="article:modified_time" content="2023-07-19T02:44:31Z"/>
+<meta property="article:published_time" content="2023-07-19T02:44:31Z"/>
+<script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"Article","name":"\u67e5\u770b\u201c\u5916\u4ea4\u201d\u7684\u6e90\u4ee3\u7801 - \u6b27\u9646\u98ce\u4e914\u767e\u79d1\uff0c\u4eba\u4eba\u53ef\u4ee5\u7f16\u8f91\u7684\u6b27\u9646\u98ce\u4e914\u4e2d\u6587\u767e\u79d1\u5168\u4e66","headline":"\u67e5\u770b\u201c\u5916\u4ea4\u201d\u7684\u6e90\u4ee3\u7801 - \u6b27\u9646\u98ce\u4e914\u767e\u79d1\uff0c\u4eba\u4eba\u53ef\u4ee5\u7f16\u8f91\u7684\u6b27\u9646\u98ce\u4e914\u4e2d\u6587\u767e\u79d1\u5168\u4e66","mainEntityOfPage":"\u67e5\u770b\u201c\u5916\u4ea4\u201d\u7684\u6e90\u4ee3\u7801","identifier":"https:\/\/www.eu4cn.com\/wiki\/%E5%A4%96%E4%BA%A4","url":"https:\/\/www.eu4cn.com\/wiki\/%E5%A4%96%E4%BA%A4","dateModified":"2023-07-19T02:44:31Z","datePublished":"2023-07-19T02:44:31Z","image":{"@type":"ImageObject","url":"https:\/\/www.eu4cn.com\/images\/logo\/logo.png"},"author":{"@type":"Organization","name":"\u6b27\u9646\u98ce\u4e914\u767e\u79d1","url":"https:\/\/www.eu4cn.com","logo":{"@type":"ImageObject","url":"https:\/\/www.eu4cn.com\/images\/logo\/logo.png","caption":"\u6b27\u9646\u98ce\u4e914\u767e\u79d1"}},"publisher":{"@type":"Organization","name":"\u6b27\u9646\u98ce\u4e914\u767e\u79d1","url":"https:\/\/www.eu4cn.com","logo":{"@type":"ImageObject","url":"https:\/\/www.eu4cn.com\/images\/logo\/logo.png","caption":"\u6b27\u9646\u98ce\u4e914\u767e\u79d1"}},"potentialAction":{"@type":"SearchAction","target":"https:\/\/www.eu4cn.com\/index.php?title=Special:Search&search={search_term}","query-input":"required name=search_term"}}</script>
+<link rel="stylesheet" href="http://www.unpkg.com/@fortawesome/fontawesome-free@5.15.1/css/all.css" />
+<link rel="stylesheet" href="http://www.unpkg.com/@fortawesome/fontawesome-free@5.15.1/css/v4-shims.css" />
+<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+<body class="Liberty width-size mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-外交 rootpage-外交 skin-liberty action-edit skin--responsive">		<header>
+			<div class="nav-wrapper navbar-fixed-top">
+						<nav class="navbar navbar-dark yamm">
+			<a class="navbar-brand" href="https://www.eu4cn.com/wiki/首页"></a>
+			<ul class="nav navbar-nav">
+				<li class="dropdown nav-item">
+					<a class="nav-link navbar-right" href="#" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+						<div class="navbar-brand-subtitle">欧陆风云4</div>
+						<div class="navbar-family">ParaWikis</div>
+					</a>
+				<ul class="dropdown-menu" aria-labelledby="dLabel">
+					<li>
+		                  <div class="yamm-content">
+		                    <div class="row">
+						 							<ul class="col-sm-4 list-unstyled">
+							<li><p class="meganav-item"><strong>最新百科</strong></p></li>
+								<a href="http://cs2.parawikis.com/" class="dropdown-item meganav-item">都市天际线2百科</a>
+								<a href="http://h3.parawikis.com/" class="dropdown-item meganav-item">英雄无敌3百科</a>
+								<a href="http://vic3.parawikis.com/" class="dropdown-item meganav-item">维多利亚3百科</a>
+								<a href="http://ce2.parawikis.com/" class="dropdown-item meganav-item">奇妙探险队2百科</a>
+								<a href="http://eos.parawikis.com/" class="dropdown-item meganav-item">罪恶帝国百科</a>
+								<a href="http://ir.parawikis.com/" class="dropdown-item meganav-item">英白拉多：罗马百科</a>
+							</ul>
+							<ul class="col-sm-4 list-unstyled">
+								<li><p class="meganav-item"><strong>热门百科</strong></p></li>
+								<a href="http://stellaris.parawikis.com/" class="dropdown-item meganav-item">群星百科</a>
+								<a href="http://www.eu4cn.com/" class="dropdown-item meganav-item">欧陆风云4百科</a>
+								<a href="http://ck2.parawikis.com/" class="dropdown-item meganav-item">十字军之王2百科</a>
+								<a href="http://ck3.parawikis.com/" class="dropdown-item meganav-item">十字军之王3百科</a>
+								<a href="http://hoi4.parawikis.com/" class="dropdown-item meganav-item">钢铁雄心4百科</a>
+								<a href="http://vic2.parawikis.com/" class="dropdown-item meganav-item">维多利亚2百科</a>
+							</ul>
+							<ul class="col-sm-4 list-unstyled">
+								<li><p class="meganav-item"><strong>ParaWikis</strong></p></li>
+								<a href="http://www.parawikis.com/wiki/ParaWikis:申请建站" class="dropdown-item meganav-item">申请建站</a>
+								<a href="http://www.parawikis.com/" class="dropdown-item meganav-item">ParaWikis</a>
+								<a href="http://commons.parawikis.com/" class="dropdown-item meganav-item">ParaCommons</a>
+							</ul>		                    </div>
+		                  </div>
+		                </li>
+				</ul>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="https://www.eu4cn.com/wiki/Special:最近更改" class="nav-link" title="本wiki的最近更改列表[r]" accesskey="r"><span class="fas fa-sync"></span><span class="hide-title">最近更改</span></a>				</li>
+				<li class="nav-item">
+					<a href="https://www.eu4cn.com/wiki/Special:随机页面" class="nav-link" title="加载一个随机页面[x]" accesskey="x"><span class="fa fa-random"></span><span class="hide-title">随机页面</span></a>				</li>
+				<li class="nav-item">
+					<a href="http://shang.qq.com/wpa/qunwpa?idkey=3bb76f6a58594b18c2defdc03af7ec2703fb2e2cc8fef6dadd1dcb896c0ede1a" target="_blank" class="nav-link" title="加入QQ群">
+						<span class="fa fa-qq"></span><span class="hide-title">加入QQ群</span>
+					</a>
+				</li>
+				<li class="dropdown nav-item">
+					<a class="dropdown-toggle nav-link" href="#" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+						<span class="fa fa-wrench"></span><span class="hide-title">工具</span>
+					</a>
+				<ul class="dropdown-menu" aria-labelledby="dLabel">
+					<li id="t-whatlinkshere" class="mw-list-item"><a href="https://www.eu4cn.com/wiki/Special:链入页面/外交" title="所有链接至本页面的wiki页面列表[j]" accesskey="j" class="dropdown-item">链入页面</a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="https://www.eu4cn.com/wiki/Special:链出更改/外交" rel="nofollow" title="链自本页的页面的最近更改[k]" accesskey="k" class="dropdown-item">相关更改</a></li><li id="t-specialpages" class="mw-list-item"><a href="https://www.eu4cn.com/wiki/Special:特殊页面" title="所有特殊页面的列表[q]" accesskey="q" class="dropdown-item">特殊页面</a></li><li id="t-info" class="mw-list-item"><a href="https://www.eu4cn.com/index.php?title=%E5%A4%96%E4%BA%A4&amp;action=info" title="关于此页面的更多信息" class="dropdown-item">页面信息</a></li><li id="t-cargopagevalueslink" class="mw-list-item"><a href="https://www.eu4cn.com/index.php?title=%E5%A4%96%E4%BA%A4&amp;action=pagevalues" rel="cargo-pagevalues" class="dropdown-item">页面值</a></li>				</ul>
+				</li>
+				<li class="dropdown nav-item"><a class="nav-link dropdown-toggle dropdown-toggle-fix" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true" title="帮助"><span class="fa fa-question"></span><span class="hide-title">帮助</span></a><div class="dropdown-menu" role="menu"><a class="dropdown-item" href="https://www.eu4cn.com/wiki/Project:译名手册" title="譯名手冊"><span class="fa fa-book"></span>譯名手冊</a><a class="dropdown-item" href="https://www.eu4cn.com/wiki/Project:字词转换" title="字詞轉換"><span class="fa fa-language"></span>字詞轉換</a><a class="dropdown-item" href="https://www.eu4cn.com/wiki/Project:编辑指南" title="編輯指南"><span class="fa fa-graduation-cap"></span>編輯指南</a><a class="dropdown-item" href="https://www.eu4cn.com/wiki/Project:编辑规范" title="編輯規範"><span class="fa fa-lightbulb"></span>編輯規範</a><a class="dropdown-item" href="https://www.eu4cn.com/wiki/Project:练手沙盒" title="Project:练手沙盒"><span class="fa fa-leaf"></span>練手沙盒</a></div></li><li class="dropdown nav-item"><a class="hidden-xs-down nav-link" data-toggle="" role="button" aria-haspopup="true" aria-expanded="true" title="ParaTranz" href="https://paratranz.cn/"><span class="fa fa-language"></span><span class="hide-title">ParaTranz</span></a></li><li class="dropdown nav-item"><a class="hidden-xs-down nav-link" data-toggle="" role="button" aria-haspopup="true" aria-expanded="true" title="52PCGame" href="http://bbs.52pcgame.net/"><span class="fa fa-comments"></span><span class="hide-title">52PCGame</span></a></li><li class="dropdown nav-item"><a class="hidden-xs-down nav-link" data-toggle="" role="button" aria-haspopup="true" aria-expanded="true" title="Project:捐款" href="https://www.eu4cn.com/wiki/Project:捐款"><span class="fa fa-heart"></span><span class="hide-title">资助我们</span></a></li>			</ul>
+					<div class="navbar-login">
+							<a href="#" class="none-outline" data-toggle="modal" data-target="#login-modal">
+					<span class="fa fa-sign-in"></span>
+				</a>
+					</div>
+									<form action="https://www.eu4cn.com/index.php" id="searchform" class="form-inline">
+			<input type="hidden" name="title" value="Special:搜索"/>
+			<div class="input-group">
+				<input type="search" name="search" placeholder="在欧陆风云4百科搜索" aria-label="在欧陆风云4百科搜索" autocapitalize="sentences" title="在欧陆风云4百科搜索[f]" accesskey="f" class="form-control" id="searchInput"/>				<span class="input-group-btn">
+					<button type="submit" name="go"
+						value="前往" id="searchGoButton"
+							class="btn btn-secondary" type="button"><span class="fa fa-eye"></span></button>
+					<button type="submit" name="fulltext"
+						value="搜索"
+						id="mw-searchButton" class="btn btn-secondary" type="button">
+						<span class="fa fa-search"></span></button>
+				</span>
+			</div>
+		</form>
+			</nav>
+				</div>
+		</header>
+		<section>
+			<div class="content-wrapper">
+							<aside>
+			<div class="liberty-sidebar">
+				<div class="live-recent-wrapper">
+					<div id='mw-data-after-content'>
+	<div class="read-more-container"></div>
+</div>
+												<div
+			class="live-recent"
+			data-article-ns="0|4|10|12|14"
+			data-talk-ns="1|5|7|9|11|13|15"
+		>
+			<div class="live-recent-header">
+			<ul class="nav nav-tabs">
+				<li class="nav-item">
+					<a href="javascript:" class="nav-link active" id="liberty-recent-tab1">
+						最近更改					</a>
+				</li>
+				<li class="nav-item">
+					<a href="javascript:" class="nav-link" id="liberty-recent-tab2">
+						最近讨论					</a>
+				</li>
+			</ul>
+			</div>
+			<div class="live-recent-content">
+				<ul class="live-recent-list" id="live-recent-list">
+					<li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li><li><span class="recent-item">&nbsp;</span></li>				</ul>
+			</div>
+			<div class="live-recent-footer">
+				<a href="https://www.eu4cn.com/wiki/Special:最近更改" title="Special:最近更改"><span class="label label-info">查看更多</span></a>			</div>
+		</div>
+						<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 侧栏 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1612414434963106"
+     data-ad-slot="1728061201"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-K4RD1C6KBW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-K4RD1C6KBW');
+</script>
+				</div>
+										</div>
+			</aside>
+								<div class="container-fluid liberty-content">
+					<div class="liberty-content-header">
+													<div class="alert alert-dismissible fade in alert-info liberty-notice" role="alert">
+								<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+								<div id="localNotice"><div class="sitenotice" lang="zh" dir="ltr"><div style="text-align:center; font-size:125%; line-height: 1; padding: 10px;"><b>欢迎访问欧陆风云4百科！<a href="https://www.eu4cn.com/wiki/Special:用户登录" title="Special:用户登录"><span class="alert-link">注册一个账号</span></a>，一起参与编写吧！这里是<a href="https://www.eu4cn.com/wiki/欧陆风云4百科:当前任务#页面" title="欧陆风云4百科:当前任务"><span class="alert-link">当前的工程</span></a>。</b></div>
+<div style="text-align: center;">如果您想帮助本站建设，欢迎点击<a href="https://www.eu4cn.com/wiki/欧陆风云4百科:捐款" title="欧陆风云4百科:捐款"><b>这里</b></a>捐款！欢迎所有对百科感兴趣的同学加入QQ群：<b>497888338</b>。</div></div></div>							</div>
+															<div class="content-tools">
+				<div class="btn-group" role="group" aria-label="content-tools">
+					<div id="ca-view" class="mw-list-item"><a href="https://www.eu4cn.com/wiki/外交" class="btn btn-secondary tools-btn">阅读</a></div><div id="ca-viewsource" class="selected mw-list-item"><a href="https://www.eu4cn.com/index.php?title=%E5%A4%96%E4%BA%A4&amp;action=edit" title="本页面受到保护。&#10;您可以查看其源代码[e]" accesskey="e" class="btn btn-secondary tools-btn">查看源代码</a></div><div id="ca-history" class="mw-list-item"><a href="https://www.eu4cn.com/index.php?title=%E5%A4%96%E4%BA%A4&amp;action=history" title="本页面过去的版本[h]" accesskey="h" class="btn btn-secondary tools-btn">查看历史</a></div>					<a href="https://www.eu4cn.com/wiki/Talk:外交" class="btn btn-secondary tools-btn" title="关于内容页面的讨论[t]" accesskey="t" id="ca-talk">讨论</a>				</div>
+			</div>
+							<div class="title">
+						<h1>
+							查看“外交”的源代码						</h1>
+						<div class="mw-indicators">
+</div>
+						</div>
+						<div class="contentSub" >
+							←<a href="https://www.eu4cn.com/wiki/外交" title="外交">外交</a>						</div>
+				</div>
+					<div class="liberty-content-main" id="content">
+											<div class="mw-body-content" id="mw-content-text">
+							<div id="mw-content-text" class="mw-body-content"><p>因为以下原因，您没有权限编辑本页：
+</p>
+<div class="permissions-errors">
+<p>您请求的操作仅限属于该用户组的用户执行：<a href="https://www.eu4cn.com/wiki/欧陆风云4百科:用户" title="欧陆风云4百科:用户">用户</a>
+</p>
+</div><hr />
+<p>您可以查看和复制此页面的源代码。
+</p><textarea readonly="" accesskey="," id="wpTextbox1" cols="80" rows="25" style="" class="mw-editfont-monospace" lang="zh" dir="ltr" name="wpTextbox1">{{Version|1.31}}[[File:UI tab diplomacy.png|thumb||330px|right|作为玩家，查看 {{flag|法兰西}}时的外交界面]]
+在欧陆风云4中，所有与他国的关系与行动都包含于'''外交'''（英文：'''Diplomacy'''）系统之中。
+
+与他国的[[关系]]会因为结盟、包围网、共同参战、共同的敌人、决议、事件以及让外交官改善关系等来提升，也会由于宣战、成为宿敌、发送侮辱、信仰不同[[宗教]]、撕毁或违背同盟，事件以及决议等降低。外交是一项双边系统，影响着协定双方的关系。
+
+鼠标悬停观点框，即可查看一国对他国观点的成因。关系的上限与下限为{{green|+200}}/{{red|-200}}。
+
+外交事务由[[使者#外交官|外交官]]来处理，可用的外交选项取决于国家的[[科技]]。外交选项分为八类：[[#同盟行动|同盟]]、[[#影响行动|影响]]、[[#关系行动|关系]]、[[#王朝行动|王朝]]、[[#秘密行动|秘密]]、[[#经济行动|经济]]、[[#通行行动|通行]]和[[人情]]。
+
+神圣罗马帝国的皇帝拥有一种额外的行动：[[神圣罗马帝国#皇帝能力|皇帝]]行动。教廷的控制者也拥有一种额外的行动：[[教宗]]行动。
+
+[[战争#宣战|宣战]]与[[战争#求和|求和]]有单独的外交按钮。
+
+{{TOC limit|4}}
+==外交官==
+
+{{SVersion|1.26}}
+进行大多数外交行动都需要一个 [[File:Diplomat.png|24px]] [[外交官]]。其中的一些行动，比如改善关系、吞并附庸、建立间谍网以及反间谍等，需要一个外交官无限期地执行任务，但你可以手动召回他。需要占用外交官的行动会在按钮上显示一个外交官的图标([[File:Diplomat.png|24px]])。其他的行动则是瞬间完成的。
+
+开始一项任务之后，外交官会花一段时间到达目标国家并开始其任务。完成一项任务之后，外交官需要再花一段时间旅行回家才能执行下一个任务，所花费的时间基于两个国家首都的距离。外交官的旅行速度是每天 20 单位距离。
+
+===获得外交官===
+
+{{SVersion|1.24}}
+每个国家默认拥有 2 个 {{icon|diplomat|24px}} 外交官。额外的外交官可以从如下触发、理念以及政策中获得：
+&lt;section begin="Diplomats" />
+{| class="mildtable" style="width:45%"
+! style="width:30px" |{{icon|Diplomat|24px}}
+! style="width:300px" |触发条件
+|- valign="top"
+| style="text-align:right" |{{green|+1}}
+|{{plainlist|
+* 拥有 {{icon|kingdom|24px}} 王国级政府或 {{icon|Empire|24px}} 帝国级政府
+* 成为[[教宗|教廷监护]]
+* 作为[[神圣罗马帝国#帝国皇帝|帝国皇帝]]进行“[[神圣罗马帝国#帝国改革|建立帝国政府]]”改革
+* 作为[[中国皇帝]]进行“[[中国皇帝#改革|改革海禁]]”
+* 成为日本的[[政府#幕府将军|幕府将军]]
+* 在 {{icon|parliament|24px}} 国会中公开辩论[[国会#议案|外交使团扩编]]
+* 作为 {{icon|Tengri|24px}} 长生天国家将 {{icon|theravada|24px}} 上座部佛教作为[[原始宗教#长生天|兼容宗教]]
+* AI国家（为某些短期行动保存）
+}}
+|}
+&lt;section end="Diplomats" />{{bonus table|diplomats|collapse=yes}}
+
+==外交关系限额==
+
+{{SVersion|1.24}}
+一个国家只能同时与数量有限的国家达成协定。每一个超过关系限额的关系每月会消耗 1 {{icon|dip}} 外交点数。只有与'''不同的国家'''建立的协定才算入外交关系限额内，而不是协定数量。就是说，与一个单独的国家拥有数个协定只算一条外交关系。（比如你与法兰西同时拥有军事同盟和王室联姻，这只算一条外交关系）
+
+以下协定会被计入外交关系限额中：
+
+*{{icon|alliance}} [[军事同盟]]
+*{{icon|royal marriage}} [[#王室联姻|王室联姻]]
+*[[#保证独立|保证独立]]
+*拥有一个 {{icon|vassal}} [[附庸国]]、{{icon|march|24px}}  [[卫戍国]]或者 {{icon|personal union}} 被[[联合统治]]的对象
+*收到别人给你的[[#通行行动|军事通行权]]
+*[[#支持独立|支持独立]]
+*拥有一个[[仆从国]]
+
+以下协定'''不会'''被计入外交关系限额中：
+
+*给予别人[[#通行行动|军事通行权]]
+*获得或给予[[#通行行动|舰队停泊权]]
+*获得或给予[[经济#向其他国家贷款|贷款]]
+*{{icon|coalition}} [[军事同盟#包围网|包围网]]
+*[[土著议会]]
+*[[禁运]]
+*[[#发送警告|警告]]其他国家
+*[[#战争援助|提供战争援助]]
+*{{icon|colonial subject}} [[殖民地]]、{{icon|tributary}} [[朝贡国]]或 {{icon|vassal}} [[大名]]
+*战争赔款
+*[[#转移贸易力量|转移贸易力量]]（包括在和平协议里强制要求的转移贸易）
+*帝国改革“[[神圣罗马帝国#改革效果列表|宣布实行世袭制]]”通过后，{{icon|imperial authority}} [[神圣罗马帝国#帝国皇帝|神圣罗马皇帝]]与[[神圣罗马帝国#诸侯国|帝国诸侯]]间的 {{icon|vassal}} [[附庸国|附庸]]关系
+*收到有条件限制的军事通行权（比如，与神罗皇帝开战时，可以在神罗境内畅行无阻；又比如，A 拥有在 B 的军事通行权，你跟 A 开战，也能得到在 B 的军事通行权）
+
+===增加外交关系限额===
+
+基础的外交关系上限是 {{green|4}} 个。&lt;ref>请见 {{path|static modifiers}} ([[Static modifiers#Base values]])。&lt;/ref> 这会被以下情况所改变：
+{| class="mildtable"
+! style="text-align:center; width:30px" |{{icon|diplomatic upkeep|24px}}
+!条件
+|- valign="top"
+| align="right" |{{green|+2}}||{{plainlist|
+*{{icon|lev}}拥有 [[File:Great_project_level_icon_tier_3.png|24px]]雄伟壮丽级别[[File:Great_project_kanbawzathadi_palace.png|48px]][[伟大工程#名胜列表|勃固王宫]]}}
+|- valign="top"
+| align="right" |{{green|+1}}||{{plainlist|
+*{{icon|imperial authority}} 作为[[神圣罗马帝国#帝国皇帝|神圣罗马帝国皇帝]] 
+*{{icon|GC}}作为{{icon|nahuatl|24px}} [[纳瓦特尔]]宗教国家完成'''“扩展波其德卡义务”'''宗教改革
+*{{icon|lev}}拥有 [[File:Great_project_level_icon_tier_2.png|24px]]远近闻名级别[[File:Great_project_kanbawzathadi_palace.png|48px]][[伟大工程#名胜列表|勃固王宫]]
+*{{icon|lev}}拥有 [[File:Great_project_level_icon_tier_3.png|24px]]雄伟壮丽级别[[File:Great_project_petra.png|48px]][[伟大工程#名胜列表|佩特拉]]
+* [[玩家奖励]]
+* 作为[[AI]]（'''为了与玩家外交交互而保留'''）}}
+|- valign="top"
+| align="right" |{{red|−1}}||{{plainlist|
+*{{icon|temples|24px}} [[天朝]]政体国家儒教派系掌权
+*[[部落会议]]政体
+*{{icon|Kingdom|24px}} 王国级[[政府#部落政府|部落政府]]}}
+|- valign="top"
+| align="right" |{{red|-2}}||{{icon|Duchy|24px}} 公国级[[政府#部落政府|部落政府]]
+|}
+理念与政策：
+{{bonus table|diplomatic upkeep|collapse=yes}}
+特定的事件也会暂时性地给你额外的关系上限。
+
+如：event ideagroups.1503
+
+==外交声誉==
+
+{{SVersion|1.24}}
+一个国家的 [[File:Diplomatic reputation.png|24px]] 外交声誉代表着其总体的外交能力与信誉。外交声誉可以在国家界面查看。
+===效果===
+
+外交声誉能正面影响本国与独立国家或附属国的外交关系。
+
+对于本国附庸，每点外交声誉能：
+
+*{{green|+5%}} 几率继承被联统国家
+*{{green|+1}} {{icon|dip}} 吞并附属国时的每月外交点数花费（总花费不变）
+*{{green|-3%}} 所有附属国的 {{icon|liberty desire in subjects}} [[附属国#独立倾向|独立倾向]]
+
+对于其他类型国家，每点外交声誉能在进行外交活动时给予下列效果：
+
+{| class="mildtable sortable"
+!行动!!奖励
+|-
+|提议建立[[军事同盟]]||5
+|-
+|要求加入进攻战争||5
+|-
+|提议[[王室联姻]]||5
+|-
+|提议[[附庸国#提议附庸（外交）|附庸]]||3
+|- 
+|提议[[#转移贸易力量|转移贸易力量]]||3
+|-
+|[[#请求军事通行权|请求军事通行权]]||3
+|-
+|[[#请求舰队停靠权|请求舰队停靠权]]||3
+|-
+|[[#申请共享地图|申请共享地图]]||5
+|-
+|[[神圣罗马帝国#皇帝要求退还神罗领土|要求退还非法领土]]||3
+|-
+|[[神圣罗马帝国#成立自由市|给予自由市头衔]]||3
+|}
+
+===获得外交声誉===
+
+外交声誉会因为如下修正与理念、政策或完成某些任务而增加：
+====修正====
+{| class="mildtable"
+! style="width:30px" |[[file:diplomatic reputation.png|24px]]
+!DLC需求
+!条件
+|-
+| align="right" |{{green|+5{{0|.00}}}}||{{icon|moh}}||作为{{flag|Austria}}，启用{{icon|Age Of Revolutions|24px}}[[大革命时代]]的时代能力[[File:Ab austria rep.png|28px]]奥地利外交
+|-
+| align="right" |{{green|+2{{0|.00}}}}||||控制{{icon|ivory}}象牙贸易的[[贸易奖励]]
+|-
+| align="right" |{{green|+2{{0|.00}}}}||{{icon|CS}}||作为{{icon|buddhist}}[[佛教]]国家处于中等业力（-33 ~ 33）
+|-
+| align="right" |{{green|+2{{0|.00}}}}||{{icon|lev}}||拥有生效的[[File:Great_project_level_icon_tier_3.png|24px]]雄伟壮丽级别[[File:Great_project_gomateshwara_statue.png|48px]][[伟大工程#名胜列表|巴胡巴利雕像]]
+|-
+| align="right" |{{green|+2{{0|.00}}}}||{{icon|lev}}||拥有生效的[[File:Great_project_level_icon_tier_3.png|24px]]雄伟壮丽级别[[File:Great_project_petra.png|48px]][[伟大工程#名胜列表|佩特拉]]
+|-
+| align="right" |{{green|+1{{0|.00}}}}||||拥有{{icon|statesman|24px}}政治家[[顾问]]
+|-
+| align="right" |{{green|+1{{0|.00}}}}||{{icon|rom}}||[[统治者特质]]为{{icon|diplomatic_reputation}}魅力非凡的说客
+|-
+| align="right" |{{green|+1{{0|.00}}}}||{{icon|won}}||作为{{icon|hindu}}[[印度教]]国家，选择{{icon|Ganesha}}象头神（甘尼许）作为君主的主神
+|-
+| align="right" |{{green|+1{{0|.00}}}}||||作为{{icon|Fetishist}}[[拜物教]]国家
+|-
+| align="right" |{{green|+1{{0|.00}}}}||{{icon|CS}}||(被上级替换)作为{{icon|buddhist}}[[佛教]]国家处于高业力（33 ~ 100）
+|-
+| align="right" |{{green|+1{{0|.00}}}}||{{icon|won}}||作为{{icon|Reformed}}[[改革宗]]国家将热情焦点设为稳定
+|-
+| align="right" |{{green|+1{{0|.00}}}}||{{icon|tc}}||作为{{icon|Tengri}}[[长生天]]国家以{{icon|catholic}} [[天主教]]为[[相融信仰]]
+|-
+| align="right" |{{green|+1{{0|.00}}}}||||作为{{icon|catholic}}[[天主教]]国家将[[教廷影响力]]花费在“"派遣教廷使节”选项上（持续20年）
+|-
+| align="right" |{{green|+1{{0|.00}}}}||||作为{{icon|imperial authority}}神圣罗马帝国的皇帝，通过[[File:HRE_institute_reichsregiment.png|28px]]建立帝国政府[[帝国改革#通用改革|帝国改革]]
+|-
+| align="right" |{{green|+1{{0|.00}}}}||||作为{{icon|imperial authority}}神圣罗马帝国的皇帝，通过[[File:HRE_enact_gemeiner_pfennig.png|28px]]建立公捐税体系[[帝国改革#通用改革|帝国改革]]
+|-
+| align="right" |{{green|+1{{0|.00}}}}||||作为{{icon|imperial authority}}神圣罗马帝国的成员国，通过[[File:HRE_enact_gemeiner_pfennig.png|28px]]建立公捐税体系[[帝国改革#通用改革|帝国改革]]
+|-
+| align="right" |{{green|+1{{0|.00}}}}||无{{icon|moh}}||作为拥有[[File:Gov_celestial_empire.png|28px]][[君主制#天朝|天朝]]第一级政府改革的国家由[[file:China eunuch.png|28px|link=派系#天朝]]市舶司[[派系#天朝|派系]]掌权
+|-
+| align="right" |{{green|+1{{0|.00}}}}||{{icon|rom}}||作为拥有[[File:Gov_revolutionary_republic.png|28px]][[共和制#革命共和国|革命共和国]]或[[共和制#革命共和国|革命国家]]第一级政府改革的国家由[[file:Imperials.png|28px|link=派系#革命共和国]]帝国派[[派系#革命共和国|派系]]掌权
+|-
+| align="right" |{{green|+1{{0|.00}}}}||{{icon|emp}}{{icon|rp}}||作为{{icon|revolution target}}革命国家，拥有[[File:Gov_feuillant_reform.png|28px]][[通用政府改革#斐扬派体系|斐扬派体系]]第五级政府改革，由君主主义者掌权
+|-
+| align="right" |{{green|+1{{0|.00}}}}||{{icon|rp}}||作为{{icon|monarchy}}君主制国家，拥有[[File:Gov_states_general.png|28px]][[共和制#联省议会|联省议会]]第五级政府改革，由议会派掌权
+|-
+| align="right" |{{green|+1{{0|.00}}}}||{{icon|lev}}||拥有生效的[[File:Great_project_level_icon_tier_2.png|24px]]远近闻名以上级别[[File:Great_project_alhambra.png|48px]][[伟大工程#名胜列表|阿尔罕布拉宫]]
+|-
+| align="right" |{{green|+1{{0|.00}}}}||{{icon|lev}}||拥有生效的[[File:Great_project_level_icon_tier_1.png|24px]]引人注目以上级别[[File:Great_project_kanbawzathadi_palace.png|48px]][[伟大工程#名胜列表|勃固王宫]]
+|-
+| align="right" |{{green|+1{{0|.00}}}}||{{icon|lev}}||(被上级替换)拥有生效的[[File:Great_project_level_icon_tier_1.png|24px]]引人注目至[[File:Great_project_level_icon_tier_2.png|24px]]远近闻名级别[[File:Great_project_gomateshwara_statue.png|48px]][[伟大工程#名胜列表|巴胡巴利雕像]]
+|-
+| align="right" |{{green|+1{{0|.00}}}}||{{icon|lev}}||(被上级替换)拥有生效的[[File:Great_project_level_icon_tier_1.png|24px]]引人注目至[[File:Great_project_level_icon_tier_2.png|24px]]远近闻名级别的[[File:Great_project_petra.png|48px]][[伟大工程#名胜列表|佩特拉]]
+|-
+| align="right" |{{green|+1{{0|.00}}}}||||{{icon|legitimacy}}[[正统性]]达到{{green|100}}时。
+|-
+| align="right" |{{red|-1{{0|.00}}}}||||{{icon|legitimacy}}[[正统性]]低至{{red|0}}时。
+|-
+| align="right" |{{red|-1{{0|.00}}}}||||触发修正[[触发修正#占领罗马|占领罗马]]
+|-
+| align="right" |{{red|-2{{0|.00}}}}||||触发修正[[触发修正#教宗国之殇|教宗国之殇]]
+|-
+| align="right" |{{red|-2{{0|.00}}}}||{{icon|rom}}||作为拥有[[File:Gov_revolutionary_republic.png|28px]][[共和制#革命共和国|革命共和国]]或[[共和制#革命共和国|革命国家]]第一级政府改革的国家由[[file:Jacobins.png|28px|link=派系#革命共和国]]雅各宾派[[派系#革命共和国|派系]]掌权
+|-
+| align="right" |{{red|-2{{0|.00}}}}||||每100%{{icon|overextension}}[[过度扩张]]
+|}
+
+====事件及非永久修正====
+*{{icon|imperial authority}} 成为神圣罗马帝国皇帝（使用奥地利时），“成立帝国枢密院”事件中选择“成立新内阁”{{green|+1}}（最晚在1.25版本中已改为持续到游戏结束）
+*因 {{icon|decision}} [[Diplomatic missions]] 触发的的修正'外国接触'{{green|+1}} 持续10年
+*{{icon|Diplomatic}} 外交理念{{icon|event}} [[Diplomatic_idea_group_events#Improved_Reputation|'Improved Reputation']] 修正: {{green|+1}} 持续10年
+*{{icon|Expansion}} 扩张理念 {{icon|event}} [[Expansion_idea_group_events#Enhanced_Reputation|'Enhanced Reputation']] 修正: {{green|+1}} 持续10年
+*{{icon|Influence}} 影响理念{{icon|event}} [[Influence_idea_group_events#Popular_Noble|'Popular Noble']] 修正: {{green|+1}} 持续10年
+*[[File:Advisor_Diplomat.png|28px]] 外交顾问 {{icon|event}}[[Advisor-related_events#Excellent_Diplomacy|Excellent Diplomacy]]: {{green|+1}} 持续10年
+*{{icon|Expansion}} 扩张理念 {{icon|event}} [[Expansion_idea_group_events#Diplomatic_Faux_Pas|'Diplomatic Faux Pas']] 修正: {{red|-1}} 持续10年
+*{{icon|Diplomatic}} 外交理念 {{icon|event}} [[Diplomatic_idea_group_events#Babbling_buffoons|'Babbling buffoons']] 修正: {{red|-1}} 持续10年
+*没有履行同盟义务：{{red|-1}} 持续5年
+*吞并附庸国：{{red|-3}} 持续10年
+*[[File:Internal_Conflicts.png|28px|link=Internal Conflicts]]内部冲突 {{icon|event}} [[Internal_Conflicts#National_Instability|National Instability]]: {{red|-5}}持续10年
+
+
+====国家理念与传统、理念组与政策====
+
+{{bonus table|diplomatic reputation|collapse=yes}}
+
+==外交行动==
+
+===宣战===
+
+{{SVersion|Timeless}}{{Main|战争}}{{anchor|Declare war}}
+[[战争|宣战]]意味着开始对目标国的军事征服。在宣战界面，你可以选择一个[[宣战理由]]，同时双方的盟国也会在两边列出。赢得[[陆战|战役]]，达成[[宣战理由#War_goals|战争目标]]以及占领省份将为双方积累 {{icon|war score}} [[战争#Warscore|战争分数]] ，决定了[[战争#Peace_terms|和平协议]]将如何签署。战争期间每个国家都能递交一份[[战争#Sue_for_peace|和平请求]]或者选择[[战争#Unconditional_Surrender|无条件投降]]。
+
+===盟约===
+
+{{SVersion|Timeless}}同盟行动包括'''邀请加入贸易同盟'''和'''踢出贸易同盟'''。
+====建立包围网====
+{{Main|军事同盟#包围网}}
+{{icon|coalition|24px}} [[军事同盟#包围网|包围网]]是一个因共同的敌人而结合在一起形成的联盟，因为他们的敌人拥有非常高的
+{{icon|aggressive expansion impact}} [[关系#侵略扩张|侵略扩张]]。一旦包围网中的一名成员与被包围的目标进行了直接的战争，所有的包围网成员将会被自动地召唤，不论是进攻战还是防御战。
+
+====提议结盟====
+
+{{Main|军事同盟}}
+{{icon|alliance|24px}} [[军事同盟]]是两个国家在战争中互相支持的军事协议。联盟的力量取决于与盟友间的[[外交反馈#信任|信任]]与[[外交反馈#人情|人情]]。人情会随着时间而增长，每年'''比你弱小的同盟国'''会欠你1人情。你可以通过人情来增加对方对你的信任，每10点人情可以增加5点信任。此外，你还可以通过列强行动中的影响国家(只能影响非列强的国家，且你是列强)来增加对方对你的信任。增加信任可以很大程度上增加你们{{icon|alliance|24px}} [[军事同盟]]的牢固性。
+
+====支持独立====
+
+{{Expansion|cop|ed}}
+国家可以支持其他国家的独立，前提是被支持独立的国家是一个 {{icon|liberty desire in subjects}} [[附属国#独立倾向|独立倾向]]超过 {{red|50%}} 的附属国，并且对你的关系为正值。如果被支持独立的国家发动了独立战争，所有支持其独立的国家将自动的与其结盟，并参与其与前宗主国的战争。
+
+{{icon|monarchy}} [[君主制#大名|大名]]作为特殊的附庸国政体，'''无法''' 使用该外交行动
+
+====提供遣外雇佣军团====
+
+{{Expansion|mn}}
+{{Main|遣外雇佣军团}}
+一个国家可以以金钱作为交换，向另一个国家借出军队，同时你能继续控制你这支军队。在无修正的情况下，同一时间内最多只能借出 20 队兵。
+
+==== 贸易联盟 ====
+
+{{Expansion|mn}}
+{{Main|贸易联盟}}
+贸易联盟指的是一群联系在一起的小国家，用来促进贸易，互相提供防御性保护。只有一地小国可以加入贸易联盟。一个贸易联盟必须由[[商业共和国]]或[[卫彻共和国]]来领导。
+===影响===
+
+{{SVersion|1.24}}
+====强制和平====
+强制和平这一行动会要求一场战争中进攻方的盟主与防御方的盟主达成无条件和平。进攻方盟主的拒绝会将提议强制和平的国家带入防御方。但强制和平有一些前提条件：
+*强制和平的实施者与进攻方盟主之间不能有[[和约]]。
+*强制和平的实施者与防御方盟主之间必须有至少 {{green|+100}} [[关系]]。
+*进攻方必须至少有 {{red|-25%}} {{icon|war score}} [[战争得分]] 。
+
+强制和平是一种加入对你的对手的战争的好方法，避免触发其在防御战时召唤盟友。举个例子，欧洲的非 {{icon|imperial authority}} [[神圣罗马帝国|神罗]]列强可以加入对帝国成员的战争，同时避免与皇帝交战。强制和平也同样可以扭转你的宿敌对他国的侵略。
+
+====提议附庸====
+
+{{Main|附庸国#提议附庸（外交）}}
+附庸他国将使目标国家成为你的 {{icon|vassalage}} 附庸国。附庸国会被强制召唤入他们宗主国的战争，并且支付他们的一部分 {{icon|vassal income}} [[附庸国#来自附庸的收入|税收]]。
+
+====放弃附庸====
+
+使附庸国独立，这一动作将消耗 {{icon|prestige}} {{red|-25}} 威望并降低 
+{{red|-200}} 与前附庸国的关系，同时形成宗主国与前附庸国之间为期 '''5''' 年的停战协议。
+
+特别的，当宗主国与附庸国之间存在停战协定时，宗主国无法放弃对附庸国的附庸。
+====任命卫戍国====
+
+{{expansion|aow}}
+{{Main|卫戍国}}
+将一个附庸国任命为 {{icon|march|24px}} 卫戍国会赋予其可观的军事加成。卫戍国不用向其宗主国缴纳 {{icon|vassal income}} 附庸费，同时无法被外交吞并。
+
+====撤销卫戍国====
+
+{{Main|卫戍国}}
+撤销一个卫戍国会使其变为普通的 {{icon|vassal}} 附庸状态，使得他可以被外交吞并。这一行为要花费 {{icon|stability}} {{red|-1}} [[稳定度]]并且导致与其的 {{red|-200}} 关系惩罚。
+
+====吞并附庸====
+
+{{Main|附庸国#吞并}}
+外交吞并会将一个 {{icon|vassal}} [[附庸国]]或者[[仆从国]]并入他们的宗主国，让他们得以直接控制附庸的领土和军队。这个行动会占用 {{icon|diplomat}} [[#外交官|外交官]]，并且在持续消耗 {{icon|dip}} 外交点数。
+
+====整合====
+
+{{Main|联合统治#整合}}
+外交整合会将一个被 {{icon|personal union}} [[联合统治]]的国家并入他们的君主出身的国家，如同外交吞并[[附庸国]]与[[仆从国]]一般，最终控制被联统国的领土和军队，同时移交被联统国的 {{icon|vassal}} 附庸与 {{icon|colonial nation}} [[殖民领]]的控制权。
+
+注：外交整合[[联合统治|被联统国]]与外交吞并[[附庸国]]在前提、花费、速度和效果上遵循相同的规则。
+
+====保证独立====
+
+[[File:guaranteed.png|24px]] 保证一国的独立会让保证者在其遭受侵略时被召唤入防御战争。保证者不会被被保证者召唤入其盟友的战争，除非被保证者被指定为共同作战的对象。这个行动会占用 {{icon|diplomatic relations}} [[#外交关系限额|外交关系]]，持续到保证者撤回保证或者拒绝加入被保证国的防御战争。被保证者受到攻击时可以如同军事同盟一般召唤保证者加入战争，如果保证者拒绝则会承受跟拒绝军事同盟的战争一样的惩罚。独立保证可以被随时撤销，但是会自动获得一个为期 5 年的单向停战协议（保证者对被保证者）。只有当一国实力远大于一个国家时，才能保证其独立。在该外交行动生效时保证者无法对被保证国宣战，但如果保证者对被保证者的盟友宣战且被保证者加入防御战争，保证独立协议会自动失效。（如 {{flag|FRA}}攻击 {{flag|SCO}}的盟友会使得两者开局时的保证独立协议自动失效）
+====发送警告====
+
+对目标国发送警告可以让你在他进攻你的邻国时被召唤入防御方。拒绝这一召唤会招致相关国家对你的不信任。你可以在外交界面的过滤选项里查看你的邻国列表。你不能警告你已经警告过了的国家，或者那些和你的实力相比不那么弱的国家。一次警告将持续二十年，过期以后你可以再次警告。
+====威胁开战====
+
+{{expansion|cos}}
+威胁开战可以让你得到你一块拥有宣称或者核心的省份。如果你的要求被接受了，省份会转移到你的控制之下。如果要求被拒绝，一场以征服为 {{icon|casus belli}} [[宣战理由]]的战争将展开。你不能索要他国的 {{icon|capital province}} 首都省份，这意味着你不能对一地小国威胁开战，你也不能对存在停战协议的国家或者一个朝贡国以外的附属国威胁开战。成功地索要省份会使你得到 {{icon|ae impact}} [[侵略扩张]]，数值等同于你在和平协议中征服这块地，同时会使得目标国减少 {{red|-10}} {{icon|prestige}} [[威望]]。这会在两国间建立为其 '''5''' 年的停战协议。当目标国和你的力量差距过大时，他才会考虑让渡省份给你。如果你在索取的省份上有核心，AI 会更愿意放弃领土。如果你最近索要过土地，AI 会倾向于不接受你的要求。
+
+影响 AI 放弃省份的意愿的因素有：
+
+{| class="mildtable"
+!因素!!影响
+|-
+|基础值：||{{red|-20}}
+|-
+|索取的省份不是索取国的核心：||{{red|-20}}
+|-
+|军事同盟间的相对力量：||{{red|-100}} 至 {{green|+100}}
+|-
+|省份相对于 AI 总发展度的价值：||{{red|-1}} 至 {{red|-200}}
+|-
+|最近被威胁索取过领土：||基础 {{red|-120}}，在停战协议到期后每月增长 {{green|+1}}
+|}
+===关系===
+
+{{SVersion|1.24}}
+{{see also|关系}}
+====改善关系====
+
+[[File:Improve relations.png|24px]] 你可以派遣一位外交官去改善关系。对附庸国最高可以改善到 {{green|+200}}，对其他国家最高到 {{green|+100}}。如果你把外交官撤回，改善关系会在每年的第一天 {{red|-3}}。已提升的关系越接近 0，改善关系的速率就越快，反之亦然。这个速率可以被{{icon|improve relation modifier}}[[关系#改善关系修正|改善关系]]修正所进一步调整。值得注意的是，从 1.19 版本开始，此修正也会影响侵略扩张降低的速率，因为老版本的“随着时间的推移关系会变得更好”修正被包括入其中了。
+
+首次派出外交官，或者改善的关系已经降到 '''0''' 时，第一次改善关系的提升会翻倍。之后会在每月底结算时提升改善的关系。
+
+====发送侮辱====
+
+给目标国发送侮辱会给予对方为期一年 {{icon|casus belli}} ''外交侮辱''的[[宣战理由]]，并且降低与其的 {{red|-50}} 关系，这会每年 {{green|+5}}。侮辱有时有奇效，因为当你对有 {{green|+100}} 关系的国家宣战时会有  {{red|-1}} 点 {{icon|stability}} [[稳定度]]的惩罚。侮辱你的宿敌会给你 {{green|+5}} 点 {{icon|power projection}} [[力量投射]]，这会每年 {{red|-1}}。只有当你和宿敌间不存在停战协议，或者你此前没有通过侮辱获取过力量投射时，你才能获取力量投射。
+===== 轻蔑的侮辱 =====
+
+{{expansion|dh}}
+{{main|轻蔑的侮辱}}
+花费{{icon|prestige|24px}} {{red|5}}威望（仅当威望为正时可用）以轻蔑的侮辱对方，轻蔑的侮辱将导致双倍的关系损失'''外交侮辱'''的关系修正将被替换为'''轻蔑的侮辱'''，此修正将导致关系{{icon|opinion|24px}} {{red|−100}}。对宿敌使用轻蔑的侮辱将会获得{{icon|power projection}} {{green|+10}}力量投射。被侮辱的国家的[[宿敌]]们将会获得对发出侮辱国家的关系修正'''轻蔑的侮辱宿敌'''持续10年，获得{{icon|opinion|24px}} {{green|+25}}好感度并且每年衰减{{red|−2.5}}。
+===王室===
+
+{{SVersion|1.24}}
+====王室联姻====
+{{hatnote|关于王室联姻对统治者的影响，参见[[统治者#王室联姻]]。}}
+{{hatnote|关于联合统治，参见[[联合统治]]。}}
+
+君主制的国家之间可以进行 [[File:Royalmarriage.png|24px]] [[王室联姻]]。有王室联姻的国家之间互相 {{green|+25}} 关系。对与你有王室联姻的国家宣战会导致 {{red|-1}} {{icon|stability}} 稳定度、{{red|+1}} {{icon|war exhaustion}} 厌战度的惩罚。注意，该惩罚仅在直接对目标国家宣战时才会生效；为了避免惩罚，玩家可以对目标国家使用“威胁战争”索取省份，当目标国家拒绝时即可无惩罚开启战争。
+
+若某一基督教宗教组国家的君主在无继承人时死亡，且该国某一联姻国的威望高于该国，该国可能会产生一名来自该联姻国统治王朝的君主。若该国前任君主已经与该联姻国同王朝，则两国之间会直接建立 {{icon|personal union}} 联合统治。被联统国会如同附庸一般在军事上协同联统国。被联统国不会缴纳贡税，但是可以被继承。{{icon|prestige}} 威望越高，扩张王朝或建立联合统治的概率就越大。
+
+{{icon|theocracy}} [[政府#神权制|神权制]]和 {{icon|republic}} [[政府#共和制|共和制]]的国家不能进行王室联姻，尼德兰共和国、意大利执政团等特殊政体除外。基督宗教组的国家只能同基督宗教组的国家联姻。非基督宗教组的国家可以任意互相联姻，事实上，联统并不限于基督教宗教组——EU4限制仅基督教国家之间可以产生联合统治的方式，仅仅是限制基督教内外的联姻，同一王朝的非基督教宗教组国家依旧有机会参与这一机制。
+
+影响AI国家接受王室联姻的意愿的因素有：
+
+{| class="mildtable"
+!因素!!效果
+|-
+| rowspan="8" |对提议方的态度
+|{{icon|friendly attitude}} 友谊：{{green|+40}}
+|-
+|{{icon|protective attitude}} 保护：{{green|+40}}
+|-
+|{{icon|threatened attitude}} 威胁：{{green|+10}}
+|-
+|{{icon|neutral attitude}} 中立：{{red|-20}}
+|-
+|{{icon|domineering attitude}} 支配：{{red|-980}}
+|-
+|{{icon|hostile attitude}} 敌意：{{red|-1000}}
+|-
+|{{icon|outraged attitude}} 愤怒：{{red|-1000}}
+|-
+|{{icon|rivalry attitude}} 宿敌：{{red|-1000}}
+|-
+| rowspan="2" |与提议方的关系
+|正值：每1点{{green|+0.25}}
+|-
+|负值：每1点{{red|-0.25}}
+|-
+|同一文化组||{{green|+20}}
+|-
+|同一宗教||{{green|+5}}
+|-
+|邻国||{{green|+5}}
+|-
+|提议方的外交声誉||每1点{{green|+5}}
+|-
+|边界距离||每1单位距离{{red|-0.1}}&lt;sup>†&lt;/sup>
+|-
+|过多外交关系||每超出1外交关系{{red|-50}}
+|}
+†: 边界距离只能在[[debug mode|debug模式]]中看到。
+
+====终止王室联姻====
+
+终止王室联姻会带来 {{red|-1}} 稳定度变化和 {{red|-1}} 威望变化。此外目标国家对本国观点 {{red|-75}}。稳定降低的惩罚可以被 {{icon|Diplomatic|24px}} [[外交理念]]的独特效果，或是成为[[教廷#教廷监护|教廷监护]]而移除。提议王室联姻的君主死亡也会无惩罚解除王室联姻关系。与宿敌断绝王室联姻也不会造成稳定度花费。
+====宣称王位====
+
+{{hatnote|关于增加建立联合统治的机会的信息，参见[[联合统治]]。}}
+宣称王位可以获得宣战理由“宣称王位”——强制建立联合统治的军事手段。
+
+宣称王位需要满足以下条件：
+
+*与目标国家有 {{icon|royal marriage}} 王室联姻
+*与目标国家为'''同一王朝'''
+*目标国家的继承人为{{red|弱宣称}}，或{{red|无}}继承人
+*{{icon|prestige}} [[威望]]高于目标国家
+
+对某国宣称王位会导致如下外交影响：
+
+*与其他有[[#王室联姻|王室联姻]]的国家 {{red|-50}} [[关系]]。
+*与目标国家 {{red|-100}} 关系，并且 {{icon|prestige}} {{red|-20}} 威望。
+*获得针对目标国家的 {{icon|casus belli}} [[宣战理由]]：“宣称王位”。强制建立 {{icon|personal union}} 联合统治的 {{icon|war score}} [[战争#战争分数|战争分数]]是'''84%'''，与目标国家的体量无关。
+
+注意，对有些盟友来说，即使他们愿意加入征服战争，也可能拒绝加入宣称王位战争或王位继承战争，因为他们反对这项联合统治。若目标国家有了强宣称的继承人，宣战理由会失效。
+
+外交动作“宣称王位”仅对基督教国家可用，因为其它宗教组的国家不允许建立联合统治。此外，{{icon|republic}} 荷兰共和制、寡头共和制和选举君主制可以有王室联姻，但不能被宣称王位，因为这些政体没有继承人。
+
+====支持继承人====
+
+支持继承人行动只能作用于那些实行了[[选举君主制]]国家（通常是 {{flag|Poland}}或 {{flag|Commonwealth}}以及自定义国家家）。支持继承人需要两国处于同一个宗教组中。
+
+对于[[选举君主制]]国家，每个支持继承人的其他国家都有一个单独的支持对象，支持的力度也会不同。[[外交官]]需要一直处于工作状态，才能提升继承人支持力度。
+
+每月支持力度可以上升1，其几率公式如下：
+
+&lt;math>\% \text{上升几率} = 2 \cdot \text{外交声誉} + 5 \cdot \frac{\text{两国关系}} {100} &lt;/math>
+
+[[选举君主制]]国家也可以支持自己家族的继承人，通过花费 {{red|-10}} {{icon|prestige}} 威望来提升5点支持力度。[[选举君主制]]君主死亡时支持力度最高的继承人继位。
+
+外国继承人继位，其支持者将获得：
+
+*{{green|+25}} {{icon|prestige}} [[威望]]
+*{{green|+10}} {{icon|legitimacy}} [[正统性]]
+*{{green|+24x}} {{icon|adm}} 行政点数、{{icon|dip}} 外交点数以及 {{icon|mil}} 军事点数，基于新统治者属性
+
+如果本国贵族继位，那么所有支持继承人的国家对本国观点 {{red|-20}}
+
+===秘密行动===
+
+{{SVersion|Timeless}}{{Main|间谍}}
+你可以派外交官去他国建立谍报网络，也可以让他进行反间谍活动来增加抓住来自目标国间谍的概率。当间谍网建立到一定程度时，你就能执行间谍活动，这不需要再派遣一次外交官。你能执行的间谍活动取决于你的外交科技等级。部分间谍活动不需要更高的科技等级，比如伪造宣称、支持叛军以及将贸易争端正当化。
+
+你可以去'''[[间谍]]'''页面了解关于秘密行动的更多细节。
+
+===经济行动===
+
+{{SVersion|1.24}}
+{{see also|经济}}
+====转移贸易力量====
+
+{{expansion|won}}
+转移贸易力量会要求一个非附庸国家将其一定比例的贸易力量转给他国。接受贸易力量的国家不能向转移者宣战，如果100%的贸易力量被转移,两国之间关系上升 {{green|+20}}。本外交行动不占用外交关系。
+
+下列因素影响接受贸易转移的可能性：
+
+{| class="mildtable"
+!因素!!效果
+|-
+|军事力量对比||{{green|+80}} 最大
+|-
+|基础税收对比||{{green|+20}} 最大
+|-
+| rowspan="3" |对提议者的态度
+|{{icon|threatened attitude}} 受威胁的：{{green|+20}}
+|-
+|{{icon|friendly attitude}}友好的：{{green|+10}}
+|-
+|{{icon|hostile attitude}} 敌意的：{{red|-100}}
+|-
+|提议者不是同盟国或者独立保证国||{{red|-50}}
+|-
+|对于提议者的看法||{{green|+0.1}} 每点正面看法
+|-
+| rowspan="2" |{{icon|diplomatic reputation}} 外交威望
+|正值：{{green|+3}} 每点
+|-
+|负值：{{red|-2.5}} 每点
+|-
+|信任度||{{green|+0.2}} 每点正值
+|-
+| rowspan="5" |要求转移力量的比例
+|开始于10%力量时的 {{green|+20}}，增加于每个百分比阶段的增加
+|-
+|10–40%：{{red|-1}}
+|-
+|41-60%：{{red|-3}}
+|-
+|61-80%：{{red|-5}}
+|-
+|81-100%：{{red|-7}}
+|-
+|已经转移力量给提议者的国家数量||{{red|-10}} 每个
+|-
+|两国边境距离||
+|}
+
+==== 贸易引导 ====
+
+{{expansion|rb}}
+请求一个非附庸国家作为接受协议的国家，使该国家的商人团为发出请求的国家转移贸易至贸易本埠。当贸易引导被激活后，协议双方将均不可以对对方宣战。但是与[[转移贸易力量]]不同，这个协议不会带来关系修正。这将有效地使提出协议的国家在最有利的方式下把持住接受协议的国家，以将贸易从各个节点导向提出协议的国家的最大数目的商人团，所能提供的的贸易力量。实际上，两国之间并没有贸易力量上的转移，所以在各贸易节点各国的贸易额是不变的。并且，如果接受协议的国家与提出协议的国家的贸易本埠相同，那么接受协议的国家将仍然可以依据他们的贸易力量在此处收集贸易值，即这个协议的妙用被很好地浪费掉了，本协议不占用双方任何国家的外交关系。
+====宣布禁运====
+
+该行动会降低受禁运国家在每个本国有贸易力量的贸易区里的 {{icon|trade power}} [[贸易力量]]。禁运宿敌会给予[[力量投射]]，禁运非宿敌会带来[[贸易效率]]惩罚，但可能会因降低受禁运国的贸易力量占比，进而提升贸易收入。此外，如果被禁运国没有使用贸易禁运反制禁运发起国，该国将获得宣战理由{{icon|cb}}贸易争端
+
+下面是对禁运效率提升的增益：
+
+{{bonus table|embargo efficiency}}
+
+==== 思潮分享 ====
+
+{{Expansion|rb}}
+对目标国家进行思潮分享。执行思潮分享后，目标国家的没有接受而我们早已接受的最古老的{{icon|institution}}思潮在目标国家的首都省份的每月传播进展将{{green|+1}}。目标国家需要花费月度{{icon|ducats}}收入的 {{red|10%}} 并且持续十年或者直到被分享的思潮已经传遍了目标国家首都地区的所有省份。
+
+思潮分享不适用于除了朝贡国以外的附属国，只有宗主国能与附属国思潮分享，同时[[附属国]]也只能向宗主国提供思潮分享。
+
+====赠送礼物====
+
+用礼金来提升他们对本国的看法，最高能加{{green|+25}}。礼金的金额为  {{icon|ducats}} 25 杜卡特的整数倍。礼金效果如下：
+
+&lt;math>\text{关系加成} = \frac{2.4 \cdot \text{给予的杜卡特数量}}{\text{目标国的月收入}}&lt;/math>
+
+最终修正不为整数则忽略小数部分只要整数部分。此法修正持续5年。多笔礼金没有叠加增益，如果第二笔礼金修正比第一笔大则改为第二笔的修正。
+
+====提供贷款====
+
+提供给他国贷款，并要求其缴纳利息。当到贷款到期日时，借债国可以选择不还贷，这会给债主一个宣战理由。当然，如果你足够强大，那么不还也是可以的。在到期日之前，这笔贷款所产生的利息将会从你的每月收入中扣除。AI统治者一般不会接受玩家的贷款要求。
+====战争援助====
+
+该行动会在持续时间内每月向其支付一笔固定金额的资金对其进行援助。此金额从 {{icon|ducats}} 0.1 杜卡特变化到 150% 倍的本月收入，调整幅度为每1%的月收入。战争援助的持续时间从10年变化到400年，调整幅度为10年。
+
+保持战争援助会提升目标国家对本国的 [[关系]] ，最高可以提升 {{green|+15}} 每年。期间内积累的关系提升将在停止援助或者援助到期时立即失效。因为提前终止援助没有惩罚，因此可以将援助持续时间调的很长。战争援助的效果计算如下：
+
+&lt;math>\text{年度关系增长} = \frac{12 \cdot \text{月度战争援助}}{\text{目标国的总月收入}}&lt;/math>
+
+此部分所有的''每月收入'' 面板上方报告的数值。注意面板金额在下个月更新后，受援助国家的总月收入将会涵盖援助金的那一部分。这将缩小战争援助带来的关系提升幅度，因此一笔长期的小额援助可能更有效。
+
+'''例子''': A国有10杜卡特的月收入，现在B国每个月援助A国5杜卡特。那么一开始的年关系增长值会是+6每年（B的援助是A一半的收入），并且在下个月这个增长值会跌至每年+4 （现在B的援助只占A三分之一的收入）
+
+战争援助并不消耗外交关系，所以这使得战争援助成为了一个使目标接受你的外交附庸或吞并的好方法。
+
+战争援助一个正在与[[宿敌]]交战的国家会增加你的{{icon|power projection}} [[power projection|力量投射]]。
+
+====出售省份====
+
+付出 {{icon|prestige}} {{red|-10}} 威望就可以将一个省份卖给另一国家，以此换得0-2000金币。买卖双方都需要处于和平时期，并不能是对方的宿敌，一次交易只能售卖一个省份。
+
+影响AI购买省份的因素如下：
+
+{| class="mildtable"
+!因素!!效果
+|-
+|标价超过国库资金量||{{red|-1000}}
+|-
+|购买者对此异 [[文化]]组省份无核心或宣称||{{red|-1000}}
+|-
+|购买者对此异[[宗教]]组省份无核心或宣称||{{red|-1000}}
+|-
+|购买国在该省份没有核心且正处于{{red|-1000}}的[[overextension|过度扩张]]
+|-
+|购买者对 [[神圣罗马帝国]]内的省份无核心||{{red|-1000}}
+|-
+|价格||{{red|-1}} 每超过买家国库50%资金 1%
+|-
+|省份接壤国境||{{green|+10}}
+|-
+|相同文化省份||{{green|+10}}
+|-
+|相同宗教省份||{{green|+10}}
+|-
+|价格||{{red|-100}} -- {{green|+100}} 基于目标省份发展度
+|}
+只要价格合适，买家永远会买该省份只要：
+
+*买家是附庸国，卖家对省份有核心
+*买家对省份有核心
+
+此外，如果一个殖民省份处于不同的殖民区域，殖民领就不会买这一省份。如果对买家来说此省份非常不想得到，那么发展度价格修正会被减半。
+
+把省份卖给附庸国是一个节省行政点的好办法。这在短期内对避免过度扩张也非常有效，在未来可以用花费{{icon|dip}}外交点数来外交吞并这一省份而不是花费{{icon|adm}}行政点数来核心化这一省份。{{icon|Cossacks}} 哥萨克DLC 允许直接从附庸国界面给附庸省份。
+
+因为AI在行政点数花费上优先考虑核心化，可以通过卖给他们核心化{{icon|adm}}行政点花费高的的省份，来拖慢他们的行政科技发展。这将在下一行政理念将解锁理念组时格外有用（AI[[葡萄牙]]的第一个理念一般是[[探索理念]]，卖给他们北非的地会拖慢他们行政科技发展）。
+
+====出售船只====
+
+{{expansion|aow}}
+[[海军|海军]] 可以被以0到1000杜卡特的价格出售给其他国家。如果目标国接受了这些提议，被出售的海军将向目标国效忠。为了向一个国家出售海军，双方都应处于和平状态并且不能互相宿敌。在决定出售时，你可以选择出售哪支舰队以及出售的价格。在AI被询问是否购买舰队时，AI会想方设法保持一定比例的舰船比（比如说，大多数大西洋海岸的国家不想购买桨帆船），并且他们从不会超出海军上限进行购买。他们也同样不会购买任何处于他们补给范围外的船只。所以，为了确保能够成交，购买者应在目标国的补给范围内拥有一支舰队。超出购买者补给范围的舰队将无法被售出。将鼠标悬停在“是/否”栏上会给出决定的因素（显示在下方），如果提供的舰队太大，AI会指定他们想要的舰队数量，从而允许玩家退出出售界面并从这支过于庞大的舰队中分离出AI所想要的船只。如果是拜占庭这类急需出售舰船换取资金的国家建议开局处理完外交事务后尽快出售，毕竟时间一久能出售的商船就会减少，甚至可能得解散一部分，造成损失。
+
+以下是会影响AI购买船只意愿的因素:
+
+{| class="mildtable"
+!因素!!效果
+|-
+| rowspan="4" |对提议者的态度
+|{{icon|friendly attitude}} 友好: {{green|+10}}
+|-
+|{{icon|threatened attitude}} 被威胁: {{red|-20}}
+|-
+|{{icon|loyal attitude}} 忠诚: {{green|+10}}
+|-
+|{{icon|neutral attitude}} 中立: {{red|-10}}
+|-
+|价格||{{green|+50}} 到 {{red|-200}} 取决于购买者的财政和船只的定价
+|-
+|购买者不想要x艘某类型的船只||{{red|-10}} 每艘该类型的船只
+|-
+|外交声誉||{{green|+1}} 每点正外交声誉, {{red|-1}} 每点负外交声誉
+|}
+
+
+AI有时会购买过时的船只，当通过外交科技的进步获得新型舰船时，这可以使友邦、盟友和附庸以及其他非竞争国家为升级玩家国家的船只付费。一个富于侵略性的国家可能很难找到愿意购买的买家，并且卖船可能会强化入侵对象的实力。当然，如果你是老牌海军强国，并且不希望失去海上霸主的地位，对于这一行为还是谨慎些为好。
+====申请共享地图====
+
+{{expansion|mn}}
+申请共享地图能够使得一个国家向另一个请求分享一个地区的地图。如果该国家同意请求，请求者将以{{icon|prestige}} {{red|-15}} 威望的代价发现该区域所有其还没有发现的省份。给予地图的国家将会收到 {{icon|prestige}} {{green|10}} 威望。此外交选项要求两个国家都必须处于和平，且不能互相宿敌。为了能够使对方分享地图，请求者至少得在该区域相邻的一个区域内有一个单位。
+
+以下是会影响AI国家同意请求的因素:
+
+{| class="mildtable"
+!因素!!效果
+|-
+|边境之间的距离||至多{{green|+20}}
+|-
+|简单难度||{{green|+10}}
+|-
+|目标国的威望||{{green|+0.25}}每一点负{{icon|prestige}} 威望
+|-
+|宿敌在该区域的兴趣||至多{{green|50}}
+|-
+|目标国在该区域的兴趣||至多{{red|-100}}
+|-
+|目标国正在殖民||{{red|-1000}}
+|-
+|非同一宗教组||至多{{red|-20}}
+|-
+| rowspan="4" |对提议者的态度
+|{{icon|friendly attitude}} 友好: {{green|+25}}
+|-
+|{{icon|threatened attitude}} 被威胁: {{green|+20}}
+|-
+|{{icon|hostile attitude}} 敌对: {{red|-1000}}
+|-
+|{{icon|unknown attitude}} 未知: {{red|-50}}
+|-
+| rowspan="3" |该国对提议者的观点
+|{{green|+0.25}}每一点正关系
+|-
+|{{red|-0.25}}每一点负关系
+|-
+|{{red|-1000}}如果观点低于或等于-25
+|-
+| rowspan="2" |{{icon|diplomatic reputation}} 外交声誉
+|正: {{green|+5}} 每点外交声誉
+|-
+|负: {{red|-5}} 每点外交声誉
+|-
+| rowspan="3" |信任
+|{{green|+1}} 每一点信任度若高于50点信任度
+|-
+|{{red|-2}} 每一点信任度若低于50点信任度
+|-
+|{{red|-1000}} 如果信任度低于或等于30
+|}
+==== 特许贸易公司 ====
+{{expansion|dhr}}
+此选项允许一个国家从另一个国家购买[[贸易公司]]区域中的一个省份。两国必须处在和平状态才能进行谈判。玩家选择要购买的必须是非首都省份，并移动滑块以改变价格，直到同意的分数高过拒绝。省份对拥有国的重要性越高，拒绝的分数越高。
+下面列出了一些因素。
+{|class = "mildtable"
+! 因素 !! 效果 !! 备注
+|-
+| 基础值 ||{{red|-3}} || 
+|-
+| {{icon|money}} 给予金钱 || 最高 为{{green|+10}} || 
+|-
+| {{icon|alliance}} 盟友关系 || {{green|+5}} || 
+|-
+| 信任 ||  超过50的每一点{{green|+1}}以及低于50的每一点{{red|−1}} || 最大值为 {{green|+10}} 最小值为 {{red|−50}}
+|-
+| rowspan="2" | {{icon|diplomatic reputation}} 外交声誉
+| 增加: 每点{{green|+2}} || 
+|-
+| 减少: 每点{{red|−2}}  || 
+|-
+| {{icon|development}} 省份发展度 || &lt;math>\frac{-1} {3} \cdot \text{省份发展度} + 1&lt;/math> || 这个值向下四舍五入,如: -3.33 计算为 -4
+|-
+| 各省 ||  发展度份额|| 
+|-
+| 附近其他省份 || {{red|−X}} || 只有买方国家的其他省份很重要。这些省份是否属于贸易公司并不重要。省的数量和距离很重要，但这些省的发展并不重要
+|-
+| {{icon|opinion}} 观点 ||  || 计算公式未知.似乎每40点好感度{{green|+1}} ,但不同情况下阈值不同.
+|-
+| 受到威胁 || {{red|−100}} || 卖方对买方有{{icon|threatened attitude}} 受到威胁的态度。
+|-
+| 过于强大 || {{red|−100}} || 卖方国家等级为 [[帝国级	]]
+|-
+| {{icon|rivalry attitude}} 宿敌 || {{red|−100}} || 卖方是买方的宿敌，或者反过来
+|-
+| 怀疑非贸易区域 || {{red|−X}} || 这适用于西欧、东欧、黎凡特和波斯次大陆的省份。数值不同。观测值达 {{red|−50}} 和{{red|−70}}
+
+|}
+贸易公司的基本花费取决于殖民范围::
+&lt;math>\text{基本花费} = 1000 - 0.5 \cdot \text{殖民范围}&lt;/math>
+
+===通行权===
+
+{{SVersion|1.24}}
+====请求军事通行权====
+向目标国请求军事通行权能够使请求者的军队通过目标国的领土。接受该提议将会提升请求者对目标国的观点{{green|+10}},反之亦然，拒绝将会减少其对目标国的观点{{red|-10}}. 向一个给予了你军事通行的国家宣战将会对[[稳定度]]造成巨大的{{red|-5}}的影响。
+
+AI国家只会对{{green|正面理由}}比{{red|负面理由}}多的国家允许军事通行权。以下是相关的因素
+
+{| class="mildtable"
+!因素!!效果
+|-
+|与宿敌开战||{{green|+150}}
+|-
+|同盟关系||{{green|+50}}
+|-
+|请求者的军事力量||至多{{green|+100}}
+|-
+|与相邻的本国盟友开战|| {{red|-100}}
+|-
+| rowspan="8" |对请求者的态度
+|{{icon|friendly attitude}} 友善: {{green|+20}}
+|-
+|{{icon|defensive attitude}} 防御盟友: {{green|+20}}
+|-
+|{{icon|protective attitude}} 保护: {{green|+20}}
+|-
+|{{icon|threatened attitude}} 受到威胁: {{green|+20}}
+|-
+|{{icon|neutral attitude}} 中立: '''0'''
+|-
+|{{icon|unknown attitude}} 未知: '''0'''
+|-
+|{{icon|hostile attitude}} 敌对: {{red|-100}}
+|-
+|{{icon|rivalry attitude}} 宿敌: {{red|-100}}
+|-
+| rowspan="2" |请求者的外交声誉
+|正: 每点{{green|+3}}
+|-
+|负: 每点{{red|-3}}
+|-
+| rowspan="2" |对请求者的观点
+|正: 每点{{green|+0.2}}
+|-
+|负: 每点{{red|-0.5}}
+|-
+|信任度||每点{{green|0.5}}
+|}
+在战争中，所有参与者之间的军事通行权是共享的。比如说，如果法国与布列塔尼正在战争中对抗勃艮第，并且法国有萨伏伊的军事通行权，那么布列塔尼也会拥有萨伏伊的军事通行权。相似地，勃艮第与其所有的盟友也会拥有萨伏伊的军事通行权。
+
+附属国总是会向其宗主国提供军事通行权。战争中的所有参加者都会自动给予他们的盟友军事通行权，同时也能向他们敌人的领土进攻。当战争开始时位于非盟友土地上的军队，以及当战争结束时位于无军事通行权的土地上的军队，会被[[放逐]]。被放逐的军队不会与任何敌对单位交战，也不会点亮所在省份的地图，直至回到本土才会恢复正常。
+
+====提供军事通行权====
+
+向目标国提供军事通行权，能够允许他们的军队通过请求者的领土。接受该提议将会提升{{green|+10}}点目标国对请求者的观点。AI国家一般对获取军事通行权没什么兴趣，除非他们是该国的盟友或附属国，或者该国是一个领土蔓延了巨大范围的大帝国。AI国家也会在他们需要穿过一个国家进行战争时寻求通行权。当一个国家向他国提供军事通行权时，与该国战争中为盟友或是敌人的国家也都会自动获得军事通行权。
+
+一个国家不能在该国或该国的敌人依旧在本国领土上有军队时撤回军事通行权。
+
+====请求舰队停靠权====
+
+{{anchor|Fleet basing rights}}
+获得一个国家的舰队停靠权将会给予你以下好处：
+*海军补给范围也会从该国的港口开始延伸
+*贸易范围也会从该国的港口开始延伸
+*请求者可以在该国的港口里停驻和修复船只
+*请求者可以通过在该国的港口停靠装载军队的运输船在该国登陆地面部队。这些地面部队不会被放逐，并且可以移动向任何临近的他们可以进入的省份。
+
+购买舰队停靠权的花费如下：
+
+*停靠花费为{{icon|ducats}}0.1杜卡特每月每个港口，并且最低值为{{icon|ducats}} '''0.5 杜卡特'''，最高值为'''2.0杜卡特'''。这个费用是建立在永久港口的数量上决定的。
+*还未成为城市的殖民地港口也可以使用，也按照费用的一部分计算。
+*对于接受国而言的未知之地的港口也会按照费用的一部分计算。
+*被占领的港口只有在他们能停靠时被算入。
+*这个费用可以在经济界面的''港口停靠费''一栏被查看。
+
+不同于之前的版本，现在港口停靠权不会增加殖民范围。然而他们依旧可以作为远洋航行的一个利器被使用。当{{icon|ed}} [[黄金国]]被激活时，港口停靠权在探索海域时没有用处，因为探索海域已经不再产生损耗了。只有当该国拥有2级以上的外交科技时才可以给予港口停靠权。
+
+下列因素会影响AI国家对于是否给予港口停靠权的决定：
+
+{| class="mildtable"
+!因素!!效果
+|-
+|该国与请求者结盟||{{green|+50}}
+|-
+| rowspan="2" |该国对请求者的观点
+|正: {{green|+0.2}}每点
+|-
+|负: {{red|-0.5}}每点
+|-
+| rowspan="9" |对请求者的态度
+|{{icon|friendly attitude}}友好: {{green|+20}}
+|-
+|{{icon|defensive attitude}}防御同盟: {{green|+20}}
+|-
+|{{icon|protective attitude}}保护性的: {{green|+20}}
+|-
+|{{icon|unknown attitude}}未知: '''0'''
+|-
+|{{icon|neutral attitude}}中立: {{red|-20}}
+|-
+|{{icon|threatened attitude}}被威胁的: {{red|-30}}
+|-
+|{{icon|hostile attitude}}敌对: {{red|-1000}}
+|-
+|{{icon|outraged attitude}}被激怒的: {{red|-1000}}
+|-
+|{{icon|rivalry attitude}}宿敌的: {{red|-1000}}
+|-
+|信任||每一点正信任{{green|+0.5}}
+|-
+| rowspan="2" |请求者的外交声誉
+|正: 每点{{green|+3}}
+|-
+|负: 每点{{red|-3}}
+|-
+|请求者正在对该国贸易禁运||{{red|-1000}}
+|-
+|该国正在对请求者贸易禁运||{{red|-1000}}
+|}
+一旦获得了港口停靠权，AI国家通常不会撤回，除非两国间的关系有剧烈的恶化。
+
+===教廷行动===
+
+{{SVersion|Timeless}}{{main|教宗}}
+一些特殊的外交行动需要你控制教廷后才能进行，详情可以前往[[教宗]]了解。其中有一个外交行动，发起十字军，允许教廷监护向一个异教国家发起十字军，给予每一个与之交战的天主教国家许多奖励。另一个外交行动，绝罚，会给予被绝罚的国家的天主教邻国一个免费的宣战理由。
+
+===皇帝行动===
+
+{{SVersion|Timeless}}{{main|神圣罗马帝国#皇帝能力}}
+[[神圣罗马帝国]]的皇帝拥有几个特殊的外交选项。你可以在神圣罗马帝国页面了解这些外交行动的细节。
+
+===大国行动===
+
+{{SVersion|Timeless}}{{main|列强}}
+{{expansion|rom}}
+
+发展度和科技水平综合排名世界前 8 的国家获得“列强”的地位。作为一个列强，你可以解锁如下外交行动：
+{{#lst:列强|great power}}
+
+'''备注：''' 失去列强地位的国家仍有 5 年的缓冲期，期间可以继续采取列强行动。
+
+==人情==
+{{SVersion|1.31}}
+*仅适用于DLC[[利维坦]]{{icon|Leviathan}}激活后
+在DLC[[利维坦]]{{icon|Leviathan}}加入后，国家间可以利用人情达成各种利益交换。如果目标国{{Red|拒绝}}，将会获得{{Red|-1}}{{icon|stability}}稳定度因此，在别国请求帮助时，请不要吝啬
+===获取人情===
+玩家可以向别国发送外交官{{icon|diplomat|24px}}来获取人情，速度取决于你的外交声誉[[File:Diplomatic reputation.png|24px]]和与目标国关系[[File:Improve relations.png|24px]]好坏
+===以人情换取金币===
+在外交界面中，一国可以用{{Red|10}}人情换取目标国{{ Green|6}}个月的收入{{icon|ducats}}
+*{{Red|注意}}
+*5年内未索取过
+*该国不能是你的属国
+*目标国处于和平状态
+*目标国国库足够支付
+===以人情换取士兵===
+在外交界面中，一国可以用{{Red|10}}人情换取目标国{{ Green|6}}个月的后备兵{{icon|manpower}}
+*{{Red|注意}}
+*5年内未索取过
+*该国不能是你的属国
+*目标国处于和平状态
+*目标国人力池足够支付
+===以人情换取水手===
+在外交界面中，一国可以用{{Red|10}}人情换取目标国{{ Green|6}}个月的水手{{icon|sailors}}
+*{{Red|注意}}
+*5年内未索取过
+*该国不能是你的属国
+*目标国处于和平状态
+*目标国人力池足够支付
+===找一位亲属作为继承人===
+在外交界面中，一国可以用{{Red|90}}人情要求另一国家将自己王朝的王室成员[[File:Royalmarriage.png|24px]]立为继承人。但请{{Red|三思而后行}}，这会让你受到世界上{{Red|所有}}国家的{{Red|－20}}侵略扩张关系惩罚
+*{{Red|注意}}
+*该国不能是你的属国
+*目标国处于和平状态
+*该国没有继承人或继承人宣称弱
+
+===以人情换取信任度===
+在外交界面中，一国可以用{{Red|10}}人情换取目标国{{Green|5}}信任
+===要求备战===
+在外交界面中，一国可以用{{Red|10}}人情换取目标国备战一年，期间目标国不会发起战争，并且在你宣战{{icon|war}}召唤时，该国获得一个{{Green|+20}}的参战意愿，这使得该国将更可能伸出援手
+
+===断绝盟约===
+在外交界面中，一国可以用{{Red|50}}人情换取目标国与另一国断绝盟约{{icon|alliance}}同时，被断绝盟约的国家将获得对你的宣战理由{{icon|cb}}'''强迫断绝盟约'''  为期十年
+*{{Red|注意}}
+*与被断绝盟约国关系低于{{Green|75}}
+*被断绝盟约国不是你的盟友
+*10年内未要求过
+===降低好感度===
+在外交界面中，一国可以用{{Red|50}}人情换取目标国与另一国降低{{Red|100}}好感度
+*{{Red|注意}}
+*与被降低关系国关系低于{{Green|75}}
+*被降低关系国不是你的盟友
+*10年内未要求过
+===归还核心省份===
+在外交界面中，一国可以用{{Red|50}}人情换取目标国归还你一个核心[[File:Core Icon.png]]省份
+*{{Red|注意}}
+*10年内未要求过
+
+==其他==
+
+{{SVersion|1.24}}
+这些行动不在主列表里，但也是通过外交界面进入的。
+===选择宿敌===
+
+[[File:Rival_interface.png|thumb|330px|right|宿敌机制添加于[[1.6]]版本]]
+宿敌是你认为将来可能与之发生冲突的国家。可能的宿敌是那些在军事力量，外交力量与本国相仿，并在一些地区有着相同的领土要求或是争端的国家。如右图所示，宿敌页面显示了可能的宿敌，他们对本国的看法，以及两国之间的海陆军实力对比。一个国家同时只能拥有3个宿敌&lt;ref>请见 {{path|defines}}: ''NUM_POSSIBLE_RIVALS = 3,''&lt;/ref>。如果一个宿敌变得太弱或是太强，那么它将不再是一个有效的宿敌并被移除。新潜在宿敌的生成更多基于陆军力量对比而不是海军。国家发展度和科技水平也会被考虑。宿敌之间往往距离较近，更强的国家的宿敌可能距离更远。设置宿敌会极大降低两国之间外交关系。宿敌之间很少能成功进行外交活动。宿敌之间必须处于双方互相可见状态。
+
+选择宿敌能带来下面的好处：
+
+*宿敌的敌人更愿意与本国结盟
+*{{green|+25%}} 在战斗中击败宿敌 {{icon|prestige|24px}} 威望获得&lt;ref>请见 {{path|defines}}: ''RIVAL_PRESTIGE_BONUS = 0.25,''&lt;/ref>
+*没有禁运时的 {{icon|trade efficiency|24px}} 贸易效率惩罚
+*{{green|+25%}} 间谍网建设速度&lt;ref>请见 {{path|defines}}: ''RIVAL_SPY_OFFENCE = 0.25,''&lt;/ref>
+*{{green|−33%}} {{icon|dip|24px}} 外交点花费，在和平协议中索取不合法的土地&lt;ref>请见 {{path|defines}}: ''RIVAL_PEACE_COST_REDUCTION = -0.33,''&lt;/ref>
+
+拥有一个宿敌，并且实施一些针对他的行动可以获得[[力量投射]]。宿敌数量不足会受到力量投射减少的惩罚。
+
+更换宿敌需要等待5年&lt;ref>1.35版本被修改，请见 {{path|defines}}: ''CHANGE_RIVAL_YEARS = 5,''&lt;/ref>，并花费 {{icon|dip|20px}} {{red|100}} 外交点数&lt;ref>请见 {{path|defines}}: ''PS_REPLACE_RIVAL = 100,''&lt;/ref>。更换宿敌花费可以被{{Nowrap|{{icon|Age of Absolutism|20px}} “专制主义时代”}}的“灵活的宿敌”选项来降低 {{green|50%}} 花费。
+
+===释放附庸国===
+
+你可以通过这一行动释放一个国家作为你的 {{icon|vassal}} 附庸国。如果你释放一个国家，他会得到他被你所占据的所有核心省份，除非这个省份是你的首都。释放附庸国不需要在任何一个省份拥有核心。若要释放国家，你需要拥有至少一个省份同时满足：该省份是其核心，并拥有其主流文化。战争期间不能采取此行动。
+
+这个外交行动可以被善用：
+
+* 将一个或两个已经灭绝但以前是大国核心的省份并入领土，并将该国作为附庸国释放。 然后，您可以使用收复核心的CB慢慢收回他们以前的所有土地，而无需支付外交点数，而且只需负担侵略性扩张惩罚的25％。
+* 如果这个国家接近灭亡，但无论出于何种原因都不能通过外交手段附庸，也应该这样做。 虽然这样造成的侵略扩张要多于强制附庸，但如果国家较小，差异不会很明显，而且您会立即拥有一个拥有较低独立倾向并关系良好的附庸，而不会受到强制附庸和侵略扩张带来的关系减成。
+==成就==
+
+{|
+|{{Achievement|资助我所爱|给3个不同的盟友战争援助，至少达到他们月收入的50%，且本国没有赤字。|image=Subsidize my Love.jpg|en=Subsidize my Love}}
+|-
+|{{Achievement|外交的延续|成功地利用威胁开战从其他国家获得一个省份。|image=The Continuation of Diplomacy.jpg|en=The Continuation of Diplomacy}}
+|-
+|{{Achievement|直至死亡将我们分开|与他国王室联姻。|image=Until Death Do Us Apart.jpg|en=Until Death Do Us Apart}}
+|}
+==参考资料==
+
+&lt;references />
+[[Category:外交]]
+
+{{diplomacy navbox}}
+[[en:Diplomacy]]
+</textarea><div class="templatesUsed"><div class="mw-templatesUsedExplanation"><p>本页使用的模板：
+</p></div><ul>
+<li><a href="https://www.eu4cn.com/wiki/列强" title="列强">列强</a>（<a href="https://www.eu4cn.com/index.php?title=%E5%88%97%E5%BC%BA&amp;action=edit" title="列强">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:0" title="Template:0">Template:0</a>（<a href="https://www.eu4cn.com/index.php?title=Template:0&amp;action=edit" title="Template:0">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Achievement" class="mw-redirect" title="Template:Achievement">Template:Achievement</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Achievement&amp;action=edit" class="mw-redirect" title="Template:Achievement">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Ambox" title="Template:Ambox">Template:Ambox</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Ambox&amp;action=edit" title="Template:Ambox">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Ambox/core" title="Template:Ambox/core">Template:Ambox/core</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Ambox/core&amp;action=edit" title="Template:Ambox/core">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Ambox_2020" title="Template:Ambox 2020">Template:Ambox 2020</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Ambox_2020&amp;action=edit" title="Template:Ambox 2020">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Anchor" title="Template:Anchor">Template:Anchor</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Anchor&amp;action=edit" title="Template:Anchor">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:BTRow" title="Template:BTRow">Template:BTRow</a>（<a href="https://www.eu4cn.com/index.php?title=Template:BTRow&amp;action=edit" title="Template:BTRow">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Bonus_table" title="Template:Bonus table">Template:Bonus table</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Bonus_table&amp;action=edit" title="Template:Bonus table">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Clear" title="Template:Clear">Template:Clear</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Clear&amp;action=edit" title="Template:Clear">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Country_data_Austria" title="Template:Country data Austria">Template:Country data Austria</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Country_data_Austria&amp;action=edit" title="Template:Country data Austria">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Country_data_Commonwealth" title="Template:Country data Commonwealth">Template:Country data Commonwealth</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Country_data_Commonwealth&amp;action=edit" title="Template:Country data Commonwealth">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Country_data_FRA" class="mw-redirect" title="Template:Country data FRA">Template:Country data FRA</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Country_data_FRA&amp;action=edit" class="mw-redirect" title="Template:Country data FRA">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Country_data_France" title="Template:Country data France">Template:Country data France</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Country_data_France&amp;action=edit" title="Template:Country data France">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Country_data_Poland" title="Template:Country data Poland">Template:Country data Poland</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Country_data_Poland&amp;action=edit" title="Template:Country data Poland">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Country_data_SCO" class="mw-redirect" title="Template:Country data SCO">Template:Country data SCO</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Country_data_SCO&amp;action=edit" class="mw-redirect" title="Template:Country data SCO">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Country_data_Scotland" title="Template:Country data Scotland">Template:Country data Scotland</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Country_data_Scotland&amp;action=edit" title="Template:Country data Scotland">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Country_data_法兰西" class="mw-redirect" title="Template:Country data 法兰西">Template:Country data 法兰西</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Country_data_%E6%B3%95%E5%85%B0%E8%A5%BF&amp;action=edit" class="mw-redirect" title="Template:Country data 法兰西">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Diplomacy_navbox" title="Template:Diplomacy navbox">Template:Diplomacy navbox</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Diplomacy_navbox&amp;action=edit" title="Template:Diplomacy navbox">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Expansion" title="Template:Expansion">Template:Expansion</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Expansion&amp;action=edit" title="Template:Expansion">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Flag" title="Template:Flag">Template:Flag</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Flag&amp;action=edit" title="Template:Flag">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Flag/core" title="Template:Flag/core">Template:Flag/core</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Flag/core&amp;action=edit" title="Template:Flag/core">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Green" title="Template:Green">Template:Green</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Green&amp;action=edit" title="Template:Green">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Grey-bd" title="Template:Grey-bd">Template:Grey-bd</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Grey-bd&amp;action=edit" title="Template:Grey-bd">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Hatnote" title="Template:Hatnote">Template:Hatnote</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Hatnote&amp;action=edit" title="Template:Hatnote">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon" title="Template:Icon">Template:Icon</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon&amp;action=edit" title="Template:Icon">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/a" title="Template:Icon/a">Template:Icon/a</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/a&amp;action=edit" title="Template:Icon/a">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/b" title="Template:Icon/b">Template:Icon/b</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/b&amp;action=edit" title="Template:Icon/b">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/c" title="Template:Icon/c">Template:Icon/c</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/c&amp;action=edit" title="Template:Icon/c">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/d" title="Template:Icon/d">Template:Icon/d</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/d&amp;action=edit" title="Template:Icon/d">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/e" title="Template:Icon/e">Template:Icon/e</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/e&amp;action=edit" title="Template:Icon/e">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/f" title="Template:Icon/f">Template:Icon/f</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/f&amp;action=edit" title="Template:Icon/f">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/g" title="Template:Icon/g">Template:Icon/g</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/g&amp;action=edit" title="Template:Icon/g">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/h" title="Template:Icon/h">Template:Icon/h</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/h&amp;action=edit" title="Template:Icon/h">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/i" title="Template:Icon/i">Template:Icon/i</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/i&amp;action=edit" title="Template:Icon/i">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/k" title="Template:Icon/k">Template:Icon/k</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/k&amp;action=edit" title="Template:Icon/k">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/l" title="Template:Icon/l">Template:Icon/l</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/l&amp;action=edit" title="Template:Icon/l">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/m" title="Template:Icon/m">Template:Icon/m</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/m&amp;action=edit" title="Template:Icon/m">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/n" title="Template:Icon/n">Template:Icon/n</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/n&amp;action=edit" title="Template:Icon/n">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/o" title="Template:Icon/o">Template:Icon/o</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/o&amp;action=edit" title="Template:Icon/o">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/p" title="Template:Icon/p">Template:Icon/p</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/p&amp;action=edit" title="Template:Icon/p">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/r" title="Template:Icon/r">Template:Icon/r</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/r&amp;action=edit" title="Template:Icon/r">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/s" title="Template:Icon/s">Template:Icon/s</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/s&amp;action=edit" title="Template:Icon/s">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/t" title="Template:Icon/t">Template:Icon/t</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/t&amp;action=edit" title="Template:Icon/t">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/u" title="Template:Icon/u">Template:Icon/u</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/u&amp;action=edit" title="Template:Icon/u">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/v" title="Template:Icon/v">Template:Icon/v</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/v&amp;action=edit" title="Template:Icon/v">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Icon/w" title="Template:Icon/w">Template:Icon/w</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Icon/w&amp;action=edit" title="Template:Icon/w">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Iconbox" title="Template:Iconbox">Template:Iconbox</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Iconbox&amp;action=edit" title="Template:Iconbox">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Main" title="Template:Main">Template:Main</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Main&amp;action=edit" title="Template:Main">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Navbox" title="Template:Navbox">Template:Navbox</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Navbox&amp;action=edit" title="Template:Navbox">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Navboxgroup" title="Template:Navboxgroup">Template:Navboxgroup</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Navboxgroup&amp;action=edit" title="Template:Navboxgroup">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Nowrap" title="Template:Nowrap">Template:Nowrap</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Nowrap&amp;action=edit" title="Template:Nowrap">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Path" title="Template:Path">Template:Path</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Path&amp;action=edit" title="Template:Path">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:Plainlist" title="Template:Plainlist">Template:Plainlist</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Plainlist&amp;action=edit" title="Template:Plainlist">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Red" title="Template:Red">Template:Red</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Red&amp;action=edit" title="Template:Red">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:SVersion" title="Template:SVersion">Template:SVersion</a>（<a href="https://www.eu4cn.com/index.php?title=Template:SVersion&amp;action=edit" title="Template:SVersion">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:See_also" title="Template:See also">Template:See also</a>（<a href="https://www.eu4cn.com/index.php?title=Template:See_also&amp;action=edit" title="Template:See also">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:TOC_limit" title="Template:TOC limit">Template:TOC limit</a>（<a href="https://www.eu4cn.com/index.php?title=Template:TOC_limit&amp;action=edit" title="Template:TOC limit">查看源代码</a>）</li><li><a href="https://www.eu4cn.com/wiki/Template:Version" title="Template:Version">Template:Version</a>（<a href="https://www.eu4cn.com/index.php?title=Template:Version&amp;action=edit" title="Template:Version">查看源代码</a>）（受保护）</li><li><a href="https://www.eu4cn.com/wiki/Template:白字" title="Template:白字">Template:白字</a>（<a href="https://www.eu4cn.com/index.php?title=Template:%E7%99%BD%E5%AD%97&amp;action=edit" title="Template:白字">查看源代码</a>）</li></ul></div><p id="mw-returnto">返回<a href="https://www.eu4cn.com/wiki/外交" title="外交">外交</a>。</p>
+</div>						</div>
+				</div>
+				<footer>
+				<div class="liberty-footer">
+										<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>					<div class="bottom-ads mobile-ab">
+						<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+						<!-- 移动端底部 -->
+						<ins class="adsbygoogle mobile-ab"
+						     style="display:block"
+						     data-ad-client="ca-pub-1612414434963106"
+						     data-ad-slot="3303553671"
+						     data-ad-format="auto"
+						     data-full-width-responsive="true"></ins>
+						<script>
+						     (adsbygoogle = window.adsbygoogle || []).push({});
+						</script>
+					</div>
+								<ul class="footer-places">
+									<li class="footer-places-privacy">
+						<a href="https://www.eu4cn.com/wiki/欧陆风云4百科:隐私政策">隐私政策</a>					</li>
+									<li class="footer-places-about">
+						<a href="https://www.eu4cn.com/wiki/欧陆风云4百科:关于">关于欧陆风云4百科</a>					</li>
+									<li class="footer-places-disclaimer">
+						<a href="https://www.eu4cn.com/wiki/欧陆风云4百科:免责声明">免责声明</a>					</li>
+							</ul>
+					<ul class="footer-icons">
+									<li class="footer-copyrightico">
+						<a href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="https://www.eu4cn.com/resources/assets/licenses/cc-by-nc-sa.png" alt="知识共享署名-非商业性使用-相同方式共享" width="88" height="31" loading="lazy"/></a>					</li>
+										<li class="footer-poweredbyico">
+						<a href="https://www.mediawiki.org/"><img src="https://www.eu4cn.com/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"/></a><a href="https://www.eu4cn.com/"><img src="https://www.eu4cn.com/images/footerlogo.png" width="88" height="31" loading="lazy"/></a>					</li>
+								</ul>
+						</div>
+				</footer>
+			</div>
+		</div>
+		</section>
+				<div class="modal fade login-modal" id="login-modal" tabindex="-1"
+			 role="dialog" aria-labelledby="login-modalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-sm" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<h4 class="modal-title">登录</h4>
+					</div>
+					<div class="modal-body">
+						<div id="modal-login-alert" class="alert alert-hidden alert-danger" role="alert">
+						</div>
+						<form id="modal-loginform" name="userlogin" class="modal-loginform"
+							  method="post">
+							<input class="loginText form-control" id="wpName1" tabindex="1"
+								   placeholder="请输入您的用户名" value="" name="lgname">
+							<label for="inputPassword" class="sr-only">密码</label>
+							<input class="loginPassword form-control" id="wpPassword1" tabindex="2"
+								   placeholder="请输入您的密码" type="password" name="lgpassword">
+							<div class="modal-checkbox">
+								<input name="lgremember" type="checkbox" value="1" id="lgremember" tabindex="3">
+								<label for="lgremember">记住登录</label>
+							</div>
+							<input class="btn btn-success btn-block" type="submit" value="登录" tabindex="4">
+							<a href="https://www.eu4cn.com/index.php?title=Special:%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95&amp;type=signup&amp;returnto=%E5%A4%96%E4%BA%A4" class="btn btn-primary btn-block" title="Special:用户登录" tabindex="5" type="submit">加入欧陆风云4百科</a>							<a href="https://www.eu4cn.com/wiki/Special:重置密码" title="Special:重置密码">忘记密码？</a>                            <br>
+							<a href="https://www.eu4cn.com/wiki/Special:用户登录" title="Special:用户登录">其他方式登录</a>							<input type="hidden" name="action" value="login" />
+							<input type="hidden" name="format" value="json" />
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">⧼liberty-btn-close⧽</button>
+						<button type="button" class="btn btn-primary">⧼liberty-btn-save-changes⧽</button>
+					</div>
+				</div>
+			</div>
+		</div>
+			</body>
+<!-- Mirrored from www.eu4cn.com/index.php?title=%E5%A4%96%E4%BA%A4&action=edit by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 May 2024 10:56:36 GMT -->
+</html>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?8b9cdb5f260cf613f39a508fbf9dd707";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.004","walltime":"0.005","ppvisitednodes":{"value":7,"limit":1000000},"postexpandincludesize":{"value":18,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":100},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20240506105344","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":1978});});</script>
+</body>
+</html>
